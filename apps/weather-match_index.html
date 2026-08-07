@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Match Game</title>
+
+<style>
+body {
+  margin: 11px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #b3e5fc, #e0f7fa);
+  text-align: center;
+}
+
+h1 {
+  margin: 14px 0;
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.controls {
+  margin: 14px;
+}
+
+button {
+  padding: 7px 11px;
+  margin: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 11px;
+  border: none;
+  background: #0288d1;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 7px;
+  max-width: 444px;
+  margin: 14px auto;
+}
+
+.item {
+  font-size: 55px;
+  background: white;
+  border-radius: 11px;
+  padding: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+#hint {
+  font-size: 24px;
+  margin-top: 24px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌦️ Weather Match Game</h1>
+
+<div class="hud">
+  <div>⭐ Score: <span id="score">0</span></div>
+  <div>📈 Level: <span id="level">1</span></div>
+  <div>⏳ Time: <span id="timer">20</span>s</div>
+  <div>🏆 High Score: <span id="highScore">0</span></div>
+</div>
+
+<div class="controls">
+  <button onclick="newGame()">🆕 New Game</button>
+  <button onclick="restartLevel()">🔁 Restart Level</button>
+  <button onclick="toggleVoice()">🔊 Toggle Voice</button>
+  <button onclick="resetHighScore()">🗑 Reset High Score</button>
+</div>
+
+<div id="hint">🌦️ Choose the weather to begin!</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+// ==============================
+// GAME DATA
+// ==============================
+
+const weathers = ["Sunny", "Rainy", "Snowy", "Windy"];
+
+const items = [
+  { emoji: "☀️", weather: "Sunny" },
+  { emoji: "🕶️", weather: "Sunny" },
+  { emoji: "🌻", weather: "Sunny" },
+
+  { emoji: "🌧️", weather: "Rainy" },
+  { emoji: "☔", weather: "Rainy" },
+  { emoji: "💧", weather: "Rainy" },
+
+  { emoji: "❄️", weather: "Snowy" },
+  { emoji: "⛄", weather: "Snowy" },
+  { emoji: "🧤", weather: "Snowy" },
+
+  { emoji: "🌬️", weather: "Windy" },
+  { emoji: "🪁", weather: "Windy" },
+  { emoji: "🍃", weather: "Windy" }
+];
+
+// ==============================
+// STATE
+// ==============================
+
+let score = 0;
+let level = 1;
+let matches = 0;
+let requiredMatches = 3;
+let timeLeft = 12;
+let timerInterval = null;
+let selectedWeather = null;
+let voiceEnabled = true;
+
+let highScore = localStorage.getItem("weatherHighScore") || 0;
+
+// ==============================
+// DOM
+// ==============================
+
+const grid = document.getElementById("grid");
+const scoreDisplay = document.getElementById("score");
+const levelDisplay = document.getElementById("level");
+const timerDisplay = document.getElementById("timer");
+const highScoreDisplay = document.getElementById("highScore");
+const hint = document.getElementById("hint");
+
+// ==============================
+// INITIALIZE
+// ==============================
+
+highScoreDisplay.textContent = highScore;
+createGrid();
+updateHUD();
+startLevel();
+
+// ==============================
+// FUNCTIONS
+// ==============================
+
+function createGrid() {
+  grid.innerHTML = "";
+  shuffleArray(items).forEach(item => {
+    const div = document.createElement("div");
+    div.classList.add("item");
+    div.textContent = item.emoji;
+    div.dataset.weather = item.weather;
+    div.addEventListener("click", handleClick);
+    grid.appendChild(div);
+  });
+}
+
+function handleClick(e) {
+  if (!selectedWeather) return;
+
+  const weather = e.target.dataset.weather;
+
+  if (weather === selectedWeather) {
+    e.target.classList.add("disabled");
+    matches++;
+    score += 10;
+
+    if (voiceEnabled) speak("Correct!");
+
+    if (score > highScore) {
+      highScore = score;
+      localStorage.setItem("weatherHighScore", highScore);
+    }
+
+    if (matches >= requiredMatches) {
+      level++;
+      clearInterval(timerInterval);
+      setTimeout(startLevel, 800);
+    }
+  } else {
+    if (voiceEnabled) speak("Try again");
+  }
+
+  updateHUD();
+}
+
+function startLevel() {
+  matches = 0;
+
+  requiredMatches = 3 + Math.floor(level / 2);
+  timeLeft = Math.max(12 - level * 2, 8);
+
+  pickRandomWeather();
+  enableItems();
+  updateHUD();
+  startTimer();
+}
+
+function pickRandomWeather() {
+  const randomIndex = Math.floor(Math.random() * weathers.length);
+  selectedWeather = weathers[randomIndex];
+  hint.textContent = `🌦️ Find items for: ${selectedWeather}`;
+}
+
+function startTimer() {
+  clearInterval(timerInterval);
+  timerDisplay.textContent = timeLeft;
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    timerDisplay.textContent = timeLeft;
+
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      speak("Time's up!");
+      restartLevel();
+    }
+  }, 1000);
+}
+
+function restartLevel() {
+  clearInterval(timerInterval);
+  matches = 0;
+  enableItems();
+  startLevel();
+}
+
+function newGame() {
+  clearInterval(timerInterval);
+  score = 0;
+  level = 1;
+  matches = 0;
+  enableItems();
+  updateHUD();
+  startLevel();
+}
+
+function resetHighScore() {
+  highScore = 0;
+  localStorage.setItem("weatherHighScore", 0);
+  updateHUD();
+}
+
+function enableItems() {
+  document.querySelectorAll(".item").forEach(item => {
+    item.classList.remove("disabled");
+  });
+}
+
+function updateHUD() {
+  scoreDisplay.textContent = score;
+  levelDisplay.textContent = level;
+  timerDisplay.textContent = timeLeft;
+  highScoreDisplay.textContent = highScore;
+}
+
+function toggleVoice() {
+  voiceEnabled = !voiceEnabled;
+}
+
+function speak(text) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  speechSynthesis.speak(utterance);
+}
+
+function shuffleArray(array) {
+  return array
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+}
+</script>
+
+</body>
+</html>
