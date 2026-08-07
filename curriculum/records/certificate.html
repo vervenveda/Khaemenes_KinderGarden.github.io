@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Certificate</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="header no-print">
+    <div class="shell nav">
+      <a class="brand" href="../index.html">
+        <span class="seal">K</span>
+        <span><strong>Khaemenes Kindergarten</strong><small>36 Unit A+ Curriculum</small></span>
+      </a>
+      <nav class="navlinks">
+        <a href="../index.html">Home</a>
+        <a href="../teacher-tools/index.html">Teacher Tools</a>
+        <a href="../assessments/weekly-assessments.html">Assessments</a>
+        <a href="../records/certificate.html">Certificate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="shell">
+      <div id="out"></div>
+    </div>
+  </main>
+  <script src="../assets/certificate.js"></script>
+
+  <footer class="footer no-print">
+    <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

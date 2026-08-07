@@ -1,0 +1,10542 @@
+window.KHAE_KINDERGARTEN_DATA = {
+  "course": {
+    "title": "Khaemenes Academy Kindergarten — 36 Unit A+ Curriculum",
+    "subtitle": "Universal Kindergarten Readiness · In-House Curriculum · Play-Based Honors Foundation",
+    "code": "KHAE-KINDER-36-APLUS",
+    "grade": "Kindergarten",
+    "units": 36,
+    "lessonsPerUnit": 5,
+    "dailyLessons": 180,
+    "weeklyAssessments": 36,
+    "passingScore": 80,
+    "authors": "Jennifer Kay Pearl",
+    "generated": "2026-08-07",
+    "dependencyPolicy": "No outside fonts, scripts, images, libraries, or curriculum calls. All pages use local files only.",
+    "localReviewNote": "Designed to surpass any single-state checklist by covering broad early-learning domains. Families, schools, or evaluators should still review local compliance requirements."
+  },
+  "standardsFamilies": [
+    {
+      "code": "KHAE-DAP",
+      "label": "Developmentally Appropriate Practice",
+      "description": "Play-based, strengths-based, joyful, engaged learning across whole-child domains."
+    },
+    {
+      "code": "KHAE-ELOF",
+      "label": "Whole-Child Early Learning Domains",
+      "description": "Approaches to learning, social-emotional development, language/literacy, cognition, motor and physical development."
+    },
+    {
+      "code": "KHAE-LIT-K",
+      "label": "Kindergarten Literacy",
+      "description": "Oral language, print concepts, phonological awareness, alphabet knowledge, shared reading, drawing/writing, speaking/listening."
+    },
+    {
+      "code": "KHAE-MATH-K",
+      "label": "Kindergarten Mathematics",
+      "description": "Counting/cardinality, comparing, sorting, composing/decomposing, measurement, data, geometry, patterning, problem solving."
+    },
+    {
+      "code": "KHAE-SCI-K",
+      "label": "Kindergarten Science and Engineering",
+      "description": "Observation, weather/sunlight, living things, water/earth, motion, tools, safe inquiry, design, and evidence."
+    },
+    {
+      "code": "KHAE-CIV-K",
+      "label": "Early Social Studies and Civic Belonging",
+      "description": "Family, community, maps, places, helpers, traditions, symbols, citizenship, needs/wants, and shared responsibility."
+    },
+    {
+      "code": "KHAE-SEL-K",
+      "label": "Social-Emotional Learning",
+      "description": "Self-awareness, self-management, social awareness, relationship skills, responsible decisions, kindness, and repair."
+    },
+    {
+      "code": "KHAE-ART-K",
+      "label": "Arts, Music, Drama, and Creative Process",
+      "description": "Creating, presenting, responding, connecting, rhythm, movement, visual design, storytelling, and reflection."
+    },
+    {
+      "code": "KHAE-HEALTH-K",
+      "label": "Health, Movement, and Safety",
+      "description": "Gross/fine motor, body care, rest, nutrition, hygiene, movement, safe routines, and confidence."
+    },
+    {
+      "code": "KHAE-TECH-K",
+      "label": "Tools, Technology, and Unplugged Thinking",
+      "description": "Sequencing, patterns, safe tool use, unplugged coding, digital citizenship, design, and creation."
+    }
+  ],
+  "units": [
+    {
+      "unit": 1,
+      "week": 1,
+      "title": "Welcome to the Learning Garden",
+      "theme": "Belonging, routines, names, classroom materials, and joyful learning",
+      "essentialQuestion": "Who am I in this learning community?",
+      "literacyFocus": "Names, print awareness, listening routines",
+      "mathFocus": "Count, match, and sort classroom objects",
+      "inquiryFocus": "Classroom community, safe routines, and responsibility",
+      "selFocus": "Self-awareness; asking for help",
+      "makerProject": "Name collage and classroom map",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about welcome to the learning garden through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about welcome to the learning garden.”",
+            "Ask: “Who am I in this learning community?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Who am I in this learning community?”",
+          "literacy": "Names, print awareness, listening routines",
+          "math": "Count, match, and sort classroom objects",
+          "inquiry": "Classroom community, safe routines, and responsibility",
+          "sel": "Self-awareness; asking for help",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 01 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about welcome to the learning garden through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about welcome to the learning garden.”",
+            "Ask: “Who am I in this learning community?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Who am I in this learning community?”",
+          "literacy": "Names, print awareness, listening routines",
+          "math": "Count, match, and sort classroom objects",
+          "inquiry": "Classroom community, safe routines, and responsibility",
+          "sel": "Self-awareness; asking for help",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 01 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about welcome to the learning garden through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about welcome to the learning garden.”",
+            "Ask: “Who am I in this learning community?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Who am I in this learning community?”",
+          "literacy": "Names, print awareness, listening routines",
+          "math": "Count, match, and sort classroom objects",
+          "inquiry": "Classroom community, safe routines, and responsibility",
+          "sel": "Self-awareness; asking for help",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 01 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about welcome to the learning garden through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about welcome to the learning garden.”",
+            "Ask: “Who am I in this learning community?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Who am I in this learning community?”",
+          "literacy": "Names, print awareness, listening routines",
+          "math": "Count, match, and sort classroom objects",
+          "inquiry": "Classroom community, safe routines, and responsibility",
+          "sel": "Self-awareness; asking for help",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 01 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about welcome to the learning garden through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about welcome to the learning garden.”",
+            "Ask: “Who am I in this learning community?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Who am I in this learning community?”",
+          "literacy": "Names, print awareness, listening routines",
+          "math": "Count, match, and sort classroom objects",
+          "inquiry": "Classroom community, safe routines, and responsibility",
+          "sel": "Self-awareness; asking for help",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 01 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 01 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Welcome to the Learning Garden."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Names, print awareness, listening routines."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count, match, and sort classroom objects."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Classroom community, safe routines, and responsibility."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Name collage and classroom map."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Self-awareness; asking for help."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 2,
+      "week": 2,
+      "title": "Names, Letters, and Stories",
+      "theme": "Alphabet awareness, print concepts, oral storytelling, and counting collections",
+      "essentialQuestion": "How do letters and stories help us share who we are?",
+      "literacyFocus": "Name letters, environmental print, story parts",
+      "mathFocus": "Count to 10 with one-to-one correspondence",
+      "inquiryFocus": "Books, authors, illustrators, characters, and settings",
+      "selFocus": "Turn-taking and listening to a friend",
+      "makerProject": "Make a name book",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about names, letters, and stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about names, letters, and stories.”",
+            "Ask: “How do letters and stories help us share who we are?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do letters and stories help us share who we are?”",
+          "literacy": "Name letters, environmental print, story parts",
+          "math": "Count to 10 with one-to-one correspondence",
+          "inquiry": "Books, authors, illustrators, characters, and settings",
+          "sel": "Turn-taking and listening to a friend",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 02 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about names, letters, and stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about names, letters, and stories.”",
+            "Ask: “How do letters and stories help us share who we are?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do letters and stories help us share who we are?”",
+          "literacy": "Name letters, environmental print, story parts",
+          "math": "Count to 10 with one-to-one correspondence",
+          "inquiry": "Books, authors, illustrators, characters, and settings",
+          "sel": "Turn-taking and listening to a friend",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 02 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about names, letters, and stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about names, letters, and stories.”",
+            "Ask: “How do letters and stories help us share who we are?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do letters and stories help us share who we are?”",
+          "literacy": "Name letters, environmental print, story parts",
+          "math": "Count to 10 with one-to-one correspondence",
+          "inquiry": "Books, authors, illustrators, characters, and settings",
+          "sel": "Turn-taking and listening to a friend",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 02 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about names, letters, and stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about names, letters, and stories.”",
+            "Ask: “How do letters and stories help us share who we are?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do letters and stories help us share who we are?”",
+          "literacy": "Name letters, environmental print, story parts",
+          "math": "Count to 10 with one-to-one correspondence",
+          "inquiry": "Books, authors, illustrators, characters, and settings",
+          "sel": "Turn-taking and listening to a friend",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 02 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about names, letters, and stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about names, letters, and stories.”",
+            "Ask: “How do letters and stories help us share who we are?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do letters and stories help us share who we are?”",
+          "literacy": "Name letters, environmental print, story parts",
+          "math": "Count to 10 with one-to-one correspondence",
+          "inquiry": "Books, authors, illustrators, characters, and settings",
+          "sel": "Turn-taking and listening to a friend",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 02 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 02 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Names, Letters, and Stories."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Name letters, environmental print, story parts."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count to 10 with one-to-one correspondence."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Books, authors, illustrators, characters, and settings."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Make a name book."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Turn-taking and listening to a friend."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 3,
+      "week": 3,
+      "title": "Feelings, Friendship, and Voice",
+      "theme": "Feelings words, friendship language, rhythm, and small-group collaboration",
+      "essentialQuestion": "How can words help us care for ourselves and others?",
+      "literacyFocus": "Rhyming, beginning sounds, feelings vocabulary",
+      "mathFocus": "Compare groups: more, less, same",
+      "inquiryFocus": "Families, friendships, kindness, and classroom citizenship",
+      "selFocus": "Feelings check-in and repair language",
+      "makerProject": "Feelings wheel and friendship bracelet",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about feelings, friendship, and voice.”",
+            "Ask: “How can words help us care for ourselves and others?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”",
+          "literacy": "Rhyming, beginning sounds, feelings vocabulary",
+          "math": "Compare groups: more, less, same",
+          "inquiry": "Families, friendships, kindness, and classroom citizenship",
+          "sel": "Feelings check-in and repair language",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 03 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “feelings, friendship, and voice” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about feelings, friendship, and voice.”",
+            "Ask: “How can words help us care for ourselves and others?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”",
+          "literacy": "Rhyming, beginning sounds, feelings vocabulary",
+          "math": "Compare groups: more, less, same",
+          "inquiry": "Families, friendships, kindness, and classroom citizenship",
+          "sel": "Feelings check-in and repair language",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 03 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “feelings, friendship, and voice” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about feelings, friendship, and voice.”",
+            "Ask: “How can words help us care for ourselves and others?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”",
+          "literacy": "Rhyming, beginning sounds, feelings vocabulary",
+          "math": "Compare groups: more, less, same",
+          "inquiry": "Families, friendships, kindness, and classroom citizenship",
+          "sel": "Feelings check-in and repair language",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 03 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “feelings, friendship, and voice” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about feelings, friendship, and voice.”",
+            "Ask: “How can words help us care for ourselves and others?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”",
+          "literacy": "Rhyming, beginning sounds, feelings vocabulary",
+          "math": "Compare groups: more, less, same",
+          "inquiry": "Families, friendships, kindness, and classroom citizenship",
+          "sel": "Feelings check-in and repair language",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 03 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “feelings, friendship, and voice” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about feelings, friendship, and voice.”",
+            "Ask: “How can words help us care for ourselves and others?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”",
+          "literacy": "Rhyming, beginning sounds, feelings vocabulary",
+          "math": "Compare groups: more, less, same",
+          "inquiry": "Families, friendships, kindness, and classroom citizenship",
+          "sel": "Feelings check-in and repair language",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 03 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “feelings, friendship, and voice” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 03 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Feelings, Friendship, and Voice."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Rhyming, beginning sounds, feelings vocabulary."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Compare groups: more, less, same."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Families, friendships, kindness, and classroom citizenship."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Feelings wheel and friendship bracelet."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Feelings check-in and repair language."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 4,
+      "week": 4,
+      "title": "The Five Senses",
+      "theme": "Observation through sight, sound, touch, smell, and taste with safe inquiry",
+      "essentialQuestion": "How do we learn by observing carefully?",
+      "literacyFocus": "Describing words and sound matching",
+      "mathFocus": "Sort and classify by attributes",
+      "inquiryFocus": "Scientific observation through safe sense routines",
+      "selFocus": "Calm focus and noticing details",
+      "makerProject": "Senses journal",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about the five senses.”",
+            "Ask: “How do we learn by observing carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we learn by observing carefully?”",
+          "literacy": "Describing words and sound matching",
+          "math": "Sort and classify by attributes",
+          "inquiry": "Scientific observation through safe sense routines",
+          "sel": "Calm focus and noticing details",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 04 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about the five senses.”",
+            "Ask: “How do we learn by observing carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we learn by observing carefully?”",
+          "literacy": "Describing words and sound matching",
+          "math": "Sort and classify by attributes",
+          "inquiry": "Scientific observation through safe sense routines",
+          "sel": "Calm focus and noticing details",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 04 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about the five senses.”",
+            "Ask: “How do we learn by observing carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we learn by observing carefully?”",
+          "literacy": "Describing words and sound matching",
+          "math": "Sort and classify by attributes",
+          "inquiry": "Scientific observation through safe sense routines",
+          "sel": "Calm focus and noticing details",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 04 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about the five senses.”",
+            "Ask: “How do we learn by observing carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we learn by observing carefully?”",
+          "literacy": "Describing words and sound matching",
+          "math": "Sort and classify by attributes",
+          "inquiry": "Scientific observation through safe sense routines",
+          "sel": "Calm focus and noticing details",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 04 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about the five senses.”",
+            "Ask: “How do we learn by observing carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we learn by observing carefully?”",
+          "literacy": "Describing words and sound matching",
+          "math": "Sort and classify by attributes",
+          "inquiry": "Scientific observation through safe sense routines",
+          "sel": "Calm focus and noticing details",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 04 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 04 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: The Five Senses."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Describing words and sound matching."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sort and classify by attributes."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Scientific observation through safe sense routines."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Senses journal."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Calm focus and noticing details."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 5,
+      "week": 5,
+      "title": "Seasons, Trees, and Leaves",
+      "theme": "Seasonal patterns, trees, leaves, color, and change",
+      "essentialQuestion": "What changes do we notice in nature?",
+      "literacyFocus": "Nature words and letter sounds",
+      "mathFocus": "Create and extend patterns",
+      "inquiryFocus": "Seasonal weather and living things",
+      "selFocus": "Patience and wonder",
+      "makerProject": "Leaf rubbings and pattern crown",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about seasons, trees, and leaves through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about seasons, trees, and leaves.”",
+            "Ask: “What changes do we notice in nature?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What changes do we notice in nature?”",
+          "literacy": "Nature words and letter sounds",
+          "math": "Create and extend patterns",
+          "inquiry": "Seasonal weather and living things",
+          "sel": "Patience and wonder",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 05 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about seasons, trees, and leaves through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about seasons, trees, and leaves.”",
+            "Ask: “What changes do we notice in nature?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What changes do we notice in nature?”",
+          "literacy": "Nature words and letter sounds",
+          "math": "Create and extend patterns",
+          "inquiry": "Seasonal weather and living things",
+          "sel": "Patience and wonder",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 05 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about seasons, trees, and leaves through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about seasons, trees, and leaves.”",
+            "Ask: “What changes do we notice in nature?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What changes do we notice in nature?”",
+          "literacy": "Nature words and letter sounds",
+          "math": "Create and extend patterns",
+          "inquiry": "Seasonal weather and living things",
+          "sel": "Patience and wonder",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 05 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about seasons, trees, and leaves through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about seasons, trees, and leaves.”",
+            "Ask: “What changes do we notice in nature?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What changes do we notice in nature?”",
+          "literacy": "Nature words and letter sounds",
+          "math": "Create and extend patterns",
+          "inquiry": "Seasonal weather and living things",
+          "sel": "Patience and wonder",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 05 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about seasons, trees, and leaves through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about seasons, trees, and leaves.”",
+            "Ask: “What changes do we notice in nature?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What changes do we notice in nature?”",
+          "literacy": "Nature words and letter sounds",
+          "math": "Create and extend patterns",
+          "inquiry": "Seasonal weather and living things",
+          "sel": "Patience and wonder",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 05 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 05 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Seasons, Trees, and Leaves."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Nature words and letter sounds."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Create and extend patterns."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Seasonal weather and living things."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Leaf rubbings and pattern crown."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Patience and wonder."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 6,
+      "week": 6,
+      "title": "Weather, Sun, and Sky",
+      "theme": "Daily weather observation, sunlight, clouds, and weather safety",
+      "essentialQuestion": "How does weather affect what we do?",
+      "literacyFocus": "Weather vocabulary and shared writing",
+      "mathFocus": "Graph daily weather and count totals",
+      "inquiryFocus": "Weather, sunlight, shade, and safety",
+      "selFocus": "Choosing safe clothing and actions",
+      "makerProject": "Weather wheel",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about weather, sun, and sky through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about weather, sun, and sky.”",
+            "Ask: “How does weather affect what we do?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does weather affect what we do?”",
+          "literacy": "Weather vocabulary and shared writing",
+          "math": "Graph daily weather and count totals",
+          "inquiry": "Weather, sunlight, shade, and safety",
+          "sel": "Choosing safe clothing and actions",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 06 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about weather, sun, and sky through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about weather, sun, and sky.”",
+            "Ask: “How does weather affect what we do?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does weather affect what we do?”",
+          "literacy": "Weather vocabulary and shared writing",
+          "math": "Graph daily weather and count totals",
+          "inquiry": "Weather, sunlight, shade, and safety",
+          "sel": "Choosing safe clothing and actions",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 06 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about weather, sun, and sky through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about weather, sun, and sky.”",
+            "Ask: “How does weather affect what we do?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does weather affect what we do?”",
+          "literacy": "Weather vocabulary and shared writing",
+          "math": "Graph daily weather and count totals",
+          "inquiry": "Weather, sunlight, shade, and safety",
+          "sel": "Choosing safe clothing and actions",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 06 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about weather, sun, and sky through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about weather, sun, and sky.”",
+            "Ask: “How does weather affect what we do?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does weather affect what we do?”",
+          "literacy": "Weather vocabulary and shared writing",
+          "math": "Graph daily weather and count totals",
+          "inquiry": "Weather, sunlight, shade, and safety",
+          "sel": "Choosing safe clothing and actions",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 06 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about weather, sun, and sky through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about weather, sun, and sky.”",
+            "Ask: “How does weather affect what we do?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does weather affect what we do?”",
+          "literacy": "Weather vocabulary and shared writing",
+          "math": "Graph daily weather and count totals",
+          "inquiry": "Weather, sunlight, shade, and safety",
+          "sel": "Choosing safe clothing and actions",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 06 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 06 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Weather, Sun, and Sky."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Weather vocabulary and shared writing."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Graph daily weather and count totals."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Weather, sunlight, shade, and safety."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Weather wheel."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Choosing safe clothing and actions."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 7,
+      "week": 7,
+      "title": "Shapes, Colors, and Design",
+      "theme": "2D/3D shapes, color mixing, spatial language, and composition",
+      "essentialQuestion": "How do shapes help us build and describe?",
+      "literacyFocus": "Shape words and positional words",
+      "mathFocus": "Identify, compose, and sort shapes",
+      "inquiryFocus": "Design, structure, and spatial reasoning",
+      "selFocus": "Persistence with design challenges",
+      "makerProject": "Shape city",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about shapes, colors, and design through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about shapes, colors, and design.”",
+            "Ask: “How do shapes help us build and describe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do shapes help us build and describe?”",
+          "literacy": "Shape words and positional words",
+          "math": "Identify, compose, and sort shapes",
+          "inquiry": "Design, structure, and spatial reasoning",
+          "sel": "Persistence with design challenges",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 07 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about shapes, colors, and design through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about shapes, colors, and design.”",
+            "Ask: “How do shapes help us build and describe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do shapes help us build and describe?”",
+          "literacy": "Shape words and positional words",
+          "math": "Identify, compose, and sort shapes",
+          "inquiry": "Design, structure, and spatial reasoning",
+          "sel": "Persistence with design challenges",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 07 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about shapes, colors, and design through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about shapes, colors, and design.”",
+            "Ask: “How do shapes help us build and describe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do shapes help us build and describe?”",
+          "literacy": "Shape words and positional words",
+          "math": "Identify, compose, and sort shapes",
+          "inquiry": "Design, structure, and spatial reasoning",
+          "sel": "Persistence with design challenges",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 07 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about shapes, colors, and design through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about shapes, colors, and design.”",
+            "Ask: “How do shapes help us build and describe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do shapes help us build and describe?”",
+          "literacy": "Shape words and positional words",
+          "math": "Identify, compose, and sort shapes",
+          "inquiry": "Design, structure, and spatial reasoning",
+          "sel": "Persistence with design challenges",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 07 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about shapes, colors, and design through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about shapes, colors, and design.”",
+            "Ask: “How do shapes help us build and describe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do shapes help us build and describe?”",
+          "literacy": "Shape words and positional words",
+          "math": "Identify, compose, and sort shapes",
+          "inquiry": "Design, structure, and spatial reasoning",
+          "sel": "Persistence with design challenges",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 07 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 07 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Shapes, Colors, and Design."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Shape words and positional words."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Identify, compose, and sort shapes."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Design, structure, and spatial reasoning."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Shape city."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Persistence with design challenges."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 8,
+      "week": 8,
+      "title": "Patterns, Music, and Movement",
+      "theme": "Sound, rhythm, visual patterns, body movement, and predictable text",
+      "essentialQuestion": "Where do we find patterns?",
+      "literacyFocus": "Rhyming, syllable claps, repeated words",
+      "mathFocus": "AB, AAB, ABC patterns",
+      "inquiryFocus": "Patterns in music, dance, and nature",
+      "selFocus": "Self-control through rhythm games",
+      "makerProject": "Pattern performance",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about patterns, music, and movement.”",
+            "Ask: “Where do we find patterns?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Where do we find patterns?”",
+          "literacy": "Rhyming, syllable claps, repeated words",
+          "math": "AB, AAB, ABC patterns",
+          "inquiry": "Patterns in music, dance, and nature",
+          "sel": "Self-control through rhythm games",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 08 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about patterns, music, and movement.”",
+            "Ask: “Where do we find patterns?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Where do we find patterns?”",
+          "literacy": "Rhyming, syllable claps, repeated words",
+          "math": "AB, AAB, ABC patterns",
+          "inquiry": "Patterns in music, dance, and nature",
+          "sel": "Self-control through rhythm games",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 08 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about patterns, music, and movement.”",
+            "Ask: “Where do we find patterns?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Where do we find patterns?”",
+          "literacy": "Rhyming, syllable claps, repeated words",
+          "math": "AB, AAB, ABC patterns",
+          "inquiry": "Patterns in music, dance, and nature",
+          "sel": "Self-control through rhythm games",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 08 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about patterns, music, and movement.”",
+            "Ask: “Where do we find patterns?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Where do we find patterns?”",
+          "literacy": "Rhyming, syllable claps, repeated words",
+          "math": "AB, AAB, ABC patterns",
+          "inquiry": "Patterns in music, dance, and nature",
+          "sel": "Self-control through rhythm games",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 08 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about patterns, music, and movement.”",
+            "Ask: “Where do we find patterns?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “Where do we find patterns?”",
+          "literacy": "Rhyming, syllable claps, repeated words",
+          "math": "AB, AAB, ABC patterns",
+          "inquiry": "Patterns in music, dance, and nature",
+          "sel": "Self-control through rhythm games",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 08 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 08 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Patterns, Music, and Movement."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Rhyming, syllable claps, repeated words."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: AB, AAB, ABC patterns."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Patterns in music, dance, and nature."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Pattern performance."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Self-control through rhythm games."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 9,
+      "week": 9,
+      "title": "Families, Homes, and Traditions",
+      "theme": "Family stories, homes, respect, traditions, and personal history",
+      "essentialQuestion": "What makes a home and family special?",
+      "literacyFocus": "Oral history and story sequence",
+      "mathFocus": "Compare lengths and heights",
+      "inquiryFocus": "Past/present, families, culture, and respect",
+      "selFocus": "Respect for differences",
+      "makerProject": "Family house drawing",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about families, homes, and traditions through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about families, homes, and traditions.”",
+            "Ask: “What makes a home and family special?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What makes a home and family special?”",
+          "literacy": "Oral history and story sequence",
+          "math": "Compare lengths and heights",
+          "inquiry": "Past/present, families, culture, and respect",
+          "sel": "Respect for differences",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 09 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about families, homes, and traditions through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about families, homes, and traditions.”",
+            "Ask: “What makes a home and family special?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What makes a home and family special?”",
+          "literacy": "Oral history and story sequence",
+          "math": "Compare lengths and heights",
+          "inquiry": "Past/present, families, culture, and respect",
+          "sel": "Respect for differences",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 09 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about families, homes, and traditions through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about families, homes, and traditions.”",
+            "Ask: “What makes a home and family special?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What makes a home and family special?”",
+          "literacy": "Oral history and story sequence",
+          "math": "Compare lengths and heights",
+          "inquiry": "Past/present, families, culture, and respect",
+          "sel": "Respect for differences",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 09 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about families, homes, and traditions through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about families, homes, and traditions.”",
+            "Ask: “What makes a home and family special?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What makes a home and family special?”",
+          "literacy": "Oral history and story sequence",
+          "math": "Compare lengths and heights",
+          "inquiry": "Past/present, families, culture, and respect",
+          "sel": "Respect for differences",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 09 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about families, homes, and traditions through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about families, homes, and traditions.”",
+            "Ask: “What makes a home and family special?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What makes a home and family special?”",
+          "literacy": "Oral history and story sequence",
+          "math": "Compare lengths and heights",
+          "inquiry": "Past/present, families, culture, and respect",
+          "sel": "Respect for differences",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 09 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 09 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Families, Homes, and Traditions."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Oral history and story sequence."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Compare lengths and heights."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Past/present, families, culture, and respect."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Family house drawing."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Respect for differences."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 10,
+      "week": 10,
+      "title": "Maps, Places, and Community",
+      "theme": "Classroom maps, positional language, community places, and symbols",
+      "essentialQuestion": "How can a map help us find and explain?",
+      "literacyFocus": "Map words and labels",
+      "mathFocus": "Count steps and compare distances",
+      "inquiryFocus": "Maps, symbols, places, and directions",
+      "selFocus": "Following directions safely",
+      "makerProject": "Classroom treasure map",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about maps, places, and community through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about maps, places, and community.”",
+            "Ask: “How can a map help us find and explain?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can a map help us find and explain?”",
+          "literacy": "Map words and labels",
+          "math": "Count steps and compare distances",
+          "inquiry": "Maps, symbols, places, and directions",
+          "sel": "Following directions safely",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 10 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about maps, places, and community through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about maps, places, and community.”",
+            "Ask: “How can a map help us find and explain?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can a map help us find and explain?”",
+          "literacy": "Map words and labels",
+          "math": "Count steps and compare distances",
+          "inquiry": "Maps, symbols, places, and directions",
+          "sel": "Following directions safely",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 10 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about maps, places, and community through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about maps, places, and community.”",
+            "Ask: “How can a map help us find and explain?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can a map help us find and explain?”",
+          "literacy": "Map words and labels",
+          "math": "Count steps and compare distances",
+          "inquiry": "Maps, symbols, places, and directions",
+          "sel": "Following directions safely",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 10 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about maps, places, and community through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about maps, places, and community.”",
+            "Ask: “How can a map help us find and explain?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can a map help us find and explain?”",
+          "literacy": "Map words and labels",
+          "math": "Count steps and compare distances",
+          "inquiry": "Maps, symbols, places, and directions",
+          "sel": "Following directions safely",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 10 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about maps, places, and community through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about maps, places, and community.”",
+            "Ask: “How can a map help us find and explain?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can a map help us find and explain?”",
+          "literacy": "Map words and labels",
+          "math": "Count steps and compare distances",
+          "inquiry": "Maps, symbols, places, and directions",
+          "sel": "Following directions safely",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 10 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 10 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Maps, Places, and Community."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Map words and labels."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count steps and compare distances."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Maps, symbols, places, and directions."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Classroom treasure map."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Following directions safely."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 11,
+      "week": 11,
+      "title": "Plants and Gardens",
+      "theme": "Seeds, plant parts, needs of living things, and observation journals",
+      "essentialQuestion": "What do plants need to grow?",
+      "literacyFocus": "Plant vocabulary and sequence words",
+      "mathFocus": "Measure plant growth informally",
+      "inquiryFocus": "Living things need water, light, and care",
+      "selFocus": "Care and responsibility",
+      "makerProject": "Seed cup and plant journal",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about plants and gardens through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about plants and gardens.”",
+            "Ask: “What do plants need to grow?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What do plants need to grow?”",
+          "literacy": "Plant vocabulary and sequence words",
+          "math": "Measure plant growth informally",
+          "inquiry": "Living things need water, light, and care",
+          "sel": "Care and responsibility",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 11 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about plants and gardens through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about plants and gardens.”",
+            "Ask: “What do plants need to grow?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What do plants need to grow?”",
+          "literacy": "Plant vocabulary and sequence words",
+          "math": "Measure plant growth informally",
+          "inquiry": "Living things need water, light, and care",
+          "sel": "Care and responsibility",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 11 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about plants and gardens through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about plants and gardens.”",
+            "Ask: “What do plants need to grow?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What do plants need to grow?”",
+          "literacy": "Plant vocabulary and sequence words",
+          "math": "Measure plant growth informally",
+          "inquiry": "Living things need water, light, and care",
+          "sel": "Care and responsibility",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 11 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about plants and gardens through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about plants and gardens.”",
+            "Ask: “What do plants need to grow?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What do plants need to grow?”",
+          "literacy": "Plant vocabulary and sequence words",
+          "math": "Measure plant growth informally",
+          "inquiry": "Living things need water, light, and care",
+          "sel": "Care and responsibility",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 11 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about plants and gardens through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about plants and gardens.”",
+            "Ask: “What do plants need to grow?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What do plants need to grow?”",
+          "literacy": "Plant vocabulary and sequence words",
+          "math": "Measure plant growth informally",
+          "inquiry": "Living things need water, light, and care",
+          "sel": "Care and responsibility",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 11 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 11 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Plants and Gardens."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Plant vocabulary and sequence words."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Measure plant growth informally."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Living things need water, light, and care."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Seed cup and plant journal."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Care and responsibility."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 12,
+      "week": 12,
+      "title": "Animals and Habitats",
+      "theme": "Animal needs, movement, habitats, care, and classification",
+      "essentialQuestion": "How do animals meet their needs?",
+      "literacyFocus": "Animal sounds and alliteration",
+      "mathFocus": "Sort and count animal groups",
+      "inquiryFocus": "Needs of living things and habitats",
+      "selFocus": "Gentleness and care",
+      "makerProject": "Habitat diorama",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about animals and habitats through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about animals and habitats.”",
+            "Ask: “How do animals meet their needs?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do animals meet their needs?”",
+          "literacy": "Animal sounds and alliteration",
+          "math": "Sort and count animal groups",
+          "inquiry": "Needs of living things and habitats",
+          "sel": "Gentleness and care",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 12 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about animals and habitats through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about animals and habitats.”",
+            "Ask: “How do animals meet their needs?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do animals meet their needs?”",
+          "literacy": "Animal sounds and alliteration",
+          "math": "Sort and count animal groups",
+          "inquiry": "Needs of living things and habitats",
+          "sel": "Gentleness and care",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 12 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about animals and habitats through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about animals and habitats.”",
+            "Ask: “How do animals meet their needs?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do animals meet their needs?”",
+          "literacy": "Animal sounds and alliteration",
+          "math": "Sort and count animal groups",
+          "inquiry": "Needs of living things and habitats",
+          "sel": "Gentleness and care",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 12 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about animals and habitats through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about animals and habitats.”",
+            "Ask: “How do animals meet their needs?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do animals meet their needs?”",
+          "literacy": "Animal sounds and alliteration",
+          "math": "Sort and count animal groups",
+          "inquiry": "Needs of living things and habitats",
+          "sel": "Gentleness and care",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 12 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about animals and habitats through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about animals and habitats.”",
+            "Ask: “How do animals meet their needs?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do animals meet their needs?”",
+          "literacy": "Animal sounds and alliteration",
+          "math": "Sort and count animal groups",
+          "inquiry": "Needs of living things and habitats",
+          "sel": "Gentleness and care",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 12 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 12 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Animals and Habitats."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Animal sounds and alliteration."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sort and count animal groups."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Needs of living things and habitats."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Habitat diorama."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Gentleness and care."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 13,
+      "week": 13,
+      "title": "Gratitude, Giving, and Storytelling",
+      "theme": "Gratitude, oral narratives, helping, sharing, and community care",
+      "essentialQuestion": "How can stories and actions show gratitude?",
+      "literacyFocus": "Retelling and story beginning/middle/end",
+      "mathFocus": "Add and take apart numbers to 5",
+      "inquiryFocus": "Community helpers and acts of care",
+      "selFocus": "Gratitude practice",
+      "makerProject": "Thank-you card workshop",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about gratitude, giving, and storytelling through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about gratitude, giving, and storytelling.”",
+            "Ask: “How can stories and actions show gratitude?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can stories and actions show gratitude?”",
+          "literacy": "Retelling and story beginning/middle/end",
+          "math": "Add and take apart numbers to 5",
+          "inquiry": "Community helpers and acts of care",
+          "sel": "Gratitude practice",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 13 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about gratitude, giving, and storytelling through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about gratitude, giving, and storytelling.”",
+            "Ask: “How can stories and actions show gratitude?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can stories and actions show gratitude?”",
+          "literacy": "Retelling and story beginning/middle/end",
+          "math": "Add and take apart numbers to 5",
+          "inquiry": "Community helpers and acts of care",
+          "sel": "Gratitude practice",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 13 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about gratitude, giving, and storytelling through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about gratitude, giving, and storytelling.”",
+            "Ask: “How can stories and actions show gratitude?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can stories and actions show gratitude?”",
+          "literacy": "Retelling and story beginning/middle/end",
+          "math": "Add and take apart numbers to 5",
+          "inquiry": "Community helpers and acts of care",
+          "sel": "Gratitude practice",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 13 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about gratitude, giving, and storytelling through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about gratitude, giving, and storytelling.”",
+            "Ask: “How can stories and actions show gratitude?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can stories and actions show gratitude?”",
+          "literacy": "Retelling and story beginning/middle/end",
+          "math": "Add and take apart numbers to 5",
+          "inquiry": "Community helpers and acts of care",
+          "sel": "Gratitude practice",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 13 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about gratitude, giving, and storytelling through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about gratitude, giving, and storytelling.”",
+            "Ask: “How can stories and actions show gratitude?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can stories and actions show gratitude?”",
+          "literacy": "Retelling and story beginning/middle/end",
+          "math": "Add and take apart numbers to 5",
+          "inquiry": "Community helpers and acts of care",
+          "sel": "Gratitude practice",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 13 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 13 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Gratitude, Giving, and Storytelling."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Retelling and story beginning/middle/end."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Add and take apart numbers to 5."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Community helpers and acts of care."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Thank-you card workshop."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Gratitude practice."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 14,
+      "week": 14,
+      "title": "Sounds, Rhymes, and Word Play",
+      "theme": "Phonological awareness, rhyme, syllables, beginning sounds, and playful language",
+      "essentialQuestion": "How do sounds make words playful?",
+      "literacyFocus": "Rhyme, syllables, onset sounds",
+      "mathFocus": "Count sounds, beats, and objects",
+      "inquiryFocus": "Language as communication",
+      "selFocus": "Confidence speaking aloud",
+      "makerProject": "Rhyme parade",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about sounds, rhymes, and word play through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about sounds, rhymes, and word play.”",
+            "Ask: “How do sounds make words playful?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do sounds make words playful?”",
+          "literacy": "Rhyme, syllables, onset sounds",
+          "math": "Count sounds, beats, and objects",
+          "inquiry": "Language as communication",
+          "sel": "Confidence speaking aloud",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 14 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about sounds, rhymes, and word play through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about sounds, rhymes, and word play.”",
+            "Ask: “How do sounds make words playful?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do sounds make words playful?”",
+          "literacy": "Rhyme, syllables, onset sounds",
+          "math": "Count sounds, beats, and objects",
+          "inquiry": "Language as communication",
+          "sel": "Confidence speaking aloud",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 14 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about sounds, rhymes, and word play through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about sounds, rhymes, and word play.”",
+            "Ask: “How do sounds make words playful?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do sounds make words playful?”",
+          "literacy": "Rhyme, syllables, onset sounds",
+          "math": "Count sounds, beats, and objects",
+          "inquiry": "Language as communication",
+          "sel": "Confidence speaking aloud",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 14 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about sounds, rhymes, and word play through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about sounds, rhymes, and word play.”",
+            "Ask: “How do sounds make words playful?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do sounds make words playful?”",
+          "literacy": "Rhyme, syllables, onset sounds",
+          "math": "Count sounds, beats, and objects",
+          "inquiry": "Language as communication",
+          "sel": "Confidence speaking aloud",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 14 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about sounds, rhymes, and word play through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about sounds, rhymes, and word play.”",
+            "Ask: “How do sounds make words playful?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do sounds make words playful?”",
+          "literacy": "Rhyme, syllables, onset sounds",
+          "math": "Count sounds, beats, and objects",
+          "inquiry": "Language as communication",
+          "sel": "Confidence speaking aloud",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 14 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 14 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Sounds, Rhymes, and Word Play."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Rhyme, syllables, onset sounds."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count sounds, beats, and objects."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Language as communication."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Rhyme parade."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Confidence speaking aloud."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 15,
+      "week": 15,
+      "title": "Measurement and Builders",
+      "theme": "Length, weight, capacity, comparison, blocks, and engineering design",
+      "essentialQuestion": "How can we compare and build carefully?",
+      "literacyFocus": "Measurement words and describing structures",
+      "mathFocus": "Measure with nonstandard units",
+      "inquiryFocus": "Structure, balance, and materials",
+      "selFocus": "Problem-solving and teamwork",
+      "makerProject": "Block bridge challenge",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about measurement and builders.”",
+            "Ask: “How can we compare and build carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we compare and build carefully?”",
+          "literacy": "Measurement words and describing structures",
+          "math": "Measure with nonstandard units",
+          "inquiry": "Structure, balance, and materials",
+          "sel": "Problem-solving and teamwork",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 15 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about measurement and builders.”",
+            "Ask: “How can we compare and build carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we compare and build carefully?”",
+          "literacy": "Measurement words and describing structures",
+          "math": "Measure with nonstandard units",
+          "inquiry": "Structure, balance, and materials",
+          "sel": "Problem-solving and teamwork",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 15 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about measurement and builders.”",
+            "Ask: “How can we compare and build carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we compare and build carefully?”",
+          "literacy": "Measurement words and describing structures",
+          "math": "Measure with nonstandard units",
+          "inquiry": "Structure, balance, and materials",
+          "sel": "Problem-solving and teamwork",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 15 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about measurement and builders.”",
+            "Ask: “How can we compare and build carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we compare and build carefully?”",
+          "literacy": "Measurement words and describing structures",
+          "math": "Measure with nonstandard units",
+          "inquiry": "Structure, balance, and materials",
+          "sel": "Problem-solving and teamwork",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 15 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about measurement and builders.”",
+            "Ask: “How can we compare and build carefully?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we compare and build carefully?”",
+          "literacy": "Measurement words and describing structures",
+          "math": "Measure with nonstandard units",
+          "inquiry": "Structure, balance, and materials",
+          "sel": "Problem-solving and teamwork",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 15 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 15 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Measurement and Builders."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Measurement words and describing structures."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Measure with nonstandard units."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Structure, balance, and materials."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Block bridge challenge."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Problem-solving and teamwork."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 16,
+      "week": 16,
+      "title": "Needs, Wants, Money, and Choices",
+      "theme": "Needs/wants, simple money ideas, sharing, saving, and classroom economy",
+      "essentialQuestion": "How do we make wise choices?",
+      "literacyFocus": "Decision words and opinion starters",
+      "mathFocus": "Count pennies/counters and compare amounts",
+      "inquiryFocus": "Needs, wants, goods, and services",
+      "selFocus": "Responsible decision-making",
+      "makerProject": "Classroom market",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about needs, wants, money, and choices through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about needs, wants, money, and choices.”",
+            "Ask: “How do we make wise choices?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we make wise choices?”",
+          "literacy": "Decision words and opinion starters",
+          "math": "Count pennies/counters and compare amounts",
+          "inquiry": "Needs, wants, goods, and services",
+          "sel": "Responsible decision-making",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 16 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about needs, wants, money, and choices through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about needs, wants, money, and choices.”",
+            "Ask: “How do we make wise choices?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we make wise choices?”",
+          "literacy": "Decision words and opinion starters",
+          "math": "Count pennies/counters and compare amounts",
+          "inquiry": "Needs, wants, goods, and services",
+          "sel": "Responsible decision-making",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 16 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about needs, wants, money, and choices through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about needs, wants, money, and choices.”",
+            "Ask: “How do we make wise choices?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we make wise choices?”",
+          "literacy": "Decision words and opinion starters",
+          "math": "Count pennies/counters and compare amounts",
+          "inquiry": "Needs, wants, goods, and services",
+          "sel": "Responsible decision-making",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 16 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about needs, wants, money, and choices through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about needs, wants, money, and choices.”",
+            "Ask: “How do we make wise choices?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we make wise choices?”",
+          "literacy": "Decision words and opinion starters",
+          "math": "Count pennies/counters and compare amounts",
+          "inquiry": "Needs, wants, goods, and services",
+          "sel": "Responsible decision-making",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 16 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about needs, wants, money, and choices through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about needs, wants, money, and choices.”",
+            "Ask: “How do we make wise choices?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we make wise choices?”",
+          "literacy": "Decision words and opinion starters",
+          "math": "Count pennies/counters and compare amounts",
+          "inquiry": "Needs, wants, goods, and services",
+          "sel": "Responsible decision-making",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 16 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 16 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Needs, Wants, Money, and Choices."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Decision words and opinion starters."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count pennies/counters and compare amounts."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Needs, wants, goods, and services."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Classroom market."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Responsible decision-making."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 17,
+      "week": 17,
+      "title": "Winter, Light, and Shadows",
+      "theme": "Light, shadows, winter safety, day/night observation, and art",
+      "essentialQuestion": "What can light and shadow show us?",
+      "literacyFocus": "Light/shadow vocabulary",
+      "mathFocus": "Compare shadow lengths",
+      "inquiryFocus": "Sunlight, shadow, day/night patterns",
+      "selFocus": "Safety in darkness and winter",
+      "makerProject": "Shadow puppet theatre",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about winter, light, and shadows through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about winter, light, and shadows.”",
+            "Ask: “What can light and shadow show us?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What can light and shadow show us?”",
+          "literacy": "Light/shadow vocabulary",
+          "math": "Compare shadow lengths",
+          "inquiry": "Sunlight, shadow, day/night patterns",
+          "sel": "Safety in darkness and winter",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 17 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about winter, light, and shadows through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about winter, light, and shadows.”",
+            "Ask: “What can light and shadow show us?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What can light and shadow show us?”",
+          "literacy": "Light/shadow vocabulary",
+          "math": "Compare shadow lengths",
+          "inquiry": "Sunlight, shadow, day/night patterns",
+          "sel": "Safety in darkness and winter",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 17 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about winter, light, and shadows through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about winter, light, and shadows.”",
+            "Ask: “What can light and shadow show us?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What can light and shadow show us?”",
+          "literacy": "Light/shadow vocabulary",
+          "math": "Compare shadow lengths",
+          "inquiry": "Sunlight, shadow, day/night patterns",
+          "sel": "Safety in darkness and winter",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 17 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about winter, light, and shadows through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about winter, light, and shadows.”",
+            "Ask: “What can light and shadow show us?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What can light and shadow show us?”",
+          "literacy": "Light/shadow vocabulary",
+          "math": "Compare shadow lengths",
+          "inquiry": "Sunlight, shadow, day/night patterns",
+          "sel": "Safety in darkness and winter",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 17 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about winter, light, and shadows through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about winter, light, and shadows.”",
+            "Ask: “What can light and shadow show us?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What can light and shadow show us?”",
+          "literacy": "Light/shadow vocabulary",
+          "math": "Compare shadow lengths",
+          "inquiry": "Sunlight, shadow, day/night patterns",
+          "sel": "Safety in darkness and winter",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 17 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 17 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Winter, Light, and Shadows."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Light/shadow vocabulary."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Compare shadow lengths."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Sunlight, shadow, day/night patterns."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Shadow puppet theatre."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Safety in darkness and winter."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 18,
+      "week": 18,
+      "title": "Midyear Review and Celebration",
+      "theme": "Review routines, letters/sounds, numbers, patterns, science, community, and midterm readiness",
+      "essentialQuestion": "What have I learned so far?",
+      "literacyFocus": "Review print, sounds, retelling, and oral language",
+      "mathFocus": "Review counting, shapes, patterns, and comparison",
+      "inquiryFocus": "Review observation, maps, living things, and weather",
+      "selFocus": "Pride and growth reflection",
+      "makerProject": "Midyear portfolio cover",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about midyear review and celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about midyear review and celebration.”",
+            "Ask: “What have I learned so far?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What have I learned so far?”",
+          "literacy": "Review print, sounds, retelling, and oral language",
+          "math": "Review counting, shapes, patterns, and comparison",
+          "inquiry": "Review observation, maps, living things, and weather",
+          "sel": "Pride and growth reflection",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 18 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about midyear review and celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about midyear review and celebration.”",
+            "Ask: “What have I learned so far?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What have I learned so far?”",
+          "literacy": "Review print, sounds, retelling, and oral language",
+          "math": "Review counting, shapes, patterns, and comparison",
+          "inquiry": "Review observation, maps, living things, and weather",
+          "sel": "Pride and growth reflection",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 18 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about midyear review and celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about midyear review and celebration.”",
+            "Ask: “What have I learned so far?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What have I learned so far?”",
+          "literacy": "Review print, sounds, retelling, and oral language",
+          "math": "Review counting, shapes, patterns, and comparison",
+          "inquiry": "Review observation, maps, living things, and weather",
+          "sel": "Pride and growth reflection",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 18 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about midyear review and celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about midyear review and celebration.”",
+            "Ask: “What have I learned so far?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What have I learned so far?”",
+          "literacy": "Review print, sounds, retelling, and oral language",
+          "math": "Review counting, shapes, patterns, and comparison",
+          "inquiry": "Review observation, maps, living things, and weather",
+          "sel": "Pride and growth reflection",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 18 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about midyear review and celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about midyear review and celebration.”",
+            "Ask: “What have I learned so far?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What have I learned so far?”",
+          "literacy": "Review print, sounds, retelling, and oral language",
+          "math": "Review counting, shapes, patterns, and comparison",
+          "inquiry": "Review observation, maps, living things, and weather",
+          "sel": "Pride and growth reflection",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 18 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 18 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Midyear Review and Celebration."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Review print, sounds, retelling, and oral language."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Review counting, shapes, patterns, and comparison."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Review observation, maps, living things, and weather."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Midyear portfolio cover."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Pride and growth reflection."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 19,
+      "week": 19,
+      "title": "New Year, Goals, and Growth Mindset",
+      "theme": "Goals, practice, mistakes, self-talk, and careful work habits",
+      "essentialQuestion": "How do we grow when learning is hard?",
+      "literacyFocus": "I can / I am learning sentence frames",
+      "mathFocus": "Count forward/back and compare strategies",
+      "inquiryFocus": "Growth as change over time",
+      "selFocus": "Self-management and persistence",
+      "makerProject": "Goal garden",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about new year, goals, and growth mindset through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about new year, goals, and growth mindset.”",
+            "Ask: “How do we grow when learning is hard?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we grow when learning is hard?”",
+          "literacy": "I can / I am learning sentence frames",
+          "math": "Count forward/back and compare strategies",
+          "inquiry": "Growth as change over time",
+          "sel": "Self-management and persistence",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 19 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about new year, goals, and growth mindset through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about new year, goals, and growth mindset.”",
+            "Ask: “How do we grow when learning is hard?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we grow when learning is hard?”",
+          "literacy": "I can / I am learning sentence frames",
+          "math": "Count forward/back and compare strategies",
+          "inquiry": "Growth as change over time",
+          "sel": "Self-management and persistence",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 19 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about new year, goals, and growth mindset through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about new year, goals, and growth mindset.”",
+            "Ask: “How do we grow when learning is hard?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we grow when learning is hard?”",
+          "literacy": "I can / I am learning sentence frames",
+          "math": "Count forward/back and compare strategies",
+          "inquiry": "Growth as change over time",
+          "sel": "Self-management and persistence",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 19 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about new year, goals, and growth mindset through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about new year, goals, and growth mindset.”",
+            "Ask: “How do we grow when learning is hard?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we grow when learning is hard?”",
+          "literacy": "I can / I am learning sentence frames",
+          "math": "Count forward/back and compare strategies",
+          "inquiry": "Growth as change over time",
+          "sel": "Self-management and persistence",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 19 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about new year, goals, and growth mindset through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about new year, goals, and growth mindset.”",
+            "Ask: “How do we grow when learning is hard?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we grow when learning is hard?”",
+          "literacy": "I can / I am learning sentence frames",
+          "math": "Count forward/back and compare strategies",
+          "inquiry": "Growth as change over time",
+          "sel": "Self-management and persistence",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 19 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 19 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: New Year, Goals, and Growth Mindset."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: I can / I am learning sentence frames."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count forward/back and compare strategies."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Growth as change over time."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Goal garden."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Self-management and persistence."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 20,
+      "week": 20,
+      "title": "Stories Around the World",
+      "theme": "Folktales, cultures, respect, geography, music, and art from many places",
+      "essentialQuestion": "How do stories travel across the world?",
+      "literacyFocus": "Characters, setting, and story sequence",
+      "mathFocus": "Compare story collections",
+      "inquiryFocus": "Maps, cultures, traditions, and respect",
+      "selFocus": "Social awareness",
+      "makerProject": "World story suitcase",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about stories around the world through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about stories around the world.”",
+            "Ask: “How do stories travel across the world?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do stories travel across the world?”",
+          "literacy": "Characters, setting, and story sequence",
+          "math": "Compare story collections",
+          "inquiry": "Maps, cultures, traditions, and respect",
+          "sel": "Social awareness",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 20 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about stories around the world through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about stories around the world.”",
+            "Ask: “How do stories travel across the world?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do stories travel across the world?”",
+          "literacy": "Characters, setting, and story sequence",
+          "math": "Compare story collections",
+          "inquiry": "Maps, cultures, traditions, and respect",
+          "sel": "Social awareness",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 20 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about stories around the world through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about stories around the world.”",
+            "Ask: “How do stories travel across the world?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do stories travel across the world?”",
+          "literacy": "Characters, setting, and story sequence",
+          "math": "Compare story collections",
+          "inquiry": "Maps, cultures, traditions, and respect",
+          "sel": "Social awareness",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 20 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about stories around the world through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about stories around the world.”",
+            "Ask: “How do stories travel across the world?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do stories travel across the world?”",
+          "literacy": "Characters, setting, and story sequence",
+          "math": "Compare story collections",
+          "inquiry": "Maps, cultures, traditions, and respect",
+          "sel": "Social awareness",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 20 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about stories around the world through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about stories around the world.”",
+            "Ask: “How do stories travel across the world?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do stories travel across the world?”",
+          "literacy": "Characters, setting, and story sequence",
+          "math": "Compare story collections",
+          "inquiry": "Maps, cultures, traditions, and respect",
+          "sel": "Social awareness",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 20 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 20 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Stories Around the World."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Characters, setting, and story sequence."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Compare story collections."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Maps, cultures, traditions, and respect."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: World story suitcase."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Social awareness."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 21,
+      "week": 21,
+      "title": "Living and Nonliving Things",
+      "theme": "Characteristics of living things, observation, classification, and care",
+      "essentialQuestion": "How can we tell what is living?",
+      "literacyFocus": "Living/nonliving vocabulary",
+      "mathFocus": "Sort, tally, and graph",
+      "inquiryFocus": "Living things grow and need resources",
+      "selFocus": "Care for classroom and nature",
+      "makerProject": "Living/nonliving museum",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about living and nonliving things through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about living and nonliving things.”",
+            "Ask: “How can we tell what is living?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we tell what is living?”",
+          "literacy": "Living/nonliving vocabulary",
+          "math": "Sort, tally, and graph",
+          "inquiry": "Living things grow and need resources",
+          "sel": "Care for classroom and nature",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 21 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about living and nonliving things through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about living and nonliving things.”",
+            "Ask: “How can we tell what is living?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we tell what is living?”",
+          "literacy": "Living/nonliving vocabulary",
+          "math": "Sort, tally, and graph",
+          "inquiry": "Living things grow and need resources",
+          "sel": "Care for classroom and nature",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 21 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about living and nonliving things through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about living and nonliving things.”",
+            "Ask: “How can we tell what is living?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we tell what is living?”",
+          "literacy": "Living/nonliving vocabulary",
+          "math": "Sort, tally, and graph",
+          "inquiry": "Living things grow and need resources",
+          "sel": "Care for classroom and nature",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 21 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about living and nonliving things through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about living and nonliving things.”",
+            "Ask: “How can we tell what is living?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we tell what is living?”",
+          "literacy": "Living/nonliving vocabulary",
+          "math": "Sort, tally, and graph",
+          "inquiry": "Living things grow and need resources",
+          "sel": "Care for classroom and nature",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 21 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about living and nonliving things through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about living and nonliving things.”",
+            "Ask: “How can we tell what is living?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we tell what is living?”",
+          "literacy": "Living/nonliving vocabulary",
+          "math": "Sort, tally, and graph",
+          "inquiry": "Living things grow and need resources",
+          "sel": "Care for classroom and nature",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 21 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 21 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Living and Nonliving Things."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Living/nonliving vocabulary."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sort, tally, and graph."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Living things grow and need resources."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Living/nonliving museum."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Care for classroom and nature."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 22,
+      "week": 22,
+      "title": "Water, Ice, and Weather Changes",
+      "theme": "Water states, melting/freezing, weather observations, and safety",
+      "essentialQuestion": "How can water change?",
+      "literacyFocus": "Water words and procedural language",
+      "mathFocus": "Sequence events and compare temperatures informally",
+      "inquiryFocus": "Water, ice, and weather change",
+      "selFocus": "Patience in experiments",
+      "makerProject": "Ice investigation",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water, ice, and weather changes through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water, ice, and weather changes.”",
+            "Ask: “How can water change?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can water change?”",
+          "literacy": "Water words and procedural language",
+          "math": "Sequence events and compare temperatures informally",
+          "inquiry": "Water, ice, and weather change",
+          "sel": "Patience in experiments",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 22 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water, ice, and weather changes through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water, ice, and weather changes.”",
+            "Ask: “How can water change?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can water change?”",
+          "literacy": "Water words and procedural language",
+          "math": "Sequence events and compare temperatures informally",
+          "inquiry": "Water, ice, and weather change",
+          "sel": "Patience in experiments",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 22 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water, ice, and weather changes through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water, ice, and weather changes.”",
+            "Ask: “How can water change?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can water change?”",
+          "literacy": "Water words and procedural language",
+          "math": "Sequence events and compare temperatures informally",
+          "inquiry": "Water, ice, and weather change",
+          "sel": "Patience in experiments",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 22 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water, ice, and weather changes through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water, ice, and weather changes.”",
+            "Ask: “How can water change?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can water change?”",
+          "literacy": "Water words and procedural language",
+          "math": "Sequence events and compare temperatures informally",
+          "inquiry": "Water, ice, and weather change",
+          "sel": "Patience in experiments",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 22 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water, ice, and weather changes through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water, ice, and weather changes.”",
+            "Ask: “How can water change?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can water change?”",
+          "literacy": "Water words and procedural language",
+          "math": "Sequence events and compare temperatures informally",
+          "inquiry": "Water, ice, and weather change",
+          "sel": "Patience in experiments",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 22 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 22 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Water, Ice, and Weather Changes."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Water words and procedural language."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sequence events and compare temperatures informally."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Water, ice, and weather change."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Ice investigation."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Patience in experiments."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 23,
+      "week": 23,
+      "title": "Earth Care and Stewardship",
+      "theme": "Reduce/reuse/recycle, clean spaces, habitats, and local service",
+      "essentialQuestion": "How can we take care of shared places?",
+      "literacyFocus": "Environmental vocabulary and shared writing",
+      "mathFocus": "Count/reuse materials and sort recycling",
+      "inquiryFocus": "Earth materials and human choices",
+      "selFocus": "Responsibility and service",
+      "makerProject": "Recycled art build",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about earth care and stewardship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about earth care and stewardship.”",
+            "Ask: “How can we take care of shared places?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we take care of shared places?”",
+          "literacy": "Environmental vocabulary and shared writing",
+          "math": "Count/reuse materials and sort recycling",
+          "inquiry": "Earth materials and human choices",
+          "sel": "Responsibility and service",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 23 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about earth care and stewardship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about earth care and stewardship.”",
+            "Ask: “How can we take care of shared places?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we take care of shared places?”",
+          "literacy": "Environmental vocabulary and shared writing",
+          "math": "Count/reuse materials and sort recycling",
+          "inquiry": "Earth materials and human choices",
+          "sel": "Responsibility and service",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 23 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about earth care and stewardship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about earth care and stewardship.”",
+            "Ask: “How can we take care of shared places?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we take care of shared places?”",
+          "literacy": "Environmental vocabulary and shared writing",
+          "math": "Count/reuse materials and sort recycling",
+          "inquiry": "Earth materials and human choices",
+          "sel": "Responsibility and service",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 23 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about earth care and stewardship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about earth care and stewardship.”",
+            "Ask: “How can we take care of shared places?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we take care of shared places?”",
+          "literacy": "Environmental vocabulary and shared writing",
+          "math": "Count/reuse materials and sort recycling",
+          "inquiry": "Earth materials and human choices",
+          "sel": "Responsibility and service",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 23 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about earth care and stewardship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about earth care and stewardship.”",
+            "Ask: “How can we take care of shared places?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can we take care of shared places?”",
+          "literacy": "Environmental vocabulary and shared writing",
+          "math": "Count/reuse materials and sort recycling",
+          "inquiry": "Earth materials and human choices",
+          "sel": "Responsibility and service",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 23 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 23 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Earth Care and Stewardship."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Environmental vocabulary and shared writing."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count/reuse materials and sort recycling."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Earth materials and human choices."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Recycled art build."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Responsibility and service."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 24,
+      "week": 24,
+      "title": "Transportation and Engineering",
+      "theme": "Wheels, ramps, motion, design, maps, and fair tests",
+      "essentialQuestion": "How do people and things move?",
+      "literacyFocus": "Transportation words and labels",
+      "mathFocus": "Measure ramp distance",
+      "inquiryFocus": "Push, pull, motion, and design testing",
+      "selFocus": "Fairness in taking turns",
+      "makerProject": "Ramp lab",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K",
+        "KHAE-TECH-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about transportation and engineering through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about transportation and engineering.”",
+            "Ask: “How do people and things move?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people and things move?”",
+          "literacy": "Transportation words and labels",
+          "math": "Measure ramp distance",
+          "inquiry": "Push, pull, motion, and design testing",
+          "sel": "Fairness in taking turns",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 24 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about transportation and engineering through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about transportation and engineering.”",
+            "Ask: “How do people and things move?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people and things move?”",
+          "literacy": "Transportation words and labels",
+          "math": "Measure ramp distance",
+          "inquiry": "Push, pull, motion, and design testing",
+          "sel": "Fairness in taking turns",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 24 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about transportation and engineering through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about transportation and engineering.”",
+            "Ask: “How do people and things move?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people and things move?”",
+          "literacy": "Transportation words and labels",
+          "math": "Measure ramp distance",
+          "inquiry": "Push, pull, motion, and design testing",
+          "sel": "Fairness in taking turns",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 24 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about transportation and engineering through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about transportation and engineering.”",
+            "Ask: “How do people and things move?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people and things move?”",
+          "literacy": "Transportation words and labels",
+          "math": "Measure ramp distance",
+          "inquiry": "Push, pull, motion, and design testing",
+          "sel": "Fairness in taking turns",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 24 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about transportation and engineering through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about transportation and engineering.”",
+            "Ask: “How do people and things move?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people and things move?”",
+          "literacy": "Transportation words and labels",
+          "math": "Measure ramp distance",
+          "inquiry": "Push, pull, motion, and design testing",
+          "sel": "Fairness in taking turns",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 24 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 24 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Transportation and Engineering."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Transportation words and labels."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Measure ramp distance."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Push, pull, motion, and design testing."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Ramp lab."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Fairness in taking turns."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 25,
+      "week": 25,
+      "title": "Jobs, Tools, and Community Helpers",
+      "theme": "Work, tools, safety, helpers, interviews, and community roles",
+      "essentialQuestion": "How do people help a community work?",
+      "literacyFocus": "Question words and interview practice",
+      "mathFocus": "Count tools and make helper graph",
+      "inquiryFocus": "Goods/services; helpers and responsibilities",
+      "selFocus": "Respect for workers",
+      "makerProject": "Community helper badge",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about jobs, tools, and community helpers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about jobs, tools, and community helpers.”",
+            "Ask: “How do people help a community work?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people help a community work?”",
+          "literacy": "Question words and interview practice",
+          "math": "Count tools and make helper graph",
+          "inquiry": "Goods/services; helpers and responsibilities",
+          "sel": "Respect for workers",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 25 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about jobs, tools, and community helpers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about jobs, tools, and community helpers.”",
+            "Ask: “How do people help a community work?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people help a community work?”",
+          "literacy": "Question words and interview practice",
+          "math": "Count tools and make helper graph",
+          "inquiry": "Goods/services; helpers and responsibilities",
+          "sel": "Respect for workers",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 25 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about jobs, tools, and community helpers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about jobs, tools, and community helpers.”",
+            "Ask: “How do people help a community work?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people help a community work?”",
+          "literacy": "Question words and interview practice",
+          "math": "Count tools and make helper graph",
+          "inquiry": "Goods/services; helpers and responsibilities",
+          "sel": "Respect for workers",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 25 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about jobs, tools, and community helpers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about jobs, tools, and community helpers.”",
+            "Ask: “How do people help a community work?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people help a community work?”",
+          "literacy": "Question words and interview practice",
+          "math": "Count tools and make helper graph",
+          "inquiry": "Goods/services; helpers and responsibilities",
+          "sel": "Respect for workers",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 25 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about jobs, tools, and community helpers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about jobs, tools, and community helpers.”",
+            "Ask: “How do people help a community work?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do people help a community work?”",
+          "literacy": "Question words and interview practice",
+          "math": "Count tools and make helper graph",
+          "inquiry": "Goods/services; helpers and responsibilities",
+          "sel": "Respect for workers",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 25 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 25 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Jobs, Tools, and Community Helpers."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Question words and interview practice."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count tools and make helper graph."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Goods/services; helpers and responsibilities."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Community helper badge."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Respect for workers."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 26,
+      "week": 26,
+      "title": "Symbols, Flags, and Civic Belonging",
+      "theme": "Classroom symbols, community symbols, respectful participation, and voice",
+      "essentialQuestion": "How do symbols help people remember and belong?",
+      "literacyFocus": "Symbol labels and shared pledge of care",
+      "mathFocus": "Sort symbols by attributes",
+      "inquiryFocus": "Civic symbols and classroom agreements",
+      "selFocus": "Respectful participation",
+      "makerProject": "Classroom flag",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about symbols, flags, and civic belonging through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about symbols, flags, and civic belonging.”",
+            "Ask: “How do symbols help people remember and belong?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do symbols help people remember and belong?”",
+          "literacy": "Symbol labels and shared pledge of care",
+          "math": "Sort symbols by attributes",
+          "inquiry": "Civic symbols and classroom agreements",
+          "sel": "Respectful participation",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 26 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about symbols, flags, and civic belonging through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about symbols, flags, and civic belonging.”",
+            "Ask: “How do symbols help people remember and belong?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do symbols help people remember and belong?”",
+          "literacy": "Symbol labels and shared pledge of care",
+          "math": "Sort symbols by attributes",
+          "inquiry": "Civic symbols and classroom agreements",
+          "sel": "Respectful participation",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 26 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about symbols, flags, and civic belonging through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about symbols, flags, and civic belonging.”",
+            "Ask: “How do symbols help people remember and belong?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do symbols help people remember and belong?”",
+          "literacy": "Symbol labels and shared pledge of care",
+          "math": "Sort symbols by attributes",
+          "inquiry": "Civic symbols and classroom agreements",
+          "sel": "Respectful participation",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 26 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about symbols, flags, and civic belonging through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about symbols, flags, and civic belonging.”",
+            "Ask: “How do symbols help people remember and belong?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do symbols help people remember and belong?”",
+          "literacy": "Symbol labels and shared pledge of care",
+          "math": "Sort symbols by attributes",
+          "inquiry": "Civic symbols and classroom agreements",
+          "sel": "Respectful participation",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 26 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about symbols, flags, and civic belonging through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about symbols, flags, and civic belonging.”",
+            "Ask: “How do symbols help people remember and belong?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do symbols help people remember and belong?”",
+          "literacy": "Symbol labels and shared pledge of care",
+          "math": "Sort symbols by attributes",
+          "inquiry": "Civic symbols and classroom agreements",
+          "sel": "Respectful participation",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 26 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 26 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Symbols, Flags, and Civic Belonging."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Symbol labels and shared pledge of care."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sort symbols by attributes."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Civic symbols and classroom agreements."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Classroom flag."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Respectful participation."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 27,
+      "week": 27,
+      "title": "Neighborhood Market and Number Stories",
+      "theme": "Buying/selling play, number stories, addition/subtraction within 10",
+      "essentialQuestion": "How do numbers help us solve real problems?",
+      "literacyFocus": "Story problem language",
+      "mathFocus": "Compose and decompose to 10",
+      "inquiryFocus": "Community economy and fair exchange",
+      "selFocus": "Patience and sharing resources",
+      "makerProject": "Market math book",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about neighborhood market and number stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about neighborhood market and number stories.”",
+            "Ask: “How do numbers help us solve real problems?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do numbers help us solve real problems?”",
+          "literacy": "Story problem language",
+          "math": "Compose and decompose to 10",
+          "inquiry": "Community economy and fair exchange",
+          "sel": "Patience and sharing resources",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 27 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about neighborhood market and number stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about neighborhood market and number stories.”",
+            "Ask: “How do numbers help us solve real problems?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do numbers help us solve real problems?”",
+          "literacy": "Story problem language",
+          "math": "Compose and decompose to 10",
+          "inquiry": "Community economy and fair exchange",
+          "sel": "Patience and sharing resources",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 27 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about neighborhood market and number stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about neighborhood market and number stories.”",
+            "Ask: “How do numbers help us solve real problems?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do numbers help us solve real problems?”",
+          "literacy": "Story problem language",
+          "math": "Compose and decompose to 10",
+          "inquiry": "Community economy and fair exchange",
+          "sel": "Patience and sharing resources",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 27 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about neighborhood market and number stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about neighborhood market and number stories.”",
+            "Ask: “How do numbers help us solve real problems?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do numbers help us solve real problems?”",
+          "literacy": "Story problem language",
+          "math": "Compose and decompose to 10",
+          "inquiry": "Community economy and fair exchange",
+          "sel": "Patience and sharing resources",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 27 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about neighborhood market and number stories through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about neighborhood market and number stories.”",
+            "Ask: “How do numbers help us solve real problems?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do numbers help us solve real problems?”",
+          "literacy": "Story problem language",
+          "math": "Compose and decompose to 10",
+          "inquiry": "Community economy and fair exchange",
+          "sel": "Patience and sharing resources",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 27 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 27 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Neighborhood Market and Number Stories."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Story problem language."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Compose and decompose to 10."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Community economy and fair exchange."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Market math book."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Patience and sharing resources."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 28,
+      "week": 28,
+      "title": "Health, Food, and Growing Bodies",
+      "theme": "Nutrition, hygiene, rest, safety, body awareness, and health choices",
+      "essentialQuestion": "How do we care for our bodies?",
+      "literacyFocus": "Health vocabulary",
+      "mathFocus": "Sort food groups/colors and count healthy choices",
+      "inquiryFocus": "Body needs and healthy habits",
+      "selFocus": "Self-care",
+      "makerProject": "Healthy plate collage",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about health, food, and growing bodies through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about health, food, and growing bodies.”",
+            "Ask: “How do we care for our bodies?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we care for our bodies?”",
+          "literacy": "Health vocabulary",
+          "math": "Sort food groups/colors and count healthy choices",
+          "inquiry": "Body needs and healthy habits",
+          "sel": "Self-care",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 28 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about health, food, and growing bodies through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about health, food, and growing bodies.”",
+            "Ask: “How do we care for our bodies?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we care for our bodies?”",
+          "literacy": "Health vocabulary",
+          "math": "Sort food groups/colors and count healthy choices",
+          "inquiry": "Body needs and healthy habits",
+          "sel": "Self-care",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 28 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about health, food, and growing bodies through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about health, food, and growing bodies.”",
+            "Ask: “How do we care for our bodies?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we care for our bodies?”",
+          "literacy": "Health vocabulary",
+          "math": "Sort food groups/colors and count healthy choices",
+          "inquiry": "Body needs and healthy habits",
+          "sel": "Self-care",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 28 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about health, food, and growing bodies through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about health, food, and growing bodies.”",
+            "Ask: “How do we care for our bodies?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we care for our bodies?”",
+          "literacy": "Health vocabulary",
+          "math": "Sort food groups/colors and count healthy choices",
+          "inquiry": "Body needs and healthy habits",
+          "sel": "Self-care",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 28 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about health, food, and growing bodies through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about health, food, and growing bodies.”",
+            "Ask: “How do we care for our bodies?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How do we care for our bodies?”",
+          "literacy": "Health vocabulary",
+          "math": "Sort food groups/colors and count healthy choices",
+          "inquiry": "Body needs and healthy habits",
+          "sel": "Self-care",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 28 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 28 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Health, Food, and Growing Bodies."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Health vocabulary."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sort food groups/colors and count healthy choices."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Body needs and healthy habits."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Healthy plate collage."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Self-care."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 29,
+      "week": 29,
+      "title": "Movement, Balance, and the Body",
+      "theme": "Gross motor skills, balance, rhythm, coordination, and body systems",
+      "essentialQuestion": "How does movement help us learn?",
+      "literacyFocus": "Action verbs",
+      "mathFocus": "Position, direction, and movement patterns",
+      "inquiryFocus": "Body movement, bones/muscles basics",
+      "selFocus": "Confidence and safe risk",
+      "makerProject": "Movement maze",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about movement, balance, and the body through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about movement, balance, and the body.”",
+            "Ask: “How does movement help us learn?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does movement help us learn?”",
+          "literacy": "Action verbs",
+          "math": "Position, direction, and movement patterns",
+          "inquiry": "Body movement, bones/muscles basics",
+          "sel": "Confidence and safe risk",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 29 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about movement, balance, and the body through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about movement, balance, and the body.”",
+            "Ask: “How does movement help us learn?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does movement help us learn?”",
+          "literacy": "Action verbs",
+          "math": "Position, direction, and movement patterns",
+          "inquiry": "Body movement, bones/muscles basics",
+          "sel": "Confidence and safe risk",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 29 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about movement, balance, and the body through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about movement, balance, and the body.”",
+            "Ask: “How does movement help us learn?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does movement help us learn?”",
+          "literacy": "Action verbs",
+          "math": "Position, direction, and movement patterns",
+          "inquiry": "Body movement, bones/muscles basics",
+          "sel": "Confidence and safe risk",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 29 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about movement, balance, and the body through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about movement, balance, and the body.”",
+            "Ask: “How does movement help us learn?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does movement help us learn?”",
+          "literacy": "Action verbs",
+          "math": "Position, direction, and movement patterns",
+          "inquiry": "Body movement, bones/muscles basics",
+          "sel": "Confidence and safe risk",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 29 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about movement, balance, and the body through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about movement, balance, and the body.”",
+            "Ask: “How does movement help us learn?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How does movement help us learn?”",
+          "literacy": "Action verbs",
+          "math": "Position, direction, and movement patterns",
+          "inquiry": "Body movement, bones/muscles basics",
+          "sel": "Confidence and safe risk",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 29 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 29 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Movement, Balance, and the Body."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Action verbs."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Position, direction, and movement patterns."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Body movement, bones/muscles basics."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Movement maze."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Confidence and safe risk."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 30,
+      "week": 30,
+      "title": "Art, Music, and Pattern Makers",
+      "theme": "Creative process, music, visual arts, dance, media, critique, and reflection",
+      "essentialQuestion": "How can patterns become art and music?",
+      "literacyFocus": "Describe art and music",
+      "mathFocus": "Patterns, shapes, and counting beats",
+      "inquiryFocus": "Sound, vibration, and design",
+      "selFocus": "Creative courage",
+      "makerProject": "Gallery and concert",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about art, music, and pattern makers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about art, music, and pattern makers.”",
+            "Ask: “How can patterns become art and music?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can patterns become art and music?”",
+          "literacy": "Describe art and music",
+          "math": "Patterns, shapes, and counting beats",
+          "inquiry": "Sound, vibration, and design",
+          "sel": "Creative courage",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 30 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about art, music, and pattern makers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about art, music, and pattern makers.”",
+            "Ask: “How can patterns become art and music?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can patterns become art and music?”",
+          "literacy": "Describe art and music",
+          "math": "Patterns, shapes, and counting beats",
+          "inquiry": "Sound, vibration, and design",
+          "sel": "Creative courage",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 30 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about art, music, and pattern makers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about art, music, and pattern makers.”",
+            "Ask: “How can patterns become art and music?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can patterns become art and music?”",
+          "literacy": "Describe art and music",
+          "math": "Patterns, shapes, and counting beats",
+          "inquiry": "Sound, vibration, and design",
+          "sel": "Creative courage",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 30 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about art, music, and pattern makers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about art, music, and pattern makers.”",
+            "Ask: “How can patterns become art and music?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can patterns become art and music?”",
+          "literacy": "Describe art and music",
+          "math": "Patterns, shapes, and counting beats",
+          "inquiry": "Sound, vibration, and design",
+          "sel": "Creative courage",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 30 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about art, music, and pattern makers through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about art, music, and pattern makers.”",
+            "Ask: “How can patterns become art and music?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can patterns become art and music?”",
+          "literacy": "Describe art and music",
+          "math": "Patterns, shapes, and counting beats",
+          "inquiry": "Sound, vibration, and design",
+          "sel": "Creative courage",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 30 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 30 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Art, Music, and Pattern Makers."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Describe art and music."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Patterns, shapes, and counting beats."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Sound, vibration, and design."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Gallery and concert."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Creative courage."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 31,
+      "week": 31,
+      "title": "Bugs, Gardens, and Tiny Worlds",
+      "theme": "Insects, habitats, gardens, observation tools, and stewardship",
+      "essentialQuestion": "What tiny living things can we observe?",
+      "literacyFocus": "Observation words and detail labels",
+      "mathFocus": "Count legs/wings and graph garden life",
+      "inquiryFocus": "Animal structures and habitats",
+      "selFocus": "Gentle observation",
+      "makerProject": "Bug field guide",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about bugs, gardens, and tiny worlds through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about bugs, gardens, and tiny worlds.”",
+            "Ask: “What tiny living things can we observe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What tiny living things can we observe?”",
+          "literacy": "Observation words and detail labels",
+          "math": "Count legs/wings and graph garden life",
+          "inquiry": "Animal structures and habitats",
+          "sel": "Gentle observation",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 31 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about bugs, gardens, and tiny worlds through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about bugs, gardens, and tiny worlds.”",
+            "Ask: “What tiny living things can we observe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What tiny living things can we observe?”",
+          "literacy": "Observation words and detail labels",
+          "math": "Count legs/wings and graph garden life",
+          "inquiry": "Animal structures and habitats",
+          "sel": "Gentle observation",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 31 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about bugs, gardens, and tiny worlds through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about bugs, gardens, and tiny worlds.”",
+            "Ask: “What tiny living things can we observe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What tiny living things can we observe?”",
+          "literacy": "Observation words and detail labels",
+          "math": "Count legs/wings and graph garden life",
+          "inquiry": "Animal structures and habitats",
+          "sel": "Gentle observation",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 31 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about bugs, gardens, and tiny worlds through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about bugs, gardens, and tiny worlds.”",
+            "Ask: “What tiny living things can we observe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What tiny living things can we observe?”",
+          "literacy": "Observation words and detail labels",
+          "math": "Count legs/wings and graph garden life",
+          "inquiry": "Animal structures and habitats",
+          "sel": "Gentle observation",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 31 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about bugs, gardens, and tiny worlds through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about bugs, gardens, and tiny worlds.”",
+            "Ask: “What tiny living things can we observe?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What tiny living things can we observe?”",
+          "literacy": "Observation words and detail labels",
+          "math": "Count legs/wings and graph garden life",
+          "inquiry": "Animal structures and habitats",
+          "sel": "Gentle observation",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 31 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 31 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Bugs, Gardens, and Tiny Worlds."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Observation words and detail labels."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Count legs/wings and graph garden life."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Animal structures and habitats."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Bug field guide."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Gentle observation."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 32,
+      "week": 32,
+      "title": "Water Worlds: Pond, River, and Ocean",
+      "theme": "Aquatic habitats, water safety, animals, maps, and environmental care",
+      "essentialQuestion": "How is water a home?",
+      "literacyFocus": "Water habitat vocabulary",
+      "mathFocus": "Sort/count water animals",
+      "inquiryFocus": "Habitats and resources",
+      "selFocus": "Care and safety near water",
+      "makerProject": "Water habitat mural",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water worlds: pond, river, and ocean through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water worlds: pond, river, and ocean.”",
+            "Ask: “How is water a home?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How is water a home?”",
+          "literacy": "Water habitat vocabulary",
+          "math": "Sort/count water animals",
+          "inquiry": "Habitats and resources",
+          "sel": "Care and safety near water",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 32 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water worlds: pond, river, and ocean through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water worlds: pond, river, and ocean.”",
+            "Ask: “How is water a home?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How is water a home?”",
+          "literacy": "Water habitat vocabulary",
+          "math": "Sort/count water animals",
+          "inquiry": "Habitats and resources",
+          "sel": "Care and safety near water",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 32 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water worlds: pond, river, and ocean through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water worlds: pond, river, and ocean.”",
+            "Ask: “How is water a home?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How is water a home?”",
+          "literacy": "Water habitat vocabulary",
+          "math": "Sort/count water animals",
+          "inquiry": "Habitats and resources",
+          "sel": "Care and safety near water",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 32 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water worlds: pond, river, and ocean through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water worlds: pond, river, and ocean.”",
+            "Ask: “How is water a home?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How is water a home?”",
+          "literacy": "Water habitat vocabulary",
+          "math": "Sort/count water animals",
+          "inquiry": "Habitats and resources",
+          "sel": "Care and safety near water",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 32 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about water worlds: pond, river, and ocean through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about water worlds: pond, river, and ocean.”",
+            "Ask: “How is water a home?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How is water a home?”",
+          "literacy": "Water habitat vocabulary",
+          "math": "Sort/count water animals",
+          "inquiry": "Habitats and resources",
+          "sel": "Care and safety near water",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 32 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 32 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Water Worlds: Pond, River, and Ocean."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Water habitat vocabulary."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sort/count water animals."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Habitats and resources."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Water habitat mural."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Care and safety near water."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 33,
+      "week": 33,
+      "title": "Space, Moon, and Day/Night",
+      "theme": "Sun, moon, stars, day/night, patterns, stories, and sky observation",
+      "essentialQuestion": "What patterns can we see in the sky?",
+      "literacyFocus": "Sky words and question sentences",
+      "mathFocus": "Sequence day/night and count sky observations",
+      "inquiryFocus": "Sun, moon, stars, and day/night patterns",
+      "selFocus": "Wonder and patience",
+      "makerProject": "Night-sky journal",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K",
+        "KHAE-TECH-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about space, moon, and day/night through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about space, moon, and day/night.”",
+            "Ask: “What patterns can we see in the sky?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What patterns can we see in the sky?”",
+          "literacy": "Sky words and question sentences",
+          "math": "Sequence day/night and count sky observations",
+          "inquiry": "Sun, moon, stars, and day/night patterns",
+          "sel": "Wonder and patience",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 33 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about space, moon, and day/night through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about space, moon, and day/night.”",
+            "Ask: “What patterns can we see in the sky?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What patterns can we see in the sky?”",
+          "literacy": "Sky words and question sentences",
+          "math": "Sequence day/night and count sky observations",
+          "inquiry": "Sun, moon, stars, and day/night patterns",
+          "sel": "Wonder and patience",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 33 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about space, moon, and day/night through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about space, moon, and day/night.”",
+            "Ask: “What patterns can we see in the sky?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What patterns can we see in the sky?”",
+          "literacy": "Sky words and question sentences",
+          "math": "Sequence day/night and count sky observations",
+          "inquiry": "Sun, moon, stars, and day/night patterns",
+          "sel": "Wonder and patience",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 33 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about space, moon, and day/night through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about space, moon, and day/night.”",
+            "Ask: “What patterns can we see in the sky?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What patterns can we see in the sky?”",
+          "literacy": "Sky words and question sentences",
+          "math": "Sequence day/night and count sky observations",
+          "inquiry": "Sun, moon, stars, and day/night patterns",
+          "sel": "Wonder and patience",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 33 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about space, moon, and day/night through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about space, moon, and day/night.”",
+            "Ask: “What patterns can we see in the sky?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What patterns can we see in the sky?”",
+          "literacy": "Sky words and question sentences",
+          "math": "Sequence day/night and count sky observations",
+          "inquiry": "Sun, moon, stars, and day/night patterns",
+          "sel": "Wonder and patience",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 33 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 33 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Space, Moon, and Day/Night."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Sky words and question sentences."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Sequence day/night and count sky observations."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Sun, moon, stars, and day/night patterns."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Night-sky journal."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Wonder and patience."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 34,
+      "week": 34,
+      "title": "Tools, Technology, and Digital Citizenship",
+      "theme": "Safe tools, unplugged coding, sequences, patterns, kindness online, and creation",
+      "essentialQuestion": "How can tools help us create safely?",
+      "literacyFocus": "Sequence words: first, next, last",
+      "mathFocus": "Coding patterns and directional language",
+      "inquiryFocus": "Simple tools and digital citizenship",
+      "selFocus": "Responsible choices",
+      "makerProject": "Unplugged robot map",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K",
+        "KHAE-TECH-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about tools, technology, and digital citizenship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about tools, technology, and digital citizenship.”",
+            "Ask: “How can tools help us create safely?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can tools help us create safely?”",
+          "literacy": "Sequence words: first, next, last",
+          "math": "Coding patterns and directional language",
+          "inquiry": "Simple tools and digital citizenship",
+          "sel": "Responsible choices",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 34 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about tools, technology, and digital citizenship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about tools, technology, and digital citizenship.”",
+            "Ask: “How can tools help us create safely?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can tools help us create safely?”",
+          "literacy": "Sequence words: first, next, last",
+          "math": "Coding patterns and directional language",
+          "inquiry": "Simple tools and digital citizenship",
+          "sel": "Responsible choices",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 34 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about tools, technology, and digital citizenship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about tools, technology, and digital citizenship.”",
+            "Ask: “How can tools help us create safely?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can tools help us create safely?”",
+          "literacy": "Sequence words: first, next, last",
+          "math": "Coding patterns and directional language",
+          "inquiry": "Simple tools and digital citizenship",
+          "sel": "Responsible choices",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 34 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about tools, technology, and digital citizenship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about tools, technology, and digital citizenship.”",
+            "Ask: “How can tools help us create safely?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can tools help us create safely?”",
+          "literacy": "Sequence words: first, next, last",
+          "math": "Coding patterns and directional language",
+          "inquiry": "Simple tools and digital citizenship",
+          "sel": "Responsible choices",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 34 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about tools, technology, and digital citizenship through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about tools, technology, and digital citizenship.”",
+            "Ask: “How can tools help us create safely?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can tools help us create safely?”",
+          "literacy": "Sequence words: first, next, last",
+          "math": "Coding patterns and directional language",
+          "inquiry": "Simple tools and digital citizenship",
+          "sel": "Responsible choices",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 34 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 34 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Tools, Technology, and Digital Citizenship."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Sequence words: first, next, last."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Coding patterns and directional language."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Simple tools and digital citizenship."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Unplugged robot map."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Responsible choices."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 35,
+      "week": 35,
+      "title": "My Big Question Capstone",
+      "theme": "Inquiry project: ask, plan, make, test, share, and revise",
+      "essentialQuestion": "What big question do I want to explore?",
+      "literacyFocus": "Question words and oral presentation",
+      "mathFocus": "Choose math tools for a project",
+      "inquiryFocus": "Inquiry, evidence, design, and communication",
+      "selFocus": "Confidence and collaboration",
+      "makerProject": "Big question board",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-SCI-K",
+        "KHAE-TECH-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about my big question capstone through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about my big question capstone.”",
+            "Ask: “What big question do I want to explore?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What big question do I want to explore?”",
+          "literacy": "Question words and oral presentation",
+          "math": "Choose math tools for a project",
+          "inquiry": "Inquiry, evidence, design, and communication",
+          "sel": "Confidence and collaboration",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 35 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about my big question capstone through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about my big question capstone.”",
+            "Ask: “What big question do I want to explore?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What big question do I want to explore?”",
+          "literacy": "Question words and oral presentation",
+          "math": "Choose math tools for a project",
+          "inquiry": "Inquiry, evidence, design, and communication",
+          "sel": "Confidence and collaboration",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 35 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about my big question capstone through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about my big question capstone.”",
+            "Ask: “What big question do I want to explore?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What big question do I want to explore?”",
+          "literacy": "Question words and oral presentation",
+          "math": "Choose math tools for a project",
+          "inquiry": "Inquiry, evidence, design, and communication",
+          "sel": "Confidence and collaboration",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 35 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about my big question capstone through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about my big question capstone.”",
+            "Ask: “What big question do I want to explore?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What big question do I want to explore?”",
+          "literacy": "Question words and oral presentation",
+          "math": "Choose math tools for a project",
+          "inquiry": "Inquiry, evidence, design, and communication",
+          "sel": "Confidence and collaboration",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 35 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about my big question capstone through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about my big question capstone.”",
+            "Ask: “What big question do I want to explore?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “What big question do I want to explore?”",
+          "literacy": "Question words and oral presentation",
+          "math": "Choose math tools for a project",
+          "inquiry": "Inquiry, evidence, design, and communication",
+          "sel": "Confidence and collaboration",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 35 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 35 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: My Big Question Capstone."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Question words and oral presentation."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Choose math tools for a project."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Inquiry, evidence, design, and communication."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Big question board."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Confidence and collaboration."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    },
+    {
+      "unit": 36,
+      "week": 36,
+      "title": "Kindergarten Review and Final Celebration",
+      "theme": "Cumulative review, final readiness assessment, portfolio, certificate, and family celebration",
+      "essentialQuestion": "How can I show I am ready for first grade?",
+      "literacyFocus": "Review letters, sounds, words, and stories",
+      "mathFocus": "Review numbers, shapes, data, and problem solving",
+      "inquiryFocus": "Review science/social studies/arts/wellness",
+      "selFocus": "Pride, gratitude, and next steps",
+      "makerProject": "Portfolio celebration",
+      "standards": [
+        "KHAE-DAP",
+        "KHAE-ELOF",
+        "KHAE-LIT-K",
+        "KHAE-MATH-K",
+        "KHAE-SEL-K",
+        "KHAE-ART-K",
+        "KHAE-HEALTH-K",
+        "KHAE-CIV-K"
+      ],
+      "lessons": [
+        {
+          "day": "Monday",
+          "title": "Wonder Launch",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about kindergarten review and final celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about kindergarten review and final celebration.”",
+            "Ask: “How can I show I am ready for first grade?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can I show I am ready for first grade?”",
+          "literacy": "Review letters, sounds, words, and stories",
+          "math": "Review numbers, shapes, data, and problem solving",
+          "inquiry": "Review science/social studies/arts/wellness",
+          "sel": "Pride, gratitude, and next steps",
+          "workshop": "Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 36 Monday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Tuesday",
+          "title": "Guided Skill Lab",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about kindergarten review and final celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about kindergarten review and final celebration.”",
+            "Ask: “How can I show I am ready for first grade?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can I show I am ready for first grade?”",
+          "literacy": "Review letters, sounds, words, and stories",
+          "math": "Review numbers, shapes, data, and problem solving",
+          "inquiry": "Review science/social studies/arts/wellness",
+          "sel": "Pride, gratitude, and next steps",
+          "workshop": "Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 36 Tuesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Wednesday",
+          "title": "Inquiry Workshop",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about kindergarten review and final celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about kindergarten review and final celebration.”",
+            "Ask: “How can I show I am ready for first grade?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can I show I am ready for first grade?”",
+          "literacy": "Review letters, sounds, words, and stories",
+          "math": "Review numbers, shapes, data, and problem solving",
+          "inquiry": "Review science/social studies/arts/wellness",
+          "sel": "Pride, gratitude, and next steps",
+          "workshop": "Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 36 Wednesday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Thursday",
+          "title": "Create & Communicate",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about kindergarten review and final celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about kindergarten review and final celebration.”",
+            "Ask: “How can I show I am ready for first grade?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can I show I am ready for first grade?”",
+          "literacy": "Review letters, sounds, words, and stories",
+          "math": "Review numbers, shapes, data, and problem solving",
+          "inquiry": "Review science/social studies/arts/wellness",
+          "sel": "Pride, gratitude, and next steps",
+          "workshop": "Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 36 Thursday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        },
+        {
+          "day": "Friday",
+          "title": "Review, Assessment & Reflection",
+          "duration": "45–75 minute flexible learning block plus centers",
+          "objective": "Children participate in a joyful, developmentally appropriate lesson about kindergarten review and final celebration through language, math, inquiry, movement, and creation.",
+          "materials": [
+            "Picture cards",
+            "Drawing tools",
+            "Counters or blocks",
+            "Story basket",
+            "Movement space",
+            "Portfolio folder"
+          ],
+          "teacherScript": [
+            "Welcome: “Today we are learning about kindergarten review and final celebration.”",
+            "Ask: “How can I show I am ready for first grade?”",
+            "Model one idea with objects, pictures, movement, and language.",
+            "Invite children to try, talk, build, draw, or dramatize.",
+            "Close by asking each child to share one word, count, movement, drawing, or idea."
+          ],
+          "morningCircle": "Welcome song, visual schedule, feelings check-in, and question of the day: “How can I show I am ready for first grade?”",
+          "literacy": "Review letters, sounds, words, and stories",
+          "math": "Review numbers, shapes, data, and problem solving",
+          "inquiry": "Review science/social studies/arts/wellness",
+          "sel": "Pride, gratitude, and next steps",
+          "workshop": "Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.",
+          "centers": [
+            "Teacher table",
+            "Math/manipulative bin",
+            "Art/maker station",
+            "Dramatic play",
+            "Movement/music",
+            "Book corner",
+            "Calm reflection spot"
+          ],
+          "printable": "Unit 36 Friday: draw, trace, count, tell, and reflect sheet.",
+          "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
+          "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item."
+        }
+      ],
+      "weeklyAssessment": {
+        "title": "Unit 36 Mastery Check",
+        "passingScore": 80,
+        "items": [
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Kindergarten Review and Final Celebration."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Participates in the literacy focus: Review letters, sounds, words, and stories."
+          },
+          {
+            "domain": "Literacy",
+            "points": 1,
+            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+          },
+          {
+            "domain": "Writing/Fine Motor",
+            "points": 1,
+            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Completes a hands-on math task: Review numbers, shapes, data, and problem solving."
+          },
+          {
+            "domain": "Math",
+            "points": 1,
+            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+          },
+          {
+            "domain": "Inquiry",
+            "points": 1,
+            "prompt": "Observes, sorts, maps, builds, tests, or explains: Review science/social studies/arts/wellness."
+          },
+          {
+            "domain": "Arts/Workshop",
+            "points": 1,
+            "prompt": "Completes or contributes to the maker project: Portfolio celebration."
+          },
+          {
+            "domain": "SEL",
+            "points": 1,
+            "prompt": "Practices the social-emotional focus: Pride, gratitude, and next steps."
+          },
+          {
+            "domain": "Participation",
+            "points": 1,
+            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+          }
+        ]
+      }
+    }
+  ],
+  "assessments": {
+    "midterm": {
+      "title": "Kindergarten Midyear Demonstration",
+      "unit": 18,
+      "passingScore": 80,
+      "itemCount": 40,
+      "items": [
+        {
+          "number": 1,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 2,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 3,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 4,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 5,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 6,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 7,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 8,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 9,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 10,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 11,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 12,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 13,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 14,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 15,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 16,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 17,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 18,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 19,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 20,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 21,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 22,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 23,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 24,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 25,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 26,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 27,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 28,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 29,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 30,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 31,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 32,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 33,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 34,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 35,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 36,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 37,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 38,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 39,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 40,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        }
+      ]
+    },
+    "final": {
+      "title": "Kindergarten Final Readiness Demonstration",
+      "unit": 36,
+      "passingScore": 80,
+      "itemCount": 50,
+      "items": [
+        {
+          "number": 1,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 2,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 3,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 4,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 5,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 6,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 7,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 8,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 9,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 10,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 11,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 12,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 13,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 14,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 15,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 16,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 17,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 18,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 19,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 20,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 21,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 22,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 23,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 24,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 25,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 26,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 27,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 28,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 29,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 30,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 31,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 32,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 33,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 34,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 35,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 36,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 37,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 38,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 39,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 40,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 41,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 42,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 43,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 44,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 45,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        },
+        {
+          "number": 46,
+          "domain": "Literacy",
+          "points": 1,
+          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+        },
+        {
+          "number": 47,
+          "domain": "Math",
+          "points": 1,
+          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+        },
+        {
+          "number": 48,
+          "domain": "Inquiry",
+          "points": 1,
+          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+        },
+        {
+          "number": 49,
+          "domain": "SEL",
+          "points": 1,
+          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+        },
+        {
+          "number": 50,
+          "domain": "Arts/Movement",
+          "points": 1,
+          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+        }
+      ]
+    },
+    "certification": {
+      "threshold": 80,
+      "requires": [
+        "Weekly assessment average at or above 80%",
+        "Midterm score at or above 80%",
+        "Final score at or above 80%",
+        "Adult mentor marks portfolio evidence complete"
+      ]
+    }
+  }
+};
