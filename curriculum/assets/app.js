@@ -2,25 +2,55 @@
   "use strict";
 
   const DATA = window.KHAE_KINDERGARTEN_DATA;
-  const KEY = "khaemenes_kindergarten_36_aplus_v1";
+  const LEGACY_KEY = "khaemenes_kindergarten_36_aplus_v1";
+  const CONTINUITY = window.KhaemenesKinderContinuity || null;
 
   const $ = (id) => document.getElementById(id);
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, char => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
   }[char]));
 
-  function readState(){
+  function fallbackState(){
+    return {
+      student:"Kindergarten Scholar",
+      weekly:{},
+      midterm:0,
+      final:0,
+      portfolio:false
+    };
+  }
+
+  function readLegacy(){
     try{
-      return JSON.parse(localStorage.getItem(KEY)) || {student:"Kindergarten Scholar", weekly:{}, midterm:0, final:0, portfolio:false};
+      return JSON.parse(localStorage.getItem(LEGACY_KEY)) || fallbackState();
     }catch{
-      return {student:"Kindergarten Scholar", weekly:{}, midterm:0, final:0, portfolio:false};
+      return fallbackState();
     }
+  }
+
+  function readState(){
+    return CONTINUITY
+      ? CONTINUITY.loadCurriculumState(fallbackState())
+      : readLegacy();
   }
 
   let state = readState();
 
   function save(){
-    localStorage.setItem(KEY, JSON.stringify(state));
+    if(CONTINUITY){
+      state=CONTINUITY.saveCurriculumState(state);
+    }else{
+      localStorage.setItem(LEGACY_KEY,JSON.stringify(state));
+    }
+  }
+
+  function learnerSummary(){
+    return CONTINUITY?.getLearnerSummary?.() || {
+      hasProfile:false,
+      nickname:null,
+      mentor:null,
+      guardianAuthorized:false
+    };
   }
 
   function weeklyAverage(){
@@ -34,17 +64,72 @@
   }
 
   function certificationReady(){
-    return weeklyAverage() >= 80 && Number(state.midterm || 0) >= 80 && Number(state.final || 0) >= 80 && !!state.portfolio;
+    return weeklyAverage() >= 80 &&
+      Number(state.midterm || 0) >= 80 &&
+      Number(state.final || 0) >= 80 &&
+      !!state.portfolio;
+  }
+
+  function renderLearnerLink(){
+    const target=$("learnerLink");
+    if(!target) return;
+
+    const learner=learnerSummary();
+    if(!learner.hasProfile){
+      target.innerHTML=`
+        <div class="profile-box">
+          <h3>Standalone curriculum record</h3>
+          <p>No shared Khaemenes learner profile is active in this browser. The curriculum still works with the existing local record.</p>
+          <div class="actions">
+            <a class="button gold" href="../index.html#mentor">Set up learner & mentor</a>
+          </div>
+        </div>`;
+      $("studentName").readOnly=false;
+      return;
+    }
+
+    const mentor=learner.mentor || {};
+    target.innerHTML=`
+      <div class="profile-box linked-learner">
+        <div class="linked-mentor-avatar" style="--mentor-a:${esc(mentor.colors?.[0] || "#f6bf3a")};--mentor-b:${esc(mentor.colors?.[1] || "#ef6a66")}">${esc(mentor.avatar || "🌱")}</div>
+        <div>
+          <h3>${esc(learner.nickname || "Kinder Garden learner")} · Linked Khaemenes Learner</h3>
+          <p><strong>${esc(mentor.name || "Mentor")}</strong> continues as this learner's Kinder Garden mentor. Curriculum scores are attached to the stable learner ID and mirrored to the legacy record key for compatibility.</p>
+          <div class="badges">
+            <span class="badge">Learner ID linked</span>
+            <span class="badge">${learner.guardianAuthorized ? "Guardian authorization active" : "Guardian review needed"}</span>
+            <span class="badge">Local browser record</span>
+          </div>
+          <div class="actions">
+            <a class="button" href="../index.html#mentor">Open My Mentor</a>
+            <a class="button light" href="../index.html#mygarden">Open My Garden</a>
+          </div>
+        </div>
+      </div>`;
+
+    if(learner.nickname){
+      state.student=learner.nickname;
+      $("studentName").value=learner.nickname;
+      $("studentName").readOnly=true;
+      save();
+    }
   }
 
   function renderDashboard(){
     const avg = weeklyAverage();
     const done = completedUnits();
     const ready = certificationReady();
+    const learner=learnerSummary();
+
+    if(learner.hasProfile && learner.nickname){
+      state.student=learner.nickname;
+    }
+
     $("studentName").value = state.student || "";
     $("midtermScore").value = state.midterm || "";
     $("finalScore").value = state.final || "";
     $("portfolio").checked = !!state.portfolio;
+
     $("summary").innerHTML = `
       <div class="grid cols-4">
         <article class="card stat"><strong>${done}/36</strong><span>Units at 80%+</span></article>
@@ -61,7 +146,9 @@
           <button type="button" class="button" id="exportBtn">Export Records</button>
         </div>
       </div>`;
+
     $("exportBtn").addEventListener("click", exportRecords);
+    renderLearnerLink();
   }
 
   function renderUnits(){
@@ -82,6 +169,7 @@
           <a class="button light" href="printables/unit-${String(unit.unit).padStart(2,"0")}-packet.html">Printable</a>
         </div>
       </article>`).join("");
+
     document.querySelectorAll("[data-score]").forEach(input => {
       input.addEventListener("input", () => {
         const value = Math.max(0, Math.min(100, Number(input.value || 0)));
@@ -94,7 +182,11 @@
 
   function bindProfile(){
     $("saveProfile").addEventListener("click", () => {
-      state.student = $("studentName").value.trim() || "Kindergarten Scholar";
+      const learner=learnerSummary();
+      state.student = learner.hasProfile && learner.nickname
+        ? learner.nickname
+        : ($("studentName").value.trim() || "Kindergarten Scholar");
+
       state.midterm = Math.max(0, Math.min(100, Number($("midtermScore").value || 0)));
       state.final = Math.max(0, Math.min(100, Number($("finalScore").value || 0)));
       state.portfolio = $("portfolio").checked;
@@ -102,22 +194,51 @@
       renderDashboard();
       renderUnits();
     });
+
     $("clearRecords").addEventListener("click", () => {
-      if(!confirm("Clear local kindergarten records on this device?")) return;
-      localStorage.removeItem(KEY);
-      state = readState();
+      const learner=learnerSummary();
+      const wording=learner.hasProfile
+        ? `Clear only ${learner.nickname || "this learner"}'s local Kindergarten curriculum record on this device? The learner profile, mentor, Crechè favorites, and Preschool history will remain.`
+        : "Clear local kindergarten curriculum records on this device?";
+
+      if(!confirm(wording)) return;
+
+      if(CONTINUITY){
+        CONTINUITY.clearActiveCurriculumRecord();
+        state=CONTINUITY.loadCurriculumState(fallbackState());
+      }else{
+        localStorage.removeItem(LEGACY_KEY);
+        state=readLegacy();
+      }
+
       renderDashboard();
       renderUnits();
     });
   }
 
   function exportRecords(){
-    const payload = {course:DATA.course.title, exported:new Date().toISOString(), state};
+    const learner=learnerSummary();
+    const payload = {
+      course:DATA.course.title,
+      exported:new Date().toISOString(),
+      learner:learner.hasProfile ? {
+        learnerId:learner.learnerId,
+        nickname:learner.nickname,
+        ageBand:learner.ageBand,
+        pathway:learner.pathway,
+        mentorId:learner.mentorId,
+        mentorName:learner.mentor?.name || null,
+        guardianAuthorized:learner.guardianAuthorized
+      } : null,
+      state,
+      note:"Family-controlled local educational record. Curriculum scores are not diagnoses. Existing legacy curriculum compatibility is preserved."
+    };
     const blob = new Blob([JSON.stringify(payload,null,2)], {type:"application/json"});
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "khaemenes-kindergarten-records.json";
+    const slug=(learner.nickname || state.student || "learner").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+    a.download = `khaemenes-kindergarten-${slug || "learner"}-records.json`;
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
@@ -135,9 +256,18 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     $("year").textContent = new Date().getFullYear();
+    state=readState();
     bindProfile();
     renderDashboard();
     renderUnits();
     renderStandards();
+
+    if(CONTINUITY?.subscribe){
+      CONTINUITY.subscribe(()=>{
+        state=readState();
+        renderDashboard();
+        renderUnits();
+      });
+    }
   });
 })();
