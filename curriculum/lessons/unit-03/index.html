@@ -2,126 +2,1253 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ff87c1">
   <title>Unit 03 — Feelings, Friendship, and Voice</title>
-  <link rel="stylesheet" href="../../assets/styles.css">
+  <style>
+    :root{
+      --ink:#253047;
+      --muted:#55657d;
+      --navy:#2e4f8f;
+      --sky:#7ac7ff;
+      --pink:#ff87c1;
+      --sun:#ffd76b;
+      --mint:#9ef0b0;
+      --lilac:#bca6ff;
+      --coral:#ff9aa7;
+      --paper:#ffffff;
+      --bg1:#fff8fc;
+      --bg2:#eef8ff;
+      --bg3:#fff9ea;
+      --shadow:0 18px 42px rgba(63,88,137,.10);
+      --shadow2:0 12px 24px rgba(63,88,137,.14);
+      --radius:26px;
+      --radius-sm:16px;
+    }
+    html, body { min-height: 100%; }
+    body{
+      margin:0 !important;
+      font-family: "Comic Sans MS","Comic Sans","Chalkboard SE","Trebuchet MS",system-ui,sans-serif !important;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,.96) 0%, rgba(255,255,255,.93) 18%, rgba(255,246,252,.92) 18.5%, rgba(255,246,252,.92) 40%, rgba(239,248,255,.94) 40.5%, rgba(239,248,255,.94) 63%, rgba(255,249,233,.96) 63.5%, rgba(255,249,233,.96) 100%) !important;
+      color:var(--ink) !important;
+      overflow-x:hidden;
+    }
+    *{ box-sizing:border-box; }
+    a{ color:inherit; }
+    button, input, textarea{ font:inherit; }
+    .kg-shell{
+      width:min(1120px, calc(100% - 32px));
+      margin-inline:auto;
+    }
+    .kg-header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+      border-bottom:2px solid rgba(255,138,199,.35);
+    }
+    .kg-nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      padding:12px 0;
+    }
+    .kg-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:var(--ink);
+    }
+    .kg-seal{
+      width:50px; height:50px;
+      display:grid; place-items:center;
+      border-radius:16px;
+      background:linear-gradient(135deg, #ff7fba, #ffd76b);
+      color:white;
+      font-weight:900;
+      box-shadow:0 10px 24px rgba(255,127,186,.25);
+    }
+    .kg-brand strong{ font-size:18px; }
+    .kg-brand small{ display:block; font-size:13px; opacity:.75; }
+    .kg-navlinks{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+    .kg-navlinks a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:#ffffff;
+      border:2px solid rgba(255, 182, 214, .95);
+      border-radius:999px;
+      padding:10px 14px;
+      color:#24354d;
+      text-decoration:none;
+      box-shadow:0 6px 14px rgba(63,88,137,.08);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .kg-navlinks a:hover{
+      transform: translateY(-1px);
+      border-color: rgba(122,199,255,.9);
+      box-shadow:0 10px 18px rgba(63,88,137,.12);
+    }
+
+    .kg-hero{ padding:24px 0 10px; }
+    .kg-hero-inner{
+      text-align:center;
+      background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.98));
+      border:2px solid rgba(122,199,255,.22);
+      border-radius:28px;
+      box-shadow:0 18px 50px rgba(63,88,137,.10);
+      padding:28px 18px;
+    }
+    .kg-kicker{
+      display:inline-block;
+      background:linear-gradient(135deg, #ff87c1, #ffd46b);
+      color:white;
+      padding:8px 14px;
+      border-radius:999px;
+      font-weight:700;
+      letter-spacing:.03em;
+      margin:0 0 10px;
+    }
+    h1{
+      margin:12px 0 8px !important;
+      font-family: "Comic Sans MS","Comic Sans","Chalkboard SE","Trebuchet MS",sans-serif !important;
+      font-size:clamp(2.2rem, 4vw, 4rem) !important;
+      color:var(--pink) !important;
+      text-shadow:2px 2px 0 rgba(255,255,255,.95), 0 10px 24px rgba(255,91,157,.12);
+    }
+    .kg-lead{
+      max-width:760px;
+      margin:0 auto;
+      font-size:1.12rem;
+      line-height:1.65;
+      color:#45556f;
+    }
+    .kg-hero-badges{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+      margin:18px 0 0;
+    }
+    .kg-hero-badges span,
+    .kg-badge{
+      background:#fff;
+      border:2px solid rgba(255, 182, 214, .85);
+      border-radius:999px;
+      padding:8px 12px;
+      box-shadow:0 6px 14px rgba(63,88,137,.08);
+    }
+
+    .kg-card,
+    .kg-progress-card,
+    .kg-mentor,
+    .kg-week-card,
+    .kg-panel,
+    .kg-mentor-panel,
+    .kg-teacher-details{
+      background:rgba(255,255,255,.95) !important;
+      border:2px solid rgba(122,199,255,.18) !important;
+      border-radius:24px !important;
+      box-shadow:0 18px 40px rgba(63,88,137,.10) !important;
+    }
+
+    .kg-progress-card{
+      margin:18px auto 0;
+      padding:18px;
+      max-width:760px;
+    }
+    .kg-progress-top{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:center;
+      margin-bottom:10px;
+      color:#34425b;
+    }
+    .kg-progress-track{
+      height:12px;
+      border-radius:999px;
+      background:#eff3fb;
+      overflow:hidden;
+    }
+    .kg-progress-track > span{
+      display:block;
+      height:100%;
+      width:0;
+      border-radius:999px;
+      background:linear-gradient(90deg, #7ac7ff, #ff87c1, #ffd76b);
+      transition:width .25s ease;
+    }
+    .kg-growth{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      margin-top:12px;
+      font-size:1.5rem;
+    }
+    .kg-growth .grow{
+      transition:transform .18s ease, filter .18s ease, opacity .18s ease;
+      opacity:.42;
+      filter:saturate(.75);
+    }
+    .kg-growth .grow.on{
+      opacity:1;
+      filter:saturate(1.15);
+      transform:translateY(-2px) scale(1.08);
+    }
+
+    .kg-mentor{
+      margin-top:18px;
+      padding:18px;
+      max-width:960px;
+      margin-inline:auto;
+    }
+    .kg-mentor-grid{
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:18px;
+      align-items:center;
+      text-align:left;
+    }
+    .kg-mentor-avatar{
+      width:96px; height:96px;
+      border-radius:28px;
+      margin-inline:auto;
+      display:grid; place-items:center;
+      font-size:3rem;
+      background:linear-gradient(135deg, #ff87c1, #7ac7ff, #9ef0b0);
+      box-shadow:0 14px 28px rgba(127,174,255,.22);
+    }
+    .kg-mentor-actions,
+    .kg-actions,
+    .kg-lesson-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+    .kg-mentor-note,
+    .kg-mentor-panel,
+    .kg-essential,
+    .kg-lesson-sub,
+    .kg-muted,
+    .kg-footer{
+      color:#55657d;
+    }
+    .kg-mentor-panel{
+      margin-top:14px;
+      padding:16px;
+      display:block;
+    }
+    .kg-mentor-panel ul{
+      margin:10px 0 0;
+      padding-left:18px;
+      line-height:1.6;
+    }
+
+    .kg-button,
+    .kg-choice,
+    .kg-sort-item,
+    .kg-sort-bin,
+    .kg-routine-card,
+    .kg-map-cell,
+    .kg-complete,
+    .kg-day-tab{
+      font-family: inherit !important;
+      border-radius:24px !important;
+      border:2.5px solid rgba(255, 163, 205, .95) !important;
+      background:linear-gradient(180deg, #ffffff, #f8fbff) !important;
+      box-shadow:0 10px 18px rgba(63,88,137,.10) !important;
+      transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    }
+    .kg-button,
+    .kg-complete,
+    .kg-day-tab{
+      padding:14px 18px !important;
+      min-height:56px;
+      font-size:1.03rem;
+      font-weight:700;
+    }
+    .kg-choice,
+    .kg-sort-item,
+    .kg-sort-bin,
+    .kg-routine-card,
+    .kg-map-cell{
+      padding:14px 16px !important;
+      min-height:54px;
+      font-size:1.01rem;
+      font-weight:700;
+    }
+    .kg-button:hover,
+    .kg-choice:hover,
+    .kg-sort-item:hover,
+    .kg-sort-bin:hover,
+    .kg-routine-card:hover,
+    .kg-map-cell:hover,
+    .kg-complete:hover,
+    .kg-day-tab:hover{
+      transform: translateY(-2px) scale(1.01);
+      box-shadow:0 14px 24px rgba(63,88,137,.14) !important;
+      filter:saturate(1.04);
+    }
+    .kg-button.primary{
+      background:linear-gradient(135deg, #7ac7ff, #8d9bff) !important;
+      color:white !important;
+      border-color:rgba(90, 126, 255, .35) !important;
+    }
+    .kg-button.gold{
+      background:linear-gradient(135deg, #ffd76b, #ffb86b) !important;
+      border-color: rgba(255, 180, 92, .35) !important;
+    }
+    .kg-button.voice,
+    .kg-button.mentor{
+      background:linear-gradient(135deg, #bca6ff, #ff8fd0) !important;
+      color:white !important;
+      border-color:rgba(186, 143, 255, .35) !important;
+    }
+
+    .kg-week-card{
+      padding:18px;
+      max-width:960px;
+      margin:0 auto;
+    }
+
+    .kg-day-tabs{
+      width:min(1120px, calc(100% - 32px));
+      margin:24px auto;
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:10px;
+    }
+    @media (max-width:920px){
+      .kg-day-tabs{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+    }
+    .kg-day-tab{
+      text-align:center;
+      padding:16px 12px;
+      cursor:pointer;
+      font-size:1.03rem;
+    }
+    .kg-day-tab span{
+      display:block;
+      font-size:.88rem;
+      opacity:.8;
+      margin-top:2px;
+    }
+    .kg-day-tab.active{
+      background:linear-gradient(135deg, #ff87c1, #7ac7ff) !important;
+      color:white !important;
+      border-color:transparent !important;
+    }
+
+    .kg-panel{
+      max-width:1120px;
+      margin:0 auto 18px;
+      padding:16px;
+      display:none;
+    }
+    .kg-panel.active{ display:block; }
+    .kg-lesson{
+      max-width:920px;
+      margin:0 auto;
+      text-align:center;
+    }
+    .kg-lesson h3{
+      margin-top:0;
+      font-size:clamp(1.5rem, 2.4vw, 2.2rem);
+      color:var(--pink) !important;
+    }
+    .kg-lesson-sub{
+      max-width:760px;
+      margin:0 auto;
+      line-height:1.6;
+    }
+    .kg-activity{
+      background:linear-gradient(180deg, #fff, #fff9fd);
+      border:2px solid rgba(122,199,255,.18);
+      border-radius:28px;
+      padding:20px;
+      margin:16px auto;
+      max-width:860px;
+    }
+    .kg-activity h4{ margin-top:0; }
+    .kg-game-board{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      gap:12px;
+    }
+    .kg-choice-row,
+    .kg-sort-items,
+    .kg-sort-bins,
+    .kg-routine-row,
+    .kg-map-grid,
+    .kg-repair-row,
+    .kg-bracelet-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+
+    .kg-feelings-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;
+      width:100%;
+    }
+    @media(max-width:760px){ .kg-feelings-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    .kg-feeling{
+      min-height:92px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      border-radius:22px;
+      border:2px solid rgba(122,199,255,.2);
+      background:#fff;
+      box-shadow:var(--shadow2);
+      cursor:pointer;
+      padding:10px;
+    }
+    .kg-feeling span{ font-size:1.8rem; }
+    .kg-feeling strong{ font-size:1rem; }
+    .kg-feeling.active{
+      border-color:rgba(255,135,193,.95);
+      background:linear-gradient(180deg,#fff,#fff1fa);
+      transform:translateY(-2px);
+    }
+
+    .kg-pair-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      width:100%;
+    }
+    @media(max-width:700px){ .kg-pair-grid{ grid-template-columns:1fr; } }
+    .kg-pair-box{
+      border:2px solid rgba(122,199,255,.18);
+      border-radius:22px;
+      background:#fff;
+      padding:14px;
+    }
+    .kg-pair-box h5{
+      margin:0 0 10px;
+      color:var(--navy);
+      font-size:1.05rem;
+    }
+    .kg-chip{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      padding:10px 14px;
+      border:2px solid rgba(255, 163, 205, .95);
+      background:#fff;
+      margin:4px;
+      cursor:pointer;
+      font-weight:700;
+      min-height:48px;
+    }
+    .kg-chip.active{
+      background:linear-gradient(135deg,#7ac7ff,#bca6ff);
+      color:#fff;
+      border-color:transparent;
+    }
+
+    .kg-mood-card{
+      border-radius:24px;
+      border:2px solid rgba(122,199,255,.18);
+      background:#fff;
+      padding:16px;
+      box-shadow:var(--shadow2);
+    }
+    .kg-count-display{
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      font-size:1.5rem;
+      margin:10px 0;
+      flex-wrap:wrap;
+    }
+
+    .kg-mastery-table{
+      width:100%;
+      max-width:980px;
+      margin:0 auto;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius:20px;
+    }
+    .kg-mastery-table thead th{
+      background:linear-gradient(135deg, #ff87c1, #7ac7ff);
+      color:white;
+    }
+    .kg-mastery-table th,
+    .kg-mastery-table td{
+      padding:12px 10px;
+      border-bottom:1px solid rgba(122,199,255,.12);
+      vertical-align:top;
+    }
+    .kg-mastery-table tbody tr:nth-child(even) td{
+      background:#fbfdff;
+    }
+
+    .kg-footer{
+      text-align:center;
+      padding:26px 0 40px;
+      font-size:14px;
+    }
+    .kg-toast{
+      position:fixed;
+      left:50%;
+      bottom:18px;
+      transform:translateX(-50%);
+      background:#253047;
+      color:#fff;
+      padding:12px 16px;
+      border-radius:999px;
+      box-shadow:0 12px 24px rgba(0,0,0,.18);
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .2s ease, transform .2s ease;
+    }
+    .kg-toast.show{
+      opacity:1;
+      transform:translateX(-50%) translateY(-4px);
+    }
+
+    .kg-reset-row{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      margin-top:10px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width:720px){
+      .kg-nav{
+        justify-content:center;
+        text-align:center;
+      }
+      .kg-mentor-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+      .kg-brand{
+        justify-content:center;
+        flex-direction:row;
+      }
+      .kg-actions,
+      .kg-mentor-actions,
+      .kg-lesson-actions{
+        flex-direction:column;
+      }
+      .kg-button,
+      .kg-complete,
+      .kg-day-tab{
+        width:100%;
+      }
+      .kg-mastery-table{
+        font-size:.92rem;
+      }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *, *::before, *::after{
+        animation:none !important;
+        transition:none !important;
+        scroll-behavior:auto !important;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="header no-print">
-    <div class="shell nav">
-      <a class="brand" href="../../index.html">
-        <span class="seal">K</span>
-        <span><strong>Khaemenes Kindergarten</strong><small>36 Unit A+ Curriculum</small></span>
-      </a>
-      <nav class="navlinks">
-        <a href="../../index.html">Home</a>
-        <a href="../../teacher-tools/index.html">Teacher Tools</a>
-        <a href="../../assessments/weekly-assessments.html">Assessments</a>
-        <a href="../../records/certificate.html">Certificate</a>
-      </nav>
-    </div>
-  </header>
+<header class="kg-header">
+  <div class="kg-shell kg-nav">
+    <a class="kg-brand" href="../../index.html">
+      <span class="kg-seal">K</span>
+      <span><strong>Khaemenes Kindergarten</strong><small>36 Unit A+ Curriculum</small></span>
+    </a>
+    <nav class="kg-navlinks">
+      <a href="../../index.html">Home</a>
+      <a href="../../teacher-tools/index.html">Teacher Tools</a>
+      <a href="../../assessments/weekly-assessments.html">Assessments</a>
+      <a href="../../records/certificate.html">Certificate</a>
+    </nav>
+  </div>
+</header>
 
-      <main class="section">
-        <div class="shell">
-          <div class="heading">
-            <p class="kicker">Unit 03</p>
-            <h1 style="color:var(--navy)">Feelings, Friendship, and Voice</h1>
-            <p>Feelings words, friendship language, rhythm, and small-group collaboration</p>
+<section class="kg-hero">
+  <div class="kg-shell kg-hero-inner">
+    <p class="kg-kicker">Unit 03 · Week 1</p>
+    <h1>Feelings, Friendship, and Voice</h1>
+    <p class="kg-lead">Feelings words, friendship language, rhythm, and small-group collaboration.</p>
+    <div class="kg-hero-badges">
+      <span>💛 SEL</span><span>📚 Literacy</span><span>🔢 Math</span>
+      <span>🎨 Maker</span><span>🎵 Music</span><span>🌈 Community</span>
+    </div>
+
+    <div class="kg-progress-card">
+      <div class="kg-progress-top">
+        <strong id="kgProgressLabel">0 of 5 days complete</strong>
+        <span id="kgProgressPercent">0%</span>
+      </div>
+      <div class="kg-progress-track"><span id="kgProgressFill"></span></div>
+      <div class="kg-growth" aria-label="Learning garden progress">
+        <span class="grow">💬</span><span class="grow">🌼</span><span class="grow">🫶</span><span class="grow">🌟</span><span class="grow">🌈</span>
+      </div>
+    </div>
+
+    <section class="kg-mentor" aria-label="NAIB learning mentor">
+      <div class="kg-mentor-grid">
+        <div class="kg-mentor-avatar" id="kgMentorAvatar">💬</div>
+        <div>
+          <h2><span id="kgMentorName">NAIB</span> · Learning Guide</h2>
+          <p id="kgMentorMessage">Welcome to your week about feelings, friendship, and voice.</p>
+          <div class="kg-mentor-actions">
+            <button class="kg-button mentor" id="kgMentorHint" type="button">💡 Give Me a Hint</button>
+            <button class="kg-button voice" id="kgMentorHelp" type="button">🪄 Show Me the First Step</button>
+            <button class="kg-button gold" id="kgMentorBreak" type="button">🌿 Movement Break</button>
+            <button class="kg-button" id="kgMentorToggle" type="button">About My Mentor</button>
           </div>
-          <div class="card week-card">
-            <h3>Essential Question</h3>
-            <p>How can words help us care for ourselves and others?</p>
-            <div class="badges"><span class="badge">KHAE-DAP</span><span class="badge">KHAE-ELOF</span><span class="badge">KHAE-LIT-K</span><span class="badge">KHAE-MATH-K</span><span class="badge">KHAE-SEL-K</span><span class="badge">KHAE-ART-K</span><span class="badge">KHAE-HEALTH-K</span><span class="badge">KHAE-CIV-K</span></div>
-            <p><strong>Literacy:</strong> Rhyming, beginning sounds, feelings vocabulary</p>
-            <p><strong>Math:</strong> Compare groups: more, less, same</p>
-            <p><strong>Inquiry:</strong> Families, friendships, kindness, and classroom citizenship</p>
-            <p><strong>SEL:</strong> Feelings check-in and repair language</p>
-            <p><strong>Maker Project:</strong> Feelings wheel and friendship bracelet</p>
-            <div class="actions">
-              <a class="button gold" href="../../printables/unit-03-packet.html">Open Printable Packet</a>
-              <a class="button" href="../../assessments/unit-03-assessment.html">Open Assessment</a>
+          <div class="kg-mentor-note"><span id="kgMentorStatus">Local learner profile not yet found</span> · <span id="kgGuardianNote"></span></div>
+        </div>
+      </div>
+      <div class="kg-mentor-panel" id="kgMentorPanel">
+        <strong>How this mentor works</strong>
+        <ul>
+          <li>NAIB is the friendly conversational layer for explanations, planning, guidance, and permitted mentor context.</li>
+          <li>NOEMA remains the administrative supervisor for permissions, memory, identity, guardian rules, and specialist boundaries.</li>
+          <li>The mentor may adapt examples, scaffolding, question style, and organization from expressed learning preferences and interests.</li>
+          <li>It does not infer intelligence from age or appearance, diagnose the child, or lower academic opportunity.</li>
+          <li>This static prototype uses bounded mentor actions rather than unrestricted child chat.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</section>
+
+<main class="kg-section">
+<div class="kg-shell">
+
+  <article class="kg-card kg-week-card">
+    <div class="kg-essential">
+      <strong>Essential Question</strong>
+      <p>How can words help us care for ourselves and others?</p>
+    </div>
+
+    <div class="kg-teacher-toggle">
+      <button class="kg-button" id="kgTeacherToggle" type="button">Open Teacher & Family View</button>
+    </div>
+
+    <div class="kg-teacher-details" id="kgTeacherDetails">
+      <div class="kg-badges">
+        <span class="kg-badge">KHAE-DAP</span><span class="kg-badge">KHAE-ELOF</span>
+        <span class="kg-badge">KHAE-LIT-K</span><span class="kg-badge">KHAE-MATH-K</span>
+        <span class="kg-badge">KHAE-SEL-K</span><span class="kg-badge">KHAE-ART-K</span>
+        <span class="kg-badge">KHAE-HEALTH-K</span><span class="kg-badge">KHAE-CIV-K</span>
+      </div>
+
+      <div class="kg-domain-grid">
+        <div class="kg-domain kg-lit"><div class="kg-icon">📚</div><strong>Literacy</strong><p>Rhyming, beginning sounds, feelings vocabulary.</p></div>
+        <div class="kg-domain kg-math"><div class="kg-icon">🔢</div><strong>Math</strong><p>Compare groups: more, less, same.</p></div>
+        <div class="kg-domain kg-inquiry"><div class="kg-icon">🔬</div><strong>Inquiry</strong><p>Families, friendships, kindness, and classroom citizenship.</p></div>
+        <div class="kg-domain kg-sel"><div class="kg-icon">💛</div><strong>SEL</strong><p>Feelings check-in and repair language.</p></div>
+      </div>
+
+      <div class="kg-actions" style="margin-top:18px">
+        <a class="kg-button gold" href="../../printables/unit-03-packet.html">🖨 Student Printable Packet</a>
+        <a class="kg-button primary" href="../../assessments/unit-03-assessment.html">✅ Unit Assessment</a>
+        <button class="kg-button voice" id="kgReadWeek" type="button">🔊 Hear Week Overview</button>
+      </div>
+    </div>
+  </article>
+
+  <div class="kg-day-tabs">
+    <button class="kg-day-tab active" data-kg-day="0">💬 Monday<span>Wonder Launch</span></button>
+    <button class="kg-day-tab" data-kg-day="1">🫶 Tuesday<span>Kind Word Match</span></button>
+    <button class="kg-day-tab" data-kg-day="2">🔢 Wednesday<span>Compare Groups</span></button>
+    <button class="kg-day-tab" data-kg-day="3">🪄 Thursday<span>Repair & Voice</span></button>
+    <button class="kg-day-tab" data-kg-day="4">🌟 Friday<span>Celebrate</span></button>
+  </div>
+
+  <section class="kg-panel active" data-kg-panel="0">
+    <article class="kg-lesson">
+      <h3>Monday · Wonder Launch</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.</p>
+      <div class="kg-activity">
+        <h4>💛 Feelings Check-In</h4>
+        <p>Choose the feeling that matches your heart today.</p>
+        <div class="kg-feelings-grid" id="feelingsGrid">
+          <button class="kg-feeling" data-feeling="happy"><span>😊</span><strong>Happy</strong></button>
+          <button class="kg-feeling" data-feeling="calm"><span>🙂</span><strong>Calm</strong></button>
+          <button class="kg-feeling" data-feeling="worried"><span>😟</span><strong>Worried</strong></button>
+          <button class="kg-feeling" data-feeling="excited"><span>🤩</span><strong>Excited</strong></button>
+        </div>
+        <p><strong id="feelingFeedback">Choose one feeling to begin.</strong></p>
+      </div>
+      <div class="kg-activity">
+        <h4>🌈 Voice Phrase Builder</h4>
+        <p>Tap a feeling word and a caring word to build a voice sentence.</p>
+        <div class="kg-pair-grid">
+          <div class="kg-pair-box">
+            <h5>Feeling Words</h5>
+            <div id="feelingWords">
+              <button class="kg-chip" data-word="I feel happy">happy</button>
+              <button class="kg-chip" data-word="I feel calm">calm</button>
+              <button class="kg-chip" data-word="I feel worried">worried</button>
+              <button class="kg-chip" data-word="I feel excited">excited</button>
             </div>
           </div>
-          <section style="margin-top:22px"><article class="lesson">
-          <h4>Monday: Wonder Launch</h4>
-          <p><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.</p>
-          <p><strong>Morning Circle:</strong> Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”</p>
-          <p><strong>Literacy:</strong> Rhyming, beginning sounds, feelings vocabulary</p>
-          <p><strong>Math:</strong> Compare groups: more, less, same</p>
-          <p><strong>Inquiry:</strong> Families, friendships, kindness, and classroom citizenship</p>
-          <p><strong>SEL:</strong> Feelings check-in and repair language</p>
-          <p><strong>Workshop:</strong> Introduce the unit question, vocabulary, read-aloud, song/movement routine, and shared anchor chart.</p>
-          <p><strong>Centers:</strong> Teacher table, Math/manipulative bin, Art/maker station, Dramatic play, Movement/music, Book corner, Calm reflection spot</p>
-          <p><strong>Teacher evidence:</strong> Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.</p>
-        </article>
-<article class="lesson">
-          <h4>Tuesday: Guided Skill Lab</h4>
-          <p><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.</p>
-          <p><strong>Morning Circle:</strong> Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”</p>
-          <p><strong>Literacy:</strong> Rhyming, beginning sounds, feelings vocabulary</p>
-          <p><strong>Math:</strong> Compare groups: more, less, same</p>
-          <p><strong>Inquiry:</strong> Families, friendships, kindness, and classroom citizenship</p>
-          <p><strong>SEL:</strong> Feelings check-in and repair language</p>
-          <p><strong>Workshop:</strong> Practice literacy and math with manipulatives, picture cards, modeling, oral rehearsal, and small-group coaching.</p>
-          <p><strong>Centers:</strong> Teacher table, Math/manipulative bin, Art/maker station, Dramatic play, Movement/music, Book corner, Calm reflection spot</p>
-          <p><strong>Teacher evidence:</strong> Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.</p>
-        </article>
-<article class="lesson">
-          <h4>Wednesday: Inquiry Workshop</h4>
-          <p><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.</p>
-          <p><strong>Morning Circle:</strong> Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”</p>
-          <p><strong>Literacy:</strong> Rhyming, beginning sounds, feelings vocabulary</p>
-          <p><strong>Math:</strong> Compare groups: more, less, same</p>
-          <p><strong>Inquiry:</strong> Families, friendships, kindness, and classroom citizenship</p>
-          <p><strong>SEL:</strong> Feelings check-in and repair language</p>
-          <p><strong>Workshop:</strong> Explore science, community, design, or observation through sorting, mapping, building, testing, questioning, or dramatizing.</p>
-          <p><strong>Centers:</strong> Teacher table, Math/manipulative bin, Art/maker station, Dramatic play, Movement/music, Book corner, Calm reflection spot</p>
-          <p><strong>Teacher evidence:</strong> Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.</p>
-        </article>
-<article class="lesson">
-          <h4>Thursday: Create &amp; Communicate</h4>
-          <p><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.</p>
-          <p><strong>Morning Circle:</strong> Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”</p>
-          <p><strong>Literacy:</strong> Rhyming, beginning sounds, feelings vocabulary</p>
-          <p><strong>Math:</strong> Compare groups: more, less, same</p>
-          <p><strong>Inquiry:</strong> Families, friendships, kindness, and classroom citizenship</p>
-          <p><strong>SEL:</strong> Feelings check-in and repair language</p>
-          <p><strong>Workshop:</strong> Make, draw, build, sing, move, dramatize, explain, or present the unit idea with a partner or small group.</p>
-          <p><strong>Centers:</strong> Teacher table, Math/manipulative bin, Art/maker station, Dramatic play, Movement/music, Book corner, Calm reflection spot</p>
-          <p><strong>Teacher evidence:</strong> Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.</p>
-        </article>
-<article class="lesson">
-          <h4>Friday: Review, Assessment &amp; Reflection</h4>
-          <p><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about feelings, friendship, and voice through language, math, inquiry, movement, and creation.</p>
-          <p><strong>Morning Circle:</strong> Welcome song, visual schedule, feelings check-in, and question of the day: “How can words help us care for ourselves and others?”</p>
-          <p><strong>Literacy:</strong> Rhyming, beginning sounds, feelings vocabulary</p>
-          <p><strong>Math:</strong> Compare groups: more, less, same</p>
-          <p><strong>Inquiry:</strong> Families, friendships, kindness, and classroom citizenship</p>
-          <p><strong>SEL:</strong> Feelings check-in and repair language</p>
-          <p><strong>Workshop:</strong> Complete the weekly mastery check, file a portfolio sample, and celebrate one growth moment.</p>
-          <p><strong>Centers:</strong> Teacher table, Math/manipulative bin, Art/maker station, Dramatic play, Movement/music, Book corner, Calm reflection spot</p>
-          <p><strong>Teacher evidence:</strong> Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.</p>
-        </article></section>
-          <section class="card week-card" style="margin-top:22px">
-            <h3>Weekly Mastery Check</h3>
-            <table><thead><tr><th>#</th><th>Domain</th><th>Evidence Prompt</th><th>Met</th></tr></thead><tbody><tr><td>1</td><td>Literacy</td><td>Uses oral language, drawing, gesture, or early writing to explain the unit idea: Feelings, Friendship, and Voice.</td><td>□</td></tr>
-<tr><td>2</td><td>Literacy</td><td>Participates in the literacy focus: Rhyming, beginning sounds, feelings vocabulary.</td><td>□</td></tr>
-<tr><td>3</td><td>Literacy</td><td>Listens to a short read-aloud and answers or asks one relevant question.</td><td>□</td></tr>
-<tr><td>4</td><td>Writing/Fine Motor</td><td>Draws, traces, labels, dictates, or attempts marks connected to the unit.</td><td>□</td></tr>
-<tr><td>5</td><td>Math</td><td>Completes a hands-on math task: Compare groups: more, less, same.</td><td>□</td></tr>
-<tr><td>6</td><td>Math</td><td>Shows thinking with objects, movement, pictures, words, or early symbols.</td><td>□</td></tr>
-<tr><td>7</td><td>Inquiry</td><td>Observes, sorts, maps, builds, tests, or explains: Families, friendships, kindness, and classroom citizenship.</td><td>□</td></tr>
-<tr><td>8</td><td>Arts/Workshop</td><td>Completes or contributes to the maker project: Feelings wheel and friendship bracelet.</td><td>□</td></tr>
-<tr><td>9</td><td>SEL</td><td>Practices the social-emotional focus: Feelings check-in and repair language.</td><td>□</td></tr>
-<tr><td>10</td><td>Participation</td><td>Participates safely, kindly, and with appropriate effort for the child’s developmental level.</td><td>□</td></tr></tbody></table>
-          </section>
+          <div class="kg-pair-box">
+            <h5>Caring Words</h5>
+            <div id="careWords">
+              <button class="kg-chip" data-word="and I can ask for help">ask for help</button>
+              <button class="kg-chip" data-word="and I can breathe slowly">breathe slowly</button>
+              <button class="kg-chip" data-word="and I can use kind words">kind words</button>
+              <button class="kg-chip" data-word="and I can take a break">take a break</button>
+            </div>
+          </div>
         </div>
-      </main>
-    
-  <footer class="footer no-print">
-    <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
-  </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+        <p><strong id="voiceSentence">Build a sentence by choosing two words.</strong></p>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="0">🔊 Hear Monday</button>
+        <button class="kg-complete" data-kg-complete="0">✓ Mark Monday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="1">
+    <article class="kg-lesson">
+      <h3>Tuesday · Guided Skill Lab</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation.</p>
+      <div class="kg-activity">
+        <h4>🫶 Match the Kind Word</h4>
+        <p>Tap one word, then tap the situation that goes with it.</p>
+        <div class="kg-pair-grid">
+          <div class="kg-pair-box">
+            <h5>Friend Words</h5>
+            <div id="friendWords">
+              <button class="kg-chip" data-match="share">share</button>
+              <button class="kg-chip" data-match="wait">wait</button>
+              <button class="kg-chip" data-match="listen">listen</button>
+              <button class="kg-chip" data-match="help">help</button>
+            </div>
+          </div>
+          <div class="kg-pair-box">
+            <h5>Friend Situations</h5>
+            <div id="friendSituations">
+              <button class="kg-chip" data-sit="toys">toys</button>
+              <button class="kg-chip" data-sit="turn">turn</button>
+              <button class="kg-chip" data-sit="story">story</button>
+              <button class="kg-chip" data-sit="friend">friend</button>
+            </div>
+          </div>
+        </div>
+        <p><strong id="friendFeedback">Choose a word first.</strong></p>
+      </div>
+      <div class="kg-activity">
+        <h4>🎵 Rhyme & Voice Rhythm</h4>
+        <p>Pick the rhyme pair that sounds alike.</p>
+        <div class="kg-choice-row" id="rhymeChoices">
+          <button class="kg-choice" data-rhyme="true">cat / hat</button>
+          <button class="kg-choice" data-rhyme="false">sun / moon</button>
+          <button class="kg-choice" data-rhyme="true">sing / ring</button>
+          <button class="kg-choice" data-rhyme="false">book / spoon</button>
+        </div>
+        <p><strong id="rhymeFeedback">Listen closely and tap a rhyme pair.</strong></p>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="1">🔊 Hear Tuesday</button>
+        <button class="kg-complete" data-kg-complete="1">✓ Mark Tuesday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="2">
+    <article class="kg-lesson">
+      <h3>Wednesday · Inquiry Workshop</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Children compare groups and notice how words help communities stay kind and safe.</p>
+      <div class="kg-activity">
+        <h4>🔢 Compare the Groups</h4>
+        <p>Which group has more?</p>
+        <div class="kg-count-display" id="compareGroups">
+          <div class="kg-mood-card"><strong>Left</strong><div class="kg-count-display" id="leftGroup">💙💙💙</div></div>
+          <div class="kg-mood-card"><strong>Right</strong><div class="kg-count-display" id="rightGroup">💙💙💙💙💙</div></div>
+        </div>
+        <div class="kg-choice-row">
+          <button class="kg-choice" data-compare="left">Left has more</button>
+          <button class="kg-choice" data-compare="right">Right has more</button>
+          <button class="kg-choice" data-compare="same">Same</button>
+        </div>
+        <p><strong id="compareFeedback">Look carefully, then choose.</strong></p>
+      </div>
+      <div class="kg-activity">
+        <h4>🌈 Kind Community Words</h4>
+        <p>Choose a word that helps our classroom community.</p>
+        <div class="kg-choice-row" id="communityWords">
+          <button class="kg-choice" data-good="true">please</button>
+          <button class="kg-choice" data-good="true">thank you</button>
+          <button class="kg-choice" data-good="true">help</button>
+          <button class="kg-choice" data-good="false">shout</button>
+        </div>
+        <p><strong id="communityFeedback">Words can build or break. Choose a helper word.</strong></p>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="2">🔊 Hear Wednesday</button>
+        <button class="kg-complete" data-kg-complete="2">✓ Mark Wednesday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="3">
+    <article class="kg-lesson">
+      <h3>Thursday · Create & Communicate</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Children create, explain, and practice repair language with a partner or small group.</p>
+      <div class="kg-activity">
+        <h4>🪄 Repair Language Practice</h4>
+        <p>Choose the sentence that sounds kind and clear.</p>
+        <div class="kg-choice-row" id="repairChoices">
+          <button class="kg-choice" data-repair="true">I don't like that. Please stop.</button>
+          <button class="kg-choice" data-repair="true">Can I have a turn, please?</button>
+          <button class="kg-choice" data-repair="false">Mine! No!</button>
+          <button class="kg-choice" data-repair="true">Please help me.</button>
+        </div>
+        <p><strong id="repairFeedback">Choose a sentence to practice using your voice.</strong></p>
+      </div>
+      <div class="kg-activity">
+        <h4>🫧 Friendship Bracelet Builder</h4>
+        <p>Tap beads to make a pattern for a friend. Try to make a repeating pattern.</p>
+        <div class="kg-bracelet-row" id="braceletRow">
+          <button class="kg-chip bead" data-bead="pink">🩷</button>
+          <button class="kg-chip bead" data-bead="blue">🩵</button>
+          <button class="kg-chip bead" data-bead="yellow">💛</button>
+          <button class="kg-chip bead" data-bead="green">💚</button>
+        </div>
+        <p><strong id="braceletPattern">Your bracelet is waiting for beads.</strong></p>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="3">🔊 Hear Thursday</button>
+        <button class="kg-complete" data-kg-complete="3">✓ Mark Thursday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="4">
+    <article class="kg-lesson">
+      <h3>Friday · Review, Assessment & Reflection</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Children share one growth moment and celebrate voice, friendship, and feelings language.</p>
+      <div class="kg-activity">
+        <h4>🌟 What Grew This Week?</h4>
+        <p>Choose one thing you are proud of.</p>
+        <div class="kg-choice-row" data-kg-choice="friday-reflection">
+          <button class="kg-choice">💛 I used kind words.</button>
+          <button class="kg-choice">🫶 I helped a friend.</button>
+          <button class="kg-choice">🎵 I listened carefully.</button>
+          <button class="kg-choice">📚 I shared my ideas.</button>
+          <button class="kg-choice">🌈 I kept trying.</button>
+        </div>
+      </div>
+      <div class="kg-activity">
+        <h4>📝 Portfolio Reflection</h4>
+        <p>Draw or write one sentence about what made you feel proud.</p>
+        <textarea id="reflectionBox" placeholder="I felt proud when..."></textarea>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="4">🔊 Hear Friday</button>
+        <button class="kg-complete" data-kg-complete="4">✓ Mark Friday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-card kg-week-card" style="margin-top:24px">
+    <h3 style="text-align:center;color:var(--pink)">Teacher & Family Mastery Check</h3>
+    <p style="text-align:center;color:var(--muted)">Observation, conversation, student work, gesture, drawing, and demonstration all count as evidence.</p>
+    <div class="kg-mastery-wrap">
+      <table class="kg-mastery-table">
+        <thead><tr><th>#</th><th>Domain</th><th>Evidence Prompt</th><th>Met</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Literacy</td><td>Uses oral language, drawing, gesture, or early writing to explain the unit idea: Feelings, Friendship, and Voice.</td><td><input type="checkbox" data-kg-mastery="0"></td></tr>
+          <tr><td>2</td><td>Literacy</td><td>Participates in the literacy focus: Rhyming, beginning sounds, feelings vocabulary.</td><td><input type="checkbox" data-kg-mastery="1"></td></tr>
+          <tr><td>3</td><td>Literacy</td><td>Listens to a short read-aloud and answers or asks one relevant question.</td><td><input type="checkbox" data-kg-mastery="2"></td></tr>
+          <tr><td>4</td><td>Writing/Fine Motor</td><td>Draws, traces, labels, dictates, or attempts marks connected to the unit.</td><td><input type="checkbox" data-kg-mastery="3"></td></tr>
+          <tr><td>5</td><td>Math</td><td>Completes a hands-on math task: Compare groups: more, less, same.</td><td><input type="checkbox" data-kg-mastery="4"></td></tr>
+          <tr><td>6</td><td>Math</td><td>Shows thinking with objects, movement, pictures, words, or early symbols.</td><td><input type="checkbox" data-kg-mastery="5"></td></tr>
+          <tr><td>7</td><td>Inquiry</td><td>Observes, sorts, maps, builds, tests, or explains: Families, friendships, kindness, and classroom citizenship.</td><td><input type="checkbox" data-kg-mastery="6"></td></tr>
+          <tr><td>8</td><td>Arts/Workshop</td><td>Completes or contributes to the maker project: Feelings wheel and friendship bracelet.</td><td><input type="checkbox" data-kg-mastery="7"></td></tr>
+          <tr><td>9</td><td>SEL</td><td>Practices the social-emotional focus: Feelings check-in and repair language.</td><td><input type="checkbox" data-kg-mastery="8"></td></tr>
+          <tr><td>10</td><td>Participation</td><td>Participates safely, kindly, and with appropriate effort for the child’s developmental level.</td><td><input type="checkbox" data-kg-mastery="9"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kg-actions" style="margin-top:16px">
+      <button class="kg-button primary" id="kgPrint" type="button">🖨 Print / Save PDF</button>
+      <button class="kg-button" id="kgReset" type="button">↺ Reset Unit 03 Progress</button>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="kg-footer">
+  © <span id="kgYear"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies
+</footer>
+<div class="kg-toast" id="kgToast" role="status" aria-live="polite"></div>
+
+<script>
+window.KINDER_GARDEN_LESSON = {
+  unit:"03",
+  masteryCount:10,
+  dayTitles:[
+    "Wonder Launch",
+    "Kind Word Match",
+    "Compare Groups",
+    "Repair & Voice",
+    "Celebrate"
+  ],
+  weekReadText:"Unit three. Feelings, Friendship, and Voice. This week we practice feelings words, friendship language, rhythm, comparing groups, and sharing ideas kindly.",
+  readTexts:[
+    "Monday. Wonder Launch. Today we name feelings, build voice sentences, and begin our week about caring for ourselves and others.",
+    "Tuesday. Kind Word Match. Today we match friendship words, listen for rhymes, and practice using our voices kindly.",
+    "Wednesday. Compare Groups. Today we compare groups, notice which has more, and choose helper words for our classroom community.",
+    "Thursday. Create and Communicate. Today we practice repair language and build a friendship bracelet pattern.",
+    "Friday. Review and Reflection. Today we share one thing we are proud of and celebrate our growth."
+  ]
+};
+</script>
+<script src="../../assets/naib-mentor-adapter.js"></script>
+<script src="../../assets/lesson.js"></script>
+
+<script>
+(() => {
+  "use strict";
+  const api = () => window.KinderGardenLesson;
+
+  const STORAGE_KEY = "kg_unit03_progress_v1";
+  const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+  state.completed = state.completed || [false,false,false,false,false];
+  state.mastery = state.mastery || Array(10).fill(false);
+  state.selections = state.selections || {};
+  state.bracelet = state.bracelet || [];
+  state.mondayFeeling = state.mondayFeeling || "";
+  state.wednesdayCompare = state.wednesdayCompare || "";
+  state.fridayReflection = state.fridayReflection || "";
+  let selectedFriendWord = null;
+  let selectedSituation = null;
+  let selectedVoiceWord = null;
+  let selectedCareWord = null;
+  let selectedRoutine = [];
+  let selectedSort = null;
+  let compareAnswer = "";
+  const qs = (sel, root=document) => root.querySelector(sel);
+  const qsa = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+  const save = () => localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+
+  const toast = (msg) => {
+    const el = qs("#kgToast");
+    if(!el) return;
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => el.classList.remove("show"), 1800);
+  };
+  const speak = (text) => {
+    if(!("speechSynthesis" in window)) return;
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.92;
+    u.pitch = 1.08;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  };
+
+  const dayEls = qsa("[data-kg-day]");
+  const panelEls = qsa("[data-kg-panel]");
+  const completeBtns = qsa("[data-kg-complete]");
+  const progressLabel = qs("#kgProgressLabel");
+  const progressPercent = qs("#kgProgressPercent");
+  const progressFill = qs("#kgProgressFill");
+  const growthDots = qsa(".kg-growth .grow");
+  const mentorMsg = qs("#kgMentorMessage");
+  const mentorAvatar = qs("#kgMentorAvatar");
+  const mentorPanel = qs("#kgMentorPanel");
+  const mentorStatus = qs("#kgMentorStatus");
+  const guardianNote = qs("#kgGuardianNote");
+
+  const updateProgress = () => {
+    const done = state.completed.filter(Boolean).length;
+    const pct = Math.round((done / 5) * 100);
+    progressLabel.textContent = `${done} of 5 days complete`;
+    progressPercent.textContent = `${pct}%`;
+    progressFill.style.width = pct + "%";
+    growthDots.forEach((dot, idx) => dot.classList.toggle("on", idx < done));
+  };
+
+  const setActiveDay = (idx) => {
+    dayEls.forEach(b => b.classList.toggle("active", Number(b.dataset.kgDay) === idx));
+    panelEls.forEach(p => p.classList.toggle("active", Number(p.dataset.kgPanel) === idx));
+  };
+
+  dayEls.forEach(btn => btn.addEventListener("click", () => {
+    setActiveDay(Number(btn.dataset.kgDay));
+    speak(api()?.readTexts?.[Number(btn.dataset.kgDay)] || "");
+  }));
+
+  qsa("[data-kg-read]").forEach(btn => btn.addEventListener("click", () => {
+    const idx = Number(btn.dataset.kgRead);
+    speak(api()?.readTexts?.[idx] || "");
+    toast("Listening voice on.");
+  }));
+
+  qs("#kgReadWeek")?.addEventListener("click", () => {
+    speak(api()?.weekReadText || "");
+    mentorMsg.textContent = "Here is your week overview. You are learning feelings words, friendship language, rhythm, and voice.";
+  });
+
+  qs("#kgMentorHint")?.addEventListener("click", () => {
+    const hints = [
+      "Try saying a feeling word out loud and then choose a caring action.",
+      "Listen for the sound at the end of the words. Some words rhyme.",
+      "Count carefully, one object for each number word.",
+      "A kind sentence can help a friend feel safe and seen."
+    ];
+    const msg = hints[Math.floor(Math.random() * hints.length)];
+    mentorMsg.textContent = msg;
+    speak(msg);
+    toast("Hint from NAIB.");
+  });
+
+  qs("#kgMentorHelp")?.addEventListener("click", () => {
+    const msg = "Start with one choice, then explain your thinking. You can use your voice, a picture, or a sentence.";
+    mentorMsg.textContent = msg;
+    speak(msg);
+    toast("First step shown.");
+  });
+
+  qs("#kgMentorBreak")?.addEventListener("click", () => {
+    const msg = "Stand up, stretch your arms high, take three slow breaths, and shake out your hands.";
+    mentorMsg.textContent = msg;
+    speak(msg);
+    toast("Movement break!");
+  });
+
+  qs("#kgMentorToggle")?.addEventListener("click", () => {
+    const open = mentorPanel.style.display !== "none";
+    mentorPanel.style.display = open ? "none" : "block";
+    toast(open ? "Mentor panel hidden." : "Mentor panel shown.");
+  });
+
+  qs("#kgTeacherToggle")?.addEventListener("click", () => {
+    const details = qs("#kgTeacherDetails");
+    const open = details.style.display !== "none";
+    details.style.display = open ? "none" : "block";
+    toast(open ? "Teacher view hidden." : "Teacher view shown.");
+  });
+
+  // Monday feelings
+  qsa(".kg-feeling").forEach(btn => btn.addEventListener("click", () => {
+    qsa(".kg-feeling").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    state.mondayFeeling = btn.dataset.feeling;
+    save();
+    const label = btn.querySelector("strong")?.textContent || "";
+    qs("#feelingFeedback").textContent = `You chose ${label}. You can say your feeling with a kind voice.`;
+    mentorAvatar.textContent = btn.querySelector("span")?.textContent || "💬";
+    mentorMsg.textContent = `It is okay to feel ${label.toLowerCase()}. Words help us care for ourselves and others.`;
+    speak(`It is okay to feel ${label}.`);
+    toast(`Feeling saved: ${label}`);
+  }));
+
+  qsa("#feelingWords .kg-chip").forEach(btn => btn.addEventListener("click", () => {
+    qsa("#feelingWords .kg-chip").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedVoiceWord = btn.dataset.word;
+    updateVoiceSentence();
+  }));
+  qsa("#careWords .kg-chip").forEach(btn => btn.addEventListener("click", () => {
+    qsa("#careWords .kg-chip").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedCareWord = btn.dataset.word;
+    updateVoiceSentence();
+  }));
+  function updateVoiceSentence(){
+    if(selectedVoiceWord && selectedCareWord){
+      const sentence = `${selectedVoiceWord} ${selectedCareWord}.`;
+      qs("#voiceSentence").textContent = sentence;
+      speak(sentence);
+      mentorMsg.textContent = "Your voice sentence can help you ask for what you need.";
+    } else {
+      qs("#voiceSentence").textContent = "Build a sentence by choosing two words.";
+    }
+  }
+
+  // Tuesday friendship match
+  qsa("#friendWords .kg-chip").forEach(btn => btn.addEventListener("click", () => {
+    qsa("#friendWords .kg-chip").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedFriendWord = btn.dataset.match;
+    qs("#friendFeedback").textContent = "Now choose the situation that goes with it.";
+  }));
+  qsa("#friendSituations .kg-chip").forEach(btn => btn.addEventListener("click", () => {
+    qsa("#friendSituations .kg-chip").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedSituation = btn.dataset.sit;
+    const matches = { share:"toys", wait:"turn", listen:"story", help:"friend" };
+    if(selectedFriendWord && matches[selectedFriendWord] === selectedSituation){
+      qs("#friendFeedback").textContent = `Yes! "${selectedFriendWord}" matches "${selectedSituation}".`;
+      mentorMsg.textContent = "Friend words help us play, listen, and care for each other.";
+      speak(`Yes. ${selectedFriendWord} matches ${selectedSituation}.`);
+      toast("Great matching!");
+    } else {
+      qs("#friendFeedback").textContent = "Try another pair. Friendship words help us care, share, listen, and wait.";
+      speak("Try again.");
+    }
+  }));
+
+  qsa("#rhymeChoices .kg-choice").forEach(btn => btn.addEventListener("click", () => {
+    const isRhyme = btn.dataset.rhyme === "true";
+    qs("#rhymeFeedback").textContent = isRhyme ? "Yes! That pair rhymes." : "Listen again — those words do not rhyme.";
+    mentorMsg.textContent = isRhyme ? "Great ear! Rhyming helps us listen to sounds in words." : "Try another pair and listen to the endings.";
+    speak(isRhyme ? "Yes, that pair rhymes." : "Try again.");
+    if(isRhyme){ btn.classList.add("active"); toast("Rhyme found!"); }
+  }));
+
+  // Wednesday compare
+  compareAnswer = "right";
+  qsa("#compareGroups .kg-choice").forEach(btn => btn.addEventListener("click", () => {
+    const guess = btn.dataset.compare;
+    if(guess === compareAnswer){
+      qs("#compareFeedback").textContent = "Yes! The right group has more.";
+      mentorMsg.textContent = "Comparing groups helps us notice amount.";
+      speak("Yes. The right group has more.");
+      toast("Correct comparison!");
+      state.wednesdayCompare = guess;
+      save();
+    } else {
+      qs("#compareFeedback").textContent = "Look again. Count carefully with one-to-one touch.";
+      speak("Try again.");
+    }
+  }));
+  qsa("#communityWords .kg-choice").forEach(btn => btn.addEventListener("click", () => {
+    const good = btn.dataset.good === "true";
+    qs("#communityFeedback").textContent = good ? `${btn.textContent} is a helper word.` : "That word can hurt. Choose a helper word.";
+    mentorMsg.textContent = good ? "Helper words build a caring classroom community." : "We can try a kinder word.";
+    speak(good ? `${btn.textContent} is a helper word.` : "Choose a kinder word.");
+  }));
+
+  // Thursday repair language + bracelet
+  qsa("#repairChoices .kg-choice").forEach(btn => btn.addEventListener("click", () => {
+    const good = btn.dataset.repair === "true";
+    qs("#repairFeedback").textContent = good ? "Yes! That sentence uses calm, clear voice." : "Try a sentence that helps the listener hear your need.";
+    mentorMsg.textContent = good ? "Repair language helps friends solve problems." : "A calm sentence can help everyone feel safe.";
+    speak(good ? "That is a calm, clear sentence." : "Try a kinder sentence.");
+    if(good) toast("Repair language!"); 
+  }));
+  qsa("#braceletRow .bead").forEach(btn => btn.addEventListener("click", () => {
+    const bead = btn.dataset.bead;
+    const symbols = {pink:"🩷", blue:"🩵", yellow:"💛", green:"💚"};
+    state.bracelet.push(bead);
+    save();
+    qs("#braceletPattern").textContent = `Pattern: ${state.bracelet.map(b => symbols[b]).join(" ")}`;
+    mentorMsg.textContent = "Patterns can show care, order, and creativity.";
+    speak("Added a bead.");
+    toast("Bead added!");
+  }));
+
+  // Friday reflection
+  qsa('[data-kg-choice="friday-reflection"] .kg-choice').forEach(btn => btn.addEventListener("click", () => {
+    qsa('[data-kg-choice="friday-reflection"] .kg-choice').forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    state.fridayReflection = btn.textContent.trim();
+    save();
+    qs("#reflectionBox").value = `I am proud that ${btn.textContent.trim().toLowerCase()}.`;
+    mentorMsg.textContent = "Reflection helps us remember our growth.";
+    speak("That is something to be proud of.");
+    toast("Reflection saved!");
+  }));
+
+  // complete buttons
+  completeBtns.forEach(btn => btn.addEventListener("click", () => {
+    const idx = Number(btn.dataset.kgComplete);
+    state.completed[idx] = true;
+    save();
+    updateProgress();
+    confetti();
+    toast(`Day ${idx+1} complete!`);
+    mentorMsg.textContent = `You completed ${api()?.dayTitles?.[idx] || "this day"}.`;
+    speak(`Day ${idx+1} complete.`);
+  }));
+
+  // Mastery check
+  qsa('[data-kg-mastery]').forEach(cb => {
+    const idx = Number(cb.dataset.kgMastery);
+    cb.checked = !!state.mastery[idx];
+    cb.addEventListener("change", () => {
+      state.mastery[idx] = cb.checked;
+      save();
+      toast(cb.checked ? "Mastery checked!" : "Mastery unchecked.");
+    });
+  });
+
+  // Print / reset
+  qs("#kgPrint")?.addEventListener("click", () => window.print());
+  qs("#kgReset")?.addEventListener("click", () => {
+    if(!confirm("Reset Unit 03 progress on this device?")) return;
+    localStorage.removeItem(STORAGE_KEY);
+    location.reload();
+  });
+
+  // Seed initial text
+  qs("#kgMentorStatus").textContent = "Local learner profile not yet found";
+  qs("#kgGuardianNote").textContent = "Playful, local-only interactive lesson";
+  qs("#kgTeacherDetails").style.display = "block";
+  qs("#kgMentorPanel").style.display = "block";
+  updateProgress();
+
+  function confetti(){
+    const colors = ["#ff87c1","#7ac7ff","#ffd76b","#9ef0b0","#bca6ff","#ff9aa7"];
+    for(let i=0;i<14;i++){
+      const s = document.createElement("div");
+      s.style.position="fixed";
+      s.style.left = (50 + (Math.random()*30-15)) + "%";
+      s.style.top = (35 + (Math.random()*10-5)) + "%";
+      s.style.width = (6 + Math.random()*8) + "px";
+      s.style.height = (6 + Math.random()*8) + "px";
+      s.style.borderRadius = "50%";
+      s.style.background = colors[Math.floor(Math.random()*colors.length)];
+      s.style.pointerEvents = "none";
+      s.style.zIndex = "9999";
+      s.style.transition = "transform .9s ease, opacity .9s ease";
+      document.body.appendChild(s);
+      requestAnimationFrame(() => {
+        s.style.transform = `translate(${(Math.random()*220-110)}px, ${-(90+Math.random()*180)}px) scale(.5)`;
+        s.style.opacity = "0";
+      });
+      setTimeout(() => s.remove(), 1100);
+    }
+  }
+
+  // restore current textarea / visible details
+  qs("#reflectionBox").value = state.fridayReflection || "";
+  qs("#braceletPattern").textContent = state.bracelet.length ? `Pattern: ${state.bracelet.map(b => ({pink:"🩷", blue:"🩵", yellow:"💛", green:"💚"}[b])).join(" ")}` : "Your bracelet is waiting for beads.";
+
+  // Initial mentor read
+  if(state.mondayFeeling){
+    const feel = state.mondayFeeling.charAt(0).toUpperCase() + state.mondayFeeling.slice(1);
+    qs("#feelingFeedback").textContent = `You chose ${feel}.`;
+  }
+  if(state.completed.some(Boolean)) updateProgress();
+})();
+</script>
 </body>
 </html>
