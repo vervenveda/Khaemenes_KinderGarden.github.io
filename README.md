@@ -1,4 +1,9 @@
-# Khaemenes Academy Kindergarten — 36 Unit A+ Curriculum Generated: 2026-08-07 This is a complete in-house kindergarten curriculum package for a GitHub Pages repository. ## Included - 36 units / 36 weeks
+#Khaemenes Academy Kindergarten 
+
+36 Unit A+ Curriculum Generated: 
+2026-08-07 This is a complete in-house kindergarten curriculum package for a GitHub Pages repository. 
+
+##Included - 36 units / 36 weeks
 - 5 lessons per unit
 - 180 daily lessons
 - 36 printable unit packets
