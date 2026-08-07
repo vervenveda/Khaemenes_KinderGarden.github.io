@@ -1,0 +1,30 @@
+KHAEMENES KINDER GARDEN PORTAL UPDATE
+
+Upload these files preserving their paths:
+
+Khaemenes_KinderGarden.github.io/
+├── index.html
+└── curriculum/
+    └── index.html
+
+WHY TWO FILES
+-------------
+The new curriculum assets, data, lessons, assessments, teacher tools, printables,
+and records are under /curriculum/.
+
+The curriculum lesson pages already link Home to ../../index.html, which resolves
+to /curriculum/index.html. That dashboard is currently missing from the curriculum
+folder because the curriculum dashboard was placed at the repository root.
+
+This update:
+1. Restores the playful Kinder Garden root portal.
+2. Places the formal curriculum dashboard at /curriculum/index.html.
+3. Makes existing lesson Home links valid without rewriting all 36 units.
+4. Links all 20 current Kinder Garden apps.
+5. Reads the verified Crechè shared catalog and displays mentor-approved activities
+   whose age metadata includes 4–5 or 5–6.
+6. Reads the existing local Khaemenes profile bridge so pinned Crechè activities
+   can reappear in Kinder Garden.
+7. Uses vervenveda.com network URLs to preserve same-origin school continuity.
+
+No curriculum files need to move.

@@ -1,116 +1,153 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Khaemenes Academy Kindergarten</title>
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Khaemenes Kinder Garden — a playful kindergarten gateway with a complete 36-week curriculum, learning apps, Crechè continuity, games, stories, math, science, art, movement, and family tools.">
+<meta name="theme-color" content="#6fae67"><meta name="color-scheme" content="light">
+<title>Khaemenes Kinder Garden | A Garden of Wonder</title><style>
+:root{
+  --sky:#dff6ff;--grass:#7bc86c;--leaf:#4f9f5f;--leaf2:#2f7140;--sun:#ffd65a;
+  --gold:#e5b84f;--pink:#f28dc1;--rose:#ef6e87;--lav:#b79be9;--blue:#6fb8ea;
+  --cream:#fffaf0;--paper:#fffef9;--ink:#2f3c3a;--muted:#65736f;--line:rgba(48,80,69,.15);
+  --shadow:0 18px 44px rgba(54,95,72,.14);--soft:0 9px 24px rgba(54,95,72,.10);
+  --max:1260px;--serif:"Cormorant Garamond","Palatino Linotype",Georgia,serif;
+  --sans:"Avenir Next","Brandon Grotesque","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;min-width:300px;overflow-x:hidden;color:var(--ink);font:17px/1.65 var(--sans);text-align:center;
+  background:radial-gradient(circle at 8% 3%,rgba(255,214,90,.34),transparent 24rem),
+  radial-gradient(circle at 92% 8%,rgba(111,184,234,.24),transparent 28rem),
+  linear-gradient(180deg,#e7f9ff 0,#fffdf7 37rem,#f5fff1 100%);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--lav);outline-offset:3px}.shell{width:min(calc(100% - 2rem),var(--max));margin:auto}
+.skip{position:fixed;left:12px;top:12px;z-index:9999;transform:translateY(-160%);padding:.7rem 1rem;border-radius:7px;background:#173d28;color:#fff}.skip:focus{transform:none}
+.garden-decor{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.butterfly{position:absolute;font-size:2rem;animation:fly 11s ease-in-out infinite alternate;filter:drop-shadow(0 8px 12px rgba(75,98,75,.18))}
+.butterfly:nth-child(1){left:5%;top:15%;animation-delay:-2s}.butterfly:nth-child(2){right:8%;top:28%;animation-delay:-6s}
+.butterfly:nth-child(3){left:10%;top:72%;animation-delay:-9s}.butterfly:nth-child(4){right:5%;top:82%;animation-delay:-4s}
+@keyframes fly{to{transform:translate(28px,-24px) rotate(7deg) scale(1.08)}}
+.utility{background:#214f35;color:#eaf5ec;border-bottom:1px solid rgba(255,255,255,.12)}
+.utility .shell{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.74rem}
+.utility-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.85rem}.utility-links a{color:#fff}
+.header{position:sticky;top:0;z-index:100;background:rgba(255,254,249,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);box-shadow:0 6px 20px rgba(61,108,70,.08)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.8rem;text-align:left}.brand-mark{width:48px;height:48px;display:grid;place-items:center;flex:0 0 48px;border:2px solid #fff;border-radius:7px;background:linear-gradient(145deg,var(--sun),var(--pink));box-shadow:var(--soft);font-size:1.45rem}
+.brand strong{display:block;color:var(--leaf2);font:444 1.18rem var(--serif);letter-spacing:.02em}.brand small{display:block;margin-top:.15rem;color:var(--muted);font-size:.62rem;font-weight:444;letter-spacing:.11em;text-transform:uppercase}
+.nav-links{display:flex;gap:.15rem}.nav-links a{padding:.58rem .62rem;border-radius:7px;color:#45604f;font-size:.72rem;font-weight:444}.nav-links a:hover{background:#edf8ef;color:var(--leaf2)}
+.menu-button{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:7px;color:#fff;background:linear-gradient(145deg,var(--leaf),var(--leaf2));font-size:1.2rem}
+.mobile-menu{position:fixed;inset:76px 0 auto;z-index:90;display:none;padding:1rem;background:#fffef9;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}.mobile-menu.open{display:grid;gap:.35rem}.mobile-menu a{padding:.7rem;border-radius:7px;color:var(--leaf2)}
+.breadcrumbs{color:#5f6f68;background:#f8fff6;border-bottom:1px solid var(--line)}.breadcrumbs .shell{min-height:44px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;font-size:.72rem}.breadcrumbs a{color:var(--leaf2);font-weight:444}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 50% -10%,rgba(255,214,90,.38),transparent 28rem),linear-gradient(180deg,#dff6ff 0,#effcff 36%,#f8fff4 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:170px;background:radial-gradient(ellipse at 10% 100%,#6ebc65 0 58%,transparent 59%),radial-gradient(ellipse at 34% 100%,#7bc86c 0 58%,transparent 59%),radial-gradient(ellipse at 62% 100%,#66b45f 0 58%,transparent 59%),radial-gradient(ellipse at 88% 100%,#86cf76 0 58%,transparent 59%);opacity:.95}
+.hero-inner{position:relative;z-index:2;min-height:700px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);align-items:center;gap:clamp(2rem,5vw,4.5rem);padding:76px 0 150px}
+.hero-copy{text-align:left;padding:clamp(1.8rem,4vw,3.2rem);border:1px solid rgba(255,255,255,.82);border-radius:21px;background:rgba(255,254,249,.9);box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+.eyebrow{margin:0;color:var(--rose);font-size:.72rem;font-weight:444;letter-spacing:.18em;text-transform:uppercase}
+h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:444;letter-spacing:.01em}h1{margin-top:.8rem;color:var(--leaf2);font-size:clamp(4rem,8vw,7.4rem);line-height:.88}
+.tagline{margin-top:1rem;color:#7b5c8c;font:444 clamp(1.1rem,2.4vw,1.7rem) var(--serif)}.lead{max-width:760px;margin:1.1rem 0 0;color:var(--muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.6rem}.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:.72rem .95rem;border:1px solid var(--line);border-radius:7px;font-weight:444;text-align:center;white-space:normal;overflow-wrap:anywhere;background:#fff}
+.btn.primary{color:#fff;background:linear-gradient(145deg,var(--leaf),var(--leaf2));border-color:transparent}.btn.secondary{color:#6f527f}.btn.gold{color:#5d4a20;background:#fff3bf;border-color:#ead17a}
+.hero-garden{position:relative;min-height:470px}.tree{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:260px;height:390px}
+.tree-trunk{position:absolute;left:50%;bottom:0;width:58px;height:190px;transform:translateX(-50%);border-radius:21px 21px 7px 7px;background:linear-gradient(90deg,#8a5b3d,#b67a50,#8a5b3d)}
+.tree-crown{position:absolute;border:7px solid rgba(255,255,255,.75);border-radius:50%;box-shadow:var(--soft)}.tree-crown.one{width:190px;height:190px;left:0;top:85px;background:#76c767}.tree-crown.two{width:180px;height:180px;right:0;top:92px;background:#63b85a}.tree-crown.three{width:205px;height:205px;left:27px;top:10px;background:#86d477}
+.garden-flower{position:absolute;width:72px;height:72px;display:grid;place-items:center;border:4px solid #fff;border-radius:50%;box-shadow:var(--soft);font-size:2rem;animation:bob 3s ease-in-out infinite alternate}
+.garden-flower.f1{left:4%;top:50px;background:var(--pink)}.garden-flower.f2{right:4%;top:110px;background:var(--sun);animation-delay:-1s}.garden-flower.f3{left:2%;bottom:30px;background:var(--blue);animation-delay:-2s}.garden-flower.f4{right:8%;bottom:10px;background:var(--lav);animation-delay:-.5s}@keyframes bob{to{transform:translateY(-12px) rotate(4deg)}}
+.section{padding:clamp(72px,8vw,106px) 0}.section-alt{background:rgba(255,255,255,.66);border-block:1px solid var(--line)}.section-heading{max-width:880px;margin:0 auto 2.2rem}.section-heading h2{color:var(--leaf2);font-size:clamp(2.2rem,5vw,4.1rem);line-height:1.05}.section-heading p:not(.eyebrow){max-width:760px;margin:1rem auto 0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:-1.4rem;position:relative;z-index:4}.stat{padding:1.2rem;border:1px solid var(--line);border-radius:21px;background:#fff;box-shadow:var(--soft)}.stat strong{display:block;color:var(--leaf2);font:444 2.2rem var(--serif)}.stat span{font-size:.78rem;color:var(--muted)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.feature-card{min-height:250px;display:flex;flex-direction:column;align-items:center;padding:1.35rem;border:1px solid var(--line);border-radius:21px;background:var(--paper);box-shadow:var(--soft)}.feature-card .icon{width:62px;height:62px;display:grid;place-items:center;border-radius:7px;background:#edf7ee;font-size:2rem}.feature-card h3{margin-top:.9rem;color:#46624f;font-size:1.3rem}.feature-card p{color:var(--muted);font-size:.86rem}.feature-card .btn{width:100%;margin-top:auto}
+.filterbar{display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;margin:0 auto 1.2rem}.chip{border:1px solid var(--line);border-radius:999px;background:#fff;color:#52655a;padding:.48rem .72rem;font-size:.74rem}.chip.active{color:#fff;background:var(--leaf2);border-color:var(--leaf2)}
+.unit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}.unit-card{min-height:190px;display:flex;flex-direction:column;text-align:left;padding:1rem;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:var(--soft);transition:.18s}.unit-card:hover{transform:translateY(-3px);border-color:#80b486}.unit-top{display:flex;align-items:center;justify-content:space-between;gap:.7rem}.unit-no{font-size:.69rem;color:#6f7e75;letter-spacing:.08em;text-transform:uppercase}.unit-icon{font-size:1.35rem}.unit-card h3{margin-top:.65rem;color:#40594a;font-size:1.05rem;line-height:1.18}.unit-card p{color:var(--muted);font-size:.74rem;line-height:1.45;margin:.55rem 0 0}.unit-card small{margin-top:auto;padding-top:.7rem;color:#7b5c8c;font-size:.66rem}
+.app-grid,.creche-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem}.app-card{min-height:220px;display:flex;flex-direction:column;align-items:center;padding:1rem;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--soft)}.app-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:12px;background:#eff8ef;font-size:1.55rem}.app-card h3{margin-top:.7rem;color:#40594a;font-size:1rem}.app-card p{color:var(--muted);font-size:.74rem;line-height:1.5}.app-card .origin{margin:.3rem 0;color:#8a6f94;font-size:.63rem;letter-spacing:.08em;text-transform:uppercase}.app-card .btn{width:100%;min-height:38px;margin-top:auto;padding:.5rem .65rem;font-size:.72rem}
+.profile-wrap{display:grid;grid-template-columns:.88fr 1.12fr;gap:1rem}.profile-card,.pinned-card{padding:1.5rem;border:1px solid var(--line);border-radius:21px;background:#fff;box-shadow:var(--shadow);text-align:left}.profile-card h3,.pinned-card h3{color:var(--leaf2);font-size:1.55rem}.profile-card p,.pinned-card p{color:var(--muted);font-size:.84rem}.profile-summary{display:grid;gap:.45rem;margin:1rem 0}.profile-line{display:flex;justify-content:space-between;gap:1rem;padding:.55rem .65rem;border-radius:9px;background:#f7fbf6;font-size:.78rem}.pinned-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem;margin-top:1rem}.pin{padding:.75rem;border:1px solid var(--line);border-radius:10px;background:#fbfdf9}.pin strong{display:block;font-size:.83rem;color:#40594a}.pin a{display:inline-block;margin-top:.35rem;color:#6f527f;font-size:.7rem;font-weight:600}
+.daily-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}.daily-card,.family-card{padding:1.7rem;border:1px solid var(--line);border-radius:21px;box-shadow:var(--shadow)}.daily-card{color:#fff;background:linear-gradient(145deg,#8f70cc,#c67cb3)}.daily-card p{color:rgba(255,255,255,.8)}.daily-card .eyebrow{color:#fff4c4}.daily-card h3{font-size:2rem}.daily-card button{min-height:44px;margin-top:.7rem;padding:.7rem 1rem;border:0;border-radius:7px;color:#5e4772;background:#fff;font-weight:444}.family-card{background:var(--paper)}.family-card h3{color:var(--leaf2);font-size:1.7rem}.family-card p{color:var(--muted)}.family-actions{display:grid;gap:.55rem;margin-top:1rem}.family-actions a{min-height:42px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--leaf2);font-weight:444}
+.final{color:#fff;background:linear-gradient(145deg,#4f9f5f,#7bc86c)}.final h2{color:#fff}.final p{max-width:760px;margin:1rem auto;color:rgba(255,255,255,.82)}footer{padding:2.2rem 0;color:rgba(255,255,255,.75);background:#214f35}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}.footer-links{display:flex;gap:1rem;flex-wrap:wrap}.empty{padding:1rem;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:.8rem}.toast{position:fixed;left:50%;bottom:20px;z-index:500;transform:translate(-50%,120px);padding:.75rem 1rem;border-radius:7px;color:#fff;background:#3f6f4c;box-shadow:var(--shadow);transition:.2s}.toast.show{transform:translate(-50%,0)}
+@media(max-width:1080px){.unit-grid,.app-grid,.creche-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:1000px){.hero-inner{grid-template-columns:1fr}.hero-copy{text-align:center}.lead{margin-inline:auto}.hero-actions{justify-content:center}.hero-garden{width:min(100%,540px);margin:auto}.feature-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.menu-button{display:grid;place-items:center}}@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.unit-grid,.app-grid,.creche-grid{grid-template-columns:repeat(2,1fr)}.profile-wrap,.daily-grid{grid-template-columns:1fr}}@media(max-width:560px){.utility .shell{flex-direction:column;padding:.5rem 0}.stats,.feature-grid,.unit-grid,.app-grid,.creche-grid,.pinned-list{grid-template-columns:1fr}.hero-actions{display:grid}.hero-actions .btn{width:100%}.hero-garden{min-height:400px}.tree{transform:translateX(-50%) scale(.86)}.brand small{display:none}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
-<body>
-  <header class="header no-print">
-    <div class="shell nav">
-      <a class="brand" href="index.html">
-        <span class="seal">K</span>
-        <span><strong>Khaemenes Kindergarten</strong><small>36 Unit A+ Curriculum</small></span>
-      </a>
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="teacher-tools/index.html">Teacher Tools</a>
-        <a href="assessments/weekly-assessments.html">Assessments</a>
-        <a href="records/certificate.html">Certificate</a>
-      </nav>
-    </div>
-  </header>
+<body id="top">
+<a class="skip" href="#curriculum">Skip to the curriculum</a>
+<div class="garden-decor" aria-hidden="true"><span class="butterfly">🦋</span><span class="butterfly">🦋</span><span class="butterfly">🦋</span><span class="butterfly">🦋</span></div>
+<div class="utility"><div class="shell"><span>Khaemenes Kinder Garden · kindness, curiosity, strong foundations, and joyful discovery</span><nav class="utility-links" aria-label="Utility navigation"><a href="https://vervenveda.com/">Verve N Veda</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><a href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè</a><a href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Elementary</a></nav></div></div>
+<header class="header"><div class="shell nav"><a class="brand" href="#top" aria-label="Kinder Garden home"><span class="brand-mark">🦋</span><span><strong>Khaemenes Kinder Garden</strong><small>A Garden of Wonder · Kindergarten</small></span></a><nav class="nav-links" aria-label="Primary navigation"><a href="#curriculum">36-Week Curriculum</a><a href="#apps">Kinder Apps</a><a href="#creche">Crechè Garden</a><a href="#mygarden">My Garden</a><a href="#families">Families</a></nav><button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu">☰</button></div></header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation"><a href="#curriculum">36-Week Curriculum</a><a href="#apps">Kinder Apps</a><a href="#creche">Crechè Garden</a><a href="#mygarden">My Garden</a><a href="#families">Families</a></nav>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><div class="shell"><a href="https://vervenveda.com/">Verve N Veda</a><span>›</span><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><span>›</span><span aria-current="page">Kinder Garden</span></div></nav>
 
-  <section class="hero">
-    <div class="shell">
-      <div class="mark">K</div>
-      <p class="kicker">Kindergarten Learning Garden</p>
-      <h1>Khaemenes Academy Kindergarten</h1>
-      <p class="lead">A clean, professional, in-house 36 unit kindergarten curriculum with 180 daily lessons, workshops, printable packets, weekly assessments, midterm, final, teacher tools, portfolio evidence, and 80% completion certification.</p>
-      <div class="actions">
-        <a class="btn light" href="#units">Open 36 Units</a>
-        <a class="btn gold" href="teacher-tools/index.html">Teacher Tools</a>
-        <a class="btn" href="assessments/weekly-assessments.html">Assessments</a>
-      </div>
-    </div>
-  </section>
+<main>
+<section class="hero"><div class="shell hero-inner"><article class="hero-copy"><p class="eyebrow">Where kindness and curiosity begin to bloom</p><h1>Kinder Garden</h1><p class="tagline">A deliberate play on words — a kindergarten designed as a real garden for growing minds.</p><p class="lead">Kinder Garden now brings together a complete 36-week kindergarten curriculum with 180 daily lessons, printable packets, weekly assessments, family-controlled records, local learning apps, and the strongest age-appropriate adventures from Crechè. Children can learn formally, practice through play, create, move, wonder, and grow without losing the gentleness of the early-learning years.</p><div class="hero-actions"><a class="btn primary" href="curriculum/index.html">Open the 36-Week Curriculum</a><a class="btn gold" href="curriculum/lessons/unit-01/">Begin Week 1</a><a class="btn secondary" href="#creche">Explore Crechè Adventures</a></div></article><div class="hero-garden" aria-label="Decorative Kinder Garden tree and flowers"><div class="tree" aria-hidden="true"><div class="tree-trunk"></div><div class="tree-crown one"></div><div class="tree-crown two"></div><div class="tree-crown three"></div></div><span class="garden-flower f1">🌸</span><span class="garden-flower f2">🌻</span><span class="garden-flower f3">🦋</span><span class="garden-flower f4">🌼</span></div></div></section>
 
-  <main>
-    <section class="section">
-      <div class="shell">
-        <div class="heading">
-          <p class="kicker">A+ Foundation</p>
-          <h2>Structured, joyful, and complete.</h2>
-          <p>This curriculum is intentionally in-house: no external scripts, fonts, images, curriculum calls, or required online dependencies.</p>
-        </div>
-        <div class="grid cols-4">
-          <article class="card stat"><strong>36</strong><span>Units / Weeks</span></article>
-          <article class="card stat"><strong>180</strong><span>Daily Lessons</span></article>
-          <article class="card stat"><strong>36</strong><span>Weekly Assessments</span></article>
-          <article class="card stat"><strong>80%</strong><span>Certificate Rule</span></article>
-        </div>
-      </div>
-    </section>
+<div class="shell stats" aria-label="Curriculum at a glance"><div class="stat"><strong>36</strong><span>Weeks / Integrated Units</span></div><div class="stat"><strong>180</strong><span>Daily Lessons</span></div><div class="stat"><strong>36</strong><span>Weekly Mastery Checks</span></div><div class="stat"><strong>80%</strong><span>Completion Certificate Rule</span></div></div>
 
-    <section class="section alt" id="records">
-      <div class="shell">
-        <div class="heading">
-          <p class="kicker">Local Records</p>
-          <h2>Family-controlled progress and certification.</h2>
-          <p>Records stay in this browser. Families can export a JSON record for safekeeping.</p>
-        </div>
-        <div class="portal">
-          <div class="profile-box">
-            <h3>Student Record</h3>
-            <label>Student name</label>
-            <input id="studentName" placeholder="Kindergarten Scholar">
-            <label>Midterm score</label>
-            <input id="midtermScore" type="number" min="0" max="100" placeholder="0–100">
-            <label>Final score</label>
-            <input id="finalScore" type="number" min="0" max="100" placeholder="0–100">
-            <label style="display:flex;gap:10px;justify-content:center;align-items:center;margin-top:14px">
-              <input id="portfolio" type="checkbox" style="width:auto"> Portfolio evidence complete
-            </label>
-            <div class="actions">
-              <button class="button gold" id="saveProfile">Save Record</button>
-              <button class="button" id="clearRecords">Clear</button>
-            </div>
-          </div>
-          <div id="summary"></div>
-        </div>
-      </div>
-    </section>
+<section class="section" id="curriculum"><div class="shell"><div class="section-heading"><p class="eyebrow">The Formal Learning Path</p><h2>Thirty-six weeks planted one week at a time.</h2><p>Every unit contains five daily lessons, literacy, mathematics, inquiry, social-emotional learning, movement or creation, a maker project, printable work, family connection, and a weekly mastery check.</p></div>
+<div class="feature-grid" style="margin-bottom:2rem"><article class="feature-card"><span class="icon">📚</span><h3>Curriculum Dashboard</h3><p>Open the formal 36-unit curriculum, local student tracker, scope and sequence, and certification pathway.</p><a class="btn primary" href="curriculum/index.html">Open Curriculum Dashboard</a></article><article class="feature-card"><span class="icon">🧑‍🏫</span><h3>Teacher & Family Tools</h3><p>Use educator tools, portfolio evidence, printables, and local family records.</p><a class="btn secondary" href="curriculum/teacher-tools/index.html">Open Teacher Tools</a></article><article class="feature-card"><span class="icon">✅</span><h3>Assessments & Readiness</h3><p>Weekly mastery checks, midyear demonstration, final readiness demonstration, and certificate pathway.</p><a class="btn gold" href="curriculum/assessments/weekly-assessments.html">Open Assessments</a></article></div>
+<div class="filterbar" id="unitFilters"><button class="chip active" data-term="all" type="button">All 36 Weeks</button><button class="chip" data-term="1" type="button">Weeks 1–9</button><button class="chip" data-term="2" type="button">Weeks 10–18</button><button class="chip" data-term="3" type="button">Weeks 19–27</button><button class="chip" data-term="4" type="button">Weeks 28–36</button></div><div class="unit-grid" id="unitGrid"></div></div></section>
 
-    <section class="section" id="units">
-      <div class="shell">
-        <div class="heading">
-          <p class="kicker">36 Units · 5 Lessons Each</p>
-          <h2>Complete kindergarten scope and sequence.</h2>
-          <p>Each unit includes five daily lessons, teacher scripts, centers, a printable packet, family connection, workshop activity, and assessment.</p>
-        </div>
-        <div class="grid cols-3" id="unitGrid"></div>
-      </div>
-    </section>
+<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">The Kinder Garden Tool Shed</p><h2>Twenty local apps for practice, play, calm, and discovery.</h2><p>These applications already live inside the Kinder Garden repository and supplement the formal curriculum with literacy, mathematics, science, weather, history, movement, and regulation practice.</p></div><div class="filterbar" id="appFilters"><button class="chip active" data-app="all" type="button">All Apps</button><button class="chip" data-app="literacy" type="button">Letters & Words</button><button class="chip" data-app="math" type="button">Math</button><button class="chip" data-app="science" type="button">Science & Weather</button><button class="chip" data-app="community" type="button">History & Community</button><button class="chip" data-app="movement" type="button">Movement</button><button class="chip" data-app="wellness" type="button">Calm & Wellness</button></div><div class="app-grid" id="appGrid"></div></div></section>
 
-    <section class="section alt" id="standards">
-      <div class="shell">
-        <div class="heading">
-          <p class="kicker">Internal Crosswalk</p>
-          <h2>Broad early-learning coverage without outside dependencies.</h2>
-          <p>The crosswalk is included as local documentation for review; it does not call external resources.</p>
-        </div>
-        <div class="grid cols-3" id="standardsGrid"></div>
-      </div>
-    </section>
-  </main>
+<section class="section" id="creche"><div class="shell"><div class="section-heading"><p class="eyebrow">Crechè → Kinder Garden Bridge</p><h2>Keep the favorite adventures. Grow into the next garden.</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/">Open Preschool Mentor</a></div></div></section>
 
-  <script src="data/course-data.js"></script>
-  <script src="assets/app.js"></script>
+<section class="section section-alt" id="mygarden"><div class="shell"><div class="section-heading"><p class="eyebrow">Local Learner Continuity</p><h2>My Garden follows the child forward.</h2><p>When Kinder Garden is opened through the shared <strong>vervenveda.com</strong> network, it can read the same browser-local Crechè learner continuity record. Nothing here creates an account or transmits the child's profile.</p></div><div class="profile-wrap"><article class="profile-card"><h3 id="profileGreeting">My Garden</h3><p id="profileMessage">Checking this browser for a Crechè learner profile…</p><div class="profile-summary" id="profileSummary"></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè Profile & Favorites</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Next: Elementary School</a></div></article><article class="pinned-card"><h3>Pinned Crechè Adventures</h3><p>Favorites pinned in Crechè can reappear here when the shared local learner record is available.</p><div class="pinned-list" id="pinnedList"><div class="empty">No pinned activities are visible yet.</div></div></article></div></div></section>
 
-  <footer class="footer no-print">
-    <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
-  </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<section class="section" id="today"><div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's little wonder.</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div></section>
+
+<section class="section final"><div class="shell"><p class="eyebrow" style="color:#fff1c7">A Kinder Garden Promise</p><h2>Kindness is planted. Curiosity is watered. Strong foundations are grown with room to bloom.</h2><p>The formal curriculum gives the year structure. Crechè continuity preserves familiar play. Kinder Garden's own apps provide practice. Families and educators remain the people who know the child best.</p><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="curriculum/index.html">Open the Curriculum</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Continue to Elementary School</a></div></div></section>
+</main>
+
+<footer><div class="shell footer-inner"><span><strong>© <span id="year"></span> Khaemenes Kinder Garden · Jennifer Kay Pearl · Verve N Veda</strong></span><nav class="footer-links"><a href="#curriculum">Curriculum</a><a href="#creche">Crechè</a><a href="#families">Families</a><a href="#top">Back to Top</a></nav></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/preschool-catalog.js"></script>
+<script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/khaemenes-profile-bridge.js"></script>
+<script>
+(() => {
+"use strict";
+const UNITS=[{"n": 1, "title": "Welcome to the Learning Garden", "question": "Who am I in this learning community?", "icon": "🌱", "url": "curriculum/lessons/unit-01/"}, {"n": 2, "title": "Names, Letters, and Stories", "question": "How do letters and stories help us share who we are?", "icon": "🔤", "url": "curriculum/lessons/unit-02/"}, {"n": 3, "title": "Feelings, Friendship, and Voice", "question": "How can words help us care for ourselves and others?", "icon": "💛", "url": "curriculum/lessons/unit-03/"}, {"n": 4, "title": "The Five Senses", "question": "How do we learn by observing carefully?", "icon": "👀", "url": "curriculum/lessons/unit-04/"}, {"n": 5, "title": "Seasons, Trees, and Leaves", "question": "What changes do we notice in nature?", "icon": "🍂", "url": "curriculum/lessons/unit-05/"}, {"n": 6, "title": "Weather, Sun, and Sky", "question": "How does weather affect what we do?", "icon": "🌤️", "url": "curriculum/lessons/unit-06/"}, {"n": 7, "title": "Shapes, Colors, and Design", "question": "How do shapes help us build and describe?", "icon": "🔷", "url": "curriculum/lessons/unit-07/"}, {"n": 8, "title": "Patterns, Music, and Movement", "question": "Where do we find patterns?", "icon": "🎵", "url": "curriculum/lessons/unit-08/"}, {"n": 9, "title": "Families, Homes, and Traditions", "question": "What makes a home and family special?", "icon": "🏡", "url": "curriculum/lessons/unit-09/"}, {"n": 10, "title": "Maps, Places, and Community", "question": "How can a map help us find and explain?", "icon": "🗺️", "url": "curriculum/lessons/unit-10/"}, {"n": 11, "title": "Plants and Gardens", "question": "What do plants need to grow?", "icon": "🌻", "url": "curriculum/lessons/unit-11/"}, {"n": 12, "title": "Animals and Habitats", "question": "How do animals meet their needs?", "icon": "🦊", "url": "curriculum/lessons/unit-12/"}, {"n": 13, "title": "Gratitude, Giving, and Storytelling", "question": "How can stories and actions show gratitude?", "icon": "🎁", "url": "curriculum/lessons/unit-13/"}, {"n": 14, "title": "Sounds, Rhymes, and Word Play", "question": "How do sounds make words playful?", "icon": "🎶", "url": "curriculum/lessons/unit-14/"}, {"n": 15, "title": "Measurement and Builders", "question": "How can we compare and build carefully?", "icon": "📏", "url": "curriculum/lessons/unit-15/"}, {"n": 16, "title": "Needs, Wants, Money, and Choices", "question": "How do we make wise choices?", "icon": "🪙", "url": "curriculum/lessons/unit-16/"}, {"n": 17, "title": "Winter, Light, and Shadows", "question": "What can light and shadow show us?", "icon": "🔦", "url": "curriculum/lessons/unit-17/"}, {"n": 18, "title": "Midyear Review and Celebration", "question": "What have I learned so far?", "icon": "⭐", "url": "curriculum/lessons/unit-18/"}, {"n": 19, "title": "New Year, Goals, and Growth Mindset", "question": "How do we grow when learning is hard?", "icon": "🌿", "url": "curriculum/lessons/unit-19/"}, {"n": 20, "title": "Stories Around the World", "question": "How do stories travel across the world?", "icon": "🌍", "url": "curriculum/lessons/unit-20/"}, {"n": 21, "title": "Living and Nonliving Things", "question": "How can we tell what is living?", "icon": "🐞", "url": "curriculum/lessons/unit-21/"}, {"n": 22, "title": "Water, Ice, and Weather Changes", "question": "How can water change?", "icon": "🧊", "url": "curriculum/lessons/unit-22/"}, {"n": 23, "title": "Earth Care and Stewardship", "question": "How can we take care of shared places?", "icon": "♻️", "url": "curriculum/lessons/unit-23/"}, {"n": 24, "title": "Transportation and Engineering", "question": "How do people and things move?", "icon": "🚗", "url": "curriculum/lessons/unit-24/"}, {"n": 25, "title": "Jobs, Tools, and Community Helpers", "question": "How do people help a community work?", "icon": "🧰", "url": "curriculum/lessons/unit-25/"}, {"n": 26, "title": "Symbols, Flags, and Civic Belonging", "question": "How do symbols help people remember and belong?", "icon": "🏳️", "url": "curriculum/lessons/unit-26/"}, {"n": 27, "title": "Neighborhood Market and Number Stories", "question": "How do numbers help us solve real problems?", "icon": "🛒", "url": "curriculum/lessons/unit-27/"}, {"n": 28, "title": "Health, Food, and Growing Bodies", "question": "How do we care for our bodies?", "icon": "🍎", "url": "curriculum/lessons/unit-28/"}, {"n": 29, "title": "Movement, Balance, and the Body", "question": "How does movement help us learn?", "icon": "🤸", "url": "curriculum/lessons/unit-29/"}, {"n": 30, "title": "Art, Music, and Pattern Makers", "question": "How can patterns become art and music?", "icon": "🎨", "url": "curriculum/lessons/unit-30/"}, {"n": 31, "title": "Bugs, Gardens, and Tiny Worlds", "question": "What tiny living things can we observe?", "icon": "🐝", "url": "curriculum/lessons/unit-31/"}, {"n": 32, "title": "Water Worlds: Pond, River, and Ocean", "question": "How is water a home?", "icon": "🐟", "url": "curriculum/lessons/unit-32/"}, {"n": 33, "title": "Space, Moon, and Day/Night", "question": "What patterns can we see in the sky?", "icon": "🌙", "url": "curriculum/lessons/unit-33/"}, {"n": 34, "title": "Tools, Technology, and Digital Citizenship", "question": "How can tools help us create safely?", "icon": "🤖", "url": "curriculum/lessons/unit-34/"}, {"n": 35, "title": "My Big Question Capstone", "question": "What big question do I want to explore?", "icon": "❓", "url": "curriculum/lessons/unit-35/"}, {"n": 36, "title": "Kindergarten Review and Final Celebration", "question": "How can I show I am ready for first grade?", "icon": "🎓", "url": "curriculum/lessons/unit-36/"}], APPS=[{"title": "ABC Curriculum", "icon": "🔤", "group": "literacy", "url": "apps/ABC_curriculum_index.html", "desc": "Letters, sounds, print awareness, and early reading."}, {"title": "ABC Spelling Soup", "icon": "🥣", "group": "literacy", "url": "apps/ABC_spelling_soup_index.html", "desc": "Play with letters, sounds, and beginning spelling."}, {"title": "ABC Story", "icon": "📖", "group": "literacy", "url": "apps/ABC_story_index.html", "desc": "Storytelling, listening, sequence, and letter recognition."}, {"title": "Phonic Awareness Garden", "icon": "👂", "group": "literacy", "url": "apps/kinder_garden_phonic_awareness_index.html", "desc": "Hear, compare, and practice the sounds inside words."}, {"title": "Spelling Safari", "icon": "🦒", "group": "literacy", "url": "apps/Spelling_safari_index.html", "desc": "A playful spelling and word-recognition adventure."}, {"title": "Math Curriculum", "icon": "🔢", "group": "math", "url": "apps/Math_curriculum_index.html", "desc": "Structured early mathematics and number reasoning."}, {"title": "Kinder Math", "icon": "🧮", "group": "math", "url": "apps/Math_kinder_index.html", "desc": "Kindergarten-sized number practice and problem solving."}, {"title": "Numbers 1–12", "icon": "1️⃣", "group": "math", "url": "apps/Numbers_1-12_index.html", "desc": "Counting and number recognition from one through twelve."}, {"title": "Numbers & Quiz", "icon": "✅", "group": "math", "url": "apps/Numbers_&_quiz_index.html", "desc": "A quick number practice and check-for-understanding activity."}, {"title": "Kindergarten Math Cloud", "icon": "☁️", "group": "math", "url": "apps/kindergarten_math_cloud_index.html", "desc": "Colorful interactive kindergarten mathematics practice."}, {"title": "Math Garden", "icon": "🌼", "group": "math", "url": "apps/math-garden_index.html", "desc": "Practice early mathematics inside a garden-themed activity."}, {"title": "Sink or Float", "icon": "🛶", "group": "science", "url": "apps/sink-or-float_index.html", "desc": "Make predictions, observe results, and explore material properties."}, {"title": "Weather Compass", "icon": "🧭", "group": "science", "url": "apps/Weather_compass_index.html", "desc": "Observe weather and build early Earth-science vocabulary."}, {"title": "Weather Planetarium", "icon": "🪐", "group": "science", "url": "apps/Weather_planetarium_index.html", "desc": "Explore sky, weather, space, and observation."}, {"title": "Weather Wizard", "icon": "🪄", "group": "science", "url": "apps/Weather_wizard_index.html", "desc": "Playful weather recognition and science practice."}, {"title": "Weather Match", "icon": "🌦️", "group": "science", "url": "apps/weather-match_index.html", "desc": "Match weather ideas, symbols, and conditions."}, {"title": "History Curriculum", "icon": "🏺", "group": "community", "url": "apps/History_curriculum_index.html", "desc": "Early history, community, culture, sequence, and belonging."}, {"title": "PE Curriculum", "icon": "🦘", "group": "movement", "url": "apps/PE_curriculum_index.html", "desc": "Movement, balance, coordination, and active learning."}, {"title": "Breath & Calm", "icon": "🌬️", "group": "wellness", "url": "apps/Breath_index.html", "desc": "A calm space for breathing, regulation, and gentle focus."}, {"title": "Breathing Bubble", "icon": "🫧", "group": "wellness", "url": "apps/breathing-bubble_index.html", "desc": "A simple visual breathing activity for quiet reset moments."}], FALLBACK=[{"title": "Alphabet Adventure", "icon": "🧭", "file": "ABC_Alphabet_Adventure_index.html", "category": "letters", "desc": "Travel through a bright alphabet world."}, {"title": "ABC Bubble Adventure", "icon": "🫧", "file": "ABC_bubble_adventure_index.html", "category": "letters", "desc": "Pop and match playful alphabet bubbles."}, {"title": "ABC Match", "icon": "🔤", "file": "ABC_match_index.html", "category": "letters", "desc": "Match letters and pictures."}, {"title": "Storybird Grove", "icon": "🐦", "file": "reading_storybird_grove/index.html", "category": "words", "desc": "Read and imagine in a gentle story grove."}, {"title": "Sight Words", "icon": "👀", "file": "reading_sight_words_index.html", "category": "words", "desc": "Practice common early-reading words."}, {"title": "Color Mixing Studio", "icon": "🌈", "file": "Art_color_mixing_index.html", "category": "art", "desc": "Mix colors and discover combinations."}, {"title": "Art Color Studio", "icon": "🎨", "file": "Art_color_studio/index.html", "category": "art", "desc": "Explore color, drawing, and creative choices."}, {"title": "Feelings Emotional Explorer", "icon": "🧭", "file": "Feelings_emotional_explorer/index.html", "category": "feelings", "desc": "Name feelings and caring responses."}, {"title": "Emotions & Friendship Garden", "icon": "🌻", "file": "Life_skills_little_Tikes_Life_Skills_Emotions_Friendship_Garden/index.html", "category": "feelings", "desc": "Practice kindness, boundaries, and repair."}, {"title": "Little Composer Piano", "icon": "🎹", "file": "music_piano_index.html", "category": "music", "desc": "Play rainbow keys and explore sound."}, {"title": "Move & Groove", "icon": "🦘", "file": "PE_move_n_groove_index.html", "category": "movement", "desc": "Move, stretch, dance, and play."}, {"title": "Numbers Drag & Drop", "icon": "🖐️", "file": "numbers_drag_n_drop_index.html", "category": "numbers", "desc": "Drag numbers into order."}, {"title": "Shapes Game", "icon": "🔺", "file": "shapes_game_index.html", "category": "numbers", "desc": "Explore common shapes through colorful play."}, {"title": "Sunny's Weather Adventure", "icon": "☀️", "file": "weather_index.html", "category": "wonder", "desc": "Explore animated weather scenes."}, {"title": "Sunny's Moon Adventure", "icon": "🌙", "file": "weather_moon_phase_index.html", "category": "wonder", "desc": "Explore the eight main lunar phases."}, {"title": "The Wondercabinet", "icon": "🗝️", "file": "wondercabinet_index.html", "category": "wonder", "desc": "Open drawers for words, art, calm, and music."}, {"title": "Cosmic Arabic Alphabet Quest", "icon": "🌙", "file": "cosmic_arabic_alphabet_quest_index.html", "category": "letters", "desc": "Trace and hear Arabic letters."}, {"title": "Little Worlds Promenade", "icon": "🎠", "file": "little_worlds_promenade_index.html", "category": "wonder", "desc": "Visit imaginative little worlds."}];
+const BASE="https://vervenveda.com/Khaemenes_Preschool.github.io/apps/";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
+const encodePath=p=>String(p||"").split("/").map(encodeURIComponent).join("/");
+const crecheUrl=file=>BASE+encodePath(file);
+
+function renderUnits(term="all"){
+ const list=UNITS.filter(u=>{if(term==="all")return true;const t=Number(term),min=(t-1)*9+1,max=t*9;return u.n>=min&&u.n<=max;});
+ $("#unitGrid").innerHTML=list.map(u=>`<a class="unit-card" href="${u.url}"><div class="unit-top"><span class="unit-no">Week ${String(u.n).padStart(2,"0")}</span><span class="unit-icon">${u.icon}</span></div><h3>${esc(u.title)}</h3><p>${esc(u.question)}</p><small>5 daily lessons · printable · assessment →</small></a>`).join("");
+}
+function renderApps(group="all"){
+ const list=APPS.filter(a=>group==="all"||a.group===group);
+ $("#appGrid").innerHTML=list.map(a=>`<article class="app-card"><span class="app-icon">${a.icon}</span><div class="origin">Kinder Garden · ${esc(a.group)}</div><h3>${esc(a.title)}</h3><p>${esc(a.desc)}</p><a class="btn primary" href="${a.url}">Open Activity</a></article>`).join("");
+}
+function crecheItems(){
+ const c=window.KhaemenesPreschoolCatalog;
+ if(!c||typeof c.mentorActivities!=="function")return null;
+ return c.mentorActivities().filter(x=>{const ages=x?.mentor?.ages||[];return ages.includes("4-5")||ages.includes("5-6");});
+}
+function renderCreche(items,cat="all"){
+ const list=items.filter(x=>cat==="all"||x.category===cat);
+ $("#crecheGrid").innerHTML=list.length?list.map(x=>`<article class="app-card"><span class="app-icon">${esc(x.icon||"✨")}</span><div class="origin">From Crechè · ${esc(x.category||"adventure")}</div><h3>${esc(x.title)}</h3><p>${esc(x.desc||x?.mentor?.desc||"A Crechè learning adventure.")}</p><a class="btn secondary" href="${crecheUrl(x.file)}">Open Crechè Adventure</a></article>`).join(""):'<div class="empty">No activities match this garden yet.</div>';
+}
+function setupCreche(){
+ const live=crecheItems(),items=live&&live.length?live:FALLBACK,cats=[...new Set(items.map(x=>x.category).filter(Boolean))].sort(),bar=$("#crecheFilters");
+ bar.innerHTML=['<button class="chip active" type="button" data-creche="all">All Age 4–6 Adventures</button>',...cats.map(c=>`<button class="chip" type="button" data-creche="${esc(c)}">${esc(c.replace(/(^|-)\w/g,m=>m.toUpperCase()))}</button>`)].join("");
+ renderCreche(items);
+ bar.addEventListener("click",e=>{const b=e.target.closest("[data-creche]");if(!b)return;bar.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b));renderCreche(items,b.dataset.creche);});
+}
+function renderProfile(){
+ const bridge=window.KhaemenesLearnerProfile;
+ if(!bridge){$("#profileMessage").textContent="The local Crechè continuity bridge is unavailable in this view. Open Kinder Garden through vervenveda.com to share browser-local continuity across school portals.";return;}
+ const s=bridge.getSummary(),pinned=bridge.getPinnedActivities();
+ if(s?.hasProfile){$("#profileGreeting").textContent=s.nickname?`Welcome to your Kinder Garden, ${s.nickname}.`:"Welcome back to My Garden.";$("#profileMessage").textContent="This page can see the browser-local Crechè continuity record. It does not transmit data or create an account.";$("#profileSummary").innerHTML=`<div class="profile-line"><span>Pathway</span><strong>${esc(s.pathway||"preschool")}</strong></div><div class="profile-line"><span>Pinned adventures</span><strong>${Number(s.pinnedCount||0)}</strong></div><div class="profile-line"><span>Visited adventures</span><strong>${Number(s.visitedCount||0)}</strong></div>`;}
+ else{$("#profileMessage").textContent="No Crechè learner profile is stored in this browser yet. Kinder Garden still works normally; a profile is optional.";$("#profileSummary").innerHTML='<div class="empty">Use a Crechè child profile if you want favorites and continuity to follow into Kinder Garden.</div>';}
+ if(Array.isArray(pinned)&&pinned.length){const c=window.KhaemenesPreschoolCatalog;$("#pinnedList").innerHTML=pinned.slice(0,12).map(pin=>{const id=pin?.id||pin?.activityId||"",x=c?.byId?.(id)||pin,file=x?.file||pin?.file||"",title=x?.title||pin?.title||id||"Pinned adventure",href=file?crecheUrl(file):"https://vervenveda.com/Khaemenes_Preschool.github.io/";return `<div class="pin"><strong>${esc(title)}</strong><a href="${href}">Open again →</a></div>`;}).join("");}
+}
+const wonders=[["Look closely at one leaf.","Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words."],["Count five things in nature.","Find five leaves, stones, flowers, clouds, or birds. Count slowly and carefully."],["Make a butterfly picture.","Fold a paper shape, add two wings, then decorate both sides with bright colors and patterns."],["Tell a three-sentence story.","Choose an animal, a place, and one kind action. Put them together into a tiny story."],["Listen for three sounds.","Close your eyes with a grown-up nearby. Name three sounds you can hear around you."],["Find a shape outdoors.","Look for a circle, square, triangle, or rectangle in the world around you."],["Practice one kind sentence.","Try saying: May I help you? Thank you. I am sorry. Would you like to play?"],["Move like an animal.","Hop like a rabbit, stretch like a cat, flap like a bird, and walk slowly like a turtle."],["Mix two colors.","Use paint, crayons, or imagination. What new color appears when two colors meet?"],["Ask one big question.","Choose something you wonder about and ask why, how, what, where, or when."]];
+function setWonder(i){const w=wonders[i%wonders.length];$("#dailyTitle").textContent=w[0];$("#dailyText").textContent=w[1];}
+function randomWonder(){setWonder(Math.floor(Math.random()*wonders.length));const t=$("#toast");t.textContent="A new little wonder is ready.";t.classList.add("show");clearTimeout(randomWonder.timer);randomWonder.timer=setTimeout(()=>t.classList.remove("show"),1700);}
+renderUnits();renderApps();setupCreche();renderProfile();setWonder(Math.floor(Date.now()/86400000));
+$("#unitFilters").addEventListener("click",e=>{const b=e.target.closest("[data-term]");if(!b)return;$$("#unitFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderUnits(b.dataset.term);});
+$("#appFilters").addEventListener("click",e=>{const b=e.target.closest("[data-app]");if(!b)return;$$("#appFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderApps(b.dataset.app);});
+$("#newWonder").addEventListener("click",randomWonder);
+const mb=$("#menuButton"),mm=$("#mobileMenu");mb.addEventListener("click",()=>{const open=mm.classList.toggle("open");mb.setAttribute("aria-expanded",String(open));mb.textContent=open?"×":"☰";});
+mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}});
+if(window.KhaemenesLearnerProfile?.subscribe)window.KhaemenesLearnerProfile.subscribe(()=>renderProfile());
+$("#year").textContent=new Date().getFullYear();
+})();
+</script>
+</body></html>
