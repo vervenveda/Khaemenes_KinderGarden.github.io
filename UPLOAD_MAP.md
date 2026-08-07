@@ -1,0 +1,11 @@
+# Upload Map Upload this complete folder into the kindergarten GitHub repository. ## Root files - index.html
+- README.md
+- LICENSE.md
+- UPLOAD_MAP.md
+- VALIDATION.md ## Required folders - assets/ - styles.css - app.js - certificate.js
+- data/ - course-data.js - course-data.json - scope-sequence.csv - standards-crosswalk.csv
+- lessons/ - unit-01/index.html through unit-36/index.html
+- printables/ - unit-01-packet.html through unit-36-packet.html
+- assessments/ - weekly-assessments.html - unit-01-assessment.html through unit-36-assessment.html - midterm.html - final-exam.html
+- teacher-tools/ - index.html
+- records/ - certificate.html ## Dependency rule Do not add CDN fonts, outside scripts, outside curriculum embeds, or required external assets.
