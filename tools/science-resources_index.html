@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Elementary Science — Fun & Free Resources</title>
+<style>
+  :root{
+    --bg:#f6fbff; --card:#ffffff; --accent:#1e88e5; --muted:#556;
+    --radius:14px; --pad:14px;
+  }
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; margin:0; background:linear-gradient(180deg,#2F05B5,#fdfdfd); color:#ffffff;}
+  .wrap{max-width:777px;margin:14px auto;padding:14px 24px;}
+  header{display:flex;align-items:center;gap:24px;}
+  header h1{margin:7px 44px  11px;font-size:33px;color:#ffffff;}
+  p.lead{margin:11px 44px 11px;color:#ffffff;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(333px,1fr));gap:24px;}
+  .card{background:var(--card);border-radius:7px;padding:14px;box-shadow:0 11px 24px rgba(5,30,50,0.06);}
+  .card h3{margin:7px 0 11px;font-size:16px;color:#023047;}
+  .card p{margin:0 0 14px;color:#345;}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;}
+  .btn{background:var(--accent);color:#fff;padding:11px 14px;border-radius:7px;border:none;cursor:pointer;font-weight:600}
+  .btn.ghost{background:transparent;color:var(--accent);border:2px solid rgba(30,136,229,0.12)}
+  .icon{font-size:20px;margin-right:8px}
+  footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+  @media(max-width:480px){header h1{font-size:16px}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="font-size:33px">🔬</div>
+      <div>
+        <h1>Elementary Science <br> Free Games & Activities</h1>
+        <div class="lead">Safe, fun, and classroom-friendly <br>apps, games, and experiments for K–5 learners.<br> <br></div>
+      </div>
+    </header>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+      <button class="btn" id="printBtn">🖨 Print this page</button>
+      <button class="btn ghost" id="shareBtn">🔗 Share / Open</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>PhET Interactive Simulations</h3>
+        <p>Play with virtual experiments: states of matter, circuits, forces, and more. Great for guided discovery and small group exploration.</p>
+        <div class="actions">
+          <a class="btn" href="https://phet.colorado.edu" target="_blank" rel="noopener">Open PhET</a>
+          <a class="btn ghost" href="https://phet.colorado.edu/en/simulations/category/new" target="_blank" rel="noopener">Try a sim</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>PBS KIDS — Science Games</h3>
+        <p>Friendly show characters (Curious George, Sid, Wild Kratts) lead short science mini-games perfect for young kids.</p>
+        <div class="actions">
+          <a class="btn" href="https://pbskids.org/games/science" target="_blank" rel="noopener">Play PBS KIDS</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>National Geographic Kids</h3>
+        <p>Animal puzzles, habitats, and Earth-science games with bright visuals and short facts for curious learners.</p>
+        <div class="actions">
+          <a class="btn" href="https://kids.nationalgeographic.com/games" target="_blank" rel="noopener">Nat Geo Kids Games</a>
+          <a class="btn ghost" href="https://kids.nationalgeographic.com/science" target="_blank" rel="noopener">Science Lab</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>NASA — Climate & Space Kids</h3>
+        <p>Interactive climate tools and space-themed games tied to real NASA missions. Great for simple Earth & space lessons.</p>
+        <div class="actions">
+          <a class="btn" href="https://climatekids.nasa.gov" target="_blank" rel="noopener">NASA Climate Kids</a>
+          <a class="btn ghost" href="https://spaceplace.nasa.gov/menu/play/" target="_blank" rel="noopener">Space Place games</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Sheppard Software — Science Games</h3>
+        <p>Simple, curriculum-aligned games (food chains, life cycles, animal classification) — low-friction and classroom-safe.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.sheppardsoftware.com/science.htm" target="_blank" rel="noopener">Open Sheppard</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>American Museum of Natural History — OLogy</h3>
+        <p>Hands-on activities, games, and scientist stories. Easy projects and printable activities tied to real science topics.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.amnh.org/explore/ology" target="_blank" rel="noopener">Visit OLogy</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Smithsonian Kids</h3>
+        <p>Short games, videos, and “fun facts” from the Smithsonian museums — great for cross-topic exploration (animals, Earth, space).</p>
+        <div class="actions">
+          <a class="btn" href="https://www.si.edu/kids" target="_blank" rel="noopener">Smithsonian Kids</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Science Bob — Hands-on Experiments</h3>
+        <p>Step-by-step, parent-approved experiments you can do at home or in class with common supplies (safe & engaging).</p>
+        <div class="actions">
+          <a class="btn" href="https://sciencebob.com" target="_blank" rel="noopener">Try Experiments</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Curated list — sources: PhET, PBS KIDS, National Geographic Kids, NASA Climate Kids, Sheppard Software, AMNH OLogy, Smithsonian, Science Bob.
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('printBtn').addEventListener('click', ()=> window.print());
+  document.getElementById('shareBtn').addEventListener('click', async ()=>{
+    const url = 'https://www.vervenveda.com/protools/taskhandler';
+    if(navigator.share){
+      try{ await navigator.share({title:'Elementary Science Resources', text:'Free science games & activities for kids', url}); }
+      catch(e){}
+    } else {
+      // fallback: open new tab and copy URL to clipboard
+      window.open(url, '_blank', 'noopener');
+      try{ await navigator.clipboard.writeText(url); alert('Link opened and copied to clipboard'); }catch(e){}
+    }
+  });
+</script>
+</body>
+</html>
