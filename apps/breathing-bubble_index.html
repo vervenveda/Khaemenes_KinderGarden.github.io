@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌬️ Magic Breathing Bubble</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #b3f0ff, #a0d6ff, #80b3ff);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    color: #ff66b2;
+    font-size: 4em;
+    text-shadow: 3px 3px #333;
+    margin-bottom: 10px;
+  }
+
+  #instruction {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    margin-bottom: 20px;
+  }
+
+  .bubble {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffe066, #ffcc00);
+    box-shadow: 0 0 40px rgba(255, 255, 0, 0.8);
+    transition: all 4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #fff;
+  }
+
+  #modeButtons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 3px 3px #666;
+  }
+
+  .calm { background: #6a5acd; }
+  .focus { background: #ff9933; }
+  .sleep { background: #009966; }
+  .energy { background: #ff3366; }
+  .study { background: #00bfff; }
+
+  button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<h1>🌬️ Magic Breathing Bubble</h1>
+<div id="instruction">Choose how you want to feel...</div>
+<div class="bubble" id="bubble">💫</div>
+
+<div id="modeButtons">
+  <button class="calm" onclick="startMode('calm')">🕊️ Calm Down</button>
+  <button class="focus" onclick="startMode('focus')">🎯 Focus / Test</button>
+  <button class="sleep" onclick="startMode('sleep')">🌙 Bedtime</button>
+  <button class="energy" onclick="startMode('energy')">🏃 Cool Down</button>
+  <button class="study" onclick="startMode('study')">📘 Study Time</button>
+</div>
+
+<script>
+let breathingInterval;
+let voices = [];
+
+speechSynthesis.onvoiceschanged = () => { voices = speechSynthesis.getVoices(); };
+
+function speak(text) {
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.pitch = 1;
+  utter.rate = 0.85;
+  utter.voice = voices.find(v => v.lang.startsWith("en"));
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utter);
+}
+
+function startMode(mode) {
+  clearInterval(breathingInterval);
+  const bubble = document.getElementById("bubble");
+  const instruction = document.getElementById("instruction");
+  let inhaleColor, exhaleColor, guideText;
+
+  if (mode === "calm") { inhaleColor="#99ccff"; exhaleColor="#ffb3e6"; guideText="Let’s calm down."; }
+  if (mode === "focus") { inhaleColor="#ffcc66"; exhaleColor="#66ccff"; guideText="Let’s get ready to focus."; }
+  if (mode === "sleep") { inhaleColor="#b399ff"; exhaleColor="#6666ff"; guideText="Time to rest."; }
+  if (mode === "energy") { inhaleColor="#ff6666"; exhaleColor="#ffcc99"; guideText="Let’s cool down."; }
+  if (mode === "study") { inhaleColor="#66ffcc"; exhaleColor="#99ccff"; guideText="Breathe to think clearly."; }
+
+  instruction.textContent = guideText;
+  speak(guideText);
+  bubble.style.background = `radial-gradient(circle, ${inhaleColor}, ${exhaleColor})`;
+
+  let growing = true;
+  breathingInterval = setInterval(() => {
+    if (growing) {
+      bubble.style.transform = "scale(1.6)";
+      instruction.textContent = "Breathe in... 🌬️";
+      speak("Breathe in");
+    } else {
+      bubble.style.transform = "scale(1)";
+      instruction.textContent = "Breathe out... 🌟";
+      speak("Breathe out");
+    }
+    growing = !growing;
+  }, 5000); // 5 seconds per phase
+}
+</script>
+
+</body>
+</html>
