@@ -433,6 +433,64 @@
       font-size:.92rem;
     }
   }
+
+  .kg-progress-badge{
+    display:inline-flex;
+    margin-top:12px;
+    padding:8px 12px;
+    border-radius:999px;
+    background:linear-gradient(135deg, rgba(122,199,255,.16), rgba(255,135,193,.16));
+    border:1px solid rgba(122,199,255,.24);
+    color:#34425b;
+    font-weight:700;
+    font-size:.95rem;
+    gap:8px;
+    align-items:center;
+    justify-content:center;
+  }
+  .kg-seed.planted{
+    transform:scale(1.08);
+    background:linear-gradient(180deg, #ffffff, #f2fff6);
+    box-shadow:0 12px 18px rgba(63,88,137,.10);
+  }
+  .kg-sort-item{
+    cursor:grab;
+    user-select:none;
+  }
+  .kg-sort-item.dragging{
+    opacity:.6;
+    transform:scale(.98);
+  }
+  .kg-sort-bin.drag-over{
+    border-color: rgba(122,199,255,.95) !important;
+    box-shadow:0 0 0 4px rgba(122,199,255,.15), 0 14px 24px rgba(63,88,137,.14) !important;
+  }
+  .kg-day-tab.done{
+    border-color: rgba(158,240,176,.95);
+    background: linear-gradient(180deg, #ffffff, #f3fff7);
+  }
+  .kg-complete.done{
+    background: linear-gradient(135deg, #9ef0b0, #7ac7ff) !important;
+    border-color: rgba(122,199,255,.45) !important;
+    color: white !important;
+  }
+  .kg-confetti{
+    position:fixed;
+    top:-20px;
+    left:0;
+    pointer-events:none;
+    z-index:9999;
+    font-size:1.1rem;
+    animation:kgConfettiFall 900ms ease-out forwards;
+  }
+  @keyframes kgConfettiFall{
+    0%{ transform: translateY(-20px) rotate(0deg); opacity:1; }
+    100%{ transform: translateY(90vh) rotate(420deg); opacity:0; }
+  }
+  .kg-progress-card strong, .kg-mentor h2, .kg-lesson h3, .kg-activity h4{
+    letter-spacing:.01em;
+  }
+
 </style>
 
 </head>
@@ -802,5 +860,391 @@ window.KINDER_GARDEN_LESSON = {
   });
 })();
 </script>
+
+<script>
+(() => {
+  "use strict";
+
+  const STORAGE_KEY = "kg_u01_interactive_v2";
+  const lesson = window.KINDER_GARDEN_LESSON || {};
+  const q = (sel, root=document) => root.querySelector(sel);
+  const qq = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+  const toastEl = q(".kg-toast");
+  const progressCard = q(".kg-progress-card");
+  if (progressCard && !q("#kgProgressBadge")) {
+    const badge = document.createElement("div");
+    badge.id = "kgProgressBadge";
+    badge.className = "kg-progress-badge";
+    badge.textContent = "Saved locally · 0 days complete · 0/10 mastery";
+    progressCard.appendChild(badge);
+  }
+  const progressBadge = q("#kgProgressBadge");
+  const progressLabel = q("#kgProgressLabel");
+  const progressPercent = q("#kgProgressPercent");
+  const progressFill = q("#kgProgressFill");
+
+  const state = loadState();
+  let dragSelected = null;
+
+  function defaultState() {
+    return {
+      seedCount: 0,
+      completedDays: [],
+      mastery: Array(10).fill(false),
+      map: ["➕","➕","➕","➕"]
+    };
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return defaultState();
+      const parsed = JSON.parse(raw);
+      const base = defaultState();
+      return {
+        seedCount: Number.isFinite(parsed.seedCount) ? parsed.seedCount : base.seedCount,
+        completedDays: Array.isArray(parsed.completedDays) ? parsed.completedDays.filter(n => Number.isInteger(n) && n >= 0 && n < 5) : base.completedDays,
+        mastery: Array.isArray(parsed.mastery) ? parsed.mastery.slice(0, 10).map(Boolean).concat(base.mastery).slice(0,10) : base.mastery,
+        map: Array.isArray(parsed.map) ? parsed.map.slice(0,4) : base.map
+      };
+    } catch {
+      return defaultState();
+    }
+  }
+
+  function saveState() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      seedCount: state.seedCount,
+      completedDays: state.completedDays,
+      mastery: state.mastery,
+      map: state.map
+    }));
+    refreshUI();
+  }
+
+  function toast(msg) {
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    clearTimeout(toastEl._t);
+    toastEl._t = setTimeout(() => { toastEl.textContent = ""; }, 1800);
+  }
+
+  function burstConfetti(count = 18) {
+    const chars = ["🌼","🌸","✨","🌈","💛","🌱","⭐","🫧"];
+    for (let i = 0; i < count; i++) {
+      const s = document.createElement("span");
+      s.className = "kg-confetti";
+      s.textContent = chars[i % chars.length];
+      s.style.left = Math.random() * 100 + "vw";
+      s.style.animationDuration = (700 + Math.random() * 500) + "ms";
+      s.style.fontSize = (14 + Math.random() * 14) + "px";
+      document.body.appendChild(s);
+      setTimeout(() => s.remove(), 1400);
+    }
+  }
+
+  function speak(text) {
+    if (!("speechSynthesis" in window)) return;
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.94;
+    u.pitch = 1.08;
+    u.volume = 0.95;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }
+
+  function updateProgressDisplay() {
+    const done = state.completedDays.length;
+    const pct = Math.round((done / 5) * 100);
+    if (progressLabel) progressLabel.textContent = `${done} of 5 days complete`;
+    if (progressPercent) progressPercent.textContent = `${pct}%`;
+    if (progressFill) progressFill.style.width = pct + "%";
+    if (progressBadge) progressBadge.textContent = `Saved locally · ${done} day${done===1 ? "" : "s"} complete · ${state.mastery.filter(Boolean).length}/10 mastery`;
+  }
+
+  function refreshUI() {
+    updateProgressDisplay();
+
+    // seeds
+    const seeds = qq("#seedRow .kg-seed");
+    seeds.forEach((seed, idx) => {
+      const planted = idx < state.seedCount;
+      seed.classList.toggle("planted", planted);
+      seed.textContent = planted ? "🌱" : "🌰";
+      if (planted) seed.setAttribute("aria-pressed", "true");
+      else seed.removeAttribute("aria-pressed");
+    });
+    q("#seedCount").textContent = `${state.seedCount} seed${state.seedCount===1 ? "" : "s"} planted`;
+
+    // day tabs + complete buttons
+    qq("[data-kg-complete]").forEach(btn => {
+      const day = Number(btn.dataset.kgComplete);
+      const complete = state.completedDays.includes(day);
+      btn.classList.toggle("done", complete);
+      btn.textContent = complete ? "✓ Completed" : btn.getAttribute("data-original") || btn.textContent;
+      btn.disabled = complete;
+    });
+    qq(".kg-day-tab").forEach(tab => {
+      const day = Number(tab.dataset.kgDay);
+      tab.classList.toggle("done", state.completedDays.includes(day));
+    });
+
+    // mastery
+    qq("[data-kg-mastery]").forEach((cb, idx) => {
+      cb.checked = !!state.mastery[idx];
+    });
+
+    // map
+    qq("[data-map]").forEach((cell, idx) => {
+      if (state.map[idx]) cell.textContent = state.map[idx];
+    });
+  }
+
+  function completeDay(day) {
+    if (!state.completedDays.includes(day)) {
+      state.completedDays.push(day);
+      saveState();
+      burstConfetti(14);
+      const title = lesson.dayTitles?.[day] || `Day ${day + 1}`;
+      toast(`${title} completed! Great job!`);
+      speak(`${title} is complete. Great work.`);
+    }
+  }
+
+  // Seed planting
+  qq("#seedRow .kg-seed").forEach((seed, idx) => {
+    seed.addEventListener("click", () => {
+      if (seed.classList.contains("planted")) return;
+      seed.classList.add("planted");
+      seed.textContent = "🌱";
+      state.seedCount = Math.max(state.seedCount, idx + 1);
+      if (idx + 1 > state.seedCount) state.seedCount = idx + 1;
+      saveState();
+      if (idx === 4) {
+        burstConfetti(22);
+        toast("Five seeds planted! You counted one-to-one.");
+        speak("Five seeds planted. You counted one to one.");
+      } else {
+        toast("Seed planted!");
+      }
+    });
+  });
+
+  // Give each complete button a remembered original label
+  qq("[data-kg-complete]").forEach(btn => {
+    if (!btn.getAttribute("data-original")) btn.setAttribute("data-original", btn.textContent);
+    btn.addEventListener("click", () => {
+      const day = Number(btn.dataset.kgComplete);
+      completeDay(day);
+    });
+  });
+
+  // Voice for lesson buttons
+  qq("[data-kg-read]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const day = Number(btn.dataset.kgRead);
+      const txt = lesson.readTexts?.[day] || lesson.weekReadText || "Let's learn together.";
+      toast("Reading aloud...");
+      speak(txt);
+    });
+  });
+
+  q("#kgReadWeek")?.addEventListener("click", () => {
+    toast("Reading the week overview...");
+    speak(lesson.weekReadText || "Welcome to the Learning Garden.");
+  });
+
+  // Mentor buttons
+  q("#kgMentorHint")?.addEventListener("click", () => {
+    const msg = "Try one small step at a time. Look, listen, count, sort, and explain your thinking.";
+    q("#kgMentorMessage").textContent = msg;
+    speak(msg);
+    toast("Hint shown.");
+  });
+  q("#kgMentorHelp")?.addEventListener("click", () => {
+    const msg = "First step: choose one object, one feeling, or one idea. Small steps make learning easier.";
+    q("#kgMentorMessage").textContent = msg;
+    speak(msg);
+    burstConfetti(10);
+  });
+  q("#kgMentorBreak")?.addEventListener("click", () => {
+    const msg = "Stand up, stretch your arms, breathe in, and breathe out. Then come back ready to learn.";
+    q("#kgMentorMessage").textContent = msg;
+    speak(msg);
+  });
+  q("#kgMentorToggle")?.addEventListener("click", () => {
+    const panel = q("#kgMentorPanel");
+    const hidden = panel.style.display === "none";
+    panel.style.display = hidden ? "" : "none";
+    toast(hidden ? "Mentor notes opened." : "Mentor notes hidden.");
+  });
+
+  // Day tab voices and active state
+  qq(".kg-day-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const day = Number(tab.dataset.kgDay);
+      const title = lesson.dayTitles?.[day] || `Day ${day + 1}`;
+      speak(`${title}. ${lesson.readTexts?.[day] || ""}`);
+    });
+  });
+
+  // Make sort items draggable, while keeping tap-based fallback
+  let selectedSort = null;
+  qq("#sortItems .kg-sort-item").forEach(item => {
+    item.setAttribute("draggable", "true");
+    item.addEventListener("dragstart", () => {
+      dragSelected = item;
+      item.classList.add("dragging");
+      item.setAttribute("aria-grabbed", "true");
+    });
+    item.addEventListener("dragend", () => {
+      item.classList.remove("dragging");
+      item.removeAttribute("aria-grabbed");
+      dragSelected = null;
+    });
+    item.addEventListener("click", () => {
+      if (item.classList.contains("used")) return;
+      selectedSort = item;
+      q("#sortFeedback").textContent = "Now choose where it belongs.";
+      speak("Now choose where it belongs.");
+    });
+  });
+
+  qq("[data-bin]").forEach(bin => {
+    bin.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      bin.classList.add("drag-over");
+    });
+    bin.addEventListener("dragleave", () => bin.classList.remove("drag-over"));
+    bin.addEventListener("drop", (e) => {
+      e.preventDefault();
+      bin.classList.remove("drag-over");
+      const item = dragSelected || selectedSort;
+      if (!item || item.classList.contains("used")) {
+        q("#sortFeedback").textContent = "Choose an object first.";
+        return;
+      }
+      if (item.dataset.kind === bin.dataset.bin) {
+        item.classList.add("used");
+        item.style.opacity = ".55";
+        item.textContent = item.textContent; // keep emoji visible
+        dragSelected = null;
+        selectedSort = null;
+        q("#sortFeedback").textContent = "That belongs there. Great sorting!";
+        burstConfetti(12);
+        speak("Great sorting!");
+      } else {
+        q("#sortFeedback").textContent = "Good try. Look again and try the other place.";
+        speak("Good try. Look again and try the other place.");
+      }
+    });
+    bin.addEventListener("click", () => {
+      const item = dragSelected || selectedSort;
+      if (!item) {
+        q("#sortFeedback").textContent = "Choose an object first.";
+        return;
+      }
+      if (item.dataset.kind === bin.dataset.bin) {
+        item.classList.add("used");
+        item.style.opacity = ".55";
+        dragSelected = null;
+        selectedSort = null;
+        q("#sortFeedback").textContent = "That belongs there. Great sorting!";
+        burstConfetti(12);
+      } else {
+        q("#sortFeedback").textContent = "Good try. Look again and try the other place.";
+      }
+    });
+  });
+
+  // Routine order stays tap-friendly, but add confetti + voice on success
+  let routine = [];
+  q("#routineRow")?.addEventListener("click", e => {
+    const card = e.target.closest(".kg-routine-card");
+    if(!card || card.classList.contains("used")) return;
+    card.classList.add("used");
+    routine.push(Number(card.dataset.order));
+    const feedback = q("#routineFeedback");
+    if(routine.length < 3){
+      feedback.textContent = `Step ${routine.length} chosen. What comes next?`;
+      return;
+    }
+    if (routine.join(",") === "1,2,3") {
+      feedback.textContent = "The bee found the routine trail! 🐝";
+      burstConfetti(18);
+      speak("The bee found the routine trail!");
+    } else {
+      feedback.textContent = "Interesting order. Explain your thinking, then try again.";
+      speak("Interesting order. Explain your thinking.");
+    }
+    setTimeout(() => {
+      routine = [];
+      qq(".kg-routine-card").forEach(c => c.classList.remove("used"));
+      feedback.textContent = "Choose the first step.";
+    }, 1800);
+  });
+
+  // Map cells cycle through symbols and save
+  const symbols = ["➕","📚","🎨","🧸","🌿","🪑","🎵","🧺"];
+  qq("[data-map]").forEach((cell, idx) => {
+    cell.addEventListener("click", () => {
+      const i = symbols.indexOf(cell.textContent.trim());
+      const next = symbols[(i + 1) % symbols.length];
+      cell.textContent = next;
+      state.map[idx] = next;
+      saveState();
+      if (idx === 3 && next !== "➕") {
+        burstConfetti(8);
+      }
+    });
+  });
+
+  // Mastery saves + milestone celebration
+  qq("[data-kg-mastery]").forEach((cb, idx) => {
+    cb.addEventListener("change", () => {
+      state.mastery[idx] = cb.checked;
+      saveState();
+      const done = state.mastery.filter(Boolean).length;
+      if (done === 10) {
+        toast("All mastery checks complete! Amazing work!");
+        burstConfetti(26);
+        speak("All mastery checks complete. Amazing work!");
+      } else {
+        toast(`${done} of 10 mastery checks complete.`);
+      }
+    });
+  });
+
+  // Print / reset
+  q("#kgPrint")?.addEventListener("click", () => window.print());
+  q("#kgReset")?.addEventListener("click", () => {
+    if (!confirm("Reset Unit 01 progress for this browser?")) return;
+    localStorage.removeItem(STORAGE_KEY);
+    location.reload();
+  });
+
+  // Teacher toggle
+  q("#kgTeacherToggle")?.addEventListener("click", () => {
+    const details = q("#kgTeacherDetails");
+    details.style.display = details.style.display === "none" ? "" : "none";
+    toast(details.style.display === "none" ? "Teacher view hidden." : "Teacher view opened.");
+  });
+
+  // Add progress badge and initial refresh
+  document.getElementById("kgYear").textContent = new Date().getFullYear();
+  refreshUI();
+
+  // Make day tab active state mirror tab navigation when clicked
+  qq(".kg-day-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      qq(".kg-day-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+    });
+  });
+
+})();
+</script>
+
 </body>
 </html>
