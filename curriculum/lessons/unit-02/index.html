@@ -5,6 +5,523 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Unit 02 — Names, Letters, and Stories</title>
   <link rel="stylesheet" href="../../assets/styles.css">
+
+<style>
+  :root{
+    --kg-pink:#ff7eb6;
+    --kg-pink2:#ffd4ea;
+    --kg-blue:#7ac7ff;
+    --kg-blue2:#dff3ff;
+    --kg-sun:#ffd76b;
+    --kg-green:#9ef0b0;
+    --kg-lilac:#bca6ff;
+    --kg-ink:#24354d;
+    --kg-muted:#55657d;
+  }
+
+  html, body { min-height: 100%; }
+  body{
+    margin:0 !important;
+    font-family: "Comic Sans MS","Comic Sans","Chalkboard SE","Trebuchet MS",system-ui,sans-serif !important;
+    background:
+      radial-gradient(circle at top, rgba(255,255,255,.96) 0%, rgba(255,255,255,.93) 18%, rgba(255,246,252,.92) 18.5%, rgba(255,246,252,.92) 40%, rgba(239,248,255,.94) 40.5%, rgba(239,248,255,.94) 63%, rgba(255,249,233,.96) 63.5%, rgba(255,249,233,.96) 100%) !important;
+    color:var(--kg-ink) !important;
+    overflow-x:hidden;
+  }
+  *{box-sizing:border-box}
+
+  .kg-shell{
+    width:min(1120px, calc(100% - 28px)) !important;
+    margin-inline:auto !important;
+  }
+
+  .header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(255,255,255,.9);
+    backdrop-filter: blur(10px);
+    border-bottom:2px solid rgba(255, 126, 182, .28);
+  }
+  .header .shell{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+    flex-wrap:wrap;
+    padding:12px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:var(--kg-ink);
+  }
+  .seal{
+    width:50px;height:50px;
+    display:grid;
+    place-items:center;
+    border-radius:16px;
+    background:linear-gradient(135deg, var(--kg-pink), var(--kg-sun));
+    color:white;
+    font-weight:900;
+    box-shadow:0 10px 24px rgba(255,127,186,.22);
+  }
+  .brand strong{ font-size:18px; }
+  .brand small{ display:block; font-size:13px; opacity:.75; }
+
+  .navlinks{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+  .navlinks a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    border:2px solid rgba(255, 182, 214, .95);
+    border-radius:999px;
+    padding:10px 14px;
+    color:var(--kg-ink);
+    text-decoration:none;
+    box-shadow:0 6px 14px rgba(63,88,137,.08);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .navlinks a:hover{
+    transform: translateY(-1px);
+    border-color: rgba(122,199,255,.9);
+    box-shadow:0 10px 18px rgba(63,88,137,.12);
+  }
+
+  .heading{
+    text-align:center;
+    background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.98));
+    border:2px solid rgba(122,199,255,.22);
+    border-radius:28px;
+    box-shadow:0 18px 50px rgba(63,88,137,.10);
+    padding:26px 18px;
+    margin:22px 0 0;
+  }
+  .kicker{
+    display:inline-block;
+    background:linear-gradient(135deg, var(--kg-pink), var(--kg-sun));
+    color:#fff;
+    padding:8px 14px;
+    border-radius:999px;
+    font-weight:700;
+    letter-spacing:.03em;
+    margin:0 0 10px;
+  }
+  h1{
+    margin:12px 0 8px !important;
+    font-family: "Comic Sans MS","Comic Sans","Chalkboard SE","Trebuchet MS",sans-serif !important;
+    font-size:clamp(2.2rem, 4vw, 4rem) !important;
+    color:var(--kg-pink) !important;
+    text-shadow:2px 2px 0 rgba(255,255,255,.95), 0 10px 24px rgba(255,91,157,.12);
+  }
+  .heading p{
+    max-width:760px;
+    margin:0 auto;
+    font-size:1.12rem;
+    line-height:1.65;
+    color:#45556f;
+  }
+
+  .card,
+  .week-card,
+  .kg-mentor,
+  .kg-progress-card,
+  .kg-quick-card,
+  .lesson,
+  .kg-widget,
+  .kg-panel,
+  .kg-celebrate{
+    background:rgba(255,255,255,.96) !important;
+    border:2px solid rgba(122,199,255,.18) !important;
+    border-radius:24px !important;
+    box-shadow:0 18px 40px rgba(63,88,137,.10) !important;
+  }
+
+  .week-card{
+    margin:18px auto 0;
+    padding:18px;
+    max-width:760px;
+  }
+  .week-card .badges{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:14px 0 10px;
+  }
+  .badge{
+    background:#fff;
+    border:2px solid rgba(255, 182, 214, .85);
+    border-radius:999px;
+    padding:8px 12px;
+    box-shadow:0 6px 14px rgba(63,88,137,.08);
+  }
+
+  .kg-dashboard{
+    margin:18px auto 8px;
+    max-width:960px;
+    display:grid;
+    gap:14px;
+  }
+  .kg-progress-card{
+    padding:18px;
+  }
+  .kg-progress-top{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    align-items:center;
+    margin-bottom:10px;
+    color:#34425b;
+  }
+  .kg-progress-track{
+    height:14px;
+    border-radius:999px;
+    background:#eff3fb;
+    overflow:hidden;
+  }
+  .kg-progress-track > span{
+    display:block;
+    height:100%;
+    width:0;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--kg-blue), var(--kg-pink), var(--kg-sun));
+    transition:width .22s ease;
+  }
+  .kg-growth{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:12px;
+    font-size:1.5rem;
+  }
+
+  .kg-mentor{
+    margin-top:0;
+    padding:18px;
+  }
+  .kg-mentor-grid{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:18px;
+    align-items:center;
+    text-align:left;
+  }
+  .kg-mentor-avatar{
+    width:96px; height:96px;
+    border-radius:28px;
+    margin-inline:auto;
+    display:grid;
+    place-items:center;
+    font-size:3rem;
+    background:linear-gradient(135deg, var(--kg-pink), var(--kg-blue), var(--kg-green));
+    box-shadow:0 14px 28px rgba(127,174,255,.22);
+  }
+  .kg-mentor h2{
+    margin:0 0 8px;
+    font-size:clamp(1.5rem, 2.2vw, 2rem);
+    color:var(--kg-pink);
+  }
+  .kg-mentor-note,
+  .kg-mentor-panel,
+  .kg-muted,
+  .footer{
+    color:var(--kg-muted);
+  }
+  .kg-mentor-actions,
+  .actions,
+  .lesson-actions,
+  .kg-actions,
+  .kg-controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+  .kg-mentor-panel{
+    margin-top:14px;
+    padding:16px;
+    background:linear-gradient(180deg, #fff, #fffafd);
+    border:2px dashed rgba(255, 126, 182, .32);
+    border-radius:18px;
+  }
+  .kg-mentor-panel ul{
+    margin:10px 0 0;
+    padding-left:20px;
+    line-height:1.55;
+  }
+
+  .button,
+  .kg-button,
+  .kg-choice,
+  .kg-sort-item,
+  .kg-sort-bin,
+  .kg-routine-card,
+  .kg-map-cell,
+  .kg-complete,
+  .kg-day-tab,
+  .kg-small-btn,
+  .kg-star-btn{
+    font-family: inherit !important;
+    border-radius:24px !important;
+    border:2.5px solid rgba(255, 163, 205, .95) !important;
+    background:linear-gradient(180deg, #ffffff, #f8fbff) !important;
+    box-shadow:0 10px 18px rgba(63,88,137,.10) !important;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    cursor:pointer;
+  }
+  .button,
+  .kg-button,
+  .kg-complete,
+  .kg-day-tab,
+  .kg-small-btn{
+    padding:14px 18px !important;
+    min-height:56px;
+    font-size:1.03rem;
+    font-weight:700;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .kg-choice,
+  .kg-sort-item,
+  .kg-sort-bin,
+  .kg-routine-card,
+  .kg-map-cell,
+  .kg-star-btn{
+    padding:14px 16px !important;
+    min-height:54px;
+    font-size:1.01rem;
+    font-weight:700;
+  }
+  .button:hover,
+  .kg-button:hover,
+  .kg-choice:hover,
+  .kg-sort-item:hover,
+  .kg-sort-bin:hover,
+  .kg-routine-card:hover,
+  .kg-map-cell:hover,
+  .kg-complete:hover,
+  .kg-day-tab:hover,
+  .kg-small-btn:hover,
+  .kg-star-btn:hover{
+    transform: translateY(-2px) scale(1.01);
+    box-shadow:0 14px 24px rgba(63,88,137,.14) !important;
+    filter:saturate(1.04);
+  }
+  .button.gold,
+  .kg-button.gold{
+    background:linear-gradient(135deg, #ffd76b, #ffb86b) !important;
+    border-color: rgba(255, 180, 92, .35) !important;
+  }
+  .button.primary,
+  .kg-button.primary{
+    background:linear-gradient(135deg, #7ac7ff, #8d9bff) !important;
+    color:white !important;
+    border-color:rgba(90, 126, 255, .35) !important;
+  }
+  .button.voice,
+  .kg-button.voice,
+  .button.mentor,
+  .kg-button.mentor{
+    background:linear-gradient(135deg, #bca6ff, #ff8fd0) !important;
+    color:white !important;
+    border-color:rgba(186, 143, 255, .35) !important;
+  }
+
+  .kg-day-tabs{
+    width:min(1120px, calc(100% - 32px));
+    margin:24px auto 18px;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:10px;
+  }
+  @media (max-width:920px){
+    .kg-day-tabs{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  }
+  .kg-day-tab{
+    text-align:center;
+    padding:16px 12px;
+    cursor:pointer;
+    font-size:1.03rem;
+  }
+  .kg-day-tab.active{
+    background:linear-gradient(135deg, var(--kg-pink), var(--kg-blue)) !important;
+    color:white !important;
+    border-color:transparent !important;
+  }
+  .kg-day-tab span{
+    display:block;
+    font-size:.88rem;
+    opacity:.8;
+    margin-top:2px;
+  }
+
+  .kg-panel{
+    max-width:1120px;
+    margin:0 auto 18px;
+    padding:18px;
+    display:none;
+  }
+  .kg-panel.active{ display:block; }
+  .lesson{
+    max-width:920px;
+    margin:0 auto;
+    padding:18px;
+  }
+  .lesson h4{
+    margin-top:0;
+    font-size:clamp(1.5rem, 2.4vw, 2.2rem);
+    color:var(--kg-pink) !important;
+  }
+  .lesson p{ line-height:1.64; }
+  .kg-activity{
+    background:linear-gradient(180deg, #fff, #fff9fd);
+    border:2px solid rgba(122,199,255,.18);
+    border-radius:28px;
+    padding:20px;
+    margin:16px auto;
+    max-width:860px;
+  }
+  .kg-activity h4{ margin-top:0; }
+  .kg-game-board{ display:flex; justify-content:center; align-items:center; flex-direction:column; gap:12px; }
+  .kg-choice-row,
+  .kg-sort-items,
+  .kg-sort-bins,
+  .kg-routine-row,
+  .kg-map-grid,
+  .kg-star-row,
+  .kg-sentence-row,
+  .kg-reward-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+
+  .kg-widget{
+    margin-top:18px;
+    padding:16px;
+    max-width:860px;
+    margin-inline:auto;
+  }
+  .kg-widget h5{
+    margin:0 0 8px;
+    color:var(--kg-pink);
+    font-size:1.1rem;
+  }
+  .kg-name-tiles,
+  .kg-story-tiles,
+  .kg-stars,
+  .kg-map-tiles{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+    margin-top:10px;
+  }
+  .kg-name-tiles button,
+  .kg-story-tiles button,
+  .kg-stars button,
+  .kg-map-tiles button{
+    min-width:52px;
+  }
+  .kg-name-output{
+    margin-top:10px;
+    font-weight:800;
+    letter-spacing:.06em;
+  }
+
+  .kg-celebrate{
+    margin:18px auto 0;
+    padding:18px;
+    max-width:760px;
+    text-align:center;
+  }
+  .kg-toast{
+    position:fixed;
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    background:#253047;
+    color:#fff;
+    padding:12px 16px;
+    border-radius:999px;
+    box-shadow:0 12px 24px rgba(0,0,0,.18);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease;
+  }
+  .kg-toast.show{
+    opacity:1;
+    transform:translateX(-50%) translateY(-4px);
+  }
+
+  .kg-mastery-table{
+    width:100%;
+    max-width:980px;
+    margin:0 auto;
+    border-collapse:separate;
+    border-spacing:0;
+    overflow:hidden;
+    border-radius:20px;
+  }
+  .kg-mastery-table thead th{
+    background:linear-gradient(135deg, #ff87c1, #7ac7ff);
+    color:white;
+  }
+  .kg-mastery-table th,
+  .kg-mastery-table td{
+    padding:12px 10px;
+    border-bottom:1px solid rgba(122,199,255,.12);
+  }
+  .kg-mastery-table tbody tr:nth-child(even) td{
+    background:#fbfdff;
+  }
+
+  .footer{
+    text-align:center;
+    padding:26px 0 40px;
+    font-size:14px;
+  }
+
+  @media (max-width:720px){
+    .header .shell{
+      justify-content:center;
+      text-align:center;
+    }
+    .kg-mentor-grid{
+      grid-template-columns:1fr;
+      text-align:center;
+    }
+    .brand{
+      justify-content:center;
+      flex-direction:row;
+    }
+    .actions,
+    .lesson-actions,
+    .kg-mentor-actions,
+    .kg-actions{
+      flex-direction:column;
+    }
+    .button,
+    .kg-button,
+    .kg-complete,
+    .kg-day-tab,
+    .kg-small-btn{
+      width:100%;
+    }
+    .kg-mastery-table{
+      font-size:.92rem;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="header no-print">
@@ -43,7 +560,58 @@
               <a class="button" href="../../assessments/unit-02-assessment.html">Open Assessment</a>
             </div>
           </div>
-          <section style="margin-top:22px"><article class="lesson">
+          
+<div class="kg-shell">
+  <section class="kg-dashboard">
+    <article class="kg-progress-card card">
+      <div class="kg-progress-top">
+        <strong id="kgProgressLabel">0 of 5 days complete</strong>
+        <span id="kgProgressPercent">0%</span>
+      </div>
+      <div class="kg-progress-track"><span id="kgProgressFill"></span></div>
+      <div class="kg-growth" aria-label="Learning garden progress">
+        <span>🌱</span><span>🌿</span><span>🌼</span><span>🌳</span><span>🌈</span>
+      </div>
+    </article>
+
+    <article class="kg-mentor">
+      <div class="kg-mentor-grid">
+        <div class="kg-mentor-avatar" id="kgMentorAvatar">✨</div>
+        <div>
+          <h2><span id="kgMentorName">NAIB</span> · Learning Guide</h2>
+          <p id="kgMentorMessage">Welcome to your second week in the Learning Garden.</p>
+          <div class="kg-mentor-actions">
+            <button class="kg-button mentor" id="kgMentorHint" type="button">💡 Give Me a Hint</button>
+            <button class="kg-button voice" id="kgMentorHelp" type="button">🪄 Show Me the First Step</button>
+            <button class="kg-button gold" id="kgMentorBreak" type="button">🌿 Movement Break</button>
+            <button class="kg-button" id="kgMentorToggle" type="button">About My Mentor</button>
+          </div>
+          <div class="kg-mentor-note"><span id="kgMentorStatus">Local learner profile not yet found</span> · <span id="kgGuardianNote"></span></div>
+        </div>
+      </div>
+      <div class="kg-mentor-panel" id="kgMentorPanel">
+        <strong>How this mentor works</strong>
+        <ul>
+          <li>NAIB is the friendly conversational layer for explanations, planning, guidance, and permitted mentor context.</li>
+          <li>NOEMA remains the administrative supervisor for permissions, memory, identity, guardian rules, and specialist boundaries.</li>
+          <li>The mentor may adapt examples, scaffolding, question style, and organization from expressed learning preferences and interests.</li>
+          <li>It does not infer intelligence from age or appearance, diagnose the child, or lower academic opportunity.</li>
+          <li>This static prototype uses bounded mentor actions rather than unrestricted child chat.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+</div>
+
+<div class="kg-day-tabs">
+  <button class="kg-day-tab active" data-kg-day="0">📚 Monday<span>Listen & build</span></button>
+  <button class="kg-day-tab" data-kg-day="1">🎭 Tuesday<span>Sort stories</span></button>
+  <button class="kg-day-tab" data-kg-day="2">🔢 Wednesday<span>Count & match</span></button>
+  <button class="kg-day-tab" data-kg-day="3">🗺 Thursday<span>Make a map</span></button>
+  <button class="kg-day-tab" data-kg-day="4">🌟 Friday<span>Celebrate</span></button>
+</div>
+
+  <section style="margin-top:22px"><article class="lesson">
           <h4>Monday: Wonder Launch</h4>
           <p><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about names, letters, and stories through language, math, inquiry, movement, and creation.</p>
           <p><strong>Morning Circle:</strong> Welcome song, visual schedule, feelings check-in, and question of the day: “How do letters and stories help us share who we are?”</p>
@@ -123,5 +691,437 @@
     <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<script>
+window.KINDER_GARDEN_LESSON = {
+  unit:"02",
+  masteryCount:10,
+  dayTitles:[
+    "Wonder Launch",
+    "Guided Skill Lab",
+    "Inquiry Workshop",
+    "Create & Communicate",
+    "Review, Assessment & Reflection"
+  ],
+  weekReadText:"Unit two. Names, Letters, and Stories. This week we learn alphabet awareness, print concepts, oral storytelling, counting collections, turn-taking, and making a name book.",
+  readTexts:[
+    "Monday. Wonder Launch. Today we welcome the unit, listen to a story, and build a name book.",
+    "Tuesday. Guided Skill Lab. Today we practice letters, print, story parts, and counting ten items.",
+    "Wednesday. Inquiry Workshop. Today we explore books, authors, illustrators, characters, and settings.",
+    "Thursday. Create and Communicate. Today we make, draw, build, sing, move, and present our story ideas.",
+    "Friday. Review, Assessment, and Reflection. Today we share our learning and celebrate growth."
+  ]
+};
+</script>
+<script src="../../assets/naib-mentor-adapter.js"></script>
+<script src="../../assets/lesson.js"></script>
+
+<script>
+(() => {
+  "use strict";
+  const STORAGE = "kg-unit02-progress-v1";
+  const toastEl = document.querySelector(".kg-toast");
+  const dayTabs = Array.from(document.querySelectorAll(".kg-day-tab"));
+  const panels = Array.from(document.querySelectorAll(".kg-panel"));
+  const lessons = Array.from(document.querySelectorAll("article.lesson"));
+  const progressLabel = document.getElementById("kgProgressLabel");
+  const progressPercent = document.getElementById("kgProgressPercent");
+  const progressFill = document.getElementById("kgProgressFill");
+  const mentorMessage = document.getElementById("kgMentorMessage");
+  const mentorStatus = document.getElementById("kgMentorStatus");
+  const mentorPanel = document.getElementById("kgMentorPanel");
+  const mentorAvatar = document.getElementById("kgMentorAvatar");
+  const mentorName = document.getElementById("kgMentorName");
+
+  const state = {
+    completed: JSON.parse(localStorage.getItem(STORAGE) || '{"days":[],"widgets":{}}')
+  };
+
+  const readTexts = (window.KINDER_GARDEN_LESSON && window.KINDER_GARDEN_LESSON.readTexts) || [];
+  const weekRead = (window.KINDER_GARDEN_LESSON && window.KINDER_GARDEN_LESSON.weekReadText) || "Unit 02.";
+  const dayTitles = (window.KINDER_GARDEN_LESSON && window.KINDER_GARDEN_LESSON.dayTitles) || lessons.map((l,i)=>l.querySelector("h4")?.textContent || `Day ${i+1}`);
+
+  function saveState(){
+    localStorage.setItem(STORAGE, JSON.stringify(state.completed));
+  }
+
+  function speak(text){
+    if(!("speechSynthesis" in window)) return;
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.rate = 0.92;
+    u.pitch = 1.05;
+    u.volume = 1;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }
+
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => toastEl.classList.remove("show"), 1800);
+  }
+
+  function confetti(){
+    const colors = ["#ff7eb6","#7ac7ff","#ffd76b","#9ef0b0","#bca6ff"];
+    for(let i=0;i<18;i++){
+      const dot = document.createElement("div");
+      dot.style.position = "fixed";
+      dot.style.left = Math.random()*100 + "vw";
+      dot.style.top = (35 + Math.random()*30) + "vh";
+      dot.style.width = (8 + Math.random()*8) + "px";
+      dot.style.height = dot.style.width;
+      dot.style.borderRadius = "50%";
+      dot.style.background = colors[Math.floor(Math.random()*colors.length)];
+      dot.style.pointerEvents = "none";
+      dot.style.zIndex = 9999;
+      dot.style.transition = "transform 900ms ease, opacity 900ms ease";
+      document.body.appendChild(dot);
+      requestAnimationFrame(() => {
+        dot.style.transform = `translateY(${80 + Math.random()*120}px) scale(.2)`;
+        dot.style.opacity = "0";
+      });
+      setTimeout(() => dot.remove(), 1000);
+    }
+  }
+
+  function updateProgress(){
+    const completeCount = state.completed.days.length;
+    const pct = Math.round((completeCount / 5) * 100);
+    progressLabel.textContent = `${completeCount} of 5 days complete`;
+    progressPercent.textContent = `${pct}%`;
+    progressFill.style.width = pct + "%";
+    dayTabs.forEach((tab, idx) => {
+      tab.classList.toggle("done", state.completed.days.includes(idx));
+    });
+    mentorStatus.textContent = completeCount
+      ? `${completeCount} day${completeCount===1?"":"s"} complete.`
+      : "Local learner profile not yet found";
+  }
+
+  function setActiveDay(idx){
+    panels.forEach((p, i) => p.classList.toggle("active", i === idx));
+    dayTabs.forEach((t, i) => t.classList.toggle("active", i === idx));
+    const target = panels[idx];
+    target?.scrollIntoView({behavior:"smooth", block:"start"});
+    speak(readTexts[idx] || dayTitles[idx] || `Day ${idx+1}`);
+  }
+
+  dayTabs.forEach((tab, idx) => {
+    tab.addEventListener("click", () => setActiveDay(idx));
+  });
+
+  document.getElementById("kgMentorHint")?.addEventListener("click", () => {
+    mentorMessage.textContent = "Look for the big buttons, choose one small step, and celebrate when you finish.";
+    speak("Look for the big buttons, choose one small step, and celebrate when you finish.");
+  });
+  document.getElementById("kgMentorHelp")?.addEventListener("click", () => {
+    mentorMessage.textContent = "First step: pick today’s tab. Then tap, sort, count, or build.";
+    speak("First step: pick today's tab. Then tap, sort, count, or build.");
+  });
+  document.getElementById("kgMentorBreak")?.addEventListener("click", () => {
+    mentorMessage.textContent = "Stand up, stretch your arms, and take three slow breaths.";
+    speak("Stand up, stretch your arms, and take three slow breaths.");
+    toast("Movement break!");
+  });
+  document.getElementById("kgMentorToggle")?.addEventListener("click", () => {
+    mentorPanel.style.display = mentorPanel.style.display === "none" ? "block" : "none";
+  });
+  document.getElementById("kgReadWeek")?.addEventListener("click", () => {
+    speak(weekRead);
+    toast("Listening to the week overview.");
+  });
+  document.getElementById("kgTeacherToggle")?.addEventListener("click", () => {
+    const det = document.getElementById("kgTeacherDetails");
+    det.style.display = det.style.display === "none" ? "block" : "none";
+  });
+
+  // Make articles more interactive
+  lessons.forEach((lesson, idx) => lesson.dataset.kgDay = idx);
+
+  // Monday: name book
+  lessons[0]?.insertAdjacentHTML("beforeend", `
+    <div class="kg-widget">
+      <h5>📖 My Name Book</h5>
+      <p>Type a name and tap the letters to hear them.</p>
+      <label for="kgNameInput">Name</label>
+      <input id="kgNameInput" type="text" placeholder="Type a child name or classroom name">
+      <div class="kg-actions" style="margin-top:10px">
+        <button class="kg-small-btn primary" id="kgBuildName" type="button">Build My Name</button>
+        <button class="kg-small-btn voice" id="kgHearName" type="button">🔊 Hear Name</button>
+      </div>
+      <div class="kg-name-output" id="kgNameOutput">Try a name like “Mia” or “Noah”.</div>
+      <div class="kg-name-tiles" id="kgNameTiles"></div>
+    </div>
+  `);
+
+  // Tuesday: story sort
+  lessons[1]?.insertAdjacentHTML("beforeend", `
+    <div class="kg-widget">
+      <h5>🎭 Story Sort</h5>
+      <p>Tap a story card, then tap the matching slot: beginning, middle, or end.</p>
+      <div class="kg-story-tiles" id="kgStoryCards">
+        <button class="kg-sort-item" data-kind="beginning">🌟 Beginning</button>
+        <button class="kg-sort-item" data-kind="middle">📚 Middle</button>
+        <button class="kg-sort-item" data-kind="end">🎉 End</button>
+      </div>
+      <div class="kg-sort-bins" id="kgStoryBins">
+        <button class="kg-sort-bin" data-bin="beginning"><strong>1</strong><br>Beginning</button>
+        <button class="kg-sort-bin" data-bin="middle"><strong>2</strong><br>Middle</button>
+        <button class="kg-sort-bin" data-bin="end"><strong>3</strong><br>End</button>
+      </div>
+      <p><strong id="kgStoryFeedback">Choose a card first.</strong></p>
+    </div>
+  `);
+
+  // Wednesday: counting collection
+  lessons[2]?.insertAdjacentHTML("beforeend", `
+    <div class="kg-widget">
+      <h5>🔢 Count the Stars</h5>
+      <p>Tap each star. Count aloud from 1 to 10.</p>
+      <div class="kg-star-row kg-stars" id="kgStarRow"></div>
+      <p><strong id="kgStarCount">0 stars tapped</strong></p>
+    </div>
+  `);
+
+  // Thursday: map + helper job
+  lessons[3]?.insertAdjacentHTML("beforeend", `
+    <div class="kg-widget">
+      <h5>🗺 Story Map Builder</h5>
+      <p>Tap each square to choose a place for your class story.</p>
+      <div class="kg-map-tiles" id="kgMapGrid"></div>
+      <p><strong id="kgMapFeedback">Make a tiny classroom map.</strong></p>
+      <h5 style="margin-top:16px">🤝 Choose a Helpful Job</h5>
+      <div class="kg-choice-row" id="kgHelperJobs">
+        <button class="kg-choice">📚 Book Helper</button>
+        <button class="kg-choice">🖍 Art Helper</button>
+        <button class="kg-choice">🧺 Cleanup Helper</button>
+        <button class="kg-choice">🌱 Plant Helper</button>
+      </div>
+    </div>
+  `);
+
+  // Friday: reflection
+  lessons[4]?.insertAdjacentHTML("beforeend", `
+    <div class="kg-widget">
+      <h5>🌟 What Grew This Week?</h5>
+      <p>Choose something you are proud of. You can choose more than one.</p>
+      <div class="kg-reward-row" id="kgReflectionChoices">
+        <button class="kg-choice">🌱 I learned something new.</button>
+        <button class="kg-choice">💛 I helped someone.</button>
+        <button class="kg-choice">🔢 I practiced counting.</button>
+        <button class="kg-choice">📚 I noticed words and names.</button>
+        <button class="kg-choice">🌈 I kept trying.</button>
+      </div>
+      <p><strong id="kgReflectionFeedback">Tap one or more choices.</strong></p>
+      <div class="kg-celebrate" id="kgCelebrateBox" style="display:none">
+        <strong>🌼 Garden Celebration!</strong>
+        <p>You finished Unit 02 and built a strong learning garden.</p>
+      </div>
+    </div>
+  `);
+
+  // Build stars and map cells
+  const starRow = document.getElementById("kgStarRow");
+  if(starRow){
+    for(let i=0;i<10;i++){
+      const b = document.createElement("button");
+      b.className = "kg-star-btn";
+      b.textContent = "⭐";
+      b.dataset.counted = "0";
+      b.addEventListener("click", () => {
+        if(b.dataset.counted === "1") return;
+        b.dataset.counted = "1";
+        b.textContent = "🌟";
+        const count = starRow.querySelectorAll('[data-counted="1"]').length;
+        document.getElementById("kgStarCount").textContent = `${count} star${count===1?"":"s"} tapped`;
+        if(count === 10){
+          toast("Ten stars counted!");
+          speak("You counted ten stars.");
+          state.completed.widgets.stars = true;
+          saveState();
+          confetti();
+        }
+      });
+      starRow.appendChild(b);
+    }
+  }
+  const mapGrid = document.getElementById("kgMapGrid");
+  if(mapGrid){
+    const mapIcons = ["➕","📚","🎨","🧸","🌿","🪑","🎵","🧺"];
+    for(let i=0;i<4;i++){
+      const b = document.createElement("button");
+      b.className = "kg-map-cell";
+      b.textContent = mapIcons[0];
+      b.dataset.idx = String(i);
+      let n = 0;
+      b.addEventListener("click", () => {
+        n = (n + 1) % mapIcons.length;
+        b.textContent = mapIcons[n];
+        const anyFilled = Array.from(mapGrid.querySelectorAll(".kg-map-cell")).some(x => x.textContent !== "➕");
+        document.getElementById("kgMapFeedback").textContent = anyFilled ? "Nice map choices!" : "Make a tiny classroom map.";
+      });
+      mapGrid.appendChild(b);
+    }
+  }
+
+  // Name builder
+  let nameTapCount = 0;
+  const nameInput = document.getElementById("kgNameInput");
+  const nameTiles = document.getElementById("kgNameTiles");
+  document.getElementById("kgBuildName")?.addEventListener("click", () => {
+    const name = (nameInput?.value || "").trim() || "FRIEND";
+    nameTiles.innerHTML = "";
+    [...name].filter(ch => ch.trim()).forEach(ch => {
+      const btn = document.createElement("button");
+      btn.className = "kg-small-btn";
+      btn.textContent = ch.toUpperCase();
+      btn.addEventListener("click", () => speak(ch));
+      nameTiles.appendChild(btn);
+    });
+    document.getElementById("kgNameOutput").textContent = `Name book for ${name}. Tap each letter to hear it.`;
+    toast("Name book built!");
+    state.completed.widgets.namebook = name;
+    saveState();
+  });
+  document.getElementById("kgHearName")?.addEventListener("click", () => {
+    const name = (nameInput?.value || "").trim() || "friend";
+    speak(name.split("").join(" "));
+  });
+
+  // Story sort
+  let selectedStory = null;
+  document.getElementById("kgStoryCards")?.addEventListener("click", e => {
+    const card = e.target.closest(".kg-sort-item");
+    if(!card || card.classList.contains("used")) return;
+    selectedStory = card.dataset.kind;
+    document.getElementById("kgStoryFeedback").textContent = "Now tap the matching slot.";
+  });
+  document.getElementById("kgStoryBins")?.addEventListener("click", e => {
+    const bin = e.target.closest(".kg-sort-bin");
+    if(!bin || !selectedStory) return;
+    if(bin.dataset.bin === selectedStory){
+      toast("Great story sorting!");
+      speak("Great job sorting the story part.");
+      document.getElementById("kgStoryFeedback").textContent = "That matches!";
+      const card = document.querySelector(`#kgStoryCards [data-kind="${selectedStory}"]`);
+      if(card) card.classList.add("used");
+      selectedStory = null;
+      if(document.querySelectorAll("#kgStoryCards .used").length === 3){
+        state.completed.widgets.storysort = true;
+        saveState();
+        confetti();
+      }
+    } else {
+      document.getElementById("kgStoryFeedback").textContent = "Try a different slot.";
+    }
+  });
+
+  // Helper jobs
+  let helperChoices = new Set();
+  document.getElementById("kgHelperJobs")?.addEventListener("click", e => {
+    const btn = e.target.closest(".kg-choice");
+    if(!btn) return;
+    btn.classList.toggle("used");
+    if(btn.classList.contains("used")) helperChoices.add(btn.textContent.trim());
+    else helperChoices.delete(btn.textContent.trim());
+    document.getElementById("kgMapFeedback").textContent = helperChoices.size
+      ? `${helperChoices.size} helpful job${helperChoices.size===1?"":"s"} chosen.`
+      : "Make a tiny classroom map.";
+  });
+
+  // Reflection
+  const reflection = new Set();
+  document.getElementById("kgReflectionChoices")?.addEventListener("click", e => {
+    const btn = e.target.closest(".kg-choice");
+    if(!btn) return;
+    btn.classList.toggle("used");
+    const txt = btn.textContent.trim();
+    if(btn.classList.contains("used")) reflection.add(txt);
+    else reflection.delete(txt);
+    document.getElementById("kgReflectionFeedback").textContent = reflection.size
+      ? `Wonderful! ${reflection.size} thing${reflection.size===1?"":"s"} you are proud of.`
+      : "Tap one or more choices.";
+    if(reflection.size >= 3){
+      document.getElementById("kgCelebrateBox").style.display = "block";
+      toast("Unit 02 complete!");
+      speak("Garden celebration! Great work.");
+      state.completed.widgets.reflection = Array.from(reflection);
+      state.completed.days[4] = true;
+      saveState();
+      updateProgress();
+      confetti();
+    }
+  });
+
+  // Day tab controls
+  lessons.forEach((lesson, idx) => {
+    const actions = document.createElement("div");
+    actions.className = "lesson-actions";
+    actions.style.marginTop = "16px";
+    actions.innerHTML = `
+      <button class="kg-button voice" data-kg-read="${idx}" type="button">🔊 Hear ${dayTitles[idx].split(":")[0] || "Day"}</button>
+      <button class="kg-complete" data-kg-complete="${idx}" type="button">✓ Mark ${dayTitles[idx].split(":")[0] || "Day"} Complete</button>
+    `;
+    lesson.appendChild(actions);
+  });
+
+  document.body.addEventListener("click", (e) => {
+    const read = e.target.closest("[data-kg-read]");
+    const done = e.target.closest("[data-kg-complete]");
+    if(read){
+      const idx = Number(read.dataset.kgRead);
+      speak(readTexts[idx] || dayTitles[idx] || `Day ${idx+1}`);
+      toast("Listening...");
+    }
+    if(done){
+      const idx = Number(done.dataset.kgComplete);
+      if(!state.completed.days.includes(idx)){
+        state.completed.days.push(idx);
+        state.completed.days.sort((a,b)=>a-b);
+      }
+      saveState();
+      updateProgress();
+      toast(`Marked ${dayTitles[idx]} complete!`);
+      if(state.completed.days.length === 5){
+        confetti();
+        mentorAvatar.textContent = "🌼";
+        mentorMessage.textContent = "Amazing! You finished Unit 02. Your learning garden is growing.";
+      }
+    }
+  });
+
+  document.getElementById("kgReset")?.addEventListener("click", () => {
+    if(!confirm("Reset Unit 02 progress?")) return;
+    state.completed = { days: [], widgets: {} };
+    saveState();
+    updateProgress();
+    document.querySelectorAll(".used").forEach(el => el.classList.remove("used"));
+    document.querySelectorAll('[data-counted="1"]').forEach(el => { el.dataset.counted = "0"; el.textContent = "⭐"; });
+    document.getElementById("kgCelebrateBox").style.display = "none";
+    toast("Progress reset.");
+  });
+
+  // simple helpers: restore state if present
+  if(state.completed.days?.length){
+    updateProgress();
+  } else {
+    updateProgress();
+  }
+
+  // expose helper for mentor adapter if it exists
+  window.KinderGardenLesson = {
+    ...(window.KinderGardenLesson || {}),
+    speak,
+    toast,
+    confetti,
+    updateProgress,
+    completedDays: state.completed.days,
+  };
+})();
+</script>
+
 </body>
 </html>
