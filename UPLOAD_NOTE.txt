@@ -1,30 +1,30 @@
-KHAEMENES KINDER GARDEN PORTAL UPDATE
+KHAEMENES KINDER GARDEN — UNIFIED FAMILY + MENTOR REPAIR
 
-Upload these files preserving their paths:
+Upload these FIVE files into the existing Khaemenes_KinderGarden.github.io repository,
+preserving the paths exactly:
 
-Khaemenes_KinderGarden.github.io/
-├── index.html
-└── curriculum/
-    └── index.html
+index.html
+assets/khaemenes-kinder-continuity.js
+assets/khaemenes-kinder-family-adapter.js
+curriculum/index.html
+curriculum/assets/app.js
 
-WHY TWO FILES
--------------
-The new curriculum assets, data, lessons, assessments, teacher tools, printables,
-and records are under /curriculum/.
+The central Academy family files are already correctly uploaded and do NOT need
+to be copied into Kinder Garden.
 
-The curriculum lesson pages already link Home to ../../index.html, which resolves
-to /curriculum/index.html. That dashboard is currently missing from the curriculum
-folder because the curriculum dashboard was placed at the repository root.
+This repair combines:
+- shared Pre-K–12 Khaemenes Family Registry
+- existing Crechè learner migration
+- Kinder Garden mentor continuity
+- Pip / Miri / Nova / Sage / custom mentor
+- learner-scoped Kindergarten curriculum records
+- legacy curriculum-key compatibility
+- generic Family Profile school bridge
 
-This update:
-1. Restores the playful Kinder Garden root portal.
-2. Places the formal curriculum dashboard at /curriculum/index.html.
-3. Makes existing lesson Home links valid without rewriting all 36 units.
-4. Links all 20 current Kinder Garden apps.
-5. Reads the verified Crechè shared catalog and displays mentor-approved activities
-   whose age metadata includes 4–5 or 5–6.
-6. Reads the existing local Khaemenes profile bridge so pinned Crechè activities
-   can reappear in Kinder Garden.
-7. Uses vervenveda.com network URLs to preserve same-origin school continuity.
-
-No curriculum files need to move.
+Expected script order:
+1. Preschool profile bridge
+2. central Khaemenes Family Registry
+3. Kinder family adapter
+4. Kinder mentor/curriculum continuity bridge
+5. page logic
+6. generic school family bridge

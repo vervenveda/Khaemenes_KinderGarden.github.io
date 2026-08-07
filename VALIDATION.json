@@ -1,12 +1,17 @@
 {
   "valid": true,
-  "rootPortal": "index.html",
-  "curriculumDashboard": "curriculum/index.html",
-  "curriculumUnitsLinked": 36,
-  "localKinderAppsLinked": 20,
-  "crecheIntegration": "shared catalog; mentor-approved ages 4-5 or 5-6",
-  "profileContinuityBridge": true,
-  "curriculumHomeLinkRepair": true,
-  "inlineJavaScriptValid": true,
+  "checks": {
+    "rootLoadsFamilyRegistry": true,
+    "rootLoadsKinderFamilyAdapter": true,
+    "rootLoadsKinderContinuity": true,
+    "rootHasEmbeddedMentor": true,
+    "rootHasLearnerSetup": true,
+    "rootLoadsSchoolBridge": true,
+    "curriculumLoadsFamilyRegistry": true,
+    "curriculumLoadsKinderAdapter": true,
+    "curriculumLoadsContinuity": true,
+    "curriculumLearnerScoped": true,
+    "legacyCompatibility": true
+  },
   "issues": []
 }
