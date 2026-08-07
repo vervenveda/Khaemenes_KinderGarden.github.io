@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sink or Float — Multilingual Science Game (Patched)</title>
+<style>
+:root{
+  --sky1:#00b4d8;
+  --sky2:#90e0ef;
+  --sea:#0077b6;
+}
+html,body{
+  margin:0;height:100%;
+  font-family:"Comic Sans MS","Baloo 2",sans-serif;
+  background:linear-gradient(180deg,var(--sky1),var(--sky2),var(--sea));
+  background-size:400% 400%;
+  animation:bgFlow 25s ease infinite;
+  overflow:hidden;color:#023047;
+}
+@keyframes bgFlow{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+header{
+  text-align:center;
+  font-size:60px;
+  font-weight:bold;
+  color:#fff;
+  text-shadow:3px 3px 8px rgba(0,0,0,0.3);
+  margin:20px 11px 0 24px;
+}
+#langWrap{display:flex;justify-content:center;gap:24px;margin-bottom:11px;}
+select{
+  font-size:18px;padding:7px 11px;border-radius:11px;border:none;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+.container{
+  max-width:1111px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr 1fr;
+  gap:18px;align-items:start;padding:10px;
+}
+.panel{
+  background:rgba(255,255,255,0.85);
+  border-radius:18px;padding:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+.tank{
+  position:relative;width:100%;height:520px;border-radius:16px;overflow:hidden;
+  background:linear-gradient(180deg,#ade8f4 0%,#48cae4 40%,#0096c7 100%);
+}
+.wave{position:absolute;width:200%;height:60px;bottom:0;left:-50%;
+  background:rgba(255,255,255,0.5);border-radius:100%;
+  animation:waveMove 6s linear infinite;}
+@keyframes waveMove{0%{transform:translateX(0);}100%{transform:translateX(50%);}}
+.object{position:absolute;font-size:64px;transition:transform 1.8s ease,bottom 1.8s ease;pointer-events:none;}
+.center{text-align:center;}
+#hint{font-size:28px;font-weight:bold;margin:14px 0;}
+.btn{
+  padding:14px 24px;font-size:22px;border:none;border-radius:12px;
+  cursor:pointer;margin:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  transition:transform 0.1s;
+}
+.btn:hover{transform:scale(1.05);}
+.floatBtn{background:linear-gradient(180deg,#90ee90,#2ecc71);}
+.sinkBtn{background:linear-gradient(180deg,#f8c291,#e77f67);}
+#grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+  gap:14px;justify-items:center;padding:10px;
+}
+.tile{
+  width:100px;height:100px;border-radius:16px;border:4px solid #fff;
+  background:#f1faee;font-size:54px;cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .1s, opacity .2s;
+}
+.tile:hover{transform:scale(1.06);}
+.tile.done{opacity:0.45;pointer-events:none;transform:scale(.98);}
+.tile.selected{outline:4px solid rgba(0,0,0,0.08);transform:translateY(-4px);}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:999;}
+.confettiPiece{position:absolute;width:18px;height:18px;border-radius:4px;}
+@media(max-width:1000px){
+  .container{grid-template-columns:1fr;}
+  .tank{height:400px;}
+}
+</style>
+</head>
+<body>
+<header>Sink or Float</header>
+<div id="langWrap">
+  <label for="langSel">🌐 Language: </label>
+  <select id="langSel">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="ar">العربية</option>
+  </select>
+</div>
+
+<div class="container">
+  <div class="panel">
+    <div class="tank" id="tank"><div class="wave"></div></div>
+  </div>
+
+  <div class="panel center">
+    <div id="hint">Tap an object to start</div>
+    <button id="floatBtn" class="btn floatBtn">🌈 Float</button>
+    <button id="sinkBtn" class="btn sinkBtn">⚓ Sink</button>
+    <div id="score" style="margin-top:12px;font-weight:bold;font-size:20px;">Score 0 / 5</div>
+    <button id="restartBtn" class="btn" style="background:#caf0f8;margin-top:18px;">🔄 Restart</button>
+  </div>
+
+  <div class="panel"><div id="grid"></div></div>
+</div>
+<div id="confetti" class="confetti"></div>
+
+<script>
+(()=>{
+/* Hardened Sink-or-Float logic with immediate tile-locking, button-disable,
+   authoritative lookup of object floats via ANS[ id ], and a small debug panel. */
+
+// multilingual dictionary (kept same)
+const TXT={
+  en:{ start:"Tap an object to start", question:o=>`Does the ${o} sink or float?`, choose:"Choose an object first!",
+       float:"Float", sink:"Sink", correct:o=>`Nice! The ${o} ${ANS[o].floats ? 'floats!' : 'sinks!'}`,
+       wrong:o=>`Oops! The ${o} actually ${ANS[o].floats ? 'floats!' : 'sinks!'}`, win:"Great job! You're a water scientist!", restart:"🔄 Restart" },
+  es:{ start:"Toca un objeto para comenzar", question:o=>`¿El ${o} se hunde o flota?`, choose:"¡Elige un objeto primero!",
+       float:"Flota", sink:"Se hunde", correct:o=>`¡Bien! El ${o} ${ANS[o].floats ? 'flota' : 'se hunde'}!`,
+       wrong:o=>`¡Ups! El ${o} en realidad ${ANS[o].floats ? 'flota' : 'se hunde'}!`, win:"¡Buen trabajo! ¡Eres un científico del agua!", restart:"🔄 Reiniciar" },
+  fr:{ start:"Touchez un objet pour commencer", question:o=>`Est-ce que le ${o} coule ou flotte ?`, choose:"Choisis d’abord un objet !",
+       float:"Flotte", sink:"Coule", correct:o=>`Bravo ! Le ${o} ${ANS[o].floats ? 'flotte !' : 'coule !'}`,
+       wrong:o=>`Oups ! Le ${o} ${ANS[o].floats ? 'flotte !' : 'coule !'}`, win:"Bravo ! Tu es un scientifique de l’eau !", restart:"🔄 Redémarrer" },
+  de:{ start:"Tippe auf ein Objekt", question:o=>`Geht ${o} unter oder schwimmt es?`, choose:"Wähle zuerst ein Objekt!",
+       float:"Schwimmt", sink:"Geht unter", correct:o=>`Super! ${o} ${ANS[o].floats ? 'schwimmt!' : 'geht unter!'}`,
+       wrong:o=>`Hoppla! ${o} ${ANS[o].floats ? 'schwimmt!' : 'geht unter!'}`, win:"Tolle Arbeit! Du bist ein Wassser-Forscher!", restart:"🔄 Neustart" },
+  ar:{ start:"اضغط على شيء للبدء", question:o=>`هل ${o} يطفو أم يغرق؟`, choose:"اختر شيئًا أولاً!",
+       float:"يطفو", sink:"يغرق", correct:o=>`أحسنت! ${o} ${ANS[o].floats ? 'يطفو!' : 'يغرق!'}`,
+       wrong:o=>`عفوًا! ${o} في الحقيقة ${ANS[o].floats ? 'يطفو!' : 'يغرق!'}`, win:"عمل رائع! أنت عالم ماء!", restart:"🔄 إعادة" }
+};
+
+// Expanded object bank (explicit booleans)
+const OBJECTS=[
+  {id:'feather', emoji:'🪶', floats: true},
+  {id:'leaf',    emoji:'🍃', floats: true},
+  {id:'rock',    emoji:'🪨', floats: false},
+  {id:'apple',   emoji:'🍎', floats: true},
+  {id:'brick',   emoji:'🧱', floats: false},
+  {id:'sponge',  emoji:'🧽', floats: true},
+  {id:'cup',     emoji:'🥤', floats: true},
+  {id:'coin',    emoji:'🪙', floats: false},
+  {id:'ball',    emoji:'⚽', floats: true},
+  {id:'fish',    emoji:'🐠', floats: true},
+  {id:'key',     emoji:'🔑', floats: false},
+  {id:'spoon',   emoji:'🥄', floats: false},
+  {id:'bottle',  emoji:'🍼', floats: true},
+  {id:'glass',   emoji:'🥛', floats: false},
+  {id:'wood',    emoji:'🪵', floats: true}
+];
+
+const ANS = {}; OBJECTS.forEach(o => ANS[o.id] = o);
+
+// state
+let current=null, currentTileEl=null, score=0, lang='en', gameOver=false;
+
+// DOM refs
+const tank = document.getElementById('tank'),
+      hint = document.getElementById('hint'),
+      grid = document.getElementById('grid'),
+      floatBtn = document.getElementById('floatBtn'),
+      sinkBtn  = document.getElementById('sinkBtn'),
+      restartBtn = document.getElementById('restartBtn'),
+      scoreBox = document.getElementById('score'),
+      confetti = document.getElementById('confetti'),
+      langSel = document.getElementById('langSel');
+
+// sounds (best effort)
+let splash=null, pop=null;
+try{ splash = new Audio("https://actions.google.com/sounds/v1/water/splash.ogg"); pop = new Audio("https://actions.google.com/sounds/v1/cartoon/pop.ogg"); } catch(e){}
+
+// language UI
+function updateLangUI(){
+  hint.textContent = TXT[lang].start;
+  floatBtn.textContent = `🌈 ${TXT[lang].float}`;
+  sinkBtn.textContent = `⚓ ${TXT[lang].sink}`;
+  restartBtn.textContent = TXT[lang].restart;
+}
+langSel.onchange = ()=> { lang = langSel.value; updateLangUI(); };
+
+// speak helper (best-effort)
+function speak(t){
+  try{
+    if(!t) return;
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = (lang === 'ar' ? 'ar-SA' : lang);
+    u.pitch = 1.05; u.rate = 0.95;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; } return a; }
+
+/* create a small on-screen debug panel so test users can see last guesses */
+let lastGuesses = [];
+function renderDebug(){
+  let dbg = document.getElementById('debugPanel');
+  if(!dbg){
+    dbg = document.createElement('div');
+    dbg.id = 'debugPanel';
+    dbg.style.cssText = 'position:fixed;left:12px;bottom:12px;background:rgba(0,0,0,0.6);color:#fff;padding:8px;border-radius:8px;font-size:12px;z-index:9999;max-width:300px;backdrop-filter:blur(4px)';
+    document.body.appendChild(dbg);
+  }
+  dbg.innerHTML = `<strong>Recent guesses</strong><br>${lastGuesses.slice(-6).reverse().map(s=>{
+    return `<div style="margin-top:6px"><code style="color:#9ae6b4">${s.id}</code> — objectFloats:<strong style="color:#ffd166">${s.objectFloats}</strong> — you:<strong style="color:#60a5fa">${s.chose}</strong></div>`;
+  }).join('')}`;
+}
+
+/* Render grid: ensure no duplicate object IDs in a page */
+function renderGrid(){
+  grid.innerHTML = '';
+  const pool = shuffle([...OBJECTS]).slice(0,8);
+  pool.forEach(o=>{
+    const t = document.createElement('button');
+    t.className = 'tile';
+    t.type = 'button';
+    t.dataset.id = o.id;
+    t.textContent = o.emoji;
+    t.title = o.id;
+    t.onclick = ()=> chooseObject(o, t);
+    grid.appendChild(t);
+  });
+  current = null; currentTileEl = null;
+}
+
+/* Choose object — highlight but do not change data */
+function chooseObject(o, tileEl){
+  if(gameOver) return;
+  if(tileEl && tileEl.classList.contains('done')) return;
+  if(currentTileEl && currentTileEl !== tileEl) currentTileEl.classList.remove('selected');
+  current = o; currentTileEl = tileEl || null;
+  if(currentTileEl) currentTileEl.classList.add('selected');
+  hint.textContent = TXT[lang].question(o.id);
+  speak(TXT[lang].question(o.id));
+}
+
+/* Guess (true = float, false = sink) — hardened against races */
+function guess(ans){
+  if(gameOver) return;
+  if(!current){
+    hint.textContent = TXT[lang].choose; return;
+  }
+
+  // Immediately capture and neutralize selection to avoid race/double-click issues
+  const selected = current;
+  const selectedTile = currentTileEl;
+  current = null;
+  currentTileEl = null;
+
+  // Lock the tile visually and disable it so it cannot be reselected while animation runs
+  if(selectedTile){
+    selectedTile.classList.remove('selected');
+    selectedTile.classList.add('done');
+    selectedTile.disabled = true;
+  }
+
+  // Disable guess buttons until animation completes
+  floatBtn.disabled = true;
+  sinkBtn.disabled = true;
+
+  // Authoritative lookup from ANS using id (prevents mutated object confusion)
+  const objFloats = Boolean(ANS[selected.id] && ANS[selected.id].floats);
+  const ansBool = Boolean(ans);
+  const correct = (ansBool === objFloats);
+
+  // push debug entry and update overlay
+  lastGuesses.push({ id: selected.id, objectFloats: objFloats, chose: ansBool });
+  if(lastGuesses.length>50) lastGuesses = lastGuesses.slice(-50);
+  renderDebug();
+
+  // Visual object animation
+  const obj = document.createElement('div');
+  obj.className = 'object';
+  obj.textContent = selected.emoji;
+  obj.style.left = '50%';
+  obj.style.bottom = '0px';
+  obj.style.transform = 'translateX(-50%)';
+  tank.appendChild(obj);
+
+  if(correct){
+    const floatTo = Math.max(160, Math.min(420, Math.floor(tank.clientHeight * 0.62)));
+    requestAnimationFrame(()=> {
+      obj.style.bottom = floatTo + 'px';
+      obj.style.transform = 'translateX(-50%) scale(1.05)';
+    });
+    try{ if(pop) { pop.currentTime = 0; pop.play(); } }catch(e){}
+    speak(TXT[lang].correct(selected.id));
+    score++;
+  } else {
+    requestAnimationFrame(()=> {
+      obj.style.bottom = '-120px';
+      obj.style.transform = 'translateX(-50%) rotate(18deg) scale(.98)';
+    });
+    try{ if(splash) { splash.currentTime = 0; splash.play(); } }catch(e){}
+    speak(TXT[lang].wrong(selected.id));
+  }
+
+  // Update UI score immediately
+  scoreBox.textContent = `Score ${score} / 5`;
+
+  // remove visual and re-enable buttons after animation
+  setTimeout(()=> {
+    if(obj && obj.parentNode) obj.parentNode.removeChild(obj);
+    floatBtn.disabled = false;
+    sinkBtn.disabled  = false;
+
+    // check win AFTER re-enabling (so UI updates properly)
+    if(score >= 5 && !gameOver) win();
+  }, 2200);
+
+  // Reset hint quickly
+  hint.textContent = TXT[lang].start;
+}
+
+/* Win / restart unchanged but safe */
+function win(){
+  gameOver = true;
+  hint.textContent = "🎉 " + TXT[lang].win;
+  speak(TXT[lang].win);
+  confetti.innerHTML = '';
+  for(let i=0;i<50;i++){
+    const d = document.createElement('div');
+    d.className = 'confettiPiece';
+    d.style.left = (Math.random()*100) + "vw";
+    d.style.top = "-5vh";
+    d.style.background = `hsl(${Math.random()*360},80%,60%)`;
+    confetti.appendChild(d);
+    const fall = 1400 + Math.random()*1600;
+    d.animate(
+      [{ transform: "translateY(0) rotate(0deg)", opacity: 1 },
+       { transform: `translateY(90vh) rotate(${Math.random()*720}deg)`, opacity: 0 }],
+      { duration: fall, easing: "cubic-bezier(.2,.6,.2,1)" }
+    ).onfinish = ()=> d.remove();
+  }
+}
+
+function restart(){
+  score = 0; gameOver = false;
+  scoreBox.textContent = `Score ${score} / 5`;
+  hint.textContent = TXT[lang].start;
+  tank.innerHTML = '<div class="wave"></div>';
+  renderGrid();
+  renderDebug();
+}
+
+/* wiring */
+floatBtn.onclick = ()=> guess(true);
+sinkBtn.onclick  = ()=> guess(false);
+restartBtn.onclick = restart;
+
+updateLangUI();
+renderGrid();
+renderDebug();
+
+})();
+</script>
+</body>
+</html>
