@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Khaemenes Kinder Garden formal 36-week kindergarten curriculum with 180 daily lessons, printables, assessments, teacher tools, local records, and certification.">
+<title>Khaemenes Kinder Garden · 36-Week Curriculum</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.portal-return{display:inline-flex;align-items:center;justify-content:center;margin:10px auto 0;padding:9px 13px;border:1px solid rgba(255,255,255,.35);border-radius:7px;color:#fff;text-decoration:none;font-size:12px;background:rgba(255,255,255,.10)}
+</style>
+</head>
+<body>
+<header class="header no-print">
+  <div class="shell nav">
+    <a class="brand" href="index.html">
+      <span class="seal">K</span>
+      <span><strong>Khaemenes Kinder Garden</strong><small>36-Week A+ Curriculum</small></span>
+    </a>
+    <nav class="navlinks">
+      <a href="../index.html">Kinder Garden Portal</a>
+      <a href="index.html">Curriculum Home</a>
+      <a href="teacher-tools/index.html">Teacher Tools</a>
+      <a href="assessments/weekly-assessments.html">Assessments</a>
+      <a href="records/certificate.html">Certificate</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="shell">
+    <div class="mark">K</div>
+    <p class="kicker">Kinder Garden · Formal Learning Path</p>
+    <h1>Khaemenes Academy Kindergarten</h1>
+    <p class="lead">A complete in-house 36-week kindergarten curriculum with 180 daily lessons, workshops, printable packets, weekly assessments, midterm, final, teacher tools, portfolio evidence, and 80% completion certification.</p>
+    <div class="actions">
+      <a class="btn light" href="#units">Open 36 Units</a>
+      <a class="btn gold" href="teacher-tools/index.html">Teacher Tools</a>
+      <a class="btn" href="assessments/weekly-assessments.html">Assessments</a>
+    </div>
+    <a class="portal-return" href="../index.html">← Return to the playful Kinder Garden portal</a>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="shell">
+    <div class="heading">
+      <p class="kicker">A+ Foundation</p>
+      <h2>Structured, joyful, and complete.</h2>
+      <p>This curriculum is intentionally in-house: no external scripts, fonts, images, curriculum calls, or required online dependencies.</p>
+    </div>
+    <div class="grid cols-4">
+      <article class="card stat"><strong>36</strong><span>Units / Weeks</span></article>
+      <article class="card stat"><strong>180</strong><span>Daily Lessons</span></article>
+      <article class="card stat"><strong>36</strong><span>Weekly Assessments</span></article>
+      <article class="card stat"><strong>80%</strong><span>Certificate Rule</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="records">
+  <div class="shell">
+    <div class="heading">
+      <p class="kicker">Local Records</p>
+      <h2>Family-controlled progress and certification.</h2>
+      <p>Records stay in this browser. Families can export a JSON record for safekeeping.</p>
+    </div>
+    <div class="portal">
+      <div class="profile-box">
+        <h3>Student Record</h3>
+        <label>Student name</label>
+        <input id="studentName" placeholder="Kindergarten Scholar">
+        <label>Midterm score</label>
+        <input id="midtermScore" type="number" min="0" max="100" placeholder="0–100">
+        <label>Final score</label>
+        <input id="finalScore" type="number" min="0" max="100" placeholder="0–100">
+        <label style="display:flex;gap:10px;justify-content:center;align-items:center;margin-top:14px">
+          <input id="portfolio" type="checkbox" style="width:auto"> Portfolio evidence complete
+        </label>
+        <div class="actions">
+          <button class="button gold" id="saveProfile">Save Record</button>
+          <button class="button" id="clearRecords">Clear</button>
+        </div>
+      </div>
+      <div id="summary"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="units">
+  <div class="shell">
+    <div class="heading">
+      <p class="kicker">36 Units · 5 Lessons Each</p>
+      <h2>Complete kindergarten scope and sequence.</h2>
+      <p>Each unit includes five daily lessons, teacher scripts, centers, a printable packet, family connection, workshop activity, and assessment.</p>
+    </div>
+    <div class="grid cols-3" id="unitGrid"></div>
+  </div>
+</section>
+
+<section class="section alt" id="standards">
+  <div class="shell">
+    <div class="heading">
+      <p class="kicker">Internal Crosswalk</p>
+      <h2>Broad early-learning coverage without outside dependencies.</h2>
+      <p>The crosswalk is included as local documentation for review; it does not call external resources.</p>
+    </div>
+    <div class="grid cols-3" id="standardsGrid"></div>
+  </div>
+</section>
+</main>
+
+<script src="data/course-data.js"></script>
+<script src="assets/app.js"></script>
+
+<footer class="footer no-print">
+  <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
