@@ -1,0 +1,4 @@
+/* Kinder Garden legacy lesson stylesheet compatibility layer.
+   Unit 01 historically references lesson.css; keep the route alive and
+   inherit the same curriculum foundation used by later units. */
+@import url("./styles.css");
