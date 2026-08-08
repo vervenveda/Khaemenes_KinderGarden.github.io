@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Khaemenes Kinder Garden — a playful kindergarten gateway with a complete 36-week curriculum, learning apps, Crechè continuity, games, stories, math, science, art, movement, and family tools.">
+<meta name="description" content="Khaemenes Kinder Garden — a curriculum-first 36-week kindergarten learning portal with 180 daily lessons, assessments, printables, family progress tools, and carefully matched Kinder Garden and Crechè practice companions.">
 <meta name="theme-color" content="#6fae67"><meta name="color-scheme" content="light">
 <title>Khaemenes Kinder Garden | A Garden of Wonder</title><style>
 :root{
@@ -89,28 +89,54 @@ h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:444;letter-spacing:.01
 @media(max-width:560px){.mentor-progress{grid-template-columns:1fr}.choice-grid,.interests,.custom-row{grid-template-columns:1fr}}
 
 @media(max-width:1080px){.unit-grid,.app-grid,.creche-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:1000px){.hero-inner{grid-template-columns:1fr}.hero-copy{text-align:center}.lead{margin-inline:auto}.hero-actions{justify-content:center}.hero-garden{width:min(100%,540px);margin:auto}.feature-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.menu-button{display:grid;place-items:center}}@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.unit-grid,.app-grid,.creche-grid{grid-template-columns:repeat(2,1fr)}.profile-wrap,.daily-grid{grid-template-columns:1fr}}@media(max-width:560px){.utility .shell{flex-direction:column;padding:.5rem 0}.stats,.feature-grid,.unit-grid,.app-grid,.creche-grid,.pinned-list{grid-template-columns:1fr}.hero-actions{display:grid}.hero-actions .btn{width:100%}.hero-garden{min-height:400px}.tree{transform:translateX(-50%) scale(.86)}.brand small{display:none}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* vNext · curriculum-first unit companions + family portal */
+.mobile-menu{top:var(--kinder-mobile-menu-top,76px);inset-inline:0;bottom:auto}
+.unit-card{position:relative}
+.unit-card .unit-open-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
+.unit-open-link,.unit-companion-link{
+  min-height:36px;display:inline-flex;align-items:center;justify-content:center;padding:.48rem .6rem;
+  border:1px solid var(--line);border-radius:8px;background:#f7fbf6;color:var(--leaf2);
+  font-size:.66rem;font-weight:700;text-decoration:none
+}
+.unit-open-link{color:#fff;background:var(--leaf2);border-color:var(--leaf2)}
+.unit-companions{margin-top:.55rem;padding-top:.55rem;border-top:1px dashed var(--line)}
+.unit-companions strong{display:block;color:#5d6f63;font-size:.65rem}
+.unit-companions small{display:block;margin:.28rem 0 .42rem;padding:0;color:#7d7284;font-size:.62rem;line-height:1.35}
+.unit-companion-links{display:flex;flex-wrap:wrap;gap:.35rem}
+.unit-companion-link.kinder{background:#edf8ef}
+.unit-companion-link.creche{background:#f7effc;color:#6f527f}
+.curriculum-priority-note{
+  max-width:900px;margin:0 auto 1.4rem;padding:.8rem 1rem;border:1px solid #d9ead8;border-radius:12px;
+  color:#45604f;background:#f6fcf5;font-size:.8rem
+}
+@media(max-width:560px){
+  .unit-open-row,.unit-companion-links{display:grid}
+  .unit-open-link,.unit-companion-link{width:100%}
+}
+
 </style>
 </head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
 <div class="garden-decor" aria-hidden="true"><span class="butterfly">🦋</span><span class="butterfly">🦋</span><span class="butterfly">🦋</span><span class="butterfly">🦋</span></div>
 <div class="utility"><div class="shell"><span>Khaemenes Kinder Garden · kindness, curiosity, strong foundations, and joyful discovery</span><nav class="utility-links" aria-label="Utility navigation"><a href="https://vervenveda.com/">Verve N Veda</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><a href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè</a><a href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Elementary</a></nav></div></div>
-<header class="header"><div class="shell nav"><a class="brand" href="#top" aria-label="Kinder Garden home"><span class="brand-mark">🦋</span><span><strong>Khaemenes Kinder Garden</strong><small>A Garden of Wonder · Kindergarten</small></span></a><nav class="nav-links" aria-label="Primary navigation"><a href="#curriculum">36-Week Curriculum</a><a href="#apps">Kinder Apps</a><a href="#creche">Crechè Garden</a><a href="#mygarden">My Garden</a><a href="#families">Families</a></nav><button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu">☰</button></div></header>
-<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation"><a href="#curriculum">36-Week Curriculum</a><a href="#apps">Kinder Apps</a><a href="#creche">Crechè Garden</a><a href="#mygarden">My Garden</a><a href="#families">Families</a></nav>
+<header class="header"><div class="shell nav"><a class="brand" href="#top" aria-label="Kinder Garden home"><span class="brand-mark">🦋</span><span><strong>Khaemenes Kinder Garden</strong><small>A Garden of Wonder · Kindergarten</small></span></a><nav class="nav-links" aria-label="Primary navigation"><a href="#curriculum">36-Week Curriculum</a><a href="family/">Family Portal</a><a href="#apps">Practice Library</a><a href="#creche">Crechè Companions</a><a href="#mygarden">My Garden</a></nav><button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu">☰</button></div></header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation"><a href="#curriculum">36-Week Curriculum</a><a href="family/">Family Portal</a><a href="#apps">Practice Library</a><a href="#creche">Crechè Companions</a><a href="#mygarden">My Garden</a><a href="#families">Family & Educator Corner</a></nav>
 <nav class="breadcrumbs" aria-label="Breadcrumb"><div class="shell"><a href="https://vervenveda.com/">Verve N Veda</a><span>›</span><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><span>›</span><span aria-current="page">Kinder Garden</span></div></nav>
 
 <main>
-<section class="hero"><div class="shell hero-inner"><article class="hero-copy"><p class="eyebrow">Where kindness and curiosity begin to bloom</p><h1>Kinder Garden</h1><p class="tagline">A deliberate play on words — a kindergarten designed as a real garden for growing minds.</p><p class="lead">Kinder Garden now brings together a complete 36-week kindergarten curriculum with 180 daily lessons, printable packets, weekly assessments, family-controlled records, local learning apps, and the strongest age-appropriate adventures from Crechè. Children can learn formally, practice through play, create, move, wonder, and grow without losing the gentleness of the early-learning years.</p><div class="hero-actions"><a class="btn primary" href="curriculum/index.html">Open the 36-Week Curriculum</a><a class="btn gold" href="curriculum/lessons/unit-01/">Begin Week 1</a><a class="btn secondary" href="#creche">Explore Crechè Adventures</a></div></article><div class="hero-garden" aria-label="Decorative Kinder Garden tree and flowers"><div class="tree" aria-hidden="true"><div class="tree-trunk"></div><div class="tree-crown one"></div><div class="tree-crown two"></div><div class="tree-crown three"></div></div><span class="garden-flower f1">🌸</span><span class="garden-flower f2">🌻</span><span class="garden-flower f3">🦋</span><span class="garden-flower f4">🌼</span></div></div></section>
+<section class="hero"><div class="shell hero-inner"><article class="hero-copy"><p class="eyebrow">Where kindness and curiosity begin to bloom</p><h1>Kinder Garden</h1><p class="tagline">A deliberate play on words — a kindergarten designed as a real garden for growing minds.</p><p class="lead">Kinder Garden now brings together a complete 36-week kindergarten curriculum with 180 daily lessons, printable packets, weekly assessments, family-controlled records, local learning apps, and the strongest age-appropriate adventures from Crechè. Children can learn formally, practice through play, create, move, wonder, and grow without losing the gentleness of the early-learning years.</p><div class="hero-actions"><a class="btn primary" href="curriculum/index.html">Open the 36-Week Curriculum</a><a class="btn gold" href="curriculum/lessons/unit-01/">Begin Week 1</a><a class="btn secondary" href="family/">Open Family Curriculum Portal</a><a class="btn secondary" href="#creche">See Learning Companions</a></div></article><div class="hero-garden" aria-label="Decorative Kinder Garden tree and flowers"><div class="tree" aria-hidden="true"><div class="tree-trunk"></div><div class="tree-crown one"></div><div class="tree-crown two"></div><div class="tree-crown three"></div></div><span class="garden-flower f1">🌸</span><span class="garden-flower f2">🌻</span><span class="garden-flower f3">🦋</span><span class="garden-flower f4">🌼</span></div></div></section>
 
 <div class="shell stats" aria-label="Curriculum at a glance"><div class="stat"><strong>36</strong><span>Weeks / Integrated Units</span></div><div class="stat"><strong>180</strong><span>Daily Lessons</span></div><div class="stat"><strong>36</strong><span>Weekly Mastery Checks</span></div><div class="stat"><strong>80%</strong><span>Completion Certificate Rule</span></div></div>
 
-<section class="section" id="curriculum"><div class="shell"><div class="section-heading"><p class="eyebrow">The Formal Learning Path</p><h2>Thirty-six weeks planted one week at a time.</h2><p>Every unit contains five daily lessons, literacy, mathematics, inquiry, social-emotional learning, movement or creation, a maker project, printable work, family connection, and a weekly mastery check.</p></div>
+<section class="section" id="curriculum"><div class="shell"><div class="section-heading"><p class="eyebrow">The Formal Learning Path</p><h2>Thirty-six weeks planted one week at a time.</h2><p>Every unit contains five daily lessons, literacy, mathematics, inquiry, social-emotional learning, movement or creation, a maker project, printable work, family connection, a weekly mastery check, and curriculum-matched practice drawn from both Kinder Garden and Crechè.</p></div>
 <div class="feature-grid" style="margin-bottom:2rem"><article class="feature-card"><span class="icon">📚</span><h3>Curriculum Dashboard</h3><p>Open the formal 36-unit curriculum, local student tracker, scope and sequence, and certification pathway.</p><a class="btn primary" href="curriculum/index.html">Open Curriculum Dashboard</a></article><article class="feature-card"><span class="icon">🧑‍🏫</span><h3>Teacher & Family Tools</h3><p>Use educator tools, portfolio evidence, printables, and local family records.</p><a class="btn secondary" href="curriculum/teacher-tools/index.html">Open Teacher Tools</a></article><article class="feature-card"><span class="icon">✅</span><h3>Assessments & Readiness</h3><p>Weekly mastery checks, midyear demonstration, final readiness demonstration, and certificate pathway.</p><a class="btn gold" href="curriculum/assessments/weekly-assessments.html">Open Assessments</a></article></div>
 <div class="filterbar" id="unitFilters"><button class="chip active" data-term="all" type="button">All 36 Weeks</button><button class="chip" data-term="1" type="button">Weeks 1–9</button><button class="chip" data-term="2" type="button">Weeks 10–18</button><button class="chip" data-term="3" type="button">Weeks 19–27</button><button class="chip" data-term="4" type="button">Weeks 28–36</button></div><div class="unit-grid" id="unitGrid"></div></div></section>
 
-<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">The Kinder Garden Tool Shed</p><h2>Twenty local apps for practice, play, calm, and discovery.</h2><p>These applications already live inside the Kinder Garden repository and supplement the formal curriculum with literacy, mathematics, science, weather, history, movement, and regulation practice.</p></div><div class="filterbar" id="appFilters"><button class="chip active" data-app="all" type="button">All Apps</button><button class="chip" data-app="literacy" type="button">Letters & Words</button><button class="chip" data-app="math" type="button">Math</button><button class="chip" data-app="science" type="button">Science & Weather</button><button class="chip" data-app="community" type="button">History & Community</button><button class="chip" data-app="movement" type="button">Movement</button><button class="chip" data-app="wellness" type="button">Calm & Wellness</button></div><div class="app-grid" id="appGrid"></div></div></section>
+<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">Optional Practice Library</p><h2>Twenty local tools that serve the curriculum.</h2><p>The formal 36-week curriculum remains the center of Kinder Garden. These applications are practice companions for literacy, mathematics, science, weather, history, movement, and regulation—not a replacement for the daily lesson sequence.</p></div><div class="filterbar" id="appFilters"><button class="chip active" data-app="all" type="button">All Apps</button><button class="chip" data-app="literacy" type="button">Letters & Words</button><button class="chip" data-app="math" type="button">Math</button><button class="chip" data-app="science" type="button">Science & Weather</button><button class="chip" data-app="community" type="button">History & Community</button><button class="chip" data-app="movement" type="button">Movement</button><button class="chip" data-app="wellness" type="button">Calm & Wellness</button></div><div class="app-grid" id="appGrid"></div></div></section>
 
-<section class="section" id="creche"><div class="shell"><div class="section-heading"><p class="eyebrow">Crechè → Kinder Garden Bridge</p><h2>Keep the favorite adventures. Grow into the next garden.</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/">Open Preschool Mentor</a></div></div></section>
+<section class="section" id="creche"><div class="shell"><div class="section-heading"><p class="eyebrow">Crechè → Kinder Garden Curriculum Bridge</p><h2>Familiar play becomes purposeful lesson practice.</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/">Open Preschool Mentor</a></div></div></section>
 
 
 <section class="section" id="mentor">
@@ -167,9 +193,9 @@ h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:444;letter-spacing:.01
 </section>
 
 
-<section class="section section-alt" id="mygarden"><div class="shell"><div class="section-heading"><p class="eyebrow">Local Learner Continuity</p><h2>My Garden follows the child forward.</h2><p>When Kinder Garden is opened through the shared <strong>vervenveda.com</strong> network, it can read the same browser-local Crechè learner continuity record. Nothing here creates an account or transmits the child's profile.</p></div><div class="profile-wrap"><article class="profile-card"><h3 id="profileGreeting">My Garden</h3><p id="profileMessage">Checking this browser for a Crechè learner profile…</p><div class="profile-summary" id="profileSummary"></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè Profile & Favorites</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Next: Elementary School</a></div></article><article class="pinned-card"><h3>Pinned Crechè Adventures</h3><p>Favorites pinned in Crechè can reappear here when the shared local learner record is available.</p><div class="pinned-list" id="pinnedList"><div class="empty">No pinned activities are visible yet.</div></div></article></div></div></section>
+<section class="section section-alt" id="mygarden"><div class="shell"><div class="section-heading"><p class="eyebrow">Local Learner Continuity</p><h2>My Garden follows the child forward.</h2><p>When Kinder Garden is opened through the shared <strong>vervenveda.com</strong> network, it can read the same browser-local Crechè learner continuity record. Nothing here creates an account or transmits the child's profile.</p></div><div class="profile-wrap"><article class="profile-card"><h3 id="profileGreeting">My Garden</h3><p id="profileMessage">Checking this browser for a Crechè learner profile…</p><div class="profile-summary" id="profileSummary"></div><div class="hero-actions"><a class="btn primary" href="family/">Family Curriculum Portal</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè Profile & Favorites</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Next: Elementary School</a></div></article><article class="pinned-card"><h3>Pinned Crechè Adventures</h3><p>Favorites pinned in Crechè can reappear here when the shared local learner record is available.</p><div class="pinned-list" id="pinnedList"><div class="empty">No pinned activities are visible yet.</div></div></article></div></div></section>
 
-<section class="section" id="today"><div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's little wonder.</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div></section>
+<section class="section" id="today"><div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's little wonder.</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="family/"><strong>Family Curriculum Portal</strong></a><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div></section>
 
 <section class="section final"><div class="shell"><p class="eyebrow" style="color:#fff1c7">A Kinder Garden Promise</p><h2>Kindness is planted. Curiosity is watered. Strong foundations are grown with room to bloom.</h2><p>The formal curriculum gives the year structure. Crechè continuity preserves familiar play. Kinder Garden's own apps provide practice. Families and educators remain the people who know the child best.</p><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="curriculum/index.html">Open the Curriculum</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Continue to Elementary School</a></div></div></section>
 </main>
@@ -284,6 +310,7 @@ h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:444;letter-spacing:.01
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
 <script src="assets/khaemenes-kinder-family-adapter.js"></script>
 <script src="assets/khaemenes-kinder-continuity.js"></script>
+<script src="assets/khaemenes-kinder-companions.js"></script>
 <script>
 (() => {
 "use strict";
@@ -296,7 +323,27 @@ const crecheUrl=file=>BASE+encodePath(file);
 
 function renderUnits(term="all"){
  const list=UNITS.filter(u=>{if(term==="all")return true;const t=Number(term),min=(t-1)*9+1,max=t*9;return u.n>=min&&u.n<=max;});
- $("#unitGrid").innerHTML=list.map(u=>`<a class="unit-card" href="${u.url}"><div class="unit-top"><span class="unit-no">Week ${String(u.n).padStart(2,"0")}</span><span class="unit-icon">${u.icon}</span></div><h3>${esc(u.title)}</h3><p>${esc(u.question)}</p><small>5 daily lessons · printable · assessment →</small></a>`).join("");
+ const companions=window.KhaemenesKinderCompanions;
+ const crecheCatalog=window.KhaemenesPreschoolCatalog;
+ $("#unitGrid").innerHTML=list.map(u=>{
+   const match=companions?.forUnit?.(u.n,crecheCatalog);
+   const kinder=match?.kinder?.[0]||null;
+   const creche=match?.creche||null;
+   return `<article class="unit-card" data-unit="${u.n}">
+     <div class="unit-top"><span class="unit-no">Week ${String(u.n).padStart(2,"0")}</span><span class="unit-icon">${u.icon}</span></div>
+     <h3>${esc(u.title)}</h3>
+     <p>${esc(u.question)}</p>
+     <div class="unit-open-row"><a class="unit-open-link" href="${u.url}">Open 5-Lesson Unit →</a></div>
+     <div class="unit-companions">
+       <strong>Lesson companions</strong>
+       <small>${esc(match?.reason||"Practice after the lesson with a matched learning activity.")}</small>
+       <div class="unit-companion-links">
+         ${kinder?`<a class="unit-companion-link kinder" href="${kinder.path}">${kinder.icon} ${esc(kinder.title)}</a>`:""}
+         ${creche?`<a class="unit-companion-link creche" href="${creche.url}">${esc(creche.icon||"🌈")} Crechè · ${esc(creche.title)}</a>`:""}
+       </div>
+     </div>
+   </article>`;
+ }).join("");
 }
 function renderApps(group="all"){
  const list=APPS.filter(a=>group==="all"||a.group===group);
@@ -390,6 +437,24 @@ function syncKinderContinuityProfile(profile){
     updatedAt:new Date().toISOString()
   });
 }
+function syncSharedFamilyRegistry(profile){
+  const R=window.KhaemenesFamilyRegistry;
+  if(!R||!profile?.learnerId)return false;
+  try{
+    /* The shared registry migrates the just-saved local learner without
+       creating a second learner identity. */
+    R.migrateLegacyPreschool?.();
+    const learner=R.getLearner?.(profile.learnerId);
+    if(learner){
+      if(learner.stage!=="kindergarten")R.updateLearnerStage?.(profile.learnerId,"kindergarten");
+      R.setActive?.({familyId:learner.familyId,learnerId:profile.learnerId});
+    }
+    return true;
+  }catch(error){
+    console.warn("Kinder Garden family-registry sync deferred:",error);
+    return false;
+  }
+}
 function saveKinderSetup(){
   const nickname=$("#kinderNickname").value.trim().slice(0,20);
   const ageBand=$("#kinderAgeBand").value;
@@ -445,6 +510,7 @@ function saveKinderSetup(){
   };
 
   syncKinderContinuityProfile(profile);
+  syncSharedFamilyRegistry(profile);
   window.KhaemenesKinderContinuity?.loadCurriculumState?.();
   closeKinderSetup();
   renderProfile();
@@ -527,10 +593,33 @@ renderUnits();renderApps();setupCreche();renderProfile();setWonder(Math.floor(Da
 $("#unitFilters").addEventListener("click",e=>{const b=e.target.closest("[data-term]");if(!b)return;$$("#unitFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderUnits(b.dataset.term);});
 $("#appFilters").addEventListener("click",e=>{const b=e.target.closest("[data-app]");if(!b)return;$$("#appFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderApps(b.dataset.app);});
 $("#newWonder").addEventListener("click",randomWonder);
-const mb=$("#menuButton"),mm=$("#mobileMenu");mb.addEventListener("click",()=>{const open=mm.classList.toggle("open");mb.setAttribute("aria-expanded",String(open));mb.textContent=open?"×":"☰";});
-mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}));
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}});
+const mb=$("#menuButton"),mm=$("#mobileMenu");
+function positionKinderMobileMenu(){
+  const header=document.querySelector(".header");
+  const bottom=Math.max(0,Math.round(header?.getBoundingClientRect?.().bottom||76));
+  document.documentElement.style.setProperty("--kinder-mobile-menu-top",`${bottom}px`);
+}
+function closeKinderMobileMenu(){
+  mm.classList.remove("open");
+  mb.setAttribute("aria-expanded","false");
+  mb.setAttribute("aria-label","Open Kinder Garden menu");
+  mb.textContent="☰";
+}
+mb.setAttribute("aria-label","Open Kinder Garden menu");
+mb.addEventListener("click",()=>{
+  positionKinderMobileMenu();
+  const open=mm.classList.toggle("open");
+  mb.setAttribute("aria-expanded",String(open));
+  mb.setAttribute("aria-label",open?"Close Kinder Garden menu":"Open Kinder Garden menu");
+  mb.textContent=open?"×":"☰";
+});
+mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeKinderMobileMenu));
+window.addEventListener("resize",()=>{if(mm.classList.contains("open"))positionKinderMobileMenu()},{passive:true});
+window.addEventListener("scroll",()=>{if(mm.classList.contains("open"))positionKinderMobileMenu()},{passive:true});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeKinderMobileMenu();});
 if(window.KhaemenesLearnerProfile?.subscribe)window.KhaemenesLearnerProfile.subscribe(()=>renderProfile());
+window.addEventListener("khaemenes-family-changed",()=>{renderProfile();renderKinderMentor();});
+window.addEventListener("khaemenes-kinder-family-ready",()=>{renderProfile();renderKinderMentor();});
 
 renderKinderMentor();
 $("#openKinderSetup").addEventListener("click",openKinderSetup);

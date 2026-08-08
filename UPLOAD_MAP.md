@@ -1,11 +1,28 @@
-# Upload Map Upload this complete folder into the kindergarten GitHub repository. ## Root files - index.html
-- README.md
-- LICENSE.md
-- UPLOAD_MAP.md
-- VALIDATION.md ## Required folders - assets/ - styles.css - app.js - certificate.js
-- data/ - course-data.js - course-data.json - scope-sequence.csv - standards-crosswalk.csv
-- lessons/ - unit-01/index.html through unit-36/index.html
-- printables/ - unit-01-packet.html through unit-36-packet.html
-- assessments/ - weekly-assessments.html - unit-01-assessment.html through unit-36-assessment.html - midterm.html - final-exam.html
-- teacher-tools/ - index.html
-- records/ - certificate.html ## Dependency rule Do not add CDN fonts, outside scripts, outside curriculum embeds, or required external assets.
+# Kinder Garden Repair Upload Map
+
+Upload these files to `vervenveda/Khaemenes_KinderGarden.github.io` preserving the exact paths:
+
+```text
+index.html
+assets/khaemenes-kinder-companions.js
+family/index.html
+curriculum/index.html
+curriculum/assets/companion-layer.js
+curriculum/assets/lesson.css
+curriculum/teacher-tools/index.html
+```
+
+Do not delete the existing:
+
+- `apps/`
+- `assets/khaemenes-kinder-continuity.js`
+- `assets/khaemenes-kinder-family-adapter.js`
+- `curriculum/data/`
+- `curriculum/lessons/`
+- `curriculum/assessments/`
+- `curriculum/printables/`
+- `curriculum/records/`
+- `curriculum/assets/app.js`
+- `curriculum/assets/styles.css`
+
+The new files are designed to sit on top of the existing curriculum and preserve its records and 80% certification logic.

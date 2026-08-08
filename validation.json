@@ -1,0 +1,110 @@
+{
+  "valid": true,
+  "generated_files": [
+    "KINDER_DEEP_INSPECTION.md",
+    "UPLOAD_MAP.md",
+    "assets/khaemenes-kinder-companions.js",
+    "curriculum/assets/companion-layer.js",
+    "curriculum/assets/lesson.css",
+    "curriculum/index.html",
+    "curriculum/teacher-tools/index.html",
+    "family/index.html",
+    "index.html",
+    "validation.json"
+  ],
+  "html": {
+    "index.html": {
+      "html_ids": 56,
+      "duplicate_ids": [],
+      "hash_links": [
+        "#apps",
+        "#creche",
+        "#curriculum",
+        "#families",
+        "#mygarden",
+        "#top"
+      ],
+      "missing_hash_targets": []
+    },
+    "family/index.html": {
+      "html_ids": 11,
+      "duplicate_ids": [],
+      "hash_links": [],
+      "missing_hash_targets": []
+    },
+    "curriculum/index.html": {
+      "html_ids": 15,
+      "duplicate_ids": [],
+      "hash_links": [
+        "#units"
+      ],
+      "missing_hash_targets": []
+    },
+    "curriculum/teacher-tools/index.html": {
+      "html_ids": 1,
+      "duplicate_ids": [],
+      "hash_links": [],
+      "missing_hash_targets": []
+    }
+  },
+  "javascript_syntax": {
+    "index.html": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "family/index.html": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "curriculum/teacher-tools/index.html": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "assets/khaemenes-kinder-companions.js": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "curriculum/assets/companion-layer.js": {
+      "returncode": 0,
+      "stderr": ""
+    }
+  },
+  "local_link_audit": {
+    "index.html": {
+      "local_references_checked": 18,
+      "unresolved_local_references": []
+    },
+    "family/index.html": {
+      "local_references_checked": 14,
+      "unresolved_local_references": [],
+      "folder_index_aliases_confirmed": [
+        {
+          "reference": "../",
+          "resolves_to": "index.html"
+        },
+        {
+          "reference": "../#mentor",
+          "resolves_to": "index.html#mentor"
+        }
+      ]
+    },
+    "curriculum/index.html": {
+      "local_references_checked": 19,
+      "unresolved_local_references": []
+    },
+    "curriculum/teacher-tools/index.html": {
+      "local_references_checked": 9,
+      "unresolved_local_references": []
+    }
+  },
+  "root_exact_id_selectors_checked": 37,
+  "root_missing_exact_id_selectors": [],
+  "repository_inventory_basis": {
+    "verified_kinder_apps": 20,
+    "verified_curriculum_units": 36,
+    "verified_unit_assessments": 36,
+    "verified_curriculum_printables": 36,
+    "family_portal_was_missing_before_repair": true,
+    "teacher_tools_expected_curriculum_route_was_missing_before_repair": true
+  }
+}
