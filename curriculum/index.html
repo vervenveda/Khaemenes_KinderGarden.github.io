@@ -5,31 +5,789 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Khaemenes Kinder Garden formal 36-week kindergarten curriculum with 180 daily lessons, printables, assessments, family-controlled records, certification, and matched Kinder Garden and Crechè practice companions.">
 <title>Khaemenes Kinder Garden · 36-Week Curriculum</title>
+
 <link rel="stylesheet" href="assets/styles.css">
+
 <style>
-.portal-return{display:inline-flex;align-items:center;justify-content:center;margin:10px auto 0;padding:9px 13px;border:1px solid rgba(255,255,255,.35);border-radius:7px;color:#fff;text-decoration:none;font-size:12px;background:rgba(255,255,255,.10)}
-.linked-learner{display:grid;grid-template-columns:76px 1fr;gap:14px;align-items:center;text-align:left}
-.linked-mentor-avatar{width:72px;height:72px;display:grid;place-items:center;border:4px solid #fff;border-radius:50%;font-size:2.25rem;background:linear-gradient(145deg,var(--mentor-a,#f6bf3a),var(--mentor-b,#ef6a66));box-shadow:0 12px 24px rgba(23,54,96,.16)}
-.companion-block{margin-top:12px;padding:12px;border:1px solid rgba(31,72,48,.13);border-radius:12px;background:#f7fbf6}
-.companion-block>strong{display:block;color:#355a42}
-.companion-block>small{display:block;margin:4px 0 9px;color:#69776e}
-.companion-actions{display:flex;flex-wrap:wrap;gap:7px}
-.companion-actions a{display:inline-flex;align-items:center;min-height:38px;padding:7px 10px;border:1px solid rgba(31,72,48,.14);border-radius:8px;color:#315740;background:#fff;text-decoration:none;font-size:12px;font-weight:700}
-.companion-actions a.creche{color:#6b4f79;background:#fbf5ff}
-.curriculum-note{max-width:850px;margin:18px auto 0;padding:12px 14px;border:1px solid rgba(31,72,48,.13);border-radius:12px;color:#455a4c;background:rgba(255,255,255,.72);font-size:13px}
-@media(max-width:640px){.linked-learner{grid-template-columns:1fr;text-align:center}.linked-mentor-avatar{margin:auto}.companion-actions{display:grid}.companion-actions a{justify-content:center}}
+/* =========================================================
+   KHAEMENES KINDER GARDEN
+   Formal curriculum landing page refinements
+   ========================================================= */
+
+:root{
+  --page-bg:#f6f3ec;
+  --page-bg-alt:#eef3ec;
+  --paper:#ffffff;
+  --ink:#243028;
+  --muted:#667168;
+  --green:#234f36;
+  --green-deep:#173b28;
+  --gold:#c89b36;
+  --gold-soft:#ead8a6;
+  --line:rgba(35,79,54,.14);
+  --shadow:0 16px 40px rgba(27,55,38,.08);
+  --radius:14px;
+  --shell:1180px;
+}
+
+/* ---------- Base ---------- */
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--page-bg);
+  line-height:1.65;
+  text-align:center;
+}
+
+img,
+svg{
+  max-width:100%;
+}
+
+.shell{
+  width:min(calc(100% - 40px),var(--shell));
+  margin-inline:auto;
+}
+
+main{
+  overflow:hidden;
+}
+
+.section{
+  padding:76px 0;
+}
+
+.section.alt{
+  background:var(--page-bg-alt);
+  border-block:1px solid rgba(35,79,54,.07);
+}
+
+.heading{
+  width:min(820px,100%);
+  margin:0 auto 34px;
+  text-align:center;
+}
+
+.heading .kicker{
+  margin-bottom:8px;
+}
+
+.heading h2{
+  max-width:780px;
+  margin:0 auto 14px;
+  color:var(--green-deep);
+  line-height:1.2;
+  text-wrap:balance;
+}
+
+.heading p:last-child{
+  max-width:760px;
+  margin:0 auto;
+  color:var(--muted);
+  text-wrap:pretty;
+}
+
+/* ---------- Header / Navigation ---------- */
+.header{
+  position:relative;
+  z-index:30;
+  background:var(--green-deep);
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.15);
+  box-shadow:0 8px 28px rgba(17,43,29,.12);
+}
+
+.nav{
+  min-height:118px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  padding:20px 0;
+}
+
+.brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  color:#fff;
+  text-decoration:none;
+  text-align:left;
+}
+
+.brand .seal{
+  flex:0 0 auto;
+}
+
+.brand > span:last-child{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1.25;
+}
+
+.brand strong{
+  font-size:clamp(1rem,2vw,1.2rem);
+  font-weight:600;
+  letter-spacing:.03em;
+}
+
+.brand small{
+  margin-top:3px;
+  color:rgba(255,255,255,.72);
+  font-size:.74rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.navlinks{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:7px 9px;
+}
+
+.navlinks a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:8px 11px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:8px;
+  color:rgba(255,255,255,.88);
+  background:rgba(255,255,255,.04);
+  text-decoration:none;
+  font-size:.78rem;
+  letter-spacing:.02em;
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease;
+}
+
+.navlinks a:hover,
+.navlinks a:focus-visible{
+  color:#fff;
+  background:rgba(255,255,255,.11);
+  border-color:rgba(255,255,255,.32);
+  transform:translateY(-1px);
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:86px 0 76px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(200,155,54,.20),transparent 34%),
+    linear-gradient(145deg,#173b28 0%,#234f36 48%,#183c29 100%);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:1px;
+  background:rgba(255,255,255,.16);
+}
+
+.hero .shell{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.mark{
+  display:grid;
+  place-items:center;
+  width:76px;
+  height:76px;
+  margin:0 auto 20px;
+  border:1px solid rgba(255,255,255,.38);
+  border-radius:50%;
+  color:#fff8df;
+  background:rgba(255,255,255,.08);
+  box-shadow:
+    inset 0 0 0 5px rgba(255,255,255,.04),
+    0 14px 30px rgba(0,0,0,.12);
+  font-size:2.25rem;
+}
+
+.kicker{
+  margin:0 0 10px;
+  color:var(--gold);
+  font-size:.77rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.hero .kicker{
+  color:#ead8a6;
+}
+
+.hero h1{
+  max-width:980px;
+  margin:0 auto 18px;
+  color:#fff;
+  font-size:clamp(2.15rem,5.4vw,4.65rem);
+  line-height:1.04;
+  letter-spacing:-.025em;
+  text-align:center;
+  text-wrap:balance;
+}
+
+.hero .lead{
+  max-width:850px;
+  margin:0 auto;
+  color:rgba(255,255,255,.83);
+  font-size:clamp(1rem,1.7vw,1.18rem);
+  text-align:center;
+  text-wrap:pretty;
+}
+
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:26px;
+}
+
+.actions .btn,
+.actions .button,
+.actions button,
+.actions a{
+  justify-content:center;
+}
+
+.hero .actions{
+  width:min(900px,100%);
+}
+
+.hero .btn{
+  min-width:170px;
+}
+
+.curriculum-note{
+  width:min(850px,100%);
+  margin:26px auto 0;
+  padding:15px 18px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:12px;
+  color:rgba(255,255,255,.82);
+  background:rgba(255,255,255,.075);
+  box-shadow:0 12px 28px rgba(0,0,0,.08);
+  font-size:.84rem;
+  text-align:center;
+  backdrop-filter:blur(6px);
+}
+
+.curriculum-note strong{
+  color:#fff4cf;
+}
+
+.portal-return{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:14px auto 0;
+  padding:9px 13px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:7px;
+  color:#fff;
+  background:rgba(255,255,255,.07);
+  text-decoration:none;
+  font-size:.78rem;
+  transition:background-color .18s ease,border-color .18s ease;
+}
+
+.portal-return:hover,
+.portal-return:focus-visible{
+  background:rgba(255,255,255,.14);
+  border-color:rgba(255,255,255,.45);
+}
+
+/* ---------- Grids / Cards ---------- */
+.grid{
+  width:100%;
+  display:grid;
+  justify-content:center;
+  align-items:stretch;
+  gap:18px;
+  margin-inline:auto;
+}
+
+.grid.cols-4{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+
+.grid.cols-3{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.card{
+  height:100%;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.92);
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+.card.stat{
+  min-height:142px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:24px 18px;
+}
+
+.card.stat strong{
+  display:block;
+  color:var(--green);
+  font-size:clamp(2rem,4vw,2.8rem);
+  line-height:1;
+}
+
+.card.stat span{
+  display:block;
+  margin-top:10px;
+  color:var(--muted);
+  font-size:.82rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+/* Dynamic cards from app.js */
+#unitGrid > *,
+#standardsGrid > *{
+  min-width:0;
+  text-align:center;
+}
+
+#unitGrid .card,
+#standardsGrid .card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:22px;
+}
+
+#unitGrid .card p,
+#standardsGrid .card p,
+#unitGrid .card li,
+#standardsGrid .card li{
+  text-align:center;
+}
+
+#unitGrid .card ul,
+#standardsGrid .card ul{
+  width:100%;
+  padding-left:0;
+  list-style-position:inside;
+}
+
+/* ---------- Learner link ---------- */
+#learnerLink{
+  width:min(820px,100%);
+  margin:0 auto;
+}
+
+#learnerLink > *{
+  margin-inline:auto;
+}
+
+.linked-learner{
+  width:100%;
+  display:grid;
+  grid-template-columns:76px minmax(0,1fr);
+  gap:18px;
+  align-items:center;
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#fff;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+.linked-learner > *{
+  min-width:0;
+}
+
+.linked-learner > :not(.linked-mentor-avatar){
+  text-align:center;
+}
+
+.linked-mentor-avatar{
+  width:72px;
+  height:72px;
+  display:grid;
+  place-items:center;
+  margin:auto;
+  border:4px solid #fff;
+  border-radius:50%;
+  font-size:2.25rem;
+  background:linear-gradient(145deg,var(--mentor-a,#f6bf3a),var(--mentor-b,#ef6a66));
+  box-shadow:0 12px 24px rgba(23,54,96,.16);
+}
+
+/* ---------- Companion panels ---------- */
+.companion-block{
+  width:100%;
+  margin-top:14px;
+  padding:14px;
+  border:1px solid rgba(31,72,48,.13);
+  border-radius:12px;
+  background:#f7fbf6;
+  text-align:center;
+}
+
+.companion-block > strong{
+  display:block;
+  color:#355a42;
+}
+
+.companion-block > small{
+  display:block;
+  margin:4px 0 10px;
+  color:#69776e;
+}
+
+.companion-actions{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:7px;
+}
+
+.companion-actions a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:7px 10px;
+  border:1px solid rgba(31,72,48,.14);
+  border-radius:8px;
+  color:#315740;
+  background:#fff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+}
+
+.companion-actions a.creche{
+  color:#6b4f79;
+  background:#fbf5ff;
+}
+
+/* ---------- Student record portal ---------- */
+.portal{
+  width:min(980px,100%);
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  align-items:start;
+  justify-content:center;
+  gap:22px;
+  margin:0 auto;
+}
+
+.profile-box,
+#summary{
+  width:100%;
+  min-width:0;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.profile-box{
+  padding:26px;
+  text-align:center;
+}
+
+.profile-box h3{
+  margin:0 0 20px;
+  color:var(--green-deep);
+}
+
+.profile-box label{
+  display:block;
+  margin:14px auto 7px;
+  color:#3f4d43;
+  font-size:.83rem;
+  font-weight:700;
+  text-align:center;
+}
+
+.profile-box label small{
+  display:block;
+  margin-top:2px;
+  color:var(--muted);
+  font-weight:400;
+}
+
+.profile-box input[type="text"],
+.profile-box input[type="number"],
+.profile-box input:not([type]){
+  width:min(520px,100%);
+  min-height:46px;
+  display:block;
+  margin:0 auto;
+  padding:10px 13px;
+  border:1px solid rgba(35,79,54,.20);
+  border-radius:8px;
+  color:var(--ink);
+  background:#fbfcfa;
+  font:inherit;
+  text-align:center;
+}
+
+.profile-box input:focus{
+  outline:2px solid rgba(200,155,54,.42);
+  outline-offset:2px;
+  border-color:var(--gold);
+}
+
+.profile-box label[style]{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+}
+
+#summary{
+  min-height:100%;
+  padding:26px;
+  text-align:center;
+}
+
+#summary > *{
+  margin-inline:auto;
+}
+
+/* ---------- Buttons ---------- */
+.btn,
+.button,
+button.button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 15px;
+  border:1px solid rgba(35,79,54,.20);
+  border-radius:8px;
+  color:#fff;
+  background:var(--green);
+  text-decoration:none;
+  font:inherit;
+  font-size:.82rem;
+  font-weight:700;
+  line-height:1.2;
+  cursor:pointer;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    border-color .18s ease;
+}
+
+.btn:hover,
+.button:hover,
+button.button:hover,
+.btn:focus-visible,
+.button:focus-visible,
+button.button:focus-visible{
+  transform:translateY(-1px);
+  box-shadow:0 7px 18px rgba(24,60,41,.14);
+}
+
+.btn.gold,
+.button.gold{
+  color:#2d281b;
+  border-color:#d6b55f;
+  background:#e4c56c;
+}
+
+.btn.light,
+.button.light{
+  color:var(--green-deep);
+  border-color:rgba(255,255,255,.58);
+  background:#fff;
+}
+
+.hero .btn:not(.gold):not(.light){
+  border-color:rgba(255,255,255,.28);
+  background:rgba(255,255,255,.09);
+}
+
+/* ---------- Footer ---------- */
+.footer{
+  padding:28px 0;
+  border-top:1px solid rgba(255,255,255,.10);
+  color:rgba(255,255,255,.72);
+  background:var(--green-deep);
+  font-size:.78rem;
+  letter-spacing:.025em;
+  text-align:center;
+}
+
+.footer .shell{
+  text-align:center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .grid.cols-4{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .grid.cols-3{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .portal{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:700px){
+  .shell{
+    width:min(calc(100% - 28px),var(--shell));
+  }
+
+  .section{
+    padding:58px 0;
+  }
+
+  .hero{
+    padding:68px 0 58px;
+  }
+
+  .brand{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .brand > span:last-child{
+    align-items:center;
+  }
+
+  .navlinks{
+    gap:7px;
+  }
+
+  .navlinks a{
+    flex:1 1 145px;
+  }
+
+  .linked-learner{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .linked-learner > :not(.linked-mentor-avatar){
+    text-align:center;
+  }
+
+  .companion-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .companion-actions a{
+    width:100%;
+  }
+}
+
+@media (max-width:540px){
+  .grid.cols-4,
+  .grid.cols-3{
+    grid-template-columns:1fr;
+  }
+
+  .actions{
+    display:grid;
+    grid-template-columns:1fr;
+    width:100%;
+  }
+
+  .actions > *{
+    width:100%;
+  }
+
+  .profile-box,
+  #summary{
+    padding:20px 16px;
+  }
+
+  .curriculum-note{
+    padding:14px;
+  }
+}
+
+@media print{
+  .no-print{
+    display:none !important;
+  }
+
+  body{
+    background:#fff;
+    color:#000;
+  }
+
+  .section,
+  .section.alt{
+    padding:26px 0;
+    background:#fff;
+  }
+
+  .card,
+  .profile-box,
+  #summary,
+  .linked-learner{
+    box-shadow:none;
+    break-inside:avoid;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header class="header no-print">
   <div class="shell nav">
-    <a class="brand" href="../index.html">
-      <span class="seal">K</span>
-      <span><strong>Khaemenes Kinder Garden</strong><small>36-Week A+ Curriculum</small></span>
+    <a class="brand" href="../index.html" aria-label="Khaemenes Kinder Garden home">
+      <span class="seal" aria-hidden="true">K</span>
+      <span>
+        <strong>Khaemenes Kinder Garden</strong>
+        <small>36-Week A+ Curriculum</small>
+      </span>
     </a>
+
     <nav class="navlinks" aria-label="Curriculum navigation">
       <a href="../index.html">Kinder Garden Home</a>
-      <a href="index.html">Curriculum Home</a>
+      <a href="index.html" aria-current="page">Curriculum Home</a>
       <a href="../family/">Family Portal</a>
       <a href="teacher-tools/index.html">Teacher Tools</a>
       <a href="assessments/weekly-assessments.html">Assessments</a>
@@ -40,34 +798,70 @@
 
 <section class="hero">
   <div class="shell">
-    <div class="mark">K</div>
+    <div class="mark" aria-hidden="true">K</div>
+
     <p class="kicker">Kinder Garden · Formal Learning Path</p>
+
     <h1>Khaemenes Academy Kindergarten</h1>
-    <p class="lead">A complete in-house 36-week kindergarten curriculum with 180 daily lessons, workshops, printable packets, weekly assessments, midterm, final, teacher tools, portfolio evidence, and 80% completion certification.</p>
+
+    <p class="lead">
+      A complete in-house 36-week kindergarten curriculum with 180 daily lessons,
+      workshops, printable packets, weekly assessments, midterm, final, teacher tools,
+      portfolio evidence, and 80% completion certification.
+    </p>
+
     <div class="actions">
       <a class="btn light" href="#units">Open 36 Units</a>
       <a class="btn gold" href="../family/">Family Curriculum Portal</a>
       <a class="btn" href="teacher-tools/index.html">Teacher Tools</a>
       <a class="btn" href="assessments/weekly-assessments.html">Assessments</a>
     </div>
-    <p class="curriculum-note"><strong>Curriculum first:</strong> every week stands on its own as a five-lesson unit. Matched Kinder Garden and Crechè activities appear only as optional practice companions after or alongside the lesson—not as substitutes for instruction.</p>
+
+    <p class="curriculum-note">
+      <strong>Curriculum first:</strong>
+      every week stands on its own as a five-lesson unit. Matched Kinder Garden and
+      Crechè activities appear only as optional practice companions after or alongside
+      the lesson—not as substitutes for instruction.
+    </p>
+
     <a class="portal-return" href="../index.html">← Return to Kinder Garden home</a>
   </div>
 </section>
 
 <main>
+
 <section class="section">
   <div class="shell">
     <div class="heading">
       <p class="kicker">A+ Foundation</p>
       <h2>Structured, joyful, and complete.</h2>
-      <p>The curriculum content, records, assessments, printables, and companion map are maintained within the Khaemenes ecosystem. No third-party curriculum framework, advertising tracker, or external package manager is required.</p>
+      <p>
+        The curriculum content, records, assessments, printables, and companion map
+        are maintained within the Khaemenes ecosystem. No third-party curriculum
+        framework, advertising tracker, or external package manager is required.
+      </p>
     </div>
+
     <div class="grid cols-4">
-      <article class="card stat"><strong>36</strong><span>Units / Weeks</span></article>
-      <article class="card stat"><strong>180</strong><span>Daily Lessons</span></article>
-      <article class="card stat"><strong>36</strong><span>Weekly Assessments</span></article>
-      <article class="card stat"><strong>80%</strong><span>Certificate Rule</span></article>
+      <article class="card stat">
+        <strong>36</strong>
+        <span>Units / Weeks</span>
+      </article>
+
+      <article class="card stat">
+        <strong>180</strong>
+        <span>Daily Lessons</span>
+      </article>
+
+      <article class="card stat">
+        <strong>36</strong>
+        <span>Weekly Assessments</span>
+      </article>
+
+      <article class="card stat">
+        <strong>80%</strong>
+        <span>Certificate Rule</span>
+      </article>
     </div>
   </div>
 </section>
@@ -77,9 +871,13 @@
     <div class="heading">
       <p class="kicker">Shared Learner Identity</p>
       <h2>One learner profile from Crechè into Kinder Garden.</h2>
-      <p>The active browser-local Khaemenes learner and mentor are recognized before curriculum records are loaded.</p>
+      <p>
+        The active browser-local Khaemenes learner and mentor are recognized before
+        curriculum records are loaded.
+      </p>
     </div>
-    <div id="learnerLink"></div>
+
+    <div id="learnerLink" aria-live="polite"></div>
   </div>
 </section>
 
@@ -88,27 +886,41 @@
     <div class="heading">
       <p class="kicker">Family-Controlled Records</p>
       <h2>Progress belongs to the learner and family.</h2>
-      <p>Curriculum records stay in this browser. Families may export a JSON record for safekeeping and use the Family Portal to see the active learner's next week.</p>
+      <p>
+        Curriculum records stay in this browser. Families may export a JSON record
+        for safekeeping and use the Family Portal to see the active learner's next week.
+      </p>
     </div>
+
     <div class="portal">
       <div class="profile-box">
         <h3>Student Record</h3>
-        <label>Student name <small>— follows the shared learner profile when linked</small></label>
-        <input id="studentName" placeholder="Kindergarten Scholar">
-        <label>Midterm score</label>
-        <input id="midtermScore" type="number" min="0" max="100" placeholder="0–100">
-        <label>Final score</label>
-        <input id="finalScore" type="number" min="0" max="100" placeholder="0–100">
-        <label style="display:flex;gap:10px;justify-content:center;align-items:center;margin-top:14px">
-          <input id="portfolio" type="checkbox" style="width:auto"> Portfolio evidence complete
+
+        <label for="studentName">
+          Student name
+          <small>— follows the shared learner profile when linked</small>
         </label>
+        <input id="studentName" autocomplete="name" placeholder="Kindergarten Scholar">
+
+        <label for="midtermScore">Midterm score</label>
+        <input id="midtermScore" type="number" min="0" max="100" inputmode="numeric" placeholder="0–100">
+
+        <label for="finalScore">Final score</label>
+        <input id="finalScore" type="number" min="0" max="100" inputmode="numeric" placeholder="0–100">
+
+        <label style="display:flex;gap:10px;justify-content:center;align-items:center;margin-top:14px">
+          <input id="portfolio" type="checkbox" style="width:auto">
+          Portfolio evidence complete
+        </label>
+
         <div class="actions">
           <button class="button gold" id="saveProfile" type="button">Save Record</button>
           <button class="button" id="clearRecords" type="button">Clear</button>
           <a class="button light" href="../family/">Open Family Portal</a>
         </div>
       </div>
-      <div id="summary"></div>
+
+      <div id="summary" aria-live="polite"></div>
     </div>
   </div>
 </section>
@@ -118,8 +930,13 @@
     <div class="heading">
       <p class="kicker">36 Units · 5 Lessons Each</p>
       <h2>Complete kindergarten scope and sequence.</h2>
-      <p>Each unit includes five daily lessons, teacher scripts, centers, a printable packet, family connection, workshop activity, and assessment. A matched practice panel is added to each card after the core unit renders.</p>
+      <p>
+        Each unit includes five daily lessons, teacher scripts, centers, a printable
+        packet, family connection, workshop activity, and assessment. A matched
+        practice panel is added to each card after the core unit renders.
+      </p>
     </div>
+
     <div class="grid cols-3" id="unitGrid"></div>
   </div>
 </section>
@@ -129,25 +946,38 @@
     <div class="heading">
       <p class="kicker">Internal Crosswalk</p>
       <h2>Broad early-learning coverage with local documentation.</h2>
-      <p>The crosswalk is included as local documentation for review and does not require an outside curriculum service.</p>
+      <p>
+        The crosswalk is included as local documentation for review and does not
+        require an outside curriculum service.
+      </p>
     </div>
+
     <div class="grid cols-3" id="standardsGrid"></div>
   </div>
 </section>
+
 </main>
 
 <footer class="footer no-print">
-  <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · Kinder Garden curriculum</div>
+  <div class="shell">
+    © <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · Kinder Garden curriculum
+  </div>
 </footer>
 
+<!-- Shared Khaemenes profile / family infrastructure -->
 <script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/khaemenes-profile-bridge.js"></script>
 <script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/preschool-catalog.js"></script>
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
+
+<!-- Kinder Garden local infrastructure -->
 <script src="../assets/khaemenes-kinder-family-adapter.js"></script>
 <script src="../assets/khaemenes-kinder-continuity.js"></script>
 <script src="../assets/khaemenes-kinder-companions.js"></script>
+
+<!-- Curriculum data and page logic -->
 <script src="data/course-data.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/companion-layer.js"></script>
+
 </body>
 </html>
