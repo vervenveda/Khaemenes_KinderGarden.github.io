@@ -1,64 +1,892 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Teacher Tools</title>
-  <link rel="stylesheet" href="../assets/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Khaemenes Kindergarten Teacher Tools — pacing, observation, portfolio, materials, intervention, family communication, daily flow, and weekly evidence tools for the 36-unit curriculum.">
+<title>Khaemenes Kindergarten · Teacher Tools</title>
+
+<link rel="stylesheet" href="../assets/styles.css">
+
+<style>
+/* =========================================================
+   KHAEMENES KINDERGARTEN
+   Teacher Tools · Formal centered presentation
+   ========================================================= */
+
+:root{
+  --page-bg:#f6f3ec;
+  --page-alt:#edf3ed;
+  --paper:#ffffff;
+  --ink:#243028;
+  --muted:#68736b;
+  --green:#234f36;
+  --green-deep:#173b28;
+  --gold:#c89b36;
+  --gold-soft:#ead8a6;
+  --line:rgba(35,79,54,.14);
+  --shadow:0 16px 40px rgba(27,55,38,.08);
+  --radius:14px;
+  --shell:1180px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--page-bg);
+  line-height:1.65;
+  text-align:center;
+}
+
+a{
+  color:inherit;
+}
+
+.shell{
+  width:min(calc(100% - 40px),var(--shell));
+  margin-inline:auto;
+}
+
+/* ---------- Header ---------- */
+
+.header{
+  position:relative;
+  z-index:20;
+  color:#fff;
+  background:var(--green-deep);
+  border-bottom:1px solid rgba(255,255,255,.14);
+  box-shadow:0 8px 28px rgba(17,43,29,.12);
+}
+
+.nav{
+  min-height:118px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  padding:20px 0;
+}
+
+.brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  color:#fff;
+  text-decoration:none;
+  text-align:left;
+}
+
+.brand .seal{
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  width:46px;
+  height:46px;
+  border:1px solid rgba(255,255,255,.42);
+  border-radius:50%;
+  background:rgba(255,255,255,.07);
+  color:#fff5d2;
+  font-size:1.35rem;
+}
+
+.brand > span:last-child{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1.25;
+}
+
+.brand strong{
+  font-size:clamp(1rem,2vw,1.2rem);
+  font-weight:600;
+  letter-spacing:.03em;
+}
+
+.brand small{
+  margin-top:3px;
+  color:rgba(255,255,255,.70);
+  font-size:.73rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.navlinks{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+
+.navlinks a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:8px 13px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:8px;
+  color:rgba(255,255,255,.88);
+  background:rgba(255,255,255,.04);
+  text-decoration:none;
+  font-size:.79rem;
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease;
+}
+
+.navlinks a:hover,
+.navlinks a:focus-visible,
+.navlinks a[aria-current="page"]{
+  color:#fff;
+  background:rgba(255,255,255,.11);
+  border-color:rgba(255,255,255,.30);
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:82px 0 68px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(200,155,54,.20),transparent 35%),
+    linear-gradient(145deg,#173b28 0%,#234f36 50%,#183c29 100%);
+}
+
+.hero .shell{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.mark{
+  display:grid;
+  place-items:center;
+  width:72px;
+  height:72px;
+  margin:0 auto 18px;
+  border:1px solid rgba(255,255,255,.38);
+  border-radius:50%;
+  color:#fff8df;
+  background:rgba(255,255,255,.08);
+  box-shadow:
+    inset 0 0 0 5px rgba(255,255,255,.04),
+    0 14px 30px rgba(0,0,0,.12);
+  font-size:2rem;
+}
+
+.kicker{
+  margin:0 0 10px;
+  color:var(--gold);
+  font-size:.77rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.hero .kicker{
+  color:#ead8a6;
+}
+
+.hero h1{
+  max-width:960px;
+  margin:0 auto 16px;
+  color:#fff;
+  font-size:clamp(2.1rem,5vw,4.4rem);
+  line-height:1.05;
+  letter-spacing:-.025em;
+  text-wrap:balance;
+}
+
+.hero .lead{
+  max-width:790px;
+  margin:0 auto;
+  color:rgba(255,255,255,.83);
+  font-size:clamp(1rem,1.7vw,1.16rem);
+  text-wrap:pretty;
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:26px;
+}
+
+.hero-actions a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 15px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:8px;
+  color:#fff;
+  background:rgba(255,255,255,.08);
+  text-decoration:none;
+  font-size:.82rem;
+  font-weight:700;
+  transition:transform .18s ease,background-color .18s ease;
+}
+
+.hero-actions a.primary{
+  color:#2d281b;
+  border-color:#d6b55f;
+  background:#e4c56c;
+}
+
+.hero-actions a.light{
+  color:var(--green-deep);
+  border-color:#fff;
+  background:#fff;
+}
+
+.hero-actions a:hover,
+.hero-actions a:focus-visible{
+  transform:translateY(-1px);
+}
+
+/* ---------- Main ---------- */
+
+.section{
+  padding:74px 0;
+}
+
+.section.alt{
+  background:var(--page-alt);
+  border-block:1px solid rgba(35,79,54,.07);
+}
+
+.heading{
+  width:min(820px,100%);
+  margin:0 auto 34px;
+  text-align:center;
+}
+
+.heading h2,
+.heading h1{
+  margin:0 auto 14px;
+  color:var(--green-deep);
+  line-height:1.18;
+  text-wrap:balance;
+}
+
+.heading h2{
+  font-size:clamp(1.65rem,3vw,2.5rem);
+}
+
+.heading p:last-child{
+  max-width:760px;
+  margin:0 auto;
+  color:var(--muted);
+  text-wrap:pretty;
+}
+
+/* ---------- Tool Cards ---------- */
+
+.grid{
+  width:100%;
+  display:grid;
+  align-items:stretch;
+  justify-content:center;
+  gap:18px;
+  margin-inline:auto;
+}
+
+.grid.cols-3{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.card{
+  min-width:0;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  padding:28px 22px 26px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.94);
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+.card .emblem{
+  display:grid;
+  place-items:center;
+  width:54px;
+  height:54px;
+  margin:0 auto 16px;
+  border:1px solid rgba(200,155,54,.42);
+  border-radius:50%;
+  color:var(--green-deep);
+  background:#fbf5e4;
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
+.card h3{
+  margin:0 0 10px;
+  color:var(--green-deep);
+  font-size:1.08rem;
+}
+
+.card p{
+  max-width:320px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:.92rem;
+  text-wrap:pretty;
+}
+
+/* ---------- Printable Teacher Section ---------- */
+
+.print-section{
+  padding:74px 0 84px;
+  background:var(--page-alt);
+  border-top:1px solid rgba(35,79,54,.07);
+}
+
+.print-page{
+  width:min(1000px,100%);
+  margin:0 auto;
+  padding:34px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+.print-page-header{
+  max-width:760px;
+  margin:0 auto 30px;
+}
+
+.print-page-header .kicker{
+  margin-bottom:8px;
+}
+
+.print-page-header h2{
+  margin:0 auto 10px;
+  color:var(--green-deep);
+  font-size:clamp(1.6rem,3vw,2.35rem);
+}
+
+.print-page-header p{
+  max-width:680px;
+  margin:0 auto;
+  color:var(--muted);
+}
+
+.teacher-panels{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  align-items:start;
+}
+
+.teacher-panel{
+  min-width:0;
+  height:100%;
+  padding:24px;
+  border:1px solid rgba(35,79,54,.12);
+  border-radius:12px;
+  background:#fbfcfa;
+  text-align:center;
+}
+
+.teacher-panel h3{
+  margin:0 auto 18px;
+  color:var(--green-deep);
+  font-size:1.12rem;
+}
+
+.flow-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  counter-reset:teacher-flow;
+}
+
+.flow-list li{
+  position:relative;
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:11px;
+  align-items:center;
+  margin:0 0 10px;
+  padding:10px 12px;
+  border:1px solid rgba(35,79,54,.09);
+  border-radius:9px;
+  background:#fff;
+  color:#465349;
+  text-align:left;
+  counter-increment:teacher-flow;
+}
+
+.flow-list li::before{
+  content:counter(teacher-flow);
+  display:grid;
+  place-items:center;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  color:var(--green-deep);
+  background:#f2ead2;
+  font-size:.78rem;
+  font-weight:800;
+}
+
+.table-wrap{
+  width:100%;
+  overflow-x:auto;
+  border:1px solid rgba(35,79,54,.10);
+  border-radius:10px;
+  background:#fff;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  color:var(--ink);
+  font-size:.88rem;
+}
+
+th,
+td{
+  padding:12px 13px;
+  border-bottom:1px solid rgba(35,79,54,.10);
+  text-align:left;
+  vertical-align:middle;
+}
+
+th{
+  color:#fff;
+  background:var(--green);
+  font-size:.76rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+th:last-child,
+td:last-child{
+  width:96px;
+  text-align:center;
+}
+
+tr:last-child td{
+  border-bottom:0;
+}
+
+.check{
+  color:var(--green-deep);
+  font-size:1.3rem;
+  line-height:1;
+}
+
+.print-actions{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:26px;
+}
+
+.print-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 15px;
+  border:1px solid rgba(35,79,54,.20);
+  border-radius:8px;
+  color:#fff;
+  background:var(--green);
+  font:inherit;
+  font-size:.82rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.print-button.gold{
+  color:#2d281b;
+  border-color:#d6b55f;
+  background:#e4c56c;
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+  padding:28px 0;
+  color:rgba(255,255,255,.72);
+  background:var(--green-deep);
+  border-top:1px solid rgba(255,255,255,.10);
+  font-size:.78rem;
+  letter-spacing:.025em;
+  text-align:center;
+}
+
+.footer .shell{
+  text-align:center;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:900px){
+  .grid.cols-3{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .teacher-panels{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:680px){
+  .shell{
+    width:min(calc(100% - 28px),var(--shell));
+  }
+
+  .section,
+  .print-section{
+    padding:56px 0;
+  }
+
+  .hero{
+    padding:66px 0 56px;
+  }
+
+  .brand{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .brand > span:last-child{
+    align-items:center;
+  }
+
+  .navlinks a{
+    flex:1 1 145px;
+  }
+
+  .print-page{
+    padding:22px 16px;
+  }
+
+  .teacher-panel{
+    padding:18px 14px;
+  }
+}
+
+@media (max-width:520px){
+  .grid.cols-3{
+    grid-template-columns:1fr;
+  }
+
+  .hero-actions,
+  .print-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    width:100%;
+  }
+
+  .hero-actions > *,
+  .print-actions > *{
+    width:100%;
+  }
+
+  .flow-list li{
+    grid-template-columns:34px 1fr;
+  }
+}
+
+/* ---------- Print ---------- */
+
+@media print{
+  @page{
+    margin:.55in;
+  }
+
+  .no-print,
+  .hero,
+  .section:first-of-type,
+  .print-actions{
+    display:none !important;
+  }
+
+  body{
+    color:#000;
+    background:#fff;
+  }
+
+  .print-section{
+    padding:0;
+    background:#fff;
+    border:0;
+  }
+
+  .shell{
+    width:100%;
+  }
+
+  .print-page{
+    width:100%;
+    padding:0;
+    border:0;
+    border-radius:0;
+    box-shadow:none;
+  }
+
+  .teacher-panels{
+    gap:16px;
+  }
+
+  .teacher-panel{
+    border:1px solid #bbb;
+    background:#fff;
+    break-inside:avoid;
+  }
+
+  .flow-list li{
+    border:1px solid #ccc;
+    background:#fff;
+  }
+
+  th{
+    color:#000;
+    background:#eee !important;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+}
+</style>
 </head>
+
 <body>
-  <header class="header no-print">
-    <div class="shell nav">
-      <a class="brand" href="../index.html">
-        <span class="seal">K</span>
-        <span><strong>Khaemenes Kindergarten</strong><small>36 Unit A+ Curriculum</small></span>
-      </a>
-      <nav class="navlinks">
-        <a href="../index.html">Home</a>
-        <a href="../teacher-tools/index.html">Teacher Tools</a>
-        <a href="../assessments/weekly-assessments.html">Assessments</a>
-        <a href="../records/certificate.html">Certificate</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="section">
-    <div class="shell">
-      <div class="heading">
-        <p class="kicker">Teacher Tools</p>
-        <h1 style="color:var(--navy)">Kindergarten Mentor Toolkit</h1>
-        <p>Everything here is local, printable, and designed for a developmentally appropriate A+ kindergarten program.</p>
-      </div>
-      <div class="grid cols-3">
-        <article class="card"><div class="emblem">01</div><h3>Pacing Guide</h3><p>Use one unit per week, five lessons per unit, with flexible center time and review/reteach days.</p></article><article class="card"><div class="emblem">02</div><h3>Observation Checklist</h3><p>Track oral language, early literacy, math, inquiry, SEL, movement, creativity, and participation.</p></article><article class="card"><div class="emblem">03</div><h3>Portfolio Rubric</h3><p>Collect one weekly sample: drawing, dictated story, math task, inquiry evidence, or project photo note.</p></article><article class="card"><div class="emblem">04</div><h3>Materials Planner</h3><p>Prepare counters, blocks, picture cards, paper, crayons, story basket, movement space, and calm corner.</p></article><article class="card"><div class="emblem">05</div><h3>Intervention Map</h3><p>If a child is not ready, reteach through play, movement, smaller steps, visuals, and oral response before pencil tasks.</p></article><article class="card"><div class="emblem">06</div><h3>Family Communication</h3><p>Send short weekly notes: question, vocabulary, home observation, read/tell prompt, and celebration.</p></article>
-      </div>
-      <section class="print-page">
-        <h2>Daily Teacher Flow</h2>
-        <ol>
-          <li>Welcome, visual schedule, feelings check-in.</li>
-          <li>Read/tell/sing the unit idea.</li>
-          <li>Model the skill with objects, pictures, movement, and language.</li>
-          <li>Practice in small groups or centers.</li>
-          <li>Create, build, draw, move, or dramatize.</li>
-          <li>Collect one evidence note or work sample.</li>
-          <li>Close with child reflection: “I learned…” or “I noticed…”</li>
-        </ol>
-        <h2>Weekly Evidence Checklist</h2>
-        <table><tr><th>Evidence</th><th>Complete</th></tr>
-          <tr><td>Daily participation observed</td><td>□</td></tr>
-          <tr><td>Literacy / oral language evidence</td><td>□</td></tr>
-          <tr><td>Math hands-on evidence</td><td>□</td></tr>
-          <tr><td>Inquiry / observation evidence</td><td>□</td></tr>
-          <tr><td>SEL / participation note</td><td>□</td></tr>
-          <tr><td>Weekly assessment score recorded</td><td>□</td></tr>
-        </table>
-      </section>
-    </div>
-  </main>
+<header class="header no-print">
+  <div class="shell nav">
+    <a class="brand" href="../index.html" aria-label="Khaemenes Kindergarten curriculum home">
+      <span class="seal" aria-hidden="true">K</span>
+      <span>
+        <strong>Khaemenes Kindergarten</strong>
+        <small>36-Unit A+ Curriculum</small>
+      </span>
+    </a>
 
-  <footer class="footer no-print">
-    <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
-  </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <nav class="navlinks" aria-label="Teacher tools navigation">
+      <a href="../index.html">Curriculum Home</a>
+      <a href="index.html" aria-current="page">Teacher Tools</a>
+      <a href="../assessments/weekly-assessments.html">Assessments</a>
+      <a href="../records/certificate.html">Certificate</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero no-print">
+  <div class="shell">
+    <div class="mark" aria-hidden="true">K</div>
+    <p class="kicker">Teacher Tools · Mentor Resources</p>
+    <h1>Kindergarten Mentor Toolkit</h1>
+    <p class="lead">
+      A clear, practical set of in-house tools for pacing, observation, documentation,
+      intervention, family communication, and evidence collection throughout the
+      36-unit Khaemenes Kindergarten curriculum.
+    </p>
+
+    <div class="hero-actions">
+      <a class="light" href="../index.html">Curriculum Home</a>
+      <a class="primary" href="#toolkit">Open Toolkit</a>
+      <a href="#daily-flow">Daily Teacher Flow</a>
+      <a href="../assessments/weekly-assessments.html">Assessments</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section class="section" id="toolkit">
+  <div class="shell">
+    <div class="heading">
+      <p class="kicker">Teacher Tools</p>
+      <h2>Organized support for every kindergarten week.</h2>
+      <p>
+        Everything here is local, printable, and designed to support a developmentally
+        appropriate A+ kindergarten program without adding outside curriculum dependencies.
+      </p>
+    </div>
+
+    <div class="grid cols-3">
+      <article class="card">
+        <div class="emblem" aria-hidden="true">01</div>
+        <h3>Pacing Guide</h3>
+        <p>
+          Use one unit per week and five lessons per unit, with flexible center time,
+          review, enrichment, and reteach opportunities as needed.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emblem" aria-hidden="true">02</div>
+        <h3>Observation Checklist</h3>
+        <p>
+          Track oral language, early literacy, mathematics, inquiry, social-emotional
+          growth, movement, creativity, and classroom participation.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emblem" aria-hidden="true">03</div>
+        <h3>Portfolio Rubric</h3>
+        <p>
+          Collect at least one meaningful weekly sample such as a drawing, dictated
+          story, mathematics task, inquiry record, or project observation note.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emblem" aria-hidden="true">04</div>
+        <h3>Materials Planner</h3>
+        <p>
+          Prepare counters, blocks, picture cards, paper, crayons, story materials,
+          movement space, manipulatives, and a calm learning area.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emblem" aria-hidden="true">05</div>
+        <h3>Intervention Map</h3>
+        <p>
+          When a learner is not ready, reteach through play, movement, smaller steps,
+          visuals, modeling, and oral response before increasing pencil-based work.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emblem" aria-hidden="true">06</div>
+        <h3>Family Communication</h3>
+        <p>
+          Send concise weekly notes with one guiding question, key vocabulary, a home
+          observation, a read-or-tell prompt, and something worth celebrating.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="print-section" id="daily-flow">
+  <div class="shell">
+    <section class="print-page" aria-labelledby="daily-flow-title">
+
+      <div class="print-page-header">
+        <p class="kicker">Daily Practice & Documentation</p>
+        <h2 id="daily-flow-title">Teacher Flow & Weekly Evidence</h2>
+        <p>
+          A simple daily rhythm for consistent instruction, observation, and
+          family-controlled documentation.
+        </p>
+      </div>
+
+      <div class="teacher-panels">
+
+        <section class="teacher-panel">
+          <h3>Daily Teacher Flow</h3>
+
+          <ol class="flow-list">
+            <li>Welcome the learner, review the visual schedule, and complete a brief feelings check-in.</li>
+            <li>Read, tell, sing, or introduce the unit idea in child-friendly language.</li>
+            <li>Model the target skill using objects, pictures, movement, demonstration, and conversation.</li>
+            <li>Practice the skill through small groups, guided work, or learning centers.</li>
+            <li>Create, build, draw, move, investigate, or dramatize the concept.</li>
+            <li>Collect one observation note, response, photograph note, or work sample as evidence.</li>
+            <li>Close with learner reflection using a prompt such as “I learned…” or “I noticed…”</li>
+          </ol>
+        </section>
+
+        <section class="teacher-panel">
+          <h3>Weekly Evidence Checklist</h3>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Evidence</th>
+                  <th scope="col">Complete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Daily participation observed</td>
+                  <td class="check">□</td>
+                </tr>
+                <tr>
+                  <td>Literacy / oral-language evidence</td>
+                  <td class="check">□</td>
+                </tr>
+                <tr>
+                  <td>Mathematics hands-on evidence</td>
+                  <td class="check">□</td>
+                </tr>
+                <tr>
+                  <td>Inquiry / observation evidence</td>
+                  <td class="check">□</td>
+                </tr>
+                <tr>
+                  <td>SEL / participation note</td>
+                  <td class="check">□</td>
+                </tr>
+                <tr>
+                  <td>Weekly assessment score recorded</td>
+                  <td class="check">□</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="print-actions no-print">
+        <button class="print-button gold" type="button" onclick="window.print()">Print Teacher Sheet</button>
+        <a class="print-button" href="../assessments/weekly-assessments.html" style="text-decoration:none">Open Assessments</a>
+      </div>
+
+    </section>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer no-print">
+  <div class="shell">
+    © <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy ·
+    In-house curriculum · No outside dependencies
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
