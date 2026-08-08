@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Khaemenes Kinder Garden Portfolio Builder — local-first evidence curation for Kindergarten.">
-<title>Kinder Garden Portfolio Builder 🌱 · Khaemenes Elementary</title>
+<title>Kinder Garden Portfolio Builder 🌱 · Khaemenes Kinder Garden</title>
 <style>
 :root{
  --ink:#243441;--muted:#6b7a87;--paper:#fffefa;--navy:#315b76;--blue:#5c8ed3;--teal:#4ca495;
@@ -80,6 +80,7 @@ h1,h2,h3,h4{font-family:var(--serif)}h1{margin:10px 0 4px;font-size:clamp(2.9rem
 <div class="notice"><strong>How app collection works:</strong> this page can directly read saved work only from apps running on the <em>same browser origin</em>. Evidence from another domain/repository can still be imported using that app's JSON export or a manual file upload. This keeps the portfolio sovereign without pretending browsers allow cross-domain localStorage access.</div>
 
 <div class="tabs">
+<button class="tab" data-tab="apps">🎨 Learning Adventures</button>
 <button class="tab active" data-tab="sources">🔌 Sources</button>
 <button class="tab" data-tab="inbox">📥 Learning Evidence Basket</button>
 <button class="tab" data-tab="portfolio">🗂 Portfolio</button>
@@ -252,7 +253,6 @@ const APP_CATALOG=[
  {id:"kg-history",name:"History Curriculum",repo:"kindergarten",subject:"Social Studies",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/History_curriculum_index.html",desc:"Early community and history learning."},
  {id:"kg-math-curr",name:"Math Curriculum",repo:"kindergarten",subject:"Mathematics",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Math_curriculum_index.html",desc:"Kindergarten mathematics curriculum."},
  {id:"kg-math",name:"Kinder Math",repo:"kindergarten",subject:"Mathematics",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Math_kinder_index.html",desc:"Number sense and early mathematics."},
- {id:"kg-math-space",name:"Math Space",repo:"kindergarten",subject:"Mathematics",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Math_space_index.html_index.html",desc:"Playful early mathematics adventure."},
  {id:"kg-number-quiz",name:"Numbers & Quiz",repo:"kindergarten",subject:"Mathematics",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Numbers_%26_quiz_index.html",desc:"Number recognition and gentle practice."},
  {id:"kg-1-12",name:"Numbers 1–12",repo:"kindergarten",subject:"Mathematics",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Numbers_1-12_index.html",desc:"Foundational number recognition."},
  {id:"kg-pe",name:"PE Curriculum",repo:"kindergarten",subject:"Physical Education",grade:"Kindergarten",url:"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/PE_curriculum_index.html",desc:"Movement and physical education foundations."},
@@ -534,7 +534,7 @@ $("scanBtn").onclick=scanLocalApps;$("jsonInput").onchange=e=>{importJsonFiles([
 $("searchEvidence").oninput=renderEvidence;$("subjectFilter").onchange=renderEvidence;$("statusFilter").onchange=renderEvidence;$("approveVisibleBtn").onclick=()=>{filteredEvidence().forEach(e=>{if(e.status==="pending")e.status="approved"});renderAll();save("Visible pending evidence approved")};
 $("saveReviewBtn").onclick=()=>{s.history.unshift(`${new Date().toLocaleString()} · Year Completion review saved by ${$("reviewerName").value||"reviewer"}.`);s.history=s.history.slice(0,20);save("Year Completion review saved")};$("printReportBtn").onclick=()=>window.print();$("printTop").onclick=()=>{document.querySelector('[data-tab="report"]').click();setTimeout(()=>window.print(),100)};$("exportPortfolioBtn").onclick=exportPortfolio;
 
-$("childName").value=s.profile.child||"";$("grade").value=s.profile.grade||"Grade 2";$("schoolYear").value=s.profile.year||"";$("reviewerName").value=s.profile.reviewer||"";$("childReflection").value=s.childReflection||"";$("checkBreadth").checked=!!s.review.breadth;$("checkReflection").checked=!!s.review.reflection;$("checkMastery").checked=!!s.review.mastery;$("checkAuthentic").checked=!!s.review.authentic;$("reviewerNote").value=s.review.note||"";
+$("childName").value=s.profile.child||"";$("grade").value=s.profile.grade||"Kindergarten";$("schoolYear").value=s.profile.year||"";$("reviewerName").value=s.profile.reviewer||"";$("childReflection").value=s.childReflection||"";$("checkBreadth").checked=!!s.review.breadth;$("checkReflection").checked=!!s.review.reflection;$("checkMastery").checked=!!s.review.mastery;$("checkAuthentic").checked=!!s.review.authentic;$("reviewerNote").value=s.review.note||"";
 $("manualSubject").innerHTML=SUBJECTS.map(x=>`<option>${x}</option>`).join("");
 renderAll();renderAppFilters();renderApps();naibRenderSuggestions();updateVaultCount();
 })();
