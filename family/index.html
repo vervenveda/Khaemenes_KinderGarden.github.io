@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Khaemenes Kinder Garden Family Curriculum Portal — local family learner selection, 36-week progress, assessments, printables, and lesson-matched Kinder Garden and Crechè practice companions.">
+<meta name="theme-color" content="#315f43">
+<title>Khaemenes Kinder Garden · Family Curriculum Portal</title>
+<style>
+:root{--green:#315f43;--green2:#548c62;--mint:#edf7ef;--cream:#fffaf0;--paper:#fffef9;--ink:#293b31;--muted:#64726a;--gold:#e2bf68;--lav:#8b6cad;--line:rgba(41,72,52,.15);--shadow:0 18px 45px rgba(38,70,49,.13);--serif:Georgia,"Times New Roman",serif;--sans:"Avenir Next","Brandon Grotesque","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(circle at 8% 4%,rgba(226,191,104,.25),transparent 22rem),linear-gradient(180deg,#e9f7ee,#fffdf8 28rem);font:16px/1.6 var(--sans)}
+a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}.shell{width:min(calc(100% - 28px),1180px);margin:auto}
+:focus-visible{outline:3px solid rgba(139,108,173,.48);outline-offset:3px}
+.top{color:#fff;background:linear-gradient(135deg,#244833,#315f43 55%,#497f58)}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{text-decoration:none}.brand strong{display:block;font:400 1.25rem var(--serif)}.brand small{display:block;color:#dbe8de;font-size:.7rem}.navlinks{display:flex;flex-wrap:wrap;gap:8px}.navlinks a{padding:8px 10px;border:1px solid rgba(255,255,255,.18);border-radius:8px;text-decoration:none;font-size:.75rem}
+.hero{padding:62px 0 56px;text-align:center}.eyebrow{margin:0;color:#f1d99c;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase}.hero h1{margin:8px 0 0;font:400 clamp(2.7rem,7vw,5.4rem)/1 var(--serif)}.hero p{max-width:800px;margin:14px auto 0;color:#dce8df}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:17px}.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--green);font-weight:700;text-decoration:none}.btn.primary{color:#fff;background:var(--green);border-color:var(--green)}.btn.gold{color:#5d481b;background:#fff0bb;border-color:#e7ce83}.btn.soft{background:#f7f1fb;color:#694f78}
+.section{padding:58px 0}.heading{max-width:800px;margin:0 auto 24px;text-align:center}.heading h2{margin:0;color:var(--green);font:400 clamp(2rem,4vw,3.2rem)/1.1 var(--serif)}.heading p{color:var(--muted)}
+.grid{display:grid;gap:14px}.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--paper);box-shadow:var(--shadow)}.card h3{margin:0;color:var(--green);font:400 1.45rem var(--serif)}.card p{color:var(--muted)}.stat{text-align:center}.stat strong{display:block;color:var(--green);font:400 2.2rem var(--serif)}.stat span{font-size:.75rem;color:var(--muted)}
+.notice{padding:12px 14px;border-radius:10px;background:#fff4cf;color:#6f5720;font-size:.8rem}.notice.good{background:#e8f6ec;color:#2f6540}
+.learner-list{display:grid;gap:8px;margin-top:12px}.learner-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff;text-align:left}.learner-btn.active{color:#fff;background:var(--green);border-color:var(--green)}.learner-btn small{display:block;opacity:.78}
+.week-card{background:linear-gradient(145deg,#fffef9,#f2faf3)}.week-number{color:var(--lav);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.week-card h3{margin-top:7px}.companion{padding:13px;border-radius:12px;background:#f4f8f3}.companion strong{display:block;color:#425c49}.companion small{display:block;margin-top:3px;color:var(--muted)}.companion-actions{display:grid;gap:7px;margin-top:10px}
+.field{display:grid;gap:5px;margin-top:10px}.field label{font-size:.76rem;font-weight:800;color:#4b6254}.field input,.field select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.empty{padding:16px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);text-align:center}
+footer{padding:28px 0;color:#dce7df;background:#244833;text-align:center;font-size:.75rem}
+@media(max-width:850px){.cols-4,.cols-3,.cols-2{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column;padding:12px 0}}
+@media(max-width:600px){.cols-4,.cols-3,.cols-2{grid-template-columns:1fr}.navlinks{display:grid;width:100%}.navlinks a{text-align:center}.actions{display:grid}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="shell nav">
+    <a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>Family Curriculum Portal · Kindergarten</small></a>
+    <nav class="navlinks" aria-label="Family portal navigation">
+      <a href="../">Kinder Garden Home</a>
+      <a href="../curriculum/">36-Week Curriculum</a>
+      <a href="../curriculum/teacher-tools/">Teacher Tools</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Master Family Profile</a>
+    </nav>
+  </div>
+  <div class="shell hero">
+    <p class="eyebrow">Family-controlled · local-first · curriculum-centered</p>
+    <h1>Family Curriculum Portal</h1>
+    <p>Choose the learner, see the next Kinder Garden week, review progress, open the printable and assessment, and use one lesson-matched Kinder Garden activity and one age-appropriate Crechè companion when practice will help.</p>
+    <div class="actions">
+      <a class="btn gold" id="continueTop" href="../curriculum/">Continue Curriculum</a>
+      <a class="btn" href="../curriculum/teacher-tools/">Teacher & Family Tools</a>
+      <a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Manage Full Family Profile</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="shell">
+    <div id="originNotice"></div>
+    <div class="grid cols-2" style="margin-top:14px">
+      <section class="card">
+        <h3>Family & Learners</h3>
+        <p id="familySummary">Checking this browser for the shared Khaemenes family registry…</p>
+        <div id="learnerList" class="learner-list"></div>
+        <div class="actions">
+          <a class="btn soft" href="../#mentor">Set Up Kinder Learner & Mentor</a>
+          <a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Adults, permissions & family management</a>
+        </div>
+      </section>
+      <section class="card">
+        <h3>Active Learner</h3>
+        <div id="activeLearner"><div class="empty">No active learner yet.</div></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:rgba(255,255,255,.58)">
+  <div class="shell">
+    <div class="heading"><h2>Kindergarten progress at a glance.</h2><p>The 80% mastery rule, midterm, final, and adult-confirmed portfolio remain the certification gates.</p></div>
+    <div class="grid cols-4" id="stats">
+      <article class="card stat"><strong>0/36</strong><span>Weeks at mastery</span></article>
+      <article class="card stat"><strong>0%</strong><span>Weekly average</span></article>
+      <article class="card stat"><strong>0%</strong><span>Midterm</span></article>
+      <article class="card stat"><strong>0%</strong><span>Final</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="heading"><h2>Continue the next learning week.</h2><p>The unit is the lesson. Games and apps are optional practice companions selected to reinforce that unit's goals.</p></div>
+    <div class="grid cols-2">
+      <article class="card week-card" id="weekCard"></article>
+      <aside class="card" id="practiceCard"></aside>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:rgba(255,255,255,.58)">
+  <div class="shell">
+    <div class="heading"><h2>Family record tools.</h2><p>Back up family and Kindergarten progress locally. No export is sent anywhere automatically.</p></div>
+    <div class="card">
+      <div class="actions">
+        <button class="btn primary" id="exportCombined" type="button">Export Family + Kindergarten Record</button>
+        <a class="btn" href="../curriculum/assessments/weekly-assessments.html">Weekly Assessments</a>
+        <a class="btn" href="../curriculum/assessments/midterm.html">Midyear Demonstration</a>
+        <a class="btn" href="../curriculum/assessments/final-exam.html">Final Readiness Demonstration</a>
+        <a class="btn gold" href="../curriculum/records/certificate.html">Certificate</a>
+      </div>
+      <p id="exportNote" style="text-align:center">Exports stay on this device unless the family chooses to move the downloaded file.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · Kinder Garden Family Curriculum Portal</footer>
+
+<script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/khaemenes-profile-bridge.js"></script>
+<script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/preschool-catalog.js"></script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
+<script src="../assets/khaemenes-kinder-family-adapter.js"></script>
+<script src="../assets/khaemenes-kinder-continuity.js"></script>
+<script src="../assets/khaemenes-kinder-companions.js"></script>
+<script>
+(() => {
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const units=[
+"Welcome to the Learning Garden","Names, Letters, and Stories","Feelings, Friendship, and Voice","The Five Senses","Seasons, Trees, and Leaves","Weather, Sun, and Sky","Shapes, Colors, and Design","Patterns, Music, and Movement","Families, Homes, and Traditions","Maps, Places, and Community","Plants and Gardens","Animals and Habitats","Gratitude, Giving, and Storytelling","Sounds, Rhymes, and Word Play","Measurement and Builders","Needs, Wants, Money, and Choices","Winter, Light, and Shadows","Midyear Review and Celebration","New Year, Goals, and Growth Mindset","Stories Around the World","Living and Nonliving Things","Water, Ice, and Weather Changes","Earth Care and Stewardship","Transportation and Engineering","Jobs, Tools, and Community Helpers","Symbols, Flags, and Civic Belonging","Neighborhood Market and Number Stories","Health, Food, and Growing Bodies","Movement, Balance, and the Body","Art, Music, and Pattern Makers","Bugs, Gardens, and Tiny Worlds","Water Worlds: Pond, River, and Ocean","Space, Moon, and Day/Night","Tools, Technology, and Digital Citizenship","My Big Question Capstone","Kindergarten Review and Final Celebration"
+];
+
+function pad(n){return String(n).padStart(2,"0")}
+function readJSON(key,fallback=null){try{const x=localStorage.getItem(key);return x?JSON.parse(x):fallback}catch{return fallback}}
+
+function syncActiveProfileFromRegistry(learner){
+  if(!learner?.learnerId)return;
+  const prior=readJSON("khaemenes_preschool_profile_v1",{})||{};
+  const merged={
+    ...prior,
+    learnerId:learner.learnerId,
+    nickname:learner.nickname||prior.nickname||"Learner",
+    pathway:"kindergarten",
+    ageBand:learner.ageBand||prior.ageBand||"5-6",
+    interests:Array.isArray(learner.interests)&&learner.interests.length?learner.interests:(prior.interests||[]),
+    mentorId:learner.mentorId||prior.mentorId||null,
+    mentorIdentity:learner.mentorIdentity||prior.mentorIdentity||null,
+    guardianRelease:learner.guardianRelease||prior.guardianRelease||null,
+    updatedAt:new Date().toISOString()
+  };
+  localStorage.setItem("khaemenes_preschool_profile_v1",JSON.stringify(merged));
+}
+
+function activateLearner(learner){
+  const R=window.KhaemenesFamilyRegistry;
+  if(!R||!learner)return;
+  R.setActive?.({familyId:learner.familyId,learnerId:learner.learnerId});
+  syncActiveProfileFromRegistry(learner);
+  render();
+}
+
+function renderFamily(){
+  const R=window.KhaemenesFamilyRegistry;
+  const family=R?.getFamily?.();
+  const learner=R?.getLearner?.();
+
+  $("#originNotice").innerHTML=location.hostname==="vervenveda.com"
+    ?'<div class="notice good">Shared-origin mode is active. Other Khaemenes portals opened through vervenveda.com can use this same browser-local family registry.</div>'
+    :'<div class="notice">For cross-repository browser continuity, use the Khaemenes sites through vervenveda.com. Separate github.io origins do not share localStorage.</div>';
+
+  if(!R){
+    $("#familySummary").textContent="The shared Khaemenes Family Registry did not load. The curriculum remains available, but family switching is unavailable in this view.";
+    $("#learnerList").innerHTML='<div class="empty">Open the Master Family Profile to set up the family registry.</div>';
+    return null;
+  }
+
+  let currentFamily=family;
+  let currentLearner=learner;
+  if(!currentFamily){
+    try{R.migrateLegacyPreschool?.()}catch{}
+    currentFamily=R.getFamily?.()||null;
+    currentLearner=R.getLearner?.()||null;
+  }
+
+  if(!currentFamily){
+    $("#familySummary").textContent="No family profile is active on this browser yet.";
+    $("#learnerList").innerHTML='<div class="empty">Create the shared family profile from the Khaemenes Academy Family Profile, then return here.</div>';
+    return null;
+  }
+
+  $("#familySummary").textContent=`${currentFamily.displayName||"Khaemenes Family"} · ${currentFamily.learners?.length||0} learner${currentFamily.learners?.length===1?"":"s"} · ${currentFamily.adults?.length||0} authorized adult${currentFamily.adults?.length===1?"":"s"}.`;
+  $("#learnerList").innerHTML=(currentFamily.learners||[]).map(l=>`
+    <button class="learner-btn ${currentLearner?.learnerId===l.learnerId?"active":""}" type="button" data-learner="${esc(l.learnerId)}">
+      <span><strong>${esc(l.nickname||"Learner")}</strong><small>${esc(l.stage||"learner")} · ${esc(l.ageBand||"age band not set")}</small></span><span>→</span>
+    </button>`).join("")||'<div class="empty">No child learner accounts are registered yet.</div>';
+
+  $("#learnerList").querySelectorAll("[data-learner]").forEach(btn=>btn.addEventListener("click",()=>{
+    const selected=(currentFamily.learners||[]).find(l=>l.learnerId===btn.dataset.learner);
+    if(selected)activateLearner(selected);
+  }));
+  return currentLearner;
+}
+
+function renderProgress(learner){
+  const api=window.KhaemenesKinderContinuity;
+  if(!api){
+    $("#activeLearner").innerHTML='<div class="empty">Kinder Garden continuity is unavailable.</div>';
+    return;
+  }
+
+  if(learner)syncActiveProfileFromRegistry(learner);
+  const summary=api.curriculumSummary?.(80,36)||{completedUnits:0,weeklyAverage:0,midterm:0,final:0,portfolio:false,certificationReady:false};
+  const ls=api.getLearnerSummary?.()||{};
+  const next=Math.max(1,Math.min(36,api.nextUnit?.(36,80)||1));
+  const title=units[next-1]||`Week ${next}`;
+
+  $("#activeLearner").innerHTML=ls.hasProfile?`
+    <p><strong>${esc(ls.nickname||"Kinder Garden learner")}</strong></p>
+    <p>${esc(ls.mentor?.avatar||"🌱")} ${esc(ls.mentor?.name||"Khaemenes Mentor")} · ${ls.guardianAuthorized?"guardian authorization active":"guardian review needed"}</p>
+    <div class="notice good">Kindergarten curriculum records are attached to this learner's stable local learner ID.</div>`
+    :'<div class="empty">No linked Kinder Garden learner profile is active. The curriculum can still be used as a standalone local record.</div>';
+
+  $("#stats").innerHTML=`
+    <article class="card stat"><strong>${summary.completedUnits||0}/36</strong><span>Weeks at mastery</span></article>
+    <article class="card stat"><strong>${summary.weeklyAverage||0}%</strong><span>Weekly average</span></article>
+    <article class="card stat"><strong>${summary.midterm||0}%</strong><span>Midterm</span></article>
+    <article class="card stat"><strong>${summary.final||0}%</strong><span>Final</span></article>`;
+
+  $("#weekCard").innerHTML=`
+    <span class="week-number">Next open week · ${pad(next)}</span>
+    <h3>${esc(title)}</h3>
+    <p>Continue the five-lesson unit first, then use the printable, assessment, and optional practice companions as appropriate.</p>
+    <div class="actions">
+      <a class="btn primary" href="../curriculum/lessons/unit-${pad(next)}/">Open Week ${pad(next)}</a>
+      <a class="btn" href="../curriculum/printables/unit-${pad(next)}-packet.html">Printable Packet</a>
+      <a class="btn" href="../curriculum/assessments/unit-${pad(next)}-assessment.html">Weekly Assessment</a>
+    </div>`;
+
+  const C=window.KhaemenesKinderCompanions;
+  const match=C?.forUnit?.(next,window.KhaemenesPreschoolCatalog);
+  const kinder=match?.kinder?.[0]||null;
+  const creche=match?.creche||null;
+  $("#practiceCard").innerHTML=`
+    <h3>Practice companions</h3>
+    <p>${esc(match?.reason||"Optional practice selected to support this unit.")}</p>
+    <div class="companion">
+      <strong>Use after or alongside the lesson when it helps.</strong>
+      <small>These are not completion gates and do not replace the unit.</small>
+      <div class="companion-actions">
+        ${kinder?`<a class="btn primary" href="../${kinder.path}">${kinder.icon} Kinder · ${esc(kinder.title)}</a>`:""}
+        ${creche?`<a class="btn soft" href="${creche.url}">${esc(creche.icon||"🌈")} Crechè · ${esc(creche.title)}</a>`:""}
+      </div>
+    </div>
+    <p><strong>Certificate:</strong> ${summary.certificationReady?"All recorded completion gates are currently met.":"Still building toward the 80% mastery + midterm + final + portfolio requirements."}</p>`;
+
+  $("#continueTop").href=`../curriculum/lessons/unit-${pad(next)}/`;
+  $("#continueTop").textContent=`Continue Week ${pad(next)}`;
+}
+
+function exportCombined(){
+  const R=window.KhaemenesFamilyRegistry;
+  const api=window.KhaemenesKinderContinuity;
+  try{
+    const family=R?.getFamily?.();
+    const familyExport=family&&R?.exportFamily ? R.exportFamily(family.familyId) : null;
+    const learners=family?.learners||[];
+    const kindergarten={};
+    for(const learner of learners){
+      kindergarten[learner.learnerId]=api?.curriculumStateForLearner?.(learner.learnerId)||null;
+    }
+    const payload={
+      format:"khaemenes-kindergarden-family-curriculum-export-v1",
+      exportedAt:new Date().toISOString(),
+      family:familyExport,
+      kindergarten,
+      activeLearner:api?.getLearnerSummary?.()||null,
+      note:"Family-controlled local educational backup. Not a diagnosis, authenticated invitation, or cloud sync."
+    };
+    const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement("a");
+    a.href=url;a.download="khaemenes-kindergarden-family-curriculum-record.json";a.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    $("#exportNote").textContent="Family + Kindergarten backup downloaded to this device.";
+  }catch(error){
+    $("#exportNote").textContent="The export could not be created in this browser.";
+    console.warn(error);
+  }
+}
+
+function render(){
+  const learner=renderFamily();
+  renderProgress(learner);
+}
+$("#exportCombined").addEventListener("click",exportCombined);
+window.addEventListener("khaemenes-family-changed",render);
+window.addEventListener("khaemenes-kinder-family-ready",render);
+window.addEventListener("storage",event=>{
+  if(String(event.key||"").startsWith("khaemenes_"))render();
+});
+$("#year").textContent=new Date().getFullYear();
+render();
+})();
+</script>
+</body>
+</html>
