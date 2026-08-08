@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ABC's with Boppi — Fullscreen</title>
+<style>
+:root{
+  --red:#FF4C4C; --blue:#1E90FF; --yellow:#FFD700; --lavender:#C8A2C8; --mint:#98FB98;
+  --panel:#fffaf0; --text:#14213d;
+}
+html,body{height:100%;margin:0;font-family:"Fredoka","Comic Sans MS",Poppins,system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+body{
+  background: linear-gradient(160deg,var(--lavender) 0%,#e6f7ea 55%,var(--mint) 100%);
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.game {
+  width:100vw;height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:space-between;box-sizing:border-box;padding:44px;
+}
+header {
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:22px 33px;box-sizing:border-box;
+}
+.title {display:flex;align-items:center;gap:66px;}
+.logo {
+  width:111px;height:88px;border-radius:22px;background:linear-gradient(135deg,var(--yellow),#ffe28a);
+  display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:800;color:var(--text);
+  box-shadow:0 10px 22px rgba(0,0,0,0.12);
+}
+h1{margin:0;font-size:36px;color:var(--text);letter-spacing:0.6px;}
+.controls-top{display:flex;gap:22px;align-items:center;}
+.small-btn{border:none;border-radius:12px;padding:10px 14px;font-size:16px;cursor:pointer;background:#fff;box-shadow:0 6px 12px rgba(0,0,0,0.08);}
+
+/* grid */
+main {flex:1;display:flex;align-items:center;justify-content:center;width:100%;}
+.grid-wrap{width:100%;max-width:1180px;padding:12px;box-sizing:border-box;}
+.grid {
+  display:grid;grid-template-columns:repeat(6,1fr);gap:18px;
+  justify-items:center;align-items:center;
+}
+
+/* letters */
+.letter {
+  width:128px;height:128px;border-radius:999px;display:flex;align-items:center;justify-content:center;
+  font-size:46px;font-weight:800;color:#fff;cursor:pointer;user-select:none;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);transition:transform .16s ease, box-shadow .16s;
+  display:flex;flex-direction:column;gap:6px;padding:12px;
+}
+.letter:active{transform:scale(.96)}
+.letter .char{font-size:46px;line-height:1}
+.letter .word{font-size:14px;opacity:.95}
+.c-red{background:linear-gradient(180deg,var(--red),#ff807f)}
+.c-blue{background:linear-gradient(180deg,var(--blue),#5fb7ff)}
+.c-yellow{background:linear-gradient(180deg,var(--yellow),#ffea7a);color:#2b2b2b}
+.c-blue-dark{background:linear-gradient(180deg,#0f7bdc,#3ea0ff)}
+.c-red-dark{background:linear-gradient(180deg,#e63b3b,#ff6f6f)}
+.c-yellow-soft{background:linear-gradient(180deg,#ffd24d,#fff09a);color:#2b2b2b}
+
+/* footer */
+footer {width:100%;display:flex;align-items:center;justify-content:center;padding:12px;}
+.hint {background:rgba(255,255,255,0.85);padding:10px 16px;border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,0.08);font-size:18px;color:var(--text)}
+
+/* overlay */
+.overlay {position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(6,6,12,0.28);z-index:60;padding:28px;box-sizing:border-box}
+.panel {
+  width:100%;max-width:920px;border-radius:24px;background:linear-gradient(180deg,var(--panel),#fff);
+  box-shadow:0 32px 80px rgba(10,20,40,0.24);padding:26px;display:flex;flex-direction:column;gap:18px;align-items:center;
+  transform:translateY(16px) scale(.98);opacity:0;transition:all 420ms cubic-bezier(.2,.9,.3,1);
+}
+.overlay.show .panel{transform:translateY(0) scale(1);opacity:1}
+.panel-top{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.panel-left{display:flex;gap:16px;align-items:center}
+.big-emoji{width:140px;height:140px;border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:74px;border:6px solid #fff1d6;box-shadow:0 12px 28px rgba(0,0,0,0.08)}
+.meta {display:flex;flex-direction:column;align-items:flex-start}
+.meta h2{margin:0;font-size:34px;color:var(--text)}
+.meta p{margin:0;font-size:18px;color:#444}
+.panel-body{width:100%;display:flex;flex-direction:column;gap:12px;align-items:center}
+.story-text{font-size:30px;color:var(--text);background:rgba(255,255,255,0.95);padding:18px;border-radius:14px;border:4px dashed #fff1d6;text-align:center;line-height:1.3;max-width:100%}
+.panel-controls{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{border:none;border-radius:14px;padding:14px 20px;font-size:20px;cursor:pointer;background:#fff;box-shadow:0 8px 18px rgba(0,0,0,0.08)}
+.btn.listen{background:linear-gradient(90deg,#6ec6ff,#2196f3);color:#fff}
+.btn.say{background:linear-gradient(90deg,#c58bff,#8e24aa);color:#fff}
+.btn.next{background:linear-gradient(90deg,#7ef29e,#00c853);color:#063}
+.btn.close{background:linear-gradient(90deg,#ff8a80,#ff5252);color:#fff}
+textarea.write{width:94%;min-height:120px;border-radius:12px;padding:16px;font-size:22px;border:4px solid #fff1d6;resize:none;box-sizing:border-box}
+
+/* mini quiz panel */
+.quiz-panel {display:none;flex-direction:column;gap:16px;width:100%;max-width:800px;background:linear-gradient(180deg,#fffbe8,#fff5b1);padding:20px;border-radius:18px;box-shadow:0 14px 28px rgba(0,0,0,0.12);}
+.quiz-question {font-size:22px;color:#14213d;margin-bottom:12px;}
+.quiz-options button {margin:6px;padding:12px 16px;font-size:18px;border-radius:12px;border:none;cursor:pointer;box-shadow:0 6px 12px rgba(0,0,0,0.08);}
+.quiz-options button.correct{background:#7ef29e;color:#063;}
+.quiz-options button.wrong{background:#ff8a80;color:#fff;}
+.points {font-size:20px;margin:10px;color:#333;}
+
+/* finish notice */
+.finish {display:none;align-items:center;gap:12px;background:linear-gradient(90deg,#fff5b1,#ffe58a);padding:14px;border-radius:12px;font-size:20px;color:#333}
+
+/* confetti */
+#confetti {position:fixed;left:0;top:0;pointer-events:none;z-index:80;display:none}
+
+/* responsive */
+@media (max-width:1100px){.grid{grid-template-columns:repeat(5,1fr)}.letter{width:110px;height:110px}.big-emoji{width:110px;height:110px;font-size:56px}h1{font-size:32px}}
+@media (max-width:760px){.grid{grid-template-columns:repeat(4,1fr);gap:12px}.letter{width:100px;height:100px;font-size:36px}.title h1{font-size:28px}}
+@media (max-width:420px){.grid{grid-template-columns:repeat(3,1fr)}.logo{width:64px;height:64px;font-size:30px}}
+</style>
+</head>
+<body>
+<div class="game" role="application" aria-label="ABC's full screen learning app">
+  <header>
+    <div class="title">
+      <div class="logo">ABC</div>
+      <div>
+        <h1>🎵 ABC's with Boppi</h1>
+        <div style="font-size:14px;color:#3a3a3a">Tap a letter to learn. Listen, say it, and try writing or quiz.</div>
+      </div>
+    </div>
+    <div class="controls-top">
+      <div class="points">Points: <span id="points">0</span></div>
+      <button class="small-btn" id="toggleVoice">🔈 Voice: ON</button>
+      <button class="small-btn" id="toggleConfetti">✨ Confetti: ON</button>
+      <button class="small-btn" id="homeBtn">🏠 Home</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid-wrap">
+      <div class="grid" id="lettersGrid" aria-label="Alphabet letters"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="hint">Tip: Click a letter, press "Read to me", then try writing or taking a mini quiz with Boppi!</div>
+  </footer>
+</div>
+
+<!-- story & quiz overlay -->
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
+    <div class="panel-top">
+      <div class="panel-left">
+        <div class="big-emoji" id="bigEmoji">🔤</div>
+        <div class="meta">
+          <h2 id="panelTitle">A is for Apple</h2>
+          <p id="panelSub">Apple — A</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-direction:column;align-items:flex-end">
+        <button class="btn close" id="closePanel">✖ Close</button>
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <div class="story-text" id="storyText"></div>
+
+      <div class="panel-controls">
+        <button class="btn listen" id="btnListen">🔊 Read to me</button>
+        <button class="btn say" id="btnSay">🗣️ Say it</button>
+        <button class="btn next" id="btnPrev">◀ Prev</button>
+        <button class="btn next" id="btnNext">Next ▶</button>
+        <button class="btn next" id="btnQuiz">🎯 Quiz!</button>
+      </div>
+
+      <textarea class="write" id="writeArea" placeholder="Try typing the line you hear..."></textarea>
+      <div class="finish" id="finishNotice">🎉 Yay! You finished the story.</div>
+
+      <div class="quiz-panel" id="quizPanel">
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="quiz-options" id="quizOptions"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script>
+/* ========== Data ========== */
+const stories = [
+  {L:"A", W:"Apple", E:"🍎", lines:["A is for Apple. Amy ate a red apple.","Amy holds the apple in her hand.","She takes a bite and smiles."], quiz:[
+    {q:"Which letter is Apple?", options:["A","B","C"], correct:0},
+    {q:"What color is the apple?", options:["Red","Blue","Green"], correct:0},
+    {q:"Who ate the apple?", options:["Amy","Bob","Cat"], correct:0},
+    {q:"Is Apple a fruit?", options:["Yes","No"], correct:0},
+    {q:"What does Amy do with the apple?", options:["Eats it","Throws it","Sings"], correct:0}
+  ]},
+  {L:"B", W:"Ball", E:"⚽", lines:["B is for Ball. Ben bounces the ball.","He kicks it across the yard.","The ball rolls to his friend."], quiz:[
+    {q:"Which letter is Ball?", options:["A","B","C"], correct:1},
+    {q:"Who bounces the ball?", options:["Ben","Bob","Amy"], correct:0},
+    {q:"What do they do with the ball?", options:["Bounce","Sleep","Eat"], correct:0},
+    {q:"Where does the ball go?", options:["To a friend","To the moon","Under bed"], correct:0},
+    {q:"Is a ball round?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"C", W:"Cat", E:"🐱", lines:["C is for Cat. Cathy cuddles the cat.","The cat purrs softly.","It jumps onto the windowsill."], quiz:[
+    {q:"Which letter is Cat?", options:["B","C","D"], correct:1},
+    {q:"Who cuddles the cat?", options:["Cathy","Ben","Amy"], correct:0},
+    {q:"What sound does the cat make?", options:["Meow","Woof","Moo"], correct:0},
+    {q:"Where does the cat jump?", options:["Windowsill","Bed","Chair"], correct:0},
+    {q:"Is Cat a pet?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"D", W:"Dog", E:"🐶", lines:["D is for Dog. Danny walks his dog.","The dog wags its tail.","They play fetch in the park."], quiz:[
+    {q:"Which letter is Dog?", options:["D","E","F"], correct:0},
+    {q:"Who walks the dog?", options:["Danny","David","Debbie"], correct:0},
+    {q:"What does the dog do?", options:["Wags tail","Reads a book","Jumps rope"], correct:0},
+    {q:"Where do they play?", options:["Park","School","Kitchen"], correct:0},
+    {q:"Is Dog a pet?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"E", W:"Egg", E:"🥚", lines:["E is for Egg. Emma cracks the egg.","She makes an omelet.","It smells delicious."], quiz:[
+    {q:"Which letter is Egg?", options:["E","F","G"], correct:0},
+    {q:"Who cracks the egg?", options:["Emma","Eli","Evan"], correct:0},
+    {q:"What does Emma make?", options:["Omelet","Cake","Sandwich"], correct:0},
+    {q:"How does it smell?", options:["Delicious","Bad","Spicy"], correct:0},
+    {q:"Is Egg food?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"F", W:"Fish", E:"🐟", lines:["F is for Fish. Finn fishes in the pond.","He catches a goldfish.","It swims back to the water."], quiz:[
+    {q:"Which letter is Fish?", options:["E","F","G"], correct:1},
+    {q:"Who fishes?", options:["Finn","Felix","Fiona"], correct:0},
+    {q:"What kind of fish?", options:["Goldfish","Shark","Catfish"], correct:0},
+    {q:"Where does it swim?", options:["Water","Sky","Tree"], correct:0},
+    {q:"Is Fish an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"G", W:"Grapes", E:"🍇", lines:["G is for Grapes. Gina eats green grapes.","She shares them with her friends.","They taste sweet."], quiz:[
+    {q:"Which letter is Grapes?", options:["G","H","I"], correct:0},
+    {q:"Who eats grapes?", options:["Gina","George","Grace"], correct:0},
+    {q:"What color are the grapes?", options:["Green","Red","Blue"], correct:0},
+    {q:"Who shares the grapes?", options:["Friends","Parents","Cats"], correct:0},
+    {q:"Are grapes sweet?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"H", W:"Hat", E:"🎩", lines:["H is for Hat. Harry wears a hat.","It is blue and shiny.","He looks very smart."], quiz:[
+    {q:"Which letter is Hat?", options:["G","H","I"], correct:1},
+    {q:"Who wears the hat?", options:["Harry","Hannah","Helen"], correct:0},
+    {q:"What color is the hat?", options:["Blue","Red","Yellow"], correct:0},
+    {q:"Is the hat shiny?", options:["Yes","No"], correct:0},
+    {q:"Does Harry look smart?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"I", W:"Ice Cream", E:"🍦", lines:["I is for Ice Cream. Isla eats ice cream.","It is chocolate flavor.","She smiles happily."], quiz:[
+    {q:"Which letter is Ice Cream?", options:["H","I","J"], correct:1},
+    {q:"Who eats ice cream?", options:["Isla","Iris","Ian"], correct:0},
+    {q:"What flavor is it?", options:["Chocolate","Vanilla","Strawberry"], correct:0},
+    {q:"How does she feel?", options:["Happy","Sad","Angry"], correct:0},
+    {q:"Is ice cream food?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"J", W:"Juice", E:"🧃", lines:["J is for Juice. Jack drinks orange juice.","It is fresh and sweet.","He finishes it all."], quiz:[
+    {q:"Which letter is Juice?", options:["I","J","K"], correct:1},
+    {q:"Who drinks juice?", options:["Jack","James","Jill"], correct:0},
+    {q:"What kind of juice?", options:["Orange","Apple","Grape"], correct:0},
+    {q:"Is the juice fresh?", options:["Yes","No"], correct:0},
+    {q:"Does he finish it?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"K", W:"Kite", E:"🪁", lines:["K is for Kite. Katie flies a kite.","It soars in the sky.","The wind blows gently."], quiz:[
+    {q:"Which letter is Kite?", options:["J","K","L"], correct:1},
+    {q:"Who flies the kite?", options:["Katie","Karen","Kevin"], correct:0},
+    {q:"Where does the kite go?", options:["Sky","Tree","Water"], correct:0},
+    {q:"Is the wind gentle?", options:["Yes","No"], correct:0},
+    {q:"Is Kite a toy?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"L", W:"Lion", E:"🦁", lines:["L is for Lion. Leo sees a lion.","It roars loudly.","The lion sleeps under a tree."], quiz:[
+    {q:"Which letter is Lion?", options:["K","L","M"], correct:1},
+    {q:"Who sees the lion?", options:["Leo","Lucy","Liam"], correct:0},
+    {q:"What sound does it make?", options:["Roar","Meow","Bark"], correct:0},
+    {q:"Where does the lion sleep?", options:["Under tree","In house","On car"], correct:0},
+    {q:"Is Lion an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"M", W:"Monkey", E:"🐒", lines:["M is for Monkey. Molly watches a monkey.","It swings from branch to branch.","The monkey eats a banana."], quiz:[
+    {q:"Which letter is Monkey?", options:["M","N","O"], correct:0},
+    {q:"Who watches the monkey?", options:["Molly","Mark","Mike"], correct:0},
+    {q:"What does the monkey eat?", options:["Banana","Apple","Carrot"], correct:0},
+    {q:"Where does it swing?", options:["Branches","Roof","Fence"], correct:0},
+    {q:"Is Monkey an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"N", W:"Nest", E:"🪺", lines:["N is for Nest. Nina finds a nest.","Birds chirp inside it.","She looks carefully."], quiz:[
+    {q:"Which letter is Nest?", options:["M","N","O"], correct:1},
+    {q:"Who finds the nest?", options:["Nina","Nancy","Nick"], correct:0},
+    {q:"Who lives inside?", options:["Birds","Cats","Dogs"], correct:0},
+    {q:"Does she look carefully?", options:["Yes","No"], correct:0},
+    {q:"Is Nest a home?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"O", W:"Orange", E:"🍊", lines:["O is for Orange. Oscar peels an orange.","He eats a slice.","It is juicy."], quiz:[
+    {q:"Which letter is Orange?", options:["N","O","P"], correct:1},
+    {q:"Who peels the orange?", options:["Oscar","Olivia","Owen"], correct:0},
+    {q:"What does he eat?", options:["Slice","Whole","Seed"], correct:0},
+    {q:"Is it juicy?", options:["Yes","No"], correct:0},
+    {q:"Is Orange a fruit?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"P", W:"Penguin", E:"🐧", lines:["P is for Penguin. Penny sees a penguin.","It waddles on the ice.","She claps happily."], quiz:[
+    {q:"Which letter is Penguin?", options:["O","P","Q"], correct:1},
+    {q:"Who sees the penguin?", options:["Penny","Paul","Peter"], correct:0},
+    {q:"Where does it waddle?", options:["Ice","Sand","Tree"], correct:0},
+    {q:"How does she feel?", options:["Happy","Sad","Angry"], correct:0},
+    {q:"Is Penguin an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"Q", W:"Queen", E:"👸", lines:["Q is for Queen. Queenie wears a crown.","She waves to the crowd.","People cheer happily."], quiz:[
+    {q:"Which letter is Queen?", options:["Q","R","S"], correct:0},
+    {q:"Who wears the crown?", options:["Queenie","Quinn","Quincy"], correct:0},
+    {q:"What does she do?", options:["Waves","Runs","Jumps"], correct:0},
+    {q:"Do people cheer?", options:["Yes","No"], correct:0},
+    {q:"Is Queen a royal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"R", W:"Rabbit", E:"🐰", lines:["R is for Rabbit. Riley pets a rabbit.","The rabbit hops around.","It nibbles on carrots."], quiz:[
+    {q:"Which letter is Rabbit?", options:["Q","R","S"], correct:1},
+    {q:"Who pets the rabbit?", options:["Riley","Rachel","Robert"], correct:0},
+    {q:"What does the rabbit eat?", options:["Carrots","Apples","Bananas"], correct:0},
+    {q:"Does it hop?", options:["Yes","No"], correct:0},
+    {q:"Is Rabbit an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"S", W:"Sun", E:"☀️", lines:["S is for Sun. Sunny sees the sun.","It shines brightly.","She wears sunglasses."], quiz:[
+    {q:"Which letter is Sun?", options:["S","T","U"], correct:0},
+    {q:"Who sees the sun?", options:["Sunny","Sam","Sara"], correct:0},
+    {q:"What does she wear?", options:["Sunglasses","Hat","Boots"], correct:0},
+    {q:"Is the sun bright?", options:["Yes","No"], correct:0},
+    {q:"Is Sun a star?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"T", W:"Tiger", E:"🐯", lines:["T is for Tiger. Tommy spots a tiger.","It prowls in the jungle.","He watches quietly."], quiz:[
+    {q:"Which letter is Tiger?", options:["T","U","V"], correct:0},
+    {q:"Who spots the tiger?", options:["Tommy","Tony","Tina"], correct:0},
+    {q:"Where does the tiger live?", options:["Jungle","House","Farm"], correct:0},
+    {q:"Does Tommy watch quietly?", options:["Yes","No"], correct:0},
+    {q:"Is Tiger an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"U", W:"Umbrella", E:"☂️", lines:["U is for Umbrella. Uma holds an umbrella.","It protects her from the rain.","She walks carefully."], quiz:[
+    {q:"Which letter is Umbrella?", options:["T","U","V"], correct:1},
+    {q:"Who holds the umbrella?", options:["Uma","Ursula","Uri"], correct:0},
+    {q:"What does it protect from?", options:["Rain","Sun","Wind"], correct:0},
+    {q:"Does she walk carefully?", options:["Yes","No"], correct:0},
+    {q:"Is Umbrella useful?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"V", W:"Violin", E:"🎻", lines:["V is for Violin. Victor plays the violin.","The music sounds sweet.","He smiles while playing."], quiz:[
+    {q:"Which letter is Violin?", options:["U","V","W"], correct:1},
+    {q:"Who plays the violin?", options:["Victor","Vinny","Vera"], correct:0},
+    {q:"How does the music sound?", options:["Sweet","Loud","Funny"], correct:0},
+    {q:"Does he smile?", options:["Yes","No"], correct:0},
+    {q:"Is Violin an instrument?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"W", W:"Whale", E:"🐋", lines:["W is for Whale. Wendy sees a whale.","It swims in the ocean.","She waves excitedly."], quiz:[
+    {q:"Which letter is Whale?", options:["V","W","X"], correct:1},
+    {q:"Who sees the whale?", options:["Wendy","Walter","Will"], correct:0},
+    {q:"Where does it swim?", options:["Ocean","River","Lake"], correct:0},
+    {q:"Does she wave?", options:["Yes","No"], correct:0},
+    {q:"Is Whale an animal?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"X", W:"Xylophone", E:"🎹", lines:["X is for Xylophone. Xavier plays a xylophone.","He taps colorful keys.","The music is fun."], quiz:[
+    {q:"Which letter is Xylophone?", options:["W","X","Y"], correct:1},
+    {q:"Who plays it?", options:["Xavier","Xena","Xander"], correct:0},
+    {q:"What does he tap?", options:["Keys","Drums","Strings"], correct:0},
+    {q:"Is the music fun?", options:["Yes","No"], correct:0},
+    {q:"Is Xylophone an instrument?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"Y", W:"Yacht", E:"🛥️", lines:["Y is for Yacht. Yara sails a yacht.","The boat moves through the water.","She enjoys the breeze."], quiz:[
+    {q:"Which letter is Yacht?", options:["X","Y","Z"], correct:1},
+    {q:"Who sails the yacht?", options:["Yara","Yosef","Yvonne"], correct:0},
+    {q:"Where does the boat move?", options:["Water","Land","Sky"], correct:0},
+    {q:"Does she enjoy the breeze?", options:["Yes","No"], correct:0},
+    {q:"Is Yacht a boat?", options:["Yes","No"], correct:0}
+  ]},
+  {L:"Z", W:"Zebra", E:"🦓", lines:["Z is for Zebra. Zack sees a zebra.","It has black and white stripes.","The zebra grazes peacefully."], quiz:[
+    {q:"Which letter is Zebra?", options:["Y","Z","A"], correct:1},
+    {q:"Who sees the zebra?", options:["Zack","Zoe","Zara"], correct:0},
+    {q:"What color are its stripes?", options:["Black & White","Red & White","Blue & Yellow"], correct:0},
+    {q:"Does the zebra graze?", options:["Yes","No"], correct:0},
+    {q:"Is Zebra an animal?", options:["Yes","No"], correct:0}
+  ]}
+  // ... add remaining letters C-Z here
+];
+
+/* ========== Build grid ========== */
+const grid = document.getElementById('lettersGrid');
+const colorCycle = ['c-red','c-blue','c-yellow','c-blue-dark','c-red-dark','c-yellow-soft'];
+stories.forEach((s,i)=>{
+  const btn = document.createElement('button');
+  btn.className = `letter ${colorCycle[i%colorCycle.length]}`;
+  btn.setAttribute('data-idx',i);
+  btn.setAttribute('aria-label',`${s.L} for ${s.W}`);
+  btn.innerHTML=`<div class="char">${s.L}</div><div class="word">${s.W}</div>`;
+  btn.addEventListener('click',()=>openPanel(i));
+  grid.appendChild(btn);
+});
+
+/* ========== Overlay / Panel logic ========== */
+const overlay = document.getElementById('overlay');
+const panel = document.querySelector('.panel');
+const bigEmoji = document.getElementById('bigEmoji');
+const panelTitle = document.getElementById('panelTitle');
+const panelSub = document.getElementById('panelSub');
+const storyText = document.getElementById('storyText');
+const writeArea = document.getElementById('writeArea');
+const finishNotice = document.getElementById('finishNotice');
+const quizPanel = document.getElementById('quizPanel');
+const quizQuestion = document.getElementById('quizQuestion');
+const quizOptions = document.getElementById('quizOptions');
+const btnListen = document.getElementById('btnListen');
+const btnSay = document.getElementById('btnSay');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const btnClose = document.getElementById('closePanel');
+const btnQuiz = document.getElementById('btnQuiz');
+const pointsEl = document.getElementById('points');
+
+let current = 0, lineIndex=0, quizIndex=0, points=0;
+let voiceOn=true, confettiOn=true, selectedVoice=null;
+
+/* ========== Voice setup ========== */
+function setupVoices(){
+  const vs = speechSynthesis.getVoices();
+  selectedVoice = vs.find(v=>/Google.*English|en-US.*Neural|Alex|Samantha|Jenny/i.test(v.name))||vs[0];
+}
+speechSynthesis.onvoiceschanged=setupVoices;
+window.addEventListener('load',setupVoices);
+
+/* open panel */
+function openPanel(idx){
+  current=idx; lineIndex=0; quizIndex=0;
+  renderStory();
+  overlay.style.display='flex'; overlay.classList.add('show'); overlay.setAttribute('aria-hidden','false');
+  quizPanel.style.display='none';
+}
+
+/* render story line */
+function renderStory(){
+  const s = stories[current];
+  bigEmoji.textContent=s.E||'🔤';
+  panelTitle.textContent=`${s.L} is for ${s.W}`;
+  panelSub.textContent=`${s.W} — ${s.L}`;
+  storyText.textContent=s.lines[lineIndex];
+  writeArea.value='';
+  finishNotice.style.display='none';
+  quizPanel.style.display='none';
+}
+
+/* next/prev story */
+btnNext.addEventListener('click',()=>{const s=stories[current];if(lineIndex<s.lines.length-1){lineIndex++; renderStory();}else onFinish();});
+btnPrev.addEventListener('click',()=>{if(lineIndex>0){lineIndex--; renderStory();}});
+
+/* listen */
+function speak(text, done){if(!voiceOn||!text) return; const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.85; u.pitch=1.02; if(selectedVoice) u.voice=selectedVoice; u.onend=()=>done&&done(); speechSynthesis.cancel(); speechSynthesis.speak(u);}
+btnListen.addEventListener('click',()=>speak(storyText.textContent));
+
+btnSay.addEventListener('click',()=>alert('Now you say it out loud! Try reading like a storyteller. 🗣️'));
+
+/* finish story */
+function onFinish(){
+  finishNotice.style.display='flex';
+  if(confettiOn) spawnConfetti();
+  speak('Yay! You finished the story! Great job!');
+}
+
+/* confetti */
+const canvas=document.getElementById('confetti'); const ctx=canvas.getContext('2d');
+function resizeCanvas(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;} window.addEventListener('resize',resizeCanvas); resizeCanvas();
+let confettiParticles=[];
+function spawnConfetti(){canvas.style.display='block'; confettiParticles=[];for(let i=0;i<150;i++){confettiParticles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,dx:(Math.random()-0.5)*6,dy:Math.random()*6+2,r:Math.random()*6+2,color:`hsl(${Math.random()*360},70%,60%)`});} animateConfetti();}
+function animateConfetti(){ctx.clearRect(0,0,canvas.width,canvas.height);confettiParticles.forEach(p=>{p.x+=p.dx;p.y+=p.dy;p.y>canvas.height&&(p.y=0,p.x=Math.random()*canvas.width); ctx.fillStyle=p.color; ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,2*Math.PI); ctx.fill();}); requestAnimationFrame(animateConfetti);}
+
+/* close overlay */
+btnClose.addEventListener('click',()=>{overlay.style.display='none'; overlay.classList.remove('show');});
+
+/* toggle voice/confetti */
+document.getElementById('toggleVoice').addEventListener('click',()=>{
+  voiceOn=!voiceOn; document.getElementById('toggleVoice').textContent=`🔈 Voice: ${voiceOn?'ON':'OFF'}`;
+});
+document.getElementById('toggleConfetti').addEventListener('click',()=>{
+  confettiOn=!confettiOn; document.getElementById('toggleConfetti').textContent=`✨ Confetti: ${confettiOn?'ON':'OFF'}`;
+});
+
+/* ========== Mini Quiz ========== */
+btnQuiz.addEventListener('click',startQuiz);
+
+function startQuiz(){
+  quizIndex=0; renderQuiz();
+  quizPanel.style.display='flex';
+  writeArea.style.display='none';
+}
+
+function renderQuiz(){
+  const q=stories[current].quiz[quizIndex];
+  quizQuestion.textContent=q.q;
+  quizOptions.innerHTML='';
+  q.options.forEach((opt,i)=>{
+    const btn=document.createElement('button');
+    btn.textContent=opt;
+    btn.addEventListener('click',()=>checkQuiz(i,q.correct,btn));
+    quizOptions.appendChild(btn);
+  });
+}
+
+function checkQuiz(selected, correct, btn){
+  if(selected===correct){btn.classList.add('correct'); points+=5;}else{btn.classList.add('wrong'); points=Math.max(points-2,0);}
+  pointsEl.textContent=points;
+  setTimeout(()=>{
+    quizIndex++;
+    if(quizIndex<stories[current].quiz.length) renderQuiz();
+    else quizPanel.style.display='none';
+  },800);
+}
+
+/* Home Button */
+document.getElementById('homeBtn').addEventListener('click',()=>overlay.style.display='none');
+
+</script>
+</body>
+</html>
