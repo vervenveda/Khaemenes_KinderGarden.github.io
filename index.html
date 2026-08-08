@@ -118,8 +118,8 @@ linear-gradient(180deg,#9ddfff 0 55%,#c9f4bf 56% 100%);box-shadow:0 24px 55px rg
 .student-gateway{margin-top:1rem;padding:1rem;border:2px solid rgba(117,91,200,.18);border-radius:18px;background:linear-gradient(145deg,#f8f3ff,#fff9da);text-align:center}
 .student-gateway strong{display:block;color:#5d477f;font:700 1.15rem var(--serif)}
 .student-gateway span{display:block;margin-top:.25rem;color:var(--muted);font-size:.76rem}
-.noema-note{margin-top:1rem;padding:1rem;border:1px solid rgba(117,91,200,.18);border-radius:16px;background:#f8f4ff;color:#5f5870;font-size:.78rem;line-height:1.55}
-.noema-note strong{color:#624c8a}.noema-note a{color:#6a4db1;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.naib-note{margin-top:1rem;padding:1rem;border:1px solid rgba(117,91,200,.18);border-radius:16px;background:#f8f4ff;color:#5f5870;font-size:.78rem;line-height:1.55}
+.naib-note strong{color:#624c8a}.naib-note a{color:#6a4db1;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 .seed-ribbon{display:flex;justify-content:center;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
 .seed-ribbon span{padding:.42rem .65rem;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.7rem;font-weight:800;color:#45604f}
 @media(max-width:1000px){.hero-inner{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-garden{width:min(100%,620px);margin:auto}.garden-scene{width:min(100%,560px)}}
@@ -734,12 +734,28 @@ linear-gradient(180deg,#9ddfff 0 55%,#c9f4bf 56% 100%);box-shadow:0 24px 55px rg
   }
 }
 
+
+/* Fluid child-first refinements */
+.view-status{min-height:1.25rem;margin:-.35rem auto 1rem;color:var(--muted);font-size:.72rem;font-weight:700}
+.mentor-details{padding:0;overflow:hidden;text-align:left}
+.mentor-details>summary{list-style:none;display:flex;align-items:center;justify-content:center;min-height:54px;padding:1rem 1.1rem;color:var(--leaf2);cursor:pointer;font:700 1rem var(--serif);text-align:center}
+.mentor-details>summary::-webkit-details-marker{display:none}
+.mentor-details>summary::after{content:"＋";margin-left:.55rem;color:#7458a1;font:700 1.1rem var(--sans)}
+.mentor-details[open]>summary{border-bottom:1px solid var(--line)}
+.mentor-details[open]>summary::after{content:"−"}
+.mentor-principles-body{padding:1rem 1.25rem 1.25rem}
+.setup-dialog:focus{outline:none}
+.menu-button[aria-expanded="true"]{background:linear-gradient(145deg,var(--rose),var(--violet))}
+@media(max-width:1000px){
+  .hero-inner{min-height:auto;padding-top:46px}
+}
+
 </style>
 </head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
 <div class="garden-decor" aria-hidden="true"><span class="deco-butterfly">🦋</span><span class="deco-ladybug">🐞</span><span class="deco-leaf">🍃</span><span class="deco-flower">🌼</span></div>
-<div class="utility"><div class="shell"><span>Khaemenes Kinder Garden · kindness, curiosity, strong foundations, and joyful discovery</span><nav class="utility-links" aria-label="Utility navigation"><a href="https://vervenveda.com/">Verve N Veda</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><a href="https://artist1970.github.io/noema-ai.github.io/" target="_blank" rel="noopener">NOEMA / NAIB · Parent & Educator Intelligence</a><a href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè</a><a href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Elementary</a></nav></div></div>
+<div class="utility"><div class="shell"><span>Khaemenes Kinder Garden · kindness, curiosity, strong foundations, and joyful discovery</span><nav class="utility-links" aria-label="Utility navigation"><a href="https://vervenveda.com/">Verve N Veda</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><a href="https://artist1970.github.io/noema-ai.github.io/" target="_blank" rel="noopener">NAIB · Parent & Educator Intelligence</a><a href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè</a><a href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Elementary</a></nav></div></div>
 <header class="header">
   <div class="shell nav">
     <a class="academy-mark" href="https://vervenveda.com/Khaemenes_Academy.github.io/" aria-label="Khaemenes Academy home">KA</a>
@@ -875,9 +891,9 @@ linear-gradient(180deg,#9ddfff 0 55%,#c9f4bf 56% 100%);box-shadow:0 24px 55px rg
 
 <section class="section" id="curriculum"><div class="shell"><div class="section-heading"><p class="eyebrow">The Formal Learning Path</p><h2>Thirty-six weeks planted one week at a time.</h2><p>Every unit contains five daily lessons, literacy, mathematics, inquiry, social-emotional learning, movement or creation, a maker project, printable work, family connection, and a weekly mastery check.</p></div>
 <div class="feature-grid" style="margin-bottom:2rem"><article class="feature-card"><span class="icon">📚</span><h3>Curriculum Dashboard</h3><p>Open the formal 36-unit curriculum, local student tracker, scope and sequence, and certification pathway.</p><a class="btn primary" href="curriculum/index.html">Open Curriculum Dashboard</a></article><article class="feature-card"><span class="icon">🧑‍🏫</span><h3>Teacher & Family Tools</h3><p>Use educator tools, portfolio evidence, printables, and local family records.</p><a class="btn secondary" href="curriculum/teacher-tools/index.html">Open Teacher Tools</a></article><article class="feature-card"><span class="icon">✅</span><h3>Assessments & Readiness</h3><p>Weekly mastery checks, midyear demonstration, final readiness demonstration, and certificate pathway.</p><a class="btn gold" href="curriculum/assessments/weekly-assessments.html">Open Assessments</a></article></div>
-<div class="filterbar" id="unitFilters"><button class="chip active" data-term="all" type="button">All 36 Weeks</button><button class="chip" data-term="1" type="button">Weeks 1–9</button><button class="chip" data-term="2" type="button">Weeks 10–18</button><button class="chip" data-term="3" type="button">Weeks 19–27</button><button class="chip" data-term="4" type="button">Weeks 28–36</button></div><div class="unit-grid" id="unitGrid"></div></div></section>
+<div class="filterbar" id="unitFilters"><button class="chip" data-term="all" type="button">All 36 Weeks</button><button class="chip active" data-term="1" type="button">Weeks 1–9</button><button class="chip" data-term="2" type="button">Weeks 10–18</button><button class="chip" data-term="3" type="button">Weeks 19–27</button><button class="chip" data-term="4" type="button">Weeks 28–36</button></div><div class="view-status" id="unitViewStatus" aria-live="polite"></div><div class="unit-grid" id="unitGrid"></div></div></section>
 
-<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">The Kinder Garden Tool Shed</p><h2>Twenty local apps for practice, play, calm, and discovery.</h2><p>These applications already live inside the Kinder Garden repository and supplement the formal curriculum with literacy, mathematics, science, weather, history, movement, and regulation practice.</p></div><div class="filterbar" id="appFilters"><button class="chip active" data-app="all" type="button">All Apps</button><button class="chip" data-app="literacy" type="button">Letters & Words</button><button class="chip" data-app="math" type="button">Math</button><button class="chip" data-app="science" type="button">Science & Weather</button><button class="chip" data-app="community" type="button">History & Community</button><button class="chip" data-app="movement" type="button">Movement</button><button class="chip" data-app="wellness" type="button">Calm & Wellness</button></div><div class="app-grid" id="appGrid"></div></div></section>
+<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">The Kinder Garden Tool Shed</p><h2>Twenty local apps for practice, play, calm, and discovery.</h2><p>These applications already live inside the Kinder Garden repository and supplement the formal curriculum with literacy, mathematics, science, weather, history, movement, and regulation practice.</p></div><div class="filterbar" id="appFilters"><button class="chip active" data-app="start" type="button">Start Here</button><button class="chip" data-app="all" type="button">All Apps</button><button class="chip" data-app="literacy" type="button">Letters & Words</button><button class="chip" data-app="math" type="button">Math</button><button class="chip" data-app="science" type="button">Science & Weather</button><button class="chip" data-app="community" type="button">History & Community</button><button class="chip" data-app="movement" type="button">Movement</button><button class="chip" data-app="wellness" type="button">Calm & Wellness</button></div><div class="app-grid" id="appGrid"></div></div></section>
 
 <section class="section" id="creche"><div class="shell"><div class="section-heading"><p class="eyebrow">Crechè → Kinder Garden Bridge</p><h2>Keep the favorite adventures. Grow into the next garden.</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/">Open Preschool Mentor</a></div></div></section>
 
@@ -922,16 +938,19 @@ linear-gradient(180deg,#9ddfff 0 55%,#c9f4bf 56% 100%);box-shadow:0 24px 55px rg
         </div>
       </article>
 
-      <aside class="mentor-principles">
-        <h3>One learner identity — three connected layers.</h3>
-        <ul>
-          <li><strong>Profile:</strong> nickname, broad age band, interests, learner ID, guardian release, and mentor identity remain local to the browser.</li>
-          <li><strong>Mentor Core:</strong> Pip, Miri, Nova, Sage, or a custom visible mentor continues into Kinder Garden with the same underlying communication style and bounded child-facing prompts.</li>
-          <li><strong>Curriculum:</strong> the 36-week record is attached to the stable learner ID while the legacy curriculum key is mirrored for existing assessment and certificate pages.</li>
-          <li><strong>Boundaries:</strong> no unrestricted child chat, no ability labels, no diagnosis, no hidden account, and no replacement for parent, guardian, or educator judgment.</li>
-<li><strong>NOEMA / NAIB governance:</strong> NOEMA remains the adult-facing orchestration and administrative intelligence. Kinder Garden uses the specialist Khaemenes Mentor Core for child-facing guidance; NOEMA is available to parents and educators, not as an unrestricted child chat.</li>
-        </ul>
-      </aside>
+      <details class="mentor-principles mentor-details">
+        <summary>👨‍👩‍👧 For grown-ups: how the mentor and learning record work</summary>
+        <div class="mentor-principles-body">
+          <h3>One learner identity — three connected layers.</h3>
+          <ul>
+            <li><strong>Profile:</strong> nickname, broad age band, interests, learner ID, guardian release, and mentor identity remain local to the browser.</li>
+            <li><strong>Mentor Core:</strong> Pip, Miri, Nova, Sage, or a custom visible mentor continues into Kinder Garden with the same communication style and bounded child-facing prompts.</li>
+            <li><strong>Curriculum:</strong> the 36-week record stays connected to the learner ID so progress can continue across the Kinder Garden experience.</li>
+            <li><strong>Boundaries:</strong> no unrestricted child chat, no ability labels, no diagnosis, no hidden account, and no replacement for parent, guardian, or educator judgment.</li>
+            <li><strong>NAIB support:</strong> NAIB is available to parents and educators as a separate adult-facing intelligence resource. Kinder Garden uses the specialist Khaemenes Mentor Core for bounded child-facing guidance.</li>
+          </ul>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -1005,7 +1024,7 @@ linear-gradient(180deg,#9ddfff 0 55%,#c9f4bf 56% 100%);box-shadow:0 24px 55px rg
 <footer><div class="shell footer-inner"><span><strong>© <span id="year"></span> Khaemenes Kinder Garden · Jennifer Kay Pearl · Verve N Veda</strong></span><nav class="footer-links"><a href="#student">Student Profile</a><a href="#mentor">Mentor</a><a href="#curriculum">Curriculum</a><a href="#creche">Crèche</a><a href="#families">Families</a><a href="#top">Back to Top</a></nav></div></footer>
 
 <div class="setup-overlay" id="kinderSetupOverlay" hidden>
-  <section class="setup-dialog" role="dialog" aria-modal="true" aria-labelledby="kinderSetupTitle">
+  <section class="setup-dialog" role="dialog" aria-modal="true" aria-labelledby="kinderSetupTitle" tabindex="-1">
     <header class="setup-head">
       <div>
         <h2 id="kinderSetupTitle">Kinder Garden Learner & Mentor Setup</h2>
@@ -1122,12 +1141,15 @@ const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const encodePath=p=>String(p||"").split("/").map(encodeURIComponent).join("/");
 const crecheUrl=file=>BASE+encodePath(file);
 
-function renderUnits(term="all"){
+function renderUnits(term="1"){
  const list=UNITS.filter(u=>{if(term==="all")return true;const t=Number(term),min=(t-1)*9+1,max=t*9;return u.n>=min&&u.n<=max;});
- $("#unitGrid").innerHTML=list.map(u=>`<a class="unit-card" href="${u.url}"><div class="unit-top"><span class="unit-no">Week ${String(u.n).padStart(2,"0")}</span><span class="unit-icon">${u.icon}</span></div><h3>${esc(u.title)}</h3><p>${esc(u.question)}</p><small>5 daily lessons · printable · assessment →</small></a>`).join("");
+ $("#unitGrid").innerHTML=list.map(u=>`<a class="unit-card" href="${u.url}"><div class="unit-top"><span class="unit-no">Week ${String(u.n).padStart(2,"0")}</span><span class="unit-icon">${u.icon}</span></div><h3>${esc(u.title)}</h3><p>${esc(u.question)}</p><small>5 little lessons · printable activity · weekly check →</small></a>`).join("");
+ const status=$("#unitViewStatus");
+ if(status)status.textContent=term==="all"?"Showing all 36 learning weeks.":`Showing Weeks ${(Number(term)-1)*9+1}–${Number(term)*9}. Choose another group anytime.`;
 }
-function renderApps(group="all"){
- const list=APPS.filter(a=>group==="all"||a.group===group);
+const START_APP_TITLES=new Set(["ABC Curriculum","ABC Spelling Soup","Math Curriculum","Kinder Math","Sink or Float","Weather Compass","PE Curriculum","Breath & Calm"]);
+function renderApps(group="start"){
+ const list=group==="start"?APPS.filter(a=>START_APP_TITLES.has(a.title)):APPS.filter(a=>group==="all"||a.group===group);
  $("#appGrid").innerHTML=list.map(a=>`<article class="app-card"><span class="app-icon">${a.icon}</span><div class="origin">Kinder Garden · ${esc(a.group)}</div><h3>${esc(a.title)}</h3><p>${esc(a.desc)}</p><a class="btn primary" href="${a.url}">Open Activity</a></article>`).join("");
 }
 function crecheItems(){
@@ -1154,6 +1176,7 @@ const KMENTOR_STYLES={
 };
 let kinderSelectedInterests=new Set();
 let kinderSelectedAvatar="🦊";
+let kinderSetupReturnFocus=null;
 
 function localJSON(key,fallback=null){
   try{const v=localStorage.getItem(key);return v?JSON.parse(v):fallback}catch{return fallback}
@@ -1174,6 +1197,7 @@ function setupIdentityPreview(){
   $("#kinderCustomMentor").hidden=$("#kinderMentorMode").value!=="custom";
 }
 function openKinderSetup(){
+  kinderSetupReturnFocus=document.activeElement instanceof HTMLElement?document.activeElement:null;
   const p=window.KhaemenesKinderContinuity?.getProfile?.() || localJSON("khaemenes_preschool_profile_v1",null);
   $("#kinderNickname").value=p?.nickname || "";
   $("#kinderAgeBand").value=["4-5","5-6"].includes(p?.ageBand)?p.ageBand:"5-6";
@@ -1196,16 +1220,17 @@ function openKinderSetup(){
 function closeKinderSetup(){
   $("#kinderSetupOverlay").hidden=true;
   document.body.style.overflow="";
+  if(kinderSetupReturnFocus?.isConnected)window.setTimeout(()=>kinderSetupReturnFocus.focus(),20);
 }
 function syncKinderContinuityProfile(profile){
-  saveLocalJSON("khaemenes_preschool_profile_v1",profile);
+  const profileSaved=saveLocalJSON("khaemenes_preschool_profile_v1",profile);
   const existing=localJSON("khaemenes_learning_continuity_v1",{}) || {};
   const favoriteMap=localJSON("khaemenes_profile_favorites_v1",{}) || {};
   const visitMap=localJSON("khaemenes_profile_visits_v1",{}) || {};
   const favorites=Array.isArray(existing.favorites)?existing.favorites:[];
   const favoriteIds=Array.isArray(existing.favoriteIds)?existing.favoriteIds:(favoriteMap[profile.learnerId]||[]);
   const visitedIds=Array.isArray(existing.visitedIds)?existing.visitedIds:(visitMap[profile.learnerId]||[]);
-  saveLocalJSON("khaemenes_learning_continuity_v1",{
+  const continuitySaved=saveLocalJSON("khaemenes_learning_continuity_v1",{
     ...existing,
     learnerId:profile.learnerId,
     nickname:profile.nickname,
@@ -1217,6 +1242,7 @@ function syncKinderContinuityProfile(profile){
     visitedIds,
     updatedAt:new Date().toISOString()
   });
+  return profileSaved && continuitySaved;
 }
 function saveKinderSetup(){
   const nickname=$("#kinderNickname").value.trim().slice(0,20);
@@ -1272,7 +1298,10 @@ function saveKinderSetup(){
     updatedAt:now
   };
 
-  syncKinderContinuityProfile(profile);
+  if(!syncKinderContinuityProfile(profile)){
+    error.textContent="This browser could not save the learner profile. Please check private-browsing or storage settings and try again.";
+    return;
+  }
   window.KhaemenesKinderContinuity?.loadCurriculumState?.();
   closeKinderSetup();
   renderProfile();
@@ -1453,8 +1482,8 @@ function renderProfile(){
       <div class="profile-line"><span>Next Week</span><strong>${String(next).padStart(2,"0")}</strong></div>
       <div class="profile-line"><span>Practice Average</span><strong>${Number(summary.weeklyAverage||0)}%</strong></div>`;
   }else{
-    const s=bridge.getSummary();
-    const pinned=bridge.getPinnedActivities();
+    const s=bridge.getSummary?.() || {};
+    const pinned=bridge.getPinnedActivities?.() || [];
 
     if(s?.hasProfile || learner?.hasProfile){
       const child=learner?.nickname || s?.nickname || "Learner";
@@ -1509,22 +1538,57 @@ function renderProfile(){
 const wonders=[["Look closely at one leaf.","Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words."],["Count five things in nature.","Find five leaves, stones, flowers, clouds, or birds. Count slowly and carefully."],["Make a butterfly picture.","Fold a paper shape, add two wings, then decorate both sides with bright colors and patterns."],["Tell a three-sentence story.","Choose an animal, a place, and one kind action. Put them together into a tiny story."],["Listen for three sounds.","Close your eyes with a grown-up nearby. Name three sounds you can hear around you."],["Find a shape outdoors.","Look for a circle, square, triangle, or rectangle in the world around you."],["Practice one kind sentence.","Try saying: May I help you? Thank you. I am sorry. Would you like to play?"],["Move like an animal.","Hop like a rabbit, stretch like a cat, flap like a bird, and walk slowly like a turtle."],["Mix two colors.","Use paint, crayons, or imagination. What new color appears when two colors meet?"],["Ask one big question.","Choose something you wonder about and ask why, how, what, where, or when."]];
 function setWonder(i){const w=wonders[i%wonders.length];$("#dailyTitle").textContent=w[0];$("#dailyText").textContent=w[1];}
 function randomWonder(){setWonder(Math.floor(Math.random()*wonders.length));const t=$("#toast");t.textContent="A new little wonder is ready.";t.classList.add("show");clearTimeout(randomWonder.timer);randomWonder.timer=setTimeout(()=>t.classList.remove("show"),1700);}
-renderUnits();renderApps();setupCreche();renderProfile();renderKinderMentor();refreshHeroProfileButton();setWonder(Math.floor(Date.now()/86400000));
+function initializeCurriculumView(){
+  const next=Math.max(1,Math.min(36,window.KhaemenesKinderContinuity?.nextUnit?.(36,80)||1));
+  const term=String(Math.ceil(next/9));
+  $$("#unitFilters .chip").forEach(x=>x.classList.toggle("active",x.dataset.term===term));
+  renderUnits(term);
+}
+initializeCurriculumView();renderApps("start");setupCreche();renderProfile();renderKinderMentor();refreshHeroProfileButton();setWonder(Math.floor(Date.now()/86400000));
 $("#unitFilters").addEventListener("click",e=>{const b=e.target.closest("[data-term]");if(!b)return;$$("#unitFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderUnits(b.dataset.term);});
 $("#appFilters").addEventListener("click",e=>{const b=e.target.closest("[data-app]");if(!b)return;$$("#appFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderApps(b.dataset.app);});
 $("#newWonder").addEventListener("click",randomWonder);
 $("#heroProfileButton").addEventListener("click",enterStudentGarden);
-const mb=$("#menuButton"),mm=$("#mobileMenu");mb.addEventListener("click",()=>{const open=mm.classList.toggle("open");mb.setAttribute("aria-expanded",String(open));mb.textContent=open?"×":"☰";});
-mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}));
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}});
+const mb=$("#menuButton"),mm=$("#mobileMenu"),siteHeader=document.querySelector(".header");
+function closeMenu(){
+  mm.classList.remove("open");
+  mb.setAttribute("aria-expanded","false");
+  mb.setAttribute("aria-label","Open Kinder Garden menu");
+  mb.textContent="☰";
+}
+function positionMenu(){
+  if(!mm.classList.contains("open"))return;
+  const bottom=siteHeader?.getBoundingClientRect().bottom||82;
+  mm.style.top=`${Math.max(8,Math.round(bottom+8))}px`;
+}
+mb.addEventListener("click",()=>{
+  const open=mm.classList.toggle("open");
+  mb.setAttribute("aria-expanded",String(open));
+  mb.setAttribute("aria-label",open?"Close Kinder Garden menu":"Open Kinder Garden menu");
+  mb.textContent=open?"×":"☰";
+  if(open)positionMenu();
+});
+mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMenu));
+document.addEventListener("click",e=>{
+  if(mm.classList.contains("open")&&!mm.contains(e.target)&&e.target!==mb)closeMenu();
+});
+window.addEventListener("resize",positionMenu);
+window.addEventListener("scroll",positionMenu,{passive:true});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){
+    closeMenu();
+    if(!$("#kinderSetupOverlay").hidden)closeKinderSetup();
+  }
+});
 if(window.KhaemenesLearnerProfile?.subscribe)window.KhaemenesLearnerProfile.subscribe(()=>renderProfile());
-window.addEventListener("khaemenes-family-changed",()=>{renderProfile();renderKinderMentor();refreshHeroProfileButton();});
-window.addEventListener("khaemenes-kinder-family-ready",()=>{renderProfile();renderKinderMentor();refreshHeroProfileButton();});
+window.addEventListener("khaemenes-family-changed",()=>{renderProfile();renderKinderMentor();refreshHeroProfileButton();initializeCurriculumView();});
+window.addEventListener("khaemenes-kinder-family-ready",()=>{renderProfile();renderKinderMentor();refreshHeroProfileButton();initializeCurriculumView();});
 window.addEventListener("storage",event=>{
   if(String(event.key||"").startsWith("khaemenes_")){
     renderProfile();
     renderKinderMentor();
     refreshHeroProfileButton();
+    initializeCurriculumView();
   }
 });
 
@@ -1534,6 +1598,16 @@ $("#closeKinderSetup").addEventListener("click",closeKinderSetup);
 $("#cancelKinderSetup").addEventListener("click",closeKinderSetup);
 $("#saveKinderSetup").addEventListener("click",saveKinderSetup);
 $("#kinderSetupOverlay").addEventListener("click",e=>{if(e.target===$("#kinderSetupOverlay"))closeKinderSetup()});
+$("#kinderSetupOverlay").addEventListener("keydown",e=>{
+  if(e.key!=="Tab")return;
+  const dialog=$("#kinderSetupOverlay").querySelector(".setup-dialog");
+  const focusable=[...dialog.querySelectorAll('button:not([disabled]),input:not([disabled]),select:not([disabled]),summary,[href],[tabindex]:not([tabindex="-1"])')]
+    .filter(el=>!el.closest("[hidden]")&&!el.hidden);
+  if(!focusable.length)return;
+  const first=focusable[0],last=focusable[focusable.length-1];
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+});
 $("#kinderMentorMode").addEventListener("change",setupIdentityPreview);
 document.querySelectorAll("#kinderInterestGrid [data-interest]").forEach(b=>b.addEventListener("click",()=>{
   const id=b.dataset.interest;
