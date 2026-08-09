@@ -1,30 +1,33 @@
-KHAEMENES KINDER GARDEN — UNIFIED FAMILY + MENTOR REPAIR
+KHAEMENES KINDER GARDEN · LIVING MENTOR v11
 
-Upload these FIVE files into the existing Khaemenes_KinderGarden.github.io repository,
-preserving the paths exactly:
+Upload these files preserving folders:
 
 index.html
-assets/khaemenes-kinder-continuity.js
-assets/khaemenes-kinder-family-adapter.js
-curriculum/index.html
-curriculum/assets/app.js
+README.md
+VALIDATION.json
 
-The central Academy family files are already correctly uploaded and do NOT need
-to be copied into Kinder Garden.
+assets/
+  khaemenes-kinder-resources.js
+  khaemenes-kinder-companions.js
+  khaemenes-kinder-family-adapter.js
+  khaemenes-kinder-continuity.js
 
-This repair combines:
-- shared Pre-K–12 Khaemenes Family Registry
-- existing Crechè learner migration
-- Kinder Garden mentor continuity
-- Pip / Miri / Nova / Sage / custom mentor
-- learner-scoped Kindergarten curriculum records
-- legacy curriculum-key compatibility
-- generic Family Profile school bridge
+curriculum/
+  index.html
+  assets/
+    app.js
+    companion-layer.js
 
-Expected script order:
-1. Preschool profile bridge
-2. central Khaemenes Family Registry
-3. Kinder family adapter
-4. Kinder mentor/curriculum continuity bridge
-5. page logic
-6. generic school family bridge
+DO NOT DELETE:
+- existing /apps/
+- curriculum/data/course-data.js
+- curriculum/lessons/
+- curriculum/assessments/
+- curriculum/printables/
+- curriculum/teacher-tools/
+- curriculum/records/
+
+NEW RESOURCE RULE:
+Create the app HTML, then register its skills once in
+assets/khaemenes-kinder-resources.js.
+NAIB automatically considers it for any matching lesson.
