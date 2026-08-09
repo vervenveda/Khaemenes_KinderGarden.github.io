@@ -115,3 +115,15 @@ The Kinder Garden Mentor:
 - `curriculum/assets/companion-layer.js`
 - `README.md`
 - `VALIDATION.json`
+
+
+## Visual refresh · v11.1
+
+The Kinder Garden root portal now includes:
+- a colorful top ticker with quick links, echoing the Pre-K / Crechè energy
+- a larger, more child-friendly hero scene
+- a layered learning tree rather than the flatter early SVG tree
+- strategically placed clickable icon bubbles that jump to games or page sections
+- more playful headline/button typography using a Comic / bubble-style system
+
+This refresh only changes the root portal presentation layer. The Family Registry bridge, curriculum gate, living resource registry, and lesson-aware NAIB matching architecture remain the same.
