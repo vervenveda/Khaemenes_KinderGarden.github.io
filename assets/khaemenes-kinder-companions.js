@@ -1,111 +1,241 @@
 /*
- * Khaemenes Kinder Garden · Curriculum Companion Map v1.0.0
- * ----------------------------------------------------------
- * Curriculum-first bridge between:
- *   - the 36 Kinder Garden curriculum units,
- *   - Kinder Garden's own local learning applications, and
- *   - age-appropriate Crechè mentor activities.
+ * Khaemenes Kinder Garden · NAIB Lesson Companion Engine v2.0.0
+ * --------------------------------------------------------------
+ * Matches registered Kinder Garden resources and age-appropriate
+ * Crechè activities to the ACTUAL lesson focus.
  *
- * This file performs no network requests and stores no learner data.
- * Consumers may pass the already-loaded Crechè catalog into forUnit().
+ * Existing forUnit() callers remain supported.
  */
 (function attachKinderCompanions(global){
   "use strict";
 
-  const KINDER_APPS = Object.freeze([
-    {id:"abc-curriculum",title:"ABC Curriculum",icon:"🔤",group:"literacy",path:"apps/ABC_curriculum_index.html",desc:"Letters, sounds, print awareness, and early reading."},
-    {id:"spelling-soup",title:"ABC Spelling Soup",icon:"🥣",group:"literacy",path:"apps/ABC_spelling_soup_index.html",desc:"Play with letters, sounds, and beginning spelling."},
-    {id:"abc-story",title:"ABC Story",icon:"📖",group:"literacy",path:"apps/ABC_story_index.html",desc:"Storytelling, listening, sequence, and letter recognition."},
-    {id:"phonic-garden",title:"Phonic Awareness Garden",icon:"👂",group:"literacy",path:"apps/kinder_garden_phonic_awareness_index.html",desc:"Hear, compare, and practice sounds inside words."},
-    {id:"spelling-safari",title:"Spelling Safari",icon:"🦒",group:"literacy",path:"apps/Spelling_safari_index.html",desc:"Playful spelling and word-recognition practice."},
-    {id:"math-curriculum",title:"Math Curriculum",icon:"🔢",group:"math",path:"apps/Math_curriculum_index.html",desc:"Structured early mathematics and number reasoning."},
-    {id:"kinder-math",title:"Kinder Math",icon:"🧮",group:"math",path:"apps/Math_kinder_index.html",desc:"Kindergarten-sized number practice and problem solving."},
-    {id:"numbers-1-12",title:"Numbers 1–12",icon:"1️⃣",group:"math",path:"apps/Numbers_1-12_index.html",desc:"Counting and number recognition from one through twelve."},
-    {id:"numbers-quiz",title:"Numbers & Quiz",icon:"✅",group:"math",path:"apps/Numbers_&_quiz_index.html",desc:"Quick number practice and check-for-understanding."},
-    {id:"math-cloud",title:"Kindergarten Math Cloud",icon:"☁️",group:"math",path:"apps/kindergarten_math_cloud_index.html",desc:"Colorful interactive kindergarten mathematics practice."},
-    {id:"math-garden",title:"Math Garden",icon:"🌼",group:"math",path:"apps/math-garden_index.html",desc:"Early mathematics inside a garden-themed activity."},
-    {id:"sink-float",title:"Sink or Float",icon:"🛶",group:"science",path:"apps/sink-or-float_index.html",desc:"Predict, observe, and explore material properties."},
-    {id:"weather-compass",title:"Weather Compass",icon:"🧭",group:"science",path:"apps/Weather_compass_index.html",desc:"Observe weather and build Earth-science vocabulary."},
-    {id:"weather-planetarium",title:"Weather Planetarium",icon:"🪐",group:"science",path:"apps/Weather_planetarium_index.html",desc:"Explore sky, weather, space, and observation."},
-    {id:"weather-wizard",title:"Weather Wizard",icon:"🪄",group:"science",path:"apps/Weather_wizard_index.html",desc:"Playful weather recognition and science practice."},
-    {id:"weather-match",title:"Weather Match",icon:"🌦️",group:"science",path:"apps/weather-match_index.html",desc:"Match weather ideas, symbols, and conditions."},
-    {id:"history-curriculum",title:"History Curriculum",icon:"🏺",group:"community",path:"apps/History_curriculum_index.html",desc:"Early history, community, culture, sequence, and belonging."},
-    {id:"pe-curriculum",title:"PE Curriculum",icon:"🦘",group:"movement",path:"apps/PE_curriculum_index.html",desc:"Movement, balance, coordination, and active learning."},
-    {id:"breath-calm",title:"Breath & Calm",icon:"🌬️",group:"wellness",path:"apps/Breath_index.html",desc:"Breathing, regulation, and gentle focus."},
-    {id:"breathing-bubble",title:"Breathing Bubble",icon:"🫧",group:"wellness",path:"apps/breathing-bubble_index.html",desc:"A simple visual breathing reset."}
-  ]);
+  const slug=value=>String(value??"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  const tokens=value=>new Set(slug(value).split("-").filter(w=>w.length>2));
+  const DAY_MODES={
+    1:["learn","explore"],
+    2:["practice","play"],
+    3:["explore","practice"],
+    4:["create","play"],
+    5:["review","practice","reset"]
+  };
 
-  const MAP = Object.freeze({
-    1:{kinder:["breath-calm","abc-story"],creche:["feelings","life"],reason:"Belonging, routines, names, and a calm start."},
-    2:{kinder:["abc-curriculum","phonic-garden"],creche:["letters","words"],reason:"Letters, names, sounds, and stories."},
-    3:{kinder:["breath-calm","abc-story"],creche:["feelings","words"],reason:"Feelings, friendship language, and personal voice."},
-    4:{kinder:["sink-float","weather-compass"],creche:["wonder","life"],reason:"Observe carefully with the senses."},
-    5:{kinder:["weather-compass","weather-match"],creche:["wonder"],reason:"Seasons, trees, leaves, and patterns in nature."},
-    6:{kinder:["weather-wizard","weather-compass"],creche:["wonder"],reason:"Weather, sunlight, clouds, and the sky."},
-    7:{kinder:["math-garden","numbers-1-12"],creche:["numbers","art"],reason:"Shapes, colors, spatial language, and design."},
-    8:{kinder:["pe-curriculum","math-garden"],creche:["music","movement","numbers"],reason:"Patterns through rhythm, counting, and movement."},
-    9:{kinder:["history-curriculum","abc-story"],creche:["life","words"],reason:"Families, homes, traditions, and stories."},
-    10:{kinder:["history-curriculum","kinder-math"],creche:["life","wonder"],reason:"Maps, places, position, and community."},
-    11:{kinder:["sink-float","weather-compass"],creche:["wonder","life"],reason:"Plants, gardens, needs, and observation."},
-    12:{kinder:["sink-float","abc-story"],creche:["wonder","words"],reason:"Animals, habitats, needs, and descriptive language."},
-    13:{kinder:["abc-story","breath-calm"],creche:["words","feelings"],reason:"Gratitude, giving, kindness, and storytelling."},
-    14:{kinder:["phonic-garden","spelling-soup"],creche:["letters","words"],reason:"Rhymes, sounds, syllables, and playful word work."},
-    15:{kinder:["math-curriculum","kinder-math"],creche:["numbers"],reason:"Measure, compare, estimate, and build."},
-    16:{kinder:["kinder-math","history-curriculum"],creche:["life","numbers"],reason:"Needs, wants, choices, counting, and simple money ideas."},
-    17:{kinder:["weather-planetarium","weather-compass"],creche:["wonder"],reason:"Winter, light, shadows, and observation."},
-    18:{kinder:["breathing-bubble","abc-story"],creche:["feelings","words"],reason:"Review, reflect, celebrate, and reset."},
-    19:{kinder:["breath-calm","abc-curriculum"],creche:["feelings","life"],reason:"Goals, persistence, routines, and growth mindset."},
-    20:{kinder:["abc-story","history-curriculum"],creche:["words","letters"],reason:"Stories, language, culture, and the wider world."},
-    21:{kinder:["sink-float","weather-compass"],creche:["wonder"],reason:"Living and nonliving things through observation."},
-    22:{kinder:["sink-float","weather-wizard"],creche:["wonder"],reason:"Water, ice, states, and weather change."},
-    23:{kinder:["history-curriculum","weather-compass"],creche:["life","wonder"],reason:"Stewardship, shared places, and Earth care."},
-    24:{kinder:["kinder-math","sink-float"],creche:["life","wonder","numbers"],reason:"Transportation, motion, design, and engineering."},
-    25:{kinder:["history-curriculum","abc-story"],creche:["life","words"],reason:"Jobs, tools, helpers, and community roles."},
-    26:{kinder:["history-curriculum","abc-curriculum"],creche:["words","life"],reason:"Symbols, flags, belonging, and civic language."},
-    27:{kinder:["math-curriculum","numbers-quiz"],creche:["numbers","life"],reason:"Markets, counting, number stories, and choices."},
-    28:{kinder:["breath-calm","pe-curriculum"],creche:["life","movement"],reason:"Food, health routines, and caring for growing bodies."},
-    29:{kinder:["pe-curriculum","breathing-bubble"],creche:["movement"],reason:"Movement, balance, coordination, and body awareness."},
-    30:{kinder:["math-garden","abc-story"],creche:["art","music","numbers"],reason:"Patterns become visual art, rhythm, and music."},
-    31:{kinder:["sink-float","weather-compass"],creche:["wonder"],reason:"Bugs, gardens, habitats, and tiny-world observation."},
-    32:{kinder:["sink-float","weather-compass"],creche:["wonder"],reason:"Pond, river, ocean, and water habitats."},
-    33:{kinder:["weather-planetarium","weather-wizard"],creche:["wonder"],reason:"Moon, space, day/night, and sky patterns."},
-    34:{kinder:["abc-curriculum","history-curriculum"],creche:["wonder","life"],reason:"Tools, technology, safe choices, and digital citizenship."},
-    35:{kinder:["abc-story","phonic-garden"],creche:["wonder","words"],reason:"Questions, research language, curiosity, and capstone expression."},
-    36:{kinder:["breath-calm","abc-story"],creche:["feelings","words"],reason:"Review, readiness, celebration, and reflection."}
+  const SYNONYMS=Object.freeze({
+    rhyme:["rhymes","rhyming"],
+    syllables:["beats","syllable"],
+    "beginning-sounds":["onset","initial-sounds","letter-sounds"],
+    counting:["count","cardinality","number"],
+    "compose-decompose":["compose","decompose","part-whole","number-stories"],
+    "addition-within-10":["addition","add","number-stories"],
+    "subtraction-within-10":["subtraction","subtract","take-away","number-stories"],
+    shapes:["shape","geometry"],
+    patterns:["pattern","rhythm"],
+    weather:["clouds","sunlight","seasons","sky"],
+    observation:["observe","notice","looking"],
+    community:["families","homes","helpers","jobs","neighborhood"],
+    maps:["map","places","position"],
+    "self-regulation":["calm","feelings","frustration","breathing"],
+    movement:["move","balance","coordination","body"],
+    "sky-patterns":["moon","day-night","space"],
+    storytelling:["stories","story","oral-language"]
   });
 
-  const byId = id => KINDER_APPS.find(app=>app.id===id) || null;
-  const encodePath = value => String(value||"").split("/").map(encodeURIComponent).join("/");
-  const crecheUrl = file => `https://vervenveda.com/Khaemenes_Preschool.github.io/apps/${encodePath(file)}`;
+  function courseData(){return global.KHAE_KINDERGARTEN_DATA||null}
+  function unitData(n,data=courseData()){return data?.units?.find?.(u=>Number(u.unit||u.week)===Number(n))||null}
+
+  function lessonData(unit,lessonNumber=1){
+    const list=Array.isArray(unit?.lessons)?unit.lessons:[];
+    return list[Math.max(0,Math.min(list.length-1,Number(lessonNumber||1)-1))]||null;
+  }
+
+  function contextForLesson(unitNumber,lessonNumber=1,data=courseData()){
+    const unit=unitData(unitNumber,data);
+    if(!unit)return null;
+    const lesson=lessonData(unit,lessonNumber);
+    const day=Math.max(1,Math.min(5,Number(lessonNumber)||1));
+    const focusParts=[
+      unit.title,unit.theme,unit.essentialQuestion,
+      day===1?`${unit.literacyFocus||""} ${unit.mathFocus||""}`:"",
+      day===2?`${unit.literacyFocus||""} ${unit.mathFocus||""}`:"",
+      day===3?`${unit.inquiryFocus||""} ${unit.selFocus||""}`:"",
+      day===4?`${unit.makerProject||""} ${unit.theme||""}`:"",
+      day===5?`${unit.literacyFocus||""} ${unit.mathFocus||""} ${unit.inquiryFocus||""} ${unit.selFocus||""}`:"",
+      lesson?.title,lesson?.objective,lesson?.workshop,lesson?.morningCircle
+    ].join(" ");
+    const tokenSet=tokens(focusParts);
+    const expanded=new Set(tokenSet);
+    for(const [skill,values] of Object.entries(SYNONYMS)){
+      const skillWords=tokens(skill);
+      const hit=[...skillWords,...values.flatMap(v=>[...tokens(v)])].some(v=>tokenSet.has(v));
+      if(hit){expanded.add(slug(skill));values.forEach(v=>expanded.add(slug(v)))}
+    }
+    return {
+      week:Number(unitNumber),
+      lesson:day,
+      day:lesson?.day||["Monday","Tuesday","Wednesday","Thursday","Friday"][day-1],
+      lessonTitle:lesson?.title||"",
+      unit,
+      lessonData:lesson,
+      modes:DAY_MODES[day]||["practice"],
+      text:focusParts,
+      tokens:expanded
+    };
+  }
+
+  function resourceScore(resource,context,interests=[]){
+    if(!resource?.mentorEligible||!resource.public)return -999;
+    let score=0;
+    const ct=context.tokens;
+    const resourceWords=new Set([
+      ...resource.skills||[],
+      ...resource.domains||[],
+      ...resource.keywords||[],
+      ...tokens(`${resource.title||""} ${resource.desc||""} ${resource.group||""}`)
+    ].map(slug));
+
+    for(const skill of resource.skills||[]){
+      const s=slug(skill);
+      if(ct.has(s))score+=12;
+      const syn=SYNONYMS[s]||[];
+      if(syn.some(v=>[...tokens(v)].some(w=>ct.has(w))))score+=6;
+    }
+    for(const word of resourceWords){
+      if(ct.has(word))score+=3;
+    }
+    for(const mode of resource.modes||[]){
+      if(context.modes.includes(slug(mode)))score+=5;
+    }
+    for(const interest of interests||[]){
+      const s=slug(interest);
+      if(resourceWords.has(s))score+=2;
+    }
+
+    if(resource.group==="wellness"&&context.lesson===5)score+=3;
+    if(resource.group==="movement"&&/movement|rhythm|balance|body/i.test(context.text))score+=6;
+    if(resource.group==="literacy"&&/letter|sound|rhyme|word|story|read|language/i.test(context.text))score+=5;
+    if(resource.group==="math"&&/count|number|shape|measure|pattern|add|subtract|math/i.test(context.text))score+=5;
+    if(resource.group==="science"&&/observe|weather|plant|animal|water|light|shadow|space|moon|living|motion/i.test(context.text))score+=5;
+    if(resource.group==="community"&&/family|community|map|job|symbol|market|tradition|civic/i.test(context.text))score+=5;
+    return score;
+  }
+
+  function kinderForLesson(unitNumber,lessonNumber=1,options={}){
+    const R=global.KhaemenesKinderResources;
+    const context=contextForLesson(unitNumber,lessonNumber,options.courseData||courseData());
+    if(!R||!context)return [];
+    const interests=options.interests||[];
+    return R.all()
+      .map(resource=>({resource,score:resourceScore(resource,context,interests)}))
+      .filter(x=>x.score>0)
+      .sort((a,b)=>b.score-a.score||a.resource.title.localeCompare(b.resource.title))
+      .slice(0,Math.max(1,Number(options.limit)||3))
+      .map(x=>({...x.resource,matchScore:x.score}));
+  }
+
+  function crecheScore(item,context){
+    let score=0;
+    const words=tokens(`${item?.title||""} ${item?.desc||""} ${item?.tags||""} ${item?.category||""} ${item?.mentor?.desc||""}`);
+    for(const token of words)if(context.tokens.has(token))score+=3;
+    const category=slug(item?.category||"");
+    const categoryBoost={
+      letters:/letter|sound|rhyme|word|read|language/i,
+      words:/word|story|read|language|rhyme/i,
+      numbers:/count|number|shape|measure|pattern|add|subtract|math/i,
+      wonder:/observe|weather|plant|animal|water|light|shadow|space|moon|living|motion/i,
+      feelings:/feeling|friend|kind|goal|frustrat|gratitude|self/i,
+      movement:/movement|rhythm|balance|body|coordination/i,
+      music:/music|rhythm|sound|beat/i,
+      art:/art|color|design|make|create/i,
+      life:/family|home|community|job|health|food|tool|routine/i
+    };
+    if(categoryBoost[category]?.test(context.text))score+=9;
+    return score;
+  }
 
   function eligibleCreche(catalog){
-    if(!catalog || typeof catalog.mentorActivities!=="function") return [];
+    if(!catalog||typeof catalog.mentorActivities!=="function")return [];
     return catalog.mentorActivities().filter(item=>{
-      const ages=item?.mentor?.ages || [];
-      return ages.includes("4-5") || ages.includes("5-6");
+      const ages=item?.mentor?.ages||[];
+      return ages.includes("4-5")||ages.includes("5-6");
     });
   }
 
-  function forUnit(unitNumber,catalog){
-    const n=Math.max(1,Math.min(36,Number(unitNumber)||1));
-    const plan=MAP[n] || MAP[1];
-    const kinder=plan.kinder.map(byId).filter(Boolean);
-    const pool=eligibleCreche(catalog).filter(item=>plan.creche.includes(item.category));
-    const creche=pool.length ? pool[(n-1)%pool.length] : eligibleCreche(catalog)[(n-1)%Math.max(1,eligibleCreche(catalog).length)] || null;
+  const encodePath=value=>String(value||"").split("/").map(encodeURIComponent).join("/");
+  const crecheUrl=file=>`https://vervenveda.com/Khaemenes_Preschool.github.io/apps/${encodePath(file)}`;
+
+  function crecheForLesson(unitNumber,lessonNumber=1,catalog=global.KhaemenesPreschoolCatalog,options={}){
+    const context=contextForLesson(unitNumber,lessonNumber,options.courseData||courseData());
+    if(!context)return [];
+    return eligibleCreche(catalog)
+      .map(item=>({item,score:crecheScore(item,context)}))
+      .filter(x=>x.score>0)
+      .sort((a,b)=>b.score-a.score||String(a.item.title).localeCompare(String(b.item.title)))
+      .slice(0,Math.max(1,Number(options.limit)||2))
+      .map(x=>({...x.item,url:crecheUrl(x.item.file),matchScore:x.score}));
+  }
+
+  function why(context,kinder,creche){
+    const unit=context?.unit;
+    if(!unit)return "Optional skill practice connected to the current lesson.";
+    const focus=context.lesson===2
+      ? `${unit.literacyFocus||""} · ${unit.mathFocus||""}`
+      : context.lesson===3
+        ? `${unit.inquiryFocus||""} · ${unit.selFocus||""}`
+        : context.lesson===4
+          ? `${unit.makerProject||unit.theme||""}`
+          : `${unit.theme||unit.title||""}`;
+    return `Matched to ${context.day}: ${focus}`;
+  }
+
+  function forLesson(unitNumber,lessonNumber=1,catalog=global.KhaemenesPreschoolCatalog,options={}){
+    const context=contextForLesson(unitNumber,lessonNumber,options.courseData||courseData());
+    if(!context)return {unit:Number(unitNumber)||1,lesson:Number(lessonNumber)||1,reason:"Lesson data unavailable.",kinder:[],creche:[],context:null};
+    const kinder=kinderForLesson(unitNumber,lessonNumber,options);
+    const creche=crecheForLesson(unitNumber,lessonNumber,catalog,options);
     return {
-      unit:n,
-      reason:plan.reason,
+      unit:Number(unitNumber),lesson:Number(lessonNumber),
+      reason:why(context,kinder,creche),
       kinder,
-      creche:creche ? {...creche,url:crecheUrl(creche.file)} : null
+      creche,
+      context
+    };
+  }
+
+  /* Backward-compatible week-level call.
+     We intentionally combine suggestions across the five lesson days rather
+     than hard-code a week-to-app pair. */
+  function forUnit(unitNumber,catalog=global.KhaemenesPreschoolCatalog,options={}){
+    const seen=new Map(),crecheSeen=new Map();
+    const reasons=[];
+    for(let day=1;day<=5;day++){
+      const match=forLesson(unitNumber,day,catalog,{...options,limit:3});
+      reasons.push(match.reason);
+      match.kinder.forEach((r,index)=>{
+        const prior=seen.get(r.id);
+        const score=(r.matchScore||0)+(3-index);
+        if(!prior||score>prior.score)seen.set(r.id,{resource:r,score});
+      });
+      match.creche.forEach((r,index)=>{
+        const id=r.id||r.file||r.title;
+        const prior=crecheSeen.get(id);
+        const score=(r.matchScore||0)+(2-index);
+        if(!prior||score>prior.score)crecheSeen.set(id,{resource:r,score});
+      });
+    }
+    return {
+      unit:Number(unitNumber),
+      reason:`Skill-matched across this week's five lessons.`,
+      kinder:[...seen.values()].sort((a,b)=>b.score-a.score).slice(0,3).map(x=>x.resource),
+      creche:[...crecheSeen.values()].sort((a,b)=>b.score-a.score).slice(0,2).map(x=>x.resource)
     };
   }
 
   global.KhaemenesKinderCompanions=Object.freeze({
-    version:"1.0.0",
-    apps:KINDER_APPS,
-    map:MAP,
-    byId,
+    version:"2.0.0",
+    contextForLesson,
+    forLesson,
     forUnit,
-    crecheUrl
+    kinderForLesson,
+    crecheForLesson,
+    get apps(){return global.KhaemenesKinderResources?.all?.()||[]}
   });
 })(window);
