@@ -2,9 +2,9 @@
 
 This file preserves the current mentor integration rule for Kinder Garden while the platform is being stabilized.
 
-## Current mentor authority
+## Current Academy relationship
 
-Archaemenes is the current Khaemenes Academy mentor for Kindergarten learners.
+Archaemenes is the current **Khaemenes Academy mentor** for Kindergarten learners.
 
 Kinder Garden should not locally invent, select, or replace the mentor identity.
 
@@ -15,7 +15,9 @@ Academy Family Registry
         ↓
 active Kindergarten learner
         ↓
-NAIB mentor-routing boundary
+NAIB intake / delegation
+        ↓
+Khaemenes Academy
         ↓
 Archaemenes
         ↓
@@ -34,18 +36,13 @@ It provides only the learner information needed by Kinder Garden, such as learne
 
 It does not grant the Kinder Garden page authority to invent a mentor identity.
 
-### NAIB mentor routing
+### NAIB delegation
 
-Owns the public mentor-assignment contract.
+NAIB is the front-desk administrator / AI Resources Director. It receives a bounded visitor context, interprets the immediate need, and delegates to the appropriate Academy campus, specialist platform, game, knowledge resource, civic resource, communications hub, or other destination.
 
-For the current Kindergarten stage, NAIB assigns:
+For a Kindergarten learner entering Khaemenes Academy, NAIB delegates the learner into the Academy environment. **The Academy then provides Archaemenes as its institutional educational mentor.**
 
-```text
-mentor: Archaemenes
-presentation: Early Scholar
-```
-
-The routing call should use only the minimum immediate context necessary for the assignment, such as:
+The routing call should use only the minimum immediate context necessary for delegation, such as:
 
 - stage: kindergarten
 - broad age band
@@ -53,11 +50,11 @@ The routing call should use only the minimum immediate context necessary for the
 - current surface
 - current educational intent
 
-The public page should not send unnecessary personal identifiers through the mentor-assignment request when they are not required.
+The public page should not send unnecessary personal identifiers through the delegation request.
 
 ### Archaemenes
 
-Archaemenes is the mentor identity that appears to the learner.
+Archaemenes is the Academy mentor identity that appears to the learner.
 
 His Kindergarten presentation may be adapted for the developmental stage, but the identity remains continuous.
 
@@ -75,7 +72,7 @@ Expected Kindergarten presentation principles:
 
 `assets/khaemenes-kinder-companions.js` remains responsible for matching learning resources to the actual lesson.
 
-This is a separate responsibility from mentor assignment.
+This is separate from NAIB delegation and separate from the Academy's mentor relationship.
 
 The companion engine may determine which registered games, Crechè bridge activities, practice tools, or learning resources best match the current week/day/objective.
 
@@ -84,10 +81,15 @@ Archaemenes may then present or recommend those matched resources to the learner
 In short:
 
 ```text
-NAIB decides WHO mentors.
-Archaemenes is the mentor.
+NAIB decides WHERE the visitor should go.
+Khaemenes Academy provides Archaemenes.
+Archaemenes mentors the learner.
 The Kinder companion engine helps determine WHAT learning resource fits the lesson.
 ```
+
+## Specialist platform boundary
+
+A Khaemenes learner may also enter specialized Verve N Veda platforms. Those platforms may present their own specialist AIs inside their own domains. NAIB may delegate the learner to those destinations without permanently replacing Archaemenes as the Khaemenes Academy mentor.
 
 ## Legacy mentor fields
 
@@ -100,11 +102,9 @@ Older Kinder Garden code may contain or encounter fields such as:
 - locally embedded mentor tables
 - custom visible mentor settings
 
-These fields are compatibility data only during stabilization.
+These fields are compatibility data only during stabilization. They must not override the current Academy → Archaemenes relationship.
 
-They must not override the current NAIB → Archaemenes assignment.
-
-Legacy values may be read only when required for migration or compatibility, and should not be written back as new mentor authority.
+Legacy values may be read only when required for migration or compatibility and should not be written back as new authority.
 
 ## Current local mentor names to retire
 
@@ -120,18 +120,20 @@ That program is intentionally deferred until the platform is stable.
 
 Until the formal adoption program exists:
 
-- Archaemenes remains the Kindergarten mentor.
+- Archaemenes remains the Khaemenes Academy mentor.
 - Kinder Garden should not expose a local custom-mentor creator.
 - Avatar or appearance customization should not silently create a second AI identity.
-- No custom mentor should bypass Academy safety, family authority, or NAIB routing.
+- No custom mentor should bypass Academy safety, family authority, or NAIB delegation.
 
-When the future program is introduced, the Kinder Garden pages should continue calling the same mentor-routing boundary. The implementation behind that boundary may then return an approved adopted mentor instead of Archaemenes when authorized.
+## Runtime compatibility
 
-This preserves the page contract and prevents another architectural rewrite.
+Current school code may still call the historical `assignMentor()` / `requestMentor()` methods. NAIB v2 keeps those methods as compatibility seams while clients migrate to `delegate()` / `requestDelegation()`.
+
+A compatibility response for Kindergarten must still resolve to Khaemenes Academy and Archaemenes. The compatibility method does not make NAIB the mentor.
 
 ## Fallback behavior
 
-If the public mentor router is temporarily unavailable, Kinder Garden may use a presentation-only Archaemenes fallback so the page does not become blank.
+If the public NAIB delegation router is temporarily unavailable, Kinder Garden may use a presentation-only Archaemenes fallback so the page does not become blank.
 
 The fallback must not pretend to be a second assignment authority.
 
@@ -140,12 +142,10 @@ Recommended fallback identity:
 ```text
 id: archaemenes
 name: Archaemenes
-title: Scholar Owl
+title: Scholar of Khaemenes Academy
 presentationMode: early-scholar
-assignedBy: NAIB
+relationship: Khaemenes Academy mentor
 ```
-
-The fallback is only a continuity/presentation safeguard for the public child-facing surface.
 
 ## Child interaction boundary
 
@@ -176,10 +176,10 @@ The existing 36-week record remains attached to the learner's formal Kindergarte
 
 ## Stabilization rule
 
-While Kinder Garden is being hardened, preserve this formula consistently:
+Preserve this formula consistently:
 
 ```text
-Family identity → NAIB routing → Archaemenes → lesson-aware resource matching → bounded learner experience
+Family identity → NAIB delegation → Khaemenes Academy → Archaemenes → lesson-aware resource matching → bounded learner experience
 ```
 
 Do not merge the future avatar/adoption program into current production logic until that program has its own approved architecture and safety boundary.
