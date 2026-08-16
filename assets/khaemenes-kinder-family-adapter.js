@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Family Adapter v2.0.0
+ * Khaemenes Kinder Garden · Family Adapter v2.1.0
  * ------------------------------------------------
  * Family Registry is authoritative for formal Kinder Garden access.
  * This bridge NEVER creates a family and NEVER auto-upgrades a child.
@@ -9,6 +9,16 @@
 
   function writeJSON(key,value){
     try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}
+  }
+
+  function ensureBetaProgramLink(){
+    if(!global.document)return;
+    if(global.document.querySelector('script[data-vnv-beta-link],script[src="https://vervenveda.com/assets/vnv-beta-link.js"]'))return;
+    const script=global.document.createElement("script");
+    script.src="https://vervenveda.com/assets/vnv-beta-link.js";
+    script.defer=true;
+    script.dataset.vnvBetaLink="kindergarten";
+    global.document.head.appendChild(script);
   }
 
   function syncCompatibility(learner){
@@ -74,6 +84,7 @@
     if(["khaemenes_family_registry_v1","khaemenes_active_family_v1","khaemenes_active_learner_v1"].includes(event.key))refresh();
   });
 
-  global.KhaemenesKinderFamilyAdapter=Object.freeze({version:"2.0.0",refresh,syncCompatibility});
+  global.KhaemenesKinderFamilyAdapter=Object.freeze({version:"2.1.0",refresh,syncCompatibility,ensureBetaProgramLink});
+  if(global.document?.readyState==="loading")global.document.addEventListener("DOMContentLoaded",ensureBetaProgramLink,{once:true});else ensureBetaProgramLink();
   wait();
 })(window);
