@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Family Adapter v3.0.0
+ * Khaemenes Kinder Garden · Family Adapter v3.1.0
  * ------------------------------------------------
  * Family Registry is authoritative for formal Kinder Garden access.
  * Mentor identity is not selected or authored by this compatibility bridge.
@@ -9,8 +9,9 @@
 (function attachKinderFamilyAdapter(global){
   "use strict";
 
-  const VERSION="3.0.0";
+  const VERSION="3.1.0";
   const LEGACY_PROFILE_KEY="khaemenes_preschool_profile_v1";
+  const NAIB_ROUTER_URL="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-naib-mentor-router.js";
 
   function clean(value,max=120){
     return String(value??"")
@@ -37,6 +38,29 @@
       global.localStorage.setItem(key,JSON.stringify(value));
       return true;
     }catch{return false}
+  }
+
+  function ensureMentorRouter(){
+    if(global.KhaemenesNAIB)return Promise.resolve(global.KhaemenesNAIB);
+    const existing=global.document?.querySelector?.(`script[src="${NAIB_ROUTER_URL}"]`);
+    if(existing){
+      return new Promise(resolve=>{
+        if(global.KhaemenesNAIB){resolve(global.KhaemenesNAIB);return}
+        global.addEventListener("khaemenes-naib-ready",()=>resolve(global.KhaemenesNAIB||null),{once:true});
+        global.setTimeout(()=>resolve(global.KhaemenesNAIB||null),5000);
+      });
+    }
+
+    return new Promise(resolve=>{
+      const script=global.document?.createElement?.("script");
+      if(!script){resolve(null);return}
+      script.src=NAIB_ROUTER_URL;
+      script.async=true;
+      script.referrerPolicy="no-referrer";
+      script.onload=()=>resolve(global.KhaemenesNAIB||null);
+      script.onerror=()=>resolve(null);
+      (global.document.head||global.document.documentElement).appendChild(script);
+    });
   }
 
   function syncCompatibility(learner){
@@ -114,7 +138,8 @@
       stage,
       eligible:true,
       mentorId:"archaemenes",
-      mentorAssignmentAuthority:"NAIB"
+      mentorAssignmentAuthority:"NAIB",
+      mentorRouterReady:Boolean(global.KhaemenesNAIB)
     });
   }
 
@@ -128,6 +153,7 @@
   }
 
   global.addEventListener("khaemenes-family-changed",refresh);
+  global.addEventListener("khaemenes-naib-ready",refresh);
   global.addEventListener("storage",event=>{
     if([
       "khaemenes_family_registry_v1",
@@ -139,8 +165,10 @@
   global.KhaemenesKinderFamilyAdapter=Object.freeze({
     version:VERSION,
     refresh,
-    syncCompatibility
+    syncCompatibility,
+    ensureMentorRouter
   });
 
+  ensureMentorRouter().finally(refresh);
   wait();
 })(window);
