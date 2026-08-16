@@ -1,15 +1,15 @@
 /*
- * Khaemenes Kinder Garden Continuity Bridge v4.0.0
+ * Khaemenes Kinder Garden Continuity Bridge v4.1.0
  * -------------------------------------------------
  * Formal Kinder Garden identity comes from Academy Family Registry.
- * Mentor identity comes from the Academy NAIB mentor-routing contract.
- * Archaemenes is the current Kindergarten mentor.
+ * NAIB delegates the learner to Khaemenes Academy.
+ * Khaemenes Academy provides Archaemenes as the current Kindergarten mentor.
  * Legacy local profiles remain compatibility/migration data only.
  */
 (function attachKinderContinuity(global){
   "use strict";
 
-  const VERSION="4.0.0";
+  const VERSION="4.1.0";
   const KEYS=Object.freeze({
     legacyProfile:"khaemenes_preschool_profile_v1",
     legacyKindergarten:"khaemenes_kindergarten_36_aplus_v1",
@@ -20,12 +20,12 @@
   const ARCHAEMENES_FALLBACK=Object.freeze({
     id:"archaemenes",
     name:"Archaemenes",
-    title:"Scholar Owl",
+    title:"Scholar of Khaemenes Academy",
     avatar:"🦉",
     colors:Object.freeze(["#5f7fd6","#6bd8e7"]),
     intro:"I am Archaemenes. I can help with clues, questions, stories, practice, and one clear step at a time.",
     presentationMode:"early-scholar-fallback",
-    specialistDomain:"learning-mentor",
+    specialistDomain:"academy-education",
     principles:Object.freeze([
       "clue-first",
       "age-adaptive",
@@ -33,7 +33,8 @@
       "do-not-award-mastery",
       "bounded-young-learner-interaction"
     ]),
-    assignedBy:"NAIB"
+    assignedBy:"Khaemenes Academy",
+    delegatedBy:"NAIB"
   });
 
   function clean(value,max=120){
@@ -101,16 +102,39 @@
   function mentorAssignmentFor(p=profile()){
     if(!p)return null;
     const naib=global.KhaemenesNAIB||null;
-    const assignment=naib?.assignMentor?.({
+    const context={
       stage:"kindergarten",
       ageBand:p.ageBand,
       interests:[...p.interests],
       surface:"khaemenes-kindergarden",
-      intent:"learning-mentor"
-    })||null;
+      intent:"academy learning"
+    };
 
-    if(assignment?.status==="assigned"&&assignment?.mentor?.id==="archaemenes"){
-      return assignment;
+    const delegated=naib?.delegate?.(context)||null;
+    if(delegated?.status==="delegated"&&delegated?.specialist?.id==="archaemenes"){
+      const specialist=delegated.specialist;
+      return Object.freeze({
+        status:"assigned",
+        contractVersion:delegated.contractVersion||null,
+        assignmentId:delegated.delegationId||null,
+        assignmentMode:"delegation",
+        assignedBy:"Khaemenes Academy",
+        delegatedBy:"NAIB",
+        mentorId:"archaemenes",
+        specialist:"Archaemenes",
+        stage:"kindergarten",
+        mentor:Object.freeze({...specialist,assignedBy:"Khaemenes Academy",delegatedBy:"NAIB"})
+      });
+    }
+
+    const compatibility=naib?.assignMentor?.({...context,intent:"academy mentor"})||null;
+    if(compatibility?.status==="assigned"&&compatibility?.mentor?.id==="archaemenes"){
+      return Object.freeze({
+        ...compatibility,
+        assignedBy:"Khaemenes Academy",
+        delegatedBy:"NAIB",
+        mentor:Object.freeze({...compatibility.mentor,assignedBy:"Khaemenes Academy",delegatedBy:"NAIB"})
+      });
     }
     return null;
   }
@@ -125,7 +149,8 @@
         principles:Object.freeze([...(assignment.mentor.principles||ARCHAEMENES_FALLBACK.principles)]),
         assignmentId:assignment.assignmentId||null,
         assignmentMode:assignment.assignmentMode||null,
-        assignedBy:"NAIB"
+        assignedBy:"Khaemenes Academy",
+        delegatedBy:"NAIB"
       });
     }
     return ARCHAEMENES_FALLBACK;
@@ -182,7 +207,7 @@
       mentorId:"archaemenes",
       linkedAt:state.linkedAt||null,
       updatedAt:state.updatedAt||null,
-      recordVersion:"4.0"
+      recordVersion:"4.1"
     };
   }
 
@@ -309,13 +334,13 @@
     };
     global.addEventListener("storage",handler);
     const familyHandler=()=>listener({learner:learnerSummary(),curriculum:curriculumSummary()},null);
-    const mentorHandler=()=>listener({learner:learnerSummary(),curriculum:curriculumSummary()},null);
+    const naibHandler=()=>listener({learner:learnerSummary(),curriculum:curriculumSummary()},null);
     global.addEventListener("khaemenes-family-changed",familyHandler);
-    global.addEventListener("khaemenes-naib-ready",mentorHandler);
+    global.addEventListener("khaemenes-naib-ready",naibHandler);
     return ()=>{
       global.removeEventListener("storage",handler);
       global.removeEventListener("khaemenes-family-changed",familyHandler);
-      global.removeEventListener("khaemenes-naib-ready",mentorHandler);
+      global.removeEventListener("khaemenes-naib-ready",naibHandler);
     };
   }
 
