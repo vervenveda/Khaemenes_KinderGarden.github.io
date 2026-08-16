@@ -483,5 +483,6 @@ function pickFileText(){return new Promise(res=>{const inp=document.createElemen
 // Init
 (async function init(){Vault.load();await OPFS.init();renderWeeks();$('#lessonTitle').textContent=`Week ${App.week} • Day ${App.day}`;renderLesson(CURRICULUM[0].lessons[0].target);document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('show')}));})();
 </script>
+<script src="/assets/vnv-beta-link.js" defer></script>
 </body>
 </html>
