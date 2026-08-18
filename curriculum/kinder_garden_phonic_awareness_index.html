@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>K Phonemic Awareness — 42 Week Portal (Self-Contained)</title>
+<title>Sound Garden — 42 Week Kindergarten Phonemic Awareness with Eiren</title>
 <style>
   :root{
     --bg:#f7fbff; --ink:#1f2937; --muted:#6b7280; --card:#fff;
@@ -60,6 +60,23 @@
   .opt:hover{background:#f3f4f6}
   .stat{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
   footer{text-align:center;color:var(--muted);padding:30px 0}
+
+/* ===== Kinder Garden Sound Garden visual/interaction layer ===== */
+:root{--bg:#f7fbff;--ink:#26364a;--muted:#68768a;--card:#fffdf8;--accent:#79a9c9;--accent-ink:#24324a;--ring:#f1d989;--radius:20px;--shadow:0 12px 34px rgba(36,50,74,.07)}
+body{background:linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)),repeating-linear-gradient(0deg,#edf5fa 0,#edf5fa 1px,transparent 1px,transparent 32px)}
+header{background:rgba(255,253,248,.94);border-bottom:2px solid #d8e5f0}.brand h1,h2,h3{font-family:Georgia,"Times New Roman",serif}.brand h1{font-size:1.35rem}
+nav a{background:#fff;border:2px solid #d8e5f0;border-radius:13px}
+.card{border:2px solid #d8e5f0;box-shadow:var(--shadow);padding:18px}
+.mentor{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;background:#fbf8ff;border-color:#e2d9ea;margin-bottom:14px}.mentor-orb{font-size:2.2rem}.mentor p{margin:4px 0 0;color:var(--muted)}
+.weeks{gap:12px}.wk{border:2px solid #d8e5f0;border-radius:15px;min-height:86px;transition:.13s}.wk:hover,.wk:focus-visible,.wk.active{transform:translateY(-2px);outline:5px solid rgba(232,184,75,.25);border-color:#e8b84b}.wk .star{font-size:1.25rem}
+.panel{border:2px solid #e1e8ee;border-radius:16px;background:#fff}.btn{box-shadow:none;border:2px solid transparent;min-height:44px}.btn.secondary{background:#eef7fb;border-color:#cbdce8}.btn.ghost{border:2px solid #d9e2e9}
+.box{appearance:none;border:2px dashed #aebdca;color:var(--ink);cursor:pointer;transition:.12s}.box:hover,.box.filled{background:#fff3c8;border-color:#d5a93e;transform:translateY(-2px)}
+.opt{border:2px solid #d8e5f0}.game .big{padding:8px 0}
+.mover{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;min-height:65px;padding:10px;border:2px dashed #b9c9d6;border-radius:14px;background:#f9fcfe}
+.sound-tile{width:55px;height:55px;border:2px solid #9cb2c4;border-radius:12px;background:#eef7fb;font-size:1.5rem;font-weight:850;color:var(--ink);cursor:pointer}.sound-tile:hover,.sound-tile.lit{background:#fff3c8;border-color:#d5a93e}
+.exit-panel{grid-column:1/-1;border:2px solid #ead7a7!important;background:#fffaf0!important}
+@media(max-width:640px){.mentor{grid-template-columns:auto 1fr}.mentor .btn{grid-column:1/-1}.wrap{padding:10px}.card{padding:13px}.weeks{grid-template-columns:repeat(2,1fr)}}
+
 </style>
 </head>
 <body>
@@ -67,8 +84,8 @@
   <div class="wrap">
     <div class="brand">
       <div style="font-size:1.3rem">🜁</div>
-      <h1>K Phonemic Awareness — 42 Week Portal</h1>
-      <small class="mono">self-paced • offline-safe • vanilla JS</small>
+      <h1>Sound Garden — 42 Week Phonemic Awareness</h1>
+      <small class="mono">Kinder Garden • listen • move • blend • speak</small>
     </div>
     <nav>
       <a href="#weeks">Weeks</a>
@@ -80,10 +97,17 @@
 </header>
 
 <main class="wrap">
+  <section class="mentor card">
+    <div class="mentor-orb">🌸</div>
+    <div><strong>Eiren · Kinder Garden Sound Mentor</strong>
+      <p id="eirenStatus">We will listen closely, move sounds, blend words, and discover how spoken words are built.</p>
+    </div>
+    <button class="btn secondary" id="eirenHear">🌸 Hear Eiren</button>
+  </section>
 
   <!-- ============= WEEKS / PORTAL ============= -->
   <section id="weeks" class="card">
-    <h2>📅 Year Plan (42 weeks)</h2>
+    <h2>🌱 Sound Garden Path — 42 Weeks</h2>
     <p class="sub">Tap a week to open its lesson. Stars = finished (exit ticket ≥ 2/3 correct).</p>
     <div id="weeksGrid" class="weeks" aria-live="polite"></div>
   </section>
@@ -102,7 +126,7 @@
         <div class="list mono" id="wkScript" style="margin-top:10px" aria-label="Teacher Script"></div>
         <div class="row" style="margin-top:10px">
           <button class="btn" id="startPractice">Start Practice</button>
-          <button class="btn secondary" id="startExit">Exit Ticket</button>
+          <button class="btn secondary" id="startExit">Exit Ticket</button><span class="pill" id="unlockStatus">Play two games to unlock</span>
           <span class="pill" id="wkStar">⭐ Not completed</span>
         </div>
       </div>
@@ -115,7 +139,7 @@
 
   <!-- ============= GAMES ============= -->
   <section id="games" class="card">
-    <h2>🎮 Practice Games</h2>
+    <h2>🎮 Interactive Sound Games</h2>
     <p class="sub">Each run is 5 rounds. Finish 2 games in a week to unlock the Exit Ticket.</p>
     <div class="grid">
 
@@ -140,11 +164,11 @@
 
       <!-- Blend Bot -->
       <div class="panel">
-        <h3>🤖 Blend Bot</h3>
+        <h3>🌸 Eiren’s Blend Trail</h3>
         <div class="game" id="blendGame">
           <div class="stat">
             <span class="pill">Round <b id="bRnd">0</b>/5</span>
-            <span class="pill">Words <b id="bScore">0</b></span>
+            <span class="pill">Blended <b id="bScore">0</b></span>
           </div>
           <div class="big"><span id="bPhonemes">—</span> → <b id="bWord">?</b></div>
           <div class="row">
@@ -158,7 +182,7 @@
 
       <!-- Segment Boxes -->
       <div class="panel">
-        <h3>🧰 Segment Boxes</h3>
+        <h3>🪨 Sound Stepping Stones</h3>
         <div class="game" id="segGame">
           <div class="stat">
             <span class="pill">Round <b id="sRnd">0</b>/5</span>
@@ -166,12 +190,12 @@
           </div>
           <div class="big">Word: <b id="sWord">—</b></div>
           <div class="board">
-            <div class="box" data-i="0"></div>
-            <div class="box" data-i="1"></div>
-            <div class="box" data-i="2"></div>
+            <button class="box" type="button" data-i="0" aria-label="Sound box 1"></button>
+            <button class="box" type="button" data-i="1" aria-label="Sound box 2"></button>
+            <button class="box" type="button" data-i="2" aria-label="Sound box 3"></button>
           </div>
           <div class="row">
-            <button class="btn" id="sTap">Tap a box to count →</button>
+            <button class="btn" id="sTap">Fill next sound →</button>
             <button class="btn secondary" id="sCheck">Check</button>
             <button class="btn ghost" id="sHear">🔈 Say word</button>
           </div>
@@ -180,17 +204,31 @@
         </div>
       </div>
 
+      <div class="panel">
+        <h3>🧲 Sound Mover</h3>
+        <div class="game">
+          <div class="big" id="mPrompt">Move or swap a sound to make a new word.</div>
+          <div class="mover" id="mover"></div>
+          <div class="row">
+            <button class="btn" id="mHear">🌸 Hear</button>
+            <button class="btn secondary" id="mCheck">Check New Word</button>
+            <button class="btn ghost" id="mNew">New</button>
+          </div>
+          <div id="mMsg" class="sub"></div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ============= TEACHER ============= -->
   <section id="teacher" class="card">
-    <h2>🧑‍🏫 Teacher</h2>
+    <h2>🧑‍🏫 Teacher / Parent Tools</h2>
     <p class="sub">Export/Reset progress. Toggle voice. Unlock any week.</p>
     <div class="row" style="margin-bottom:10px">
       <button class="btn secondary" id="export">Export Progress (.json)</button>
       <button class="btn warn" id="reset">Reset Year</button>
-      <label class="row"><input id="tts" type="checkbox"/> Enable Voice (Speech)</label>
+      <label class="row"><input id="tts" type="checkbox" checked/> Eiren Voice</label>
       <label class="row">Unlock week <input id="jump" type="number" min="1" max="42" style="width:90px"/></label>
       <button class="btn" id="goJump">Go</button>
     </div>
@@ -200,7 +238,7 @@
 </main>
 
 <footer>
-  <small class="mono">© Kindergarten Phonemic Awareness · Self-contained app · No external libraries</small>
+  <small class="mono">© Kinder Garden Sound Garden · local-first phonemic awareness · no external libraries</small>
 </footer>
 
 <script>
@@ -208,13 +246,16 @@
 const $ = sel => document.querySelector(sel);
 const $$ = sel => [...document.querySelectorAll(sel)];
 const rnd = arr => arr[Math.floor(Math.random()*arr.length)];
-const say = (t) => { if(!$('#tts').checked) return; const u = new SpeechSynthesisUtterance(String(t)); u.rate=0.9; speechSynthesis.speak(u); };
+const shuffle = arr => { const a=[...arr]; for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+let soundOn=true;
+function eirenVoice(){ const vs=speechSynthesis.getVoices(); return vs.find(v=>/Samantha|Aria|Jenny|Zira|Ava|Victoria|Karen|Moira|Serena|Natural|Enhanced|Premium/i.test(v.name)) || vs.find(v=>/^en/i.test(v.lang)) || vs[0]; }
+const say = (t) => { if(!soundOn) return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(String(t)); u.lang='en-US'; u.rate=.82; u.pitch=1.05; const v=eirenVoice(); if(v)u.voice=v; speechSynthesis.speak(u); };
 function toast(msg){
   const t = document.createElement('div'); t.textContent=msg;
   Object.assign(t.style,{position:'fixed',right:'14px',bottom:'14px',background:'#111827',color:'#fff',padding:'10px 14px',borderRadius:'10px',zIndex:9999,boxShadow:'0 8px 20px rgba(0,0,0,.25)'});
   document.body.appendChild(t); setTimeout(()=>t.remove(),1400);
 }
-function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); }
+function save(k,v){ try{localStorage.setItem(k,JSON.stringify(v));}catch{} }
 function load(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } }
 
 /* ========== WORD BANKS (CVC real & kid-friendly) ========== */
@@ -226,7 +267,13 @@ const WORDS_U = ["sun","run","fun","bun","cup","pup","rug","bug","hug","tug","mu
 const WORD_SET = [...WORDS_A, ...WORDS_E, ...WORDS_I, ...WORDS_O, ...WORDS_U];
 
 /* Simple “phoneme” views for CVC (K-level) */
-function toPhonemes(w){ return w.split(''); } // keep simple (CVC only)
+function toPhonemes(w){
+  const x=String(w).toLowerCase();
+  const digraphs={sh:"ʃ",ch:"ch",th:"th",wh:"w",ph:"f",ck:"k",ng:"ng"};
+  const out=[];
+  for(let i=0;i<x.length;i++){ const pair=x.slice(i,i+2); if(digraphs[pair]){out.push(digraphs[pair]);i++;} else out.push(x[i]); }
+  return out;
+}
 
 /* Rhyme check (approx): last vowel cluster onward */
 function rhymeKey(word){
@@ -247,10 +294,10 @@ const FOCI = [
 const WEEKS = Array.from({length:42}, (_,i)=>{
   const idx = i%FOCI.length;
   const vowelCycle = [WORDS_A,WORDS_E,WORDS_I,WORDS_O,WORDS_U][i%5];
-  const pool = Array.from({length:10}, ()=> rnd(vowelCycle));
-  const sug = idx<=1 ? ["Rhyme Match","Blend Bot"] :
-              idx<=4 ? ["Blend Bot","Segment Boxes"] :
-              ["Segment Boxes","Rhyme Match"];
+  const pool = shuffle(vowelCycle).slice(0, Math.min(10,vowelCycle.length));
+  const sug = idx<=1 ? ["Rhyme Match","Eiren’s Blend Trail"] :
+              idx<=9 ? ["Eiren’s Blend Trail","Sound Stepping Stones"] :
+              ["Sound Stepping Stones","Sound Mover"];
   const obj = {
     "Rhyme Listening":"Hear and judge if two words rhyme.",
     "Rhyme Decide":"Decide rhyme vs not rhyme in pairs.",
@@ -316,6 +363,8 @@ function renderLesson(id){
   $("#wkWords").textContent = w.words.join(", ");
   $("#wkScript").textContent = w.script.map((s,i)=>`${i+1}. ${s}`).join("\n");
   $("#wkStar").textContent = markWeekStar(w.id) ? "⭐ Completed" : "⭐ Not completed";
+  const p=PROG[w.id]||{}, doneGames=['rhyme','blend','seg'].filter(k=>p[k]).length;
+  $("#unlockStatus").textContent = doneGames>=2 ? "🔓 Exit Ticket unlocked" : `🔒 ${2-doneGames} game${2-doneGames===1?'':'s'} left`;
 }
 
 /* ========== RHYME MATCH GAME ========== */
@@ -328,14 +377,16 @@ function rNewRound(){
     const pair = fam.length? rnd(fam) : w;
     rA=w; rB=pair; rAnswer=true;
   } else {
-    rA = rnd(WORDS_A); rB = rnd(WORDS_U); // different vowels to avoid rhyme
-    if(rhymes(rA,rB)) rB = rnd(WORDS_I); // harden not-rhyme
-    rAnswer=false;
+    rA=rnd(WORD_SET);
+    const non=WORD_SET.filter(v=>v!==rA && !rhymes(rA,v));
+    rB=rnd(non); rAnswer=false;
   }
   $("#rWords").textContent = `${rA}  —  ${rB}`;
   $("#rMsg").textContent = "";
 }
 function rEnd(){
+  const final=rRound; rRound=0;
+  $("#rRnd").textContent=final;
   $("#rMsg").textContent = `Finished! Score ${rScore}/5`;
   const w = PROG[currentWeekId] ||= {};
   if(rScore>=3){ w.rhyme = true; toast("Rhyme ✔ progress saved"); }
@@ -356,6 +407,7 @@ function bNewRound(){
   $("#bMsg").textContent = "Tap Blend! then say the word together.";
 }
 function bEnd(){
+  const final=bRound; bRound=0; $("#bRnd").textContent=final;
   $("#bMsg").textContent = `Great blending! ${bScore}/5 words.`;
   const w = PROG[currentWeekId] ||= {};
   if(bScore>=3){ w.blend = true; toast("Blend ✔ progress saved"); }
@@ -371,51 +423,72 @@ $("#bHear").addEventListener('click', ()=>{ if(!bRound) return; const p = toPhon
 
 /* ========== SEGMENT BOXES GAME ========== */
 let sRound=0, sScore=0, sWord="", sCount=0;
-function sResetBoxes(){ $$(".box").forEach(b=> b.textContent=""); sCount=0; }
+function sResetBoxes(){ $$(".box").forEach(b=>{b.textContent="";b.classList.remove("filled")}); sCount=0; }
 function sNewRound(){
   sRound++; $("#sRnd").textContent=sRound; sResetBoxes();
   sWord = rnd(WEEKS.find(w=>w.id===currentWeekId)?.words || WORD_SET);
   $("#sWord").textContent = sWord; $("#sMsg").textContent="";
 }
 function sEnd(){
+  const final=sRound; sRound=0; $("#sRnd").textContent=final;
   $("#sMsg").textContent = `Great segmenting! ${sScore}/5 correct.`;
   const w = PROG[currentWeekId] ||= {};
   if(sScore>=3){ w.seg = true; toast("Segment ✔ progress saved"); }
   saveProg();
 }
 $("#sStart").addEventListener('click', ()=>{ sRound=0; sScore=0; $("#sScore").textContent=sScore; sNewRound(); });
-$("#sTap").addEventListener('click', ()=>{ if(!sRound) return; if(sCount<3){ $$(".box")[sCount].textContent="●"; sCount++; } });
+function fillSoundBox(){ if(!sRound)return; const boxes=$$(".box"); const want=Math.min(boxes.length,toPhonemes(sWord).length); if(sCount<want){boxes[sCount].textContent="●";boxes[sCount].classList.add("filled");sCount++;say("sound");}}
+$("#sTap").addEventListener('click', fillSoundBox);
+$$(".box").forEach((b,i)=>b.addEventListener("click",()=>{if(!sRound)return;if(i===sCount)fillSoundBox();}));
 $("#sCheck").addEventListener('click', ()=>{
   if(!sRound) return;
   const want = toPhonemes(sWord).length; const got = sCount;
-  $("#sMsg").textContent = (want===got) ? "✅ 3 sounds — correct!" : `❌ ${got} sound(s) — try 3 taps.`;
+  $("#sMsg").textContent = (want===got) ? `✅ ${want} sounds — correct!` : `Try again: you counted ${got}. Listen and touch one box for each sound.`;
   if(want===got){ sScore++; $("#sScore").textContent=sScore; }
   if(sRound>=5) sEnd(); else sNewRound();
 });
 $("#sHear").addEventListener('click', ()=> say(sWord));
 
+
+/* ========== SOUND MOVER ========== */
+let mBase="",mTarget="",mChoice="";
+function mRound(){
+  const pairs=[["cat","cot"],["map","mop"],["sit","sat"],["bug","bag"],["pen","pin"],["dog","dig"],["sun","sin"],["cap","cup"],["net","not"],["rag","rug"]];
+  [mBase,mTarget]=rnd(pairs);mChoice="";
+  $("#mPrompt").textContent=`Change ${mBase} into ${mTarget}. Which middle sound changes?`;
+  const correct=mTarget[1],alts=shuffle(["a","e","i","o","u"].filter(v=>v!==correct)).slice(0,2);
+  $("#mover").replaceChildren();
+  shuffle([correct,...alts]).forEach(v=>{const b=document.createElement("button");b.className="sound-tile";b.textContent=v;b.onclick=()=>{$$(".sound-tile").forEach(x=>x.classList.remove("lit"));b.classList.add("lit");mChoice=v;say(v)};$("#mover").appendChild(b)});
+  $("#mMsg").textContent="";
+}
+$("#mNew").addEventListener("click",mRound);
+$("#mHear").addEventListener("click",()=>{say(mBase);setTimeout(()=>say(mTarget),700)});
+$("#mCheck").addEventListener("click",()=>{if(!mChoice)return $("#mMsg").textContent="Choose a middle sound first.";if(mChoice===mTarget[1]){$("#mMsg").textContent=`✅ Yes. ${mBase} becomes ${mTarget}.`;say(`Yes. ${mBase}. ${mTarget}.`)}else{$("#mMsg").textContent="Listen to the middle sound and try again.";say("Listen to the middle sound and try again.")}});
+mRound();
+
 /* ========== EXIT TICKET (3 items) ========== */
 function quickCheck(){
   const items = [
     ()=>{ // initial sound
-      const w = rnd(WORD_SET), p = toPhonemes(w)[0];
-      return {q:`What is the first sound in "${w}"?`, choices:[p,"s","m"].sort(), ans:p};
+      const w=rnd(WORD_SET),p=toPhonemes(w)[0],alts=shuffle(["m","s","t","f","p","r"].filter(x=>x!==p)).slice(0,2);
+      return {q:`What is the first sound in "${w}"?`,choices:shuffle([p,...alts]),ans:p};
     },
     ()=>{ // rhyme pair
-      const a = rnd(WORDS_A), b = rnd(WORDS_U);
-      const same = Math.random()<0.5, x = same? rnd(WORDS_A) : b;
-      return {q:`Do "${a}" and "${x}" rhyme?`, choices:["Yes","No"], ans: same? "Yes":"No"};
+      const a=rnd(WORD_SET),same=Math.random()<.5;
+      const candidates=WORD_SET.filter(x=>x!==a && (same?rhymes(a,x):!rhymes(a,x)));
+      const x=rnd(candidates);
+      return {q:`Do "${a}" and "${x}" rhyme?`,choices:["Yes","No"],ans:same?"Yes":"No"};
     },
     ()=>{ // count sounds
-      const w = rnd(WORD_SET);
-      return {q:`How many sounds in "${w}"?`, choices:["2","3","4"], ans:"3"};
+      const w=rnd(WORD_SET),n=toPhonemes(w).length;
+      return {q:`How many sounds in "${w}"?`,choices:["2","3","4"],ans:String(n)};
     }
   ];
   const quiz = items.map(fn=>fn());
   let i=0, score=0;
   function ask(){
     const it = quiz[i]; if(!it){ finish(); return; }
-    const wrap = document.createElement('div'); wrap.className='panel';
+    const wrap = document.createElement('div'); wrap.className='panel exit exit-panel';
     wrap.innerHTML = `<div class="big" style="margin-bottom:6px">${it.q}</div>`;
     const row = document.createElement('div'); row.className='row';
     it.choices.forEach(c=>{
@@ -462,6 +535,8 @@ $("#goJump").addEventListener('click', ()=>{
   currentWeekId = n; renderWeeks(); renderLesson(currentWeekId); location.hash="#lesson";
 });
 
+$("#tts").addEventListener("change",e=>{soundOn=e.target.checked;if(!soundOn)speechSynthesis.cancel();});
+$("#eirenHear").addEventListener("click",()=>say("Welcome to Sound Garden. We will listen closely, blend sounds, move sounds, and build words together."));
 /* ========== INIT ========== */
 renderWeeks(); renderLesson(currentWeekId); dumpProgress();
 </script>
