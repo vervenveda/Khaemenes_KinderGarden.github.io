@@ -166,9 +166,9 @@
 <div class="activities">
   <button class="traceBtn" onclick="openPanel('tracePanel')">✏️ Tracing Garden</button>
   <button class="artBtn" onclick="openPanel('artPanel')">🎨 Art Lab</button>
-  <button class="readBtn" onclick="alert('Reading Room in Part 2')">📖 Reading Room</button>
-  <button class="pianoBtn" onclick="alert('Piano in Part 2')">🎵 Piano</button>
-  <button class="emotionBtn" onclick="alert('Emotion Lab in Part 2')">💛 Emotion Lab</button>
+  <button class="readBtn" type="button">📖 Reading Room</button>
+  <button class="pianoBtn" type="button">🎵 Piano</button>
+  <button class="emotionBtn" type="button">💛 Emotion Lab</button>
 </div>
 
 <!-- ===================== PANELS ===================== -->
@@ -188,7 +188,7 @@
 <!-- 🎨 Art Lab -->
 <div class="panel" id="artPanel">
   <button class="closeBtn" onclick="closePanel('artPanel')">Close ✖</button>
-  <h2>🎨 Pel™ — Personal Editing Lab (Pre-K)</h2>
+  <h2>🎨 Pel™ — Personal Editing Lab (Kinder Garden)</h2>
   <div id="toolbar">
     <button onclick="setTool('brush')">🖌 Brush</button>
     <button onclick="setTool('eraser')">🩹 Eraser</button>
@@ -283,9 +283,6 @@ function saveArtwork(){
   const link=document.createElement("a");link.download=title+".png";link.href=imgData;link.click();
 }
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
-</html>
 
 <script>
 /* ===========================================================
@@ -332,7 +329,7 @@ pianoPanel.className="panel";pianoPanel.id="pianoPanel";
 pianoPanel.style.background="linear-gradient(180deg,#6a5acd,#9370db)";
 pianoPanel.innerHTML=`
   <button class="closeBtn" onclick="closePanel('pianoPanel')">Close ✖</button>
-  <h2 style="color:#FFD700;text-shadow:2px 2px #333;">🎶 Pre-K Piano Deluxe 🎶</h2>
+  <h2 style="color:#FFD700;text-shadow:2px 2px #333;">🎶 Kinder Garden Piano Deluxe 🎶</h2>
   <p style="color:#fff;">Click the rainbow keys! Record and playback your tune.</p>
   <select id="instrumentSelect">
     <option value="piano">🎹 Piano</option>
@@ -400,6 +397,8 @@ pianoPanel.querySelector(".record").onclick=startRec;
 pianoPanel.querySelector(".stop").onclick=stopRec;
 pianoPanel.querySelector(".play").onclick=playRec;
 pianoPanel.querySelector(".beatToggle").onclick=toggleBeat;
+document.querySelector(".pianoBtn").onclick=()=>openPanel('pianoPanel');
+
 
 /* ===========================================================
    💛 EMOTION DETECTIVE
@@ -438,6 +437,7 @@ let sentences=JSON.parse(localStorage.getItem("teacherSentences")||"null")||defa
 let currentSentence="";
 
 const fCanvas=emotionPanel.querySelector("#faceCanvas"),fCtx=fCanvas.getContext("2d");
+let faceDrawing=false;
 function drawFace(){
   fCtx.clearRect(0,0,fCanvas.width,fCanvas.height);
   fCtx.fillStyle="#ffdbac";
@@ -445,10 +445,10 @@ function drawFace(){
   fCtx.fillStyle="#000";fCtx.beginPath();fCtx.arc(110,140,10,0,Math.PI*2);fCtx.arc(190,140,10,0,Math.PI*2);fCtx.fill();
 }
 drawFace();
-fCanvas.addEventListener("mousedown",()=>drawing=true);
-fCanvas.addEventListener("mouseup",()=>drawing=false);
+fCanvas.addEventListener("mousedown",e=>{faceDrawing=true;fCtx.beginPath();fCtx.moveTo(e.offsetX,e.offsetY);});
+fCanvas.addEventListener("mouseup",()=>faceDrawing=false);
 fCanvas.addEventListener("mousemove",e=>{
-  if(!drawing)return;
+  if(!faceDrawing)return;
   fCtx.lineWidth=3;fCtx.strokeStyle="#000";
   fCtx.lineTo(e.offsetX,e.offsetY);fCtx.stroke();
   fCtx.beginPath();fCtx.moveTo(e.offsetX,e.offsetY);
@@ -476,3 +476,6 @@ document.getElementById("saveSentences").onclick=()=>{
   if(newS.length){sentences=newS;localStorage.setItem("teacherSentences",JSON.stringify(sentences));alert("Sentences saved!");}
 };
 </script>
+<script src="/assets/vnv-beta-link.js" defer></script>
+</body>
+</html>
