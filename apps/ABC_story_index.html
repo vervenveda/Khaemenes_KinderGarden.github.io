@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ABC Story Sing-Along — Big & Bright</title>
+<title>ABC Story Sing-Along — Kinder Garden with Eiren</title>
 <style>
   :root{
     --card-radius:28px;
@@ -126,13 +126,48 @@
     .letter-btn{font-size:24px;padding:14px}
     .start-btn{font-size:28px;padding:16px 26px}
   }
+
+/* ===== Kinder Garden Story Studio ===== */
+:root{--ink:#26364a;--paper:#fffdf8;--line:#d8e5f0;--sky:#79a9c9;--gold:#e8b84b;--sage:#82a98f;--coral:#e77767;--violet:#8b78a8}
+html,body{height:auto;min-height:100%}
+body{display:block;background:linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)),repeating-linear-gradient(0deg,#edf5fa 0,#edf5fa 1px,transparent 1px,transparent 32px);padding:24px;color:var(--ink)}
+.app{max-width:1080px;margin:auto;background:rgba(255,253,248,.96);border:2px solid var(--line);border-radius:28px;box-shadow:0 16px 44px rgba(36,50,74,.08)}
+.eyebrow{text-transform:uppercase;letter-spacing:.09em;font-weight:850;color:#69798c;font-size:.76rem}
+h1{font-family:Georgia,serif;color:var(--ink)}
+.start-btn{background:var(--sage);box-shadow:none;border:2px solid #6f9b7d}
+.list-area{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none;overflow:visible;gap:13px}
+.letter-btn{border:2px solid var(--line);border-radius:17px;background:white;box-shadow:none;padding:14px 16px;transition:.14s}
+.letter-btn:hover,.letter-btn:focus-visible,.letter-btn.lit{transform:translateY(-3px);outline:5px solid rgba(232,184,75,.28);border-color:var(--gold)}
+.letter-char{border:2px solid #d7e1e8;border-radius:12px;background:#f7fbfd;font-family:Georgia,serif}
+.overlay{align-items:flex-start;overflow:auto;background:rgba(30,43,60,.48);padding:24px}
+.panel{max-width:1000px;margin:auto;background:var(--paper);border-radius:25px;box-shadow:0 20px 60px rgba(25,38,55,.2);padding:25px}
+.emoji{border:3px solid #e4d9c3;box-shadow:none;border-radius:17px}
+.story-title{font-family:Georgia,serif;color:var(--ink)}
+.story-text{border:2px solid var(--line);border-left:7px solid var(--sky);border-radius:14px;background:white;font-size:28px}
+.eiren-strip{width:100%;display:flex;gap:12px;align-items:center;padding:13px 15px;border:2px solid #e2d9ea;border-radius:17px;background:#fbf8ff;text-align:left}
+.eiren-orb{font-size:30px}.eiren-strip div div{color:#66758a;font-size:.88rem;margin-top:3px}
+.sound-row{width:100%;display:flex;align-items:center;gap:10px}.sound-chip{border:2px solid #d8c77c;background:#fff7cf;border-radius:14px;padding:10px 14px;font-weight:850;color:var(--ink);cursor:pointer}
+.word-track{width:100%;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.track-word{border:2px solid #d8e5f0;background:white;border-radius:11px;padding:8px 10px;font-size:1.05rem;cursor:pointer;transition:.12s}.track-word:hover,.track-word.lit{background:#fff3c8;border-color:#d5a93e;transform:translateY(-2px)}
+.control-btn{box-shadow:none;border:2px solid rgba(255,255,255,.6);font-size:18px;padding:11px 16px;min-height:46px}.listen{background:var(--sky)}.say{background:var(--violet)}.prev{background:#71869d}.next{background:var(--sage)}
+.literacy-studio,.comprehension{width:100%;box-sizing:border-box;border:2px solid var(--line);border-radius:18px;background:#f9fcfe;padding:16px}
+.studio-title{font-family:Georgia,serif;font-weight:800;font-size:1.25rem}.studio-note{color:#68768a;margin:4px 0 12px}
+.sentence-build{min-height:58px;border:2px dashed #b9c9d6;border-radius:13px;background:white;padding:9px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.word-bank{min-height:58px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+.move-word{border:2px solid #9cb2c4;border-radius:11px;background:#eef7fb;color:var(--ink);padding:9px 11px;font-weight:750;cursor:pointer}.move-word:hover,.move-word:focus-visible{background:#fff3c8;border-color:#d5a93e}.move-word:disabled{opacity:.35}
+.studio-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.mini-btn{border:2px solid #d7e1e8;background:white;color:var(--ink);border-radius:11px;padding:8px 11px;font-weight:750;cursor:pointer}
+textarea.write{width:100%;min-height:100px;margin-top:12px;border:2px solid #b9c9d6;border-radius:12px;font:1.05rem/1.5 inherit;padding:11px}
+.writing-feedback{min-height:25px;margin-top:8px;font-weight:750;color:#4d6078}
+.comprehension{background:#fffaf0;border-color:#ead7a7}.compChoices{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:9px}.compChoices button{border:2px solid #d8e5f0;background:white;border-radius:11px;padding:10px;font-weight:700;cursor:pointer}
+@media(max-width:760px){body{padding:8px}.app{padding:16px}.list-area{grid-template-columns:1fr}.panel{padding:14px}.story-top{align-items:flex-start}.emoji{width:95px;height:95px}.story-text{font-size:22px}.compChoices{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
 
 <div class="app" role="application" aria-label="ABC Story Sing-Along App">
-  <h1>📚 ABC Story Sing-Along</h1>
-  <p class="lead">Tap a letter to open a big story. Listen, say it, and try writing along!</p>
+  <div class="eyebrow">Kinder Garden • Phonics • Story Reading • Writing</div><h1>📚 ABC Story Sing-Along</h1>
+  <p class="lead">Touch a letter, hear its sound, follow the story words, rebuild the sentence, and write along.</p>
 
   <div class="start-row">
     <button class="start-btn" id="openStart">🌟 Start Reading! 🌟</button>
@@ -164,16 +199,39 @@
       </div>
     </div>
 
-    <div class="story-text" id="storyText">A short, fun three-line story will appear here.</div>
+    <div class="eiren-strip"><span class="eiren-orb">🌸</span><div><strong>Eiren · Kindergarten Story Mentor</strong><div id="eirenStatus">Touch a letter and listen for its beginning sound.</div></div></div>
+    <div class="sound-row"><button class="sound-chip" id="soundChip">A · /a/</button><span id="soundHint">Beginning sound</span></div>
+    <div class="story-text" id="storyText" aria-live="polite">A short, fun three-line story will appear here.</div>
+    <div class="word-track" id="wordTrack" aria-label="Touch the words to hear them"></div>
 
     <div class="controls" aria-hidden="false">
-      <button class="control-btn listen" id="listenBtn">🔊 Listen</button>
-      <button class="control-btn say" id="sayBtn">🗣️ Say It!</button>
+      <button class="control-btn listen" id="listenBtn">🌸 Eiren Reads</button>
+      <button class="control-btn say" id="sayBtn">🗣️ My Turn</button>
       <button class="control-btn prev" id="prevLine">◀️ Prev</button>
       <button class="control-btn next" id="nextLine">Next ▶️</button>
     </div>
 
-    <textarea class="write" id="writeBox" placeholder="Type the line you hear..."></textarea>
+    <section class="literacy-studio">
+      <div class="studio-title">✏️ Read • Move • Write</div>
+      <div class="studio-note">Put the sentence pieces in order, then type the sentence yourself.</div>
+      <div class="sentence-build" id="sentenceBuild"></div>
+      <div class="word-bank" id="wordBank"></div>
+      <div class="studio-actions">
+        <button class="mini-btn" id="mixWords">↻ Mix words</button>
+        <button class="mini-btn" id="checkOrder">✓ Check order</button>
+      </div>
+      <textarea class="write" id="writeBox" placeholder="Now type the sentence here..."></textarea>
+      <div class="studio-actions">
+        <button class="mini-btn" id="checkWriting">✓ Check writing</button>
+        <button class="mini-btn" id="clearWriting">Clear</button>
+      </div>
+      <div class="writing-feedback" id="writingFeedback" aria-live="polite"></div>
+    </section>
+    <section class="comprehension" id="comprehension">
+      <strong>🧠 Story Check</strong>
+      <div id="compQuestion"></div>
+      <div class="compChoices" id="compChoices"></div>
+    </section>
 
     <div class="finish-banner" id="finishBanner" role="status"><strong id="finishText">Yay! You finished the story!</strong></div>
   </div>
@@ -186,9 +244,9 @@
 /* ========== Data: alphabetical stories ========== */
 const stories = [
   {letter:"A", word:"Apple", emoji:"🍎", lines:[
-    "A is for Apple. A apple falls from the tree.",
+    "A is for Apple. An apple falls from the tree.",
     "We pick apples with Mom. The apple is red and sweet.",
-    "We eat apple slices. Yum! Apples make us strong."
+    "We eat crisp apple slices. Yum! Apples are a tasty snack."
   ]},
   {letter:"B", word:"Ball", emoji:"⚽", lines:[
     "B is for Ball. The ball bounces high.",
@@ -218,7 +276,7 @@ const stories = [
   {letter:"G", word:"Goat", emoji:"🐐", lines:[
     "G is for Goat. The goat nibbles on hay.",
     "He bleats and climbs a little hill.",
-    "He kicks a tiny stone and smiles. Goats are funny."
+    "He steps over a tiny stone. Goats can be playful."
   ]},
   {letter:"H", word:"Hat", emoji:"🎩", lines:[
     "H is for Hat. The hat is big and blue.",
@@ -263,7 +321,7 @@ const stories = [
   {letter:"P", word:"Pig", emoji:"🐷", lines:[
     "P is for Pig. The pig rolls in the mud.",
     "He snorts and wiggles his little tail.",
-    "After bath time he smells sweet. Pigs love to play."
+    "Afterward he trots to his pen. The pig likes to explore."
   ]},
   {letter:"Q", word:"Queen", emoji:"👑", lines:[
     "Q is for Queen. The queen wears a shiny crown.",
@@ -328,6 +386,7 @@ stories.forEach((s, idx) => {
                      <div class="letter-title">${s.word}</div>
                      <div class="letter-sub">${s.letter} • ${s.word}</div>
                    </div>`;
+  btn.addEventListener('pointerdown',()=>{lightLetter(idx);speakText(`${s.letter}. ${SOUND_CUES[s.letter]}. ${s.word}.`)});
   btn.onclick = () => openStory(idx);
   lettersList.appendChild(btn);
 });
@@ -348,10 +407,52 @@ const prevBtn = document.getElementById('prevBtn');
 const closeBtn = document.getElementById('closeBtn');
 const finishBanner = document.getElementById('finishBanner');
 const finishText = document.getElementById('finishText');
+const wordTrack=document.getElementById('wordTrack');
+const soundChip=document.getElementById('soundChip');
+const soundHint=document.getElementById('soundHint');
+const eirenStatus=document.getElementById('eirenStatus');
+const sentenceBuild=document.getElementById('sentenceBuild');
+const wordBank=document.getElementById('wordBank');
+const writingFeedback=document.getElementById('writingFeedback');
+const compQuestion=document.getElementById('compQuestion');
+const compChoices=document.getElementById('compChoices');
+let builtWords=[];
 
 let currentIndex = 0;
 let lineIndex = 0;
 let selectedVoice = null;
+
+
+const SOUND_CUES={A:"short a",B:"buh",C:"kuh",D:"duh",E:"short e",F:"fff",G:"guh",H:"hhh",I:"short i",J:"juh",K:"kuh",L:"lll",M:"mmm",N:"nnn",O:"short o",P:"puh",Q:"kw",R:"rrr",S:"sss",T:"tuh",U:"short u",V:"vvv",W:"wuh",X:"ks",Y:"yuh",Z:"zzz"};
+function shuffle(a){const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+function normalizeText(s){return String(s).toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').trim()}
+function lightLetter(i){document.querySelectorAll('.letter-btn').forEach((b,n)=>b.classList.toggle('lit',n===i))}
+function renderWordTrack(){
+  wordTrack.replaceChildren();
+  storyText.textContent.split(/\s+/).forEach(raw=>{
+    const clean=raw.replace(/[^\w'-]/g,''); if(!clean)return;
+    const b=document.createElement('button');b.type='button';b.className='track-word';b.textContent=raw;
+    b.onclick=()=>{b.classList.add('lit');speakText(clean,()=>b.classList.remove('lit'))};wordTrack.appendChild(b);
+  });
+}
+function setupSentenceBuilder(){
+  builtWords=[];sentenceBuild.replaceChildren();wordBank.replaceChildren();
+  const words=storyText.textContent.split(/\s+/);
+  shuffle(words).forEach(w=>{const b=document.createElement('button');b.type='button';b.className='move-word';b.textContent=w;b.onclick=()=>{b.disabled=true;builtWords.push(w);const x=document.createElement('span');x.className='move-word';x.textContent=w;sentenceBuild.appendChild(x);speakText(w.replace(/[^\w'-]/g,''))};wordBank.appendChild(b)});
+}
+function setupComprehension(){
+  const s=stories[currentIndex],line=s.lines[lineIndex],correct=s.word;
+  compQuestion.textContent=`Which word begins with ${s.letter}?`;
+  const others=shuffle(stories.filter(x=>x.word!==correct)).slice(0,3).map(x=>x.word);
+  compChoices.replaceChildren();shuffle([correct,...others]).forEach(w=>{const b=document.createElement('button');b.textContent=w;b.onclick=()=>{if(w===correct){writingFeedback.textContent='Yes! You found the beginning-sound word.';speakText('Yes. Nice listening.')}else{speakText(`Listen again. ${s.letter} says ${SOUND_CUES[s.letter]}.`)}};compChoices.appendChild(b)});
+}
+function refreshLiteracy(){
+  const s=stories[currentIndex];
+  soundChip.textContent=`${s.letter} · ${SOUND_CUES[s.letter]}`;
+  soundHint.textContent=`${s.word} begins with ${s.letter}.`;
+  eirenStatus.textContent=`Listen for ${SOUND_CUES[s.letter]} at the beginning of ${s.word}.`;
+  renderWordTrack();setupSentenceBuilder();setupComprehension();writingFeedback.textContent='';
+}
 
 /* Center overlay and show / hide helpers */
 function openOverlay(){
@@ -369,6 +470,7 @@ function closeOverlay(){
   document.getElementById('lettersList').setAttribute('aria-hidden','false');
   speechSynthesis.cancel();
   hideFinish();
+  refreshLiteracy();
 }
 
 /* Open story */
@@ -409,6 +511,7 @@ function nextLine(){
     lineIndex++;
     storyText.textContent = s.lines[lineIndex];
     writeBox.value = '';
+    refreshLiteracy();
   } else {
     // finished story
     showFinish();
@@ -420,6 +523,7 @@ function prevLine(){
     storyText.textContent = stories[currentIndex].lines[lineIndex];
     writeBox.value = '';
     hideFinish();
+    refreshLiteracy();
   }
 }
 
@@ -427,7 +531,7 @@ function prevLine(){
 function setupVoice(){
   const voices = speechSynthesis.getVoices();
   // prefer Google/Neural-ish / English voices
-  selectedVoice = voices.find(v => /Google.*English|en-US.*Neural|Microsoft|Samantha|Alloy|Daniel|Jenny/i.test(v.name)) || voices.find(v=>v.lang && v.lang.startsWith('en')) || voices[0];
+  selectedVoice = voices.find(v => /Samantha|Aria|Jenny|Zira|Ava|Victoria|Karen|Moira|Serena|Google.*English|en-US.*Neural/i.test(v.name)) || voices.find(v=>v.lang && v.lang.startsWith('en')) || voices[0];
 }
 speechSynthesis.onvoiceschanged = setupVoice;
 
@@ -436,8 +540,8 @@ function speakText(text, onend){
   if(!text) return;
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'en-US';
-  u.rate = 0.92;    // slightly slow and clear
-  u.pitch = 1.05;   // gentle friendly tone
+  u.rate = 0.82;    // slightly slow and clear
+  u.pitch = 1.06;   // gentle friendly tone
   u.volume = 1;
   if(selectedVoice) u.voice = selectedVoice;
   u.onend = () => { if(typeof onend === 'function') onend(); };
@@ -454,8 +558,25 @@ listenBtn.addEventListener('click', ()=> {
 
 /* Say it prompt */
 sayBtn.addEventListener('click', ()=> {
-  alert('Now you say it out loud! 🗣️ Try to speak the line like a storyteller.');
+  eirenStatus.textContent='Your turn. Point to each word and read the line aloud.';
+  speakText('Your turn. Point to each word and read the line aloud.');
 });
+
+
+soundChip.onclick=()=>{const s=stories[currentIndex];speakText(`${s.letter}. ${SOUND_CUES[s.letter]}. ${s.word}.`)};
+document.getElementById('mixWords').onclick=setupSentenceBuilder;
+document.getElementById('checkOrder').onclick=()=>{
+  const target=normalizeText(storyText.textContent),attempt=normalizeText(builtWords.join(' '));
+  if(attempt===target){writingFeedback.textContent='Excellent! You rebuilt the sentence in order.';speakText('Excellent sentence building.')}
+  else{writingFeedback.textContent='Almost. Mix the words and try the sentence again.';speakText('Almost. Read the model and try again.')}
+};
+document.getElementById('checkWriting').onclick=()=>{
+  const target=normalizeText(storyText.textContent),attempt=normalizeText(writeBox.value);
+  if(!attempt){writingFeedback.textContent='Write the sentence first.';return}
+  if(attempt===target){writingFeedback.textContent='Excellent! Your writing matches the story line.';speakText('Excellent reading and writing.')}
+  else{const tw=target.split(' '),aw=attempt.split(' '),same=tw.filter((w,i)=>aw[i]===w).length;writingFeedback.textContent=`You matched ${same} of ${tw.length} words in order. Compare and try again.`}
+};
+document.getElementById('clearWriting').onclick=()=>{writeBox.value='';writingFeedback.textContent=''};
 
 /* navigation events */
 nextLineBtn.addEventListener('click', nextLine);
@@ -466,6 +587,7 @@ closeBtn.addEventListener('click', closeOverlay);
 /* Start button scroll to letter list then focus */
 document.getElementById('openStart').addEventListener('click', ()=>{
   // reveal and focus the letter list (it may be hidden on initial load)
+  document.getElementById('lettersList').setAttribute('aria-hidden','false');
   document.getElementById('lettersList').scrollIntoView({behavior:'smooth',block:'center'});
   // small visual nudge
   const firstBtn = document.querySelector('.letter-btn');
@@ -576,10 +698,17 @@ document.addEventListener('keydown', (e)=>{
   }
 });
 
+
+const EIREN_PUBLIC_ADAPTER="https://artist1970.github.io/Eiren.github.io/eiren-adapter.js";
+async function connectEirenBoundary(){
+  try{const mod=await import(EIREN_PUBLIC_ADAPTER);if(mod?.EirenAdapter?.prepare){const p=mod.EirenAdapter.prepare({mode:"reading",message:"Kindergarten ABC Story Sing-Along phonics and reading guidance."});if(p?.specialist==="eiren")eirenStatus.textContent="🌸 Eiren’s public reading boundary is connected.";}}catch(_){}
+}
+
 /* Initialize voices and UI on load */
 window.addEventListener('load', ()=>{
   // attempt to pre-populate voices
   setupVoice();
+  connectEirenBoundary();
   // small accessibility: ensure list focusable
   const list = document.getElementById('lettersList');
   list.querySelectorAll('.letter-btn').forEach(btn=>btn.setAttribute('tabindex','0'));
