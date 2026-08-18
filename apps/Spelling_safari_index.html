@@ -1,405 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Spelling Safari – 1st Grade</title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phonics Safari — Kinder Garden with Eiren</title>
 <style>
-/* =====================
-   THEME VARIABLES
-===================== */
 :root{
-  --orange:#ff7f50;
-  --purple:#9b59b6;
-  --blue:#3498db;
-  --green:#2ecc71;
-  --bg:#e6f0ff;
-  --white:#fff;
+  --ink:#26364a;--paper:#fffdf8;--line:#d8e5f0;--sky:#79a9c9;--gold:#e8b84b;
+  --sage:#82a98f;--coral:#e77767;--violet:#8b78a8;--soft:#f6fbfe
 }
-
-/* =====================
-   GLOBAL LAYOUT
-===================== */
-html,body{
-  margin:0;
-  height:100%;
-  font-family:"Comic Sans MS","Poppins",system-ui,sans-serif;
-  background:linear-gradient(180deg,#cce0ff,#ffe0cc,#d6ccff);
-  display:flex;
-  justify-content:center;
-  align-items:center;
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;padding:20px;color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:
+    linear-gradient(rgba(255,255,255,.74),rgba(255,255,255,.74)),
+    repeating-linear-gradient(0deg,#edf5fa 0,#edf5fa 1px,transparent 1px,transparent 32px);
 }
-
-/* =====================
-   APP CONTAINER
-===================== */
 .app{
-  width:100%;
-  max-width:500px;
-  background:var(--bg);
-  border-radius:22px;
-  padding:18px 14px 28px;
-  box-shadow:0 12px 48px #0003;
-  text-align:center;
-  position:relative;
+  width:min(1080px,100%);margin:auto;background:rgba(255,253,248,.97);
+  border:2px solid var(--line);border-radius:28px;padding:24px;
+  box-shadow:0 16px 44px rgba(36,50,74,.08)
 }
-
-h1{margin:6px 0;color:var(--purple);font-size:2.3rem;}
-#subtitle{color:#555;margin-bottom:8px;}
-#boppi{font-size:3.5rem;position:absolute;top:-45px;right:20px;}
-#score{font-weight:bold;font-size:1.3rem;color:#444}
-
-/* =====================
-   PROGRESS
-===================== */
-.progress-bar{
-  height:11px;
-  width:88%;
-  margin:10px auto;
-  background:#9b59b633;
-  border-radius:9px;
-  overflow:hidden;
-}
-.progress-inner{
-  height:100%;
-  background:var(--purple);
-  width:0%;
-  transition:width .5s ease;
-}
-
-/* =====================
-   WORD AREA
-===================== */
-.soup-area{
-  width:320px;
-  height:140px;
-  margin:0 auto 14px;
-  background:#f0f0ff;
-  border-radius:40px 40px 130px 130px;
-  border:6px solid #fff;
-  box-shadow:0 6px 18px #b0a0ff54;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-#dropzone{display:flex;gap:6px}
-
-/* =====================
-   TILES
-===================== */
-.drop-tile{
-  width:55px;
-  height:55px;
-  font-size:2.3rem;
-  font-weight:800;
-  border-radius:14px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#fff;
-  border:2.5px dashed #bbb;
-}
-
-.drop-tile.right{background:#b0ffcc;border-color:var(--green);}
-.drop-tile.wrong{background:#ffd2d2;border-color:#ff4d4d;}
-
-.letters{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  justify-content:center;
-  margin:14px 0;
-}
-
-.letter{
-  width:58px;
-  height:58px;
-  border-radius:15px;
-  background:linear-gradient(135deg,var(--blue),var(--orange));
-  color:#fff;
-  font-size:2.1rem;
-  font-weight:700;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  cursor:grab;
-}
-
-.letter.disabled{opacity:.5;pointer-events:none}
-
-/* =====================
-   BUTTONS
-===================== */
-.btn{
-  border:none;
-  border-radius:14px;
-  padding:10px 20px;
-  font-size:1.1rem;
-  cursor:pointer;
-  background:var(--purple);
-  color:#fff;
-}
-.btn.secondary{background:var(--orange);color:#222}
-
-/* =====================
-   CONFETTI
-===================== */
-.confetti{
-  position:fixed;
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  animation:fall 1s ease forwards;
-}
-@keyframes fall{
-  to{transform:translateY(-120px) scale(.6);opacity:0}
-}
-
-/* =====================
-   QUIZ
-===================== */
-#quizOverlay{
-  position:fixed;
-  inset:0;
-  background:#000a;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  visibility:hidden;
-}
-
-#quizBox{
-  background:#fff;
-  border-radius:22px;
-  padding:20px;
-  max-width:360px;
-  width:90%;
-}
-
-.quiz-options{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-.quiz-options button{
-  flex:1 1 40%;
-  padding:12px;
-  border:none;
-  border-radius:14px;
-  font-weight:bold;
-  cursor:pointer;
-  background:linear-gradient(135deg,var(--orange),var(--green));
-}
+header{display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:2px solid var(--line);padding-bottom:16px}
+.eyebrow{text-transform:uppercase;letter-spacing:.09em;font-weight:850;color:#69798c;font-size:.76rem}
+h1{font-family:Georgia,serif;margin:2px 0 0;font-size:clamp(2rem,5vw,3rem)}
+.score{padding:10px 14px;border:2px solid var(--line);border-radius:14px;background:#fff;font-weight:850}
+.eiren{display:flex;align-items:center;gap:14px;margin:18px 0;padding:15px 17px;border:2px solid #e2d9ea;border-radius:18px;background:#fbf8ff}
+.eiren .orb{font-size:2.1rem}.eiren p{margin:4px 0 0;color:#68768a}
+.progress{height:12px;background:#edf1f4;border-radius:20px;overflow:hidden}.progress>div{height:100%;background:var(--gold);width:0;transition:.3s}
+.workspace{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;margin-top:20px}
+.card{background:white;border:2px solid var(--line);border-radius:22px;padding:20px}
+.picture{text-align:center;font-size:5rem}.word-label{text-align:center;font-family:Georgia,serif;font-size:1.5rem;margin-top:4px}
+.prompt{text-align:center;color:#5e6d80;line-height:1.55;min-height:50px}
+.sound-family{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+.sound-chip{border:2px solid #d8c77c;background:#fff7cf;border-radius:12px;padding:8px 11px;font-weight:800;cursor:pointer}
+.bowl{min-height:108px;margin:14px 0;border:3px solid #d7b268;border-radius:24px 24px 70px 70px;background:#fff8df;display:flex;justify-content:center;align-items:center;gap:8px;padding:14px;flex-wrap:wrap}
+.slot{width:48px;height:54px;border:2px dashed #aebdca;border-radius:11px;background:#fff;display:grid;place-items:center;font-size:1.65rem;font-weight:850}
+.slot.right{background:#e8f6ec;border-style:solid;border-color:var(--sage)}.slot.wrong{background:#fff0ee;border-color:var(--coral)}
+.bank{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;min-height:62px}
+.tile{width:52px;height:52px;border:2px solid #9cb2c4;border-radius:12px;background:#eef7fb;color:var(--ink);font-size:1.5rem;font-weight:850;cursor:pointer;transition:.13s}
+.tile:hover,.tile:focus-visible,.tile.lit{background:#fff3c8;border-color:#d5a93e;transform:translateY(-2px)}.tile:disabled{opacity:.35;transform:none}
+.actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin-top:13px}
+.btn{min-height:46px;border:2px solid var(--line);border-radius:13px;padding:10px 14px;background:white;color:var(--ink);font-weight:780;cursor:pointer}
+.btn.primary{background:var(--sky);border-color:var(--sky);color:white}.btn.sage{background:var(--sage);border-color:var(--sage);color:white}
+.studio-title{font-family:Georgia,serif;font-size:1.3rem;font-weight:800}.model{font-size:1.16rem;line-height:1.6;padding:12px;border-left:5px solid var(--sky);background:#f8fbfd;border-radius:10px;margin-top:10px}
+textarea{width:100%;min-height:105px;margin-top:12px;border:2px solid #b9c9d6;border-radius:13px;padding:12px;font:1.05rem/1.5 inherit}
+.feedback{min-height:46px;margin-top:11px;padding:11px;border-radius:12px;background:#f6f8fa;font-weight:750}
+.quiz{margin-top:15px;padding:14px;border:2px solid #ead7a7;background:#fffaf0;border-radius:15px;display:none}.quiz.show{display:block}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.choices button{padding:10px;border:2px solid var(--line);border-radius:11px;background:white;font-weight:750;cursor:pointer}
+.footer-actions{margin-top:20px}
+.done{display:none;text-align:center;padding:22px;border:2px solid #cde3d2;background:#f3fbf5;border-radius:18px;margin-top:18px}.done.show{display:block}
+footer{text-align:center;color:#6d7888;font-size:.84rem;margin-top:18px}
+@media(max-width:760px){body{padding:8px}.app{padding:14px;border-radius:20px}header{align-items:flex-start;flex-direction:column}.workspace{grid-template-columns:1fr}.choices{grid-template-columns:1fr}.slot{width:42px;height:48px}.tile{width:48px;height:48px}}
 </style>
 </head>
-
 <body>
-<div class="app">
-  <h1>Spelling Safari!</h1>
-  <div id="subtitle">Words are waiting… 🐾</div>
-  <div id="boppi">🦘</div>
-  <div id="score">Score: 0 ⭐</div>
+<main class="app">
+<header>
+ <div><div class="eyebrow">Kinder Garden • Phonics • Spelling • Writing</div><h1>🦒 Phonics Safari</h1></div>
+ <div class="score" id="score">0 ⭐</div>
+</header>
 
-  <div class="progress-bar">
-    <div class="progress-inner" id="progress"></div>
+<div class="eiren"><span class="orb">🌸</span><div><strong>Eiren · Safari Reading Guide</strong><p id="eirenText">Listen for the beginning sound, touch the letters to make them glow, build the word, then use it in a sentence.</p></div></div>
+<div class="progress"><div id="progress"></div></div>
+
+<section class="workspace">
+ <article class="card">
+  <div class="picture" id="picture"></div>
+  <div class="word-label" id="wordLabel"></div>
+  <div class="prompt" id="prompt"></div>
+  <div class="sound-family" id="soundFamily"></div>
+  <div class="bowl" id="dropzone" aria-label="Word building area"></div>
+  <div class="bank" id="letters"></div>
+  <div class="actions">
+   <button class="btn primary" id="hearBtn">🌸 Eiren Says It</button>
+   <button class="btn" id="hintBtn">🔤 Sound Hint</button>
+   <button class="btn" id="mixBtn">↻ Mix Letters</button>
   </div>
+ </article>
 
-  <div class="soup-area">
-    <div id="dropzone"></div>
+ <article class="card">
+  <div class="studio-title">✏️ Read & Write</div>
+  <div class="model" id="model"></div>
+  <textarea id="writing" placeholder="Type the sentence after you build the word..."></textarea>
+  <div class="actions">
+   <button class="btn" id="readBtn">🌸 Read Sentence</button>
+   <button class="btn sage" id="checkWriting">✓ Check Writing</button>
   </div>
-
-  <div class="letters" id="letters"></div>
-
-  <div id="message">Drag or tap letters to spell the word!</div>
-
-  <div class="controls">
-    <button class="btn secondary" id="resetBtn">Start Over</button>
-    <button class="btn" id="volumeBtn">🔊</button>
+  <div class="feedback" id="feedback" aria-live="polite">Build the safari word first.</div>
+  <div class="quiz" id="quiz">
+   <strong id="quizQuestion"></strong>
+   <div class="choices" id="quizOptions"></div>
   </div>
+ </article>
+</section>
+
+<div class="actions footer-actions">
+ <button class="btn" id="prevBtn">← Previous</button>
+ <button class="btn primary" id="nextBtn">Next Safari Word →</button>
+ <button class="btn" id="resetBtn">Start Over</button>
+ <button class="btn" id="volumeBtn">🔊 Eiren</button>
 </div>
-
-<div id="quizOverlay">
-  <div id="quizBox">
-    <div id="quizQuestion"></div>
-    <div class="quiz-options" id="quizOptions"></div>
-  </div>
-</div>
+<div class="done" id="done"><h2>🏕️ Safari Complete!</h2><p>You listened, spelled, read, and wrote every safari word.</p><button class="btn sage" id="reviewBtn">Review Again</button></div>
+<footer>Progress stays on this device. No account or child data is required.</footer>
+</main>
 
 <script>
-/* =====================
-   DATA
-===================== */
-const WORDS = [
-  {word:"cat",img:"🐱",prompt:"A pet that says meow.",
-   quiz:[{q:"Starts with?",options:["C","B","D"],correct:0}]},
-  {word:"dog",img:"🐶",prompt:"A friend who barks.",
-   quiz:[{q:"Which one is a dog?",options:["🐶","🐱","🐷"],correct:0}]},
-  {word:"sun",img:"🌞",prompt:"Bright in the sky.",
-   quiz:[{q:"Starts with?",options:["S","B","C"],correct:0}]}
+const WORDS=[
+ {word:"cat",img:"🐱",prompt:"A pet that says meow.",sentence:"The cat naps on the mat.",family:["cat","cap","can"]},
+ {word:"dog",img:"🐶",prompt:"A friendly animal that can bark.",sentence:"The dog can run fast.",family:["dog","dot","dig"]},
+ {word:"sun",img:"🌞",prompt:"Bright in the daytime sky.",sentence:"The sun is warm and bright.",family:["sun","sit","sad"]},
+ {word:"map",img:"🗺️",prompt:"A picture that helps us find places.",sentence:"We use a map on our safari.",family:["map","mat","man"]},
+ {word:"bug",img:"🐞",prompt:"A tiny creature with six legs.",sentence:"A bug crawls on the leaf.",family:["bug","bus","bun"]},
+ {word:"fish",img:"🐟",prompt:"An animal that swims in water.",sentence:"The fish swims in the pond.",family:["fish","fan","fog"]},
+ {word:"frog",img:"🐸",prompt:"An animal that can hop and croak.",sentence:"The frog hops by the log.",family:["frog","fun","fin"]},
+ {word:"lion",img:"🦁",prompt:"A large wild cat.",sentence:"The lion rests in the shade.",family:["lion","leg","log"]},
+ {word:"nest",img:"🪺",prompt:"A home that many birds build.",sentence:"The nest is in the tree.",family:["nest","net","nap"]},
+ {word:"tree",img:"🌳",prompt:"A tall plant with a trunk and branches.",sentence:"The tree has green leaves.",family:["tree","top","ten"]},
+ {word:"ship",img:"🚢",prompt:"A large boat that travels on water.",sentence:"The ship sails on blue water.",family:["ship","shop","shell"]},
+ {word:"chick",img:"🐥",prompt:"A young chicken.",sentence:"The chick peeps near its nest.",family:["chick","chin","chat"]},
+ {word:"whale",img:"🐋",prompt:"A very large animal that lives in the ocean.",sentence:"The whale swims through the sea.",family:["whale","wheel","when"]},
+ {word:"duck",img:"🦆",prompt:"A bird with webbed feet.",sentence:"The duck swims across the pond.",family:["duck","drum","desk"]},
+ {word:"goat",img:"🐐",prompt:"An animal that can climb and nibble plants.",sentence:"The goat walks up the hill.",family:["goat","gum","gap"]},
+ {word:"zebra",img:"🦓",prompt:"An animal with black and white stripes.",sentence:"The zebra walks across the grass.",family:["zebra","zip","zoo"]},
+ {word:"yak",img:"🐂",prompt:"A shaggy animal with horns.",sentence:"The yak has thick, warm hair.",family:["yak","yes","yam"]},
+ {word:"van",img:"🚐",prompt:"A vehicle that can carry people or supplies.",sentence:"The van carries our safari gear.",family:["van","vet","vase"]}
 ];
 
-/* =====================
-   STATE
-===================== */
-let index = 0;
-let score = 0;
-let soundOn = true;
-let userLetters = [];
+let index=0,score=0,userLetters=[],soundOn=true,completed=new Set();
+const $=id=>document.getElementById(id);
+const SOUND={a:"short a",b:"buh",c:"kuh",d:"duh",e:"short e",f:"fff",g:"guh",h:"hhh",i:"short i",j:"juh",k:"kuh",l:"lll",m:"mmm",n:"nnn",o:"short o",p:"puh",q:"kw",r:"rrr",s:"sss",t:"tuh",u:"short u",v:"vvv",w:"wuh",x:"ks",y:"yuh",z:"zzz"};
 
-/* =====================
-   ELEMENTS
-===================== */
-const dropzone = document.getElementById("dropzone");
-const lettersEl = document.getElementById("letters");
-const message = document.getElementById("message");
-const progress = document.getElementById("progress");
-const scoreEl = document.getElementById("score");
-const quizOverlay = document.getElementById("quizOverlay");
-const quizQuestion = document.getElementById("quizQuestion");
-const quizOptions = document.getElementById("quizOptions");
+function shuffle(a){const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+function clean(s){return String(s).toLowerCase().replace(/[^a-z0-9\s]/g,"").replace(/\s+/g," ").trim()}
+function chooseVoice(){const vs=speechSynthesis.getVoices();return vs.find(v=>/Samantha|Aria|Jenny|Zira|Ava|Victoria|Karen|Moira|Serena|Natural|Enhanced|Premium/i.test(v.name))||vs.find(v=>/^en/i.test(v.lang))||vs[0]}
+function speak(txt){if(!soundOn)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);u.lang="en-US";u.rate=.82;u.pitch=1.05;const v=chooseVoice();if(v)u.voice=v;speechSynthesis.speak(u)}
+function save(){try{localStorage.setItem("kinderPhonicsSafariV1",JSON.stringify({index,score,completed:[...completed]}))}catch(_){}}
+function load(){try{const x=JSON.parse(localStorage.getItem("kinderPhonicsSafariV1")||"{}");index=Math.min(WORDS.length-1,Math.max(0,Number(x.index)||0));score=Math.max(0,Number(x.score)||0);completed=new Set(Array.isArray(x.completed)?x.completed.filter(w=>WORDS.some(o=>o.word===w)):[])}catch(_){}}
 
-/* =====================
-   UTILITIES
-===================== */
-const speak = txt => {
-  if(!soundOn) return;
-  speechSynthesis.cancel();
-  speechSynthesis.speak(new SpeechSynthesisUtterance(txt));
-};
-
-const shuffle = a => a.sort(()=>Math.random()-0.5);
-
-/* =====================
-   RENDER
-===================== */
-function renderWord(){
-  const {word,prompt} = WORDS[index];
-  userLetters = Array(word.length).fill("");
-
-  dropzone.innerHTML="";
-  lettersEl.innerHTML="";
-  message.textContent = prompt;
-  progress.style.width = `${(index/WORDS.length)*100}%`;
-
-  [...word].forEach(()=> {
-    const t=document.createElement("div");
-    t.className="drop-tile";
-    dropzone.appendChild(t);
-  });
-
-  shuffle([...word.toUpperCase()]).forEach(l=>{
-    const b=document.createElement("div");
-    b.className="letter";
-    b.textContent=l;
-    b.onclick=()=>placeLetter(l);
-    lettersEl.appendChild(b);
-  });
-
-  speak("Spell the word");
+function render(){
+ const x=WORDS[index];userLetters=Array(x.word.length).fill("");
+ $("picture").textContent=x.img;$("wordLabel").textContent=`Word ${index+1} of ${WORDS.length}`;$("prompt").textContent=x.prompt;$("model").textContent=x.sentence;$("writing").value="";$("feedback").textContent="Build the safari word first.";$("quiz").classList.remove("show");$("done").classList.remove("show");
+ $("dropzone").replaceChildren();[...x.word.toUpperCase()].forEach(()=>{const d=document.createElement("div");d.className="slot";$("dropzone").appendChild(d)});
+ renderLetters();renderSounds();
+ $("progress").style.width=((index+1)/WORDS.length*100)+"%";$("score").textContent=score+" ⭐";$("eirenText").textContent=`Safari word ${index+1} of ${WORDS.length}. Listen for ${SOUND[x.word[0]]} at the beginning.`;save();
 }
-
-/* =====================
-   GAME LOGIC
-===================== */
-function placeLetter(l){
-  const pos = userLetters.indexOf("");
-  if(pos<0) return;
-
-  const correct = l.toLowerCase() === WORDS[index].word[pos];
-  const tile = dropzone.children[pos];
-
-  if(correct){
-    tile.textContent=l;
-    tile.classList.add("right");
-    userLetters[pos]=l;
-    score+=5;
-    scoreEl.textContent=`Score: ${score} ⭐`;
-
-    if(userLetters.join("").toLowerCase()===WORDS[index].word){
-      spawnConfetti();
-      setTimeout(showQuiz,600);
-    }
-  } else {
-    tile.classList.add("wrong");
-    setTimeout(()=>tile.classList.remove("wrong"),500);
-    speak("Try again");
-  }
+function renderLetters(){
+ const x=WORDS[index],el=$("letters");el.replaceChildren();
+ shuffle([...x.word.toUpperCase()]).forEach(ch=>{const b=document.createElement("button");b.type="button";b.className="tile";b.textContent=ch;b.onclick=()=>placeLetter(ch,b);el.appendChild(b)});
 }
-
-/* =====================
-   QUIZ
-===================== */
+function renderSounds(){
+ const x=WORDS[index],el=$("soundFamily");el.replaceChildren();
+ x.family.forEach(w=>{const b=document.createElement("button");b.className="sound-chip";b.textContent=w;b.onclick=()=>speak(w);el.appendChild(b)});
+}
+function placeLetter(ch,b){
+ const x=WORDS[index],pos=userLetters.indexOf("");if(pos<0)return;const slot=$("dropzone").children[pos];b.classList.add("lit");speak(ch);
+ if(ch.toLowerCase()===x.word[pos]){
+   slot.textContent=ch;slot.className="slot right";userLetters[pos]=ch;b.disabled=true;score++;$("score").textContent=score+" ⭐";
+   if(userLetters.join("").toLowerCase()===x.word){completed.add(x.word);score+=4;$("score").textContent=score+" ⭐";$("feedback").textContent=`You built ${x.word.toUpperCase()}! Now read and write the sentence.`;speak(`You built ${x.word}. Now read the sentence and write it.`);showQuiz();save()}
+ }else{
+   slot.classList.add("wrong");$("feedback").textContent="That letter belongs somewhere else. Listen and try again.";speak("Try another letter.");setTimeout(()=>slot.classList.remove("wrong"),500)
+ }
+}
 function showQuiz(){
-  const q = WORDS[index].quiz?.[0];
-  if(!q){ nextWord(); return; }
-
-  quizQuestion.textContent=q.q;
-  quizOptions.innerHTML="";
-
-  q.options.forEach((opt,i)=>{
-    const b=document.createElement("button");
-    b.textContent=opt;
-    b.onclick=()=>{
-      if(i===q.correct) score+=5;
-      scoreEl.textContent=`Score: ${score} ⭐`;
-      quizOverlay.style.visibility="hidden";
-      nextWord();
-    };
-    quizOptions.appendChild(b);
-  });
-
-  quizOverlay.style.visibility="visible";
+ const x=WORDS[index];$("quiz").classList.add("show");$("quizQuestion").textContent=`Which word begins with ${x.word[0].toUpperCase()}?`;
+ const wrong=shuffle(WORDS.filter(w=>w.word[0]!==x.word[0])).slice(0,3).map(w=>w.word);
+ $("quizOptions").replaceChildren();shuffle([x.word,...wrong]).forEach(w=>{const b=document.createElement("button");b.textContent=w;b.onclick=()=>{if(w===x.word){score+=3;$("feedback").textContent="Yes! You matched the beginning sound.";speak("Yes. Nice listening.")}else{$("feedback").textContent=`Listen again for ${SOUND[x.word[0]]}.`;speak(`Listen again for ${SOUND[x.word[0]]}.`)}$("score").textContent=score+" ⭐";save()};$("quizOptions").appendChild(b)})
 }
 
-/* =====================
-   FLOW
-===================== */
-function nextWord(){
-  index++;
-  if(index>=WORDS.length){
-    message.textContent="🎉 All done!";
-    speak("Great job!");
-    return;
-  }
-  renderWord();
-}
+$("hearBtn").onclick=()=>{const x=WORDS[index];speak(`${x.word}. ${x.prompt}`)};
+$("hintBtn").onclick=()=>{const x=WORDS[index];speak(`${x.word} begins with ${x.word[0].toUpperCase()}. ${SOUND[x.word[0]]}.`)};
+$("mixBtn").onclick=()=>{userLetters=Array(WORDS[index].word.length).fill("");[...$("dropzone").children].forEach(s=>{s.textContent="";s.className="slot"});renderLetters();$("feedback").textContent="Letters mixed. Build it again."};
+$("readBtn").onclick=()=>speak(WORDS[index].sentence);
+$("checkWriting").onclick=()=>{const x=WORDS[index],a=clean($("writing").value),t=clean(x.sentence);if(!a){$("feedback").textContent="Write the sentence first.";return}if(a===t){score+=5;$("feedback").textContent="Excellent! Your writing matches.";speak("Excellent reading and writing.")}else{const tw=t.split(" "),aw=a.split(" "),same=tw.filter((w,i)=>aw[i]===w).length;$("feedback").textContent=`You matched ${same} of ${tw.length} words in order. Compare and try again.`}$("score").textContent=score+" ⭐";save()};
+$("nextBtn").onclick=()=>{if(index<WORDS.length-1){index++;render()}else{$("done").classList.add("show");speak("Safari complete. Wonderful reading and spelling.")}};
+$("prevBtn").onclick=()=>{if(index>0){index--;render()}};
+$("reviewBtn").onclick=()=>{index=0;render()};
+$("resetBtn").onclick=()=>{if(confirm("Start Phonics Safari over?")){index=0;score=0;completed.clear();render()}};
+$("volumeBtn").onclick=e=>{soundOn=!soundOn;e.currentTarget.textContent=soundOn?"🔊 Eiren":"🔇 Eiren";if(!soundOn)speechSynthesis.cancel()};
 
-/* =====================
-   EFFECTS
-===================== */
-function spawnConfetti(){
-  for(let i=0;i<12;i++){
-    const c=document.createElement("div");
-    c.className="confetti";
-    c.style.background=`hsl(${Math.random()*360},100%,60%)`;
-    c.style.left=50+Math.random()*40+"%";
-    c.style.top="60%";
-    document.body.appendChild(c);
-    setTimeout(()=>c.remove(),900);
-  }
-}
-
-/* =====================
-   CONTROLS
-===================== */
-document.getElementById("resetBtn").onclick=()=>{
-  index=0; score=0;
-  scoreEl.textContent="Score: 0 ⭐";
-  renderWord();
-};
-
-document.getElementById("volumeBtn").onclick=()=>{
-  soundOn=!soundOn;
-  event.target.textContent=soundOn?"🔊":"🔈";
-};
-
-/* =====================
-   START
-===================== */
-renderWord();
+load();render();
 </script>
 <script src="/assets/vnv-beta-link.js" defer></script>
 </body>
