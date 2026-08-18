@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ABC's with Boppi — Fullscreen</title>
+<title>Letter Lab — Kindergarten Reading & Writing with Eiren</title>
 <style>
 :root{
   --red:#FF4C4C; --blue:#1E90FF; --yellow:#FFD700; --lavender:#C8A2C8; --mint:#98FB98;
@@ -103,16 +103,65 @@ textarea.write{width:94%;min-height:120px;border-radius:12px;padding:16px;font-s
 @media (max-width:1100px){.grid{grid-template-columns:repeat(5,1fr)}.letter{width:110px;height:110px}.big-emoji{width:110px;height:110px;font-size:56px}h1{font-size:32px}}
 @media (max-width:760px){.grid{grid-template-columns:repeat(4,1fr);gap:12px}.letter{width:100px;height:100px;font-size:36px}.title h1{font-size:28px}}
 @media (max-width:420px){.grid{grid-template-columns:repeat(3,1fr)}.logo{width:64px;height:64px;font-size:30px}}
+
+/* ===== Kinder Garden Letter Lab: distinct school-age visual language ===== */
+:root{
+  --ink:#24324a;--paper:#fffdf8;--line:#d8e5f0;--navy:#334a68;--coral:#e77767;
+  --gold:#e8b84b;--sage:#82a98f;--violet:#8b78a8;--sky:#79a9c9;
+}
+body{background:
+  linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)),
+  repeating-linear-gradient(0deg,#edf5fa 0,#edf5fa 1px,transparent 1px,transparent 32px);
+  overflow:auto;color:var(--ink)}
+.game{min-height:100vh;height:auto;padding:24px 34px 34px;justify-content:flex-start;gap:18px}
+header{max-width:1240px;padding:20px 24px;background:rgba(255,253,248,.94);border:2px solid #d9e3eb;border-radius:24px;box-shadow:none}
+.title{gap:22px}.logo{width:84px;height:72px;border-radius:16px;background:var(--paper);border:3px solid var(--gold);box-shadow:none;font-size:30px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;font-weight:700}
+.controls-top{gap:10px;flex-wrap:wrap;justify-content:flex-end}.small-btn{border:2px solid #d9e3eb;box-shadow:none;min-height:46px}
+main{flex:none}.grid-wrap{max-width:1240px;background:rgba(255,253,248,.88);border:2px solid #d9e3eb;border-radius:26px;padding:24px}
+.grid{grid-template-columns:repeat(7,1fr);gap:14px}
+.letter{width:118px;height:104px;border-radius:18px;padding:8px;color:#fff;border:3px solid rgba(255,255,255,.75);box-shadow:none;transition:transform .14s,outline .14s,filter .14s}
+.letter:hover,.letter:focus-visible{transform:translateY(-3px);filter:saturate(1.08)}
+.letter.lit{outline:6px solid rgba(232,184,75,.38);transform:translateY(-4px) scale(1.04)}
+.letter .char{font-family:Georgia,serif;font-size:44px}.letter .word{font-size:13px;font-weight:600}
+.c-red,.c-red-dark{background:var(--coral)}.c-blue,.c-blue-dark{background:var(--sky)}.c-yellow,.c-yellow-soft{background:var(--gold);color:#26364a}
+footer{padding:0}.hint{max-width:1160px;width:100%;box-sizing:border-box;border:2px solid #d9e3eb;box-shadow:none;border-radius:18px;background:var(--paper)}
+.overlay{position:fixed;background:rgba(30,43,60,.48);overflow:auto;align-items:flex-start;padding:24px}
+.panel{max-width:1040px;margin:auto;border-radius:26px;background:var(--paper);box-shadow:0 20px 60px rgba(25,38,55,.2);padding:28px;gap:20px}
+.big-emoji{border:3px solid #e4d9c3;box-shadow:none;border-radius:18px}
+.meta h2{font-family:Georgia,serif}.story-text{border:2px solid #d8e5f0;border-left:7px solid var(--sky);border-radius:14px;background:white;font-size:27px}
+.eiren-strip{width:100%;box-sizing:border-box;display:flex;align-items:center;gap:13px;padding:13px 16px;border:2px solid #e2d9ea;border-radius:17px;background:#fbf8ff;color:var(--ink)}
+.eiren-mark{font-size:30px}.eiren-strip span:not(.eiren-mark){font-size:14px;color:#657087}
+.writing-studio{width:100%;box-sizing:border-box;margin-top:6px;padding:20px;border:2px solid #d9e3eb;border-radius:20px;background:#f9fcfe}
+.studio-head{display:flex;align-items:center;justify-content:space-between;gap:16px}.studio-head h3{margin:0;font-family:Georgia,serif;font-size:23px}.studio-head p{margin:5px 0 0;color:#657087}
+.practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.trace-card,.build-card{background:#fff;border:2px solid #dce6ed;border-radius:17px;padding:15px}
+.trace-label,.write-label{display:block;font-weight:700;margin-bottom:9px;color:#43546d}
+#traceCanvas{display:block;width:100%;height:180px;background:#fff;border:2px dashed #b9c9d6;border-radius:13px;touch-action:none}
+.trace-actions,.build-actions,.writing-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}
+.build-target{min-height:54px;display:flex;gap:7px;align-items:center;justify-content:center;border:2px dashed #b9c9d6;border-radius:13px;padding:8px;background:#fff}
+.target-slot{width:42px;height:46px;border-bottom:3px solid #7d8fa5;display:grid;place-items:center;font-size:25px;font-weight:800}
+.tile-bank{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px;min-height:54px}
+.move-tile{width:48px;height:48px;border:2px solid #9cb2c4;border-radius:11px;background:#eef7fb;color:var(--ink);font-size:23px;font-weight:800;cursor:pointer;transition:.12s}
+.move-tile:hover,.move-tile:focus-visible,.move-tile.lit{background:#fff3c8;border-color:#d5a93e;transform:translateY(-2px)}
+textarea.write{width:100%;min-height:110px;border:2px solid #b9c9d6;border-radius:13px;font-family:inherit;font-size:20px;line-height:1.55;background:white}
+.writing-feedback{min-height:24px;margin-top:9px;font-weight:700;color:#43546d}
+.quiz-panel{background:#fffaf0;border:2px solid #ead7a7;box-shadow:none}
+.btn{box-shadow:none;border:2px solid #d7e1e8;min-height:46px}.btn.listen{background:var(--sky)}.btn.say{background:var(--violet)}.btn.next{background:var(--sage);color:white}.btn.close{background:var(--coral)}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(5,1fr)}.letter{width:105px}.practice-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.game{padding:10px}.grid-wrap{padding:13px}.grid{grid-template-columns:repeat(4,1fr);gap:9px}.letter{width:82px;height:82px;border-radius:14px}.letter .char{font-size:34px}.letter .word{font-size:10px}header{align-items:flex-start;flex-direction:column}.controls-top{width:100%}.panel{padding:15px}.panel-top{align-items:flex-start}.big-emoji{width:92px;height:92px}.studio-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){.grid{grid-template-columns:repeat(3,1fr)}.letter{width:88px;height:84px}.panel-left{align-items:flex-start}.meta h2{font-size:27px}.story-text{font-size:22px}}
+
 </style>
 </head>
 <body>
-<div class="game" role="application" aria-label="ABC's full screen learning app">
+<div class="game" role="application" aria-label="Kindergarten Letter Lab reading and writing app">
   <header>
     <div class="title">
       <div class="logo">ABC</div>
       <div>
-        <h1>🎵 ABC's with Boppi</h1>
-        <div style="font-size:14px;color:#3a3a3a">Tap a letter to learn. Listen, say it, and try writing or quiz.</div>
+        <h1>✏️ Letter Lab</h1>
+        <div style="font-size:14px;color:#3a3a3a">Kindergarten • Touch a letter, hear its sound, read, build, write, and check your understanding.</div>
       </div>
     </div>
     <div class="controls-top">
@@ -130,7 +179,7 @@ textarea.write{width:94%;min-height:120px;border-radius:12px;padding:16px;font-s
   </main>
 
   <footer>
-    <div class="hint">Tip: Click a letter, press "Read to me", then try writing or taking a mini quiz with Boppi!</div>
+    <div class="hint">Eiren’s tip: Touch a letter to make it glow. Hear it, build the word, write the sentence, then try the reading check.</div>
   </footer>
 </div>
 
@@ -150,6 +199,7 @@ textarea.write{width:94%;min-height:120px;border-radius:12px;padding:16px;font-s
       </div>
     </div>
 
+    <div class="eiren-strip"><span class="eiren-mark">🌸</span><div><strong>Eiren · Kindergarten Reading Mentor</strong><br><span id="eirenStatus">Touch the letter, listen for its sound, and explore the word.</span></div></div>
     <div class="panel-body">
       <div class="story-text" id="storyText"></div>
 
@@ -161,8 +211,42 @@ textarea.write{width:94%;min-height:120px;border-radius:12px;padding:16px;font-s
         <button class="btn next" id="btnQuiz">🎯 Quiz!</button>
       </div>
 
-      <textarea class="write" id="writeArea" placeholder="Try typing the line you hear..."></textarea>
-      <div class="finish" id="finishNotice">🎉 Yay! You finished the story.</div>
+      <section class="writing-studio" aria-labelledby="writingTitle">
+        <div class="studio-head">
+          <div>
+            <h3 id="writingTitle">✏️ Write & Build</h3>
+            <p>Trace the big letter, move the letter tiles to build the word, then type the sentence.</p>
+          </div>
+          <button class="btn listen" id="btnModel">🌸 Eiren, model it</button>
+        </div>
+        <div class="practice-grid">
+          <div class="trace-card">
+            <div class="trace-label">Trace the letter</div>
+            <canvas id="traceCanvas" width="320" height="180" aria-label="Letter tracing canvas"></canvas>
+            <div class="trace-actions">
+              <button class="btn" id="clearTrace">Clear</button>
+              <button class="btn" id="checkTrace">Check tracing</button>
+            </div>
+          </div>
+          <div class="build-card">
+            <div class="trace-label">Build the word</div>
+            <div class="build-target" id="buildTarget" aria-live="polite"></div>
+            <div class="tile-bank" id="tileBank"></div>
+            <div class="build-actions">
+              <button class="btn" id="resetBuild">Mix again</button>
+              <button class="btn" id="checkBuild">Check word</button>
+            </div>
+          </div>
+        </div>
+        <label class="write-label" for="writeArea">Write the sentence you read</label>
+        <textarea class="write" id="writeArea" placeholder="Type the sentence here..."></textarea>
+        <div class="writing-actions">
+          <button class="btn" id="checkWriting">✓ Check my writing</button>
+          <button class="btn" id="clearWriting">Clear writing</button>
+        </div>
+        <div class="writing-feedback" id="writingFeedback" aria-live="polite"></div>
+      </section>
+      <div class="finish" id="finishNotice">🎉 Story complete — reading, writing, and word-building practice unlocked!</div>
 
       <div class="quiz-panel" id="quizPanel">
         <div class="quiz-question" id="quizQuestion"></div>
@@ -371,6 +455,7 @@ stories.forEach((s,i)=>{
   btn.setAttribute('data-idx',i);
   btn.setAttribute('aria-label',`${s.L} for ${s.W}`);
   btn.innerHTML=`<div class="char">${s.L}</div><div class="word">${s.W}</div>`;
+  btn.addEventListener('pointerdown',()=>{lightLetter(i);speak(`${s.L}. ${SOUND_CUES[s.L]}. ${s.W}.`);});
   btn.addEventListener('click',()=>openPanel(i));
   grid.appendChild(btn);
 });
@@ -394,6 +479,13 @@ const btnNext = document.getElementById('btnNext');
 const btnClose = document.getElementById('closePanel');
 const btnQuiz = document.getElementById('btnQuiz');
 const pointsEl = document.getElementById('points');
+const traceCanvas=document.getElementById('traceCanvas');
+const traceCtx=traceCanvas.getContext('2d');
+const buildTarget=document.getElementById('buildTarget');
+const tileBank=document.getElementById('tileBank');
+const writingFeedback=document.getElementById('writingFeedback');
+const eirenStatus=document.getElementById('eirenStatus');
+let traceDrawing=false,traceMarks=0,traceLast=null,buildLetters=[];
 
 let current = 0, lineIndex=0, quizIndex=0, points=0;
 let voiceOn=true, confettiOn=true, selectedVoice=null;
@@ -401,15 +493,71 @@ let voiceOn=true, confettiOn=true, selectedVoice=null;
 /* ========== Voice setup ========== */
 function setupVoices(){
   const vs = speechSynthesis.getVoices();
-  selectedVoice = vs.find(v=>/Google.*English|en-US.*Neural|Alex|Samantha|Jenny/i.test(v.name))||vs[0];
+  selectedVoice = vs.find(v=>/Samantha|Aria|Jenny|Zira|Ava|Victoria|Karen|Moira|Serena|Google.*English|en-US.*Neural/i.test(v.name))||vs.find(v=>/^en/i.test(v.lang))||vs[0];
 }
 speechSynthesis.onvoiceschanged=setupVoices;
 window.addEventListener('load',setupVoices);
 
+
+function shuffle(a){
+  const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x;
+}
+const SOUND_CUES={
+ A:"short a, as in apple",B:"buh, as in ball",C:"kuh, as in cat",D:"duh, as in dog",E:"short e, as in egg",
+ F:"fff, as in fish",G:"guh, as in grapes",H:"hhh, as in hat",I:"short i, as in igloo",J:"juh, as in juice",
+ K:"kuh, as in kite",L:"lll, as in lion",M:"mmm, as in monkey",N:"nnn, as in nest",O:"short o, as in octopus",
+ P:"puh, as in penguin",Q:"kw, as in queen",R:"rrr, as in rabbit",S:"sss, as in sun",T:"tuh, as in tiger",
+ U:"short u, as in umbrella",V:"vvv, as in violin",W:"wuh, as in whale",X:"ks, as in xylophone",
+ Y:"yuh, as in yacht",Z:"zzz, as in zebra"
+};
+function lightLetter(idx){
+  document.querySelectorAll('.letter').forEach((b,i)=>b.classList.toggle('lit',i===idx));
+}
+function fitTraceCanvas(){
+  const r=traceCanvas.getBoundingClientRect(),d=window.devicePixelRatio||1;
+  traceCanvas.width=Math.max(260,r.width)*d;traceCanvas.height=180*d;
+  traceCtx.setTransform(d,0,0,d,0,0);drawTraceGuide();
+}
+function drawTraceGuide(){
+  const w=traceCanvas.clientWidth||320,h=180;
+  traceCtx.clearRect(0,0,w,h);traceCtx.fillStyle="#fff";traceCtx.fillRect(0,0,w,h);
+  traceCtx.strokeStyle="#d7e1e8";traceCtx.lineWidth=1;traceCtx.setLineDash([6,6]);
+  [45,90,135].forEach(y=>{traceCtx.beginPath();traceCtx.moveTo(12,y);traceCtx.lineTo(w-12,y);traceCtx.stroke()});
+  traceCtx.setLineDash([]);traceCtx.fillStyle="rgba(121,169,201,.20)";
+  traceCtx.font="120px Georgia";traceCtx.textAlign="center";traceCtx.textBaseline="middle";
+  traceCtx.fillText(stories[current].L,w/2,92);
+}
+function tracePos(e){
+  const r=traceCanvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};
+}
+traceCanvas.addEventListener('pointerdown',e=>{traceDrawing=true;traceCanvas.setPointerCapture?.(e.pointerId);traceLast=tracePos(e)});
+traceCanvas.addEventListener('pointermove',e=>{
+  if(!traceDrawing)return;const p=tracePos(e);traceCtx.strokeStyle="#334a68";traceCtx.lineWidth=8;traceCtx.lineCap="round";
+  traceCtx.beginPath();traceCtx.moveTo(traceLast.x,traceLast.y);traceCtx.lineTo(p.x,p.y);traceCtx.stroke();traceLast=p;traceMarks++;
+});
+['pointerup','pointercancel'].forEach(ev=>traceCanvas.addEventListener(ev,()=>traceDrawing=false));
+function setupBuilder(){
+  buildLetters=[];buildTarget.replaceChildren();tileBank.replaceChildren();
+  const chars=stories[current].W.toUpperCase().replace(/[^A-Z]/g,'').split('');
+  chars.forEach(()=>{const s=document.createElement('span');s.className='target-slot';buildTarget.appendChild(s)});
+  shuffle(chars).forEach(ch=>{
+    const b=document.createElement('button');b.type='button';b.className='move-tile';b.textContent=ch;
+    b.addEventListener('click',()=>{
+      if(b.disabled)return;b.disabled=true;b.classList.add('lit');buildLetters.push(ch);
+      const slots=buildTarget.querySelectorAll('.target-slot');slots[buildLetters.length-1].textContent=ch;
+      speak(ch);
+    });tileBank.appendChild(b);
+  });
+}
+function resetBuilder(){setupBuilder();writingFeedback.textContent='';}
+function normalizeWriting(s){return s.toLowerCase().replace(/[^\w\s]/g,'').replace(/\s+/g,' ').trim()}
+
 /* open panel */
 function openPanel(idx){
-  current=idx; lineIndex=0; quizIndex=0;
-  renderStory();
+  current=idx; lineIndex=0; quizIndex=0; traceMarks=0;
+  lightLetter(idx); renderStory(); setupBuilder();
+  requestAnimationFrame(fitTraceCanvas);
+  eirenStatus.textContent=`${stories[idx].L}: ${SOUND_CUES[stories[idx].L]}.`;
   overlay.style.display='flex'; overlay.classList.add('show'); overlay.setAttribute('aria-hidden','false');
   quizPanel.style.display='none';
 }
@@ -421,20 +569,46 @@ function renderStory(){
   panelTitle.textContent=`${s.L} is for ${s.W}`;
   panelSub.textContent=`${s.W} — ${s.L}`;
   storyText.textContent=s.lines[lineIndex];
-  writeArea.value='';
+  writeArea.value=''; writeArea.style.display='block'; writingFeedback.textContent='';
   finishNotice.style.display='none';
   quizPanel.style.display='none';
 }
 
 /* next/prev story */
-btnNext.addEventListener('click',()=>{const s=stories[current];if(lineIndex<s.lines.length-1){lineIndex++; renderStory();}else onFinish();});
-btnPrev.addEventListener('click',()=>{if(lineIndex>0){lineIndex--; renderStory();}});
+btnNext.addEventListener('click',()=>{const s=stories[current];if(lineIndex<s.lines.length-1){lineIndex++; renderStory(); setupBuilder(); traceMarks=0; drawTraceGuide();}else onFinish();});
+btnPrev.addEventListener('click',()=>{if(lineIndex>0){lineIndex--; renderStory(); setupBuilder(); traceMarks=0; drawTraceGuide();}});
 
 /* listen */
-function speak(text, done){if(!voiceOn||!text) return; const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.85; u.pitch=1.02; if(selectedVoice) u.voice=selectedVoice; u.onend=()=>done&&done(); speechSynthesis.cancel(); speechSynthesis.speak(u);}
+function speak(text, done){if(!voiceOn||!text) return; const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.82; u.pitch=1.05; if(selectedVoice) u.voice=selectedVoice; u.onend=()=>done&&done(); speechSynthesis.cancel(); speechSynthesis.speak(u);}
 btnListen.addEventListener('click',()=>speak(storyText.textContent));
 
-btnSay.addEventListener('click',()=>alert('Now you say it out loud! Try reading like a storyteller. 🗣️'));
+btnSay.addEventListener('click',()=>{eirenStatus.textContent='Your turn: point to each word and read the sentence aloud.';speak('Your turn. Point to each word and read the sentence aloud.')});
+
+
+document.getElementById('btnModel').addEventListener('click',()=>{
+  const s=stories[current];speak(`${s.L}. ${SOUND_CUES[s.L]}. ${storyText.textContent}`);
+});
+document.getElementById('clearTrace').addEventListener('click',()=>{traceMarks=0;drawTraceGuide()});
+document.getElementById('checkTrace').addEventListener('click',()=>{
+  if(traceMarks<5){writingFeedback.textContent='Keep tracing the letter a little more.';speak('Keep going. Trace the big letter a little more.');return}
+  writingFeedback.textContent='Nice letter practice!';points+=2;pointsEl.textContent=points;speak('Nice letter practice.');
+});
+document.getElementById('resetBuild').addEventListener('click',resetBuilder);
+document.getElementById('checkBuild').addEventListener('click',()=>{
+  const target=stories[current].W.toUpperCase().replace(/[^A-Z]/g,'');
+  if(buildLetters.join('')===target){writingFeedback.textContent=`You built ${stories[current].W}!`;points+=3;pointsEl.textContent=points;speak(`You built ${stories[current].W}.`)}
+  else{writingFeedback.textContent='Almost. Mix the letters and try again.';speak('Almost. Try the word again.')}
+});
+document.getElementById('checkWriting').addEventListener('click',()=>{
+  const target=normalizeWriting(storyText.textContent),attempt=normalizeWriting(writeArea.value);
+  if(!attempt){writingFeedback.textContent='Write the sentence first.';return}
+  if(attempt===target){writingFeedback.textContent='Excellent reading and writing match!';points+=5;pointsEl.textContent=points;speak('Excellent reading and writing match!')}
+  else{
+    const tw=target.split(' '),aw=attempt.split(' '),same=tw.filter((w,i)=>aw[i]===w).length;
+    writingFeedback.textContent=`You matched ${same} of ${tw.length} words in order. Look at the model and try again.`;
+  }
+});
+document.getElementById('clearWriting').addEventListener('click',()=>{writeArea.value='';writingFeedback.textContent=''});
 
 /* finish story */
 function onFinish(){
@@ -445,13 +619,13 @@ function onFinish(){
 
 /* confetti */
 const canvas=document.getElementById('confetti'); const ctx=canvas.getContext('2d');
-function resizeCanvas(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;} window.addEventListener('resize',resizeCanvas); resizeCanvas();
-let confettiParticles=[];
-function spawnConfetti(){canvas.style.display='block'; confettiParticles=[];for(let i=0;i<150;i++){confettiParticles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,dx:(Math.random()-0.5)*6,dy:Math.random()*6+2,r:Math.random()*6+2,color:`hsl(${Math.random()*360},70%,60%)`});} animateConfetti();}
-function animateConfetti(){ctx.clearRect(0,0,canvas.width,canvas.height);confettiParticles.forEach(p=>{p.x+=p.dx;p.y+=p.dy;p.y>canvas.height&&(p.y=0,p.x=Math.random()*canvas.width); ctx.fillStyle=p.color; ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,2*Math.PI); ctx.fill();}); requestAnimationFrame(animateConfetti);}
+function resizeCanvas(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;} window.addEventListener('resize',()=>{resizeCanvas();if(overlay.classList.contains('show'))fitTraceCanvas()}); resizeCanvas();
+let confettiParticles=[],confettiFrame=0,confettiUntil=0;
+function spawnConfetti(){canvas.style.display='block'; confettiParticles=[];confettiUntil=performance.now()+3200;for(let i=0;i<150;i++){confettiParticles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,dx:(Math.random()-0.5)*6,dy:Math.random()*6+2,r:Math.random()*6+2,color:`hsl(${Math.random()*360},70%,60%)`});} animateConfetti();}
+function animateConfetti(){if(performance.now()>confettiUntil){canvas.style.display='none';ctx.clearRect(0,0,canvas.width,canvas.height);return}ctx.clearRect(0,0,canvas.width,canvas.height);confettiParticles.forEach(p=>{p.x+=p.dx;p.y+=p.dy;p.y>canvas.height&&(p.y=0,p.x=Math.random()*canvas.width); ctx.fillStyle=p.color; ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,2*Math.PI); ctx.fill();}); requestAnimationFrame(animateConfetti);}
 
 /* close overlay */
-btnClose.addEventListener('click',()=>{overlay.style.display='none'; overlay.classList.remove('show');});
+btnClose.addEventListener('click',()=>{speechSynthesis.cancel();overlay.style.display='none';overlay.classList.remove('show');document.querySelectorAll('.letter').forEach(b=>b.classList.remove('lit'));});
 
 /* toggle voice/confetti */
 document.getElementById('toggleVoice').addEventListener('click',()=>{
@@ -488,12 +662,19 @@ function checkQuiz(selected, correct, btn){
   setTimeout(()=>{
     quizIndex++;
     if(quizIndex<stories[current].quiz.length) renderQuiz();
-    else quizPanel.style.display='none';
+    else{quizPanel.style.display='none';writeArea.style.display='block';}
   },800);
 }
 
 /* Home Button */
-document.getElementById('homeBtn').addEventListener('click',()=>overlay.style.display='none');
+document.getElementById('homeBtn').addEventListener('click',()=>{speechSynthesis.cancel();overlay.style.display='none';overlay.classList.remove('show');});
+
+
+const PROGRESS_KEY='kinderLetterLabProgressV1';
+function loadProgress(){try{const x=JSON.parse(localStorage.getItem(PROGRESS_KEY)||'{}');points=Math.max(0,Number(x.points)||0);pointsEl.textContent=points}catch(_){}}
+function saveProgress(){try{localStorage.setItem(PROGRESS_KEY,JSON.stringify({points}))}catch(_){}}
+window.addEventListener('beforeunload',saveProgress);
+loadProgress();
 
 </script>
 <script src="/assets/vnv-beta-link.js" defer></script>
