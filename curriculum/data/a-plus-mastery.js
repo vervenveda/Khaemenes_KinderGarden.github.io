@@ -85,6 +85,18 @@
       ["Seed and plant safety","Uses adult guidance for unknown plants/seeds, avoids tasting classroom specimens, washes hands as appropriate, and uses choking/allergy-safe alternatives.",true],
       ["Care and stewardship","Demonstrates developmentally appropriate care for a living plant or uses a nonliving model when live-plant care is unavailable."],
       ["Plant scientist reflection","Explains one observation, measurement, or revised idea about how plants grow."]
+    ],
+    12:[
+      ["Animal observation vs inference","Gives an evidence-based observation about an animal structure or behavior and distinguishes it from a guess, personality label, or human-like story.",true],
+      ["Structure / behavior function","Explains an age-appropriate way one animal structure or behavior may help meet a need, without claiming every structure has only one function.",true],
+      ["Evidence-based classification","States a classification rule before sorting and correctly sorts animal examples according to observable or known evidence.",true],
+      ["Count and compare groups","Counts classified animal groups with one-to-one correspondence and compares them using more, fewer, same, difference, or numbers.",true],
+      ["Some / not-all reasoning","Avoids absolute shortcuts such as 'all birds fly' and uses counterexamples or some/not-all language when appropriate."],
+      ["Habitat resources and conditions","Connects at least two animal needs to habitat resources or conditions with a reasonable evidence-based explanation.",true],
+      ["Habitat model reasoning","Builds, draws, arranges, or explains a habitat model with multiple need-linked features and identifies at least one limitation of the model.",true],
+      ["Design testing and revision","Tests or reviews a habitat model, responds to an evidence question, and makes or explains one revision."],
+      ["Humane wildlife boundary","Knows wild animals are observed from a distance and that feeding, touching, chasing, capturing, handling, or removing wildlife/nests/eggs is not required or authorized.",true],
+      ["Animal scientist reflection","Integrates structure or behavior, need, habitat evidence, and one corrected/revised idea in an accessible explanation."]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
