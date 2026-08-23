@@ -121,6 +121,18 @@
       ["Rule-based word play","Creates a short rhyme, alliteration, syllable, or equivalent language pattern, identifies a break, and repairs it.",true],
       ["Language-access respect","Uses accent, dialect, home language, signed language, AAC, visual/tactile, or other appropriate access without treating speech volume, hearing, eye contact, or one accent as intelligence/mastery.",true],
       ["Language pattern reflection","Distinguishes at least two of rhyme, syllable, beginning sound, letter, and alliteration and reflects on language variation."]
+    ],
+    15:[
+      ["Direct comparison from common start","Compares length or height by aligning objects at a common start/baseline and uses precise longer/shorter/taller/same language rather than an ambiguous size label.",true],
+      ["Consistent nonstandard measurement","Measures a length with repeated equal-size nonstandard units from the endpoint without intentional gaps or overlaps.",true],
+      ["Number plus unit communication","Reports a measurement as a number together with the unit and recognizes that changing unit size can change the count while the object stays the same length.",true],
+      ["Measurement error detection","Identifies and repairs at least one unfair measurement such as mixed-size units, gaps, overlaps, or a misaligned start.",true],
+      ["Weight reasoning","Uses safe evidence to compare heavier/lighter and understands that visual size alone does not determine weight.",true],
+      ["Capacity reasoning","Distinguishes container capacity from the amount currently inside and compares capacity using consistent transfer units or an equivalent accessible model.",true],
+      ["Attribute distinction","Distinguishes at least two of length/height, weight, and capacity and selects evidence appropriate to the named attribute.",true],
+      ["Engineering constraint and fair test","Designs or interprets a small model bridge against a stated span/load criterion and tests alternatives under reasonably consistent conditions.",true],
+      ["Evidence-based design revision","Uses test/measurement evidence to revise a design or explain why a revision should improve it.",true],
+      ["Measurement access and safety","Demonstrates that body size, stride, strength, mobility, purchased materials, or dangerous real-world load testing are not required for measurement/engineering mastery."]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
