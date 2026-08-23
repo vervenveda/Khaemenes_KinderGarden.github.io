@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ff87c1">
+<title>Unit 01 — Welcome to the Learning Garden</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+
+<style>
+  :root{
+    --kg-leaf2:#ff5b9d;
+    --kg-muted:#55657d;
+    --kg-accent:#7ac7ff;
+    --kg-sun:#ffd66b;
+    --kg-mint:#9ef0b0;
+    --kg-lilac:#bca6ff;
+    --kg-coral:#ff9aa7;
+  }
+
+  html, body { min-height: 100%; }
+  body{
+    margin:0 !important;
+    font-family: "Comic Sans MS","Comic Sans","Chalkboard SE","Trebuchet MS",system-ui,sans-serif !important;
+    background:
+      radial-gradient(circle at top, rgba(255,255,255,.95) 0%, rgba(255,255,255,.92) 18%, rgba(255,246,252,.92) 18.5%, rgba(255,246,252,.92) 40%, rgba(239,248,255,.94) 40.5%, rgba(239,248,255,.94) 63%, rgba(255,249,233,.96) 63.5%, rgba(255,249,233,.96) 100%) !important;
+    color:#253047 !important;
+    overflow-x:hidden;
+  }
+
+  *{ box-sizing:border-box; }
+
+  /* Centered shell */
+  .kg-shell{
+    width:min(1120px, calc(100% - 32px)) !important;
+    margin-inline:auto !important;
+  }
+
+  /* Sticky playful nav */
+  .kg-header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(255,255,255,.88);
+    backdrop-filter: blur(10px);
+    border-bottom:2px solid rgba(255,138,199,.35);
+  }
+  .kg-nav{
+    display:flex !important;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+    padding:12px 0;
+  }
+  .kg-brand{
+    display:flex !important;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#253047;
+  }
+  .kg-seal{
+    width:50px; height:50px;
+    display:grid; place-items:center;
+    border-radius:16px;
+    background:linear-gradient(135deg, #ff7fba, #ffd76b);
+    color:white;
+    font-weight:900;
+    box-shadow:0 10px 24px rgba(255,127,186,.25);
+  }
+  .kg-brand strong{ font-size:18px; }
+  .kg-brand small{ display:block; font-size:13px; opacity:.75; }
+
+  .kg-navlinks{
+    display:flex !important;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+  .kg-navlinks a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:#ffffff;
+    border:2px solid rgba(255, 182, 214, .95);
+    border-radius:999px;
+    padding:10px 14px;
+    color:#24354d;
+    text-decoration:none;
+    box-shadow:0 6px 14px rgba(63,88,137,.08);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .kg-navlinks a:hover{
+    transform: translateY(-1px);
+    border-color: rgba(122,199,255,.9);
+    box-shadow:0 10px 18px rgba(63,88,137,.12);
+  }
+
+  /* Hero */
+  .kg-hero{ padding:24px 0 10px; }
+  .kg-hero-inner{
+    text-align:center;
+    background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.98));
+    border:2px solid rgba(122,199,255,.22);
+    border-radius:28px;
+    box-shadow:0 18px 50px rgba(63,88,137,.10);
+    padding:28px 18px;
+  }
+  .kg-kicker{
+    display:inline-block;
+    background:linear-gradient(135deg, #ff87c1, #ffd46b);
+    color:white;
+    padding:8px 14px;
+    border-radius:999px;
+    font-weight:700;
+    letter-spacing:.03em;
+    margin:0 0 10px;
+  }
+  h1{
+    margin:12px 0 8px !important;
+    font-family: "Comic Sans MS","Comic Sans","Chalkboard SE","Trebuchet MS",sans-serif !important;
+    font-size:clamp(2.2rem, 4vw, 4rem) !important;
+    color:var(--kg-leaf2) !important;
+    text-shadow:2px 2px 0 rgba(255,255,255,.95), 0 10px 24px rgba(255,91,157,.12);
+  }
+  .kg-lead{
+    max-width:760px;
+    margin:0 auto;
+    font-size:1.12rem;
+    line-height:1.65;
+    color:#45556f;
+  }
+  .kg-hero-badges{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin:18px 0 0;
+  }
+  .kg-hero-badges span,
+  .kg-badge{
+    background:#fff;
+    border:2px solid rgba(255, 182, 214, .85);
+    border-radius:999px;
+    padding:8px 12px;
+    box-shadow:0 6px 14px rgba(63,88,137,.08);
+  }
+
+  /* Cards */
+  .kg-card,
+  .kg-progress-card,
+  .kg-mentor,
+  .kg-week-card,
+  .kg-panel,
+  .kg-mentor-panel,
+  .kg-teacher-details{
+    background:rgba(255,255,255,.95) !important;
+    border:2px solid rgba(122,199,255,.18) !important;
+    border-radius:24px !important;
+    box-shadow:0 18px 40px rgba(63,88,137,.10) !important;
+  }
+
+  .kg-progress-card{
+    margin:18px auto 0;
+    padding:18px;
+    max-width:760px;
+  }
+  .kg-progress-top{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    align-items:center;
+    margin-bottom:10px;
+    color:#34425b;
+  }
+  .kg-progress-track{
+    height:12px;
+    border-radius:999px;
+    background:#eff3fb;
+    overflow:hidden;
+  }
+  .kg-progress-track > span{
+    display:block;
+    height:100%;
+    width:0;
+    border-radius:999px;
+    background:linear-gradient(90deg, #7ac7ff, #ff87c1, #ffd76b);
+  }
+  .kg-growth{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:12px;
+    font-size:1.5rem;
+  }
+
+  /* Mentor */
+  .kg-mentor{ margin-top:18px; padding:18px; max-width:960px; margin-inline:auto; }
+  .kg-mentor-grid{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:18px;
+    align-items:center;
+    text-align:left;
+  }
+  .kg-mentor-avatar{
+    width:96px; height:96px;
+    border-radius:28px;
+    margin-inline:auto;
+    display:grid; place-items:center;
+    font-size:3rem;
+    background:linear-gradient(135deg, #ff87c1, #7ac7ff, #9ef0b0);
+    box-shadow:0 14px 28px rgba(127,174,255,.22);
+  }
+  .kg-mentor-actions,
+  .kg-actions,
+  .kg-lesson-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+  .kg-mentor-note,
+  .kg-mentor-panel,
+  .kg-essential,
+  .kg-lesson-sub,
+  .kg-muted,
+  .kg-footer{
+    color:#55657d;
+  }
+  .kg-mentor-panel{
+    margin-top:14px;
+    padding:16px;
+  }
+
+  /* Buttons */
+  .kg-button,
+  .kg-choice,
+  .kg-sort-item,
+  .kg-sort-bin,
+  .kg-routine-card,
+  .kg-map-cell,
+  .kg-complete,
+  .kg-day-tab{
+    font-family: inherit !important;
+    border-radius:24px !important;
+    border:2.5px solid rgba(255, 163, 205, .95) !important;
+    background:linear-gradient(180deg, #ffffff, #f8fbff) !important;
+    box-shadow:0 10px 18px rgba(63,88,137,.10) !important;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  }
+  .kg-button,
+  .kg-complete,
+  .kg-day-tab{
+    padding:14px 18px !important;
+    min-height:56px;
+    font-size:1.03rem;
+    font-weight:700;
+  }
+  .kg-choice,
+  .kg-sort-item,
+  .kg-sort-bin,
+  .kg-routine-card,
+  .kg-map-cell{
+    padding:14px 16px !important;
+    min-height:54px;
+    font-size:1.01rem;
+    font-weight:700;
+  }
+  .kg-button:hover,
+  .kg-choice:hover,
+  .kg-sort-item:hover,
+  .kg-sort-bin:hover,
+  .kg-routine-card:hover,
+  .kg-map-cell:hover,
+  .kg-complete:hover,
+  .kg-day-tab:hover{
+    transform: translateY(-2px) scale(1.01);
+    box-shadow:0 14px 24px rgba(63,88,137,.14) !important;
+    filter:saturate(1.04);
+  }
+  .kg-button.primary{
+    background:linear-gradient(135deg, #7ac7ff, #8d9bff) !important;
+    color:white !important;
+    border-color:rgba(90, 126, 255, .35) !important;
+  }
+  .kg-button.gold{
+    background:linear-gradient(135deg, #ffd76b, #ffb86b) !important;
+    border-color: rgba(255, 180, 92, .35) !important;
+  }
+  .kg-button.voice,
+  .kg-button.mentor{
+    background:linear-gradient(135deg, #bca6ff, #ff8fd0) !important;
+    color:white !important;
+    border-color:rgba(186, 143, 255, .35) !important;
+  }
+
+  /* Main content widths / center */
+  .kg-section .kg-shell{ margin-inline:auto; }
+  .kg-week-card{
+    padding:18px;
+    max-width:960px;
+    margin:0 auto;
+  }
+
+  /* Tabs */
+  .kg-day-tabs{
+    width:min(1120px, calc(100% - 32px));
+    margin:24px auto;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:14px;
+  }
+  @media (max-width:920px){
+    .kg-day-tabs{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  }
+  .kg-day-tab{
+    text-align:center;
+    padding:20px 14px;
+    cursor:pointer;
+    font-size:1.18rem;
+    line-height:1.15;
+  }
+  .kg-day-tab span{
+    display:block;
+    font-size:1rem;
+    opacity:.85;
+    margin-top:4px;
+  }
+
+  /* Lessons / activity boards */
+  .kg-panel{
+    max-width:1120px;
+    margin:0 auto;
+    padding:16px;
+  }
+  .kg-lesson{
+    max-width:920px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .kg-lesson h3{
+    margin-top:0;
+    font-size:clamp(1.5rem, 2.4vw, 2.2rem);
+    color:var(--kg-leaf2) !important;
+  }
+  .kg-lesson-sub{ max-width:760px; margin:0 auto; line-height:1.6; }
+  .kg-activity{
+    background:linear-gradient(180deg, #fff, #fff9fd);
+    border:2px solid rgba(122,199,255,.18);
+    border-radius:28px;
+    padding:20px;
+    margin:16px auto;
+    max-width:860px;
+  }
+  .kg-activity h4{ margin-top:0; }
+  .kg-game-board{ display:flex; justify-content:center; align-items:center; flex-direction:column; gap:12px; }
+  .kg-choice-row,
+  .kg-sort-items,
+  .kg-sort-bins,
+  .kg-routine-row,
+  .kg-map-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+
+  /* Mastery table */
+  .kg-mastery-table{
+    width:100%;
+    max-width:980px;
+    margin:0 auto;
+    border-collapse:separate;
+    border-spacing:0;
+    overflow:hidden;
+    border-radius:20px;
+  }
+  .kg-mastery-table thead th{
+    background:linear-gradient(135deg, #ff87c1, #7ac7ff);
+    color:white;
+  }
+  .kg-mastery-table th,
+  .kg-mastery-table td{
+    padding:12px 10px;
+    border-bottom:1px solid rgba(122,199,255,.12);
+  }
+  .kg-mastery-table tbody tr:nth-child(even) td{
+    background:#fbfdff;
+  }
+
+  /* Footer / toast */
+  .kg-footer{
+    text-align:center;
+    padding:26px 0 40px;
+    font-size:14px;
+  }
+  .kg-toast{
+    position:fixed;
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    background:#253047;
+    color:#fff;
+    padding:12px 16px;
+    border-radius:999px;
+    box-shadow:0 12px 24px rgba(0,0,0,.18);
+  }
+
+  /* Mobile cleanup */
+  @media (max-width:720px){
+    .kg-nav{
+      justify-content:center;
+      text-align:center;
+    }
+    .kg-mentor-grid{
+      grid-template-columns:1fr;
+      text-align:center;
+    }
+    .kg-brand{
+      justify-content:center;
+      flex-direction:row;
+    }
+    .kg-actions,
+    .kg-mentor-actions,
+    .kg-lesson-actions{
+      flex-direction:column;
+    }
+    .kg-button,
+    .kg-complete,
+    .kg-day-tab{
+      width:100%;
+    }
+    .kg-day-tab{font-size:1.12rem;}
+    .kg-day-tab span{font-size:.98rem;}
+    .kg-mastery-table{
+      font-size:.92rem;
+    }
+  }
+
+  .kg-progress-badge{
+    display:inline-flex;
+    margin-top:12px;
+    padding:8px 12px;
+    border-radius:999px;
+    background:linear-gradient(135deg, rgba(122,199,255,.16), rgba(255,135,193,.16));
+    border:1px solid rgba(122,199,255,.24);
+    color:#34425b;
+    font-weight:700;
+    font-size:.95rem;
+    gap:8px;
+    align-items:center;
+    justify-content:center;
+  }
+  .kg-seed.planted{
+    transform:scale(1.08);
+    background:linear-gradient(180deg, #ffffff, #f2fff6);
+    box-shadow:0 12px 18px rgba(63,88,137,.10);
+  }
+  .kg-sort-item{
+    cursor:grab;
+    user-select:none;
+  }
+  .kg-sort-item.dragging{
+    opacity:.6;
+    transform:scale(.98);
+  }
+  .kg-sort-bin.drag-over{
+    border-color: rgba(122,199,255,.95) !important;
+    box-shadow:0 0 0 4px rgba(122,199,255,.15), 0 14px 24px rgba(63,88,137,.14) !important;
+  }
+  .kg-day-tab.done{
+    border-color: rgba(122,240,154,.95);
+    background: linear-gradient(180deg, #f7fff9, #e9fff0);
+    color:#1f6b3a;
+  }
+  .kg-complete.done{
+    background: linear-gradient(135deg, #79d98f, #4fcb73) !important;
+    border-color: rgba(79,203,115,.55) !important;
+    color: white !important;
+  }
+  .kg-confetti{
+    position:fixed;
+    top:-20px;
+    left:0;
+    pointer-events:none;
+    z-index:9999;
+    font-size:1.1rem;
+    animation:kgConfettiFall 900ms ease-out forwards;
+  }
+  @keyframes kgConfettiFall{
+    0%{ transform: translateY(-20px) rotate(0deg); opacity:1; }
+    100%{ transform: translateY(90vh) rotate(420deg); opacity:0; }
+  }
+  .kg-progress-card strong, .kg-mentor h2, .kg-lesson h3, .kg-activity h4{
+    letter-spacing:.01em;
+  }
+
+</style>
+
+</head>
+<body>
+<header class="kg-header">
+  <div class="kg-shell kg-nav">
+    <a class="kg-brand" href="../../index.html">
+      <span class="kg-seal">K</span>
+      <span><strong>Khaemenes Kinder Garden</strong><small>36-Week Learning Garden</small></span>
+    </a>
+    <nav class="kg-navlinks">
+      <a href="../../index.html">Curriculum Home</a>
+      <a href="../../teacher-tools/index.html">Teacher Tools</a>
+      <a href="../../assessments/weekly-assessments.html">Assessments</a>
+      <a href="../../records/certificate.html">Certificate</a>
+    </nav>
+  </div>
+</header>
+
+<section class="kg-hero">
+  <div class="kg-shell kg-hero-inner">
+    <p class="kg-kicker">Unit 01 · Week 1</p>
+    <h1>Welcome to the Learning Garden</h1>
+    <p class="kg-lead">Belonging, routines, names, classroom materials, counting, helping, and learning how to learn together.</p>
+    <div class="kg-hero-badges">
+      <span>📚 Literacy</span><span>🔢 Math</span><span>🔬 Inquiry</span>
+      <span>💛 SEL</span><span>🎨 Maker</span><span>🌱 Community</span>
+    </div>
+
+    <div class="kg-progress-card">
+      <div class="kg-progress-top">
+        <strong id="kgProgressLabel">0 of 5 days complete</strong>
+        <span id="kgProgressPercent">0%</span>
+      </div>
+      <div class="kg-progress-track"><span id="kgProgressFill"></span></div>
+      <div class="kg-growth" aria-label="Learning garden progress">
+        <span class="kg-grow">🌱</span><span class="kg-grow">🌿</span>
+        <span class="kg-grow">🌼</span><span class="kg-grow">🌳</span><span class="kg-grow">🌈</span>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<main class="kg-section">
+<div class="kg-shell">
+
+  <article class="kg-card kg-week-card">
+    <div class="kg-essential">
+      <strong>Essential Question</strong>
+      <p>Who am I in this learning community, and how can I help make it a place where everyone can learn?</p>
+    </div>
+
+    <div class="kg-teacher-toggle">
+      <button class="kg-button" id="kgTeacherToggle" type="button">Open Teacher & Family View</button>
+    </div>
+
+    <div class="kg-teacher-details" id="kgTeacherDetails">
+      <div class="kg-badges">
+        <span class="kg-badge">KHAE-DAP</span><span class="kg-badge">KHAE-ELOF</span>
+        <span class="kg-badge">KHAE-LIT-K</span><span class="kg-badge">KHAE-MATH-K</span>
+        <span class="kg-badge">KHAE-SEL-K</span><span class="kg-badge">KHAE-ART-K</span>
+        <span class="kg-badge">KHAE-HEALTH-K</span><span class="kg-badge">KHAE-CIV-K</span>
+      </div>
+
+      <div class="kg-domain-grid">
+        <div class="kg-domain kg-lit"><div class="kg-icon">📚</div><strong>Literacy</strong><p>Recognize and use names; connect spoken language to print; listen and respond.</p></div>
+        <div class="kg-domain kg-math"><div class="kg-icon">🔢</div><strong>Math</strong><p>Count objects one-to-one; match, compare, and sort by observable attributes.</p></div>
+        <div class="kg-domain kg-inquiry"><div class="kg-icon">🔬</div><strong>Inquiry</strong><p>Observe routines, needs, responsibilities, organization, and safe choices.</p></div>
+        <div class="kg-domain kg-sel"><div class="kg-icon">💛</div><strong>SEL</strong><p>Identify feelings and needs; practice asking for help and offering help.</p></div>
+      </div>
+
+      <div class="kg-actions" style="margin-top:18px">
+        <a class="kg-button gold" href="../../printables/unit-01-packet.html">🖨 Student Printable Packet</a>
+        <a class="kg-button primary" href="../../assessments/unit-01-assessment.html">✅ Unit Assessment</a>
+        <button class="kg-button voice" id="kgReadWeek" type="button">🔊 Hear Week Overview</button>
+      </div>
+    </div>
+  </article>
+
+  <div class="kg-day-tabs">
+    <button class="kg-day-tab active" data-kg-day="0">🌱 Monday<span>Plant</span></button>
+    <button class="kg-day-tab" data-kg-day="1">🧺 Tuesday<span>Sort</span></button>
+    <button class="kg-day-tab" data-kg-day="2">🧩 Wednesday<span>Sequence</span></button>
+    <button class="kg-day-tab" data-kg-day="3">🗺 Thursday<span>Build</span></button>
+    <button class="kg-day-tab" data-kg-day="4">🌟 Friday<span>Celebrate</span></button>
+  </div>
+
+  <section class="kg-panel active" data-kg-panel="0">
+    <article class="kg-lesson">
+      <h3>Monday · Plant Your Name</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Recognize your name, identify a feeling, and count a small group of classroom objects.</p>
+      <div class="kg-activity">
+        <h4>🌱 Plant Five Learning Seeds</h4>
+        <p>Tap each seed once. Every seed is one counting word.</p>
+        <div class="kg-game-board">
+          <div class="kg-seed-row" id="seedRow">
+            <button class="kg-seed">🌰</button><button class="kg-seed">🌰</button><button class="kg-seed">🌰</button><button class="kg-seed">🌰</button><button class="kg-seed">🌰</button>
+          </div>
+          <p><strong id="seedCount">0 seeds planted</strong></p>
+        </div>
+      </div>
+      <div class="kg-activity">
+        <h4>💛 How Are You Feeling?</h4>
+        <div class="kg-choice-row" data-kg-choice="monday-feeling">
+          <button class="kg-choice">😊 Happy</button><button class="kg-choice">🙂 Calm</button><button class="kg-choice">😟 Worried</button><button class="kg-choice">🤩 Excited</button>
+        </div>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="0">🔊 Hear Monday</button>
+        <button class="kg-complete" data-kg-complete="0">✓ Mark Monday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="1">
+    <article class="kg-lesson">
+      <h3>Tuesday · Tidy the Learning Garden</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Sort classroom materials by what they are used for and explain where they belong.</p>
+      <div class="kg-activity">
+        <h4>🧺 Sorting Game</h4>
+        <p>Tap an object, then tap the place where it belongs.</p>
+        <div class="kg-game-board">
+          <div class="kg-sort-items" id="sortItems">
+            <button class="kg-sort-item" data-kind="book">📕</button>
+            <button class="kg-sort-item" data-kind="art">🖍️</button>
+            <button class="kg-sort-item" data-kind="book">📗</button>
+            <button class="kg-sort-item" data-kind="art">🎨</button>
+          </div>
+          <div class="kg-sort-bins">
+            <button class="kg-sort-bin" data-bin="book"><strong>📚 Book Area</strong><br>Books go here</button>
+            <button class="kg-sort-bin" data-bin="art"><strong>🎨 Art Area</strong><br>Art tools go here</button>
+          </div>
+          <p><strong id="sortFeedback">Choose an object to begin.</strong></p>
+        </div>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="1">🔊 Hear Tuesday</button>
+        <button class="kg-complete" data-kg-complete="1">✓ Mark Tuesday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="2">
+    <article class="kg-lesson">
+      <h3>Wednesday · Follow the Routine Trail</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Put a simple classroom routine in order and explain why routines help.</p>
+      <div class="kg-activity">
+        <h4>🐝 Help the Bee Find the Right Order</h4>
+        <p>Tap the steps in the order you think makes sense.</p>
+        <div class="kg-game-board">
+          <div class="kg-routine-row" id="routineRow">
+            <button class="kg-routine-card" data-order="2">🧼 Clean up</button>
+            <button class="kg-routine-card" data-order="1">🧸 Play & learn</button>
+            <button class="kg-routine-card" data-order="3">🧺 Put materials away</button>
+          </div>
+          <p><strong id="routineFeedback">Choose the first step.</strong></p>
+        </div>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="2">🔊 Hear Wednesday</button>
+        <button class="kg-complete" data-kg-complete="2">✓ Mark Wednesday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="3">
+    <article class="kg-lesson">
+      <h3>Thursday · Build Our Classroom Garden</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Use simple symbols to represent classroom spaces and choose one helpful responsibility.</p>
+      <div class="kg-activity">
+        <h4>🗺 Make a Tiny Classroom Map</h4>
+        <p>Tap each square to choose a place for your classroom.</p>
+        <div class="kg-game-board">
+          <div class="kg-map-grid" id="mapGrid">
+            <button class="kg-map-cell" data-map="0">➕</button>
+            <button class="kg-map-cell" data-map="1">➕</button>
+            <button class="kg-map-cell" data-map="2">➕</button>
+            <button class="kg-map-cell" data-map="3">➕</button>
+          </div>
+        </div>
+      </div>
+      <div class="kg-activity">
+        <h4>🤝 Choose a Helpful Job</h4>
+        <div class="kg-choice-row" data-kg-choice="helper-job">
+          <button class="kg-choice">📚 Book Helper</button><button class="kg-choice">🖍 Art Helper</button>
+          <button class="kg-choice">🧺 Cleanup Helper</button><button class="kg-choice">🌱 Plant Helper</button>
+        </div>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="3">🔊 Hear Thursday</button>
+        <button class="kg-complete" data-kg-complete="3">✓ Mark Thursday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-panel" data-kg-panel="4">
+    <article class="kg-lesson">
+      <h3>Friday · Garden Celebration</h3>
+      <p class="kg-lesson-sub"><strong>Objective:</strong> Reflect on belonging, helping, counting, organization, and trying again.</p>
+      <div class="kg-activity">
+        <h4>🌟 What Grew This Week?</h4>
+        <p>Choose one thing you are proud of.</p>
+        <div class="kg-choice-row" data-kg-choice="friday-reflection">
+          <button class="kg-choice">🌱 I learned something new.</button>
+          <button class="kg-choice">💛 I helped someone.</button>
+          <button class="kg-choice">🔢 I practiced counting.</button>
+          <button class="kg-choice">📚 I noticed words and names.</button>
+          <button class="kg-choice">🌈 I kept trying.</button>
+        </div>
+      </div>
+      <div class="kg-lesson-actions">
+        <button class="kg-button voice" data-kg-read="4">🔊 Hear Friday</button>
+        <button class="kg-complete" data-kg-complete="4">✓ Mark Friday Complete</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="kg-card kg-week-card" style="margin-top:24px">
+    <h3 style="text-align:center;color:var(--kg-leaf2)">Teacher & Family Mastery Check</h3>
+    <p style="text-align:center;color:var(--kg-muted)">Observation, conversation, student work, gesture, drawing, and demonstration all count as evidence.</p>
+    <div class="kg-mastery-wrap">
+      <table class="kg-mastery-table">
+        <thead><tr><th>#</th><th>Domain</th><th>Evidence Prompt</th><th>Met</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Literacy</td><td>Identifies their own name and connects spoken language to familiar print.</td><td><input type="checkbox" data-kg-mastery="0"></td></tr>
+          <tr><td>2</td><td>Literacy</td><td>Listens to a short read-aloud and responds to or asks one relevant question.</td><td><input type="checkbox" data-kg-mastery="1"></td></tr>
+          <tr><td>3</td><td>Writing/Fine Motor</td><td>Creates a drawing, label, dictated sentence, or early writing connected to the classroom community.</td><td><input type="checkbox" data-kg-mastery="2"></td></tr>
+          <tr><td>4</td><td>Math</td><td>Counts a small collection using one-to-one correspondence.</td><td><input type="checkbox" data-kg-mastery="3"></td></tr>
+          <tr><td>5</td><td>Math</td><td>Sorts objects by an observable attribute and explains the sorting rule.</td><td><input type="checkbox" data-kg-mastery="4"></td></tr>
+          <tr><td>6</td><td>Inquiry</td><td>Explains one classroom routine, responsibility, or safety practice and why it matters.</td><td><input type="checkbox" data-kg-mastery="5"></td></tr>
+          <tr><td>7</td><td>Spatial</td><td>Contributes to or interprets a simple classroom map.</td><td><input type="checkbox" data-kg-mastery="6"></td></tr>
+          <tr><td>8</td><td>SEL</td><td>Communicates a feeling or need and demonstrates an appropriate helping strategy.</td><td><input type="checkbox" data-kg-mastery="7"></td></tr>
+          <tr><td>9</td><td>Collaboration</td><td>Participates in a shared task and responds to another child's idea.</td><td><input type="checkbox" data-kg-mastery="8"></td></tr>
+          <tr><td>10</td><td>Portfolio</td><td>Adds one artifact that shows a specific piece of learning or growth.</td><td><input type="checkbox" data-kg-mastery="9"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kg-actions" style="margin-top:16px">
+      <button class="kg-button primary" id="kgPrint" type="button">🖨 Print / Save PDF</button>
+      <button class="kg-button" id="kgReset" type="button">↺ Reset Unit 01 Progress</button>
+    </div>
+  </section>
+</div>
+</main>
+
+  <section class="kg-mentor" aria-label="NAIB learning mentor" style="margin-top:28px; margin-bottom:18px;">
+    <div class="kg-mentor-grid">
+      <div class="kg-mentor-avatar" id="kgMentorAvatar">✨</div>
+      <div>
+        <h2><span id="kgMentorName">NAIB</span> · Learning Guide</h2>
+        <p id="kgMentorMessage">Welcome to your first week in the Learning Garden.</p>
+        <div class="kg-mentor-actions">
+          <button class="kg-button mentor" id="kgMentorHint" type="button">💡 Give Me a Hint</button>
+          <button class="kg-button voice" id="kgMentorHelp" type="button">🪄 Show Me the First Step</button>
+          <button class="kg-button gold" id="kgMentorBreak" type="button">🌿 Movement Break</button>
+          <button class="kg-button" id="kgMentorToggle" type="button">About My Mentor</button>
+        </div>
+        <div class="kg-mentor-note"><span id="kgMentorStatus">Local learner profile not yet found</span> · <span id="kgGuardianNote"></span></div>
+      </div>
+    </div>
+    <div class="kg-mentor-panel" id="kgMentorPanel">
+      <strong>How this mentor works</strong>
+      <ul>
+        <li>NAIB is the friendly conversational layer for explanations, planning, guidance, and permitted mentor context.</li>
+        <li>NOEMA remains the administrative supervisor for permissions, memory, identity, guardian rules, and specialist boundaries.</li>
+        <li>The mentor may adapt examples, scaffolding, question style, and organization from expressed learning preferences and interests.</li>
+        <li>It does not infer intelligence from age or appearance, diagnose the child, or lower academic opportunity.</li>
+        <li>This static prototype uses bounded mentor actions rather than unrestricted child chat.</li>
+      </ul>
+    </div>
+  </section>
+
+<footer class="kg-footer">
+  © <span id="kgYear"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies
+</footer>
+<div class="kg-toast" role="status" aria-live="polite"></div>
+
+<script>
+window.KINDER_GARDEN_LESSON = {
+  unit:"01",
+  masteryCount:10,
+  dayTitles:[
+    "Plant Your Name",
+    "Tidy the Learning Garden",
+    "Follow the Routine Trail",
+    "Build Our Classroom Garden",
+    "Garden Celebration"
+  ],
+  weekReadText:"Unit one. Welcome to the Learning Garden. This week we learn about names, belonging, counting, sorting, classroom routines, helping, and growing together.",
+  readTexts:[
+    "Monday. Plant Your Name. Today we recognize names, talk about feelings, and count five learning seeds.",
+    "Tuesday. Tidy the Learning Garden. Today we sort classroom materials and decide where they belong.",
+    "Wednesday. Follow the Routine Trail. Today we put classroom routines in order and explain why routines help.",
+    "Thursday. Build Our Classroom Garden. Today we make a tiny classroom map and choose a helpful classroom job.",
+    "Friday. Garden Celebration. Today we reflect on what we learned, how we helped, and how we kept trying."
+  ]
+};
+</script>
+<script src="../../assets/naib-mentor-adapter.js"></script>
+<script src="../../assets/lesson.js"></script>
+
+<script>
+(() => {
+  "use strict";
+  const api = () => window.KinderGardenLesson;
+
+  let seedCount = 0;
+  document.querySelectorAll("#seedRow .kg-seed").forEach(seed => {
+    seed.addEventListener("click", () => {
+      if(seed.classList.contains("planted")) return;
+      seed.classList.add("planted");
+      seed.textContent = "🌱";
+      seedCount++;
+      document.getElementById("seedCount").textContent = `${seedCount} seed${seedCount===1?"":"s"} planted`;
+      if(seedCount===5) api()?.toast("Five seeds planted! You counted one-to-one.");
+    });
+  });
+
+  let selectedSort = null;
+  document.getElementById("sortItems")?.addEventListener("click", e => {
+    const item = e.target.closest(".kg-sort-item");
+    if(!item || item.classList.contains("used")) return;
+    selectedSort = item;
+    document.getElementById("sortFeedback").textContent = "Now choose where it belongs.";
+  });
+  document.querySelectorAll("[data-bin]").forEach(bin => bin.addEventListener("click", () => {
+    if(!selectedSort){
+      document.getElementById("sortFeedback").textContent = "Choose an object first.";
+      return;
+    }
+    if(selectedSort.dataset.kind === bin.dataset.bin){
+      selectedSort.classList.add("used");
+      selectedSort = null;
+      document.getElementById("sortFeedback").textContent = "That belongs there. Great sorting!";
+    }else{
+      document.getElementById("sortFeedback").textContent = "Good try. Look again and try the other place.";
+    }
+  }));
+
+  let routine = [];
+  document.getElementById("routineRow")?.addEventListener("click", e => {
+    const card = e.target.closest(".kg-routine-card");
+    if(!card || card.classList.contains("used")) return;
+    card.classList.add("used");
+    routine.push(Number(card.dataset.order));
+    const feedback = document.getElementById("routineFeedback");
+    if(routine.length < 3){
+      feedback.textContent = `Step ${routine.length} chosen. What comes next?`;
+      return;
+    }
+    feedback.textContent = routine.join(",") === "1,2,3"
+      ? "The bee found the routine trail! 🐝"
+      : "Interesting order. Explain your thinking, then try again.";
+    setTimeout(() => {
+      routine = [];
+      document.querySelectorAll(".kg-routine-card").forEach(c => c.classList.remove("used"));
+      feedback.textContent = "Choose the first step.";
+    }, 1800);
+  });
+
+  const symbols = ["➕","📚","🎨","🧸","🌿","🪑","🎵","🧺"];
+  document.querySelectorAll("[data-map]").forEach(cell => {
+    cell.addEventListener("click", () => {
+      const i = symbols.indexOf(cell.textContent.trim());
+      cell.textContent = symbols[(i + 1) % symbols.length];
+    });
+  });
+})();
+</script>
+
+<script>
+(() => {
+  "use strict";
+
+  const STORAGE_KEY = "kg_u01_interactive_v2";
+  const lesson = window.KINDER_GARDEN_LESSON || {};
+  const q = (sel, root=document) => root.querySelector(sel);
+  const qq = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+  const toastEl = q(".kg-toast");
+  const progressCard = q(".kg-progress-card");
+  if (progressCard && !q("#kgProgressBadge")) {
+    const badge = document.createElement("div");
+    badge.id = "kgProgressBadge";
+    badge.className = "kg-progress-badge";
+    badge.textContent = "Saved locally · 0 days complete · 0/10 mastery";
+    progressCard.appendChild(badge);
+  }
+  const progressBadge = q("#kgProgressBadge");
+  const progressLabel = q("#kgProgressLabel");
+  const progressPercent = q("#kgProgressPercent");
+  const progressFill = q("#kgProgressFill");
+
+  const state = loadState();
+  let dragSelected = null;
+
+  function defaultState() {
+    return {
+      seedCount: 0,
+      completedDays: [],
+      mastery: Array(10).fill(false),
+      map: ["➕","➕","➕","➕"]
+    };
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return defaultState();
+      const parsed = JSON.parse(raw);
+      const base = defaultState();
+      return {
+        seedCount: Number.isFinite(parsed.seedCount) ? parsed.seedCount : base.seedCount,
+        completedDays: Array.isArray(parsed.completedDays) ? parsed.completedDays.filter(n => Number.isInteger(n) && n >= 0 && n < 5) : base.completedDays,
+        mastery: Array.isArray(parsed.mastery) ? parsed.mastery.slice(0, 10).map(Boolean).concat(base.mastery).slice(0,10) : base.mastery,
+        map: Array.isArray(parsed.map) ? parsed.map.slice(0,4) : base.map
+      };
+    } catch {
+      return defaultState();
+    }
+  }
+
+  function saveState() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      seedCount: state.seedCount,
+      completedDays: state.completedDays,
+      mastery: state.mastery,
+      map: state.map
+    }));
+    refreshUI();
+  }
+
+  function toast(msg) {
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    clearTimeout(toastEl._t);
+    toastEl._t = setTimeout(() => { toastEl.textContent = ""; }, 1800);
+  }
+
+  function burstConfetti(count = 18) {
+    const chars = ["🌼","🌸","✨","🌈","💛","🌱","⭐","🫧"];
+    for (let i = 0; i < count; i++) {
+      const s = document.createElement("span");
+      s.className = "kg-confetti";
+      s.textContent = chars[i % chars.length];
+      s.style.left = Math.random() * 100 + "vw";
+      s.style.animationDuration = (700 + Math.random() * 500) + "ms";
+      s.style.fontSize = (14 + Math.random() * 14) + "px";
+      document.body.appendChild(s);
+      setTimeout(() => s.remove(), 1400);
+    }
+  }
+
+  function speak(text) {
+    if (!("speechSynthesis" in window)) return;
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.94;
+    u.pitch = 1.08;
+    u.volume = 0.95;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }
+
+  function updateProgressDisplay() {
+    const done = state.completedDays.length;
+    const pct = Math.round((done / 5) * 100);
+    if (progressLabel) progressLabel.textContent = `${done} of 5 days complete`;
+    if (progressPercent) progressPercent.textContent = `${pct}%`;
+    if (progressFill) progressFill.style.width = pct + "%";
+    if (progressBadge) progressBadge.textContent = `Saved locally · ${done} day${done===1 ? "" : "s"} complete · ${state.mastery.filter(Boolean).length}/10 mastery`;
+  }
+
+  function refreshUI() {
+    updateProgressDisplay();
+
+    // seeds
+    const seeds = qq("#seedRow .kg-seed");
+    seeds.forEach((seed, idx) => {
+      const planted = idx < state.seedCount;
+      seed.classList.toggle("planted", planted);
+      seed.textContent = planted ? "🌱" : "🌰";
+      if (planted) seed.setAttribute("aria-pressed", "true");
+      else seed.removeAttribute("aria-pressed");
+    });
+    q("#seedCount").textContent = `${state.seedCount} seed${state.seedCount===1 ? "" : "s"} planted`;
+
+    // day tabs + complete buttons
+    qq("[data-kg-complete]").forEach(btn => {
+      const day = Number(btn.dataset.kgComplete);
+      const complete = state.completedDays.includes(day);
+      btn.classList.toggle("done", complete);
+      btn.textContent = complete ? "✓ Completed" : btn.getAttribute("data-original") || btn.textContent;
+      btn.disabled = complete;
+    });
+    qq(".kg-day-tab").forEach(tab => {
+      const day = Number(tab.dataset.kgDay);
+      tab.classList.toggle("done", state.completedDays.includes(day));
+    });
+
+    // mastery
+    qq("[data-kg-mastery]").forEach((cb, idx) => {
+      cb.checked = !!state.mastery[idx];
+    });
+
+    // map
+    qq("[data-map]").forEach((cell, idx) => {
+      if (state.map[idx]) cell.textContent = state.map[idx];
+    });
+  }
+
+  function completeDay(day) {
+    if (!state.completedDays.includes(day)) {
+      state.completedDays.push(day);
+      saveState();
+      burstConfetti(14);
+      const title = lesson.dayTitles?.[day] || `Day ${day + 1}`;
+      toast(`${title} completed! Great job!`);
+      speak(`${title} is complete. Great work.`);
+    }
+  }
+
+  // Seed planting
+  qq("#seedRow .kg-seed").forEach((seed, idx) => {
+    seed.addEventListener("click", () => {
+      if (seed.classList.contains("planted")) return;
+      seed.classList.add("planted");
+      seed.textContent = "🌱";
+      state.seedCount = Math.max(state.seedCount, idx + 1);
+      if (idx + 1 > state.seedCount) state.seedCount = idx + 1;
+      saveState();
+      if (idx === 4) {
+        burstConfetti(22);
+        toast("Five seeds planted! You counted one-to-one.");
+        speak("Five seeds planted. You counted one to one.");
+      } else {
+        toast("Seed planted!");
+      }
+    });
+  });
+
+  // Give each complete button a remembered original label
+  qq("[data-kg-complete]").forEach(btn => {
+    if (!btn.getAttribute("data-original")) btn.setAttribute("data-original", btn.textContent);
+    btn.addEventListener("click", () => {
+      const day = Number(btn.dataset.kgComplete);
+      completeDay(day);
+    });
+  });
+
+  // Voice for lesson buttons
+  qq("[data-kg-read]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const day = Number(btn.dataset.kgRead);
+      const txt = lesson.readTexts?.[day] || lesson.weekReadText || "Let's learn together.";
+      toast("Reading aloud...");
+      speak(txt);
+    });
+  });
+
+  q("#kgReadWeek")?.addEventListener("click", () => {
+    toast("Reading the week overview...");
+    speak(lesson.weekReadText || "Welcome to the Learning Garden.");
+  });
+
+  // Mentor buttons
+  q("#kgMentorHint")?.addEventListener("click", () => {
+    const msg = "Try one small step at a time. Look, listen, count, sort, and explain your thinking.";
+    q("#kgMentorMessage").textContent = msg;
+    speak(msg);
+    toast("Hint shown.");
+  });
+  q("#kgMentorHelp")?.addEventListener("click", () => {
+    const msg = "First step: choose one object, one feeling, or one idea. Small steps make learning easier.";
+    q("#kgMentorMessage").textContent = msg;
+    speak(msg);
+    burstConfetti(10);
+  });
+  q("#kgMentorBreak")?.addEventListener("click", () => {
+    const msg = "Stand up, stretch your arms, breathe in, and breathe out. Then come back ready to learn.";
+    q("#kgMentorMessage").textContent = msg;
+    speak(msg);
+  });
+  q("#kgMentorToggle")?.addEventListener("click", () => {
+    const panel = q("#kgMentorPanel");
+    const hidden = panel.style.display === "none";
+    panel.style.display = hidden ? "" : "none";
+    toast(hidden ? "Mentor notes opened." : "Mentor notes hidden.");
+  });
+
+  // Day tab voices and active state
+  qq(".kg-day-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const day = Number(tab.dataset.kgDay);
+      const title = lesson.dayTitles?.[day] || `Day ${day + 1}`;
+      speak(`${title}. ${lesson.readTexts?.[day] || ""}`);
+    });
+  });
+
+  // Make sort items draggable, while keeping tap-based fallback
+  let selectedSort = null;
+  qq("#sortItems .kg-sort-item").forEach(item => {
+    item.setAttribute("draggable", "true");
+    item.addEventListener("dragstart", () => {
+      dragSelected = item;
+      item.classList.add("dragging");
+      item.setAttribute("aria-grabbed", "true");
+    });
+    item.addEventListener("dragend", () => {
+      item.classList.remove("dragging");
+      item.removeAttribute("aria-grabbed");
+      dragSelected = null;
+    });
+    item.addEventListener("click", () => {
+      if (item.classList.contains("used")) return;
+      selectedSort = item;
+      q("#sortFeedback").textContent = "Now choose where it belongs.";
+      speak("Now choose where it belongs.");
+    });
+  });
+
+  qq("[data-bin]").forEach(bin => {
+    bin.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      bin.classList.add("drag-over");
+    });
+    bin.addEventListener("dragleave", () => bin.classList.remove("drag-over"));
+    bin.addEventListener("drop", (e) => {
+      e.preventDefault();
+      bin.classList.remove("drag-over");
+      const item = dragSelected || selectedSort;
+      if (!item || item.classList.contains("used")) {
+        q("#sortFeedback").textContent = "Choose an object first.";
+        return;
+      }
+      if (item.dataset.kind === bin.dataset.bin) {
+        item.classList.add("used");
+        item.style.opacity = ".55";
+        item.textContent = item.textContent; // keep emoji visible
+        dragSelected = null;
+        selectedSort = null;
+        q("#sortFeedback").textContent = "That belongs there. Great sorting!";
+        burstConfetti(12);
+        speak("Great sorting!");
+      } else {
+        q("#sortFeedback").textContent = "Good try. Look again and try the other place.";
+        speak("Good try. Look again and try the other place.");
+      }
+    });
+    bin.addEventListener("click", () => {
+      const item = dragSelected || selectedSort;
+      if (!item) {
+        q("#sortFeedback").textContent = "Choose an object first.";
+        return;
+      }
+      if (item.dataset.kind === bin.dataset.bin) {
+        item.classList.add("used");
+        item.style.opacity = ".55";
+        dragSelected = null;
+        selectedSort = null;
+        q("#sortFeedback").textContent = "That belongs there. Great sorting!";
+        burstConfetti(12);
+      } else {
+        q("#sortFeedback").textContent = "Good try. Look again and try the other place.";
+      }
+    });
+  });
+
+  // Routine order stays tap-friendly, but add confetti + voice on success
+  let routine = [];
+  q("#routineRow")?.addEventListener("click", e => {
+    const card = e.target.closest(".kg-routine-card");
+    if(!card || card.classList.contains("used")) return;
+    card.classList.add("used");
+    routine.push(Number(card.dataset.order));
+    const feedback = q("#routineFeedback");
+    if(routine.length < 3){
+      feedback.textContent = `Step ${routine.length} chosen. What comes next?`;
+      return;
+    }
+    if (routine.join(",") === "1,2,3") {
+      feedback.textContent = "The bee found the routine trail! 🐝";
+      burstConfetti(18);
+      speak("The bee found the routine trail!");
+    } else {
+      feedback.textContent = "Interesting order. Explain your thinking, then try again.";
+      speak("Interesting order. Explain your thinking.");
+    }
+    setTimeout(() => {
+      routine = [];
+      qq(".kg-routine-card").forEach(c => c.classList.remove("used"));
+      feedback.textContent = "Choose the first step.";
+    }, 1800);
+  });
+
+  // Map cells cycle through symbols and save
+  const symbols = ["➕","📚","🎨","🧸","🌿","🪑","🎵","🧺"];
+  qq("[data-map]").forEach((cell, idx) => {
+    cell.addEventListener("click", () => {
+      const i = symbols.indexOf(cell.textContent.trim());
+      const next = symbols[(i + 1) % symbols.length];
+      cell.textContent = next;
+      state.map[idx] = next;
+      saveState();
+      if (idx === 3 && next !== "➕") {
+        burstConfetti(8);
+      }
+    });
+  });
+
+  // Mastery saves + milestone celebration
+  qq("[data-kg-mastery]").forEach((cb, idx) => {
+    cb.addEventListener("change", () => {
+      state.mastery[idx] = cb.checked;
+      saveState();
+      const done = state.mastery.filter(Boolean).length;
+      if (done === 10) {
+        toast("All mastery checks complete! Amazing work!");
+        burstConfetti(26);
+        speak("All mastery checks complete. Amazing work!");
+      } else {
+        toast(`${done} of 10 mastery checks complete.`);
+      }
+    });
+  });
+
+  // Print / reset
+  q("#kgPrint")?.addEventListener("click", () => window.print());
+  q("#kgReset")?.addEventListener("click", () => {
+    if (!confirm("Reset Unit 01 progress for this browser?")) return;
+    localStorage.removeItem(STORAGE_KEY);
+    location.reload();
+  });
+
+  // Teacher toggle
+  q("#kgTeacherToggle")?.addEventListener("click", () => {
+    const details = q("#kgTeacherDetails");
+    details.style.display = details.style.display === "none" ? "" : "none";
+    toast(details.style.display === "none" ? "Teacher view hidden." : "Teacher view opened.");
+  });
+
+  // Add progress badge and initial refresh
+  document.getElementById("kgYear").textContent = new Date().getFullYear();
+  refreshUI();
+
+  // Make day tab active state mirror tab navigation when clicked
+  qq(".kg-day-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      qq(".kg-day-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+    });
+  });
+
+})();
+</script>
+<script src="/assets/vnv-beta-link.js" defer></script>
+</body>
+</html>
