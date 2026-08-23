@@ -109,6 +109,18 @@
       ["Authentic appreciation","Creates or explains a truthful appreciation, acknowledgment, or reflection using an accessible communication mode without forced emotion or private disclosure.",true],
       ["Economic and privacy fairness","Understands that generosity/gratitude are not measured by possessions, spending, family circumstances, public performance, or disclosure."],
       ["Integrated story-number reflection","Creates or explains a story that integrates sequence, a quantity to 5, an act of care, and a consent-respecting response."]
+    ],
+    14:[
+      ["Rhyme recognition / generation","Identifies and generates an age-appropriate rhyme or equivalent patterned-language example in an appropriate spoken, signed, visual, or other accessible language pathway.",true],
+      ["Rhyme vs spelling","Demonstrates that rhyme depends on a language's sound/pattern structure rather than simply matching final written letters.",true],
+      ["Syllable segmentation","Segments and counts syllables in several familiar examples using speech, counters, taps, visual pulses, signs, or another accessible representation.",true],
+      ["Syllable vs letter count","Demonstrates that syllable count and written-letter count are different ideas.",true],
+      ["Beginning sound / feature","Identifies beginning phonological matches in an appropriate language pathway and groups examples by the stated feature.",true],
+      ["Sound-letter distinction","Explains or demonstrates that written letters and speech sounds are related but not perfectly one-to-one, using an age-appropriate example.",true],
+      ["Count and compare language units","Counts and compares rhyme/syllable/sound-pattern groups using one-to-one correspondence and more/fewer/same or numbers."],
+      ["Rule-based word play","Creates a short rhyme, alliteration, syllable, or equivalent language pattern, identifies a break, and repairs it.",true],
+      ["Language-access respect","Uses accent, dialect, home language, signed language, AAC, visual/tactile, or other appropriate access without treating speech volume, hearing, eye contact, or one accent as intelligence/mastery.",true],
+      ["Language pattern reflection","Distinguishes at least two of rhyme, syllable, beginning sound, letter, and alliteration and reflects on language variation."]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
