@@ -86,3 +86,5 @@ console.log("- original lesson bodies and already-published self-check artifacts
 console.log("- typed percentages cannot create formal progression");
 console.log("- 80% minimum, sequential prerequisites, best mastery preservation, adult affirmation, and deliberate reset are enforced");
 console.log("- validation workflow is read-only");
+
+// Human-authored CI retrigger; no validation semantics changed.
