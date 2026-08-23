@@ -1,4 +1,5 @@
 name: Kindergarten Formal Gate Rollout
+# repair-pr bootstrap active; converted to read-only validation before merge
 
 on:
   pull_request:
