@@ -43,6 +43,14 @@ const UPGRADED=[
     must:["Week 5 introduced repeating patterns, and Week 7 used shapes as design parts","No instrument, recorded music, standing movement, hearing, speech, color vision, or fine-motor skill is required","Hearing or producing sound is never required","Do not force English pronunciation or treat one language's rhyme system as universal","avoid copying sacred/restricted practices","performance quality is not judged by loudness, singing, dance technique"],
     forbidden:"Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
     mastery:["Repeating pattern rule","Beat and rhythm","Syllable and rhyme","Pattern translation","Self-regulation and safety"]
+  },
+  {
+    unit:9,
+    versionLabel:"Week 9",
+    days:["Monday · Belonging Detectives","Tuesday · Then & Now Story Lab","Wednesday · Homes & Measure","Thursday · Tradition & Change Studio","Friday · Belonging Story Circle"],
+    must:["No forced disclosure:","Fictional, historical, community, classroom, or imagined examples are always valid.","Personal photos are never required.","People can remember the same event differently.","no house size, ownership status, neighborhood, or material is described as a better family or a more valuable person.","Teach children not to guess religion, nationality, ethnicity, language, or traditions from appearance or name.","Do not costume children as cultures","Personal family photos or documents are never required."],
+    forbidden:"Children participate in a joyful, developmentally appropriate lesson about families, homes, and traditions through language, math, inquiry, movement, and creation.",
+    mastery:["Privacy and belonging","Story sequence / oral history","Past and present","Measurement with equal units","Tradition without stereotype"]
   }
 ];
 
@@ -54,11 +62,11 @@ function assertInlineScriptsParse(label,html){
   }
 }
 
-assert.ok(gate.includes('const VERSION="1.2.3"'),"daily-evidence mastery engine must remain on the Week 8 rollout contract or later");
+assert.ok(gate.includes('const VERSION="1.2.4"'),"daily-evidence mastery engine must remain on the Week 9 rollout contract or later");
 assert.ok(gate.includes('const PASS=80'),"formal mastery threshold must remain 80%");
 assert.ok(gate.includes('const TOTAL_WEEKS=36'),"formal curriculum must remain 36 weeks");
 assert.ok(gate.includes('const DAYS_PER_WEEK=5'),"formal upgraded weeks must retain five daily experiences");
-assert.ok(gate.includes('const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8])'),"Weeks 5-8 must remain in the staged A++++ daily-sequence rollout");
+assert.ok(gate.includes('const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9])'),"Weeks 5-9 must remain in the staged A++++ daily-sequence rollout");
 assert.ok(gate.includes('reviewedUnlocks:false'),"reviewed must not unlock curriculum");
 assert.ok(gate.includes('legacyScoresUnlock:false'),"legacy typed scores must not unlock curriculum");
 assert.ok(gate.includes('directUrlUnlocks:false'),"direct canonical URLs must not unlock curriculum");
@@ -157,6 +165,7 @@ console.log(`- A++++ daily sequence active for Weeks ${UPGRADED.map(x=>x.unit).j
 console.log("- upgraded weeks require five daily learning-evidence receipts before mastery");
 console.log("- daily evidence itself is never mastery");
 console.log("- upgraded mastery requires >=80% plus week-specific essential criteria");
+console.log("- Week 9 preserves family privacy and never makes sensitive disclosure a mastery condition");
 console.log("- upgraded preserved content self-loads the formal gate for ordinary direct-browser access");
 console.log("- multilingual, no-cost, accessible, globally relevant demonstration options are preserved");
 console.log("- upgraded child-facing inline JavaScript parses successfully");
