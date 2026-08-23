@@ -35,6 +35,14 @@ const UPGRADED=[
     must:["From weather symbols to geometry","color is never the only cue","Fine-motor or color-vision differences do not reduce the geometry goal","Turning the square changes its position, not its properties","different attributes","a design change is evidence of thinking—not failure"],
     forbidden:"Children participate in a joyful, developmentally appropriate lesson about shapes, colors, and design through language, math, inquiry, movement, and creation.",
     mastery:["Shape properties","Spatial language","Shape composition","Design reasoning and revision"]
+  },
+  {
+    unit:8,
+    versionLabel:"Week 8",
+    days:["Monday · Pattern Pulse Detectives","Tuesday · Rhythm & Word Lab","Wednesday · Translate the Pattern","Thursday · Performance Designers","Friday · Pattern Conductor"],
+    must:["Week 5 introduced repeating patterns, and Week 7 used shapes as design parts","No instrument, recorded music, standing movement, hearing, speech, color vision, or fine-motor skill is required","Hearing or producing sound is never required","Do not force English pronunciation or treat one language's rhyme system as universal","avoid copying sacred/restricted practices","performance quality is not judged by loudness, singing, dance technique"],
+    forbidden:"Children participate in a joyful, developmentally appropriate lesson about patterns, music, and movement through language, math, inquiry, movement, and creation.",
+    mastery:["Repeating pattern rule","Beat and rhythm","Syllable and rhyme","Pattern translation","Self-regulation and safety"]
   }
 ];
 
@@ -46,11 +54,11 @@ function assertInlineScriptsParse(label,html){
   }
 }
 
-assert.ok(gate.includes('const VERSION="1.2.2"'),"daily-evidence mastery engine must remain on the Week 7 rollout contract or later");
+assert.ok(gate.includes('const VERSION="1.2.3"'),"daily-evidence mastery engine must remain on the Week 8 rollout contract or later");
 assert.ok(gate.includes('const PASS=80'),"formal mastery threshold must remain 80%");
 assert.ok(gate.includes('const TOTAL_WEEKS=36'),"formal curriculum must remain 36 weeks");
 assert.ok(gate.includes('const DAYS_PER_WEEK=5'),"formal upgraded weeks must retain five daily experiences");
-assert.ok(gate.includes('const DAILY_SEQUENCE_UNITS=new Set([5,6,7])'),"Weeks 5-7 must remain in the staged A++++ daily-sequence rollout");
+assert.ok(gate.includes('const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8])'),"Weeks 5-8 must remain in the staged A++++ daily-sequence rollout");
 assert.ok(gate.includes('reviewedUnlocks:false'),"reviewed must not unlock curriculum");
 assert.ok(gate.includes('legacyScoresUnlock:false'),"legacy typed scores must not unlock curriculum");
 assert.ok(gate.includes('directUrlUnlocks:false'),"direct canonical URLs must not unlock curriculum");
