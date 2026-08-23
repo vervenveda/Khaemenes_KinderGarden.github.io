@@ -133,6 +133,18 @@
       ["Engineering constraint and fair test","Designs or interprets a small model bridge against a stated span/load criterion and tests alternatives under reasonably consistent conditions.",true],
       ["Evidence-based design revision","Uses test/measurement evidence to revise a design or explain why a revision should improve it.",true],
       ["Measurement access and safety","Demonstrates that body size, stride, strength, mobility, purchased materials, or dangerous real-world load testing are not required for measurement/engineering mastery."]
+    ],
+    16:[
+      ["Needs and wants in context","Explains that needs and wants depend on a person's situation and gives a respectful reason why an item/support could be a need in one context without judging another household.",true],
+      ["Economic privacy and dignity","Knows that family income, debt, housing, food insecurity, purchases, allowance, benefits, savings, gifts, possessions, or ability to afford something are private and never required for mastery; money/possessions do not determine human worth.",true],
+      ["Token counting","Counts a modeled token set with one-to-one correspondence and states the total accurately.",true],
+      ["Amount comparison","Counts and compares at least two modeled amounts using more, fewer, same, numerical totals, or an age-appropriate difference strategy.",true],
+      ["Goods and services","Distinguishes a physical good from a service/action and connects each to a fictional need or goal without ranking work or workers.",true],
+      ["Work and system respect","Recognizes paid, unpaid, household, public, volunteer, repair, reuse, care, and community contributions without stereotyping who does them."],
+      ["Constrained choice and tradeoff","Uses a fictional token constraint to compare options, choose with a reason, and identify what is delayed or not chosen.",true],
+      ["Saving reasoning without moralization","Explains saving as setting resources aside for later while recognizing that spending to meet a need can also be responsible and inability to save is not a character flaw.",true],
+      ["Voluntary sharing and consent","Knows that sharing may be kind but never requires giving away personal money, food, comfort items, or possessions; classroom market materials remain fictional/shared.",true],
+      ["Integrated decision reflection","Given a fictional need/goal and small modeled amount, counts resources, compares choices, identifies a good/service when relevant, explains a tradeoff, and revises the decision when one fact changes.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
