@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Formal Mastery Gates v1.0.0
+ * Khaemenes Kinder Garden · Formal Mastery Gates v1.1.0
  * ------------------------------------------------------
  * Formal advancement is learner-scoped and requires >=80% computed evidence.
  * Public previews and games remain open. Legacy typed scores are preserved as
@@ -8,17 +8,17 @@
 (function attachKhaemenesKinderMasteryGates(global){
   "use strict";
 
-  const VERSION="1.0.0";
+  const VERSION="1.1.0";
   const PASS=80;
   const TOTAL_WEEKS=36;
   const KEY="khaemenes_kindergarten_mastery_receipts_v1";
   const ACADEMY_REGISTRY="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js";
   const CONTINUITY_SCRIPT="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-continuity.js";
   const CURRICULUM_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/";
+  const MASTERY_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/mastery/";
   const FAMILY_HOME="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
 
   const now=()=>new Date().toISOString();
-  const clone=value=>JSON.parse(JSON.stringify(value));
   const readJSON=(key,fallback)=>{try{const raw=global.localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}};
   const writeJSON=(key,value)=>{try{global.localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
 
@@ -189,31 +189,53 @@
     saveLearnerRecord(record);syncCompatibility(record);return record.portfolio;
   }
 
-  function completedWeeks(){let count=0;for(let n=1;n<=TOTAL_WEEKS;n++)if(weekMastery(n).mastered)count++;return count}
-
-  function nextWeek(){for(let n=1;n<=TOTAL_WEEKS;n++)if(!weekMastery(n).mastered)return n;return TOTAL_WEEKS}
-
-  function certificationReady(){
-    return completedWeeks()===TOTAL_WEEKS&&milestoneMastery("midterm").mastered&&milestoneMastery("final").mastered&&Boolean(learnerRecord().portfolio);
+  function clearActiveMasteryRecord({adultAffirmed=false}={}){
+    if(!formalAccess())throw new Error("formal-access-required");
+    if(adultAffirmed!==true)throw new Error("adult-affirmation-required");
+    const learner=learnerSummary();
+    const records=allRecords();
+    delete records[learner.learnerId];
+    const ok=writeJSON(KEY,records);
+    if(ok)global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-mastery-changed",{detail:{learnerId:learner.learnerId,reset:true}}));
+    return ok;
   }
+
+  function completedWeeks(){let count=0;for(let n=1;n<=TOTAL_WEEKS;n++)if(weekMastery(n).mastered)count++;return count}
+  function nextWeek(){for(let n=1;n<=TOTAL_WEEKS;n++)if(!weekMastery(n).mastered)return n;return TOTAL_WEEKS}
+  function certificationReady(){return completedWeeks()===TOTAL_WEEKS&&milestoneMastery("midterm").mastered&&milestoneMastery("final").mastered&&Boolean(learnerRecord().portfolio)}
 
   function currentPathTarget(){
     const p=String(global.location?.pathname||"");
-    const lesson=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i);
-    if(lesson)return {type:"week",unit:Number(lesson[1])};
+    let match=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i);
+    if(match)return {type:"week",unit:Number(match[1])};
+    match=p.match(/\/curriculum\/assessments\/unit-(\d{2})-assessment\.html$/i);
+    if(match)return {type:"week-assessment",unit:Number(match[1])};
+    if(/\/curriculum\/assessments\/midterm\.html$/i.test(p))return {type:"milestone",kind:"midterm"};
+    if(/\/curriculum\/assessments\/final-exam\.html$/i.test(p))return {type:"milestone",kind:"final"};
+    if(/\/curriculum\/assessments\/weekly-assessments\.html$/i.test(p))return {type:"assessment-index"};
     return null;
   }
 
   function lockDocument(reason,target){
     if(!global.document)return;
+    if(!global.document.body){global.document.addEventListener("DOMContentLoaded",()=>lockDocument(reason,target),{once:true});return}
     const learner=learnerSummary();
     global.document.documentElement.removeAttribute("data-khaemenes-formal-gate-pending");
+    const isAssessment=target?.type==="week-assessment"||target?.type==="milestone";
     const message=reason==="profile"
-      ?"A free active Kindergarten learner with grown-up authorization is required for formal curriculum lessons."
-      :`This formal week is still locked. Complete the required prior mastery at ${PASS}% or higher before continuing.`;
-    global.document.body.innerHTML=`<main style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#f4fff1;color:#263a31;font:16px/1.6 'Avenir Next','Segoe UI',Arial,sans-serif;text-align:center"><section style="width:min(100%,620px);padding:28px;border:1px solid rgba(45,93,61,.18);border-top:5px solid #3f9d59;border-radius:18px;background:#fff;box-shadow:0 18px 45px rgba(54,95,72,.12)"><div style="font-size:42px" aria-hidden="true">🔒</div><h1 style="margin:10px 0;color:#22543a;font:700 32px Georgia,serif">Formal week locked</h1><p>${message}</p><p style="color:#66756f;font-size:13px">Preview activities and open Kinder Garden games remain free and available. Review does not count as mastery, and direct URLs do not create an unlock.</p><p><a href="${CURRICULUM_HOME}" style="display:inline-block;margin:6px;padding:10px 14px;border-radius:8px;background:#22543a;color:#fff;text-decoration:none;font-weight:700">Return to Curriculum</a><a href="${FAMILY_HOME}" style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #22543a;border-radius:8px;color:#22543a;text-decoration:none;font-weight:700">Family Profile</a></p>${learner?.nickname?`<small>Active learner: ${String(learner.nickname).replace(/[&<>"']/g,"")}</small>`:""}</section></main>`;
-    global.document.title="Formal Week Locked · Khaemenes Kinder Garden";
+      ?"A free active Kindergarten learner with grown-up authorization is required for formal curriculum."
+      :isAssessment
+        ?`This mastery demonstration is still locked. Complete its prerequisite learning at ${PASS}% or higher first.`
+        :`This formal week is still locked. Complete the required prior mastery at ${PASS}% or higher before continuing.`;
+    global.document.body.innerHTML=`<main style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#f4fff1;color:#263a31;font:16px/1.6 'Avenir Next','Segoe UI',Arial,sans-serif;text-align:center"><section style="width:min(100%,620px);padding:28px;border:1px solid rgba(45,93,61,.18);border-top:5px solid #3f9d59;border-radius:18px;background:#fff;box-shadow:0 18px 45px rgba(54,95,72,.12)"><div style="font-size:42px" aria-hidden="true">🔒</div><h1 style="margin:10px 0;color:#22543a;font:700 32px Georgia,serif">Formal content locked</h1><p>${message}</p><p style="color:#66756f;font-size:13px">Preview activities and open Kinder Garden games remain free. Review does not count as mastery, legacy typed scores do not unlock curriculum, and direct URLs do not create an unlock.</p><p><a href="${CURRICULUM_HOME}" style="display:inline-block;margin:6px;padding:10px 14px;border-radius:8px;background:#22543a;color:#fff;text-decoration:none;font-weight:700">Return to Curriculum</a><a href="${FAMILY_HOME}" style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #22543a;border-radius:8px;color:#22543a;text-decoration:none;font-weight:700">Family Profile</a></p>${learner?.nickname?`<small>Active learner: ${String(learner.nickname).replace(/[&<>"']/g,"")}</small>`:""}</section></main>`;
+    global.document.title="Formal Content Locked · Khaemenes Kinder Garden";
     global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-formal-gate-blocked",{detail:{reason,target}}));
+  }
+
+  function redirectLegacyAssessment(target){
+    if(target.type==="week-assessment")global.location.replace(`${MASTERY_HOME}?unit=${target.unit}`);
+    else if(target.type==="milestone")global.location.replace(`${MASTERY_HOME}?milestone=${encodeURIComponent(target.kind)}`);
+    else global.location.replace(`${CURRICULUM_HOME}#units`);
   }
 
   function guardFormalPage(){
@@ -222,16 +244,21 @@
     if(global.document)global.document.documentElement.setAttribute("data-khaemenes-formal-gate-pending","1");
     const style=global.document?.createElement?.("style");
     if(style){style.id="khaemenesFormalGatePendingStyle";style.textContent='html[data-khaemenes-formal-gate-pending="1"] body{visibility:hidden!important}';(global.document.head||global.document.documentElement).appendChild(style)}
+    if(target.type==="assessment-index"){redirectLegacyAssessment(target);return}
     ensureDependencies();
     let attempt=0;
     const check=()=>{
       attempt++;
       if(global.KhaemenesFamilyRegistry&&global.KhaemenesKinderContinuity){
         if(!formalAccess()){lockDocument("profile",target);return}
-        if(!canOpenWeek(target.unit)){lockDocument("mastery",target);return}
-        global.document?.documentElement?.removeAttribute("data-khaemenes-formal-gate-pending");
-        global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-formal-gate-open",{detail:{target,masteryThreshold:PASS}}));
-        return;
+        if(target.type==="week"&&canOpenWeek(target.unit)){
+          global.document?.documentElement?.removeAttribute("data-khaemenes-formal-gate-pending");
+          global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-formal-gate-open",{detail:{target,masteryThreshold:PASS}}));
+          return;
+        }
+        if(target.type==="week-assessment"&&canAssessWeek(target.unit)){redirectLegacyAssessment(target);return}
+        if(target.type==="milestone"&&canAssessMilestone(target.kind)){redirectLegacyAssessment(target);return}
+        lockDocument("mastery",target);return;
       }
       if(attempt<120){global.setTimeout(check,50);return}
       lockDocument("profile",target);
@@ -241,9 +268,10 @@
 
   global.KhaemenesKinderMasteryGates=Object.freeze({
     version:VERSION,passingScore:PASS,totalWeeks:TOTAL_WEEKS,key:KEY,
+    policy:Object.freeze({reviewedUnlocks:false,legacyScoresUnlock:false,directUrlUnlocks:false,bestMasteryPreserved:true}),
     formalAccess,learnerRecord,weekMastery,milestoneMastery,allPriorMastered,
     canOpenWeek,canAssessWeek,canAssessMilestone,recordWeekEvidence,recordMilestoneEvidence,
-    setPortfolioComplete,completedWeeks,nextWeek,certificationReady,guardFormalPage
+    setPortfolioComplete,clearActiveMasteryRecord,completedWeeks,nextWeek,certificationReady,guardFormalPage
   });
 
   guardFormalPage();
