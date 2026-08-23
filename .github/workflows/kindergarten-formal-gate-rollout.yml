@@ -1,0 +1,43 @@
+name: Kindergarten Formal Gate Rollout
+
+on:
+  push:
+    branches:
+      - fix/kindergarten-80-mastery-gates-20260823
+    paths:
+      - 'scripts/inject-kindergarten-formal-gates.mjs'
+      - '.github/workflows/kindergarten-formal-gate-rollout.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repair branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/kindergarten-80-mastery-gates-20260823
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Inject fail-closed formal gate
+        run: node scripts/inject-kindergarten-formal-gates.mjs
+      - name: Verify generated changes
+        run: |
+          node scripts/inject-kindergarten-formal-gates.mjs --check
+          git diff --check
+      - name: Commit generated gate coverage
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No generated changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add curriculum/lessons curriculum/assessments
+          git commit -m "Apply Kindergarten fail-closed formal gate coverage"
+          git push
