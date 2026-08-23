@@ -56,6 +56,18 @@ const SPECIAL={
     ["Weather-ready design","Creates or uses a weather wheel/card/tool with locally meaningful conditions and appropriate clothing/actions.",false],
     ["Reasoned choice","Explains why at least one weather-ready choice fits the observed condition, allowing cultural, climate, health, and accessibility variation.",false],
     ["Weather report / reflection","Communicates an evidence-based weather report and reflects on one idea learned, corrected, or still needing practice.",false]
+  ],
+  7:[
+    ["Shape properties","Identifies and describes common shapes using properties such as sides, corners, curves, faces, rolling, or stacking, and recognizes that turning or resizing a shape does not change its identity.",true],
+    ["2D / 3D distinction","Distinguishes a flat 2D shape from a 3D solid in an age-appropriate example and describes one useful feature.",false],
+    ["Spatial language","Uses or demonstrates positional language such as above, below, beside, between, inside, in front of, or behind accurately.",true],
+    ["Shape composition","Combines two or more shapes/solids into a larger picture, arrangement, or structure and identifies component shapes.",true],
+    ["Attribute classification","Sorts the same set using at least two different attributes and communicates each sorting rule.",false],
+    ["Color / visual design observation","Uses color, pattern, texture, value, or another accessible visual/tactile attribute in an art/design observation without relying on color as the only cue.",false],
+    ["Geometry-rich design","Creates or interprets a design that intentionally uses multiple shapes/solids and spatial relationships.",false],
+    ["Design reasoning and revision","Tests a design choice, notices evidence about what happened, and revises the design or explains why the choice worked.",true],
+    ["Mathematical communication","Explains a design using at least one shape property and one spatial relationship through speech, sign, AAC, drawing, gesture, model, dictation, or home language.",false],
+    ["Persistence / reflection","Persists through a design challenge and reflects on one revision, successful choice, or next step.",false]
   ]
 };
 function mapCriteria(rows){return rows.map(([label,prompt,required=false])=>({label,prompt,required}))}
