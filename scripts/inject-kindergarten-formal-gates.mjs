@@ -2,7 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT=process.cwd();
-const TAG='<script src="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-mastery-gates.js" data-khaemenes-kindergarten-formal-gate="1"></script>';
+const LESSON_TAG='<script src="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-mastery-gates.js" data-khaemenes-kindergarten-formal-gate="1"></script>';
+const ASSESSMENT_TAG=`${LESSON_TAG}\n<script src="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-assessment-gate.js" data-khaemenes-kindergarten-assessment-gate="1"></script>`;
 const checkOnly=process.argv.includes("--check");
 
 function lessonTargets(){
@@ -25,26 +26,33 @@ function assessmentTargets(){
     .sort();
 }
 
-const targets=[...lessonTargets(),...assessmentTargets()];
-if(targets.length<41)throw new Error(`Expected at least 41 formal Kindergarten surfaces; found ${targets.length}`);
+const lessons=lessonTargets();
+const assessments=assessmentTargets();
+if(lessons.length!==36)throw new Error(`Expected 36 formal Kindergarten lesson surfaces; found ${lessons.length}`);
+if(assessments.length!==39)throw new Error(`Expected 39 legacy assessment surfaces; found ${assessments.length}`);
 
 const missing=[];
 let changed=0;
-for(const file of targets){
+function ensure(file,tag,markers){
   let html=fs.readFileSync(file,"utf8");
-  if(html.includes("data-khaemenes-kindergarten-formal-gate"))continue;
-  missing.push(path.relative(ROOT,file));
-  if(checkOnly)continue;
+  const absent=markers.filter(marker=>!html.includes(marker));
+  if(!absent.length)return;
+  missing.push(`${path.relative(ROOT,file)} :: ${absent.join(", ")}`);
+  if(checkOnly)return;
   if(!/<\/head>/i.test(html))throw new Error(`Cannot inject formal gate: ${path.relative(ROOT,file)} has no </head>`);
-  html=html.replace(/<\/head>/i,`${TAG}\n</head>`);
+  html=html.replace(/<\/head>/i,`${tag}\n</head>`);
   fs.writeFileSync(file,html);
   changed++;
 }
 
+for(const file of lessons)ensure(file,LESSON_TAG,["data-khaemenes-kindergarten-formal-gate"]);
+for(const file of assessments)ensure(file,ASSESSMENT_TAG,["data-khaemenes-kindergarten-formal-gate","data-khaemenes-kindergarten-assessment-gate"]);
+
 if(checkOnly&&missing.length){
-  console.error("Missing Kindergarten formal gate injection:");
+  console.error("Missing Kindergarten formal gate coverage:");
   missing.forEach(x=>console.error(`- ${x}`));
   process.exit(1);
 }
 
-console.log(checkOnly?`Kindergarten formal gate coverage: PASS (${targets.length} surfaces)`:`Injected Kindergarten formal gate into ${changed} of ${targets.length} surfaces.`);
+const total=lessons.length+assessments.length;
+console.log(checkOnly?`Kindergarten formal gate coverage: PASS (${lessons.length} lessons + ${assessments.length} legacy assessment surfaces = ${total})`:`Injected Kindergarten gate coverage into ${changed} of ${total} formal surfaces.`);
