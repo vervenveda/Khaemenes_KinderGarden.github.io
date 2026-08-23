@@ -1,7 +1,7 @@
 # Beta Index Coverage
 
 - Added in this run: **0**
-- Already covered: **66**
+- Already covered: **67**
 - Skipped: **0**
 
 Rule: visible HTML filenames ending in `index.html` (including `_index.html` and common `inndex.html` typos) receive `/assets/vnv-beta-link.js`. The widget reports only public hostname + pathname; never learner/family IDs, answers, form values, query/hash, storage, or credentials.
