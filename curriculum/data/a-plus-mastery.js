@@ -97,6 +97,18 @@
       ["Design testing and revision","Tests or reviews a habitat model, responds to an evidence question, and makes or explains one revision."],
       ["Humane wildlife boundary","Knows wild animals are observed from a distance and that feeding, touching, chasing, capturing, handling, or removing wildlife/nests/eggs is not required or authorized.",true],
       ["Animal scientist reflection","Integrates structure or behavior, need, habitat evidence, and one corrected/revised idea in an accessible explanation."]
+    ],
+    13:[
+      ["Story sequence and retelling","Sequences and retells a three-part story with a sensible beginning, middle, and end while preserving important meaning rather than exact memorized wording.",true],
+      ["Story evidence","Uses at least one story detail to explain why an event belongs in a particular place in the sequence."],
+      ["Compose numbers to 5","Builds or represents a whole to 5 from two parts and correctly identifies the parts and whole.",true],
+      ["Decompose numbers to 5","Takes apart a quantity to 5 in at least two valid ways and verifies that recombining the parts preserves the whole.",true],
+      ["Number-story meaning","Models a joining, separating, or part-part-whole story accurately and does not assume that the social word 'giving' always means subtraction.",true],
+      ["Community-care reasoning","Connects a visible or scenario-based care/helping action to a need or possible effect without stereotyping a job, identity, or group.",true],
+      ["Consent and helping boundary","Knows that helping or gratitude never requires unsafe/secret actions, physical affection, forgiveness, money, gifts, or contact with someone the learner does not want to contact.",true],
+      ["Authentic appreciation","Creates or explains a truthful appreciation, acknowledgment, or reflection using an accessible communication mode without forced emotion or private disclosure.",true],
+      ["Economic and privacy fairness","Understands that generosity/gratitude are not measured by possessions, spending, family circumstances, public performance, or disclosure."],
+      ["Integrated story-number reflection","Creates or explains a story that integrates sequence, a quantity to 5, an act of care, and a consent-respecting response."]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
