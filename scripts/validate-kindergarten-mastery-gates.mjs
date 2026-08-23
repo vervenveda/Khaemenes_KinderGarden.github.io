@@ -28,7 +28,8 @@ const UPGRADED=[
   {unit:12,days:["Monday · Animal Evidence Detectives","Tuesday · Classify & Count Lab","Wednesday · Habitat Fit Lab","Thursday · Habitat Model Engineers","Friday · Animal Scientist Conference"],must:["Week 11 compared plant structures and needs; Week 12 asks how animal structures, behaviors, and habitats help meet needs.","Wild animals are observe-from-a-distance","Do not feed, touch, chase, capture, corner, handle, remove nests/eggs","Classification rule must be stated before sorting.","A habitat is not a decorative background.","No live animal, zoo visit, pet, wildlife encounter, purchased diorama kit, or internet video is required.","animal sounds themselves are not universal labels","all birds fly","A shoebox diorama is optional, not the goal."],forbidden:"Children participate in a joyful, developmentally appropriate lesson about animals and habitats through language, math, inquiry, movement, and creation.",mastery:["Animal observation vs inference","Structure / behavior function","Evidence-based classification","Count and compare groups","Habitat resources and conditions","Habitat model reasoning","Humane wildlife boundary"]},
   {unit:13,days:["Monday · Story Structure Detectives","Tuesday · Number Story Lab","Wednesday · Care & Community Inquiry","Thursday · Appreciation Message Studio","Friday · Story & Number Conference"],must:["Week 9 practiced oral-history sequence and respectful belonging.","No forced gratitude:","Gratitude is not a debt.","Giving is not always subtraction","Do not use a child's access to food, toys, money, gifts, or possessions as evidence of generosity or mathematical competence.","Community helpers are people, not costumes","Do not stereotype jobs by gender, race, class, uniform, disability, or nationality.","No gift requirement","Do not require hugs, kisses, touching, public speaking, eye contact, forgiveness","if someone helps you, you owe them"],forbidden:"Children participate in a joyful, developmentally appropriate lesson about gratitude, giving, and storytelling through language, math, inquiry, movement, and creation.",mastery:["Story sequence and retelling","Compose numbers to 5","Decompose numbers to 5","Number-story meaning","Community-care reasoning","Consent and helping boundary","Authentic appreciation"]},
   {unit:14,days:["Monday · Rhyme Detectives","Tuesday · Syllable Count Lab","Wednesday · Beginning Sound Detectives","Thursday · Word-Pattern Makers","Friday · Language Pattern Conference"],must:["Week 8 distinguished rhyme from syllables; Week 13 strengthened story language.","rhyme depends on pronunciation","English rhyme and sound patterns are not universal across languages.","Speech/hearing are not intelligence tests:","Syllable count is not letter count.","Same letter does not always mean same sound.","Do not mark a child wrong because their accent or dialect differs from the teacher's.","Alliteration is about initial sound","Do not use accents, disability, names, languages, body features, race, religion, gender, or culture as material for mockery.","louder speech means better language skill"],forbidden:"Children participate in a joyful, developmentally appropriate lesson about sounds, rhymes, and word play through language, math, inquiry, movement, and creation.",mastery:["Rhyme recognition / generation","Rhyme vs spelling","Syllable segmentation","Syllable vs letter count","Beginning sound / feature","Sound-letter distinction","Rule-based word play","Language-access respect"]},
-  {unit:15,days:["Monday · Compare First Lab","Tuesday · Unit Detective Lab","Wednesday · Weight & Capacity Lab","Thursday · Bridge Engineers","Friday · Builder Conference"],must:["Week 9 and Week 10 established consistent measurement units; Week 11 used a common baseline for growth.","A child's stride length or mobility is not a stable measurement unit.","body size, stride length, grip strength, standing balance, visual acuity, or ability to carry objects must never determine measurement mastery.","Length, weight, and capacity describe different attributes","Large does not always mean heavy","Capacity vs amount inside","engineering here means small tabletop models only","Failure is evidence","real bridge is structurally safe"],forbidden:"Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",mastery:["Direct comparison from common start","Consistent nonstandard measurement","Number plus unit communication","Measurement error detection","Weight reasoning","Capacity reasoning","Attribute distinction","Engineering constraint and fair test","Evidence-based design revision"]}
+  {unit:15,days:["Monday · Compare First Lab","Tuesday · Unit Detective Lab","Wednesday · Weight & Capacity Lab","Thursday · Bridge Engineers","Friday · Builder Conference"],must:["Week 9 and Week 10 established consistent measurement units; Week 11 used a common baseline for growth.","A child's stride length or mobility is not a stable measurement unit.","body size, stride length, grip strength, standing balance, visual acuity, or ability to carry objects must never determine measurement mastery.","Length, weight, and capacity describe different attributes","Large does not always mean heavy","Capacity vs amount inside","engineering here means small tabletop models only","Failure is evidence","real bridge is structurally safe"],forbidden:"Children participate in a joyful, developmentally appropriate lesson about measurement and builders through language, math, inquiry, movement, and creation.",mastery:["Direct comparison from common start","Consistent nonstandard measurement","Number plus unit communication","Measurement error detection","Weight reasoning","Capacity reasoning","Attribute distinction","Engineering constraint and fair test","Evidence-based design revision"]},
+  {unit:16,days:["Monday · Needs & Context Detectives","Tuesday · Token Count Lab","Wednesday · Goods & Services Inquiry","Thursday · Choice Market Lab","Friday · Decision Conference"],must:["Week 13 used part-part-whole number stories and consent-aware giving; Week 15 strengthened measurement and fair comparison.","No poverty or wealth performance:","Needs vary by person and circumstance.","Fictional examples are always enough.","Tokens are math tools","Pennies are optional","Amounts do not rank people","Money is one coordination tool","No job hierarchy","Saving is delayed use, not virtue","Sharing is voluntary","Everyone needs the same things","money/possessions do not measure a person's worth or responsibility."],forbidden:"Children participate in a joyful, developmentally appropriate lesson about needs, wants, money, and choices through language, math, inquiry, movement, and creation.",mastery:["Needs and wants in context","Economic privacy and dignity","Token counting","Amount comparison","Goods and services","Constrained choice and tradeoff","Saving reasoning without moralization","Voluntary sharing and consent","Integrated decision reflection"]}
 ];
 
 function assertInlineScriptsParse(label,html){
@@ -36,29 +37,17 @@ function assertInlineScriptsParse(label,html){
     .map(m=>m[1]).filter(s=>s.trim());
   assert.ok(scripts.length>0,`${label} must contain inline behavior`);
   for(const [i,script] of scripts.entries()){
-    try{new Function(script)}catch(error){
-      throw new Error(`${label} inline script ${i+1} invalid: ${error.message}`);
-    }
+    try{new Function(script)}catch(error){throw new Error(`${label} inline script ${i+1} invalid: ${error.message}`)}
   }
 }
 
-assert.ok(gate.includes('const VERSION="1.2.10"'),"mastery engine must remain on Week 15 rollout contract or later");
+assert.ok(gate.includes('const VERSION="1.2.11"'),"mastery engine must remain on Week 16 rollout contract or later");
 for(const marker of [
-  'const PASS=80',
-  'const TOTAL_WEEKS=36',
-  'const DAYS_PER_WEEK=5',
-  'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15])',
-  'reviewedUnlocks:false',
-  'legacyScoresUnlock:false',
-  'directUrlUnlocks:false',
-  'bestMasteryPreserved:true',
-  'dailyEvidenceIsMastery:false',
-  'recordDayEvidence',
-  'canOpenDay',
-  'allDaysComplete',
-  'essentialSatisfied=true',
-  'clearActiveMasteryRecord',
-  'adultAffirmed!==true'
+  'const PASS=80','const TOTAL_WEEKS=36','const DAYS_PER_WEEK=5',
+  'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16])',
+  'reviewedUnlocks:false','legacyScoresUnlock:false','directUrlUnlocks:false',
+  'bestMasteryPreserved:true','dailyEvidenceIsMastery:false','recordDayEvidence',
+  'canOpenDay','allDaysComplete','essentialSatisfied=true','clearActiveMasteryRecord','adultAffirmed!==true'
 ])assert.ok(gate.includes(marker),`authority must preserve ${marker}`);
 assert.ok(gate.includes('const best=Math.max(old.bestPercent,percent)')&&gate.includes('const bestQualified=Math.max(old.bestQualifiedPercent,essential?percent:0)'),"best evidence and qualifying mastery must be preserved");
 assert.ok(gate.includes('n>=19&&!milestoneMastery("midterm").mastered'),"Week 19+ must require midyear mastery");
@@ -90,12 +79,10 @@ for(const cfg of UPGRADED){
 }
 
 const lessonRoot=path.join(ROOT,"curriculum","lessons");
-const lessonDirs=fs.readdirSync(lessonRoot,{withFileTypes:true})
-  .filter(e=>e.isDirectory()&&/^unit-\d{2}$/.test(e.name)).map(e=>e.name);
+const lessonDirs=fs.readdirSync(lessonRoot,{withFileTypes:true}).filter(e=>e.isDirectory()&&/^unit-\d{2}$/.test(e.name)).map(e=>e.name);
 assert.equal(lessonDirs.length,36,"all 36 formal lesson directories must exist");
 for(const dir of lessonDirs){
-  const canonical=`curriculum/lessons/${dir}/index.html`;
-  const preserved=`curriculum/lessons/${dir}/formal-content.html`;
+  const canonical=`curriculum/lessons/${dir}/index.html`,preserved=`curriculum/lessons/${dir}/formal-content.html`;
   assert.ok(exists(canonical)&&exists(preserved),`${dir} routes must exist`);
   const html=read(canonical);
   assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`${canonical} must fail closed in head`);
@@ -103,13 +90,10 @@ for(const dir of lessonDirs){
 }
 
 const assessmentRoot=path.join(ROOT,"curriculum","assessments");
-const assessmentNames=fs.readdirSync(assessmentRoot,{withFileTypes:true})
-  .filter(e=>e.isFile()&&(/^unit-\d{2}-assessment\.html$/.test(e.name)||["midterm.html","final-exam.html","weekly-assessments.html"].includes(e.name))).map(e=>e.name);
+const assessmentNames=fs.readdirSync(assessmentRoot,{withFileTypes:true}).filter(e=>e.isFile()&&(/^unit-\d{2}-assessment\.html$/.test(e.name)||["midterm.html","final-exam.html","weekly-assessments.html"].includes(e.name))).map(e=>e.name);
 assert.equal(assessmentNames.length,39,"39 legacy assessment routes must be accounted for");
 for(const name of assessmentNames){
-  const canonical=`curriculum/assessments/${name}`;
-  const preserved=`curriculum/assessments/published-self-check-${name}`;
-  const html=read(canonical);
+  const canonical=`curriculum/assessments/${name}`,preserved=`curriculum/assessments/published-self-check-${name}`,html=read(canonical);
   assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`${canonical} must remain guarded`);
   assert.ok(exists(preserved),`${preserved} must preserve public self-check history`);
 }
@@ -121,5 +105,5 @@ console.log("Kindergarten Academy Mastery + A++++ Daily Continuity Contract: PAS
 console.log("- 36 lesson routes fail closed; 39 legacy assessment routes remain intercepted");
 console.log(`- A++++ daily sequence active for Weeks ${UPGRADED.map(x=>x.unit).join(", ")}`);
 console.log("- week-specific rubrics remain curriculum data with exactly 10 criteria and required core evidence");
-console.log("- Week 15 preserves fair measurement, attribute distinctions, engineering constraints, access, safety, and evidence-based revision");
+console.log("- Week 16 preserves economic dignity/privacy, contextual needs, concrete counting, goods/services, tradeoffs, saving nuance, and voluntary sharing");
 console.log("- daily evidence is never mastery; workflow remains read-only");
