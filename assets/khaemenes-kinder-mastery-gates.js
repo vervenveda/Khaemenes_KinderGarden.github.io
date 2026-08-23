@@ -14,46 +14,351 @@
  */
 (function attachKhaemenesKinderMasteryGates(global){
   "use strict";
-  const VERSION="1.2.5",PASS=80,TOTAL_WEEKS=36,DAYS_PER_WEEK=5;
+
+  const VERSION="1.2.5";
+  const PASS=80;
+  const TOTAL_WEEKS=36;
+  const DAYS_PER_WEEK=5;
   const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10]);
   const KEY="khaemenes_kindergarten_mastery_receipts_v1";
   const ACADEMY_REGISTRY="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js";
   const CONTINUITY_SCRIPT="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-continuity.js";
-  const CURRICULUM_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/",MASTERY_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/mastery/",FAMILY_HOME="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
+  const CURRICULUM_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/";
+  const MASTERY_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/mastery/";
+  const FAMILY_HOME="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
+
   const now=()=>new Date().toISOString();
-  const readJSON=(k,f)=>{try{const r=global.localStorage.getItem(k);return r?JSON.parse(r):f}catch{return f}},writeJSON=(k,v)=>{try{global.localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
-  function ensureScript(src,marker){if(!global.document)return null;const e=global.document.querySelector(`script[data-${marker}],script[src="${src}"]`);if(e)return e;const s=global.document.createElement("script");s.src=src;s.async=false;s.setAttribute(`data-${marker}`,"1");(global.document.head||global.document.documentElement).appendChild(s);return s}
-  function ensureDependencies(){if(!global.KhaemenesFamilyRegistry)ensureScript(ACADEMY_REGISTRY,"khaemenes-family-registry");if(!global.KhaemenesKinderContinuity)ensureScript(CONTINUITY_SCRIPT,"khaemenes-kinder-continuity")}
-  function learnerSummary(){return global.KhaemenesKinderContinuity?.getLearnerSummary?.()||{hasProfile:false,hasLinkedLearner:false,stageEligible:false,learnerId:null,nickname:null,guardianAuthorized:false}}
-  function formalAccess(){const l=learnerSummary();return Boolean(l.hasProfile&&l.stageEligible!==false&&l.learnerId&&l.guardianAuthorized)}
-  function emptyLearnerRecord(learnerId){return{version:VERSION,learnerId,weeks:{},daily:{},midterm:null,final:null,portfolio:false,createdAt:now(),updatedAt:now()}}
-  function allRecords(){const r=readJSON(KEY,{});return r&&typeof r==="object"?r:{}}
-  function learnerRecord(){const l=learnerSummary();if(!l.learnerId)return emptyLearnerRecord(null);const records=allRecords(),r=records[l.learnerId];return r&&typeof r==="object"?{...emptyLearnerRecord(l.learnerId),...r,weeks:r.weeks&&typeof r.weeks==="object"?r.weeks:{},daily:r.daily&&typeof r.daily==="object"?r.daily:{},learnerId:l.learnerId}:emptyLearnerRecord(l.learnerId)}
-  function saveLearnerRecord(r){const l=learnerSummary();if(!l.learnerId||l.learnerId!==r.learnerId)return false;const records=allRecords();records[l.learnerId]={...r,version:VERSION,updatedAt:now()};const ok=writeJSON(KEY,records);if(ok)global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-mastery-changed",{detail:{learnerId:l.learnerId}}));return ok}
-  function receipt(p=0){p=Math.max(0,Math.min(100,Number(p)||0));return Object.freeze({bestPercent:p,bestQualifiedPercent:p,latestPercent:p,mastered:p>=PASS,attempts:[]})}
-  function normalizedReceipt(v){if(!v||typeof v!=="object")return receipt(0);const attempts=Array.isArray(v.attempts)?v.attempts.slice(-30):[],latest=Math.max(0,Math.min(100,Number(v.latestPercent)||0)),best=Math.max(0,Math.min(100,Number(v.bestPercent)||0)),legacy=v.mastered===true?best:0,qualified=Math.max(0,Math.min(100,Number(v.bestQualifiedPercent)||legacy));return Object.freeze({...v,bestPercent:best,bestQualifiedPercent:qualified,latestPercent:latest,mastered:qualified>=PASS,attempts})}
-  function weekMastery(u){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));return normalizedReceipt(learnerRecord().weeks?.[u])}
-  function milestoneMastery(k){if(!["midterm","final"].includes(k))throw new Error("invalid-milestone");return normalizedReceipt(learnerRecord()[k])}
-  function sequenceRequired(u){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));return DAILY_SEQUENCE_UNITS.has(u)}
-  function normalizeDay(d){return Math.max(1,Math.min(DAYS_PER_WEEK,Number(d)||1))}
-  function dayEvidence(u,d){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));d=normalizeDay(d);const v=learnerRecord().daily?.[u]?.[d];return Object.freeze({unit:u,day:d,completed:Boolean(v?.completed),at:v?.at||null,source:v?.source||null,evidenceType:v?.evidenceType||null,artifact:v?.artifact||null})}
-  function allDaysComplete(u){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));if(!sequenceRequired(u))return true;for(let d=1;d<=DAYS_PER_WEEK;d++)if(!dayEvidence(u,d).completed)return false;return true}
-  function allPriorMastered(u){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));for(let i=1;i<u;i++)if(!weekMastery(i).mastered)return false;return true}
-  function canOpenWeek(u){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));if(!formalAccess()||!allPriorMastered(u))return false;if(u>=19&&!milestoneMastery("midterm").mastered)return false;return true}
-  function canOpenDay(u,d){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));d=normalizeDay(d);if(!canOpenWeek(u))return false;if(!sequenceRequired(u))return true;for(let p=1;p<d;p++)if(!dayEvidence(u,p).completed)return false;return true}
-  function canAssessWeek(u){u=Math.max(1,Math.min(TOTAL_WEEKS,Number(u)||1));return canOpenWeek(u)&&allDaysComplete(u)}
-  function canAssessMilestone(k){if(!formalAccess())return false;if(k==="midterm"){for(let i=1;i<=18;i++)if(!weekMastery(i).mastered)return false;return true}if(k==="final"){if(!milestoneMastery("midterm").mastered)return false;for(let i=1;i<=TOTAL_WEEKS;i++)if(!weekMastery(i).mastered)return false;return true}return false}
-  function recordDayEvidence({unit,day,evidenceType="daily-learning-evidence",artifact="",source="learner-application",completed=true}={}){const u=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1)),d=normalizeDay(day);if(!formalAccess())throw new Error("formal-access-required");if(!canOpenDay(u,d))throw new Error("day-not-eligible");if(!sequenceRequired(u))throw new Error("daily-sequence-not-enabled");if(completed!==true)throw new Error("daily-evidence-incomplete");const r=learnerRecord();r.daily=r.daily&&typeof r.daily==="object"?r.daily:{};r.daily[u]=r.daily[u]&&typeof r.daily[u]==="object"?r.daily[u]:{};const old=r.daily[u][d]||{};r.daily[u][d]={...old,unit:u,day:d,completed:true,at:old.at||now(),updatedAt:now(),source:String(source||"learner-application").slice(0,100),evidenceType:String(evidenceType||"daily-learning-evidence").slice(0,100),artifact:String(artifact||"").slice(0,500)};saveLearnerRecord(r);global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-daily-evidence-changed",{detail:{unit:u,day:d,completed:true}}));return dayEvidence(u,d)}
-  function updateReceipt(prior,{met,total,source,adultAffirmed,essentialSatisfied=true}){if(adultAffirmed!==true)throw new Error("adult-affirmation-required");const t=Math.max(1,Number(total)||1),m=Math.max(0,Math.min(t,Number(met)||0)),percent=Math.round(m/t*100),essential=essentialSatisfied!==false,old=normalizedReceipt(prior),attempt={at:now(),met:m,total:t,percent,essentialSatisfied:essential,source:String(source||"adult-observed-performance-rubric").slice(0,100),adultAffirmed:true},attempts=[...old.attempts,attempt].slice(-30),best=Math.max(old.bestPercent,percent),bestQualified=Math.max(old.bestQualifiedPercent,essential?percent:0);return{bestPercent:best,bestQualifiedPercent:bestQualified,latestPercent:percent,mastered:bestQualified>=PASS,attempts,source:attempt.source,updatedAt:attempt.at}}
-  function syncCompatibility(r){const c=global.KhaemenesKinderContinuity;if(!c?.loadCurriculumState||!c?.saveCurriculumState)return;const s=c.loadCurriculumState({student:"Kindergarten Scholar",weekly:{},midterm:0,final:0,portfolio:false});s.weekly=s.weekly&&typeof s.weekly==="object"?s.weekly:{};for(let n=1;n<=TOTAL_WEEKS;n++){const x=normalizedReceipt(r.weeks?.[n]);if(x.bestPercent>0)s.weekly[n]=x.bestPercent}s.midterm=normalizedReceipt(r.midterm).bestPercent;s.final=normalizedReceipt(r.final).bestPercent;s.portfolio=Boolean(r.portfolio);c.saveCurriculumState(s)}
-  function recordWeekEvidence({unit,met,total=10,source="adult-observed-performance-rubric",adultAffirmed=false,essentialSatisfied=true}={}){const u=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));if(!formalAccess())throw new Error("formal-access-required");if(!canAssessWeek(u))throw new Error("week-not-eligible");const r=learnerRecord();r.weeks[u]=updateReceipt(r.weeks[u],{met,total,source,adultAffirmed,essentialSatisfied});saveLearnerRecord(r);syncCompatibility(r);return normalizedReceipt(r.weeks[u])}
-  function recordMilestoneEvidence({kind,met,total=40,source="adult-observed-performance-demonstration",adultAffirmed=false}={}){if(!["midterm","final"].includes(kind))throw new Error("invalid-milestone");if(!formalAccess())throw new Error("formal-access-required");if(!canAssessMilestone(kind))throw new Error("milestone-not-eligible");const r=learnerRecord();r[kind]=updateReceipt(r[kind],{met,total,source,adultAffirmed,essentialSatisfied:true});saveLearnerRecord(r);syncCompatibility(r);return milestoneMastery(kind)}
-  function setPortfolioComplete(complete,{adultAffirmed=false}={}){if(!formalAccess())throw new Error("formal-access-required");if(adultAffirmed!==true)throw new Error("adult-affirmation-required");const r=learnerRecord();r.portfolio=Boolean(complete);r.portfolioUpdatedAt=now();saveLearnerRecord(r);syncCompatibility(r);return r.portfolio}
-  function clearActiveMasteryRecord({adultAffirmed=false}={}){if(!formalAccess())throw new Error("formal-access-required");if(adultAffirmed!==true)throw new Error("adult-affirmation-required");const l=learnerSummary(),rs=allRecords();delete rs[l.learnerId];const ok=writeJSON(KEY,rs);if(ok)global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-mastery-changed",{detail:{learnerId:l.learnerId,reset:true}}));return ok}
-  function completedWeeks(){let c=0;for(let n=1;n<=TOTAL_WEEKS;n++)if(weekMastery(n).mastered)c++;return c}function nextWeek(){for(let n=1;n<=TOTAL_WEEKS;n++)if(!weekMastery(n).mastered)return n;return TOTAL_WEEKS}function certificationReady(){return completedWeeks()===TOTAL_WEEKS&&milestoneMastery("midterm").mastered&&milestoneMastery("final").mastered&&Boolean(learnerRecord().portfolio)}
-  function currentPathTarget(){const p=String(global.location?.pathname||"");let m=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i);if(m)return{type:"week",unit:Number(m[1])};m=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/formal-content\.html$/i);if(m)return{type:"week-content",unit:Number(m[1])};m=p.match(/\/curriculum\/assessments\/unit-(\d{2})-assessment\.html$/i);if(m)return{type:"week-assessment",unit:Number(m[1])};if(/\/curriculum\/assessments\/midterm\.html$/i.test(p))return{type:"milestone",kind:"midterm"};if(/\/curriculum\/assessments\/final-exam\.html$/i.test(p))return{type:"milestone",kind:"final"};if(/\/curriculum\/assessments\/weekly-assessments\.html$/i.test(p))return{type:"assessment-index"};return null}
-  function lockDocument(reason,target){if(!global.document)return;if(!global.document.body){global.document.addEventListener("DOMContentLoaded",()=>lockDocument(reason,target),{once:true});return}const l=learnerSummary();global.document.documentElement.removeAttribute("data-khaemenes-formal-gate-pending");const a=target?.type==="week-assessment"||target?.type==="milestone",message=reason==="profile"?"A free active Kindergarten learner with grown-up authorization is required for formal curriculum.":a?`This mastery demonstration is still locked. Complete its prerequisite learning at ${PASS}% or higher first.`:`This formal week is still locked. Complete the required prior mastery at ${PASS}% or higher before continuing.`;global.document.body.innerHTML=`<main style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#f4fff1;color:#263a31;font:16px/1.6 Arial,sans-serif;text-align:center"><section style="max-width:620px;padding:28px;background:#fff;border-radius:18px"><h1>🔒 Formal content locked</h1><p>${message}</p><p>Preview activities remain free. Review does not count as mastery, legacy typed scores do not unlock curriculum, and direct URLs do not create an unlock.</p><p><a href="${CURRICULUM_HOME}">Return to Curriculum</a> · <a href="${FAMILY_HOME}">Family Profile</a></p>${l?.nickname?`<small>Active learner: ${String(l.nickname).replace(/[&<>"']/g,"")}</small>`:""}</section></main>`;global.document.title="Formal Content Locked · Khaemenes Kinder Garden"}
-  function redirectLegacyAssessment(t){if(t.type==="week-assessment")global.location.replace(`${MASTERY_HOME}?unit=${t.unit}`);else if(t.type==="milestone")global.location.replace(`${MASTERY_HOME}?milestone=${encodeURIComponent(t.kind)}`);else global.location.replace(`${CURRICULUM_HOME}#units`)}
-  function guardFormalPage(){const t=currentPathTarget();if(!t)return;if(global.document)global.document.documentElement.setAttribute("data-khaemenes-formal-gate-pending","1");const st=global.document?.createElement?.("style");if(st){st.textContent='html[data-khaemenes-formal-gate-pending="1"] body{visibility:hidden!important}';(global.document.head||global.document.documentElement).appendChild(st)}if(t.type==="assessment-index"){redirectLegacyAssessment(t);return}ensureDependencies();let attempt=0;const check=()=>{attempt++;if(global.KhaemenesFamilyRegistry&&global.KhaemenesKinderContinuity){if(!formalAccess()){lockDocument("profile",t);return}if((t.type==="week"||t.type==="week-content")&&canOpenWeek(t.unit)){global.document?.documentElement?.removeAttribute("data-khaemenes-formal-gate-pending");return}if(t.type==="week-assessment"&&canAssessWeek(t.unit)){redirectLegacyAssessment(t);return}if(t.type==="milestone"&&canAssessMilestone(t.kind)){redirectLegacyAssessment(t);return}lockDocument("mastery",t);return}if(attempt<120){global.setTimeout(check,50);return}lockDocument("profile",t)};check()}
-  global.KhaemenesKinderMasteryGates=Object.freeze({version:VERSION,passingScore:PASS,totalWeeks:TOTAL_WEEKS,daysPerWeek:DAYS_PER_WEEK,key:KEY,policy:Object.freeze({reviewedUnlocks:false,legacyScoresUnlock:false,directUrlUnlocks:false,bestMasteryPreserved:true,dailyEvidenceIsMastery:false,dailySequenceRollout:Array.from(DAILY_SEQUENCE_UNITS)}),formalAccess,learnerRecord,weekMastery,milestoneMastery,allPriorMastered,sequenceRequired,dayEvidence,allDaysComplete,canOpenWeek,canOpenDay,canAssessWeek,canAssessMilestone,recordDayEvidence,recordWeekEvidence,recordMilestoneEvidence,setPortfolioComplete,clearActiveMasteryRecord,completedWeeks,nextWeek,certificationReady,guardFormalPage});guardFormalPage()
+  const readJSON=(key,fallback)=>{try{const raw=global.localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}};
+  const writeJSON=(key,value)=>{try{global.localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
+
+  function ensureScript(src,marker){
+    if(!global.document)return null;
+    const existing=global.document.querySelector(`script[data-${marker}],script[src="${src}"]`);
+    if(existing)return existing;
+    const script=global.document.createElement("script");
+    script.src=src;
+    script.async=false;
+    script.setAttribute(`data-${marker}`,"1");
+    (global.document.head||global.document.documentElement).appendChild(script);
+    return script;
+  }
+
+  function ensureDependencies(){
+    if(!global.KhaemenesFamilyRegistry)ensureScript(ACADEMY_REGISTRY,"khaemenes-family-registry");
+    if(!global.KhaemenesKinderContinuity)ensureScript(CONTINUITY_SCRIPT,"khaemenes-kinder-continuity");
+  }
+
+  function learnerSummary(){
+    return global.KhaemenesKinderContinuity?.getLearnerSummary?.()||{
+      hasProfile:false,hasLinkedLearner:false,stageEligible:false,learnerId:null,nickname:null,guardianAuthorized:false
+    };
+  }
+
+  function formalAccess(){
+    const learner=learnerSummary();
+    return Boolean(learner.hasProfile&&learner.stageEligible!==false&&learner.learnerId&&learner.guardianAuthorized);
+  }
+
+  function emptyLearnerRecord(learnerId){
+    return {version:VERSION,learnerId,weeks:{},daily:{},midterm:null,final:null,portfolio:false,createdAt:now(),updatedAt:now()};
+  }
+
+  function allRecords(){
+    const raw=readJSON(KEY,{});
+    return raw&&typeof raw==="object"?raw:{};
+  }
+
+  function learnerRecord(){
+    const learner=learnerSummary();
+    if(!learner.learnerId)return emptyLearnerRecord(null);
+    const records=allRecords();
+    const record=records[learner.learnerId];
+    return record&&typeof record==="object"?{
+      ...emptyLearnerRecord(learner.learnerId),
+      ...record,
+      weeks:record.weeks&&typeof record.weeks==="object"?record.weeks:{},
+      daily:record.daily&&typeof record.daily==="object"?record.daily:{},
+      learnerId:learner.learnerId
+    }:emptyLearnerRecord(learner.learnerId);
+  }
+
+  function saveLearnerRecord(record){
+    const learner=learnerSummary();
+    if(!learner.learnerId||learner.learnerId!==record.learnerId)return false;
+    const records=allRecords();
+    records[learner.learnerId]={...record,version:VERSION,updatedAt:now()};
+    const ok=writeJSON(KEY,records);
+    if(ok)global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-mastery-changed",{detail:{learnerId:learner.learnerId}}));
+    return ok;
+  }
+
+  function receipt(percent=0){
+    const p=Math.max(0,Math.min(100,Number(percent)||0));
+    return Object.freeze({bestPercent:p,bestQualifiedPercent:p,latestPercent:p,mastered:p>=PASS,attempts:[]});
+  }
+
+  function normalizedReceipt(value){
+    if(!value||typeof value!=="object")return receipt(0);
+    const attempts=Array.isArray(value.attempts)?value.attempts.slice(-30):[];
+    const latest=Math.max(0,Math.min(100,Number(value.latestPercent)||0));
+    const best=Math.max(0,Math.min(100,Number(value.bestPercent)||0));
+    const legacyQualified=value.mastered===true?best:0;
+    const qualified=Math.max(0,Math.min(100,Number(value.bestQualifiedPercent)||legacyQualified));
+    return Object.freeze({...value,bestPercent:best,bestQualifiedPercent:qualified,latestPercent:latest,mastered:qualified>=PASS,attempts});
+  }
+
+  function weekMastery(unit){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    return normalizedReceipt(learnerRecord().weeks?.[n]);
+  }
+
+  function milestoneMastery(kind){
+    if(!["midterm","final"].includes(kind))throw new Error("invalid-milestone");
+    return normalizedReceipt(learnerRecord()[kind]);
+  }
+
+  function sequenceRequired(unit){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    return DAILY_SEQUENCE_UNITS.has(n);
+  }
+
+  function normalizeDay(day){
+    return Math.max(1,Math.min(DAYS_PER_WEEK,Number(day)||1));
+  }
+
+  function dayEvidence(unit,day){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    const d=normalizeDay(day);
+    const value=learnerRecord().daily?.[n]?.[d];
+    return Object.freeze({
+      unit:n,day:d,completed:Boolean(value?.completed),at:value?.at||null,
+      source:value?.source||null,evidenceType:value?.evidenceType||null,artifact:value?.artifact||null
+    });
+  }
+
+  function allDaysComplete(unit){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    if(!sequenceRequired(n))return true;
+    for(let d=1;d<=DAYS_PER_WEEK;d++)if(!dayEvidence(n,d).completed)return false;
+    return true;
+  }
+
+  function allPriorMastered(unit){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    for(let i=1;i<n;i++)if(!weekMastery(i).mastered)return false;
+    return true;
+  }
+
+  function canOpenWeek(unit){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    if(!formalAccess())return false;
+    if(!allPriorMastered(n))return false;
+    if(n>=19&&!milestoneMastery("midterm").mastered)return false;
+    return true;
+  }
+
+  function canOpenDay(unit,day){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    const d=normalizeDay(day);
+    if(!canOpenWeek(n))return false;
+    if(!sequenceRequired(n))return true;
+    for(let prior=1;prior<d;prior++)if(!dayEvidence(n,prior).completed)return false;
+    return true;
+  }
+
+  function canAssessWeek(unit){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    return canOpenWeek(n)&&allDaysComplete(n);
+  }
+
+  function canAssessMilestone(kind){
+    if(!formalAccess())return false;
+    if(kind==="midterm"){
+      for(let i=1;i<=18;i++)if(!weekMastery(i).mastered)return false;
+      return true;
+    }
+    if(kind==="final"){
+      if(!milestoneMastery("midterm").mastered)return false;
+      for(let i=1;i<=TOTAL_WEEKS;i++)if(!weekMastery(i).mastered)return false;
+      return true;
+    }
+    return false;
+  }
+
+  function recordDayEvidence({unit,day,evidenceType="daily-learning-evidence",artifact="",source="learner-application",completed=true}={}){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    const d=normalizeDay(day);
+    if(!formalAccess())throw new Error("formal-access-required");
+    if(!canOpenDay(n,d))throw new Error("day-not-eligible");
+    if(!sequenceRequired(n))throw new Error("daily-sequence-not-enabled");
+    if(completed!==true)throw new Error("daily-evidence-incomplete");
+    const record=learnerRecord();
+    record.daily=record.daily&&typeof record.daily==="object"?record.daily:{};
+    record.daily[n]=record.daily[n]&&typeof record.daily[n]==="object"?record.daily[n]:{};
+    const existing=record.daily[n][d]||{};
+    record.daily[n][d]={
+      ...existing,unit:n,day:d,completed:true,at:existing.at||now(),updatedAt:now(),
+      source:String(source||"learner-application").slice(0,100),
+      evidenceType:String(evidenceType||"daily-learning-evidence").slice(0,100),
+      artifact:String(artifact||"").slice(0,500)
+    };
+    saveLearnerRecord(record);
+    global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-daily-evidence-changed",{detail:{unit:n,day:d,completed:true}}));
+    return dayEvidence(n,d);
+  }
+
+  function updateReceipt(prior,{met,total,source,adultAffirmed,essentialSatisfied=true}){
+    if(adultAffirmed!==true)throw new Error("adult-affirmation-required");
+    const t=Math.max(1,Number(total)||1);
+    const m=Math.max(0,Math.min(t,Number(met)||0));
+    const percent=Math.round((m/t)*100);
+    const essential=essentialSatisfied!==false;
+    const old=normalizedReceipt(prior);
+    const attempt={
+      at:now(),met:m,total:t,percent,essentialSatisfied:essential,
+      source:String(source||"adult-observed-performance-rubric").slice(0,100),adultAffirmed:true
+    };
+    const attempts=[...old.attempts,attempt].slice(-30);
+    const best=Math.max(old.bestPercent,percent);
+    const bestQualified=Math.max(old.bestQualifiedPercent,essential?percent:0);
+    return {
+      bestPercent:best,bestQualifiedPercent:bestQualified,latestPercent:percent,
+      mastered:bestQualified>=PASS,attempts,source:attempt.source,updatedAt:attempt.at
+    };
+  }
+
+  function syncCompatibility(record){
+    const continuity=global.KhaemenesKinderContinuity;
+    if(!continuity?.loadCurriculumState||!continuity?.saveCurriculumState)return;
+    const state=continuity.loadCurriculumState({student:"Kindergarten Scholar",weekly:{},midterm:0,final:0,portfolio:false});
+    state.weekly=state.weekly&&typeof state.weekly==="object"?state.weekly:{};
+    for(let n=1;n<=TOTAL_WEEKS;n++){
+      const r=normalizedReceipt(record.weeks?.[n]);
+      if(r.bestPercent>0)state.weekly[n]=r.bestPercent;
+    }
+    state.midterm=normalizedReceipt(record.midterm).bestPercent;
+    state.final=normalizedReceipt(record.final).bestPercent;
+    state.portfolio=Boolean(record.portfolio);
+    continuity.saveCurriculumState(state);
+  }
+
+  function recordWeekEvidence({unit,met,total=10,source="adult-observed-performance-rubric",adultAffirmed=false,essentialSatisfied=true}={}){
+    const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
+    if(!formalAccess())throw new Error("formal-access-required");
+    if(!canAssessWeek(n))throw new Error("week-not-eligible");
+    const record=learnerRecord();
+    record.weeks[n]=updateReceipt(record.weeks[n],{met,total,source,adultAffirmed,essentialSatisfied});
+    saveLearnerRecord(record);syncCompatibility(record);
+    return normalizedReceipt(record.weeks[n]);
+  }
+
+  function recordMilestoneEvidence({kind,met,total=40,source="adult-observed-performance-demonstration",adultAffirmed=false}={}){
+    if(!["midterm","final"].includes(kind))throw new Error("invalid-milestone");
+    if(!formalAccess())throw new Error("formal-access-required");
+    if(!canAssessMilestone(kind))throw new Error("milestone-not-eligible");
+    const record=learnerRecord();
+    record[kind]=updateReceipt(record[kind],{met,total,source,adultAffirmed,essentialSatisfied:true});
+    saveLearnerRecord(record);syncCompatibility(record);
+    return milestoneMastery(kind);
+  }
+
+  function setPortfolioComplete(complete,{adultAffirmed=false}={}){
+    if(!formalAccess())throw new Error("formal-access-required");
+    if(adultAffirmed!==true)throw new Error("adult-affirmation-required");
+    const record=learnerRecord();record.portfolio=Boolean(complete);record.portfolioUpdatedAt=now();
+    saveLearnerRecord(record);syncCompatibility(record);return record.portfolio;
+  }
+
+  function clearActiveMasteryRecord({adultAffirmed=false}={}){
+    if(!formalAccess())throw new Error("formal-access-required");
+    if(adultAffirmed!==true)throw new Error("adult-affirmation-required");
+    const learner=learnerSummary();
+    const records=allRecords();
+    delete records[learner.learnerId];
+    const ok=writeJSON(KEY,records);
+    if(ok)global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-mastery-changed",{detail:{learnerId:learner.learnerId,reset:true}}));
+    return ok;
+  }
+
+  function completedWeeks(){let count=0;for(let n=1;n<=TOTAL_WEEKS;n++)if(weekMastery(n).mastered)count++;return count}
+  function nextWeek(){for(let n=1;n<=TOTAL_WEEKS;n++)if(!weekMastery(n).mastered)return n;return TOTAL_WEEKS}
+  function certificationReady(){return completedWeeks()===TOTAL_WEEKS&&milestoneMastery("midterm").mastered&&milestoneMastery("final").mastered&&Boolean(learnerRecord().portfolio)}
+
+  function currentPathTarget(){
+    const p=String(global.location?.pathname||"");
+    let match=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i);
+    if(match)return {type:"week",unit:Number(match[1])};
+    match=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/formal-content\.html$/i);
+    if(match)return {type:"week-content",unit:Number(match[1])};
+    match=p.match(/\/curriculum\/assessments\/unit-(\d{2})-assessment\.html$/i);
+    if(match)return {type:"week-assessment",unit:Number(match[1])};
+    if(/\/curriculum\/assessments\/midterm\.html$/i.test(p))return {type:"milestone",kind:"midterm"};
+    if(/\/curriculum\/assessments\/final-exam\.html$/i.test(p))return {type:"milestone",kind:"final"};
+    if(/\/curriculum\/assessments\/weekly-assessments\.html$/i.test(p))return {type:"assessment-index"};
+    return null;
+  }
+
+  function lockDocument(reason,target){
+    if(!global.document)return;
+    if(!global.document.body){global.document.addEventListener("DOMContentLoaded",()=>lockDocument(reason,target),{once:true});return}
+    const learner=learnerSummary();
+    global.document.documentElement.removeAttribute("data-khaemenes-formal-gate-pending");
+    const isAssessment=target?.type==="week-assessment"||target?.type==="milestone";
+    const message=reason==="profile"
+      ?"A free active Kindergarten learner with grown-up authorization is required for formal curriculum."
+      :isAssessment
+        ?`This mastery demonstration is still locked. Complete its prerequisite learning at ${PASS}% or higher first.`
+        :`This formal week is still locked. Complete the required prior mastery at ${PASS}% or higher before continuing.`;
+    global.document.body.innerHTML=`<main style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#f4fff1;color:#263a31;font:16px/1.6 'Avenir Next','Segoe UI',Arial,sans-serif;text-align:center"><section style="width:min(100%,620px);padding:28px;border:1px solid rgba(45,93,61,.18);border-top:5px solid #3f9d59;border-radius:18px;background:#fff;box-shadow:0 18px 45px rgba(54,95,72,.12)"><div style="font-size:42px" aria-hidden="true">🔒</div><h1 style="margin:10px 0;color:#22543a;font:700 32px Georgia,serif">Formal content locked</h1><p>${message}</p><p style="color:#66756f;font-size:13px">Preview activities and open Kinder Garden games remain free. Review does not count as mastery, legacy typed scores do not unlock curriculum, and direct URLs do not create an unlock.</p><p><a href="${CURRICULUM_HOME}" style="display:inline-block;margin:6px;padding:10px 14px;border-radius:8px;background:#22543a;color:#fff;text-decoration:none;font-weight:700">Return to Curriculum</a><a href="${FAMILY_HOME}" style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #22543a;border-radius:8px;color:#22543a;text-decoration:none;font-weight:700">Family Profile</a></p>${learner?.nickname?`<small>Active learner: ${String(learner.nickname).replace(/[&<>"']/g,"")}</small>`:""}</section></main>`;
+    global.document.title="Formal Content Locked · Khaemenes Kinder Garden";
+    global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-formal-gate-blocked",{detail:{reason,target}}));
+  }
+
+  function redirectLegacyAssessment(target){
+    if(target.type==="week-assessment")global.location.replace(`${MASTERY_HOME}?unit=${target.unit}`);
+    else if(target.type==="milestone")global.location.replace(`${MASTERY_HOME}?milestone=${encodeURIComponent(target.kind)}`);
+    else global.location.replace(`${CURRICULUM_HOME}#units`);
+  }
+
+  function guardFormalPage(){
+    const target=currentPathTarget();
+    if(!target)return;
+    if(global.document)global.document.documentElement.setAttribute("data-khaemenes-formal-gate-pending","1");
+    const style=global.document?.createElement?.("style");
+    if(style){style.id="khaemenesFormalGatePendingStyle";style.textContent='html[data-khaemenes-formal-gate-pending="1"] body{visibility:hidden!important}';(global.document.head||global.document.documentElement).appendChild(style)}
+    if(target.type==="assessment-index"){redirectLegacyAssessment(target);return}
+    ensureDependencies();
+    let attempt=0;
+    const check=()=>{
+      attempt++;
+      if(global.KhaemenesFamilyRegistry&&global.KhaemenesKinderContinuity){
+        if(!formalAccess()){lockDocument("profile",target);return}
+        if((target.type==="week"||target.type==="week-content")&&canOpenWeek(target.unit)){
+          global.document?.documentElement?.removeAttribute("data-khaemenes-formal-gate-pending");
+          global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-formal-gate-open",{detail:{target,masteryThreshold:PASS}}));
+          return;
+        }
+        if(target.type==="week-assessment"&&canAssessWeek(target.unit)){redirectLegacyAssessment(target);return}
+        if(target.type==="milestone"&&canAssessMilestone(target.kind)){redirectLegacyAssessment(target);return}
+        lockDocument("mastery",target);return;
+      }
+      if(attempt<120){global.setTimeout(check,50);return}
+      lockDocument("profile",target);
+    };
+    check();
+  }
+
+  global.KhaemenesKinderMasteryGates=Object.freeze({
+    version:VERSION,passingScore:PASS,totalWeeks:TOTAL_WEEKS,daysPerWeek:DAYS_PER_WEEK,key:KEY,
+    policy:Object.freeze({
+      reviewedUnlocks:false,legacyScoresUnlock:false,directUrlUnlocks:false,bestMasteryPreserved:true,
+      dailyEvidenceIsMastery:false,dailySequenceRollout:Array.from(DAILY_SEQUENCE_UNITS)
+    }),
+    formalAccess,learnerRecord,weekMastery,milestoneMastery,allPriorMastered,
+    sequenceRequired,dayEvidence,allDaysComplete,canOpenWeek,canOpenDay,canAssessWeek,canAssessMilestone,
+    recordDayEvidence,recordWeekEvidence,recordMilestoneEvidence,setPortfolioComplete,
+    clearActiveMasteryRecord,completedWeeks,nextWeek,certificationReady,guardFormalPage
+  });
+
+  guardFormalPage();
 })(window);
