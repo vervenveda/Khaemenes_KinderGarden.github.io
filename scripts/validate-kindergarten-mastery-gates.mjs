@@ -23,8 +23,8 @@ assert.ok(gate.includes('if(n>=19&&!milestoneMastery("midterm").mastered)return 
 assert.ok(gate.includes('for(let i=1;i<=18;i++)if(!weekMastery(i).mastered)return false'),"midyear must require Weeks 1-18 mastery");
 assert.ok(gate.includes('for(let i=1;i<=TOTAL_WEEKS;i++)if(!weekMastery(i).mastered)return false'),"final must require all 36 weeks mastery");
 assert.ok(gate.includes('week-assessment'),"legacy unit assessment URLs must be recognized");
-assert.ok(gate.includes('midterm.html'),"legacy midterm URL must be recognized");
-assert.ok(gate.includes('final-exam.html'),"legacy final URL must be recognized");
+assert.ok(gate.includes('midterm\\.html'),"legacy midterm URL must be recognized");
+assert.ok(gate.includes('final-exam\\.html'),"legacy final URL must be recognized");
 assert.ok(gate.includes('redirectLegacyAssessment'),"eligible legacy assessment URLs must route to current mastery evidence");
 assert.ok(gate.includes('clearActiveMasteryRecord'),"record reset must be explicit and separate from later practice");
 
