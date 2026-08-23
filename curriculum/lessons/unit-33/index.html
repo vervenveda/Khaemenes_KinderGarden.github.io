@@ -16,5 +16,8 @@ html,body{min-height:100%;margin:0}body{display:grid;place-items:center;padding:
 <script>
 (()=>{"use strict";const match=String(location.pathname||"").match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i),unit=match?Number(match[1]):null;let done=false,tries=0;async function hydrate(){if(done||!unit)return;const G=window.KhaemenesKinderMasteryGates;if(!G||document.documentElement.hasAttribute("data-khaemenes-formal-gate-pending")){if(++tries<180)setTimeout(hydrate,50);return}if(!G.formalAccess()||!G.canOpenWeek(unit))return;done=true;try{const r=await fetch("formal-content.html",{cache:"no-store",credentials:"same-origin"});if(!r.ok)throw new Error("lesson-content-unavailable");const html=await r.text();document.open();document.write(html);document.close()}catch{document.body.innerHTML='<main class="gate-card"><div class="mark">🌱</div><h1>Lesson content unavailable</h1><p>The mastery gate opened correctly, but the preserved lesson content could not be loaded. Return to the curriculum and try again.</p><p><a href="../../index.html">Return to Curriculum</a></p></main>'}}window.addEventListener("khaemenes-kindergarten-formal-gate-open",hydrate,{once:true});hydrate()})();
 </script>
+
+<!-- Verve N Veda Beta Program -->
+<script src="https://vervenveda.com/assets/vnv-beta-link.js" defer></script>
 </body>
 </html>
