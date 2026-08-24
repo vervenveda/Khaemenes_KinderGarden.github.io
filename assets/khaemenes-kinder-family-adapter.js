@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Family Adapter v3.0.0
+ * Khaemenes Kinder Garden · Family Adapter v3.0.1
  * ------------------------------------------------
  * Family Registry is authoritative for formal Kinder Garden access.
  * Archaemenes is the single Academy Mentor. Older Kinder mentor names are
@@ -9,7 +9,7 @@
 (function attachKinderFamilyAdapter(global){
   "use strict";
 
-  const VERSION="3.0.0";
+  const VERSION="3.0.1";
   const ARCHAEMENES_ID="archaemenes";
   const MENTOR_URL="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/";
   const FAMILY_URL="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
@@ -19,6 +19,10 @@
   function writeJSON(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}}
   function readJSON(key,fallback=null){try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}}
   function normalizeStyle(value){const style=String(value||"").toLowerCase();return VALID_STYLES.has(style)?style:"playful"}
+  function legacyForLearner(learner){
+    const raw=readJSON("khaemenes_preschool_profile_v1",{})||{};
+    return raw?.learnerId===learner?.learnerId?raw:{};
+  }
 
   function styleFor(learner,legacy={}){
     const identity=learner?.mentorIdentity&&typeof learner.mentorIdentity==="object"?learner.mentorIdentity:{};
@@ -68,7 +72,7 @@
     const record=registry?.learners?.[learner.learnerId];
     if(!record)return learner;
 
-    const legacy=readJSON("khaemenes_preschool_profile_v1",{})||{};
+    const legacy=legacyForLearner(record);
     const nextIdentity=canonicalMentorIdentity(record,legacy);
     const currentIdentity=record.mentorIdentity&&typeof record.mentorIdentity==="object"?record.mentorIdentity:{};
     const changed=record.mentorId!==ARCHAEMENES_ID ||
@@ -88,13 +92,13 @@
   function syncCompatibility(learner){
     if(!learner||String(learner.stage||"").toLowerCase()!=="kindergarten")return false;
 
-    const legacy=readJSON("khaemenes_preschool_profile_v1",{})||{};
+    const legacy=legacyForLearner(learner);
     const style=styleFor(learner,legacy);
     const mentorIdentity=canonicalMentorIdentity(learner,legacy);
     const merged={
       ...legacy,
       learnerId:learner.learnerId,
-      nickname:learner.nickname||legacy.nickname||"Learner",
+      nickname:learner.nickname||"Learner",
       pathway:"kindergarten",
       ageBand:learner.ageBand||legacy.ageBand||"5-6",
       interests:Array.isArray(learner.interests)?learner.interests:(legacy.interests||[]),
