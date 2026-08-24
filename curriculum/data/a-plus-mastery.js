@@ -157,6 +157,18 @@
       ["Light investigation safety","Knows never to look directly at the Sun and never requires lasers, flames/candles, high-heat lamps, electrical disassembly, lights aimed at eyes, unsafe darkness, or unsupervised night/outdoor observation.",true],
       ["Accessible science participation","Uses safe visual, tactile, modeled, signed, AAC, audio-described, partner-supported, or adult-scribed pathways without making standing, visual acuity, flashlight handling, or fine-motor tracing prerequisites."],
       ["Integrated light scientist reflection","Integrates shadow formation, one controlled change, fair measurement, Earth-rotation reasoning, and one corrected misconception or model limitation in an accessible explanation.",true]
+    ],
+    18:[
+      ["Cross-domain retrieval","Retrieves first-semester learning across literacy/language, mathematics, and inquiry through an accessible response mode before coaching and identifies at least one secure idea and one next teaching target.",true],
+      ["Literacy transfer after remediation","Demonstrates a story, language-pattern, print/sound, or meaning concept on a new example after targeted reteaching rather than relying on memorized wording or performance style.",true],
+      ["Mathematics transfer after remediation","Represents and solves a changed-example task using age-appropriate counting, comparison, composition/decomposition, pattern, geometry, spatial, or measurement reasoning and explains what stayed the same.",true],
+      ["Inquiry and evidence transfer","Uses observation/evidence, model, classification, prediction/result, fair comparison, or revision reasoning in a new inquiry/community/design scenario.",true],
+      ["Error analysis and repair","Identifies at least one error, misconception, weak strategy, or missing piece of evidence and demonstrates a correction, improved representation, or better strategy.",true],
+      ["Privacy safety and dignity transfer","Applies an appropriate privacy, safety, consent, accessibility, humane-care, or economic-dignity boundary from prior learning without requiring personal disclosure.",true],
+      ["Integrated practice demonstration","Combines communication with at least one mathematical representation and one inquiry/evidence idea in a novel practice task and identifies a relevant safety, limitation, or revision when appropriate.",true],
+      ["Accessible mastery participation","Demonstrates the academic target through an appropriate accommodation or communication pathway without making speed, eye contact, handwriting fluency, loud speech, or public performance prerequisites."],
+      ["Portfolio and growth reflection","Selects one work sample, model, drawing, or dictated explanation as evidence and explains one area of growth plus one reasonable next practice target."],
+      ["Midyear authority boundary","Accurately explains that Week 18 daily practice and Week 18 mastery do not award midyear mastery; only after Weeks 1–18 are mastered does the separate midyear demonstration become eligible, and it still requires its own 80% adult-observed evidence.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
