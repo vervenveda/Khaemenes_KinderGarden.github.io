@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Formal Mastery Gates v1.2.17
+ * Khaemenes Kinder Garden · Formal Mastery Gates v1.2.18
  * -------------------------------------------------------
  * Formal advancement is learner-scoped and requires >=80% computed evidence.
  * Public previews and games remain open. Legacy typed scores are preserved as
@@ -15,11 +15,11 @@
 (function attachKhaemenesKinderMasteryGates(global){
   "use strict";
 
-  const VERSION="1.2.17";
+  const VERSION="1.2.18";
   const PASS=80;
   const TOTAL_WEEKS=36;
   const DAYS_PER_WEEK=5;
-  const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]);
+  const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]);
   const KEY="khaemenes_kindergarten_mastery_receipts_v1";
   const ACADEMY_REGISTRY="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js";
   const CONTINUITY_SCRIPT="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-continuity.js";
