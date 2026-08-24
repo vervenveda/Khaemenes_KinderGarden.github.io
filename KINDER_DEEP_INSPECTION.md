@@ -1,106 +1,201 @@
-# Khaemenes Kinder Garden — Deep Inspection & Curriculum Portal Repair
+# Khaemenes Kinder Garden — Deep Inspection & Current Architecture
 
-## Repository findings
+## Current status
 
-The repository already has a strong curriculum foundation:
+Kinder Garden has a strong curriculum foundation and is now aligned with the Academy-wide learner and Mentor authority model.
 
-- 36 lesson-unit folders;
+Verified repository structure includes:
+
+- 36 curriculum weeks / units;
 - 36 unit assessments plus weekly assessment hub, midterm, and final;
 - 36 curriculum printable packets;
-- a curriculum dashboard;
-- curriculum record and certificate logic;
-- 20 Kinder Garden applications;
-- local learner continuity adapters;
-- Crechè profile/catalog bridges.
+- curriculum dashboard, records, and certificate logic;
+- 20 Kinder Garden learning applications;
+- Crechè resource continuity;
+- Family Registry integration;
+- learner-scoped Kindergarten records;
+- lesson-aware companion matching;
+- one Academy Mentor: Archaemenes.
 
-## Problems found and repaired in this package
+The 80% mastery rule remains unchanged.
 
-### 1. Teacher Tools route mismatch
+---
 
-The landing page and curriculum pages point to:
+## 1. Family and learner authority
+
+Formal learner identity comes from the shared Khaemenes Academy Family Registry:
+
+`https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js`
+
+Kinder Garden does not maintain a second formal learner account.
+
+The Kindergarten Family Curriculum Portal reads the active Family Registry learner, allows learner switching through the shared family state, and presents learner-scoped curriculum progress.
+
+---
+
+## 2. Mentor consolidation
+
+Earlier Kinder Garden builds contained a local Mentor model with Pip, Miri, Nova, Sage, and optional custom visible Mentor identities.
+
+That model has been retired as an active authority.
+
+The canonical Mentor is now:
+
+**Archaemenes · Wise Owl**
+
+Active Mentor URL:
+
+`https://vervenveda.com/Khaemenes_Academy.github.io/mentor/`
+
+Family Registry records normalize the learner to:
+
+```json
+{
+  "mentorId": "archaemenes"
+}
+```
+
+The former Pip / Miri / Nova / Sage distinctions survive only as communication-style metadata. Former custom visible Mentor choices may survive as legacy presentation-preference metadata. Neither creates a second Mentor identity or application.
+
+### Active compatibility boundary
+
+The root `index.html` is a large established campus surface with historical Mentor setup markup and inline compatibility functions. Rather than rewrite that monolith while changing Mentor authority, the current adapter:
+
+- hides and inerts the old setup overlay;
+- disables the old setup save control;
+- rewrites legacy Mentor links to Academy Archaemenes;
+- capture-routes child Mentor prompt actions to the Academy Mentor;
+- rewrites visible Mentor copy to Archaemenes / Wise Owl;
+- prevents the historical prompt handler from operating as a separate Mentor program.
+
+This leaves old source code as compatibility residue, but not as the active Mentor authority.
+
+The relevant files are:
+
+- `assets/khaemenes-kinder-family-adapter.js`
+- `assets/khaemenes-kinder-continuity.js`
+- `mentor-manifest.json`
+
+---
+
+## 3. NAIB boundary
+
+NAIB remains the academic navigation, lesson-matching, and delegation layer.
+
+NAIB may:
+
+- identify the learner's academic position;
+- match practice resources to the current lesson;
+- recommend the next academic doorway;
+- help route to a specialist or resource.
+
+NAIB is not a second Mentor and does not replace Archaemenes.
+
+---
+
+## 4. Curriculum and practice relationship
+
+The formal unit remains the lesson. Apps and Crechè activities are practice companions.
+
+`assets/khaemenes-kinder-companions.js` reads the actual lesson context and scores resources against:
+
+- week theme;
+- essential question;
+- literacy focus;
+- mathematics focus;
+- inquiry focus;
+- SEL focus;
+- maker project;
+- lesson title, objective, and workshop context.
+
+This allows different Monday–Friday practice recommendations without changing the formal lesson or mastery record.
+
+---
+
+## 5. Family Curriculum Portal
+
+The stage-specific `family/index.html` remains useful as a curriculum-facing family surface. It:
+
+- reads the shared Family Registry;
+- shows and switches learners;
+- reads learner-scoped Kindergarten progress;
+- shows the next open week;
+- links unit, printable, and weekly assessment materials;
+- surfaces matched Kinder and Crechè companions;
+- exports local family + Kindergarten backup information;
+- links to the Academy Family Profile for account and permission management.
+
+Any historical `#mentor` doorway on that page is rewritten by the Family Adapter to the canonical Academy Archaemenes Mentor.
+
+---
+
+## 6. Teacher Tools compatibility route
+
+The formal curriculum expects:
 
 `curriculum/teacher-tools/index.html`
 
-but the repository tree currently contains:
+That compatibility route exists so curriculum, lesson, assessment, certificate, and stylesheet references resolve consistently.
 
-`teacher-tools/index.html`
+---
 
-The existing root Teacher Tools file was also written with relative paths that make sense *inside* `curriculum/teacher-tools/`, not at the repository root.
+## 7. Mobile and stylesheet repairs retained
 
-**Repair:** this package creates `curriculum/teacher-tools/index.html`, so the existing curriculum links, lesson links, assessment links, certificate links, and stylesheet references resolve consistently.
+Earlier repairs remain in place:
 
-### 2. Missing Kindergarten-specific family portal
+- dynamic mobile menu placement avoids fixed-header overlap;
+- `curriculum/assets/lesson.css` provides Unit 01 stylesheet compatibility;
+- curriculum and companion links remain locally resolvable according to the existing validation record.
 
-The shared Academy already has a master Family Profile, but Kinder Garden did not have its own curriculum-facing `family/index.html`.
+---
 
-**Repair:** this package adds a stage-specific Family Curriculum Portal that:
-- reads the shared family registry;
-- shows and switches local learner accounts;
-- reads learner-scoped Kindergarten progress;
-- shows the next open week;
-- links the unit, printable, and weekly assessment;
-- shows a matched Kinder Garden practice app;
-- shows a matched age-appropriate Crechè companion;
-- exports a combined local family + Kindergarten backup;
-- links to the Academy master Family Profile for adult/permission management.
-
-### 3. Games/apps were separate from the curriculum
-
-The root page displayed 36 units, 20 Kinder apps, and Crechè apps as separate directories. The formal unit cards did not tell families which app was relevant to the lesson.
-
-**Repair:** `assets/khaemenes-kinder-companions.js` now maps all 36 weeks to curriculum-appropriate practice. Both the root landing page and formal curriculum dashboard surface those companions *inside the weekly learning flow*.
-
-The rule is explicit: **the unit is the lesson; the app is practice.**
-
-### 4. Newly created Kinder profiles did not immediately synchronize back into the shared family registry
-
-The landing page wrote the legacy/shared learner profile and the Kinder continuity record. The family adapter migrates that information when it loads, but a newly created profile could require a later reload before the shared registry reflected the change.
-
-**Repair:** the updated landing page synchronizes the learner to the shared family registry immediately after a successful Kinder learner setup and refreshes learner/mentor views when family-registry events fire.
-
-### 5. Mobile menu placement
-
-The header sits below a utility strip at the top of the page while the mobile menu used a fixed top value.
-
-**Repair:** the menu now measures the actual sticky-header bottom whenever it opens, scrolls, or resizes, reducing overlap on small screens.
-
-### 6. Unit 01 stylesheet compatibility route
-
-Unit 01 references `curriculum/assets/lesson.css`; that file is not present in the repository tree, while later units use `curriculum/assets/styles.css`.
-
-**Repair:** this package adds a local `lesson.css` compatibility layer that inherits the existing curriculum stylesheet.
-
-## Curriculum architecture after repair
+## Authority map
 
 ```text
-Family Portal
+Family Registry
      ↓
-Active learner → stable learner ID
-     ↓
-36-week Curriculum Dashboard
-     ↓
-Week 01 … Week 36
-     ├── 5 daily lessons
-     ├── printable packet
-     ├── weekly assessment
-     ├── matched Kinder Garden practice
-     └── matched Crechè practice
+Active Kindergarten learner
+     ├── identity / placement
+     ├── mentorId: archaemenes
+     └── learner-scoped records
+
+NAIB
+     ├── navigation
+     ├── lesson matching
+     └── delegation
+
+Archaemenes · Wise Owl
+     ├── clues
+     ├── encouragement
+     ├── learning guidance
+     └── bounded young-learner support
+
+Course Engine
+     ├── lessons
+     ├── assessments
+     ├── 80% mastery gates
+     └── certificate progression
 ```
 
-The 80% completion/certification rules remain unchanged.
+No one layer silently takes authority from another.
+
+---
 
 ## Privacy boundary
 
-The new files do not add advertising, third-party analytics, or a cloud learner database. Family and curriculum records remain browser-local under the existing Khaemenes continuity architecture. Cross-repository localStorage continuity still depends on opening the portals through the shared `vervenveda.com` origin.
+Family and curriculum records remain browser-local under the current public architecture. Cross-campus continuity depends on using the shared `vervenveda.com` origin. Learner and family IDs are not placed in the Mentor URL.
 
-## Files in this package
+No new advertising, third-party analytics, or public cloud learner database was introduced by the Mentor consolidation.
 
-- `index.html`
-- `assets/khaemenes-kinder-companions.js`
-- `family/index.html`
-- `curriculum/index.html`
-- `curriculum/assets/companion-layer.js`
-- `curriculum/assets/lesson.css`
-- `curriculum/teacher-tools/index.html`
-- `UPLOAD_MAP.md`
+---
+
+## Validation boundary
+
+The current source inspection verifies repository structure, authority contracts, registry normalization, and route policy. It does not substitute for a full live-browser test of deployment timing, keyboard behavior, localStorage migration, learner switching, and cross-page interactions.
+
+Current validation records:
+
+- `VALIDATION.json`
 - `validation.json`
+
+Both now describe the post-consolidation Archaemenes architecture rather than the former multi-Mentor model.
