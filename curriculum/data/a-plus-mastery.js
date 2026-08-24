@@ -205,6 +205,18 @@
       ["Model and observation limits","Distinguishes a representation/model from a living organism and identifies at least one limitation of visual appearance or a classroom model."],
       ["Humane safety and care boundary","Knows that proving life never requires harming/depriving organisms, tasting specimens, culturing unknown microbes/mold, or handling unknown plants/fungi/wildlife/remains; safe models, records, and observation are valid evidence.",true],
       ["Integrated living-systems explanation","Integrates multi-clue evidence, once/never history, classification/data, uncertainty, a counterexample, and humane observation in an accessible explanation or model.",true]
+    ],
+    22:[
+      ["Water state and substance identity","Identifies ice as solid water, liquid water as liquid H₂O, and water vapor as gaseous water while explaining that a state change does not make water a different substance.",true],
+      ["Water vapor / visible mist distinction","Explains that water vapor is ordinarily invisible and that visible mist, fog, clouds, or the white plume near hot water consists mainly of tiny liquid droplets and/or ice crystals rather than visible gaseous water itself.",true],
+      ["Melting and freezing direction","Sequences melting from solid to liquid and freezing from liquid to solid and rejects the idea that cold enters water as a material substance.",true],
+      ["Fair state-change comparison","Identifies or uses a fair melting/freezing comparison with a stated variable and reasonably controlled starting amount/size, container, observation interval, or measurement method.",true],
+      ["Evaporation below boiling","Explains that liquid water can evaporate into invisible water vapor below the boiling point and that drying does not mean the water simply ceased to exist.",true],
+      ["Condensation reasoning","Explains that water vapor can change to liquid droplets under suitable cooling conditions and correctly interprets a cold-surface condensation example without assuming leakage.",true],
+      ["Cloud and precipitation accuracy","Explains that clouds contain tiny liquid droplets and/or ice crystals and that cloudiness does not guarantee precipitation; recognizes that precipitation form depends on conditions.",true],
+      ["Weather data and model limits","Reads or builds a small weather-water data display, makes an evidence-supported comparison, and names a sample/forecast/location or classroom water-cycle-model limitation.",true],
+      ["Water investigation safety and access","Knows that mastery does not require boiling water, flame, hot plates, dry ice, liquid nitrogen, salt/ice skin experiments, tasting, walking on ice, home freezers, snow, or unsafe cold exposure; accessible models/data are valid evidence.",true],
+      ["Integrated water-change explanation","Integrates water-state identity, melting/freezing, evaporation/condensation, cloud/weather evidence, a fair-comparison idea, one misconception correction, a model/data limitation, and a safety boundary.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
