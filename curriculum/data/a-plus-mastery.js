@@ -241,6 +241,18 @@
       ["Design test and revision","Uses test or route evidence to identify a design issue, proposes a specific revision, and names evidence that could show whether the revision helped.",true],
       ["Transportation access privacy and systems","Designs or interprets a fictional transportation route/system with at least one accessibility feature, respects mobility aids as access tools, and does not require private car ownership, disability, address, commute, or travel disclosure.",true],
       ["Integrated engineering safety explanation","Integrates force/motion, fair testing, consistent measurement, repeated evidence, design criteria/tradeoffs, accessibility, revision, and the toy-scale safety boundary; knows child-riding ramps, road/traffic tests, projectiles, heavy rolling objects, and tests aimed at people/animals are not authorized.",true]
+    ],
+    25:[
+      ["Task source and contribution reasoning","Uses a provided fictional/consenting source to identify a task and community purpose, cites the evidence, and rejects inferring occupation, competence, identity, or worth from clothing, accent, body, gender, neighborhood, vehicle, or appearance.",true],
+      ["Paid unpaid work and dignity","Recognizes paid employment alongside unpaid caregiving, household work, volunteering, learning/training, mutual aid, maintenance, repair, creative, and community contributions and rejects income, prestige, title, uniform, or education as measures of human worth.",true],
+      ["Tool function and task fit","Matches a physical, digital, communication, or adaptive tool to a stated task by explaining the tool's function rather than stereotyping who uses it.",true],
+      ["Tool authorization safety and access","Explains that knowing a tool's purpose does not authorize child use and identifies relevant training, permission, safety, accessibility, or adult-use conditions; treats adaptive tools as legitimate work/learning/access tools.",true],
+      ["Goods services and mixed cases","Distinguishes a physical good from a service/action using a stated rule and recognizes that a real work example may involve both rather than forcing a false binary.",true],
+      ["Work sample tally graph and limits","Sorts a provided work/goods-services sample by the stated rule, counts each item once, verifies totals, interprets an accessible graph, and rejects using sample frequency to rank importance, pay, skill, or human value.",true],
+      ["Respectful question and source reasoning","Uses an appropriate who/what/when/where/why/how question with a fictional or consenting source, records the response accurately, distinguishes source statement from inference, and uses a relevant follow-up.",true],
+      ["Interview consent and privacy boundary","Knows a person may decline a question and does not require salary, medical/disability details, immigration/citizenship status, religion, family status, home address, trauma, political beliefs, confidential workplace information, or family employment disclosure.",true],
+      ["Community system interdependence","Maps or explains at least three roles/resources in a fictional community service/system and identifies a dependency between them without ranking a single helper as working alone or being inherently more important.",true],
+      ["Integrated work dignity and safety explanation","Integrates task/source evidence, paid/unpaid contribution, tool function/safety, goods/services, checked data, respectful questions/privacy, and system interdependence while rejecting occupational stereotypes and unsafe real-work imitation.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
