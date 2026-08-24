@@ -169,6 +169,18 @@
       ["Accessible mastery participation","Demonstrates the academic target through an appropriate accommodation or communication pathway without making speed, eye contact, handwriting fluency, loud speech, or public performance prerequisites."],
       ["Portfolio and growth reflection","Selects one work sample, model, drawing, or dictated explanation as evidence and explains one area of growth plus one reasonable next practice target."],
       ["Midyear authority boundary","Accurately explains that Week 18 daily practice and Week 18 mastery do not award midyear mastery; only after Weeks 1–18 are mastered does the separate midyear demonstration become eligible, and it still requires its own 80% adult-observed evidence.",true]
+    ],
+    19:[
+      ["Evidence-based learning growth","Compares the learner's own earlier and current academic evidence, makes one supported growth or next-step claim, and avoids peer ranking or identity labels.",true],
+      ["Observable academic goal","Creates or interprets a small academic learning goal that describes observable skill evidence rather than worth, compliance, personality, or a sensitive personal target.",true],
+      ["Strategy and support plan","Identifies at least two plausible strategies, supports, access tools, or conditions for a learning goal and explains when one might be changed or added.",true],
+      ["Forward number sequence","Continues a forward number sequence from a provided starting number using an accurate spoken, signed, AAC, visual, tactile, manipulative, or other accessible representation.",true],
+      ["Backward number sequence","Represents a short backward number sequence accurately and distinguishes sequence practice from the mathematical meaning of subtraction.",true],
+      ["Strategy comparison without speed","Uses or interprets two valid strategies for a number-sequence or learning task and compares them without treating speed, speech, or one body-dependent method as universally best.",true],
+      ["Evidence-based strategy revision","Tests a strategy, notices evidence, and chooses a reasonable next move such as continue, change strategy, seek instruction/help, use an accommodation, pause/rest, change conditions, or revise the goal.",true],
+      ["Growth-mindset nuance and access","Explains or demonstrates that effort alone is not a universal solution and that instruction, strategy, tools, accommodations, rest, time, environment, and access can affect learning; needing support is not a character failure.",true],
+      ["Goal privacy and dignity","Knows goals may be private or changed and that no New Year observance, public goal chart, body/health, family-finance, religion, trauma, home-behavior, or other sensitive disclosure is required.",true],
+      ["Integrated learning-growth reflection","Integrates personal evidence, an observable academic goal, strategy/support choice, number-sequence reasoning, one correction or barrier response, and a next-step evidence plan.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
