@@ -16,10 +16,69 @@ Kinder Garden is the Kindergarten learning gateway between Crechè and the wider
 **Requires the active Kindergarten learner**
 - formal curriculum progression
 - learner-scoped mastery records
-- personalized Kinder Garden Mentor
+- personalized Archaemenes Mentor continuity
 - assessment / certificate progression
 
-The Academy Family Registry is the identity source for formal learning. The Kinder Garden page does not create a second local learner account.
+The **Academy Family Registry is the identity authority** for formal learning. Kinder Garden does not create a second learner account and does not maintain a separate Mentor program.
+
+## One Academy Mentor
+
+Kinder Garden now uses the Academy-wide Mentor architecture:
+
+**Archaemenes → Wise Owl expression → Kindergarten learner**
+
+Archaemenes is the single continuous educational Mentor of Khaemenes Academy. In Kindergarten his age-appropriate expression is **Wise Owl**.
+
+The active Mentor doorway is:
+
+`https://vervenveda.com/Khaemenes_Academy.github.io/mentor/`
+
+The identity doorway is:
+
+`https://vervenveda.com/Khaemenes_Academy.github.io/family/`
+
+### What happened to Pip, Miri, Nova, and Sage?
+
+Older Kinder Garden builds treated Pip, Miri, Nova, and Sage as separate visible Mentor identities. They are no longer Mentor authorities.
+
+Their useful differences are preserved only as **communication-style preferences**:
+- playful / social
+- quiet / curious
+- imaginative / expressive
+- steady / determined
+
+Existing learner records are migrated non-destructively. A legacy Mentor ID or custom visible presentation can be retained as compatibility metadata while the canonical Family Registry Mentor becomes:
+
+`mentorId: "archaemenes"`
+
+Kinder Garden therefore keeps continuity without creating competing Mentor identities.
+
+### Young-learner boundary
+
+Kindergarten Mentor interaction remains bounded and child-safe. The campus does not provide an unrestricted private child chat. Quick Mentor prompts route into the canonical Academy Archaemenes surface, where Kindergarten uses bounded Wise Owl controls.
+
+Archaemenes may support:
+- clues and one-step-at-a-time guidance
+- lesson and curriculum navigation
+- encouragement and effort reflection
+- matched practice suggestions
+- healthy off-screen breaks
+
+Archaemenes does **not** replace the parent, guardian, educator, assessment engine, or course mastery authority.
+
+## NAIB boundary
+
+NAIB remains an academic navigation and delegation layer. NAIB can identify the learner's academic position, match resources to the current lesson, and recommend the appropriate next doorway.
+
+NAIB is **not a second Mentor**.
+
+The Academy authority separation is:
+
+- **Family Registry** → learner identity and placement record
+- **NAIB** → navigation, matching, delegation, advisory routing
+- **Archaemenes** → educational Mentor
+- **Course engine** → mastery, assessment evidence, progression gates
+- **Parent / guardian / educator** → human judgment and learner support
 
 ## Curriculum
 
@@ -33,9 +92,9 @@ The Academy Family Registry is the identity source for formal learning. The Kind
 
 The course data covers literacy, mathematics, inquiry/science, social-emotional learning, art/maker work, movement/health, civics/community, and technology.
 
-## NAIB Living Learning Resource Registry
+The Mentor consolidation does **not** change curriculum scores, lesson data, mastery thresholds, assessment evidence, or certificate requirements.
 
-The important v11 change is that NAIB no longer depends on a fixed week-to-game lookup table.
+## NAIB Living Learning Resource Registry
 
 Resources live in:
 
@@ -52,7 +111,7 @@ The companion engine in:
 
 `assets/khaemenes-kinder-companions.js`
 
-reads the **actual current lesson** and scores resources against:
+reads the actual current lesson and scores resources against:
 - week theme
 - essential question
 - literacy focus
@@ -62,7 +121,7 @@ reads the **actual current lesson** and scores resources against:
 - maker project
 - the current day's lesson title / objective / workshop
 
-That means Monday, Tuesday, Wednesday, Thursday, and Friday may receive different companion recommendations.
+Monday, Tuesday, Wednesday, Thursday, and Friday may therefore receive different companion recommendations.
 
 ### Adding a specialized game
 
@@ -85,45 +144,22 @@ Example:
 }
 ```
 
-That is enough for NAIB to consider the tool anywhere those skills occur. **No manual Week 14 mapping is required.**
-
-For backward compatibility, the registry can also ingest entries from the older root `APPS` array and infer first-pass skill tags from the title, description, and group.
+That is enough for NAIB to consider the tool wherever those skills occur. No manual week-to-game mapping is required.
 
 ## Important static-site limitation
 
-GitHub Pages cannot privately inspect a folder and infer what a new HTML file teaches. A new file therefore needs a small metadata entry so NAIB knows its skills. Once registered, lesson matching is automatic.
+GitHub Pages cannot privately inspect a folder and infer what a new HTML file teaches. A new file therefore needs a small metadata entry so the lesson-matching layer knows its skills. Once registered, lesson matching is automatic.
 
-## Mentor architecture
+## Mentor consolidation files
 
-The Kinder Garden Mentor:
-- uses the active Academy learner ID
-- preserves the learner's Mentor identity
-- remains bounded and child-safe
-- knows the learner's current academic position
-- may recommend matched practice tools
-- does not replace the parent, guardian, educator, or formal lesson
+The active Mentor consolidation is implemented in:
 
-## Core files updated in v11
+- `assets/khaemenes-kinder-family-adapter.js` — Family Registry migration, Mentor doorway routing, and legacy surface retirement
+- `assets/khaemenes-kinder-continuity.js` — canonical Archaemenes / Wise Owl continuity and learner-scoped curriculum compatibility
+- `mentor-manifest.json` — published Kinder Garden Mentor authority declaration
 
-- `index.html`
-- `assets/khaemenes-kinder-resources.js`
-- `assets/khaemenes-kinder-companions.js`
-- `assets/khaemenes-kinder-family-adapter.js`
-- `assets/khaemenes-kinder-continuity.js`
-- `curriculum/index.html`
-- `curriculum/assets/app.js`
-- `curriculum/assets/companion-layer.js`
-- `README.md`
-- `VALIDATION.json`
+The large root `index.html` still contains historical setup markup and inline compatibility functions for older builds. The active adapter retires that setup surface at runtime, rewrites old Mentor doorways to the Academy Mentor, and prevents the historical prompt controls from acting as a separate Mentor program. This preserves old page compatibility without disturbing the curriculum engine.
 
+## Visual design
 
-## Visual refresh · v11.1
-
-The Kinder Garden root portal now includes:
-- a colorful top ticker with quick links, echoing the Pre-K / Crechè energy
-- a larger, more child-friendly hero scene
-- a layered learning tree rather than the flatter early SVG tree
-- strategically placed clickable icon bubbles that jump to games or page sections
-- more playful headline/button typography using a Comic / bubble-style system
-
-This refresh only changes the root portal presentation layer. The Family Registry bridge, curriculum gate, living resource registry, and lesson-aware NAIB matching architecture remain the same.
+Kinder Garden retains its colorful, child-friendly garden interface, learning tree, activity bubbles, playful typography, and Crechè continuity while using the same Academy learner and Mentor authority as the rest of Khaemenes Academy.
