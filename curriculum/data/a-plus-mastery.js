@@ -181,6 +181,18 @@
       ["Growth-mindset nuance and access","Explains or demonstrates that effort alone is not a universal solution and that instruction, strategy, tools, accommodations, rest, time, environment, and access can affect learning; needing support is not a character failure.",true],
       ["Goal privacy and dignity","Knows goals may be private or changed and that no New Year observance, public goal chart, body/health, family-finance, religion, trauma, home-behavior, or other sensitive disclosure is required.",true],
       ["Integrated learning-growth reflection","Integrates personal evidence, an observable academic goal, strategy/support choice, number-sequence reasoning, one correction or barrier response, and a next-step evidence plan.",true]
+    ],
+    20:[
+      ["Story source / version reasoning","Distinguishes story content from source/version information and recognizes that a teller, author, translator, adapter, reteller, or uncertain oral history may stand behind a particular version.",true],
+      ["Source uncertainty and representation","Uses careful one-version/uncertain-origin language and rejects the claim that one story represents every member of a culture, country, language, religion, or people.",true],
+      ["Character setting and sequence evidence","Identifies character, setting, and beginning/middle/end or first/next/last using evidence from a provided story without treating fictional setting as a description of all real people.",true],
+      ["Comparative story evidence","Compares two stories or versions with at least one supported similarity and difference and names a conclusion the comparison does not justify about real people or places.",true],
+      ["Story-sample mathematics","Counts a stated feature in a small provided story set with one-to-one correspondence and interprets or builds a simple comparison/graph without generalizing the sample to cultural worth or creativity.",true],
+      ["Map and place model limits","Uses a map/key or positional language for documented or fictional story context and explains at least one limitation, including that borders do not define one culture, language, ancestry, religion, or way of life.",true],
+      ["Translation and storytelling-form respect","Recognizes translation/retelling as legitimate versions and does not rank oral, written, signed, illustrated, sung, digital, AAC, or performed storytelling as more or less civilized."],
+      ["Version motif and respectful variation","Identifies a motif or version change, avoids treating a shared motif as proof of common origin, and creates or explains an original variation using clearly appropriate classroom material rather than identity imitation."],
+      ["Protected-material and identity boundary","Knows not to copy, reenact, remix, costume, or craft sacred/restricted Indigenous, religious, ceremonial, funerary, initiation, or community-protected material and knows no learner must disclose heritage or speak for a group.",true],
+      ["Integrated respectful story scholarship","Integrates source/version reasoning, story evidence, fair sample mathematics, map/place limits, uncertainty, and a cultural-respect boundary in an accessible explanation or model.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
