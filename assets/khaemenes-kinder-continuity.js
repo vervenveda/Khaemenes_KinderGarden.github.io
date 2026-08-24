@@ -1,12 +1,15 @@
 /*
- * Khaemenes Kinder Garden Continuity Bridge v3.0.0
+ * Khaemenes Kinder Garden Continuity Bridge v4.0.0
  * -------------------------------------------------
- * Formal Kinder Garden identity comes from Academy Family Registry.
- * Legacy local profiles are compatibility/migration data, not a second account.
+ * Formal Kinder Garden identity comes from the Academy Family Registry.
+ * Archaemenes is the single Academy Mentor. Older Pip / Miri / Nova / Sage
+ * choices are preserved only as communication-style preferences.
+ * Legacy local profiles remain compatibility/migration data, not a second account.
  */
 (function attachKinderContinuity(global){
   "use strict";
 
+  const VERSION="4.0.0";
   const KEYS=Object.freeze({
     legacyProfile:"khaemenes_preschool_profile_v1",
     legacyKindergarten:"khaemenes_kindergarten_36_aplus_v1",
@@ -14,23 +17,61 @@
     activeKindergartenLearner:"khaemenes_kindergarten_active_learner_v1"
   });
 
-  const MENTORS=Object.freeze({
-    playful:{id:"pip",name:"Pip",avatar:"🌞",colors:["#ef6a66","#f6bf3a"],traits:["playful","social","encouraging"]},
-    curious:{id:"miri",name:"Miri",avatar:"🦉",colors:["#2398d5","#42c7dc"],traits:["quiet","curious","patient"]},
-    imaginative:{id:"nova",name:"Nova",avatar:"🚀",colors:["#7254d8","#e95ca8"],traits:["imaginative","expressive","adventurous"]},
-    steady:{id:"sage",name:"Sage",avatar:"🌿",colors:["#23a67c","#8ccf54"],traits:["steady","patient","determined"]}
+  const ARCHAEMENES=Object.freeze({
+    id:"archaemenes",
+    name:"Archaemenes",
+    avatar:"🦉",
+    expression:"Wise Owl",
+    title:"Scholar and Educational Mentor of Khaemenes Academy"
+  });
+
+  const COMMUNICATION_STYLES=Object.freeze({
+    playful:Object.freeze({legacyMentorId:"pip",label:"Playful and social",colors:["#ef6a66","#f6bf3a"],traits:["playful","social","encouraging"]}),
+    curious:Object.freeze({legacyMentorId:"miri",label:"Quiet and curious",colors:["#2398d5","#42c7dc"],traits:["quiet","curious","patient"]}),
+    imaginative:Object.freeze({legacyMentorId:"nova",label:"Imaginative and expressive",colors:["#7254d8","#e95ca8"],traits:["imaginative","expressive","adventurous"]}),
+    steady:Object.freeze({legacyMentorId:"sage",label:"Steady and determined",colors:["#23a67c","#8ccf54"],traits:["steady","patient","determined"]})
   });
 
   function readJSON(key,fallback=null){try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}}
   function writeJSON(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}}
   function remove(key){try{localStorage.removeItem(key);return true}catch{return false}}
 
-  function activeRegistryLearner(){
-    const learner=global.KhaemenesFamilyRegistry?.getLearner?.();
-    return learner||null;
+  function activeRegistryLearner(){return global.KhaemenesFamilyRegistry?.getLearner?.()||null}
+  function legacyProfile(){return readJSON(KEYS.legacyProfile,null)}
+
+  function styleFromMentorId(mentorId){
+    const id=String(mentorId||"").toLowerCase();
+    return Object.entries(COMMUNICATION_STYLES).find(([,style])=>style.legacyMentorId===id)?.[0]||null;
   }
 
-  function legacyProfile(){return readJSON(KEYS.legacyProfile,null)}
+  function normalizeStyle(value){
+    const style=String(value||"").toLowerCase();
+    return Object.prototype.hasOwnProperty.call(COMMUNICATION_STYLES,style)?style:"playful";
+  }
+
+  function canonicalMentorIdentity({style="playful",priorIdentity=null,priorMentorId=null}={}){
+    const baseStyle=normalizeStyle(style);
+    const prior=priorIdentity&&typeof priorIdentity==="object"?priorIdentity:{};
+    const presentationPreference={};
+
+    if(prior.mode==="custom"){
+      if(prior.name)presentationPreference.legacyCustomName=String(prior.name).slice(0,40);
+      if(prior.avatar)presentationPreference.legacyAvatar=String(prior.avatar).slice(0,12);
+      if(Array.isArray(prior.colors)&&prior.colors.length===2)presentationPreference.legacyColors=[...prior.colors];
+    }
+
+    const legacyId=priorMentorId&&String(priorMentorId).toLowerCase()!==ARCHAEMENES.id?String(priorMentorId):null;
+    return {
+      ...prior,
+      mode:"archaemenes",
+      mentorId:ARCHAEMENES.id,
+      expression:"wise-owl",
+      baseStyle,
+      communicationStyle:baseStyle,
+      ...(Object.keys(presentationPreference).length?{presentationPreference}:{}),
+      ...(legacyId?{legacyMentorId:legacyId}:{})
+    };
+  }
 
   function profile(){
     const learner=activeRegistryLearner();
@@ -38,7 +79,18 @@
     if(String(learner.stage||"").toLowerCase()!=="kindergarten")return null;
 
     const legacy=legacyProfile();
-    const style=learner?.mentorIdentity?.baseStyle || (legacy?.learnerId===learner.learnerId?legacy?.personality:null) || "playful";
+    const sameLegacy=legacy?.learnerId===learner.learnerId?legacy:null;
+    const priorIdentity=learner.mentorIdentity&&typeof learner.mentorIdentity==="object"?learner.mentorIdentity:null;
+    const style=normalizeStyle(
+      priorIdentity?.communicationStyle ||
+      priorIdentity?.baseStyle ||
+      styleFromMentorId(learner.mentorId) ||
+      sameLegacy?.personality ||
+      styleFromMentorId(sameLegacy?.mentorId) ||
+      "playful"
+    );
+    const mentorIdentity=canonicalMentorIdentity({style,priorIdentity,priorMentorId:learner.mentorId||sameLegacy?.mentorId});
+
     return {
       learnerId:learner.learnerId,
       familyId:learner.familyId||null,
@@ -48,27 +100,31 @@
       stage:"kindergarten",
       interests:Array.isArray(learner.interests)?[...learner.interests]:[],
       personality:style,
-      pace:legacy?.learnerId===learner.learnerId?(legacy?.pace||"balanced"):"balanced",
-      mentorId:learner.mentorId||null,
-      mentorIdentity:learner.mentorIdentity||{mode:"embedded",baseStyle:style},
+      pace:sameLegacy?.pace||"balanced",
+      mentorId:ARCHAEMENES.id,
+      mentorIdentity,
       guardianRelease:learner.guardianRelease||null,
       familyManaged:true
     };
   }
 
-  function embeddedMentorFor(p){
-    const base=MENTORS[p?.personality] || Object.values(MENTORS).find(x=>x.id===p?.mentorId) || MENTORS.playful;
-    const identity=p?.mentorIdentity&&typeof p.mentorIdentity==="object"?p.mentorIdentity:{mode:"embedded",baseStyle:p?.personality||"playful"};
-    if(identity.mode==="custom"){
-      return {
-        ...base,
-        name:String(identity.name||"My Mentor").slice(0,18),
-        avatar:identity.avatar||"🦊",
-        colors:Array.isArray(identity.colors)&&identity.colors.length===2?[...identity.colors]:[...base.colors],
-        baseName:base.name,custom:true
-      };
-    }
-    return {...base,colors:[...base.colors],baseName:base.name,custom:false};
+  function archaemenesFor(p){
+    const styleKey=normalizeStyle(p?.mentorIdentity?.communicationStyle||p?.mentorIdentity?.baseStyle||p?.personality);
+    const style=COMMUNICATION_STYLES[styleKey];
+    return {
+      id:ARCHAEMENES.id,
+      name:ARCHAEMENES.name,
+      avatar:ARCHAEMENES.avatar,
+      expression:ARCHAEMENES.expression,
+      title:ARCHAEMENES.title,
+      colors:[...style.colors],
+      traits:[...style.traits],
+      communicationStyle:styleKey,
+      communicationStyleLabel:style.label,
+      baseName:ARCHAEMENES.name,
+      custom:false,
+      singleAcademyMentor:true
+    };
   }
 
   function guardianAuthorized(p=profile()){
@@ -92,9 +148,11 @@
     return {
       hasProfile:true,hasLinkedLearner:true,stageEligible:true,
       learnerId:p.learnerId,nickname:p.nickname,ageBand:p.ageBand,pathway:"kindergarten",stage:"kindergarten",
-      mentorId:p.mentorId,mentor:embeddedMentorFor(p),guardianAuthorized:guardianAuthorized(p),
+      mentorId:ARCHAEMENES.id,mentor:archaemenesFor(p),guardianAuthorized:guardianAuthorized(p),
       guardianReleaseVersion:p.guardianRelease?.version||null,
-      interests:[...p.interests],pace:p.pace,familyManaged:true
+      interests:[...p.interests],pace:p.pace,familyManaged:true,
+      mentorAuthority:"academy-archaemenes",
+      mentorExpression:"wise-owl"
     };
   }
 
@@ -107,10 +165,10 @@
       final:Math.max(0,Math.min(100,Number(state.final||0))),
       portfolio:Boolean(state.portfolio),
       learnerId:state.learnerId||null,
-      mentorId:state.mentorId||null,
+      mentorId:ARCHAEMENES.id,
       linkedAt:state.linkedAt||null,
       updatedAt:state.updatedAt||null,
-      recordVersion:"3.0"
+      recordVersion:"4.0"
     };
   }
 
@@ -121,7 +179,7 @@
     const legacyRaw=readJSON(KEYS.legacyKindergarten,null);
     if(!legacyRaw)return records;
     const legacy=normalizeState(legacyRaw);
-    records[id]={...legacy,learnerId:id,mentorId:profile()?.mentorId||legacy.mentorId||null,linkedAt:new Date().toISOString(),updatedAt:new Date().toISOString(),migration:{source:KEYS.legacyKindergarten,mode:"non-destructive-copy",migratedAt:new Date().toISOString()}};
+    records[id]={...legacy,learnerId:id,mentorId:ARCHAEMENES.id,linkedAt:new Date().toISOString(),updatedAt:new Date().toISOString(),migration:{source:KEYS.legacyKindergarten,mode:"non-destructive-copy",migratedAt:new Date().toISOString()}};
     writeJSON(KEYS.kindergartenByLearner,records);
     return records;
   }
@@ -131,12 +189,12 @@
     const p=profile();
     if(!p?.learnerId)return fallback;
 
-    let records=copyLegacyIntoLearner(p.learnerId,allLearnerRecords());
+    const records=copyLegacyIntoLearner(p.learnerId,allLearnerRecords());
     const prior=records[p.learnerId];
-    const state=prior?normalizeState(prior):{...fallback,learnerId:p.learnerId,mentorId:p.mentorId||null,linkedAt:new Date().toISOString()};
+    const state=prior?normalizeState(prior):{...fallback,learnerId:p.learnerId,mentorId:ARCHAEMENES.id,linkedAt:new Date().toISOString()};
     state.student=p.nickname||state.student;
     state.learnerId=p.learnerId;
-    state.mentorId=p.mentorId||state.mentorId||null;
+    state.mentorId=ARCHAEMENES.id;
     records[p.learnerId]=state;
     writeJSON(KEYS.kindergartenByLearner,records);
     writeJSON(KEYS.activeKindergartenLearner,{learnerId:p.learnerId,nickname:p.nickname,activatedAt:new Date().toISOString()});
@@ -148,9 +206,14 @@
     const p=profile();
     if(!p?.learnerId)return normalizeState(value);
     const state=normalizeState(value);
-    state.learnerId=p.learnerId;state.student=p.nickname||state.student;state.mentorId=p.mentorId||state.mentorId||null;state.updatedAt=new Date().toISOString();
-    const records=allLearnerRecords();records[p.learnerId]=state;
-    writeJSON(KEYS.kindergartenByLearner,records);writeJSON(KEYS.legacyKindergarten,state);
+    state.learnerId=p.learnerId;
+    state.student=p.nickname||state.student;
+    state.mentorId=ARCHAEMENES.id;
+    state.updatedAt=new Date().toISOString();
+    const records=allLearnerRecords();
+    records[p.learnerId]=state;
+    writeJSON(KEYS.kindergartenByLearner,records);
+    writeJSON(KEYS.legacyKindergarten,state);
     return normalizeState(state);
   }
 
@@ -192,9 +255,20 @@
   }
 
   global.KhaemenesKinderContinuity=Object.freeze({
-    version:"3.0.0",keys:KEYS,mentors:MENTORS,
-    getProfile:profile,getLearnerSummary:learnerSummary,getMentor:()=>learnerSummary().mentor,
-    guardianAuthorized,loadCurriculumState,saveCurriculumState,clearActiveCurriculumRecord,
-    curriculumSummary,nextUnit,subscribe
+    version:VERSION,
+    keys:KEYS,
+    mentor:ARCHAEMENES,
+    mentors:Object.freeze({archaemenes:ARCHAEMENES}),
+    communicationStyles:COMMUNICATION_STYLES,
+    getProfile:profile,
+    getLearnerSummary:learnerSummary,
+    getMentor:()=>learnerSummary().mentor,
+    guardianAuthorized,
+    loadCurriculumState,
+    saveCurriculumState,
+    clearActiveCurriculumRecord,
+    curriculumSummary,
+    nextUnit,
+    subscribe
   });
 })(window);
