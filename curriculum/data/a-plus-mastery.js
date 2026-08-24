@@ -145,6 +145,18 @@
       ["Saving reasoning without moralization","Explains saving as setting resources aside for later while recognizing that spending to meet a need can also be responsible and inability to save is not a character flaw.",true],
       ["Voluntary sharing and consent","Knows that sharing may be kind but never requires giving away personal money, food, comfort items, or possessions; classroom market materials remain fictional/shared.",true],
       ["Integrated decision reflection","Given a fictional need/goal and small modeled amount, counts resources, compares choices, identifies a good/service when relevant, explains a tradeoff, and revises the decision when one fact changes.",true]
+    ],
+    17:[
+      ["Light source / shadow relationship","Identifies a light source, blocking object, and receiving surface/screen and explains that an opaque object can block light to produce a darker shadow region.",true],
+      ["Controlled shadow change","Changes one light/object/screen condition at a time, observes the resulting shadow change, and uses evidence to confirm or revise a prediction.",true],
+      ["Shadow geometry reasoning","Explains that shadow size, position, or outline can change with source/object/screen geometry without claiming that the object itself grew or shrank.",true],
+      ["Consistent shadow measurement","Measures and compares modeled shadow lengths from a common baseline using equal repeated units and communicates number plus unit.",true],
+      ["Measurement error and model limits","Identifies an unfair shadow measurement or model limitation such as shifted starts, mixed units, gaps/overlaps, or overgeneralizing one classroom setup."],
+      ["Earth rotation / day-night","Uses a globe/ball and fixed-light model to explain that Earth’s rotation produces the repeating day/night pattern, rather than teaching that the Sun travels around Earth each day.",true],
+      ["Seasonal / global reasoning","Compares seasonal or daylight information with location-aware language and rejects the claim that winter universally means snow, freezing weather, or identical daylight patterns.",true],
+      ["Light investigation safety","Knows never to look directly at the Sun and never requires lasers, flames/candles, high-heat lamps, electrical disassembly, lights aimed at eyes, unsafe darkness, or unsupervised night/outdoor observation.",true],
+      ["Accessible science participation","Uses safe visual, tactile, modeled, signed, AAC, audio-described, partner-supported, or adult-scribed pathways without making standing, visual acuity, flashlight handling, or fine-motor tracing prerequisites."],
+      ["Integrated light scientist reflection","Integrates shadow formation, one controlled change, fair measurement, Earth-rotation reasoning, and one corrected misconception or model limitation in an accessible explanation.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
