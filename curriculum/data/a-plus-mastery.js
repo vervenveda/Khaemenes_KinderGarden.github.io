@@ -217,6 +217,18 @@
       ["Weather data and model limits","Reads or builds a small weather-water data display, makes an evidence-supported comparison, and names a sample/forecast/location or classroom water-cycle-model limitation.",true],
       ["Water investigation safety and access","Knows that mastery does not require boiling water, flame, hot plates, dry ice, liquid nitrogen, salt/ice skin experiments, tasting, walking on ice, home freezers, snow, or unsafe cold exposure; accessible models/data are valid evidence.",true],
       ["Integrated water-change explanation","Integrates water-state identity, melting/freezing, evaporation/condensation, cloud/weather evidence, a fair-comparison idea, one misconception correction, a model/data limitation, and a safety boundary.",true]
+    ],
+    23:[
+      ["Material pathway reasoning","Uses provided material, item-condition, contamination/special-handling, and local-rule evidence to choose an appropriate pathway such as use longer, reuse/repair, accepted recycling, managed composting, special handling, disposal, or check-the-rule.",true],
+      ["Local recycling rule reasoning","Explains that a recycling symbol or recyclable material does not guarantee local program acceptance and uses the stated local/classroom guide rather than appearance or wishful guessing.",true],
+      ["Rule-first sorting with uncertainty","States the provided sorting rule before classification, applies it consistently, and uses check-the-local-rule/adult-special-handling when material, condition, contamination, or acceptance is uncertain.",true],
+      ["Waste-sample tally and graph","Tallies a clean provided sample once per item, builds or interprets an accessible graph, verifies category totals against sample size, compares categories, and limits claims to that sample.",true],
+      ["Reduce reuse repair tradeoff","Compares at least two material strategies under a stated constraint, recognizes that reduce/reuse/repair are not universally best or safe, and revises the choice when a safety, access, hygiene, condition, or local-system fact changes.",true],
+      ["Safety hygiene and accessibility boundary","Knows that stewardship mastery never requires handling real trash, sharps, glass, batteries, e-waste, chemicals, medicine/medical waste, moldy food, animal waste, unknown containers, or denying needed health/disability/sanitation/safety supplies.",true],
+      ["Systems and shared responsibility","Explains that material and environmental outcomes involve design, production, infrastructure, public agencies, facilities, workers, schools, households, and community rules and are not a moral burden placed on children or one family alone.",true],
+      ["Shared-place evidence without blame","Uses documented fictional place evidence to identify a problem/need, separates observation from assumptions about who caused it, and rejects blaming a person/community without evidence.",true],
+      ["Habitat and cleanup safety","Chooses stewardship actions that avoid feeding/chasing/moving wildlife and avoid independent hazardous litter collection, using adult reporting, protected space, design, or properly organized cleanup instead.",true],
+      ["Integrated stewardship decision","Integrates local-rule classification, checked data, material-strategy tradeoffs, dignity, system responsibility, shared-place evidence, a safe action, and a way to evaluate improvement.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
