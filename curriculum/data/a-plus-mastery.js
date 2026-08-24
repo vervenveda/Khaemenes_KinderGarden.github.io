@@ -229,6 +229,18 @@
       ["Shared-place evidence without blame","Uses documented fictional place evidence to identify a problem/need, separates observation from assumptions about who caused it, and rejects blaming a person/community without evidence.",true],
       ["Habitat and cleanup safety","Chooses stewardship actions that avoid feeding/chasing/moving wildlife and avoid independent hazardous litter collection, using adult reporting, protected space, design, or properly organized cleanup instead.",true],
       ["Integrated stewardship decision","Integrates local-rule classification, checked data, material-strategy tradeoffs, dignity, system responsibility, shared-place evidence, a safe action, and a way to evaluate improvement.",true]
+    ],
+    24:[
+      ["Force and motion interaction","Identifies a push or pull as an interaction and connects it to an observed change in motion such as starting, stopping, speeding up, slowing down, or changing direction without treating force as a substance stored in an object.",true],
+      ["Gravity and ramp reasoning","Explains age-appropriately that gravity contributes to downhill motion on a ramp while the ramp supports/guides the object, and rejects the claim that the ramp itself gives a toy stored force.",true],
+      ["Fair-test variable control","States the planned changed variable and preserves key controls such as toy, release point/method, surface, observation area, and measurement method; does not add a hidden launch push when testing ramp conditions.",true],
+      ["Consistent measurement and repeated trials","Measures from a common reference with equal repeated units or another consistent accessible method, records at least two trials per compared condition, and recognizes that repeated trials may vary.",true],
+      ["Evidence conclusion limits","Uses repeated evidence to make a cautious claim about the tested setup, does not silently discard inconvenient trials, and rejects one-trial proof or unsupported exact-distance claims.",true],
+      ["Wheels axles friction and surfaces","Explains that wheels/axles can change rolling compared with sliding while friction/rolling resistance, alignment, deformation, and surface conditions still matter; rejects the claim that wheels eliminate friction.",true],
+      ["Engineering criteria constraints and tradeoffs","Selects or compares a design using stated criteria/constraints and explains why farther/faster/steeper is not automatically better for every purpose.",true],
+      ["Design test and revision","Uses test or route evidence to identify a design issue, proposes a specific revision, and names evidence that could show whether the revision helped.",true],
+      ["Transportation access privacy and systems","Designs or interprets a fictional transportation route/system with at least one accessibility feature, respects mobility aids as access tools, and does not require private car ownership, disability, address, commute, or travel disclosure.",true],
+      ["Integrated engineering safety explanation","Integrates force/motion, fair testing, consistent measurement, repeated evidence, design criteria/tradeoffs, accessibility, revision, and the toy-scale safety boundary; knows child-riding ramps, road/traffic tests, projectiles, heavy rolling objects, and tests aimed at people/animals are not authorized.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
