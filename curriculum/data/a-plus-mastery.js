@@ -193,6 +193,18 @@
       ["Version motif and respectful variation","Identifies a motif or version change, avoids treating a shared motif as proof of common origin, and creates or explains an original variation using clearly appropriate classroom material rather than identity imitation."],
       ["Protected-material and identity boundary","Knows not to copy, reenact, remix, costume, or craft sacred/restricted Indigenous, religious, ceremonial, funerary, initiation, or community-protected material and knows no learner must disclose heritage or speak for a group.",true],
       ["Integrated respectful story scholarship","Integrates source/version reasoning, story evidence, fair sample mathematics, map/place limits, uncertainty, and a cultural-respect boundary in an accessible explanation or model.",true]
+    ],
+    21:[
+      ["Multiple evidence clues for life","Uses more than one relevant evidence clue to reason about whether an example is a living organism and explicitly rejects movement, growth, energy use, or appearance alone as proof of life.",true],
+      ["Living needs and diversity","Explains that living things use resources/energy and show life processes while recognizing that plants, animals, fungi, and tiny organisms can meet needs or respond in different ways.",true],
+      ["Living / once-living / never-living distinction","Distinguishes a currently living organism from once-living or living-derived material and from a never-living example, using evidence about present state or origin.",true],
+      ["Rule-first classification with uncertainty","States a classification rule before sorting, applies it consistently, and uses a need-more-evidence category rather than guessing when information is insufficient.",true],
+      ["Tally graph and sample reasoning","Tallies a provided classification set accurately, builds or interprets an accessible simple graph, compares categories, checks totals, and limits claims to the provided sample.",true],
+      ["Counterexample reasoning","Uses at least one robot, fire, crystal, model, or comparable counterexample to show why a one-clue life rule fails and replaces it with stronger multi-evidence reasoning.",true],
+      ["Dormancy and hidden-evidence reasoning","Explains that a viable dormant seed can be alive without visible growth and that appearance alone may justify a need-more-evidence conclusion rather than certainty.",true],
+      ["Model and observation limits","Distinguishes a representation/model from a living organism and identifies at least one limitation of visual appearance or a classroom model."],
+      ["Humane safety and care boundary","Knows that proving life never requires harming/depriving organisms, tasting specimens, culturing unknown microbes/mold, or handling unknown plants/fungi/wildlife/remains; safe models, records, and observation are valid evidence.",true],
+      ["Integrated living-systems explanation","Integrates multi-clue evidence, once/never history, classification/data, uncertainty, a counterexample, and humane observation in an accessible explanation or model.",true]
     ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
