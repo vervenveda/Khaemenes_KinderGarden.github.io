@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Formal Mastery Gates v1.2.13
+ * Khaemenes Kinder Garden · Formal Mastery Gates v1.2.14
  * -------------------------------------------------------
  * Formal advancement is learner-scoped and requires >=80% computed evidence.
  * Public previews and games remain open. Legacy typed scores are preserved as
@@ -15,7 +15,7 @@
 (function attachKhaemenesKinderMasteryGates(global){
   "use strict";
 
-  const VERSION="1.2.13";
+  const VERSION="1.2.14";
   const PASS=80;
   const TOTAL_WEEKS=36;
   const DAYS_PER_WEEK=5;
@@ -356,14 +356,15 @@
     met,
     total=40,
     source="adult-observed-performance-demonstration",
-    adultAffirmed=false
+    adultAffirmed=false,
+    essentialSatisfied=true
   }={}){
     if(!["midterm","final"].includes(kind))throw new Error("invalid-milestone");
     if(!formalAccess())throw new Error("formal-access-required");
     if(!canAssessMilestone(kind))throw new Error("milestone-not-eligible");
     const record=learnerRecord();
     record[kind]=updateReceipt(record[kind],{
-      met,total,source,adultAffirmed,essentialSatisfied:true
+      met,total,source,adultAffirmed,essentialSatisfied
     });
     saveLearnerRecord(record);
     syncCompatibility(record);
