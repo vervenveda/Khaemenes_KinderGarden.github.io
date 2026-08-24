@@ -1,110 +1,46 @@
 {
   "valid": true,
-  "generated_files": [
-    "KINDER_DEEP_INSPECTION.md",
-    "UPLOAD_MAP.md",
+  "release": "Khaemenes Kinder Garden · Academy Mentor Consolidation v12.0",
+  "authority": {
+    "learnerIdentity": "academy-family-registry",
+    "mentor": "archaemenes",
+    "mentorExpression": "wise-owl",
+    "mentorUrl": "https://vervenveda.com/Khaemenes_Academy.github.io/mentor/",
+    "navigationAndDelegation": "NAIB",
+    "mastery": "course-engine"
+  },
+  "mentorConsolidation": {
+    "schoolSpecificMentorProgram": false,
+    "pip": "legacy-communication-style-only",
+    "miri": "legacy-communication-style-only",
+    "nova": "legacy-communication-style-only",
+    "sage": "legacy-communication-style-only",
+    "customVisibleMentor": "legacy-presentation-preference-only",
+    "oldSetupSurfaceRetiredByAdapter": true,
+    "youngLearnerFreeformPrivateChat": false
+  },
+  "preserved": {
+    "verifiedKinderApps": 20,
+    "verifiedCurriculumUnits": 36,
+    "verifiedUnitAssessments": 36,
+    "verifiedCurriculumPrintables": 36,
+    "curriculumGate": true,
+    "masteryThreshold": 80,
+    "learnerScopedRecords": true,
+    "lessonMatchedCompanions": true
+  },
+  "currentFiles": [
+    "assets/khaemenes-kinder-family-adapter.js",
+    "assets/khaemenes-kinder-continuity.js",
     "assets/khaemenes-kinder-companions.js",
-    "curriculum/assets/companion-layer.js",
-    "curriculum/assets/lesson.css",
-    "curriculum/index.html",
-    "curriculum/teacher-tools/index.html",
     "family/index.html",
     "index.html",
+    "mentor-manifest.json",
+    "README.md",
+    "VALIDATION.json",
     "validation.json"
   ],
-  "html": {
-    "index.html": {
-      "html_ids": 56,
-      "duplicate_ids": [],
-      "hash_links": [
-        "#apps",
-        "#creche",
-        "#curriculum",
-        "#families",
-        "#mygarden",
-        "#top"
-      ],
-      "missing_hash_targets": []
-    },
-    "family/index.html": {
-      "html_ids": 11,
-      "duplicate_ids": [],
-      "hash_links": [],
-      "missing_hash_targets": []
-    },
-    "curriculum/index.html": {
-      "html_ids": 15,
-      "duplicate_ids": [],
-      "hash_links": [
-        "#units"
-      ],
-      "missing_hash_targets": []
-    },
-    "curriculum/teacher-tools/index.html": {
-      "html_ids": 1,
-      "duplicate_ids": [],
-      "hash_links": [],
-      "missing_hash_targets": []
-    }
-  },
-  "javascript_syntax": {
-    "index.html": {
-      "returncode": 0,
-      "stderr": ""
-    },
-    "family/index.html": {
-      "returncode": 0,
-      "stderr": ""
-    },
-    "curriculum/teacher-tools/index.html": {
-      "returncode": 0,
-      "stderr": ""
-    },
-    "assets/khaemenes-kinder-companions.js": {
-      "returncode": 0,
-      "stderr": ""
-    },
-    "curriculum/assets/companion-layer.js": {
-      "returncode": 0,
-      "stderr": ""
-    }
-  },
-  "local_link_audit": {
-    "index.html": {
-      "local_references_checked": 18,
-      "unresolved_local_references": []
-    },
-    "family/index.html": {
-      "local_references_checked": 14,
-      "unresolved_local_references": [],
-      "folder_index_aliases_confirmed": [
-        {
-          "reference": "../",
-          "resolves_to": "index.html"
-        },
-        {
-          "reference": "../#mentor",
-          "resolves_to": "index.html#mentor"
-        }
-      ]
-    },
-    "curriculum/index.html": {
-      "local_references_checked": 19,
-      "unresolved_local_references": []
-    },
-    "curriculum/teacher-tools/index.html": {
-      "local_references_checked": 9,
-      "unresolved_local_references": []
-    }
-  },
-  "root_exact_id_selectors_checked": 37,
-  "root_missing_exact_id_selectors": [],
-  "repository_inventory_basis": {
-    "verified_kinder_apps": 20,
-    "verified_curriculum_units": 36,
-    "verified_unit_assessments": 36,
-    "verified_curriculum_printables": 36,
-    "family_portal_was_missing_before_repair": true,
-    "teacher_tools_expected_curriculum_route_was_missing_before_repair": true
-  }
+  "sourceNote": "The large root index retains historical Mentor setup markup and inline compatibility functions. The active Family Adapter hides/inerts the old setup surface, rewrites Mentor doorways, and capture-routes Mentor actions to the single Academy Archaemenes program. This avoids modifying curriculum logic while the compatibility source remains available for later physical cleanup.",
+  "validationBoundary": "Static source, routing policy, registry normalization, and authority contracts verified. Full browser interaction, deployment timing, and end-to-end runtime behavior remain to be exercised in a live browser.",
+  "issues": []
 }
