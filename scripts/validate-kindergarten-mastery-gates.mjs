@@ -10,12 +10,27 @@ const app=read("curriculum/assets/app.js");
 const index=read("curriculum/index.html");
 const mastery=read("curriculum/mastery/index.html");
 const rubricSource=read("curriculum/data/a-plus-mastery.js");
+const midyearSource=read("curriculum/data/midyear-mastery.js");
 const TAG="data-khaemenes-kindergarten-formal-gate";
 
 const rubricWindow={};
 new Function("window",rubricSource)(rubricWindow);
 const RUBRICS=rubricWindow.KHAE_KINDER_A_PLUS_MASTERY;
 assert.ok(RUBRICS&&typeof RUBRICS==="object","A++++ mastery curriculum data must load");
+const midyearWindow={};
+new Function("window",midyearSource)(midyearWindow);
+const MIDYEAR=midyearWindow.KHAE_KINDER_MIDYEAR_MASTERY;
+assert.ok(Array.isArray(MIDYEAR),"A++++ midyear mastery curriculum data must load");
+assert.equal(MIDYEAR.length,40,"midyear must contain exactly 40 transparent evidence criteria");
+assert.equal(MIDYEAR.filter(row=>row[2]===true).length,18,"midyear must preserve its 18 required core criteria");
+for(const label of [
+  "Story sequence and retelling","Rhyme / patterned-language recognition","Language access and variation",
+  "One-to-one counting","Quantity comparison","Compose and decompose to 5","Repeating pattern rule",
+  "Fair length measurement","Measurement communication and error detection","Observation versus inference",
+  "Light, shadow, and Sun safety","Model purpose and limitation","Location privacy and navigation safety",
+  "Needs, wants, and economic dignity","Consent, helping, and voluntary sharing","Safety and responsible tool use",
+  "Error analysis and repair","Integrated transfer demonstration"
+])assert.ok(MIDYEAR.some(row=>row[0]===label&&row[2]===true),`midyear required core must preserve ${label}`);
 
 const UPGRADED=[
   {unit:5,days:["Monday · Nature Detectives","Tuesday · Pattern Garden","Wednesday · Season Scientists","Thursday · Leaf Studio","Friday · Remember, Explain & Reflect"],must:["Week 4 developed the five senses","No single-season stereotype","Any home language may be used","The learning goal is reasoning—not access to a particular material"],forbidden:"Children participate in a joyful, developmentally appropriate lesson about seasons, trees, and leaves through language, math, inquiry, movement, and creation.",mastery:["Mathematics / pattern","Inquiry"]},
@@ -43,7 +58,7 @@ function assertInlineScriptsParse(label,html){
   }
 }
 
-assert.ok(gate.includes('const VERSION="1.2.13"'),"mastery engine must remain on Week 18 rollout contract or later");
+assert.ok(gate.includes('const VERSION="1.2.14"'),"mastery engine must remain on A++++ midyear essential-core contract or later");
 for(const marker of [
   'const PASS=80','const TOTAL_WEEKS=36','const DAYS_PER_WEEK=5',
   'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18])',
@@ -55,12 +70,14 @@ assert.ok(gate.includes('const best=Math.max(old.bestPercent,percent)')&&gate.in
 assert.ok(gate.includes('n>=19&&!milestoneMastery("midterm").mastered'),"Week 19+ must require midyear mastery");
 assert.ok(gate.includes('for(let i=1;i<=18;i++)if(!weekMastery(i).mastered)return false'),"midyear must require Weeks 1-18");
 assert.ok(gate.includes('for(let i=1;i<=TOTAL_WEEKS;i++)if(!weekMastery(i).mastered)return false'),"final must require all 36 weeks");
+assert.ok(gate.includes('function recordMilestoneEvidence({')&&gate.includes('source="adult-observed-performance-demonstration",\n    adultAffirmed=false,\n    essentialSatisfied=true')&&gate.includes('met,total,source,adultAffirmed,essentialSatisfied'),"milestone authority must accept and enforce essential core evidence");
 for(const marker of ['week-assessment','midterm\\.html','final-exam\\.html','formal-content\\.html','redirectLegacyAssessment'])assert.ok(gate.includes(marker),`formal route contract must preserve ${marker}`);
 
 assert.ok(app.includes('const GATES=window.KhaemenesKinderMasteryGates')&&app.includes('GATES.weekMastery')&&app.includes('GATES?.milestoneMastery'),"dashboard must consume mastery authority");
 assert.ok(!app.includes('[data-score]')&&!app.includes('state.weekly[input.dataset.score]')&&!index.includes('id="midtermScore"')&&!index.includes('id="finalScore"'),"manual score unlocking must not return");
 assert.ok(index.includes('id="portfolioAffirm"')&&index.includes('khaemenes-kinder-mastery-gates.js'),"dashboard must retain portfolio affirmation and authority");
-for(const marker of ['weeklyCriteria','milestoneRounds','recordWeekEvidence','recordMilestoneEvidence','Passing: <strong>80%</strong>','Authorized adult affirmation','REQUIRED CORE','essentialSatisfied:s.essentialSatisfied','all five daily learning experiences are complete','../data/a-plus-mastery.js','KHAE_KINDER_A_PLUS_MASTERY'])assert.ok(mastery.includes(marker),`mastery UI must preserve ${marker}`);
+for(const marker of ['weeklyCriteria','milestoneRounds','recordWeekEvidence','recordMilestoneEvidence','Passing: <strong>80%</strong>','Authorized adult affirmation','REQUIRED CORE','essentialSatisfied:s.essentialSatisfied','all five daily learning experiences are complete','../data/a-plus-mastery.js','KHAE_KINDER_A_PLUS_MASTERY','../data/midyear-mastery.js','KHAE_KINDER_MIDYEAR_MASTERY','MIDYEAR.length===40','at least 32 of 40 observed criteria','midyear-a-plus-performance-demonstration'])assert.ok(mastery.includes(marker),`mastery UI must preserve ${marker}`);
+assert.ok(mastery.includes('G.recordMilestoneEvidence({kind:mode,met:s.checked,total:s.total')&&mastery.includes('adultAffirmed:true,essentialSatisfied:s.essentialSatisfied'),"mastery UI must pass milestone essential-core state into authority");
 assertInlineScriptsParse("Mastery surface",mastery);
 
 for(const cfg of UPGRADED){
@@ -99,6 +116,8 @@ for(const name of assessmentNames){
   assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`${canonical} must remain guarded`);
   assert.ok(exists(preserved),`${preserved} must preserve public self-check history`);
 }
+const midtermGuard=read("curriculum/assessments/midterm.html");
+assert.ok(midtermGuard.includes("Previously published assessment pages are retained only as public self-check history")&&midtermGuard.includes(TAG),"legacy midterm route must remain a guarded non-authoritative shell");
 
 const workflow=read(".github/workflows/kindergarten-formal-gate-rollout.yml");
 assert.ok(workflow.includes("contents: read")&&!workflow.includes("git push")&&!workflow.includes("contents: write"),"validation workflow must remain read-only");
@@ -107,5 +126,6 @@ console.log("Kindergarten Academy Mastery + A++++ Daily Continuity Contract: PAS
 console.log("- 36 lesson routes fail closed; 39 legacy assessment routes remain intercepted");
 console.log(`- A++++ daily sequence active for Weeks ${UPGRADED.map(x=>x.unit).join(", ")}`);
 console.log("- week-specific rubrics remain curriculum data with exactly 10 criteria and required core evidence");
-console.log("- Week 18 preserves retrieval, targeted remediation, transfer, error repair, access, portfolio reflection, and the separate midyear authority boundary");
+console.log("- A++++ midyear uses 40 transparent criteria, 18 required core items, 80% overall, adult affirmation, best-score preservation, and separate authority enforcement");
+console.log("- Week 19 remains locked until qualifying midyear mastery; legacy midterm content remains non-authoritative");
 console.log("- daily evidence is never mastery; workflow remains read-only");
