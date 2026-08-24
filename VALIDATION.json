@@ -1,21 +1,36 @@
 {
-  "release": "Khaemenes Kinder Garden Ticker + Garden Refresh v11.1",
+  "release": "Khaemenes Kinder Garden · Archaemenes Mentor Consolidation v12.0",
   "valid": true,
+  "scope": "mentor-authority-and-family-continuity",
   "updates": {
-    "topTicker": true,
-    "tickerLinked": true,
-    "heroTreeLayered": true,
-    "heroBubblesLinked": true,
-    "playfulTypography": true,
-    "largerKinderElements": true,
-    "mentorArchitecturePreserved": true,
+    "singleAcademyMentor": true,
+    "mentorId": "archaemenes",
+    "kindergartenExpression": "wise-owl",
+    "familyRegistryAuthority": true,
+    "legacyMentorIdsDemotedToCommunicationStyles": true,
+    "customVisibleMentorDemotedToLegacyPresentationPreference": true,
+    "mentorDoorwaysRouteToAcademyMentor": true,
+    "noUnrestrictedYoungLearnerChat": true,
+    "naibIsRoutingNotSecondMentor": true,
+    "curriculumRecordsPreserved": true,
     "resourceRegistryPreserved": true,
-    "curriculumGatePreserved": true
+    "curriculumGatePreserved": true,
+    "masteryThresholdChanged": false,
+    "assessmentLogicChanged": false
+  },
+  "canonical": {
+    "mentor": "https://vervenveda.com/Khaemenes_Academy.github.io/mentor/",
+    "family": "https://vervenveda.com/Khaemenes_Academy.github.io/family/",
+    "identityAuthority": "academy-family-registry",
+    "masteryAuthority": "course-engine"
   },
   "files": [
-    "index.html",
+    "assets/khaemenes-kinder-family-adapter.js",
+    "assets/khaemenes-kinder-continuity.js",
+    "mentor-manifest.json",
     "README.md",
     "VALIDATION.json"
   ],
+  "validationBoundary": "Static source and authority contracts verified. Full browser interaction and cross-page runtime behavior require live browser exercise after Pages deployment.",
   "issues": []
 }
