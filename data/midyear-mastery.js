@@ -1,0 +1,47 @@
+/* Khaemenes Kinder Garden · A++++ midyear performance demonstration */
+(function(global){
+  "use strict";
+  const R=[
+    ["Learning identity and help-seeking","Participates in a familiar learning routine and communicates a need for help, clarification, a break, or an access support through an appropriate mode."],
+    ["Print and name awareness","Recognizes or uses meaningful print, name/label information, or another developmentally appropriate print concept in context."],
+    ["Listening / receptive comprehension","Responds to a short story, explanation, signed/visual text, or accessible presentation with one relevant idea, answer, question, or selection."],
+    ["Story sequence and retelling","Sequences and retells a three-part story with beginning, middle, and end while preserving important meaning rather than exact memorized wording.",true],
+    ["Rhyme / patterned-language recognition","Identifies or generates an age-appropriate rhyme or equivalent patterned-language relationship through an appropriate spoken, signed, visual, tactile, or other accessible pathway.",true],
+    ["Syllable / word-part segmentation","Segments and counts syllables or an appropriate language-pattern unit in familiar examples without confusing the count with written-letter count."],
+    ["Beginning sound / letter relationship","Identifies a beginning phonological feature and demonstrates that written letters and spoken sounds are related but not perfectly one-to-one in an age-appropriate example."],
+    ["Language access and variation","Uses an appropriate home-language, dialect, accent, signed-language, AAC, visual/tactile, or other access pathway without treating speech volume, hearing, eye contact, or one pronunciation as intelligence/mastery.",true],
+    ["One-to-one counting","Counts a small set with one-to-one correspondence and states or represents the total accurately.",true],
+    ["Cardinality and representation","Shows that the last count represents how many are in the set and represents the amount with objects, marks, numeral, tactile symbols, AAC, or another accessible form."],
+    ["Quantity comparison","Counts and compares two sets using more, fewer, same, numerical totals, or an age-appropriate difference strategy.",true],
+    ["Compose and decompose to 5","Builds or takes apart a quantity to 5 in more than one valid way and explains the parts/whole relationship.",true],
+    ["Number-story meaning","Models a simple joining, separating, or part-part-whole situation and explains what the quantities represent."],
+    ["Repeating pattern rule","Identifies, extends, repairs, or creates a repeating pattern and identifies the smallest repeating unit.",true],
+    ["Shape properties","Describes a common two- or three-dimensional shape by relevant properties and recognizes that orientation, color, or size does not alone change its identity."],
+    ["Spatial / map representation","Uses positional or directional language or a simple symbol/key to interpret or create a safe fictional route, map, or spatial model."],
+    ["Fair length measurement","Measures or compares length/height from a common start using repeated equal-size units with no intentional gaps/overlaps.",true],
+    ["Measurement communication and error detection","Reports a measurement as number plus unit and identifies or repairs an unfair measurement such as mixed units, shifted start, gaps, or overlaps.",true],
+    ["Weight / capacity attribute reasoning","Distinguishes length/height from weight or capacity and uses evidence appropriate to the named attribute rather than visual size alone."],
+    ["Rule-based classification","States a classification rule before sorting and sorts examples according to observable or known evidence."],
+    ["Observation versus inference","Distinguishes what is directly observed from a guess, inference, prediction, or human-like story.",true],
+    ["Prediction, evidence, and revision","Makes a simple prediction, compares it with evidence, and revises or qualifies the idea when evidence changes."],
+    ["Weather / data reasoning","Uses a simple weather observation or graph/data display to make a supported present-tense comparison or claim without treating a short sample as a guaranteed forecast."],
+    ["Plant structures and needs","Identifies common plant structures/functions or explains suitable access to water, light, air, space, and growing conditions without teaching soil as plant food."],
+    ["Animal structures, needs, and humane care","Connects an animal structure/behavior or habitat feature to a need and knows wild animals are observed from a safe distance rather than fed, chased, captured, or handled."],
+    ["Light, shadow, and Sun safety","Explains an age-appropriate light-source/object/shadow relationship and knows never to look directly at the Sun or use unsafe lasers, flames, heat, or lights aimed at eyes.",true],
+    ["Earth rotation / day-night / seasonal care","Uses a simple Earth-rotation model for day/night and avoids claiming that winter or daylight patterns are identical everywhere."],
+    ["Model purpose and limitation","Uses a map, habitat, plant, engineering, light, or other model for a stated purpose and names at least one thing the model leaves out or cannot prove.",true],
+    ["Location privacy and navigation safety","Knows that home address, live location, school route, bus stop, or identifying location is not required and that a classroom route activity never authorizes independent travel.",true],
+    ["Community work / goods / services","Distinguishes a good from a service or explains a community-care action without ranking jobs or stereotyping who performs work."],
+    ["Needs, wants, and economic dignity","Explains a fictional need/want or resource choice in context and knows money, possessions, saving ability, housing, food access, or family finances do not determine human worth or responsibility.",true],
+    ["Consent, helping, and voluntary sharing","Knows that kindness/helping never requires unsafe secrets, unwanted touch, forgiveness, money, gifts, food, comfort items, or surrendering personal possessions.",true],
+    ["Safety and responsible tool use","Applies an appropriate trusted-adult, material, movement, plant/animal, weather, light, or classroom-tool safety boundary in a relevant scenario.",true],
+    ["Engineering / fair-test revision","Tests or interprets a small safe model against a stated criterion under reasonably consistent conditions and uses evidence to revise or explain a design improvement."],
+    ["Creative representation","Communicates an academic idea through drawing, building, movement, music/rhythm, dramatic representation, design, dictation, or another accessible creative form."],
+    ["Self-regulation and persistence","Uses a developmentally appropriate strategy such as pausing, asking for help, trying another representation, revising, or returning to a task without speed or compliance being treated as intelligence."],
+    ["Collaboration and respectful communication","Participates in a shared task or exchange while respecting turn-taking, communication differences, boundaries, and another person's right to a different idea or access need."],
+    ["Error analysis and repair","Identifies at least one error, misconception, weak strategy, or missing piece of evidence and demonstrates a correction, improved representation, or more accurate explanation.",true],
+    ["Integrated transfer demonstration","Completes a novel age-appropriate task that combines communication with mathematical representation and inquiry/evidence reasoning, including a relevant safety, privacy, dignity, model-limit, or revision principle.",true],
+    ["Growth and evidence reflection","Selects or discusses one work sample/model/explanation as evidence of learning, names one area of growth, and identifies a reasonable next learning target without ranking against peers."]
+  ];
+  global.KHAE_KINDER_MIDYEAR_MASTERY=Object.freeze(R);
+})(window);
