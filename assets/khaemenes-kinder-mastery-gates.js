@@ -1,5 +1,5 @@
 /*
- * Khaemenes Kinder Garden · Formal Mastery Gates v1.2.21
+ * Khaemenes Kinder Garden · Formal Mastery Gates v1.3.0
  * -------------------------------------------------------
  * Formal advancement is learner-scoped and requires >=80% computed evidence.
  * Public previews and games remain open. Legacy typed scores are preserved as
@@ -15,17 +15,26 @@
 (function attachKhaemenesKinderMasteryGates(global){
   "use strict";
 
-  const VERSION="1.2.21";
+  const VERSION="1.3.0";
   const PASS=80;
   const TOTAL_WEEKS=36;
   const DAYS_PER_WEEK=5;
-  const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]);
+  /*
+   Evidence policy is intentionally tiered:
+   Weeks 1–4 = foundation/orientation evidence captured in the formal lesson page.
+   Weeks 5–25 = strict five-day sequence receipts before the weekly mastery rubric.
+   Weeks 26–36 = synthesis/capstone evidence captured by weekly demonstration + portfolio.
+   All three tiers still require >=80% formal mastery for advancement.
+*/
+const FOUNDATION_UNITS=new Set([1,2,3,4]);
+const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]);
+const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
   const KEY="khaemenes_kindergarten_mastery_receipts_v1";
-  const ACADEMY_REGISTRY="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js";
-  const CONTINUITY_SCRIPT="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-continuity.js";
-  const CURRICULUM_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/";
-  const MASTERY_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/mastery/";
-  const FAMILY_HOME="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
+  const ACADEMY_REGISTRY="/stos/khaemenes/assets/khaemenes-family-registry.js";
+  const CONTINUITY_SCRIPT="/stos/khaemenes/kindergarten/assets/khaemenes-kinder-continuity.js";
+  const CURRICULUM_HOME="/stos/khaemenes/kindergarten/curriculum/";
+  const MASTERY_HOME="/stos/khaemenes/kindergarten/curriculum/mastery/";
+  const FAMILY_HOME="/stos/khaemenes/family/";
 
   const now=()=>new Date().toISOString();
   const readJSON=(key,fallback)=>{
@@ -277,6 +286,9 @@
     global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-daily-evidence-changed",{
       detail:{unit:n,day:d,completed:true}
     }));
+    global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
+      detail:{kind:"daily-evidence",unit:n,day:d,evidence:record.daily[n][d]}
+    }));
     return dayEvidence(n,d);
   }
 
@@ -348,7 +360,11 @@
     });
     saveLearnerRecord(record);
     syncCompatibility(record);
-    return normalizedReceipt(record.weeks[n]);
+    const receipt=normalizedReceipt(record.weeks[n]);
+    global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
+      detail:{kind:"weekly-mastery",unit:n,receipt}
+    }));
+    return receipt;
   }
 
   function recordMilestoneEvidence({
@@ -368,7 +384,11 @@
     });
     saveLearnerRecord(record);
     syncCompatibility(record);
-    return milestoneMastery(kind);
+    const receipt=milestoneMastery(kind);
+    global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
+      detail:{kind:"milestone",milestone:kind,receipt}
+    }));
+    return receipt;
   }
 
   function setPortfolioComplete(complete,{adultAffirmed=false}={}){
@@ -379,6 +399,9 @@
     record.portfolioUpdatedAt=now();
     saveLearnerRecord(record);
     syncCompatibility(record);
+    global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
+      detail:{kind:"portfolio",complete:record.portfolio,updatedAt:record.portfolioUpdatedAt}
+    }));
     return record.portfolio;
   }
 

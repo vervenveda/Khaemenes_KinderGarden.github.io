@@ -11,8 +11,8 @@
 
   const VERSION="3.0.1";
   const ARCHAEMENES_ID="archaemenes";
-  const MENTOR_URL="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/";
-  const FAMILY_URL="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
+  const MENTOR_URL="/stos/mentor/";
+  const FAMILY_URL="/stos/khaemenes/family/";
   const LEGACY_MENTOR_STYLE=Object.freeze({pip:"playful",miri:"curious",nova:"imaginative",sage:"steady"});
   const VALID_STYLES=new Set(["playful","curious","imaginative","steady"]);
 
@@ -129,9 +129,9 @@
 
   function ensureBetaProgramLink(){
     if(!global.document)return;
-    if(global.document.querySelector('script[data-vnv-beta-link],script[src="https://vervenveda.com/assets/vnv-beta-link.js"]'))return;
+    if(global.document.querySelector('script[data-vnv-beta-link],script[src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js"]'))return;
     const script=global.document.createElement("script");
-    script.src="https://vervenveda.com/assets/vnv-beta-link.js";
+    script.src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js";
     script.defer=true;
     script.dataset.vnvBetaLink="kindergarten";
     global.document.head.appendChild(script);
@@ -143,8 +143,8 @@
       'a[href="#mentor"]',
       'a[href="../#mentor"]',
       'a[href="./#mentor"]',
-      'a[href="https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/"]',
-      'a[href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/"]'
+      'a[href="/stos/khaemenes/preschool/mentor/"]',
+      'a[href="/stos/mentor/"]'
     ].join(",");
     global.document.querySelectorAll(selectors).forEach(link=>{
       link.href=MENTOR_URL;

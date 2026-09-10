@@ -1,7 +1,7 @@
 /* Verve N Veda · Beta Program universal button widget · v1.2.0 */
 (() => {
   "use strict";
-  const ID="vnvBetaProgramLink", STYLE_ID="vnvBetaProgramLinkStyles", BETA_URL="https://vervenveda.com/beta/";
+  const ID="vnvBetaProgramLink", STYLE_ID="vnvBetaProgramLinkStyles", BETA_URL="/stos/beta/";
   if(document.getElementById(ID))return;
   const safeSource=()=>{try{const host=String(location.hostname||"").replace(/[^a-z0-9.:-]/gi,"").slice(0,120);const path=String(location.pathname||"/").replace(/[\u0000-\u001f\u007f]/g,"").slice(0,240);return `${host}${path}`.slice(0,320)||"ecosystem";}catch{return "ecosystem"}};
   const href=()=>`${BETA_URL}?source=${encodeURIComponent(safeSource())}`;

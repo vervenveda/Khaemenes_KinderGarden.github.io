@@ -1,0 +1,22 @@
+{
+  "schema": "stos-repository-validation-profile",
+  "version": 1,
+  "repository": "Khaemenes_KinderGarden",
+  "authority": "validation-only",
+  "materialization": "Viaduct verified tree",
+  "requiredChecks": [
+    "archive/checksum integrity",
+    "HTML relative-route integrity",
+    "JavaScript syntax",
+    "36 formal week routes present",
+    "36 weekly assessment routes present",
+    "80 percent mastery threshold unchanged",
+    "Beta helper coverage",
+    "no direct external fetch from learner runtime",
+    "no public Academy URL as operational authority"
+  ],
+  "operationalNode": false,
+  "operationalPython": false,
+  "githubActionsAuthority": false,
+  "legacyEvidence": "evidence/legacy-maintenance/"
+}
