@@ -1,0 +1,49 @@
+{
+  "version": "1.3.0",
+  "formalWeeks": {
+    "expected": 36,
+    "missing": []
+  },
+  "weeklyAssessments": {
+    "expected": 36,
+    "missing": []
+  },
+  "midterm": true,
+  "final": true,
+  "courseUnits": 36,
+  "dailyLessons": 180,
+  "dailyFieldUniqueness": {
+    "objective": 180,
+    "morningCircle": 180,
+    "teacherScript": 180,
+    "guidedPractice": 180,
+    "independentPractice": 180,
+    "reflection": 180,
+    "assessment": 180,
+    "evidence": 180
+  },
+  "masteryThreshold80": true,
+  "masteryPolicyTiers": true,
+  "jsSyntaxErrors": [],
+  "inlineScriptsChecked": 184,
+  "inlineScriptErrors": [],
+  "brokenRelativeRoutes": [],
+  "betaMissingPages": [],
+  "directExternalFetchOrImport": [],
+  "publicAcademyAuthorityURLs": [],
+  "remainingExternalDomains": {
+    "www.w3.org": 2,
+    "phet.colorado.edu": 2,
+    "pbskids.org": 1,
+    "kids.nationalgeographic.com": 2,
+    "climatekids.nasa.gov": 1,
+    "spaceplace.nasa.gov": 1,
+    "www.sheppardsoftware.com": 1,
+    "www.amnh.org": 1,
+    "www.si.edu": 1,
+    "sciencebob.com": 1
+  },
+  "githubActionsOperational": false,
+  "nodeMaintenanceOperational": false,
+  "legacyMaintenanceEvidence": true
+}

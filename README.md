@@ -1,3 +1,8 @@
+# Current STOS-Wired Build
+
+See `CURRENT_BUILD_v1.3.0.md` for the current Academy hierarchy, persistence,
+mentor, Beta, mastery, curriculum, dependency, and validation boundaries.
+
 # Khaemenes Kinder Garden — A Kinder Place to Learn
 
 **Jennifer Kay Pearl · Khaemenes Academy · Verve N Veda**
