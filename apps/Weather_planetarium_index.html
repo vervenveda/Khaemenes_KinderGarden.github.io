@@ -6,7 +6,6 @@
   <title>Solanar™ Planetarium — Kid Mode</title>
   <meta name="description" content="Solanar Planetarium Kid Mode — friendly weather for kids: simple today view, 6‑hour outlook, moon phase, and read‑aloud." />
   <meta name="theme-color" content="#ffd86b">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{
       --sky1:#fff7e6; --sky2:#ffe3b3; --ink:#2b2b2b; --ink2:#555;
@@ -371,25 +370,16 @@
 
     // ====== Data ======
     async function geocode(query){
-      const isZip = /^\d{5}$/.test(query.trim());
-      if(isZip){
-        const r = await fetch(`https://api.zippopotam.us/us/${query}`);
-        if(!r.ok) throw new Error('ZIP not found');
-        const z = await r.json();
-        return { lat:+z.places[0].latitude, lon:+z.places[0].longitude, label:`${z.places[0]['place name']}, ${z.places[0].state}` };
-      } else {
-        const url = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query)}&count=1&language=en&format=json`;
-        const r = await fetch(url); if(!r.ok) throw new Error('Geocoding failed');
-        const g = await r.json(); if(!g.results||!g.results.length) throw new Error('Location not found');
-        const c=g.results[0]; const label=[c.name,c.admin1,c.country_code].filter(Boolean).join(', ');
-        return {lat:c.latitude, lon:c.longitude, label};
-      }
+      if(!window.KhaemenesKinderSTOSBridge?.geocode) throw new Error("Internal location service is not ready.");
+      const g=await window.KhaemenesKinderSTOSBridge.geocode(query);
+      if(!g || !Number.isFinite(+g.lat) || !Number.isFinite(+g.lon)) throw new Error("Location not found");
+      return {lat:+g.lat, lon:+g.lon, label:g.label||query};
     }
 
     async function fetchWeather(lat, lon, label){
-      const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code,is_day&hourly=temperature_2m,precipitation_probability,weather_code,uv_index&daily=sunrise,sunset&timezone=auto&${omUnits()}`;
-      const r = await fetch(url); if(!r.ok) throw new Error('Weather failed');
-      const d = await r.json();
+      if(!window.KhaemenesKinderSTOSBridge?.weather) throw new Error("Internal weather service is not ready.");
+      const d = await window.KhaemenesKinderSTOSBridge.weather(lat,lon,label,isMetric?"metric":"imperial");
+      if(!d || !d.current) throw new Error("Weather data unavailable");
       const c = d.current;
       const now = {
         city: label,
@@ -425,9 +415,8 @@
     }
 
     async function fetchAstronomy(lat, lon){
-      const url = `https://api.open-meteo.com/v1/astronomy?latitude=${lat}&longitude=${lon}&daily=moon_phase,moonrise,moonset&timezone=auto`;
-      const r = await fetch(url); if(!r.ok) return;
-      const a = await r.json();
+      if(!window.KhaemenesKinderSTOSBridge?.astronomy) return;
+      const a = await window.KhaemenesKinderSTOSBridge.astronomy(lat,lon);
       const phase = a.daily?.moon_phase?.[0];
       const rise = a.daily?.moonrise?.[0];
       const set  = a.daily?.moonset?.[0];
@@ -484,8 +473,8 @@
       navigator.geolocation.getCurrentPosition(async pos=>{
         const {latitude:lat, longitude:lon} = pos.coords;
         try{
-          const r = await fetch(`https://geocoding-api.open-meteo.com/v1/reverse?latitude=${lat}&longitude=${lon}&language=en&format=json`);
-          const g = r.ok ? await r.json() : null; const label = g?.results?.[0]?.name ? `${g.results[0].name}, ${g.results[0].admin1 || ''}`.trim() : 'My Location';
+          const g = await window.KhaemenesKinderSTOSBridge?.reverseGeocode?.(lat,lon);
+          const label = g?.label || 'My Location';
           await fetchWeather(lat, lon, label);
         }catch{ await fetchWeather(lat, lon, 'My Location'); }
       }, err=> alert(err.message||'Permission denied'));
@@ -777,6 +766,6 @@
     <path d="M46 72 Q60 80 74 72" fill="none" stroke="#5a6a2a" stroke-width="4" stroke-linecap="round"/>
   </svg>
 </div>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>

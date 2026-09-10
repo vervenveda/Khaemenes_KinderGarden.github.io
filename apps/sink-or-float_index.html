@@ -176,9 +176,18 @@ const tank = document.getElementById('tank'),
       confetti = document.getElementById('confetti'),
       langSel = document.getElementById('langSel');
 
-// sounds (best effort)
-let splash=null, pop=null;
-try{ splash = new Audio("https://actions.google.com/sounds/v1/water/splash.ogg"); pop = new Audio("https://actions.google.com/sounds/v1/cartoon/pop.ogg"); } catch(e){}
+// dependency-free sound cues
+function tone(freq=440){
+  try{
+    const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+    const ctx=window.__khaeSinkAudio||(window.__khaeSinkAudio=new AC());
+    const o=ctx.createOscillator(),g=ctx.createGain();o.frequency.value=freq;
+    g.gain.setValueAtTime(.0001,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.02);
+    g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.22);o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.24);
+  }catch{}
+}
+const splash={play:()=>{tone(220);return Promise.resolve();},currentTime:0};
+const pop={play:()=>{tone(660);return Promise.resolve();},currentTime:0};
 
 // language UI
 function updateLangUI(){
@@ -365,6 +374,6 @@ renderDebug();
 
 })();
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>

@@ -699,7 +699,7 @@ document.addEventListener('keydown', (e)=>{
 });
 
 
-const EIREN_PUBLIC_ADAPTER="https://artist1970.github.io/Eiren.github.io/eiren-adapter.js";
+const EIREN_PUBLIC_ADAPTER="/stos/mentors/eiren/eiren-adapter.js";
 async function connectEirenBoundary(){
   try{const mod=await import(EIREN_PUBLIC_ADAPTER);if(mod?.EirenAdapter?.prepare){const p=mod.EirenAdapter.prepare({mode:"reading",message:"Kindergarten ABC Story Sing-Along phonics and reading guidance."});if(p?.specialist==="eiren")eirenStatus.textContent="🌸 Eiren’s public reading boundary is connected.";}}catch(_){}
 }
@@ -714,6 +714,6 @@ window.addEventListener('load', ()=>{
   list.querySelectorAll('.letter-btn').forEach(btn=>btn.setAttribute('tabindex','0'));
 });
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>

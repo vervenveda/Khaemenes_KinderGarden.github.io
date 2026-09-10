@@ -345,14 +345,19 @@ pianoPanel.innerHTML=`
     <button class="beatToggle" style="background:#3498db;">🥁 Beat</button>
   </div>
   <div id="message" style="color:#fff;margin:10px;"></div>
-  <audio id="beatAudio" src="https://actions.google.com/sounds/v1/drums/drum_loop.ogg" loop preload="auto"></audio>`;
+  `;
 document.body.appendChild(pianoPanel);
 
 const NOTES=["C4","D4","E4","F4","G4","A4","B4","C5"];
 const pianoDiv=pianoPanel.querySelector("#piano");
 const freqMap={"C4":261.63,"D4":293.66,"E4":329.63,"F4":349.23,"G4":392,"A4":440,"B4":493.88,"C5":523.25};
 let recording=[],isRecording=false,startTime,beatPlaying=false;
-const beatAudio=pianoPanel.querySelector("#beatAudio");
+let beatTimer=null;
+const beatAudio={
+  play(){ if(beatTimer)return Promise.resolve(); beatTimer=setInterval(()=>playTone("C4",.08),500); return Promise.resolve(); },
+  pause(){ if(beatTimer){clearInterval(beatTimer);beatTimer=null;} },
+  get currentTime(){return 0;}, set currentTime(v){}
+};
 function createKeys(){
   pianoDiv.innerHTML="";
   NOTES.forEach(note=>{
@@ -476,6 +481,6 @@ document.getElementById("saveSentences").onclick=()=>{
   if(newS.length){sentences=newS;localStorage.setItem("teacherSentences",JSON.stringify(sentences));alert("Sentences saved!");}
 };
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>

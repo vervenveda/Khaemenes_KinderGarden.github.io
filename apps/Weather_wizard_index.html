@@ -157,18 +157,23 @@
   <button id="soundToggle">🔊 Sound: On</button>
 </div>
 
-<!-- sounds -->
-<audio id="snd-sun" src="https://actions.google.com/sounds/v1/ambiences/birds_in_forest.ogg" preload="auto"></audio>
-<audio id="snd-rain" src="https://actions.google.com/sounds/v1/weather/rain.ogg" preload="auto" loop></audio>
-<audio id="snd-snow" src="https://actions.google.com/sounds/v1/cartoon/magic_chime.ogg" preload="auto"></audio>
-<audio id="snd-wind" src="https://actions.google.com/sounds/v1/weather/wind.ogg" preload="auto" loop></audio>
-<audio id="snd-cloudy" src="https://actions.google.com/sounds/v1/cartoon/pop.ogg" preload="auto"></audio>
-<audio id="snd-storm" src="https://actions.google.com/sounds/v1/weather/thunder_crack.ogg" preload="auto"></audio>
-<audio id="snd-rainbow" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" preload="auto"></audio>
-<audio id="snd-fog" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
-<audio id="snd-night" src="https://actions.google.com/sounds/v1/ambiences/night_insects.ogg" preload="auto" loop></audio>
-
+<!-- sounds are generated locally with Web Audio; no remote media dependency -->
 <script>
+function khaeWeatherTone(kind){
+  try{
+    const AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC)return;
+    const ctx=window.__khaeWeatherAudio||(window.__khaeWeatherAudio=new AC());
+    const o=ctx.createOscillator(),g=ctx.createGain();
+    const map={sun:660,rain:330,snow:880,wind:440,cloudy:520,storm:180,rainbow:740,fog:260,night:220};
+    o.frequency.value=map[kind]||440;o.type=kind==="storm"?"sawtooth":"sine";
+    g.gain.setValueAtTime(.0001,ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.02);
+    g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.35);
+    o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.38);
+  }catch{}
+}
+
 const scene=document.getElementById("scene");
 const msg=document.getElementById("message");
 const factBox=document.getElementById("fact");
@@ -261,6 +266,6 @@ window.addEventListener("load",()=>{
   showFact(last);
 });
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>
