@@ -118,7 +118,7 @@
 <script>
   document.getElementById('printBtn').addEventListener('click', ()=> window.print());
   document.getElementById('shareBtn').addEventListener('click', async ()=>{
-    const url = 'https://www.vervenveda.com/protools/taskhandler';
+    const url = '/stos/proresources/taskhandler/';
     if(navigator.share){
       try{ await navigator.share({title:'Elementary Science Resources', text:'Free science games & activities for kids', url}); }
       catch(e){}
@@ -129,6 +129,6 @@
     }
   });
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>

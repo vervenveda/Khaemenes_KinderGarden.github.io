@@ -754,7 +754,7 @@ footer{
       <a href="../">Kinder Garden Home</a>
       <a href="../curriculum/">36-Week Curriculum</a>
       <a href="../curriculum/teacher-tools/">Teacher Tools</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Master Family Profile</a>
+      <a href="/stos/khaemenes/family/">Master Family Profile</a>
     </nav>
   </div>
 
@@ -772,7 +772,7 @@ footer{
       <div class="actions">
         <a class="btn gold" id="continueTop" href="../curriculum/">Continue Curriculum</a>
         <a class="btn" href="../curriculum/teacher-tools/">Teacher & Family Tools</a>
-        <a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Manage Full Family Profile</a>
+        <a class="btn" href="/stos/khaemenes/family/">Manage Full Family Profile</a>
       </div>
     </div>
   </div>
@@ -801,7 +801,7 @@ footer{
 
         <div class="actions">
           <a class="btn soft" href="../#mentor">Set Up Kinder Learner & Mentor</a>
-          <a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Adults, Permissions & Family Management</a>
+          <a class="btn" href="/stos/khaemenes/family/">Adults, Permissions & Family Management</a>
         </div>
       </section>
 
@@ -892,9 +892,9 @@ footer{
   Kinder Garden Family Curriculum Portal
 </footer>
 
-<script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/khaemenes-profile-bridge.js"></script>
-<script src="https://vervenveda.com/Khaemenes_Preschool.github.io/assets/preschool-catalog.js"></script>
-<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
+<script src="/stos/khaemenes/preschool/assets/khaemenes-profile-bridge.js"></script>
+<script src="/stos/khaemenes/preschool/assets/preschool-catalog.js"></script>
+<script src="/stos/khaemenes/assets/khaemenes-family-registry.js"></script>
 <script src="../assets/khaemenes-kinder-family-adapter.js"></script>
 <script src="../assets/khaemenes-kinder-continuity.js"></script>
 <script src="../assets/khaemenes-kinder-companions.js"></script>
@@ -1022,13 +1022,10 @@ function activateLearner(learner){
 
 function renderFamily(){
   const registry = window.KhaemenesFamilyRegistry;
-  const isSharedOrigin =
-    location.protocol === "https:" &&
-    location.hostname === "vervenveda.com";
-
-  $("#originNotice").innerHTML = isSharedOrigin
-    ? '<div class="notice good">Shared-origin mode is active. Khaemenes portals opened through https://vervenveda.com can use this same browser-local family registry.</div>'
-    : '<div class="notice">For cross-repository browser continuity, open the Khaemenes sites through https://vervenveda.com. Separate github.io, www, http, or other origins do not share the same localStorage.</div>';
+  const stosConnected = Boolean(window.KhaemenesKinderSTOSBridge);
+  $("#originNotice").innerHTML = stosConnected
+    ? '<div class="notice good">Khaemenes Home continuity is available through the internal STOS bridge. Durable family and learner records belong to the protected Account Cloud.</div>'
+    : '<div class="notice">This page is in resilience mode. Return to Khaemenes Home for canonical family, learner, enrollment, and placement continuity.</div>';
 
   if(!registry){
     $("#familySummary").textContent =
@@ -1329,6 +1326,6 @@ render();
 
 })();
 </script>
-<script src="/assets/vnv-beta-link.js" defer></script>
-</body>
+<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>
