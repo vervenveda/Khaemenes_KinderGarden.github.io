@@ -136,15 +136,23 @@ async function astronomy(lat,lon){
 async function flushQueue(){
   if(flushing)return;flushing=true;
   try{
-    const keep=[];
-    for(const item of queueRead()){
+    const snapshot=queueRead();
+    const delivered=new Set();
+    for(const item of snapshot){
+      if(!item||typeof item.id!=="string")continue;
+      const msg={...envelope(item.kind,item.payload),requestId:item.id,createdAt:item.queuedAt||now()};
       try{
-        if(item.kind==="mentor-request")await send(ENDPOINTS.mentor,{body:envelope(item.kind,item.payload)});
-        else if(item.kind==="beta-report")await send(ENDPOINTS.beta,{body:envelope(item.kind,item.payload)});
-        else await send(ENDPOINTS.sync,{body:envelope(item.kind,item.payload)});
-      }catch{keep.push(item)}
+        if(item.kind==="mentor-request")await send(ENDPOINTS.mentor,{body:msg});
+        else if(item.kind==="beta-report")await send(ENDPOINTS.beta,{body:msg});
+        else await send(ENDPOINTS.sync,{body:msg});
+        delivered.add(item.id);
+      }catch{/* Retain original event with its stable ID for retry. */}
     }
-    queueWrite(keep);
+    // Re-read after network awaits: new events may have arrived during the flush.
+    const latest=queueRead();
+    const remaining=latest.filter(item=>!delivered.has(item?.id));
+    queueWrite(remaining);
+    dispatchEvent(new CustomEvent("khaemenes:kinder-queue",{detail:{count:remaining.length}}));
   }finally{flushing=false}
 }
 
