@@ -215,6 +215,25 @@ for(const dir of lessonDirs){
 assert.ok(gate.includes('if(CAPSTONE_UNITS.has(n)&&adultAffirmed!==true)throw new Error("adult-affirmation-required")'),"capstone daily evidence must require explicit adult affirmation");
 assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-evidence-save-failed")'),"daily evidence must not announce success when persistence fails");
 
+
+for(const unit of [2,3,4]){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  const targets=[...html.matchAll(/<p[^>]*><strong>Daily learning target:<\/strong>\s*([\s\S]*?)<\/p>/gi)]
+    .map(m=>m[1].replace(/<[^>]*>/g,"").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,"<").replace(/&gt;/g,">").trim());
+  const unitData=courseData.units.find(item=>Number(item.unit)===unit);
+  assert.equal(targets.length,5,"Week "+unit+" must expose five distinct explicit daily learning targets");
+  assert.deepEqual(targets,unitData.lessons.map(lesson=>lesson.objective),"Week "+unit+" preview objectives must match formal daily targets");
+  assert.deepEqual(targets,unitData.lessons.map(lesson=>lesson.formalLessonTarget),"Week "+unit+" formalLessonTarget must remain synchronized");
+  assert.ok(new Set(targets).size===5,"Week "+unit+" daily targets must be distinct");
+  assert.ok(!html.includes("Children participate in a joyful, developmentally appropriate lesson"),"Week "+unit+" must not use the generic daily objective template");
+  assertInlineScriptsParse("Foundational Week "+unit,html);
+}
+const sensoryLesson=read("curriculum/lessons/unit-04/formal-content.html");
+assert.equal((sensoryLesson.match(/Safe participation:/g)||[]).length,5,"Week 4 must show safety/access alternatives on all five days");
+assert.ok(sensoryLesson.includes("Never taste classroom items")&&sensoryLesson.includes("Smell and touch are optional"),"Week 4 must keep non-coercive sensory safety language");
+assert.ok(sensoryLesson.includes("const DEFAULT_STATE")&&sensoryLesson.includes("catch { state = null; }"),"Week 4 local progress must recover from malformed saved state");
+
 for(let unit=26;unit<=36;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read(`curriculum/lessons/unit-${n}/formal-content.html`);
