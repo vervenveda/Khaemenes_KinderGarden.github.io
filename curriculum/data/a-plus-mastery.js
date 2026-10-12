@@ -2,6 +2,54 @@
 (function(global){
   "use strict";
   const R={
+    1:[
+      ["Learning identity and help-seeking","Communicates a need for help, clarification, a break, or an access support through an appropriate mode.",true],
+      ["Name and belonging","Recognizes or identifies their own name among a small set of familiar names without requiring public disclosure of personal details.",true],
+      ["Listening and shared attention","Responds to a short shared story, explanation, visual text, or accessible presentation with a relevant idea, question, gesture, or selection."],
+      ["Print awareness","Shows that print carries meaning and identifies a familiar label, symbol, or book feature."],
+      ["One-to-one counting","Counts a small, concrete collection by matching one count word, sign, or marker to each object.",true],
+      ["Sort and explain","Sorts classroom objects by one observable attribute and indicates the sorting rule."],
+      ["Safe routines","Identifies or demonstrates a classroom safety routine and how to ask for support.",true],
+      ["Community map or collage","Creates a name collage, classroom representation, or accessible equivalent and explains one choice."],
+      ["Self-awareness","Communicates a feeling, preference, strength, or learning need without being required to share private information."],
+      ["Reflection and participation","Selects one example of learning or participation and communicates what they noticed."]
+    ],
+    2:[
+      ["Name-letter recognition","Identifies or matches familiar letters in their name and distinguishes a letter from a whole word or picture.",true],
+      ["Letter and sound relationship","Connects a taught familiar letter with a plausible sound example while recognizing that letters and sounds do not always map one-to-one."],
+      ["Environmental print","Uses a familiar label, sign, title, or symbol to explain what information it communicates."],
+      ["Story elements","Identifies a character and/or setting from a familiar read-aloud or accessible story.",true],
+      ["One-to-one counting to 10","Counts a collection up to 10 using one-to-one correspondence, with tools or access supports as needed.",true],
+      ["Cardinality","Explains or represents that the final count tells how many objects are in the set."],
+      ["Question and response","Asks or answers one relevant question about a story, illustration, author, or event."],
+      ["Name-book creation","Creates or dictates a name-book page using drawing, marks, copied print, labels, AAC, or another accessible form."],
+      ["Listening and turn-taking","Participates in an exchange while respecting a peer's communication and turn."],
+      ["Transfer and reflection","Applies one name, letter, counting, or story skill to a new familiar example and communicates the strategy."]
+    ],
+    3:[
+      ["Feelings vocabulary","Identifies or communicates a feeling using words, pictures, gesture, sign, AAC, or another accessible mode.",true],
+      ["Rhyming awareness","Recognizes or generates a simple rhyme in familiar examples, with repetition or visual support when appropriate.",true],
+      ["Beginning-sound awareness","Identifies or matches a beginning sound in a familiar word without treating letter-name recall alone as sound mastery."],
+      ["Compare quantities","Compares two small collections using more, fewer, or same and supports the choice with counting or matching.",true],
+      ["Friendship and perspective","Describes or demonstrates one way two people may feel differently in a shared situation."],
+      ["Listening to a peer","Shows understanding of a peer's contribution by responding, selecting, paraphrasing, or asking a related question."],
+      ["Repair language","Chooses an age-appropriate way to request space, express a boundary, ask for help, or repair a misunderstanding.",true],
+      ["Feelings-wheel artifact","Creates or uses a feelings representation and communicates what one part means."],
+      ["Respectful boundaries","Recognizes that helping, touch, sharing, and conversation should respect a person's boundaries and safety.",true],
+      ["Reflection and transfer","Applies a feelings or comparison strategy to a new fictional scenario and explains or shows the choice."]
+    ],
+    4:[
+      ["Sensory observation","Describes at least two observable details using a safe sensory or accessible observation pathway.",true],
+      ["Observation versus inference","Separates a directly noticed detail from a guess about why it happened.",true],
+      ["Descriptive language","Uses a relevant descriptive word, sign, symbol, or AAC selection to communicate a feature."],
+      ["Attribute classification","Sorts objects or images using a stated observable attribute and checks whether each example fits."],
+      ["Compare and classify","Compares two examples using same/different language linked to observed evidence.",true],
+      ["Sound matching","Matches or distinguishes safe, familiar sounds and explains or indicates one clue."],
+      ["Safe sensory choices","Uses safe materials and can choose a non-touch, non-smell, visual, verbal, or other accessible alternative.",true],
+      ["Senses journal","Records two observations through drawing, marks, labels, dictation, AAC, or an equivalent evidence form."],
+      ["Evidence-based explanation","Uses an observed feature to support a simple statement rather than relying only on a guess."],
+      ["Reflection and careful noticing","Communicates one observation and one question or next thing to investigate."]
+    ],
     5:[
       ["Unit idea","Explains or shows a real change noticed in nature or seasonal weather."],
       ["Literacy","Uses a nature word and demonstrates the Week 5 beginning-sound focus.",true],
