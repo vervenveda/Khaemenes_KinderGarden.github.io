@@ -93,7 +93,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “Who am I in this learning community?” and use at least one example to notice or communicate an idea related to welcome to the learning garden.",
+          "objective": "Recognize your name, identify a feeling, and count a small group of classroom objects.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -128,16 +128,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about welcome to the learning garden.",
-            "Attempts one activity connected to names, print awareness, listening routines or count, match, and sort classroom objects."
+            "Recognize your name, identify a feeling, and count a small group of classroom objects.",
+            "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Recognize your name, identify a feeling, and count a small group of classroom objects."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise names, print awareness, listening routines and count, match, and sort classroom objects through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Sort classroom materials by what they are used for and explain where they belong.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -172,16 +173,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to names, print awareness, listening routines or count, match, and sort classroom objects.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Sort classroom materials by what they are used for and explain where they belong.",
+            "Completes a guided example and communicates one step or choice."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Sort classroom materials by what they are used for and explain where they belong."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate classroom community, safe routines, and responsibility by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Put a simple classroom routine in order and explain why routines help.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -216,16 +218,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about classroom community, safe routines, and responsibility.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Put a simple classroom routine in order and explain why routines help.",
+            "Uses an observation, comparison, or stated rule to support an explanation."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Put a simple classroom routine in order and explain why routines help."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Name collage and classroom map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Use simple symbols to represent classroom spaces and choose one helpful responsibility.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -260,16 +263,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to name collage and classroom map in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Use simple symbols to represent classroom spaces and choose one helpful responsibility.",
+            "Creates or revises an artifact and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Use simple symbols to represent classroom spaces and choose one helpful responsibility."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about welcome to the learning garden, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Reflect on belonging, helping, counting, organization, and trying again.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -304,10 +308,11 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “welcome to the learning garden” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Reflect on belonging, helping, counting, organization, and trying again.",
+            "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Reflect on belonging, helping, counting, organization, and trying again."
         }
       ],
       "weeklyAssessment": {
@@ -1588,7 +1593,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What changes do we notice in nature?” and use at least one example to notice or communicate an idea related to seasons, trees, and leaves.",
+          "objective": "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1623,16 +1628,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about seasons, trees, and leaves.",
-            "Attempts one activity connected to nature words and letter sounds or create and extend patterns."
+            "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation.",
+            "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise nature words and letter sounds and create and extend patterns through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1667,16 +1673,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to nature words and letter sounds or create and extend patterns.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary.",
+            "Completes a guided example and communicates one step or choice."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate seasonal weather and living things by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1711,16 +1718,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about seasonal weather and living things.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence.",
+            "Uses an observation, comparison, or stated rule to support an explanation."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Leaf rubbings and pattern crown” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1755,16 +1763,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to leaf rubbings and pattern crown in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice.",
+            "Creates or revises an artifact and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about seasons, trees, and leaves, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1799,10 +1808,11 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “seasons, trees, and leaves” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration.",
+            "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration."
         }
       ],
       "weeklyAssessment": {
@@ -1958,7 +1968,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How does weather affect what we do?” and use at least one example to notice or communicate an idea related to weather, sun, and sky.",
+          "objective": "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1993,16 +2003,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about weather, sun, and sky.",
-            "Attempts one activity connected to weather vocabulary and shared writing or graph daily weather and count totals."
+            "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence.",
+            "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise weather vocabulary and shared writing and graph daily weather and count totals through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2037,16 +2048,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to weather vocabulary and shared writing or graph daily weather and count totals.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future.",
+            "Completes a guided example and communicates one step or choice."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate weather, sunlight, shade, and safety by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2081,16 +2093,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about weather, sunlight, shade, and safety.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object.",
+            "Uses an observation, comparison, or stated rule to support an explanation."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Weather wheel” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2125,16 +2138,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to weather wheel in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool.",
+            "Creates or revises an artifact and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about weather, sun, and sky, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2169,10 +2183,11 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “weather, sun, and sky” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery.",
+            "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery."
         }
       ],
       "weeklyAssessment": {
@@ -2328,7 +2343,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do shapes help us build and describe?” and use at least one example to notice or communicate an idea related to shapes, colors, and design.",
+          "objective": "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2363,16 +2378,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about shapes, colors, and design.",
-            "Attempts one activity connected to shape words and positional words or identify, compose, and sort shapes."
+            "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature.",
+            "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise shape words and positional words and identify, compose, and sort shapes through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Use positional words accurately and compose familiar shapes into a larger figure or design.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2407,16 +2423,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to shape words and positional words or identify, compose, and sort shapes.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Use positional words accurately and compose familiar shapes into a larger figure or design.",
+            "Completes a guided example and communicates one step or choice."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Use positional words accurately and compose familiar shapes into a larger figure or design."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate design, structure, and spatial reasoning by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2451,16 +2468,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about design, structure, and spatial reasoning.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule.",
+            "Uses an observation, comparison, or stated rule to support an explanation."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Shape city” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2495,16 +2513,17 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to shape city in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works.",
+            "Creates or revises an artifact and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about shapes, colors, and design, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2539,10 +2558,11 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “shapes, colors, and design” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery.",
+            "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery."
         }
       ],
       "weeklyAssessment": {
