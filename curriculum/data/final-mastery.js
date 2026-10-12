@@ -1,0 +1,60 @@
+/* Khaemenes Kinder Garden · Final readiness performance rubric
+ * Canonical 50-item rubric aligned to course-data.json itemCount=50.
+ * Adult-observed evidence only; threshold and essential-core policy stay in mastery gates.
+ */
+(function(global){
+  "use strict";
+  const R=[
+    ["Integrated communication","Communicates an idea clearly through speech, sign, AAC, drawing, gesture, objects, or another accessible mode.",true],
+    ["Name and meaningful print","Recognizes or uses familiar name print, labels, or symbols in context."],
+    ["Letter recognition","Identifies taught familiar letters across more than one example."],
+    ["Letter-sound connection","Connects familiar taught letters with plausible sounds and handles a new example with reasonable support.",true],
+    ["Phonological awareness","Demonstrates age-appropriate rhyme, syllable, or beginning-sound awareness."],
+    ["Listening comprehension","Responds to a short story, explanation, signed/visual text, or accessible presentation with a relevant idea.",true],
+    ["Story sequence","Sequences beginning, middle, and end or three meaningful events in a story.",true],
+    ["Story evidence","Uses a detail from a story or image to support a response."],
+    ["Emergent writing","Communicates a meaningful idea through drawing, dictation, labels, copied print, or emergent writing."],
+    ["Vocabulary transfer","Uses or explains a taught word in a new appropriate context."],
+    ["One-to-one counting","Counts a concrete set with one count per object.",true],
+    ["Cardinality","Represents that the final count names the set's total.",true],
+    ["Numeral and quantity","Matches a familiar numeral, mark, or tactile symbol to a quantity."],
+    ["Quantity comparison","Compares groups using more, fewer, same, or a supported numerical difference.",true],
+    ["Compose numbers","Builds a number to 10 from two parts using objects, images, or another representation.",true],
+    ["Decompose numbers","Shows a quantity in more than one valid part-part-whole arrangement."],
+    ["Number-story reasoning","Models a simple joining, separating, or comparison story and explains what the quantities mean."],
+    ["Pattern rule","Identifies, extends, or repairs a repeating pattern and indicates what repeats.",true],
+    ["Shape properties","Describes common shapes by relevant properties rather than color or orientation alone."],
+    ["Spatial language","Uses positional or directional language to describe a model, route, or arrangement."],
+    ["Measurement fairness","Measures or compares using a common starting point and repeated equal-size units.",true],
+    ["Measurement communication","Reports a measurement as a number plus unit or identifies a limitation in the comparison."],
+    ["Data representation","Creates or reads a simple count, tally, picture graph, or category display."],
+    ["Data-based claim","Makes a claim supported by the displayed sample and avoids overgeneralizing.",true],
+    ["Classification rule","States or selects a sorting rule and classifies examples according to observable evidence."],
+    ["Observation versus inference","Distinguishes a direct observation from a guess, prediction, or story.",true],
+    ["Prediction and evidence","Makes a simple prediction, checks evidence, and revises or qualifies an idea."],
+    ["Living things and needs","Connects living things with needs or structures using accurate age-appropriate evidence."],
+    ["Weather and sky reasoning","Interprets a simple weather, sunlight, shadow, or day/night observation without unsafe claims."],
+    ["Water and material change","Describes an age-appropriate material or water change and recognizes that models have limits."],
+    ["Habitat and animal care","Connects an animal need with a habitat feature and respects safe, humane wildlife boundaries.",true],
+    ["Earth care reasoning","Makes a context-aware material or stewardship choice without assuming every item is locally recyclable."],
+    ["Force and motion","Describes or tests a simple motion interaction using a safe model."],
+    ["Fair-test thinking","Names a variable or comparison condition that should stay the same for a fair test."],
+    ["Engineering criteria","Builds or explains a model against a stated purpose or design constraint."],
+    ["Design revision","Uses feedback or evidence to revise a design or explain a reasonable improvement."],
+    ["Map and model limitation","Explains that a map or model represents selected features and leaves other features out."],
+    ["Civic/community understanding","Explains a community role, symbol, shared rule, or service without stereotyping people."],
+    ["Needs and wants","Distinguishes a contextual need from a want using a fictional or familiar example."],
+    ["Consent and boundaries","Identifies a safe way to ask for help, respect a boundary, or make sharing voluntary.",true],
+    ["Safety and tools","Applies an appropriate trusted-adult or material safety rule in a relevant scenario.",true],
+    ["Self-regulation","Chooses a reasonable strategy such as pause, ask for help, change representation, or take a break."],
+    ["Persistence with strategy","Tries a strategy and can explain or show what was changed, without speed being the goal."],
+    ["Error detection","Identifies an error, missing evidence, or mismatch and attempts a correction.",true],
+    ["Collaboration","Participates in a shared task while respecting turns, communication differences, and boundaries."],
+    ["Creative representation","Uses art, movement, music, drama, building, or another accessible form to communicate an idea."],
+    ["Portfolio evidence","Selects a work sample or model and communicates what it shows about learning."],
+    ["Independent transfer","Applies a familiar skill to a new age-appropriate problem with reduced prompting.",true],
+    ["Integrated reasoning","Combines communication, mathematics, and evidence-based inquiry in one task.",true],
+    ["Next-step reflection","Identifies one strength and one reasonable next learning target without peer ranking."]
+  ];
+  global.KHAE_KINDER_FINAL_MASTERY=Object.freeze(R);
+})(window);
