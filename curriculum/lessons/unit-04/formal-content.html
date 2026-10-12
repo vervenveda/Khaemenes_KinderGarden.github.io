@@ -453,7 +453,8 @@
         font-size:.92rem;
       }
     }
-  </style>
+  .kg-safety-note{padding:10px 12px;border-left:4px solid #d6a23d;background:#fff9e8;border-radius:8px;line-height:1.45}
+</style>
 </head>
 <body>
 <header class="kg-header">
@@ -521,7 +522,7 @@
     <section class="kg-panel active" data-kg-panel="0">
       <article class="kg-lesson">
         <h3>Monday: Wonder Launch</h3>
-        <p class="kg-lesson-sub"><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.</p>
+        <p class="kg-lesson-sub"><strong>Daily learning target:</strong> Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling.</p><p class="kg-safety-note"><strong>Safe participation:</strong> Never taste classroom items. Smell and touch are optional, never required. Use pictures, observation from a distance, adult description, pointing, drawing, sign, or AAC as equivalent ways to participate.</p>
         <div class="kg-activity">
           <h4>👂 Sense Explorer Warm-Up</h4>
           <p>Tap each sense picture to hear its name and think of an example.</p>
@@ -554,7 +555,7 @@
     <section class="kg-panel" data-kg-panel="1">
       <article class="kg-lesson">
         <h3>Tuesday: Guided Skill Lab</h3>
-        <p class="kg-lesson-sub"><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.</p>
+        <p class="kg-lesson-sub"><strong>Daily learning target:</strong> Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required.</p><p class="kg-safety-note"><strong>Safe participation:</strong> Never taste classroom items. Smell and touch are optional, never required. Use pictures, observation from a distance, adult description, pointing, drawing, sign, or AAC as equivalent ways to participate.</p>
         <div class="kg-activity">
           <h4>🧺 Sort Sense Tools</h4>
           <p>Tap an object, then tap the place where it belongs.</p>
@@ -586,7 +587,7 @@
     <section class="kg-panel" data-kg-panel="2">
       <article class="kg-lesson">
         <h3>Wednesday: Inquiry Workshop</h3>
-        <p class="kg-lesson-sub"><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.</p>
+        <p class="kg-lesson-sub"><strong>Daily learning target:</strong> Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame.</p><p class="kg-safety-note"><strong>Safe participation:</strong> Never taste classroom items. Smell and touch are optional, never required. Use pictures, observation from a distance, adult description, pointing, drawing, sign, or AAC as equivalent ways to participate.</p>
         <div class="kg-activity">
           <h4>🐝 Build the Sensory Trail</h4>
           <p>Tap the steps in the order you think makes sense.</p>
@@ -609,7 +610,7 @@
     <section class="kg-panel" data-kg-panel="3">
       <article class="kg-lesson">
         <h3>Thursday: Create &amp; Communicate</h3>
-        <p class="kg-lesson-sub"><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.</p>
+        <p class="kg-lesson-sub"><strong>Daily learning target:</strong> Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper.</p><p class="kg-safety-note"><strong>Safe participation:</strong> Never taste classroom items. Smell and touch are optional, never required. Use pictures, observation from a distance, adult description, pointing, drawing, sign, or AAC as equivalent ways to participate.</p>
         <div class="kg-activity">
           <h4>🗺 Make a Tiny Sensory Map</h4>
           <p>Tap each square to choose a place for your classroom.</p>
@@ -639,7 +640,7 @@
     <section class="kg-panel" data-kg-panel="4">
       <article class="kg-lesson">
         <h3>Friday: Review &amp; Celebrate</h3>
-        <p class="kg-lesson-sub"><strong>Objective:</strong> Children participate in a joyful, developmentally appropriate lesson about the five senses through language, math, inquiry, movement, and creation.</p>
+        <p class="kg-lesson-sub"><strong>Daily learning target:</strong> Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question.</p><p class="kg-safety-note"><strong>Safe participation:</strong> Never taste classroom items. Smell and touch are optional, never required. Use pictures, observation from a distance, adult description, pointing, drawing, sign, or AAC as equivalent ways to participate.</p>
         <div class="kg-activity">
           <h4>🌟 What Grew This Week?</h4>
           <p>Choose one thing you are proud of.</p>
@@ -756,7 +757,13 @@ window.KINDER_GARDEN_LESSON = {
     window.__kgToastTimer = setTimeout(() => el.classList.remove("show"), 1600);
   };
 
-  const state = JSON.parse(localStorage.getItem(storageKey) || "{"completedDays":[],"mastery":[],"seeds":0,"mentorOpen":true}");
+  const DEFAULT_STATE = {completedDays:[],mastery:[],seeds:0,mentorOpen:true};
+  let state;
+  try { state = JSON.parse(localStorage.getItem(storageKey) || "null"); } catch { state = null; }
+  if (!state || typeof state !== "object" || Array.isArray(state)) state = {...DEFAULT_STATE};
+  state.completedDays = Array.isArray(state.completedDays) ? state.completedDays : [];
+  state.mastery = Array.isArray(state.mastery) ? state.mastery : [];
+  state.seeds = clamp(Number(state.seeds) || 0, 0, 5);
   const save = () => localStorage.setItem(storageKey, JSON.stringify(state));
 
   const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
