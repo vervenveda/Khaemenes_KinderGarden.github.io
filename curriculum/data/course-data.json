@@ -393,7 +393,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do letters and stories help us share who we are?” and use at least one example to notice or communicate an idea related to names, letters, and stories.",
+          "objective": "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -428,16 +428,17 @@
           "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about names, letters, and stories.",
-            "Attempts one activity connected to name letters, environmental print, story parts or count to 10 with one-to-one correspondence."
+            "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning.",
+            "Identifies or matches a familiar name letter and explains what one label communicates."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise name letters, environmental print, story parts and count to 10 with one-to-one correspondence through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -472,16 +473,17 @@
           "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to name letters, environmental print, story parts or count to 10 with one-to-one correspondence.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule.",
+            "Attempts a taught letter-sound match or sort and explains the rule."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate books, authors, illustrators, characters, and settings by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -516,16 +518,17 @@
           "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about books, authors, illustrators, characters, and settings.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail.",
+            "Identifies a character and setting and uses a story clue."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Make a name book” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -560,16 +563,17 @@
           "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to make a name book in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one.",
+            "Creates an accessible name-book page and counts a small set one-to-one when appropriate."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about names, letters, and stories, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -604,10 +608,11 @@
           "familyConnection": "At home, notice one example of “names, letters, and stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence.",
+            "Transfers a name-print, story, or counting skill to a fresh example."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence."
         }
       ],
       "weeklyAssessment": {
@@ -993,7 +998,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do we learn by observing carefully?” and use at least one example to notice or communicate an idea related to the five senses.",
+          "objective": "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1028,16 +1033,17 @@
           "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about the five senses.",
-            "Attempts one activity connected to describing words and sound matching or sort and classify by attributes."
+            "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling.",
+            "Communicates two directly observed details using a safe, chosen mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise describing words and sound matching and sort and classify by attributes through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1072,16 +1078,17 @@
           "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to describing words and sound matching or sort and classify by attributes.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required.",
+            "Sorts picture cards and recognizes that no sense must be physically used to complete the task."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate scientific observation through safe sense routines by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1116,16 +1123,17 @@
           "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about scientific observation through safe sense routines.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame.",
+            "Separates an observed detail from a guess and identifies a clue."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Senses journal” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1160,16 +1168,17 @@
           "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to senses journal in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper.",
+            "Creates an accessible observation record with two details."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about the five senses, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -1204,10 +1213,11 @@
           "familyConnection": "At home, notice one example of “the five senses” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question.",
+            "Applies observation-versus-inference reasoning to a fresh example and chooses a safe way to participate."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question."
         }
       ],
       "weeklyAssessment": {
