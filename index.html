@@ -211,6 +211,41 @@ body .mentor-principles li strong{color:#3e6548}
 @media(max-width:760px){.ticker-track{font-size:.92rem}.scene-link{width:94px;min-height:82px;padding:.5rem .35rem}.scene-link .big{font-size:1.65rem}.scene-link small{font-size:.67rem}.scene-link.one{left:12px;top:152px}.scene-link.two{left:8px;top:290px}.scene-link.three{left:92px;top:38px}.scene-link.four{right:92px;top:38px}.scene-link.five{right:10px;top:154px}.scene-link.six{right:8px;top:290px}.scene-link.seven{left:96px;bottom:56px}.scene-link.eight{right:96px;bottom:56px}.scene-tree{width:310px;height:300px;top:130px}.tree-trunk{left:129px;width:58px;height:154px}.garden-caption{font-size:.83rem}}
 @media(max-width:560px){.ticker-track{gap:.65rem}.scene-sun{right:28px;top:34px;width:68px;height:68px}.garden-scene{min-height:500px}.scene-tree{width:270px;height:282px;top:138px}.tree-trunk{left:111px;width:50px;height:145px}.scene-link{width:86px;min-height:74px;border-radius:20px}.scene-link .big{font-size:1.45rem}.scene-link small{font-size:.61rem}.scene-link.one{left:8px;top:162px}.scene-link.two{left:8px;top:302px}.scene-link.three{left:66px;top:40px}.scene-link.four{right:66px;top:40px}.scene-link.five{right:8px;top:160px}.scene-link.six{right:8px;top:302px}.scene-link.seven{left:76px;bottom:62px}.scene-link.eight{right:76px;bottom:62px}}
 
+
+
+/* === Khaemenes Kinder Garden typography standard (layout-preserving) === */
+:root{
+  --kg-eyebrow-size:55px;
+  --kg-page-h1-size:33px;
+  --kg-descriptor-h2-size:24px;
+}
+/* Eyebrow / overline: the prominent pre-title requested for the site. */
+.eyebrow,.eyebrow-title,.kicker,.overline,.pretitle,.hero-kicker,[data-role="eyebrow"],p[class*="eyebrow"]{
+  font-size:clamp(30px,4.3vw,var(--kg-eyebrow-size)) !important;
+  line-height:1.04 !important;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+/* Main page heading. The line box is kept generous to avoid clipping existing title treatments. */
+h1,.page-title,.hero-title,[data-role="page-title"]{
+  font-size:clamp(28px,2.6vw,var(--kg-page-h1-size)) !important;
+  line-height:1.16 !important;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+/* Descriptor/subtitle H2 only; section headings retain their current hierarchy/layout. */
+h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.hero h1 + .subtitle,.hero h1 span,.hero-title + .lead-heading{
+  font-size:clamp(20px,2.1vw,var(--kg-descriptor-h2-size)) !important;
+  line-height:1.25 !important;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+@media(max-width:600px){
+  .eyebrow,.eyebrow-title,.kicker,.overline,.pretitle,.hero-kicker,[data-role="eyebrow"],p[class*="eyebrow"]{font-size:clamp(28px,8vw,40px)!important}
+  h1,.page-title,.hero-title,[data-role="page-title"]{font-size:30px!important}
+  h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.hero h1 + .subtitle,.hero h1 span,.hero-title + .lead-heading{font-size:22px!important}
+}
+/* === End typography standard === */
 </style>
 </head>
 <body id="top"><div style="text-align:center;padding:10px 14px;background:#214f35;color:#fff;font-weight:700"><a href="/stos/khaemenes/" style="color:#fff;text-decoration:none">← Khaemenes Home</a> · Khaemenes Academy Gateway</div>
