@@ -260,6 +260,17 @@ assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-ev
 
 
 assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progression:'),"curriculum preview must display the formal lesson progression arc when present");
+
+for(let unit=5;unit<=10;unit++){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  assert.equal((html.match(/Teach · Practise · Correct · Transfer/g)||[]).length,5,"Week "+unit+" must include a five-day instructional cycle");
+  for(const phrase of ["Prerequisite retrieval","Explicit teacher model","Guided-to-independent practice","Common misconception and correction","Fresh transfer check","Record independent, prompted, or not-yet"]){
+    assert.ok(html.includes(phrase),"Week "+unit+" instructional cycle must include: "+phrase);
+  }
+  assertInlineScriptsParse("Instructional Depth Week "+unit,html);
+}
+
 for(let unit=8;unit<=25;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
