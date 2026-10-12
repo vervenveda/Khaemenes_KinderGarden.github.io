@@ -310,11 +310,11 @@ for(const unit of [13,14]){
   assertInlineScriptsParse("Instructional Depth Week "+unit,html);
 }
 const week13=read("curriculum/lessons/unit-13/formal-content.html");
-for(const phrase of ["part-part-whole","total stayed five","Giving is not always subtraction","Helping has boundaries","Gratitude is optional emotion","fresh three-event story","new number scenario"]){
+for(const phrase of ["part-part-whole","total stays five","Giving is not always subtraction","Helping has boundaries","Gratitude is optional emotion","never-before-seen three-event story","unfamiliar fictional number story"]){
   assert.ok(week13.toLowerCase().includes(phrase.toLowerCase()),"Week 13 must preserve key learning and misconception coverage: "+phrase);
 }
 const week14=read("curriculum/lessons/unit-14/formal-content.html");
-for(const phrase of ["Rhyme is about sound, not matching letters","Syllables are spoken word parts—not letters","Sound before symbol","Dialect respect","initial sound","new spoken words"]){
+for(const phrase of ["Rhyme is about sound, not matching letters","Syllables are spoken word parts—not letters","Sound before symbol","Dialect respect","initial sound","new spoken-word/picture options"]){
   assert.ok(week14.toLowerCase().includes(phrase.toLowerCase()),"Week 14 must preserve key phonological distinction and access coverage: "+phrase);
 }
 
