@@ -160,6 +160,15 @@ for(const dir of lessonDirs){
   assert.ok(html.includes('fetch("formal-content.html"'),`${canonical} may hydrate only after gate opens`);
 }
 
+
+for(let unit=26;unit<=36;unit++){
+  const n=String(unit).padStart(2,"0");
+  const html=read(`curriculum/lessons/unit-${n}/formal-content.html`);
+  assert.ok(html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} must link directly to the current mastery rubric`);
+  assert.ok(!html.includes(`href="../../assessments/unit-${n}-assessment.html"`),`Week ${unit} must not route learners through the retired assessment shell`);
+  assert.ok(!html.includes('href="../../assessments/weekly-assessments.html"'),`Week ${unit} assessment navigation must use the canonical mastery route`);
+}
+
 const assessmentRoot=path.join(ROOT,"curriculum","assessments");
 const assessmentNames=fs.readdirSync(assessmentRoot,{withFileTypes:true}).filter(e=>e.isFile()&&(/^unit-\d{2}-assessment\.html$/.test(e.name)||["midterm.html","final-exam.html","weekly-assessments.html"].includes(e.name))).map(e=>e.name);
 assert.equal(assessmentNames.length,39,"39 legacy assessment routes must be accounted for");
