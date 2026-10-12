@@ -186,7 +186,7 @@ if(lessons.length!==5){q("#dailyPathMessage").textContent="Teacher review is nee
 lessons.forEach((p,i)=>{
  p.dataset.panel=String(i+1);const d=i+1,box=document.createElement("div");box.className="daily-evidence-action";
  const targetLine=[...p.querySelectorAll("p")].find(line=>/Daily learning target:/i.test(line.textContent));
- const targetText=targetLine?targetLine.textContent.replace(/Daily learning target:\\s*/i,"").trim():"Tell or show what you learned today.";
+ const targetText=targetLine?targetLine.textContent.replace(/Daily learning target:\s*/i,"").trim():"Tell or show what you learned today.";
  const target=document.createElement("p"),targetLabel=document.createElement("strong");targetLabel.textContent="Evidence target: ";target.append(targetLabel,document.createTextNode(targetText));box.appendChild(target);
  const reminder=document.createElement("p");reminder.textContent="When your grown-up has observed this learning, save the daily evidence below.";box.appendChild(reminder);
  const save=document.createElement("button");save.type="button";save.className="action gold save-day";save.dataset.day=String(d);save.textContent="Save Day "+d+" Evidence";box.appendChild(save);
