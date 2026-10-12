@@ -396,6 +396,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "language & belonging",
+          "counting & sorting",
+          "classroom safety"
+        ],
+        "before": "Entry baseline: do not assume formal preschool skills. Invite an informal observation of communication, name recognition, object matching, and participation preferences.",
+        "deepen": "Move from participation and noticing to matching a name/label, counting a small set one-to-one, and explaining one simple sorting rule.",
+        "transfer": "Use a new classroom object or picture to show a name/label meaning, count a small set, or choose a safe routine.",
+        "next": "Prepares for Week 2's letter noticing, environmental print, story meaning, and counting to 10.",
+        "support": "Model one step, reduce the choice set, use concrete objects and visual schedules, and record which supports helped; do not require public disclosure.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “Who am I in this learning community?” and use at least one example to notice or communicate an idea related to welcome to the learning garden.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise names, print awareness, listening routines and count, match, and sort classroom objects through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate classroom community, safe routines, and responsibility by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Name collage and classroom map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about welcome to the learning garden, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -732,6 +771,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "alphabet knowledge & print",
+          "story comprehension",
+          "counting/cardinality"
+        ],
+        "before": "Builds on Week 1 name/label noticing, listening routines, object matching, and one-to-one counting; establish these with a quick baseline if not yet secure.",
+        "deepen": "Move from recognizing meaningful whole labels to noticing familiar letters, connecting only taught letters to sounds, identifying character/setting, and counting a set with one-to-one correspondence.",
+        "transfer": "Use an unfamiliar but accessible label and a new short story picture; ask the learner to identify a familiar letter or meaning clue and count a small set.",
+        "next": "Prepares for Week 3's sound play and communication, then Week 4's descriptive language and careful observation.",
+        "support": "Start with the learner's own name or a highly familiar label; avoid guessing at untaught letter-sound correspondences and accept pointing, matching, dictation, or AAC.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -1068,6 +1146,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "phonological awareness",
+          "communication & SEL",
+          "quantity comparison"
+        ],
+        "before": "Builds from familiar words, shared listening, and turn-taking in Weeks 1–2.",
+        "deepen": "Move from naming a feeling or preference to selecting a safe communication strategy, noticing rhyme/beginning sounds, and comparing groups using more, fewer, or same.",
+        "transfer": "Present a new friendship scenario and two small object groups; learner communicates a need and compares groups with objects or pictures.",
+        "next": "Prepares for Week 4's descriptive observation and later rhyme/syllable work in Weeks 8 and 14.",
+        "support": "Do not require a child to disclose a personal feeling or perform aloud; use fictional characters, picture choices, AAC, and concrete quantity sets.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Name or communicate one feeling and choose a safe, respectful way to express a need or preference; recognize that speech, gesture, drawing, sign, and AAC are valid ways to communicate.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Children compare groups and notice how words help communities stay kind and safe.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Children create, explain, and practice repair language with a partner or small group.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Children share one growth moment and celebrate voice, friendship, and feelings language.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -1404,6 +1521,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "observation & inference",
+          "descriptive language",
+          "attribute classification"
+        ],
+        "before": "Builds from Week 3's noticing and communicating, without assuming every child is comfortable with sensory exploration.",
+        "deepen": "Move from naming a sense to recording observable details, distinguishing observation from inference, and sorting by a stated attribute.",
+        "transfer": "Use a new picture or safe object: state one observable detail, mark one inference, and choose a safe participation mode.",
+        "next": "Prepares for Week 5 nature observation and patterning, then weather-data observation in Week 6.",
+        "support": "Never require tasting; touch and smell remain optional. Use pictures, adult descriptions, distance observation, gesture, or AAC; do not use surprise sensory exposure.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -1735,6 +1891,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "nature vocabulary",
+          "beginning sounds",
+          "repeating patterns"
+        ],
+        "before": "Builds from Week 4's careful noticing, descriptive language, and attribute sorting.",
+        "deepen": "Move from describing one natural feature to comparing seasonal evidence, identifying an appropriate taught beginning sound, and creating/extending a repeating pattern.",
+        "transfer": "Classify a new leaf/nature image, name a relevant detail, and extend a short color/shape/movement pattern.",
+        "next": "Prepares for Week 6's weather observation and graph counts, then later fair measurement in plant-growth work.",
+        "support": "Offer image samples when outdoor materials are unavailable; treat season signs as observations rather than assuming every climate has snow or leaf-color change.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “What changes do we notice in nature?” and use at least one example to notice or communicate an idea related to seasons, trees, and leaves.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise nature words and letter sounds and create and extend patterns through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate seasonal weather and living things by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Leaf rubbings and pattern crown” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about seasons, trees, and leaves, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -2066,6 +2261,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "weather observation",
+          "data & graphs",
+          "safety reasoning"
+        ],
+        "before": "Builds from Week 5's nature noticing, vocabulary, and pattern structure.",
+        "deepen": "Move from a single observation to recording categories over several observations, counting totals, comparing a graph, and distinguishing data from prediction.",
+        "transfer": "Read a fresh simple weather tally and explain what it shows and does not show; select a safe action for a weather scenario.",
+        "next": "Prepares for Week 7's shape properties and spatial language and later measurement/data interpretation.",
+        "support": "Use a provided sample data set if daily observation is unavailable; never use the graph to claim certainty about future weather.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How does weather affect what we do?” and use at least one example to notice or communicate an idea related to weather, sun, and sky.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise weather vocabulary and shared writing and graph daily weather and count totals through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate weather, sunlight, shade, and safety by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Weather wheel” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about weather, sun, and sky, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -2397,6 +2631,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "geometry & spatial language",
+          "classification",
+          "design & revision"
+        ],
+        "before": "Builds from Week 5's sorting/pattern rules and Week 6's careful description of observable features.",
+        "deepen": "Move from naming colors and shapes to classifying by properties, composing shapes, using positional language, and revising a design under a simple constraint.",
+        "transfer": "Compose a new shape picture and explain the property or positional clue used; try a second solution.",
+        "next": "Prepares for Week 8's translating patterns between visual, sound, and movement forms.",
+        "support": "Use large manipulatives, tactile or high-contrast shapes, and verbal/pointing responses; assess properties rather than drawing precision.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do shapes help us build and describe?” and use at least one example to notice or communicate an idea related to shapes, colors, and design.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise shape words and positional words and identify, compose, and sort shapes through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate design, structure, and spatial reasoning by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Shape city” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about shapes, colors, and design, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -2733,6 +3006,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "repeating patterns",
+          "phonological awareness",
+          "rhythm & movement"
+        ],
+        "before": "Builds on Week 5's repeating-pattern experience, Week 3's rhyme exposure, and Week 7's visual/spatial representations.",
+        "deepen": "Move from copying a pattern to naming its repeating unit, extending or correcting it, and translating a rule between visual, tactile, sound, and movement forms.",
+        "transfer": "Given a novel AB/AAB/ABC sequence, identify its unit, predict the next elements, and represent the same rule in another mode.",
+        "next": "Prepares for Week 9's sequencing and measurement; revisits rhyme and syllables more explicitly in Week 14.",
+        "support": "Offer non-auditory and non-movement equivalents; distinguish steady beat, rhythm, syllable, and rhyme rather than treating them as the same skill.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “Where do we find patterns?” and use at least one example to notice or communicate an idea related to patterns, music, and movement.",
+            "lessonFocus": "discover repeating units and distinguish pattern from randomness."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise rhyming, syllable claps, repeated words and ab, aab, abc patterns through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "connect beat, rhythm, syllables, and rhyme without confusing them."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate patterns in music, dance, and nature by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "translate one pattern rule across visual, tactile, sound, and movement forms."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Pattern performance” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "design and rehearse an original pattern performance with respectful choices."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about patterns, music, and movement, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery."
+          }
+        ]
       }
     },
     {
@@ -3069,6 +3381,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "story sequencing",
+          "measurement",
+          "belonging & privacy"
+        ],
+        "before": "Builds on Weeks 2–3 story listening and Week 7 positional/spatial language.",
+        "deepen": "Move from retelling a story in order to comparing past/present details and measuring length/height from a common starting point with equal units.",
+        "transfer": "Sequence a new fictional or volunteered story and compare two structures with the same unit, explaining the reference point.",
+        "next": "Prepares for Week 10's map as a selective model, symbols, legends, and route description.",
+        "support": "Use fictional or learner-selected family examples; do not require sharing family structure, traditions, names, or private history.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “What makes a home and family special?” and use at least one example to notice or communicate an idea related to families, homes, and traditions.",
+            "lessonFocus": "understand that families and caring communities can take many forms."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise oral history and story sequence and compare lengths and heights through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "listen to and sequence an oral-history or fictional past/present story."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate past/present, families, culture, and respect by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "compare home/building objects using nonstandard length and height measures."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Family house drawing” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "explore traditions as meaningful repeated practices that can vary and change."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about families, homes, and traditions, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate story sequence, measurement, past/present, belonging, privacy, and respect."
+          }
+        ]
       }
     },
     {
@@ -3405,6 +3756,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "maps & models",
+          "symbols/labels",
+          "spatial measurement"
+        ],
+        "before": "Builds from Week 7's spatial language and Week 9's sequencing/measurement.",
+        "deepen": "Move from following directions to understanding that maps selectively represent places, building a legend, and comparing routes using consistent units.",
+        "transfer": "Read or create a new small map, explain one symbol, follow two route steps, and identify one thing the map omits.",
+        "next": "Prepares for Week 11's model-and-measure approach to plant growth and later route/system reasoning.",
+        "support": "Use fictional places and avoid personal home-location details; provide tactile, high-contrast, or verbal route alternatives.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How can a map help us find and explain?” and use at least one example to notice or communicate an idea related to maps, places, and community.",
+            "lessonFocus": "understand a map as a selective model, not the place itself."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise map words and labels and count steps and compare distances through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "design symbols, labels, and a readable legend/key."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate maps, symbols, places, and directions by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "follow, describe, and compare routes using consistent model units."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Classroom treasure map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "plan a fictional community around varied needs and accessible routes."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about maps, places, and community, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "navigate, explain, test, revise, and reflect."
+          }
+        ]
       }
     },
     {
@@ -3741,6 +4131,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "plant structures & needs",
+          "measurement over time",
+          "fair inquiry"
+        ],
+        "before": "Builds on Weeks 4–6 observation, description, and data recording.",
+        "deepen": "Move from naming plant parts/needs to recording change from a consistent baseline and distinguishing observation from prediction in a fair comparison.",
+        "transfer": "Interpret two dated plant drawings or measurements and explain one supported change and one unanswered question.",
+        "next": "Prepares for Week 12's animal structure/function and habitat-resource explanations.",
+        "support": "Use supplied growth records if a plant has not grown; avoid implying that one short observation proves a general causal rule.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “What do plants need to grow?” and use at least one example to notice or communicate an idea related to plants and gardens.",
+            "lessonFocus": "investigate seeds and plant structures/functions."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise plant vocabulary and sequence words and measure plant growth informally through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "distinguish plant needs, resources, and common misconceptions."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate living things need water, light, and care by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "measure and journal change from a consistent baseline."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Seed cup and plant journal” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "use fair-test thinking, evidence, and responsible care."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about plants and gardens, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate structures, needs, sequence, measurement, evidence, and stewardship."
+          }
+        ]
       }
     },
     {
@@ -4077,6 +4506,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "animal structures & behavior",
+          "classification & counting",
+          "habitats"
+        ],
+        "before": "Builds on Week 11's plant-need reasoning and Weeks 4–6 observation practices.",
+        "deepen": "Move from noticing animal features to stating a classification rule, comparing group counts, and connecting a habitat feature to an animal need using evidence.",
+        "transfer": "Classify a new animal image by a stated rule and support one habitat match with an observable or supplied clue.",
+        "next": "Prepares for Week 13's story sequence, number composition, and evidence-based community-care reasoning.",
+        "support": "Use images/models or distant observation; never require catching, touching, feeding, or disturbing wildlife. Treat behavior as evidence, not a human personality label.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do animals meet their needs?” and use at least one example to notice or communicate an idea related to animals and habitats.",
+            "lessonFocus": "distinguish observations about animal structures and behaviors from guesses."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise animal sounds and alliteration and sort and count animal groups through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "classify animals by stated evidence-based rules and count/compare groups."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate needs of living things and habitats by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "connect habitat resources and conditions to animal needs."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Habitat diorama” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "engineer and revise a habitat model that explains its choices."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about animals and habitats, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate needs, classification, habitat fit, evidence, and humane care."
+          }
+        ]
       }
     },
     {
@@ -4413,6 +4881,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "narrative sequencing",
+          "number composition to 5",
+          "care & consent"
+        ],
+        "before": "Builds from Week 9's story sequence, Week 3's communication/relationship skills, and earlier small-set counting.",
+        "deepen": "Move from beginning-middle-end retelling to composing/decomposing quantities to 5 and explaining a visible act of care without ranking people or jobs.",
+        "transfer": "Retell a new short story in order and model a number story to 5 using objects, pictures, or marks.",
+        "next": "Prepares for Week 14's more precise sound/rhyme/syllable distinctions and Week 16's quantity/choice reasoning.",
+        "support": "Gratitude is optional; never require a performance, gift, personal disclosure, or a claim that every act of care must be repaid.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How can stories and actions show gratitude?” and use at least one example to notice or communicate an idea related to gratitude, giving, and storytelling.",
+            "lessonFocus": "build and retell a clear beginning-middle-end narrative."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise retelling and story beginning/middle/end and add and take apart numbers to 5 through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "compose and take apart quantities to 5 using number stories."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate community helpers and acts of care by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "investigate visible acts of community care without ranking people or jobs."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Thank-you card workshop” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "create an authentic appreciation message or equivalent chosen response."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about gratitude, giving, and storytelling, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate story, number, care, boundaries, and reflection."
+          }
+        ]
       }
     },
     {
@@ -4749,6 +5256,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "rhyme & syllables",
+          "beginning sounds",
+          "language analysis"
+        ],
+        "before": "Builds from Week 3's introductory rhyme/beginning-sound work and Week 8's sound/rhythm connections.",
+        "deepen": "Move from broad sound play to explicitly distinguishing rhyme, syllable, onset/beginning sound, letter, and spelling pattern.",
+        "transfer": "Sort fresh word/picture examples by the requested sound feature and explain why a distractor belongs to a different category.",
+        "next": "Prepares for more precise language in Week 15's measurement explanations and later structured questioning.",
+        "support": "Respect home-language and dialect differences; allow picture, token, sign, or other language pathways and don't equate accent with error.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do sounds make words playful?” and use at least one example to notice or communicate an idea related to sounds, rhymes, and word play.",
+            "lessonFocus": "identify and generate rhyme in an appropriate language pathway."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise rhyme, syllables, onset sounds and count sounds, beats, and objects through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "segment and count syllables without confusing syllables with letters."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate language as communication by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "notice beginning sounds and distinguish sound from spelling."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Rhyme parade” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "create word-play patterns and explain the rule."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about sounds, rhymes, and word play, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "retrieve, compare, correct misconceptions, and prepare for mastery."
+          }
+        ]
       }
     },
     {
@@ -5085,6 +5631,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "measurement & units",
+          "fair comparison",
+          "engineering design"
+        ],
+        "before": "Builds from Week 9's direct measurement and Week 7's design composition.",
+        "deepen": "Move from direct comparison to repeated equal-size units, naming the unit, separating length/weight/capacity, and testing a build against a stated constraint.",
+        "transfer": "Measure two objects fairly with the same units, explain why the comparison is fair, and revise a simple bridge model after a test.",
+        "next": "Prepares for Week 16's quantity-based choices and Week 24's repeated trials and engineering constraints.",
+        "support": "Use safe lightweight materials and stable tabletop tests; praise revision and reasoning over the tallest or strongest structure.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How can we compare and build carefully?” and use at least one example to notice or communicate an idea related to measurement and builders.",
+            "lessonFocus": "compare length/height directly from a common starting point."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise measurement words and describing structures and measure with nonstandard units through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "measure with repeated equal-size nonstandard units and report the unit."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate structure, balance, and materials by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "investigate heavier/lighter and capacity without confusing size, weight, and amount held."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Block bridge challenge” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "design, test, measure, and revise a tabletop model bridge under a stated constraint."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about measurement and builders, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate fair measurement, evidence, engineering decisions, and reflection."
+          }
+        ]
       }
     },
     {
@@ -5421,6 +6006,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "quantity & money models",
+          "choice reasoning",
+          "economic dignity"
+        ],
+        "before": "Builds on counting/cardinality, part-whole work, and Week 15's explicit comparison rules.",
+        "deepen": "Move from counting tokens to comparing amounts, classifying goods/services, and explaining tradeoffs under a fictional constraint.",
+        "transfer": "Solve a pretend-market choice problem with a fixed token budget and give a reason that references both quantity and a stated need/want.",
+        "next": "Prepares for Week 17's variable-control reasoning and Week 27's compose/decompose number stories to 10.",
+        "support": "Tokens are mathematical models, not measures of personal worth; keep examples fictional, avoid ranking jobs, and accept different reasonable priorities.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do we make wise choices?” and use at least one example to notice or communicate an idea related to needs, wants, money, and choices.",
+            "lessonFocus": "examine needs, wants, and context without shaming different lives."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise decision words and opinion starters and count pennies/counters and compare amounts through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "count, represent, and compare token amounts with one-to-one correspondence."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate needs, wants, goods, and services by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "distinguish goods/services and trace how work/resources help meet needs."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Classroom market” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about needs, wants, money, and choices, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate quantity, priorities, choice reasoning, dignity, and reflection."
+          }
+        ]
       }
     },
     {
@@ -5757,6 +6381,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "light/shadow models",
+          "measurement consistency",
+          "earth-sky concepts"
+        ],
+        "before": "Builds on Week 6's sunlight/weather observations and Week 15's consistent measurement.",
+        "deepen": "Move from identifying a light source/object/screen to changing one position variable, measuring with a common unit, and separating shadow observations from explanations.",
+        "transfer": "Predict then test one controlled shadow change; describe the measured difference and identify what was held constant.",
+        "next": "Prepares for Week 18's cross-domain retrieval and Week 33's later sky/day-night models.",
+        "support": "Use a flashlight and paper model; never look directly at the Sun. Use indirect evidence and do not use shadow change alone as proof of every sky claim.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “What can light and shadow show us?” and use at least one example to notice or communicate an idea related to winter, light, and shadows.",
+            "lessonFocus": "identify light sources and explain how an opaque object can block light to form a shadow."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise light/shadow vocabulary and compare shadow lengths through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "change source/object/screen position and observe how the shadow changes."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate sunlight, shadow, day/night patterns by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "measure and compare shadow/model lengths using a consistent baseline and unit."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Shadow puppet theatre” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about winter, light, and shadows, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "retrieve, explain, repair misconceptions, and integrate evidence safely."
+          }
+        ]
       }
     },
     {
@@ -6093,6 +6756,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "retrieval & remediation",
+          "literacy transfer",
+          "math representation"
+        ],
+        "before": "Consolidates Weeks 1–17; use prior learner evidence, not age or speed assumptions, to choose targets.",
+        "deepen": "Move from a low-stakes snapshot to a specific teach-practice-transfer cycle in literacy, mathematics, and inquiry; the snapshot itself is not mastery credit.",
+        "transfer": "After targeted support, try a fresh parallel task and record which strategy/support enabled success.",
+        "next": "Prepares for Week 19's goal-setting and evidence-based reflection; midyear readiness remains governed by the formal milestone gate.",
+        "support": "Treat errors as diagnostic evidence, avoid fluency theater and peer comparison, and give more than one mode of response.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “What have I learned so far?” and use at least one example to notice or communicate an idea related to midyear review and celebration.",
+            "lessonFocus": "take a low-stakes retrieval snapshot across first-semester domains."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise review print, sounds, retelling, and oral language and review counting, shapes, patterns, and comparison through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "target literacy/language needs with explicit remediation and transfer."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate review observation, maps, living things, and weather by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "target mathematics/quantitative reasoning needs with concrete representations."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Midyear portfolio cover” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "integrate inquiry, community, design, evidence, safety, and model reasoning."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about midyear review and celebration, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery."
+          }
+        ]
       }
     },
     {
@@ -6429,6 +7131,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "goal setting",
+          "number sequences",
+          "self-regulation"
+        ],
+        "before": "Builds on Week 18's retrieval, targeted support, and recorded learning evidence.",
+        "deepen": "Move from describing personal change to setting an observable goal, choosing a strategy/support, testing it, and revising from evidence.",
+        "transfer": "Set one small goal and compare two attempts; explain what helped and what to change next without comparing learners.",
+        "next": "Prepares for Week 20's source/story comparison and Week 35's inquiry planning.",
+        "support": "Use learner-chosen goals, normalize asking for help/breaks, and do not describe a single performance as fixed ability.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do we grow when learning is hard?” and use at least one example to notice or communicate an idea related to new year, goals, and growth mindset.",
+            "lessonFocus": "compare the learner’s own past/current evidence and describe change without peer ranking."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise i can / i am learning sentence frames and count forward/back and compare strategies through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "design a small, observable learning goal and identify strategies/supports."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate growth as change over time by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "investigate forward/backward number sequences and compare valid strategies without speed pressure."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Goal garden” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about new year, goals, and growth mindset, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection."
+          }
+        ]
       }
     },
     {
@@ -6765,6 +7506,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "story sources & versions",
+          "map/place reasoning",
+          "comparison/data"
+        ],
+        "before": "Builds on Weeks 2 and 9 story comprehension, Week 10 map-as-model reasoning, and Week 14 language analysis.",
+        "deepen": "Move from retelling a single story to comparing two provided versions, distinguishing source from retelling, and supporting a claim with a story detail.",
+        "transfer": "Compare two short, age-appropriate provided story versions, cite one shared/different detail, and create a respectful variation without copying restricted text.",
+        "next": "Prepares for Week 21's evidence-based classification and counterexample reasoning.",
+        "support": "Do not present uncertain story origins as facts; use appropriate, credited/public-domain or teacher-created versions and avoid cultural flattening.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do stories travel across the world?” and use at least one example to notice or communicate an idea related to stories around the world.",
+            "lessonFocus": "distinguish story, source, teller/author, version, retelling, and uncertain origin."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise characters, setting, and story sequence and compare story collections through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "compare character, setting, sequence, and evidence across two provided stories/versions."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate maps, cultures, traditions, and respect by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "connect story context to maps/place carefully while revisiting map purpose and limits."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “World story suitcase” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about stories around the world, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context."
+          }
+        ]
       }
     },
     {
@@ -7101,6 +7881,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "living systems",
+          "classification & uncertainty",
+          "data reasoning"
+        ],
+        "before": "Builds on Weeks 11–12 plant/animal needs and Week 4's observation-versus-inference language.",
+        "deepen": "Move from simple living/nonliving sorting to multiple evidence clues, stated rules, counterexamples, an uncertainty category, and limited data claims.",
+        "transfer": "Classify a new example, explain the rule and evidence, and identify when the evidence is insufficient to be certain.",
+        "next": "Prepares for Week 22's substance/state distinctions, evidence sequencing, and model limits.",
+        "support": "Include edge cases like dormant seeds carefully; do not claim motion alone proves life or imply that uncertainty is failure.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How can we tell what is living?” and use at least one example to notice or communicate an idea related to living and nonliving things.",
+            "lessonFocus": "gather multiple evidence clues for living systems instead of using motion or appearance alone."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise living/nonliving vocabulary and sort, tally, and graph through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "distinguish living now, once-living/material from living things, and never-living examples."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate living things grow and need resources by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Living/nonliving museum” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about living and nonliving things, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference."
+          }
+        ]
       }
     },
     {
@@ -7437,6 +8256,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "water states & changes",
+          "sequence & fair comparison",
+          "weather models"
+        ],
+        "before": "Builds on Week 6 weather observation and Week 21 living/material classification.",
+        "deepen": "Move from naming ice/liquid water/water vapor to reasoning about melting, freezing, evaporation, and condensation with safe models and explicit limits.",
+        "transfer": "Sequence a supplied water-change scenario and distinguish invisible water vapor from visible mist/droplets without boiling water.",
+        "next": "Prepares for Week 23's material pathways and Week 33's observation/model limitations.",
+        "support": "Use teacher-prepared ice/cool surfaces or images; no boiling-water activity. State that a classroom model simplifies real weather systems.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How can water change?” and use at least one example to notice or communicate an idea related to water, ice, and weather changes.",
+            "lessonFocus": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise water words and procedural language and sequence events and compare temperatures informally through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "investigate melting/freezing through safe fair comparisons and sequence evidence."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate water, ice, and weather change by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "reason about evaporation and condensation without requiring boiling."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Ice investigation” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about water, ice, and weather changes, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety."
+          }
+        ]
       }
     },
     {
@@ -7773,6 +8631,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "materials & stewardship",
+          "classification/data",
+          "systems reasoning"
+        ],
+        "before": "Builds on Week 22's material-state reasoning, Week 6 graphing, and Weeks 9–10 shared-place/community concepts.",
+        "deepen": "Move from sorting by a visible recycling symbol to following a stated local/classroom rule, marking uncertainty, comparing options, and considering system consequences safely.",
+        "transfer": "Classify a new clean package using the stated local rule; identify when to ask rather than assume a material is accepted for recycling.",
+        "next": "Prepares for Week 24's fair testing/design constraints and Week 35's evidence-based project decisions.",
+        "support": "No sharp, dirty, chemical, or unknown waste handling; local rules vary, and recycling symbols do not guarantee local acceptance.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How can we take care of shared places?” and use at least one example to notice or communicate an idea related to earth care and stewardship.",
+            "lessonFocus": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise environmental vocabulary and shared writing and count/reuse materials and sort recycling through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate earth materials and human choices by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Recycled art build” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "reason from shared-place/habitat evidence and design a safe, community-scale improvement."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about earth care and stewardship, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning."
+          }
+        ]
       }
     },
     {
@@ -8110,6 +9007,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "forces & motion",
+          "fair tests & measurement",
+          "engineering design"
+        ],
+        "before": "Builds on Week 15 measurement and Week 7 shape/design problem solving.",
+        "deepen": "Move from noticing push/pull to fair ramp comparisons with a common start, repeated trials, measured outcomes, and revision under explicit design constraints.",
+        "transfer": "Compare two safe toy-ramp trials, name the changed variable, describe the measured outcome, and limit the conclusion to the sample tested.",
+        "next": "Prepares for Week 25's tool/task/safety matching and Week 34's stepwise debugging.",
+        "support": "Use stable ramps and light objects; don't frame one trial as universal proof, and offer seated/accessible building roles.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do people and things move?” and use at least one example to notice or communicate an idea related to transportation and engineering.",
+            "lessonFocus": "identify pushes/pulls and describe changes in motion from evidence."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise transportation words and labels and measure ramp distance through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate push, pull, motion, and design testing by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "reason about wheels/axles, surfaces, friction, and design tradeoffs."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Ramp lab” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "design an accessible fictional transportation system/route around stated needs and constraints."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about transportation and engineering, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision."
+          }
+        ]
       }
     },
     {
@@ -8446,6 +9382,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "community roles & tools",
+          "questioning/source reasoning",
+          "goods/services & graphs"
+        ],
+        "before": "Builds on Weeks 9–10 community/place learning and Week 16 goods/services and fictional market models.",
+        "deepen": "Move from naming a helper to inferring contribution from tasks, matching tools to purpose/authorization, and representing a small sample with a graph while limiting claims.",
+        "transfer": "Analyze a fictional work scenario, choose a suitable tool and safety step, and ask a respectful question with consent.",
+        "next": "Prepares for Week 26's symbols/agreements and Week 34's technology safety and sequencing.",
+        "support": "Avoid job stereotypes, uniform-based assumptions, and ranking work; protect real people's privacy and avoid unnecessary interviews.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Introduce the unit question “How do people help a community work?” and use at least one example to notice or communicate an idea related to jobs, tools, and community helpers.",
+            "lessonFocus": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes."
+          },
+          {
+            "day": "Tuesday",
+            "target": "Practise question words and interview practice and count tools and make helper graph through guided, hands-on examples, then explain or show one strategy.",
+            "lessonFocus": "match tools to purposes, training/authorization, and safety constraints."
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate goods/services; helpers and responsibilities by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "lessonFocus": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions."
+          },
+          {
+            "day": "Thursday",
+            "target": "Apply the week’s learning by creating or revising “Community helper badge” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "lessonFocus": "practice consent-aware questions and map interdependent community roles from provided sources."
+          },
+          {
+            "day": "Friday",
+            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about jobs, tools, and community helpers, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "lessonFocus": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning."
+          }
+        ]
       }
     },
     {
@@ -8782,6 +9757,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "symbols & meaning",
+          "attribute sorting",
+          "civic belonging"
+        ],
+        "before": "Builds on Week 10 symbols/maps, Week 25 community roles, and earlier sort-by-rule practice.",
+        "deepen": "Move from recognizing a symbol to supporting an interpretation with visible/contextual evidence, comparing meanings, and designing a symbol with a stated purpose.",
+        "transfer": "Interpret an unfamiliar fictional symbol using context, then identify what additional information would reduce uncertainty.",
+        "next": "Prepares for Week 27's number-story modeling and later source/evidence interpretation.",
+        "support": "Teach that symbols can mean different things across groups; participation and belonging must not require pledges or political/religious disclosure.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Identify two familiar classroom or community symbols and explain one meaning.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Sort six symbol cards by a chosen attribute and explain the grouping rule.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Compare two symbols and explain how each helps people communicate.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Design an original belonging symbol with at least two purposeful features.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Interpret a new contextual symbol and reflect on one respectful action.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -9118,6 +10132,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "compose/decompose to 10",
+          "number stories",
+          "fair exchange"
+        ],
+        "before": "Builds on earlier one-to-one counting and Week 13/16 part-whole and fictional-market experiences.",
+        "deepen": "Move from making totals to 10 to representing the same whole in different ways, verifying parts, comparing distributions, and explaining a story model.",
+        "transfer": "Solve a new illustrated market story with counters, show two valid decompositions, and explain how the parts verify the whole.",
+        "next": "Prepares for Week 28's classification/counting in health context and Week 36's number composition demonstration.",
+        "support": "Use objects or drawings before numerals; keep market examples fictional and avoid equating quantity/money with fairness or worth.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -9454,6 +10507,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "health literacy",
+          "classification & counting",
+          "care choices"
+        ],
+        "before": "Builds on Week 4 safety/observation and Week 27 sorting/counting, using images and fictional scenarios.",
+        "deepen": "Move from naming body needs to classifying with an explicit rule, allowing multiple valid categories, and selecting practical, non-stigmatizing care strategies.",
+        "transfer": "Choose a safe response in a fictional body-care scenario and explain one reason, without revealing personal health information.",
+        "next": "Prepares for Week 29's movement safety/body models and Week 36 integrated readiness.",
+        "support": "Never require food tasting or personal health disclosures; account for allergies, culture, disability, availability, and different bodies without stigma.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -9790,6 +10882,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "movement & body models",
+          "spatial language/patterns",
+          "safe design"
+        ],
+        "before": "Builds on Week 7 positional language, Week 8 movement patterns, and Week 15 balance/measurement.",
+        "deepen": "Move from action words and positional directions to modeling balance, identifying a body-structure function, and revising a pathway against clear constraints.",
+        "transfer": "Interpret a new paper movement route with positional clues and explain one safe design revision.",
+        "next": "Prepares for Week 30's translating patterns into art/music and Week 34's grid algorithms.",
+        "support": "Provide seated, tabletop, visual, or paper-token alternatives; never require speed, full range of motion, or a particular physical ability.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -10126,6 +11257,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "music/art pattern",
+          "beat & counting",
+          "revision/feedback"
+        ],
+        "before": "Builds on Week 8 pattern/beat work and Week 7 design choices.",
+        "deepen": "Move from recognizing a pattern to composing a four-beat phrase, representing it in a picture score, and revising one element based on evidence or feedback.",
+        "transfer": "Recognize the repeating unit in a new sound or visual score and explain one deliberate creative choice.",
+        "next": "Prepares for Week 31's observation language and field-guide representation.",
+        "support": "Offer silent/visual/tactile equivalents and quiet participation; assess the pattern/rule, not musical confidence or performance volume.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Keep a steady four-beat pulse and distinguish it from a changing rhythm.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Create and explain a repeating AB or AAB pattern using colors and sounds.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Observe how changing tempo differs from changing loudness.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Compose and revise a four-beat musical phrase using a picture score.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Identify a repeating unit in a new sound pattern and share a creative choice.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -10462,6 +11632,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "animal observation",
+          "classification/data",
+          "habitat evidence"
+        ],
+        "before": "Builds on Week 12 animal structures/habitats and Week 21 rule-first classification and uncertainty.",
+        "deepen": "Move from observation to structure/function hypotheses, stated classification rules, simple graph representation, and evidence-limited habitat claims.",
+        "transfer": "Interpret an unfamiliar organism picture, classify using a stated feature, and identify one thing the picture cannot establish.",
+        "next": "Prepares for Week 32 comparing water habitats and Week 35 planning a small investigation.",
+        "support": "Use supplied images/models; do not disturb small animals, and avoid projecting human motives onto animal behavior.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -10798,6 +12007,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "aquatic habitats",
+          "classification & graphs",
+          "model limits/safety"
+        ],
+        "before": "Builds on Week 12 habitat resources and Week 31 careful organism observation and representation.",
+        "deepen": "Move from naming water environments to classifying sample animals by a clear habitat rule, reading counts, and explaining model limits.",
+        "transfer": "Use a new illustration set to justify one habitat match with a clue and say what more evidence might be needed.",
+        "next": "Prepares for Week 33's sky-pattern observations and Week 35's investigation/presentation structure.",
+        "support": "Use pictures and model water only; water-safety learning never grants independent access to ponds, rivers, pools, or oceans.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -11135,6 +12383,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "sky observation & models",
+          "sequence/pattern",
+          "evidence limits"
+        ],
+        "before": "Builds on Week 6 sky/weather observation, Week 17 shadow/day-night model, and Week 22 weather/model-limit language.",
+        "deepen": "Move from sequencing sky observations to distinguishing Sun/Earth/Moon motions and apparent Moon phases, explicitly separating observation, model, and explanation.",
+        "transfer": "Explain a day/night diagram and compare two Moon pictures, naming one visible clue and one limitation of the model.",
+        "next": "Prepares for Week 34's algorithms/debugging and Week 35's inquiry-evidence communication.",
+        "support": "Never look directly at the Sun; use safe indirect observation, and label simplified sky models so they are not mistaken for scale drawings.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -11472,6 +12759,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "algorithms & debugging",
+          "spatial language",
+          "tool/privacy safety"
+        ],
+        "before": "Builds on Week 7 spatial terms, Week 8 pattern rules, Week 24 fair tests, and Week 25 tool/task safety.",
+        "deepen": "Move from following a sequence to creating clear instructions, predicting the effect of a change, debugging a mismatch, and applying privacy/permission boundaries.",
+        "transfer": "Give a paper robot a short route; test it, repair one ambiguous step, and identify which personal information should remain private.",
+        "next": "Prepares for Week 35's explicit question-method-evidence-artifact sequence.",
+        "support": "Keep technology activities unplugged unless separately authorized; never ask children to use real accounts, share personal details, or reveal passwords.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -11809,6 +13135,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "question formation",
+          "inquiry methods & math tools",
+          "evidence communication"
+        ],
+        "before": "Builds on Week 18 targeted transfer, Week 19 goal-setting, Weeks 21–24 evidence/model skills, and Week 34 sequence/debug routines.",
+        "deepen": "Move from broad wonder to a focused investigable question, a safe method, recorded observations, an evidence-linked representation, and an acknowledged uncertainty/next question.",
+        "transfer": "Present a small investigation through an artifact, model, graph, dictated explanation, AAC, or demonstration; connect a conclusion to at least one recorded evidence point.",
+        "next": "Prepares for Week 36 integrated literacy, math, inquiry, portfolio, and next-step demonstration.",
+        "support": "Choose learner-interest questions that can be explored safely in the available setting; no internet research or public presentation is required.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Choose a focused, investigable question, share what is already known, and identify one thing still to find out.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question.",
+            "lessonFocus": null
+          }
+        ]
       }
     },
     {
@@ -12145,6 +13510,45 @@ window.KHAE_KINDERGARTEN_DATA = {
           }
         ],
         "rubricSource": "curriculum/data/a-plus-mastery.js"
+      },
+      "verticalAlignment": {
+        "strands": [
+          "integrated literacy readiness",
+          "number/geometry/problem solving",
+          "portfolio & reflection"
+        ],
+        "before": "Consolidates the full 36-week course; use prior evidence and accessible task options rather than age, speed, or presentation style alone.",
+        "deepen": "Move from isolated skill recall to applying familiar literacy, mathematical representation, inquiry reasoning, revision, and self-reflection in fresh but age-appropriate tasks.",
+        "transfer": "Use a novel integrated task and two portfolio samples to explain what the learner can do, which supports help, and a next learning goal.",
+        "next": "Bridge to first-grade instruction with a documented profile of demonstrated skills, supports, and next targets—not a claim that one assessment predicts all future success.",
+        "support": "Permit alternate response modes, rest breaks, manipulatives when appropriate, and parallel fresh items; avoid compulsory performance and interpret results as evidence for planning, not a fixed label.",
+        "weeklyProgression": [
+          {
+            "day": "Monday",
+            "target": "Choose two portfolio samples and describe evidence of personal growth.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Tuesday",
+            "target": "Demonstrate familiar letter–sound connections and retell a short story in sequence.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Wednesday",
+            "target": "Solve a number problem with objects and explain a prior science observation.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Thursday",
+            "target": "Assemble and revise a showcase connecting language, mathematics, and inquiry.",
+            "lessonFocus": null
+          },
+          {
+            "day": "Friday",
+            "target": "Share a learning achievement and set one future goal without compulsory performance.",
+            "lessonFocus": null
+          }
+        ]
       }
     }
   ],
