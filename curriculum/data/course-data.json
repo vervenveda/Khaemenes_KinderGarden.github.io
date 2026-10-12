@@ -311,60 +311,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 01 Mastery Check",
+        "title": "Week 01 · Welcome to the Learning Garden Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Welcome to the Learning Garden."
+            "prompt": "Communicates a need for help, clarification, a break, or an access support through an appropriate mode.",
+            "criterionLabel": "Learning identity and help-seeking",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Names, print awareness, listening routines."
+            "prompt": "Recognizes or identifies their own name among a small set of familiar names without requiring public disclosure of personal details.",
+            "criterionLabel": "Name and belonging",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Responds to a short shared story, explanation, visual text, or accessible presentation with a relevant idea, question, gesture, or selection.",
+            "criterionLabel": "Listening and shared attention",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Shows that print carries meaning and identifies a familiar label, symbol, or book feature.",
+            "criterionLabel": "Print awareness",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count, match, and sort classroom objects."
+            "prompt": "Counts a small, concrete collection by matching one count word, sign, or marker to each object.",
+            "criterionLabel": "One-to-one counting",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Sorts classroom objects by one observable attribute and indicates the sorting rule.",
+            "criterionLabel": "Sort and explain",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Classroom community, safe routines, and responsibility."
+            "prompt": "Identifies or demonstrates a classroom safety routine and how to ask for support.",
+            "criterionLabel": "Safe routines",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Name collage and classroom map."
+            "prompt": "Creates a name collage, classroom representation, or accessible equivalent and explains one choice.",
+            "criterionLabel": "Community map or collage",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Self-awareness; asking for help."
+            "prompt": "Communicates a feeling, preference, strength, or learning need without being required to share private information.",
+            "criterionLabel": "Self-awareness",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Selects one example of learning or participation and communicates what they noticed.",
+            "criterionLabel": "Reflection and participation",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -616,60 +647,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 02 Mastery Check",
+        "title": "Week 02 · Names, Letters, and Stories Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Names, Letters, and Stories."
+            "prompt": "Identifies or matches familiar letters in their name and distinguishes a letter from a whole word or picture.",
+            "criterionLabel": "Name-letter recognition",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Name letters, environmental print, story parts."
+            "prompt": "Connects a taught familiar letter with a plausible sound example while recognizing that letters and sounds do not always map one-to-one.",
+            "criterionLabel": "Letter and sound relationship",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Uses a familiar label, sign, title, or symbol to explain what information it communicates.",
+            "criterionLabel": "Environmental print",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Identifies a character and/or setting from a familiar read-aloud or accessible story.",
+            "criterionLabel": "Story elements",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count to 10 with one-to-one correspondence."
+            "prompt": "Counts a collection up to 10 using one-to-one correspondence, with tools or access supports as needed.",
+            "criterionLabel": "One-to-one counting to 10",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains or represents that the final count tells how many objects are in the set.",
+            "criterionLabel": "Cardinality",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Books, authors, illustrators, characters, and settings."
+            "prompt": "Asks or answers one relevant question about a story, illustration, author, or event.",
+            "criterionLabel": "Question and response",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Make a name book."
+            "prompt": "Creates or dictates a name-book page using drawing, marks, copied print, labels, AAC, or another accessible form.",
+            "criterionLabel": "Name-book creation",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Turn-taking and listening to a friend."
+            "prompt": "Participates in an exchange while respecting a peer's communication and turn.",
+            "criterionLabel": "Listening and turn-taking",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Applies one name, letter, counting, or story skill to a new familiar example and communicates the strategy.",
+            "criterionLabel": "Transfer and reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -921,60 +983,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 03 Mastery Check",
+        "title": "Week 03 · Feelings, Friendship, and Voice Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Feelings, Friendship, and Voice."
+            "prompt": "Identifies or communicates a feeling using words, pictures, gesture, sign, AAC, or another accessible mode.",
+            "criterionLabel": "Feelings vocabulary",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Rhyming, beginning sounds, feelings vocabulary."
+            "prompt": "Recognizes or generates a simple rhyme in familiar examples, with repetition or visual support when appropriate.",
+            "criterionLabel": "Rhyming awareness",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Identifies or matches a beginning sound in a familiar word without treating letter-name recall alone as sound mastery.",
+            "criterionLabel": "Beginning-sound awareness",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Compares two small collections using more, fewer, or same and supports the choice with counting or matching.",
+            "criterionLabel": "Compare quantities",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Compare groups: more, less, same."
+            "prompt": "Describes or demonstrates one way two people may feel differently in a shared situation.",
+            "criterionLabel": "Friendship and perspective",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Shows understanding of a peer's contribution by responding, selecting, paraphrasing, or asking a related question.",
+            "criterionLabel": "Listening to a peer",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Families, friendships, kindness, and classroom citizenship."
+            "prompt": "Chooses an age-appropriate way to request space, express a boundary, ask for help, or repair a misunderstanding.",
+            "criterionLabel": "Repair language",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Feelings wheel and friendship bracelet."
+            "prompt": "Creates or uses a feelings representation and communicates what one part means.",
+            "criterionLabel": "Feelings-wheel artifact",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Feelings check-in and repair language."
+            "prompt": "Recognizes that helping, touch, sharing, and conversation should respect a person's boundaries and safety.",
+            "criterionLabel": "Respectful boundaries",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Applies a feelings or comparison strategy to a new fictional scenario and explains or shows the choice.",
+            "criterionLabel": "Reflection and transfer",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -1226,60 +1319,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 04 Mastery Check",
+        "title": "Week 04 · The Five Senses Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: The Five Senses."
+            "prompt": "Describes at least two observable details using a safe sensory or accessible observation pathway.",
+            "criterionLabel": "Sensory observation",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Describing words and sound matching."
+            "prompt": "Separates a directly noticed detail from a guess about why it happened.",
+            "criterionLabel": "Observation versus inference",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Uses a relevant descriptive word, sign, symbol, or AAC selection to communicate a feature.",
+            "criterionLabel": "Descriptive language",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Sorts objects or images using a stated observable attribute and checks whether each example fits.",
+            "criterionLabel": "Attribute classification",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sort and classify by attributes."
+            "prompt": "Compares two examples using same/different language linked to observed evidence.",
+            "criterionLabel": "Compare and classify",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Matches or distinguishes safe, familiar sounds and explains or indicates one clue.",
+            "criterionLabel": "Sound matching",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Scientific observation through safe sense routines."
+            "prompt": "Uses safe materials and can choose a non-touch, non-smell, visual, verbal, or other accessible alternative.",
+            "criterionLabel": "Safe sensory choices",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Senses journal."
+            "prompt": "Records two observations through drawing, marks, labels, dictation, AAC, or an equivalent evidence form.",
+            "criterionLabel": "Senses journal",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Calm focus and noticing details."
+            "prompt": "Uses an observed feature to support a simple statement rather than relying only on a guess.",
+            "criterionLabel": "Evidence-based explanation",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Communicates one observation and one question or next thing to investigate.",
+            "criterionLabel": "Reflection and careful noticing",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -1526,60 +1650,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 05 Mastery Check",
+        "title": "Week 05 · Seasons, Trees, and Leaves Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Seasons, Trees, and Leaves."
+            "prompt": "Explains or shows a real change noticed in nature or seasonal weather.",
+            "criterionLabel": "Unit idea",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Nature words and letter sounds."
+            "prompt": "Uses a nature word and demonstrates the Week 5 beginning-sound focus.",
+            "criterionLabel": "Literacy",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Responds to a nature/season text with a relevant idea or question.",
+            "criterionLabel": "Listening / reading",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Communicates a Week 5 observation through an accessible form.",
+            "criterionLabel": "Writing / fine motor",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Create and extend patterns."
+            "prompt": "Creates or extends a repeating AB, AAB, or ABB pattern.",
+            "criterionLabel": "Mathematics / pattern",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Shows or explains which part of a repeating pattern repeats.",
+            "criterionLabel": "Math reasoning",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Seasonal weather and living things."
+            "prompt": "Distinguishes an observation from a guess and uses observation to support a simple prediction.",
+            "criterionLabel": "Inquiry",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Leaf rubbings and pattern crown."
+            "prompt": "Contributes to a nature artifact containing a repeating pattern.",
+            "criterionLabel": "Maker / arts",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Patience and wonder."
+            "prompt": "Practices patience, wonder, safe observation, and revision.",
+            "criterionLabel": "Social-emotional",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Participates safely and kindly across the week.",
+            "criterionLabel": "Participation",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -1826,60 +1981,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 06 Mastery Check",
+        "title": "Week 06 · Weather, Sun, and Sky Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Weather, Sun, and Sky."
+            "prompt": "Uses accurate weather vocabulary and gives an evidence-based present observation.",
+            "criterionLabel": "Weather communication",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Weather vocabulary and shared writing."
+            "prompt": "Distinguishes observation from imagination or unsupported prediction.",
+            "criterionLabel": "Observation vs inference",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Contributes to a weather text or discussion.",
+            "criterionLabel": "Listening / shared writing",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Reads or creates a simple weather graph and compares categories.",
+            "criterionLabel": "Weather data",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Graph daily weather and count totals."
+            "prompt": "Makes a graph-supported claim without treating a short sample as a guaranteed forecast.",
+            "criterionLabel": "Data reasoning",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains or demonstrates safe shadow formation.",
+            "criterionLabel": "Sunlight / shade inquiry",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Weather, sunlight, shade, and safety."
+            "prompt": "Knows never to look directly at the Sun and uses trusted-adult safety for dangerous weather.",
+            "criterionLabel": "Sun and severe-weather safety",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Weather wheel."
+            "prompt": "Uses a locally meaningful weather tool.",
+            "criterionLabel": "Weather-ready design",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Choosing safe clothing and actions."
+            "prompt": "Explains a weather-ready choice.",
+            "criterionLabel": "Reasoned choice",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Communicates an evidence-based report and reflection.",
+            "criterionLabel": "Weather report / reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -2126,60 +2312,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 07 Mastery Check",
+        "title": "Week 07 · Shapes, Colors, and Design Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Shapes, Colors, and Design."
+            "prompt": "Describes common shapes by properties and recognizes identity across rotation or size.",
+            "criterionLabel": "Shape properties",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Shape words and positional words."
+            "prompt": "Distinguishes a flat shape from a solid.",
+            "criterionLabel": "2D / 3D distinction",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Uses positional language accurately.",
+            "criterionLabel": "Spatial language",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Combines shapes or solids and identifies components.",
+            "criterionLabel": "Shape composition",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Identify, compose, and sort shapes."
+            "prompt": "Sorts by at least two different attributes.",
+            "criterionLabel": "Attribute classification",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Uses accessible visual or tactile attributes without color-only coding.",
+            "criterionLabel": "Color / visual design observation",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Design, structure, and spatial reasoning."
+            "prompt": "Creates or interprets a geometry-rich design.",
+            "criterionLabel": "Geometry-rich design",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Shape city."
+            "prompt": "Tests, notices evidence, and revises or explains a design.",
+            "criterionLabel": "Design reasoning and revision",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Persistence with design challenges."
+            "prompt": "Explains a design with property and spatial language.",
+            "criterionLabel": "Mathematical communication",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Persists and reflects.",
+            "criterionLabel": "Persistence / reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -2426,60 +2643,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 08 Mastery Check",
+        "title": "Week 08 · Patterns, Music, and Movement Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Patterns, Music, and Movement."
+            "prompt": "Identifies the smallest repeating unit and distinguishes pattern from irregular sequence.",
+            "criterionLabel": "Repeating pattern rule",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Rhyming, syllable claps, repeated words."
+            "prompt": "Repairs or explains a repeating rule.",
+            "criterionLabel": "Pattern reasoning",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Distinguishes steady beat or pulse from rhythm using an accessible form.",
+            "criterionLabel": "Beat and rhythm",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Distinguishes syllables from rhyme in a familiar language.",
+            "criterionLabel": "Syllable and rhyme",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: AB, AAB, ABC patterns."
+            "prompt": "Translates one pattern into at least two forms while preserving structure.",
+            "criterionLabel": "Pattern translation",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains what changed and stayed the same.",
+            "criterionLabel": "Representation reasoning",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Patterns in music, dance, and nature."
+            "prompt": "Creates an original repeating sequence or performance.",
+            "criterionLabel": "Pattern performance / maker",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Pattern performance."
+            "prompt": "Uses start/stop cues and safe, comfortable sensory choices.",
+            "criterionLabel": "Self-regulation and safety",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Self-control through rhythm games."
+            "prompt": "Uses material respectfully without cultural mockery or restricted copying.",
+            "criterionLabel": "Respectful creative choices",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Transfers and reflects.",
+            "criterionLabel": "Transfer / reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -2726,60 +2974,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 09 Mastery Check",
+        "title": "Week 09 · Families, Homes, and Traditions Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Families, Homes, and Traditions."
+            "prompt": "Describes belonging respectfully and knows fictional or non-private examples are valid.",
+            "criterionLabel": "Privacy and belonging",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Oral history and story sequence."
+            "prompt": "Sequences and retells a three-part oral-history or fictional account.",
+            "criterionLabel": "Story sequence / oral history",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Distinguishes past and present and understands oral history as remembered account.",
+            "criterionLabel": "Past and present",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Measures length or height with repeated same-size units from a common start.",
+            "criterionLabel": "Measurement with equal units",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Compare lengths and heights."
+            "prompt": "Accurately compares measured lengths or heights.",
+            "criterionLabel": "Measurement comparison",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Describes tradition as meaningful repeated practice that can vary or change using some/not-all reasoning.",
+            "criterionLabel": "Tradition without stereotype",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Past/present, families, culture, and respect."
+            "prompt": "Uses respectful source and question reasoning.",
+            "criterionLabel": "Source and respect reasoning",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Family house drawing."
+            "prompt": "Identifies information a learner may choose not to share.",
+            "criterionLabel": "Private-information boundary",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Respect for differences."
+            "prompt": "Creates a safe artifact without sensitive-data requirements.",
+            "criterionLabel": "Integrated belonging artifact",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Explains learning without assumptions.",
+            "criterionLabel": "Reflection and respectful learning",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -3026,60 +3305,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 10 Mastery Check",
+        "title": "Week 10 · Maps, Places, and Community Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Maps, Places, and Community."
+            "prompt": "Explains that a map is a selective representation of a place and identifies something it leaves out.",
+            "criterionLabel": "Map as model",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Map words and labels."
+            "prompt": "Creates or decodes consistent symbols using a legend or key that does not rely only on color.",
+            "criterionLabel": "Symbols and legend",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Uses positional or directional language accurately from a stated start or orientation and sequences a usable route.",
+            "criterionLabel": "Spatial and route language",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Measures or compares route distance using one consistent model unit rather than body-dependent stride length.",
+            "criterionLabel": "Consistent distance units",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count steps and compare distances."
+            "prompt": "Compares two routes using the same unit and explains a meaningful difference.",
+            "criterionLabel": "Route comparison",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Knows that home address, live location, school route, bus stop, exact neighborhood, or identifying landmark is never required.",
+            "criterionLabel": "Location privacy",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Maps, symbols, places, and directions."
+            "prompt": "Designs or interprets a fictional community map and explains a safety or accessibility choice.",
+            "criterionLabel": "Community access reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Classroom treasure map."
+            "prompt": "Explains that maps are made for purposes and can represent the same place differently.",
+            "criterionLabel": "Map limitation and purpose",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Following directions safely."
+            "prompt": "Tests a map or route, identifies ambiguity or exclusion, and revises or explains a correction.",
+            "criterionLabel": "Map testing and revision",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Uses a map, key, route, and privacy or access principle together.",
+            "criterionLabel": "Navigator reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -3326,60 +3636,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 11 Mastery Check",
+        "title": "Week 11 · Plants and Gardens Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Plants and Gardens."
+            "prompt": "Identifies common plant structures such as roots, stems, leaves, flowers, fruits, or seeds and gives an age-appropriate function for at least two, without requiring every plant to have every part visible.",
+            "criterionLabel": "Plant structures and functions",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Plant vocabulary and sequence words."
+            "prompt": "Explains that plants need suitable access to water, light, air, space, and appropriate growing conditions; avoids the misconception that soil itself is plant food.",
+            "criterionLabel": "Living-plant needs",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Orders an age-appropriate seed/germination/growth sequence while recognizing that different plants grow at different rates and not every seed germinates.",
+            "criterionLabel": "Growth sequence",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Measures or compares plant/model growth from a consistent baseline using the same nonstandard unit or another accessible repeated measure.",
+            "criterionLabel": "Growth measurement",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Measure plant growth informally."
+            "prompt": "Records at least two dated or ordered observations using drawing, marks, labels, dictation, photos of the plant only when appropriate, or another accessible evidence form.",
+            "criterionLabel": "Observation journal",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Distinguishes what was observed from what is predicted and revises a prediction when evidence changes.",
+            "criterionLabel": "Evidence vs prediction",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Living things need water, light, and care."
+            "prompt": "Identifies that changing one condition at a time makes a comparison more informative, using a safe model, teacher demonstration, or hypothetical example.",
+            "criterionLabel": "Fair-test thinking",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Seed cup and plant journal."
+            "prompt": "Uses adult guidance for unknown plants/seeds, avoids tasting classroom specimens, washes hands as appropriate, and uses choking/allergy-safe alternatives.",
+            "criterionLabel": "Seed and plant safety",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Care and responsibility."
+            "prompt": "Demonstrates developmentally appropriate care for a living plant or uses a nonliving model when live-plant care is unavailable.",
+            "criterionLabel": "Care and stewardship",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Explains one observation, measurement, or revised idea about how plants grow.",
+            "criterionLabel": "Plant scientist reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -3626,60 +3967,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 12 Mastery Check",
+        "title": "Week 12 · Animals and Habitats Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Animals and Habitats."
+            "prompt": "Gives an evidence-based observation about an animal structure or behavior and distinguishes it from a guess, personality label, or human-like story.",
+            "criterionLabel": "Animal observation vs inference",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Animal sounds and alliteration."
+            "prompt": "Explains an age-appropriate way one animal structure or behavior may help meet a need, without claiming every structure has only one function.",
+            "criterionLabel": "Structure / behavior function",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "States a classification rule before sorting and correctly sorts animal examples according to observable or known evidence.",
+            "criterionLabel": "Evidence-based classification",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Counts classified animal groups with one-to-one correspondence and compares them using more, fewer, same, difference, or numbers.",
+            "criterionLabel": "Count and compare groups",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sort and count animal groups."
+            "prompt": "Avoids absolute shortcuts such as 'all birds fly' and uses counterexamples or some/not-all language when appropriate.",
+            "criterionLabel": "Some / not-all reasoning",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Connects at least two animal needs to habitat resources or conditions with a reasonable evidence-based explanation.",
+            "criterionLabel": "Habitat resources and conditions",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Needs of living things and habitats."
+            "prompt": "Builds, draws, arranges, or explains a habitat model with multiple need-linked features and identifies at least one limitation of the model.",
+            "criterionLabel": "Habitat model reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Habitat diorama."
+            "prompt": "Tests or reviews a habitat model, responds to an evidence question, and makes or explains one revision.",
+            "criterionLabel": "Design testing and revision",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Gentleness and care."
+            "prompt": "Knows wild animals are observed from a distance and that feeding, touching, chasing, capturing, handling, or removing wildlife/nests/eggs is not required or authorized.",
+            "criterionLabel": "Humane wildlife boundary",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates structure or behavior, need, habitat evidence, and one corrected/revised idea in an accessible explanation.",
+            "criterionLabel": "Animal scientist reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -3926,60 +4298,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 13 Mastery Check",
+        "title": "Week 13 · Gratitude, Giving, and Storytelling Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Gratitude, Giving, and Storytelling."
+            "prompt": "Sequences and retells a three-part story with a sensible beginning, middle, and end while preserving important meaning rather than exact memorized wording.",
+            "criterionLabel": "Story sequence and retelling",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Retelling and story beginning/middle/end."
+            "prompt": "Uses at least one story detail to explain why an event belongs in a particular place in the sequence.",
+            "criterionLabel": "Story evidence",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Builds or represents a whole to 5 from two parts and correctly identifies the parts and whole.",
+            "criterionLabel": "Compose numbers to 5",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Takes apart a quantity to 5 in at least two valid ways and verifies that recombining the parts preserves the whole.",
+            "criterionLabel": "Decompose numbers to 5",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Add and take apart numbers to 5."
+            "prompt": "Models a joining, separating, or part-part-whole story accurately and does not assume that the social word 'giving' always means subtraction.",
+            "criterionLabel": "Number-story meaning",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Connects a visible or scenario-based care/helping action to a need or possible effect without stereotyping a job, identity, or group.",
+            "criterionLabel": "Community-care reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Community helpers and acts of care."
+            "prompt": "Knows that helping or gratitude never requires unsafe/secret actions, physical affection, forgiveness, money, gifts, or contact with someone the learner does not want to contact.",
+            "criterionLabel": "Consent and helping boundary",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Thank-you card workshop."
+            "prompt": "Creates or explains a truthful appreciation, acknowledgment, or reflection using an accessible communication mode without forced emotion or private disclosure.",
+            "criterionLabel": "Authentic appreciation",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Gratitude practice."
+            "prompt": "Understands that generosity/gratitude are not measured by possessions, spending, family circumstances, public performance, or disclosure.",
+            "criterionLabel": "Economic and privacy fairness",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Creates or explains a story that integrates sequence, a quantity to 5, an act of care, and a consent-respecting response.",
+            "criterionLabel": "Integrated story-number reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -4226,60 +4629,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 14 Mastery Check",
+        "title": "Week 14 · Sounds, Rhymes, and Word Play Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Sounds, Rhymes, and Word Play."
+            "prompt": "Identifies and generates an age-appropriate rhyme or equivalent patterned-language example in an appropriate spoken, signed, visual, or other accessible language pathway.",
+            "criterionLabel": "Rhyme recognition / generation",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Rhyme, syllables, onset sounds."
+            "prompt": "Demonstrates that rhyme depends on a language's sound/pattern structure rather than simply matching final written letters.",
+            "criterionLabel": "Rhyme vs spelling",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Segments and counts syllables in several familiar examples using speech, counters, taps, visual pulses, signs, or another accessible representation.",
+            "criterionLabel": "Syllable segmentation",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Demonstrates that syllable count and written-letter count are different ideas.",
+            "criterionLabel": "Syllable vs letter count",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count sounds, beats, and objects."
+            "prompt": "Identifies beginning phonological matches in an appropriate language pathway and groups examples by the stated feature.",
+            "criterionLabel": "Beginning sound / feature",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains or demonstrates that written letters and speech sounds are related but not perfectly one-to-one, using an age-appropriate example.",
+            "criterionLabel": "Sound-letter distinction",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Language as communication."
+            "prompt": "Counts and compares rhyme/syllable/sound-pattern groups using one-to-one correspondence and more/fewer/same or numbers.",
+            "criterionLabel": "Count and compare language units",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Rhyme parade."
+            "prompt": "Creates a short rhyme, alliteration, syllable, or equivalent language pattern, identifies a break, and repairs it.",
+            "criterionLabel": "Rule-based word play",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Confidence speaking aloud."
+            "prompt": "Uses accent, dialect, home language, signed language, AAC, visual/tactile, or other appropriate access without treating speech volume, hearing, eye contact, or one accent as intelligence/mastery.",
+            "criterionLabel": "Language-access respect",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Distinguishes at least two of rhyme, syllable, beginning sound, letter, and alliteration and reflects on language variation.",
+            "criterionLabel": "Language pattern reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -4526,60 +4960,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 15 Mastery Check",
+        "title": "Week 15 · Measurement and Builders Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Measurement and Builders."
+            "prompt": "Compares length or height by aligning objects at a common start/baseline and uses precise longer/shorter/taller/same language rather than an ambiguous size label.",
+            "criterionLabel": "Direct comparison from common start",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Measurement words and describing structures."
+            "prompt": "Measures a length with repeated equal-size nonstandard units from the endpoint without intentional gaps or overlaps.",
+            "criterionLabel": "Consistent nonstandard measurement",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Reports a measurement as a number together with the unit and recognizes that changing unit size can change the count while the object stays the same length.",
+            "criterionLabel": "Number plus unit communication",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Identifies and repairs at least one unfair measurement such as mixed-size units, gaps, overlaps, or a misaligned start.",
+            "criterionLabel": "Measurement error detection",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Measure with nonstandard units."
+            "prompt": "Uses safe evidence to compare heavier/lighter and understands that visual size alone does not determine weight.",
+            "criterionLabel": "Weight reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Distinguishes container capacity from the amount currently inside and compares capacity using consistent transfer units or an equivalent accessible model.",
+            "criterionLabel": "Capacity reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Structure, balance, and materials."
+            "prompt": "Distinguishes at least two of length/height, weight, and capacity and selects evidence appropriate to the named attribute.",
+            "criterionLabel": "Attribute distinction",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Block bridge challenge."
+            "prompt": "Designs or interprets a small model bridge against a stated span/load criterion and tests alternatives under reasonably consistent conditions.",
+            "criterionLabel": "Engineering constraint and fair test",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Problem-solving and teamwork."
+            "prompt": "Uses test/measurement evidence to revise a design or explain why a revision should improve it.",
+            "criterionLabel": "Evidence-based design revision",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Demonstrates that body size, stride, strength, mobility, purchased materials, or dangerous real-world load testing are not required for measurement/engineering mastery.",
+            "criterionLabel": "Measurement access and safety",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -4826,60 +5291,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 16 Mastery Check",
+        "title": "Week 16 · Needs, Wants, Money, and Choices Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Needs, Wants, Money, and Choices."
+            "prompt": "Explains that needs and wants depend on a person's situation and gives a respectful reason why an item/support could be a need in one context without judging another household.",
+            "criterionLabel": "Needs and wants in context",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Decision words and opinion starters."
+            "prompt": "Knows that family income, debt, housing, food insecurity, purchases, allowance, benefits, savings, gifts, possessions, or ability to afford something are private and never required for mastery; money/possessions do not determine human worth.",
+            "criterionLabel": "Economic privacy and dignity",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Counts a modeled token set with one-to-one correspondence and states the total accurately.",
+            "criterionLabel": "Token counting",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Counts and compares at least two modeled amounts using more, fewer, same, numerical totals, or an age-appropriate difference strategy.",
+            "criterionLabel": "Amount comparison",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count pennies/counters and compare amounts."
+            "prompt": "Distinguishes a physical good from a service/action and connects each to a fictional need or goal without ranking work or workers.",
+            "criterionLabel": "Goods and services",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Recognizes paid, unpaid, household, public, volunteer, repair, reuse, care, and community contributions without stereotyping who does them.",
+            "criterionLabel": "Work and system respect",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Needs, wants, goods, and services."
+            "prompt": "Uses a fictional token constraint to compare options, choose with a reason, and identify what is delayed or not chosen.",
+            "criterionLabel": "Constrained choice and tradeoff",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Classroom market."
+            "prompt": "Explains saving as setting resources aside for later while recognizing that spending to meet a need can also be responsible and inability to save is not a character flaw.",
+            "criterionLabel": "Saving reasoning without moralization",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Responsible decision-making."
+            "prompt": "Knows that sharing may be kind but never requires giving away personal money, food, comfort items, or possessions; classroom market materials remain fictional/shared.",
+            "criterionLabel": "Voluntary sharing and consent",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Given a fictional need/goal and small modeled amount, counts resources, compares choices, identifies a good/service when relevant, explains a tradeoff, and revises the decision when one fact changes.",
+            "criterionLabel": "Integrated decision reflection",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -5126,60 +5622,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 17 Mastery Check",
+        "title": "Week 17 · Winter, Light, and Shadows Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Winter, Light, and Shadows."
+            "prompt": "Identifies a light source, blocking object, and receiving surface/screen and explains that an opaque object can block light to produce a darker shadow region.",
+            "criterionLabel": "Light source / shadow relationship",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Light/shadow vocabulary."
+            "prompt": "Changes one light/object/screen condition at a time, observes the resulting shadow change, and uses evidence to confirm or revise a prediction.",
+            "criterionLabel": "Controlled shadow change",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Explains that shadow size, position, or outline can change with source/object/screen geometry without claiming that the object itself grew or shrank.",
+            "criterionLabel": "Shadow geometry reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Measures and compares modeled shadow lengths from a common baseline using equal repeated units and communicates number plus unit.",
+            "criterionLabel": "Consistent shadow measurement",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Compare shadow lengths."
+            "prompt": "Identifies an unfair shadow measurement or model limitation such as shifted starts, mixed units, gaps/overlaps, or overgeneralizing one classroom setup.",
+            "criterionLabel": "Measurement error and model limits",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Uses a globe/ball and fixed-light model to explain that Earth’s rotation produces the repeating day/night pattern, rather than teaching that the Sun travels around Earth each day.",
+            "criterionLabel": "Earth rotation / day-night",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Sunlight, shadow, day/night patterns."
+            "prompt": "Compares seasonal or daylight information with location-aware language and rejects the claim that winter universally means snow, freezing weather, or identical daylight patterns.",
+            "criterionLabel": "Seasonal / global reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Shadow puppet theatre."
+            "prompt": "Knows never to look directly at the Sun and never requires lasers, flames/candles, high-heat lamps, electrical disassembly, lights aimed at eyes, unsafe darkness, or unsupervised night/outdoor observation.",
+            "criterionLabel": "Light investigation safety",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Safety in darkness and winter."
+            "prompt": "Uses safe visual, tactile, modeled, signed, AAC, audio-described, partner-supported, or adult-scribed pathways without making standing, visual acuity, flashlight handling, or fine-motor tracing prerequisites.",
+            "criterionLabel": "Accessible science participation",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates shadow formation, one controlled change, fair measurement, Earth-rotation reasoning, and one corrected misconception or model limitation in an accessible explanation.",
+            "criterionLabel": "Integrated light scientist reflection",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -5426,60 +5953,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 18 Mastery Check",
+        "title": "Week 18 · Midyear Review and Celebration Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Midyear Review and Celebration."
+            "prompt": "Retrieves first-semester learning across literacy/language, mathematics, and inquiry through an accessible response mode before coaching and identifies at least one secure idea and one next teaching target.",
+            "criterionLabel": "Cross-domain retrieval",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Review print, sounds, retelling, and oral language."
+            "prompt": "Demonstrates a story, language-pattern, print/sound, or meaning concept on a new example after targeted reteaching rather than relying on memorized wording or performance style.",
+            "criterionLabel": "Literacy transfer after remediation",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Represents and solves a changed-example task using age-appropriate counting, comparison, composition/decomposition, pattern, geometry, spatial, or measurement reasoning and explains what stayed the same.",
+            "criterionLabel": "Mathematics transfer after remediation",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Uses observation/evidence, model, classification, prediction/result, fair comparison, or revision reasoning in a new inquiry/community/design scenario.",
+            "criterionLabel": "Inquiry and evidence transfer",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Review counting, shapes, patterns, and comparison."
+            "prompt": "Identifies at least one error, misconception, weak strategy, or missing piece of evidence and demonstrates a correction, improved representation, or better strategy.",
+            "criterionLabel": "Error analysis and repair",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Applies an appropriate privacy, safety, consent, accessibility, humane-care, or economic-dignity boundary from prior learning without requiring personal disclosure.",
+            "criterionLabel": "Privacy safety and dignity transfer",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Review observation, maps, living things, and weather."
+            "prompt": "Combines communication with at least one mathematical representation and one inquiry/evidence idea in a novel practice task and identifies a relevant safety, limitation, or revision when appropriate.",
+            "criterionLabel": "Integrated practice demonstration",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Midyear portfolio cover."
+            "prompt": "Demonstrates the academic target through an appropriate accommodation or communication pathway without making speed, eye contact, handwriting fluency, loud speech, or public performance prerequisites.",
+            "criterionLabel": "Accessible mastery participation",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Pride and growth reflection."
+            "prompt": "Selects one work sample, model, drawing, or dictated explanation as evidence and explains one area of growth plus one reasonable next practice target.",
+            "criterionLabel": "Portfolio and growth reflection",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Accurately explains that Week 18 daily practice and Week 18 mastery do not award midyear mastery; only after Weeks 1–18 are mastered does the separate midyear demonstration become eligible, and it still requires its own 80% adult-observed evidence.",
+            "criterionLabel": "Midyear authority boundary",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -5726,60 +6284,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 19 Mastery Check",
+        "title": "Week 19 · New Year, Goals, and Growth Mindset Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: New Year, Goals, and Growth Mindset."
+            "prompt": "Compares the learner's own earlier and current academic evidence, makes one supported growth or next-step claim, and avoids peer ranking or identity labels.",
+            "criterionLabel": "Evidence-based learning growth",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: I can / I am learning sentence frames."
+            "prompt": "Creates or interprets a small academic learning goal that describes observable skill evidence rather than worth, compliance, personality, or a sensitive personal target.",
+            "criterionLabel": "Observable academic goal",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Identifies at least two plausible strategies, supports, access tools, or conditions for a learning goal and explains when one might be changed or added.",
+            "criterionLabel": "Strategy and support plan",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Continues a forward number sequence from a provided starting number using an accurate spoken, signed, AAC, visual, tactile, manipulative, or other accessible representation.",
+            "criterionLabel": "Forward number sequence",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count forward/back and compare strategies."
+            "prompt": "Represents a short backward number sequence accurately and distinguishes sequence practice from the mathematical meaning of subtraction.",
+            "criterionLabel": "Backward number sequence",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Uses or interprets two valid strategies for a number-sequence or learning task and compares them without treating speed, speech, or one body-dependent method as universally best.",
+            "criterionLabel": "Strategy comparison without speed",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Growth as change over time."
+            "prompt": "Tests a strategy, notices evidence, and chooses a reasonable next move such as continue, change strategy, seek instruction/help, use an accommodation, pause/rest, change conditions, or revise the goal.",
+            "criterionLabel": "Evidence-based strategy revision",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Goal garden."
+            "prompt": "Explains or demonstrates that effort alone is not a universal solution and that instruction, strategy, tools, accommodations, rest, time, environment, and access can affect learning; needing support is not a character failure.",
+            "criterionLabel": "Growth-mindset nuance and access",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Self-management and persistence."
+            "prompt": "Knows goals may be private or changed and that no New Year observance, public goal chart, body/health, family-finance, religion, trauma, home-behavior, or other sensitive disclosure is required.",
+            "criterionLabel": "Goal privacy and dignity",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates personal evidence, an observable academic goal, strategy/support choice, number-sequence reasoning, one correction or barrier response, and a next-step evidence plan.",
+            "criterionLabel": "Integrated learning-growth reflection",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -6026,60 +6615,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 20 Mastery Check",
+        "title": "Week 20 · Stories Around the World Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Stories Around the World."
+            "prompt": "Distinguishes story content from source/version information and recognizes that a teller, author, translator, adapter, reteller, or uncertain oral history may stand behind a particular version.",
+            "criterionLabel": "Story source / version reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Characters, setting, and story sequence."
+            "prompt": "Uses careful one-version/uncertain-origin language and rejects the claim that one story represents every member of a culture, country, language, religion, or people.",
+            "criterionLabel": "Source uncertainty and representation",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Identifies character, setting, and beginning/middle/end or first/next/last using evidence from a provided story without treating fictional setting as a description of all real people.",
+            "criterionLabel": "Character setting and sequence evidence",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Compares two stories or versions with at least one supported similarity and difference and names a conclusion the comparison does not justify about real people or places.",
+            "criterionLabel": "Comparative story evidence",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Compare story collections."
+            "prompt": "Counts a stated feature in a small provided story set with one-to-one correspondence and interprets or builds a simple comparison/graph without generalizing the sample to cultural worth or creativity.",
+            "criterionLabel": "Story-sample mathematics",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Uses a map/key or positional language for documented or fictional story context and explains at least one limitation, including that borders do not define one culture, language, ancestry, religion, or way of life.",
+            "criterionLabel": "Map and place model limits",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Maps, cultures, traditions, and respect."
+            "prompt": "Recognizes translation/retelling as legitimate versions and does not rank oral, written, signed, illustrated, sung, digital, AAC, or performed storytelling as more or less civilized.",
+            "criterionLabel": "Translation and storytelling-form respect",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: World story suitcase."
+            "prompt": "Identifies a motif or version change, avoids treating a shared motif as proof of common origin, and creates or explains an original variation using clearly appropriate classroom material rather than identity imitation.",
+            "criterionLabel": "Version motif and respectful variation",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Social awareness."
+            "prompt": "Knows not to copy, reenact, remix, costume, or craft sacred/restricted Indigenous, religious, ceremonial, funerary, initiation, or community-protected material and knows no learner must disclose heritage or speak for a group.",
+            "criterionLabel": "Protected-material and identity boundary",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates source/version reasoning, story evidence, fair sample mathematics, map/place limits, uncertainty, and a cultural-respect boundary in an accessible explanation or model.",
+            "criterionLabel": "Integrated respectful story scholarship",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -6326,60 +6946,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 21 Mastery Check",
+        "title": "Week 21 · Living and Nonliving Things Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Living and Nonliving Things."
+            "prompt": "Uses more than one relevant evidence clue to reason about whether an example is a living organism and explicitly rejects movement, growth, energy use, or appearance alone as proof of life.",
+            "criterionLabel": "Multiple evidence clues for life",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Living/nonliving vocabulary."
+            "prompt": "Explains that living things use resources/energy and show life processes while recognizing that plants, animals, fungi, and tiny organisms can meet needs or respond in different ways.",
+            "criterionLabel": "Living needs and diversity",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Distinguishes a currently living organism from once-living or living-derived material and from a never-living example, using evidence about present state or origin.",
+            "criterionLabel": "Living / once-living / never-living distinction",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "States a classification rule before sorting, applies it consistently, and uses a need-more-evidence category rather than guessing when information is insufficient.",
+            "criterionLabel": "Rule-first classification with uncertainty",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sort, tally, and graph."
+            "prompt": "Tallies a provided classification set accurately, builds or interprets an accessible simple graph, compares categories, checks totals, and limits claims to the provided sample.",
+            "criterionLabel": "Tally graph and sample reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Uses at least one robot, fire, crystal, model, or comparable counterexample to show why a one-clue life rule fails and replaces it with stronger multi-evidence reasoning.",
+            "criterionLabel": "Counterexample reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Living things grow and need resources."
+            "prompt": "Explains that a viable dormant seed can be alive without visible growth and that appearance alone may justify a need-more-evidence conclusion rather than certainty.",
+            "criterionLabel": "Dormancy and hidden-evidence reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Living/nonliving museum."
+            "prompt": "Distinguishes a representation/model from a living organism and identifies at least one limitation of visual appearance or a classroom model.",
+            "criterionLabel": "Model and observation limits",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Care for classroom and nature."
+            "prompt": "Knows that proving life never requires harming/depriving organisms, tasting specimens, culturing unknown microbes/mold, or handling unknown plants/fungi/wildlife/remains; safe models, records, and observation are valid evidence.",
+            "criterionLabel": "Humane safety and care boundary",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates multi-clue evidence, once/never history, classification/data, uncertainty, a counterexample, and humane observation in an accessible explanation or model.",
+            "criterionLabel": "Integrated living-systems explanation",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -6626,60 +7277,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 22 Mastery Check",
+        "title": "Week 22 · Water, Ice, and Weather Changes Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Water, Ice, and Weather Changes."
+            "prompt": "Identifies ice as solid water, liquid water as liquid H₂O, and water vapor as gaseous water while explaining that a state change does not make water a different substance.",
+            "criterionLabel": "Water state and substance identity",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Water words and procedural language."
+            "prompt": "Explains that water vapor is ordinarily invisible and that visible mist, fog, clouds, or the white plume near hot water consists mainly of tiny liquid droplets and/or ice crystals rather than visible gaseous water itself.",
+            "criterionLabel": "Water vapor / visible mist distinction",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Sequences melting from solid to liquid and freezing from liquid to solid and rejects the idea that cold enters water as a material substance.",
+            "criterionLabel": "Melting and freezing direction",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Identifies or uses a fair melting/freezing comparison with a stated variable and reasonably controlled starting amount/size, container, observation interval, or measurement method.",
+            "criterionLabel": "Fair state-change comparison",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sequence events and compare temperatures informally."
+            "prompt": "Explains that liquid water can evaporate into invisible water vapor below the boiling point and that drying does not mean the water simply ceased to exist.",
+            "criterionLabel": "Evaporation below boiling",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains that water vapor can change to liquid droplets under suitable cooling conditions and correctly interprets a cold-surface condensation example without assuming leakage.",
+            "criterionLabel": "Condensation reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Water, ice, and weather change."
+            "prompt": "Explains that clouds contain tiny liquid droplets and/or ice crystals and that cloudiness does not guarantee precipitation; recognizes that precipitation form depends on conditions.",
+            "criterionLabel": "Cloud and precipitation accuracy",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Ice investigation."
+            "prompt": "Reads or builds a small weather-water data display, makes an evidence-supported comparison, and names a sample/forecast/location or classroom water-cycle-model limitation.",
+            "criterionLabel": "Weather data and model limits",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Patience in experiments."
+            "prompt": "Knows that mastery does not require boiling water, flame, hot plates, dry ice, liquid nitrogen, salt/ice skin experiments, tasting, walking on ice, home freezers, snow, or unsafe cold exposure; accessible models/data are valid evidence.",
+            "criterionLabel": "Water investigation safety and access",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates water-state identity, melting/freezing, evaporation/condensation, cloud/weather evidence, a fair-comparison idea, one misconception correction, a model/data limitation, and a safety boundary.",
+            "criterionLabel": "Integrated water-change explanation",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -6926,60 +7608,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 23 Mastery Check",
+        "title": "Week 23 · Earth Care and Stewardship Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Earth Care and Stewardship."
+            "prompt": "Uses provided material, item-condition, contamination/special-handling, and local-rule evidence to choose an appropriate pathway such as use longer, reuse/repair, accepted recycling, managed composting, special handling, disposal, or check-the-rule.",
+            "criterionLabel": "Material pathway reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Environmental vocabulary and shared writing."
+            "prompt": "Explains that a recycling symbol or recyclable material does not guarantee local program acceptance and uses the stated local/classroom guide rather than appearance or wishful guessing.",
+            "criterionLabel": "Local recycling rule reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "States the provided sorting rule before classification, applies it consistently, and uses check-the-local-rule/adult-special-handling when material, condition, contamination, or acceptance is uncertain.",
+            "criterionLabel": "Rule-first sorting with uncertainty",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Tallies a clean provided sample once per item, builds or interprets an accessible graph, verifies category totals against sample size, compares categories, and limits claims to that sample.",
+            "criterionLabel": "Waste-sample tally and graph",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count/reuse materials and sort recycling."
+            "prompt": "Compares at least two material strategies under a stated constraint, recognizes that reduce/reuse/repair are not universally best or safe, and revises the choice when a safety, access, hygiene, condition, or local-system fact changes.",
+            "criterionLabel": "Reduce reuse repair tradeoff",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Knows that stewardship mastery never requires handling real trash, sharps, glass, batteries, e-waste, chemicals, medicine/medical waste, moldy food, animal waste, unknown containers, or denying needed health/disability/sanitation/safety supplies.",
+            "criterionLabel": "Safety hygiene and accessibility boundary",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Earth materials and human choices."
+            "prompt": "Explains that material and environmental outcomes involve design, production, infrastructure, public agencies, facilities, workers, schools, households, and community rules and are not a moral burden placed on children or one family alone.",
+            "criterionLabel": "Systems and shared responsibility",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Recycled art build."
+            "prompt": "Uses documented fictional place evidence to identify a problem/need, separates observation from assumptions about who caused it, and rejects blaming a person/community without evidence.",
+            "criterionLabel": "Shared-place evidence without blame",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Responsibility and service."
+            "prompt": "Chooses stewardship actions that avoid feeding/chasing/moving wildlife and avoid independent hazardous litter collection, using adult reporting, protected space, design, or properly organized cleanup instead.",
+            "criterionLabel": "Habitat and cleanup safety",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates local-rule classification, checked data, material-strategy tradeoffs, dignity, system responsibility, shared-place evidence, a safe action, and a way to evaluate improvement.",
+            "criterionLabel": "Integrated stewardship decision",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -7227,60 +7940,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 24 Mastery Check",
+        "title": "Week 24 · Transportation and Engineering Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Transportation and Engineering."
+            "prompt": "Identifies a push or pull as an interaction and connects it to an observed change in motion such as starting, stopping, speeding up, slowing down, or changing direction without treating force as a substance stored in an object.",
+            "criterionLabel": "Force and motion interaction",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Transportation words and labels."
+            "prompt": "Explains age-appropriately that gravity contributes to downhill motion on a ramp while the ramp supports/guides the object, and rejects the claim that the ramp itself gives a toy stored force.",
+            "criterionLabel": "Gravity and ramp reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "States the planned changed variable and preserves key controls such as toy, release point/method, surface, observation area, and measurement method; does not add a hidden launch push when testing ramp conditions.",
+            "criterionLabel": "Fair-test variable control",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Measures from a common reference with equal repeated units or another consistent accessible method, records at least two trials per compared condition, and recognizes that repeated trials may vary.",
+            "criterionLabel": "Consistent measurement and repeated trials",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Measure ramp distance."
+            "prompt": "Uses repeated evidence to make a cautious claim about the tested setup, does not silently discard inconvenient trials, and rejects one-trial proof or unsupported exact-distance claims.",
+            "criterionLabel": "Evidence conclusion limits",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains that wheels/axles can change rolling compared with sliding while friction/rolling resistance, alignment, deformation, and surface conditions still matter; rejects the claim that wheels eliminate friction.",
+            "criterionLabel": "Wheels axles friction and surfaces",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Push, pull, motion, and design testing."
+            "prompt": "Selects or compares a design using stated criteria/constraints and explains why farther/faster/steeper is not automatically better for every purpose.",
+            "criterionLabel": "Engineering criteria constraints and tradeoffs",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Ramp lab."
+            "prompt": "Uses test or route evidence to identify a design issue, proposes a specific revision, and names evidence that could show whether the revision helped.",
+            "criterionLabel": "Design test and revision",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Fairness in taking turns."
+            "prompt": "Designs or interprets a fictional transportation route/system with at least one accessibility feature, respects mobility aids as access tools, and does not require private car ownership, disability, address, commute, or travel disclosure.",
+            "criterionLabel": "Transportation access privacy and systems",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates force/motion, fair testing, consistent measurement, repeated evidence, design criteria/tradeoffs, accessibility, revision, and the toy-scale safety boundary; knows child-riding ramps, road/traffic tests, projectiles, heavy rolling objects, and tests aimed at people/animals are not authorized.",
+            "criterionLabel": "Integrated engineering safety explanation",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -7527,60 +8271,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 25 Mastery Check",
+        "title": "Week 25 · Jobs, Tools, and Community Helpers Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Jobs, Tools, and Community Helpers."
+            "prompt": "Uses a provided fictional/consenting source to identify a task and community purpose, cites the evidence, and rejects inferring occupation, competence, identity, or worth from clothing, accent, body, gender, neighborhood, vehicle, or appearance.",
+            "criterionLabel": "Task source and contribution reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Question words and interview practice."
+            "prompt": "Recognizes paid employment alongside unpaid caregiving, household work, volunteering, learning/training, mutual aid, maintenance, repair, creative, and community contributions and rejects income, prestige, title, uniform, or education as measures of human worth.",
+            "criterionLabel": "Paid unpaid work and dignity",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Matches a physical, digital, communication, or adaptive tool to a stated task by explaining the tool's function rather than stereotyping who uses it.",
+            "criterionLabel": "Tool function and task fit",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Explains that knowing a tool's purpose does not authorize child use and identifies relevant training, permission, safety, accessibility, or adult-use conditions; treats adaptive tools as legitimate work/learning/access tools.",
+            "criterionLabel": "Tool authorization safety and access",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count tools and make helper graph."
+            "prompt": "Distinguishes a physical good from a service/action using a stated rule and recognizes that a real work example may involve both rather than forcing a false binary.",
+            "criterionLabel": "Goods services and mixed cases",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Sorts a provided work/goods-services sample by the stated rule, counts each item once, verifies totals, interprets an accessible graph, and rejects using sample frequency to rank importance, pay, skill, or human value.",
+            "criterionLabel": "Work sample tally graph and limits",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Goods/services; helpers and responsibilities."
+            "prompt": "Uses an appropriate who/what/when/where/why/how question with a fictional or consenting source, records the response accurately, distinguishes source statement from inference, and uses a relevant follow-up.",
+            "criterionLabel": "Respectful question and source reasoning",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Community helper badge."
+            "prompt": "Knows a person may decline a question and does not require salary, medical/disability details, immigration/citizenship status, religion, family status, home address, trauma, political beliefs, confidential workplace information, or family employment disclosure.",
+            "criterionLabel": "Interview consent and privacy boundary",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Respect for workers."
+            "prompt": "Maps or explains at least three roles/resources in a fictional community service/system and identifies a dependency between them without ranking a single helper as working alone or being inherently more important.",
+            "criterionLabel": "Community system interdependence",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Integrates task/source evidence, paid/unpaid contribution, tool function/safety, goods/services, checked data, respectful questions/privacy, and system interdependence while rejecting occupational stereotypes and unsafe real-work imitation.",
+            "criterionLabel": "Integrated work dignity and safety explanation",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -7832,60 +8607,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 26 Mastery Check",
+        "title": "Week 26 · Symbols, Flags, and Civic Belonging Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Symbols, Flags, and Civic Belonging."
+            "prompt": "Explains or shows what a classroom/community symbol is intended to communicate.",
+            "criterionLabel": "Symbol meaning",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Symbol labels and shared pledge of care."
+            "prompt": "Uses visible features or stated context as evidence for an interpretation.",
+            "criterionLabel": "Symbol evidence",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Sorts symbols by a named feature and checks each item against the rule.",
+            "criterionLabel": "Rule-based sorting",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Compares two symbols and identifies a meaningful similarity or difference.",
+            "criterionLabel": "Symbol comparison",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sort symbols by attributes."
+            "prompt": "Interprets an unfamiliar, fictional symbol using context clues rather than assuming one universal meaning.",
+            "criterionLabel": "Context transfer",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Explains that symbols can mean different things to different groups and uses them respectfully.",
+            "criterionLabel": "Belonging and respectful use",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Civic symbols and classroom agreements."
+            "prompt": "Creates an original symbol with at least two purposeful features.",
+            "criterionLabel": "Original emblem design",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Classroom flag."
+            "prompt": "Explains or represents why a feature was selected.",
+            "criterionLabel": "Design explanation",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Respectful participation."
+            "prompt": "Connects a shared symbol or agreement to a safe, respectful action.",
+            "criterionLabel": "Classroom agreement",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Reviews an interpretation or design and communicates one improvement.",
+            "criterionLabel": "Reflection and revision",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -8137,60 +8943,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 27 Mastery Check",
+        "title": "Week 27 · Neighborhood Market and Number Stories Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Neighborhood Market and Number Stories."
+            "prompt": "Identifies what quantities represent in a fictional market or everyday number story.",
+            "criterionLabel": "Number-story comprehension",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Story problem language."
+            "prompt": "Represents a total to 10 as two or more parts using objects, marks, or numerals.",
+            "criterionLabel": "Compose numbers to 10",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Shows more than one valid part-part-whole arrangement and verifies the total.",
+            "criterionLabel": "Decompose and verify",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Counts tokens or counters with one-to-one correspondence.",
+            "criterionLabel": "Counting correspondence",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Compose and decompose to 10."
+            "prompt": "Compares two represented quantities accurately.",
+            "criterionLabel": "Compare quantities",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Distinguishes a good from a service using an example and a reason.",
+            "criterionLabel": "Goods and services",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Community economy and fair exchange."
+            "prompt": "Chooses among fictional options with a stated constraint and explains the tradeoff.",
+            "criterionLabel": "Choice and tradeoff",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Market math book."
+            "prompt": "Uses a consistent token model without implying that token amount measures human worth.",
+            "criterionLabel": "Fair exchange model",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Patience and sharing resources."
+            "prompt": "Builds, draws, or explains a model that matches a new number story.",
+            "criterionLabel": "Story problem representation",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Explains a strategy or corrects a mismatch between the story and the model.",
+            "criterionLabel": "Reasoning reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -8442,60 +9279,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 28 Mastery Check",
+        "title": "Week 28 · Health, Food, and Growing Bodies Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Health, Food, and Growing Bodies."
+            "prompt": "Identifies an age-appropriate body need or healthy routine without moralizing body size or appearance.",
+            "criterionLabel": "Body-care knowledge",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Health vocabulary."
+            "prompt": "Sorts food examples by a stated attribute or provided classification rule.",
+            "criterionLabel": "Food-group sorting",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Recognizes that a food may fit more than one reasonable category depending on the rule.",
+            "criterionLabel": "Classification flexibility",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Counts or represents objects in a food/category set accurately.",
+            "criterionLabel": "Count and represent",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sort food groups/colors and count healthy choices."
+            "prompt": "Compares two groups using more, fewer, same, or a number-based explanation.",
+            "criterionLabel": "Compare groups",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Distinguishes a general body need from an individual preference or circumstance.",
+            "criterionLabel": "Needs and preferences",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Body needs and healthy habits."
+            "prompt": "Knows food tasting is optional and follows adult instructions for allergy and food safety.",
+            "criterionLabel": "Safety and allergies",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Healthy plate collage."
+            "prompt": "Communicates a care choice through a fictional example or accessible representation without requiring personal health disclosures.",
+            "criterionLabel": "Accessible healthy-choice communication",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Self-care."
+            "prompt": "Creates or arranges a model and explains one design choice.",
+            "criterionLabel": "Healthy-plate artifact",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Explains a helpful habit while respecting different bodies, cultures, access needs, and food availability.",
+            "criterionLabel": "Reflection without stigma",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -8747,60 +9615,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 29 Mastery Check",
+        "title": "Week 29 · Movement, Balance, and the Body Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Movement, Balance, and the Body."
+            "prompt": "Uses or selects accurate action, position, or direction words.",
+            "criterionLabel": "Movement vocabulary",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Action verbs."
+            "prompt": "Demonstrates or represents a safe balance or coordinated movement task.",
+            "criterionLabel": "Balance and body control",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Follows or builds a simple route using clear positional instructions.",
+            "criterionLabel": "Spatial route sequence",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Creates, extends, or identifies a repeating movement sequence.",
+            "criterionLabel": "Movement pattern",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Position, direction, and movement patterns."
+            "prompt": "Describes an age-appropriate role of a body part or system without unsupported medical claims.",
+            "criterionLabel": "Body-system concept",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Identifies a safe modification, stopping point, or adult-help choice in a movement scenario.",
+            "criterionLabel": "Safe risk judgment",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Body movement, bones/muscles basics."
+            "prompt": "Recognizes that movement can be completed or communicated in different ways.",
+            "criterionLabel": "Accessibility and movement",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Movement maze."
+            "prompt": "Creates or modifies a movement route or model to meet a stated constraint.",
+            "criterionLabel": "Movement-maze design",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Confidence and safe risk."
+            "prompt": "Tests the route/model and identifies a change that improves clarity, access, or safety.",
+            "criterionLabel": "Testing and revision",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Names or selects a useful strategy for pausing, asking for support, or trying a different movement.",
+            "criterionLabel": "Reflection and self-regulation",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -9052,60 +9951,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 30 Mastery Check",
+        "title": "Week 30 · Art, Music, and Pattern Makers Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Art, Music, and Pattern Makers."
+            "prompt": "Identifies or creates a repeating pattern in art, music, movement, or objects.",
+            "criterionLabel": "Pattern structure",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Describe art and music."
+            "prompt": "Distinguishes a steady beat from a changing rhythm through an accessible performance or representation.",
+            "criterionLabel": "Beat and rhythm",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Uses counting to describe beats, repetitions, or features.",
+            "criterionLabel": "Counted pattern",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Describes an observable sound/vibration relationship using a safe example.",
+            "criterionLabel": "Sound and vibration",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Patterns, shapes, and counting beats."
+            "prompt": "Describes a visible, audible, tactile, or structural feature without treating personal preference as fact.",
+            "criterionLabel": "Art observation",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Creates an original art or music idea with a stated purpose.",
+            "criterionLabel": "Creative intent",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Sound, vibration, and design."
+            "prompt": "Changes one feature after listening, viewing, testing, or receiving feedback.",
+            "criterionLabel": "Revision and evidence",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Gallery and concert."
+            "prompt": "Respects others' sensory boundaries and offers quiet, visual, or nonperformance participation options.",
+            "criterionLabel": "Respectful participation",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Creative courage."
+            "prompt": "Shares, records, or represents an artifact in an accessible form.",
+            "criterionLabel": "Presentation or documentation",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Identifies one pattern, choice, or revision used in the finished work.",
+            "criterionLabel": "Reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -9357,60 +10287,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 31 Mastery Check",
+        "title": "Week 31 · Bugs, Gardens, and Tiny Worlds Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Bugs, Gardens, and Tiny Worlds."
+            "prompt": "Records an observable feature of a small animal or insect without unsupported interpretation.",
+            "criterionLabel": "Careful organism observation",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Observation words and detail labels."
+            "prompt": "Separates a directly observed detail from a guess or human-like story.",
+            "criterionLabel": "Observation versus inference",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Connects one observable structure or behavior to a possible function with age-appropriate caution.",
+            "criterionLabel": "Structure and function",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "States a sorting rule before classifying examples.",
+            "criterionLabel": "Classification rule",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Count legs/wings and graph garden life."
+            "prompt": "Counts observable features or example groups and compares totals.",
+            "criterionLabel": "Count and compare",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Connects an organism need to a plausible habitat resource.",
+            "criterionLabel": "Habitat relationship",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Animal structures and habitats."
+            "prompt": "Uses pictures, models, or distant observation; does not need to touch, catch, feed, or disturb wildlife.",
+            "criterionLabel": "Humane observation",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Bug field guide."
+            "prompt": "Creates a field-guide entry using a drawing, label, dictated description, or accessible form.",
+            "criterionLabel": "Field-guide communication",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Gentle observation."
+            "prompt": "Names something the observation cannot prove or what additional evidence would help.",
+            "criterionLabel": "Evidence limitation",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Corrects an initial classification or explanation when the evidence calls for it.",
+            "criterionLabel": "Revision and reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -9662,60 +10623,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 32 Mastery Check",
+        "title": "Week 32 · Water Worlds: Pond, River, and Ocean Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Water Worlds: Pond, River, and Ocean."
+            "prompt": "Explains that a habitat provides resources or conditions that living things need.",
+            "criterionLabel": "Habitat concept",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Water habitat vocabulary."
+            "prompt": "Identifies a meaningful difference among pond, river, and ocean models or examples.",
+            "criterionLabel": "Water environment comparison",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Sorts water-animal examples using a stated trait or habitat rule.",
+            "criterionLabel": "Rule-based animal sorting",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Counts or represents a set of habitat examples in a simple tally or graph.",
+            "criterionLabel": "Counting and graphing",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sort/count water animals."
+            "prompt": "Makes a sample-based claim supported by the displayed data.",
+            "criterionLabel": "Graph interpretation",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Connects an animal need with a habitat feature or resource.",
+            "criterionLabel": "Need-resource connection",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Habitats and resources."
+            "prompt": "Identifies something a mural or habitat model leaves out or cannot prove.",
+            "criterionLabel": "Model limitation",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Water habitat mural."
+            "prompt": "Identifies an appropriate trusted-adult boundary around water and does not treat the lesson as permission for independent water access.",
+            "criterionLabel": "Water safety",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Care and safety near water."
+            "prompt": "Creates a habitat representation with more than one need-linked feature.",
+            "criterionLabel": "Habitat design",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Explains one design choice using the habitat evidence.",
+            "criterionLabel": "Evidence reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -9968,60 +10960,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 33 Mastery Check",
+        "title": "Week 33 · Space, Moon, and Day/Night Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Space, Moon, and Day/Night."
+            "prompt": "Records an observable sky feature or uses a safe supplied observation.",
+            "criterionLabel": "Sky observation",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Sky words and question sentences."
+            "prompt": "Orders day/night observations or a simple model without claiming the Sun circles Earth daily.",
+            "criterionLabel": "Day/night sequence",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Distinguishes the Sun and Moon using age-appropriate observations or model evidence.",
+            "criterionLabel": "Sun and Moon distinction",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Sequences or compares observations over time without claiming one short sample proves a universal rule.",
+            "criterionLabel": "Pattern over time",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Sequence day/night and count sky observations."
+            "prompt": "Counts sky observations, symbols, or model objects accurately.",
+            "criterionLabel": "Count and represent",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Uses a model to explain one aspect of a sky pattern.",
+            "criterionLabel": "Model interpretation",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Sun, moon, stars, and day/night patterns."
+            "prompt": "Identifies one thing the model cannot show or establish.",
+            "criterionLabel": "Model limitation",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Night-sky journal."
+            "prompt": "Separates what can be observed from an imaginative explanation.",
+            "criterionLabel": "Observation versus story",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Wonder and patience."
+            "prompt": "Knows never to look directly at the Sun and uses adult-guided, safe observation only.",
+            "criterionLabel": "Sun safety",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Communicates one observation, question, or revised idea in a journal or equivalent accessible form.",
+            "criterionLabel": "Sky journal reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -10274,60 +11297,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 34 Mastery Check",
+        "title": "Week 34 · Tools, Technology, and Digital Citizenship Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Tools, Technology, and Digital Citizenship."
+            "prompt": "Matches a tool to a suitable task and explains or shows why it helps.",
+            "criterionLabel": "Tool purpose",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Sequence words: first, next, last."
+            "prompt": "Creates or follows a clear first/next/last sequence for an unplugged task.",
+            "criterionLabel": "Sequence and algorithm",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Uses consistent direction or position words to guide a model or peer.",
+            "criterionLabel": "Directional language",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Finds and repairs a missing, duplicated, or out-of-order step in a sequence.",
+            "criterionLabel": "Pattern debugging",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Coding patterns and directional language."
+            "prompt": "Predicts a likely result of changing one instruction and tests the prediction.",
+            "criterionLabel": "Cause and effect",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Recognizes that passwords, private messages, personal location, and identifying details should not be shared in a learning activity.",
+            "criterionLabel": "Digital privacy",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Simple tools and digital citizenship."
+            "prompt": "Knows that understanding a tool does not itself authorize using it; seeks adult permission when appropriate.",
+            "criterionLabel": "Ask-before-use safety",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Unplugged robot map."
+            "prompt": "Designs instructions that another learner can follow using an accessible representation.",
+            "criterionLabel": "Accessible algorithm",
+            "requiredCore": false
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Responsible choices."
+            "prompt": "Tests instructions, identifies ambiguity, and revises one step.",
+            "criterionLabel": "Test and revise",
+            "requiredCore": true
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Names one helpful use and one safety or privacy boundary for a tool.",
+            "criterionLabel": "Responsible technology reflection",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -10580,60 +11634,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 35 Mastery Check",
+        "title": "Week 35 · My Big Question Capstone Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: My Big Question Capstone."
+            "prompt": "States or selects a focused, age-appropriate question that can be explored through observation, comparison, or a model.",
+            "criterionLabel": "Question focus",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Question words and oral presentation."
+            "prompt": "Separates what is already known from what is still a question.",
+            "criterionLabel": "Prior-knowledge distinction",
+            "requiredCore": false
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Chooses an appropriate way to gather evidence for the question.",
+            "criterionLabel": "Evidence plan",
+            "requiredCore": true
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Records or communicates the question and one finding through an accessible form.",
+            "criterionLabel": "Literacy communication",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Choose math tools for a project."
+            "prompt": "Chooses a suitable counting, sorting, measuring, pattern, or data tool and explains its use.",
+            "criterionLabel": "Mathematics tool choice",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Gathers or interprets evidence without presenting a guess as a confirmed finding.",
+            "criterionLabel": "Inquiry observation",
+            "requiredCore": true
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Inquiry, evidence, design, and communication."
+            "prompt": "Creates a model, diagram, performance, or artifact that relates to the question.",
+            "criterionLabel": "Model or maker artifact",
+            "requiredCore": false
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Big question board."
+            "prompt": "Changes a model or explanation based on a finding or feedback.",
+            "criterionLabel": "Revision from evidence",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Social-Emotional / Safety",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Confidence and collaboration."
+            "prompt": "Uses safe materials and appropriate sources, and avoids sharing private information.",
+            "criterionLabel": "Source and safety awareness",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Communicates the question, evidence, result or uncertainty, and one next question.",
+            "criterionLabel": "Capstone explanation",
+            "requiredCore": false
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     },
     {
@@ -10885,60 +11970,91 @@
         }
       ],
       "weeklyAssessment": {
-        "title": "Unit 36 Mastery Check",
+        "title": "Week 36 · Kindergarten Review and Final Celebration Mastery Evidence",
         "passingScore": 80,
         "items": [
           {
-            "domain": "Literacy",
+            "number": 1,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Uses oral language, drawing, gesture, or early writing to explain the unit idea: Kindergarten Review and Final Celebration."
+            "prompt": "Demonstrates a familiar letter/sound, meaningful print, listening, or story skill in a fresh age-appropriate example.",
+            "criterionLabel": "Integrated literacy readiness",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 2,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Participates in the literacy focus: Review letters, sounds, words, and stories."
+            "prompt": "Retells or sequences meaningful events and supports a response with a story detail.",
+            "criterionLabel": "Story comprehension and sequence",
+            "requiredCore": true
           },
           {
-            "domain": "Literacy",
+            "number": 3,
+            "domain": "Literacy / Communication",
             "points": 1,
-            "prompt": "Listens to a short read-aloud and answers or asks one relevant question."
+            "prompt": "Communicates an idea through drawing, dictation, labels, copied print, emergent writing, AAC, or another accessible form.",
+            "criterionLabel": "Emergent writing and communication",
+            "requiredCore": false
           },
           {
-            "domain": "Writing/Fine Motor",
+            "number": 4,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Draws, traces, labels, dictates, or attempts marks connected to the unit."
+            "prompt": "Counts a concrete set accurately and represents what the total means.",
+            "criterionLabel": "Counting and cardinality",
+            "requiredCore": true
           },
           {
-            "domain": "Math",
+            "number": 5,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Completes a hands-on math task: Review numbers, shapes, data, and problem solving."
+            "prompt": "Models a joining, separating, or part-part-whole problem with a matching representation.",
+            "criterionLabel": "Number composition",
+            "requiredCore": false
           },
           {
-            "domain": "Math",
+            "number": 6,
+            "domain": "Mathematics",
             "points": 1,
-            "prompt": "Shows thinking with objects, movement, pictures, words, or early symbols."
+            "prompt": "Applies one familiar spatial, shape, repeating-pattern, or fair-measurement skill to a new task.",
+            "criterionLabel": "Geometry, pattern, or measurement",
+            "requiredCore": false
           },
           {
-            "domain": "Inquiry",
+            "number": 7,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Observes, sorts, maps, builds, tests, or explains: Review science/social studies/arts/wellness."
+            "prompt": "Communicates an observation and distinguishes it from a guess or prediction.",
+            "criterionLabel": "Evidence-based inquiry",
+            "requiredCore": true
           },
           {
-            "domain": "Arts/Workshop",
+            "number": 8,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Completes or contributes to the maker project: Portfolio celebration."
+            "prompt": "Identifies an error or obstacle, tries a reasonable strategy, and explains or shows a correction.",
+            "criterionLabel": "Problem-solving and revision",
+            "requiredCore": true
           },
           {
-            "domain": "SEL",
+            "number": 9,
+            "domain": "Arts / Design",
             "points": 1,
-            "prompt": "Practices the social-emotional focus: Pride, gratitude, and next steps."
+            "prompt": "Selects a work sample or model and communicates what it demonstrates about learning.",
+            "criterionLabel": "Portfolio evidence and growth",
+            "requiredCore": false
           },
           {
-            "domain": "Participation",
+            "number": 10,
+            "domain": "Inquiry / Evidence",
             "points": 1,
-            "prompt": "Participates safely, kindly, and with appropriate effort for the child’s developmental level."
+            "prompt": "Connects communication, mathematics, and inquiry in one novel age-appropriate task and identifies a next learning target.",
+            "criterionLabel": "Integrated first-grade readiness",
+            "requiredCore": true
           }
-        ]
+        ],
+        "rubricSource": "curriculum/data/a-plus-mastery.js"
       }
     }
   ],
