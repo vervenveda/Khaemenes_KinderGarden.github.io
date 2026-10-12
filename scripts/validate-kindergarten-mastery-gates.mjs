@@ -97,6 +97,14 @@ new Function("window",finalSource)(finalWindow);
 const FINAL=finalWindow.KHAE_KINDER_FINAL_MASTERY;
 assert.ok(Array.isArray(FINAL),"final readiness rubric must load");
 assert.equal(FINAL.length,50,"final readiness rubric must contain exactly 50 criteria");
+assert.equal(courseData.assessments.midterm.items.length,40,"stored midyear assessment must contain 40 unique rubric items");
+assert.equal(new Set(courseData.assessments.midterm.items.map(item=>item.prompt)).size,40,"midyear assessment prompts must be unique and rubric-specific");
+assert.equal(courseData.assessments.midterm.items.filter(item=>item.requiredCore===true).length,18,"midyear stored data must preserve 18 required core criteria");
+assert.equal(courseData.assessments.final.items.length,50,"stored final assessment must contain 50 items");
+assert.equal(new Set(courseData.assessments.final.items.map(item=>item.prompt)).size,50,"final assessment prompts must be unique and rubric-specific");
+assert.equal(courseData.assessments.final.items.filter(item=>item.requiredCore===true).length,FINAL.filter(row=>row[2]===true).length,"final stored data must preserve rubric required-core criteria");
+assert.equal(courseData.assessments.midterm.rubricSource,"curriculum/data/midyear-mastery.js","midyear assessment must declare its canonical rubric");
+assert.equal(courseData.assessments.final.rubricSource,"curriculum/data/final-mastery.js","final assessment must declare its canonical rubric");
 assert.ok(FINAL.some(row=>row[2]===true),"final readiness rubric must include essential core criteria");
 assert.ok(FINAL.every(row=>row.length>=2&&String(row[0]).trim()&&String(row[1]).trim()),"each final criterion must have a label and observable evidence prompt");
 
