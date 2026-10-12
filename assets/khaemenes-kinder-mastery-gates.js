@@ -285,7 +285,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
       artifact:String(artifact||"").slice(0,500),
       ...(CAPSTONE_UNITS.has(n)?{adultAffirmed:true,adultAffirmedAt:now()}: {})
     };
-    saveLearnerRecord(record);
+    if(!saveLearnerRecord(record))throw new Error("daily-evidence-save-failed");
     global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-daily-evidence-changed",{
       detail:{unit:n,day:d,completed:true}
     }));
