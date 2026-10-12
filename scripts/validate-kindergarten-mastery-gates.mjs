@@ -271,6 +271,27 @@ for(let unit=5;unit<=30;unit++){
   assertInlineScriptsParse("Instructional Depth Week "+unit,html);
 }
 
+
+{
+  const plants=read("curriculum/lessons/unit-11/formal-content.html");
+  assert.ok(plants.includes("no change")||plants.includes("no visible change"),"Week 11 must treat no observed growth as valid evidence");
+  assert.ok(plants.includes("Same baseline, same unit")&&plants.includes("fair test"),"Week 11 must teach consistent measurement and fair comparison");
+  assert.ok(plants.includes("soil alone")&&plants.includes("light-driven"),"Week 11 must explicitly correct plant-food/soil misconceptions");
+  assert.ok(plants.includes("Fresh transfer check")&&plants.includes("new plant illustration"),"Week 11 must assess transfer with a new plant example");
+  assert.equal((plants.match(/Teach · Practise · Correct · Transfer/g)||[]).length,5,"Week 11 must include five complete instructional cycles");
+  assertInlineScriptsParse("Week 11 Plants",plants);
+}
+{
+  const animals=read("curriculum/lessons/unit-12/formal-content.html");
+  assert.ok(animals.includes("behavior alone does not reveal an animal's feelings or personality")||animals.includes("behavior alone does not reveal an animal"),"Week 12 must distinguish observed behavior from inferred personality");
+  assert.ok(animals.includes("State the rule first")&&animals.includes("counterexample"),"Week 12 must teach explicit classification rules and counterexamples");
+  assert.ok(animals.includes("Need → feature → evidence")&&animals.includes("not enough evidence yet"),"Week 12 must require evidence-based habitat matches and allow uncertainty");
+  assert.ok(animals.includes("Do not touch")||animals.includes("without touching")||animals.includes("never require catching"),"Week 12 must enforce humane, no-handling wildlife learning");
+  assert.ok(animals.includes("unfamiliar animal")&&animals.includes("Fresh transfer check"),"Week 12 must use an unfamiliar transfer example");
+  assert.equal((animals.match(/Teach · Practise · Correct · Transfer/g)||[]).length,5,"Week 12 must include five complete instructional cycles");
+  assertInlineScriptsParse("Week 12 Animals and Habitats",animals);
+}
+
 for(let unit=8;unit<=25;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
