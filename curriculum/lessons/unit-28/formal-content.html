@@ -157,14 +157,46 @@ article.lesson[data-panel]{display:none}article.lesson[data-panel].active{displa
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 <script src="/assets/vnv-beta-link.js" defer></script>
 <script>
-(()=>{"use strict";const UNIT=28,G=window.KhaemenesKinderMasteryGates,$=s=>document.querySelector(s),$=s=>[...document.querySelectorAll(s)];
-function show(day){$("article.lesson[data-panel]").forEach(p=>p.classList.toggle("active",Number(p.dataset.panel)===day));$("[data-open-day]").forEach(b=>b.classList.toggle("active",Number(b.dataset.openDay)===day));const p=$(`article.lesson[data-panel="${day}"]`);p?.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"})}
-function refresh(){if(!G)return;const done=[1,2,3,4,5].filter(d=>G.dayEvidence(UNIT,d).completed);$("#dailyProgressText").textContent=`Daily evidence: ${done.length} of 5`;$("#dailyProgressBar").style.width=`${done.length*20}%`;$("#dailyPathMessage").textContent=done.length===5?"All five daily experiences are recorded. Weekly mastery is now available.":"Finish the open day's learning experience and save its evidence before moving forward.";$("[data-open-day]").forEach(b=>{const d=Number(b.dataset.openDay),complete=G.dayEvidence(UNIT,d).completed;b.disabled=!G.canOpenDay(UNIT,d);b.classList.toggle("done",complete);b.setAttribute("aria-current",complete?"step":"false")});const ready=G.allDaysComplete(UNIT);$("#masteryReady").hidden=!ready;const next=$("[data-open-day]").find(b=>!b.disabled&&!G.dayEvidence(UNIT,Number(b.dataset.openDay)).completed)||$("[data-open-day]").find(b=>!b.disabled);if(next)show(Number(next.dataset.openDay));else $("article.lesson[data-panel]").forEach(p=>p.classList.remove("active"))}
-$("[data-open-day]").forEach(b=>b.addEventListener("click",()=>{if(!b.disabled)show(Number(b.dataset.openDay))}));
-const lessons=$("article.lesson");if(lessons.length!==5){$("#dailyPathMessage").textContent="Teacher review is needed: this page must contain five daily lesson sections.";return}
-lessons.forEach((p,i)=>{p.dataset.panel=String(i+1);const d=i+1,box=document.createElement("div");box.className="daily-evidence-action";box.innerHTML=`<p><strong>Day ${d} success check:</strong> Tell or show what you learned, using your usual communication tools.</p><button type="button" class="action gold save-day" data-day="${d}">Save Day ${d} Evidence</button><p class="feedback" data-save-feedback="${d}" role="status" aria-live="polite"></p>`;p.appendChild(box)});
-$(".save-day").forEach(b=>b.addEventListener("click",()=>{const day=Number(b.dataset.day),feedback=$(`[data-save-feedback="${day}"]`);try{G.recordDayEvidence({unit:UNIT,day,evidenceType:"capstone-daily-learning-evidence",source:"capstone-sequential-learning-path",completed:true});feedback.textContent=`Day ${day} evidence saved. It opens the next eligible day; it does not award mastery.`;refresh()}catch(e){feedback.textContent=`Evidence not saved: ${String(e?.message||e)}`}}));
-window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);refresh()})();
+(()=>{"use strict";
+const UNIT=28,G=window.KhaemenesKinderMasteryGates;
+const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
+function show(day){
+ qa("article.lesson[data-panel]").forEach(p=>p.classList.toggle("active",Number(p.dataset.panel)===day));
+ qa("[data-open-day]").forEach(b=>b.classList.toggle("active",Number(b.dataset.openDay)===day));
+ const panel=q('article.lesson[data-panel="'+day+'"]');
+ if(panel)panel.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+}
+function refresh(){
+ if(!G)return;
+ const done=[1,2,3,4,5].filter(d=>G.dayEvidence(UNIT,d).completed);
+ q("#dailyProgressText").textContent="Daily evidence: "+done.length+" of 5";
+ q("#dailyProgressBar").style.width=(done.length*20)+"%";
+ q("#dailyPathMessage").textContent=done.length===5?"All five daily experiences are recorded. Weekly mastery is now available.":"Finish the open day's learning experience and save its evidence before moving forward.";
+ qa("[data-open-day]").forEach(b=>{
+  const d=Number(b.dataset.openDay),complete=G.dayEvidence(UNIT,d).completed;
+  b.disabled=!G.canOpenDay(UNIT,d);b.classList.toggle("done",complete);b.setAttribute("aria-current",complete?"step":"false");
+ });
+ const ready=G.allDaysComplete(UNIT);q("#masteryReady").hidden=!ready;
+ const next=qa("[data-open-day]").find(b=>!b.disabled&&!G.dayEvidence(UNIT,Number(b.dataset.openDay)).completed)||qa("[data-open-day]").find(b=>!b.disabled);
+ if(next)show(Number(next.dataset.openDay));else qa("article.lesson[data-panel]").forEach(p=>p.classList.remove("active"));
+}
+qa("[data-open-day]").forEach(b=>b.addEventListener("click",()=>{if(!b.disabled)show(Number(b.dataset.openDay))}));
+const lessons=qa("article.lesson");
+if(lessons.length!==5){q("#dailyPathMessage").textContent="Teacher review is needed: this page must contain five daily lesson sections.";return;}
+lessons.forEach((p,i)=>{
+ p.dataset.panel=String(i+1);const d=i+1,box=document.createElement("div");box.className="daily-evidence-action";
+ box.innerHTML='<p><strong>Day '+d+' success check:</strong> Tell or show what you learned, using your usual communication tools.</p><button type="button" class="action gold save-day" data-day="'+d+'">Save Day '+d+' Evidence</button><p class="feedback" data-save-feedback="'+d+'" role="status" aria-live="polite"></p>';
+ p.appendChild(box);
+});
+qa(".save-day").forEach(b=>b.addEventListener("click",()=>{
+ const day=Number(b.dataset.day),feedback=q('[data-save-feedback="'+day+'"]');
+ try{G.recordDayEvidence({unit:UNIT,day,evidenceType:"capstone-daily-learning-evidence",source:"capstone-sequential-learning-path",completed:true});feedback.textContent="Day "+day+" evidence saved. It opens the next eligible day; it does not award mastery.";refresh();}
+ catch(e){feedback.textContent="Evidence not saved: "+String(e&&e.message||e);}
+}));
+window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);
+window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);
+refresh();
+})();
 </script>
 </body>
 </html>
