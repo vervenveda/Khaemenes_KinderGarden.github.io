@@ -292,6 +292,32 @@ for(let unit=5;unit<=30;unit++){
   assertInlineScriptsParse("Week 12 Animals and Habitats",animals);
 }
 
+
+for(const unit of [13,14]){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  const panels=[...html.matchAll(/<section class="panel" data-panel="([1-5])">([\s\S]*?)(?=<section class="panel" data-panel=|<\/main>)/g)];
+  assert.equal(panels.length,5,"Week "+unit+" must expose five instructional day panels");
+  for(const panel of panels){
+    const day=Number(panel[1]),body=panel[2];
+    for(const phrase of ["Prerequisite retrieval:","Explicit teacher model:","Guided-to-independent practice:","Common misconception and correction:","Fresh transfer check:","Guided success is not independent transfer"]){
+      assert.ok(body.includes(phrase),"Week "+unit+" day "+day+" must include "+phrase);
+    }
+    const start=body.indexOf("Fresh transfer check:");
+    const end=body.indexOf("Evidence rule:",start);
+    assert.ok(start>=0&&end>start&&body.slice(start,end).length>80,"Week "+unit+" day "+day+" must specify a meaningful independent transfer task");
+  }
+  assertInlineScriptsParse("Instructional Depth Week "+unit,html);
+}
+const week13=read("curriculum/lessons/unit-13/formal-content.html");
+for(const phrase of ["part-part-whole","total stayed five","Giving is not always subtraction","Helping has boundaries","Gratitude is optional emotion","fresh three-event story","new number scenario"]){
+  assert.ok(week13.toLowerCase().includes(phrase.toLowerCase()),"Week 13 must preserve key learning and misconception coverage: "+phrase);
+}
+const week14=read("curriculum/lessons/unit-14/formal-content.html");
+for(const phrase of ["Rhyme is about sound, not matching letters","Syllables are spoken word parts—not letters","Sound before symbol","Dialect respect","initial sound","new spoken words"]){
+  assert.ok(week14.toLowerCase().includes(phrase.toLowerCase()),"Week 14 must preserve key phonological distinction and access coverage: "+phrase);
+}
+
 for(let unit=8;unit<=25;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
