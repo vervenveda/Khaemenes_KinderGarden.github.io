@@ -24,9 +24,17 @@ Automated repository checks can detect source-level dependency regressions, but 
 ## Regression enforcement added
 
 The active validation workflow also runs `scripts/validate-dependency-boundary.mjs`.
-It scans live source files for remote runtime resource tags, literal third-party
-`fetch()` / dynamic `import()` / XHR calls, remote CSS imports, remote font
-providers, and external links opened in a new tab without `rel=noopener`.
+It scans live HTML/JavaScript/CSS sources for unapproved remote runtime resource
+tags, literal third-party `fetch()` / dynamic `import()` / XHR calls, remote CSS
+imports, remote font providers, and external links opened in a new tab without
+`rel=noopener`.
+
+The only approved remote runtime script URLs are the three explicitly listed in
+the scanner: the Kinder Garden mastery gate, the shared Beta link, and the Academy
+Family Registry. These are owned-ecosystem assets, not third-party libraries;
+they remain remote origin/service dependencies and are not locally bundled.
+Any new remote script/style/image/audio/frame resource must be reviewed and
+explicitly approved rather than silently added.
 
 The workflow triggers on HTML, JavaScript, CSS, dependency-policy, and validator
 changes so a dependency regression cannot bypass checks merely because the root
