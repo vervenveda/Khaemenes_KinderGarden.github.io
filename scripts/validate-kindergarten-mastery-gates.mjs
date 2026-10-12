@@ -222,6 +222,13 @@ for(let unit=26;unit<=36;unit++){
   assert.ok(!html.includes(`href="../../assessments/unit-${n}-assessment.html"`),`Week ${unit} must not route learners through the retired assessment shell`);
   assert.ok(!html.includes('href="../../assessments/weekly-assessments.html"'),`Week ${unit} assessment navigation must use the canonical mastery route`);
   assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`Week ${unit} formal content must load its own mastery gate`);
+  const lessonTargets=[...html.matchAll(/<p><strong>Daily learning target:<\/strong>\s*([\s\S]*?)<\/p>/gi)].map(m=>m[1].replace(/<[^>]*>/g,"").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,"<").replace(/&gt;/g,">").trim());
+  const sourceUnit=courseData.units.find(u=>Number(u.unit)===unit);
+  assert.equal(lessonTargets.length,5,"Week "+unit+" formal lesson must expose five explicit daily learning targets");
+  assert.deepEqual(lessonTargets,sourceUnit.lessons.map(lesson=>lesson.objective),"Week "+unit+" preview objectives must match the formal daily targets");
+  assert.deepEqual(lessonTargets,sourceUnit.lessons.map(lesson=>lesson.formalLessonTarget),"Week "+unit+" must record canonical formal lesson target parity");
+  assert.ok(sourceUnit.lessons.every(lesson=>Array.isArray(lesson.successCriteria)&&lesson.successCriteria.length>=2),"Week "+unit+" each preview target must include success criteria");
+  assert.ok(!html.includes("Children participate in a joyful, developmentally appropriate lesson"),"Week "+unit+" must not use a generic objective in its capstone daily sequence");
   assert.equal((html.match(/<article class="lesson" data-panel="\d+"/g)||[]).length,5,`Week ${unit} must expose five sequential daily panels`);
   for(let day=1;day<=5;day++)assert.ok(html.includes(`data-panel="${day}"`)&&html.includes(`data-open-day="${day}"`)&&html.includes("data-save-feedback="),`Week ${unit} day ${day} must have navigation and runtime evidence feedback controls`);
   assert.ok(html.includes("G.canOpenDay(UNIT,d)")&&html.includes("G.recordDayEvidence"),`Week ${unit} must enforce sequential, learner-scoped daily evidence`);
