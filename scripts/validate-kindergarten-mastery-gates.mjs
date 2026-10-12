@@ -284,9 +284,10 @@ for(const unit of [17,18]){
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
   assert.equal((html.match(/class="kg-depth-cycle"/g)||[]).length,5,"Week "+unit+" must retain five instructional depth cycles");
   assert.equal((html.match(/class="kg-evidence-decision"/g)||[]).length,5,"Week "+unit+" must define evidence and next-step decisions for every day");
-  for(const text of ["Fresh transfer check","Common misconception and correction","independent","prompted","not yet"]){
+  for(const text of ["Fresh transfer check","Common misconception and correction","independent","prompted"]){
     assert.ok(html.toLowerCase().includes(text.toLowerCase()),"Week "+unit+" must distinguish transfer and response support: "+text);
   }
+  assert.ok(/not[- ]yet/i.test(html),"Week "+unit+" must record a not-yet response state");
   assertInlineScriptsParse("Instructional Depth Week "+unit,html);
 }
 const week17=read("curriculum/lessons/unit-17/formal-content.html");
