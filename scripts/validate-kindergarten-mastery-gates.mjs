@@ -172,6 +172,9 @@ for(let unit=26;unit<=36;unit++){
   for(let day=1;day<=5;day++)assert.ok(html.includes(`data-panel="${day}"`)&&html.includes(`data-open-day="${day}"`)&&html.includes("data-save-feedback="),`Week ${unit} day ${day} must have navigation and runtime evidence feedback controls`);
   assert.ok(html.includes("G.canOpenDay(UNIT,d)")&&html.includes("G.recordDayEvidence"),`Week ${unit} must enforce sequential, learner-scoped daily evidence`);
   assert.ok(html.includes("G.allDaysComplete(UNIT)")&&html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} mastery must require all five daily receipts`);
+  assert.ok(html.includes("Evidence target:")&&html.includes("Daily learning target:\\s*"),`Week ${unit} daily evidence must display its lesson-specific target`);
+  assert.ok(html.includes("When your grown-up has observed this learning"),`Week ${unit} daily evidence prompt must describe adult observation`);
+  assert.ok(html.includes("Practice Reflection Checklist — Not Formal Mastery")&&html.includes("does not record official mastery"),`Week ${unit} static checklist must be clearly marked practice-only`);
   assertInlineScriptsParse(`Capstone Week ${unit}`,html);
 }
 
