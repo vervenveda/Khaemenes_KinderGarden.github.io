@@ -416,27 +416,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “Who am I in this learning community?” and use at least one example to notice or communicate an idea related to welcome to the learning garden.",
+            "target": "Recognize your name, identify a feeling, and count a small group of classroom objects.",
             "lessonFocus": null
           },
           {
             "day": "Tuesday",
-            "target": "Practise names, print awareness, listening routines and count, match, and sort classroom objects through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Sort classroom materials by what they are used for and explain where they belong.",
             "lessonFocus": null
           },
           {
             "day": "Wednesday",
-            "target": "Investigate classroom community, safe routines, and responsibility by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Put a simple classroom routine in order and explain why routines help.",
             "lessonFocus": null
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Name collage and classroom map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Use simple symbols to represent classroom spaces and choose one helpful responsibility.",
             "lessonFocus": null
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about welcome to the learning garden, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Reflect on belonging, helping, counting, organization, and trying again.",
             "lessonFocus": null
           }
         ]
@@ -1916,27 +1916,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “What changes do we notice in nature?” and use at least one example to notice or communicate an idea related to seasons, trees, and leaves.",
+            "target": "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation.",
             "lessonFocus": null
           },
           {
             "day": "Tuesday",
-            "target": "Practise nature words and letter sounds and create and extend patterns through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary.",
             "lessonFocus": null
           },
           {
             "day": "Wednesday",
-            "target": "Investigate seasonal weather and living things by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence.",
             "lessonFocus": null
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Leaf rubbings and pattern crown” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice.",
             "lessonFocus": null
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about seasons, trees, and leaves, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration.",
             "lessonFocus": null
           }
         ]
@@ -2291,27 +2291,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How does weather affect what we do?” and use at least one example to notice or communicate an idea related to weather, sun, and sky.",
+            "target": "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence.",
             "lessonFocus": null
           },
           {
             "day": "Tuesday",
-            "target": "Practise weather vocabulary and shared writing and graph daily weather and count totals through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future.",
             "lessonFocus": null
           },
           {
             "day": "Wednesday",
-            "target": "Investigate weather, sunlight, shade, and safety by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object.",
             "lessonFocus": null
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Weather wheel” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool.",
             "lessonFocus": null
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about weather, sun, and sky, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery.",
             "lessonFocus": null
           }
         ]
@@ -2666,27 +2666,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do shapes help us build and describe?” and use at least one example to notice or communicate an idea related to shapes, colors, and design.",
+            "target": "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature.",
             "lessonFocus": null
           },
           {
             "day": "Tuesday",
-            "target": "Practise shape words and positional words and identify, compose, and sort shapes through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Use positional words accurately and compose familiar shapes into a larger figure or design.",
             "lessonFocus": null
           },
           {
             "day": "Wednesday",
-            "target": "Investigate design, structure, and spatial reasoning by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule.",
             "lessonFocus": null
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Shape city” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works.",
             "lessonFocus": null
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about shapes, colors, and design, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery.",
             "lessonFocus": null
           }
         ]
