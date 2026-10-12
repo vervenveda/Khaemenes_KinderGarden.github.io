@@ -282,8 +282,8 @@ assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progressi
 for(const unit of [17,18]){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
-  assert.equal((html.match(/kg-depth-cycle/g)||[]).length,5,"Week "+unit+" must retain five instructional depth cycles");
-  assert.equal((html.match(/kg-evidence-decision/g)||[]).length,5,"Week "+unit+" must define evidence and next-step decisions for every day");
+  assert.equal((html.match(/class="kg-depth-cycle"/g)||[]).length,5,"Week "+unit+" must retain five instructional depth cycles");
+  assert.equal((html.match(/class="kg-evidence-decision"/g)||[]).length,5,"Week "+unit+" must define evidence and next-step decisions for every day");
   for(const text of ["Fresh transfer check","Common misconception and correction","independent","prompted","not yet"]){
     assert.ok(html.toLowerCase().includes(text.toLowerCase()),"Week "+unit+" must distinguish transfer and response support: "+text);
   }
