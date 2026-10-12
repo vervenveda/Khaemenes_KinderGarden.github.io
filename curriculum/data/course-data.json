@@ -7594,7 +7594,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do symbols help people remember and belong?” and use at least one example to notice or communicate an idea related to symbols, flags, and civic belonging.",
+          "objective": "Identify two familiar classroom or community symbols and explain one meaning.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7629,16 +7629,17 @@
           "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about symbols, flags, and civic belonging.",
-            "Attempts one activity connected to symbol labels and shared pledge of care or sort symbols by attributes."
+            "Identify two familiar classroom or community symbols and explain one meaning.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Identify two familiar classroom or community symbols and explain one meaning."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise symbol labels and shared pledge of care and sort symbols by attributes through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Sort six symbol cards by a chosen attribute and explain the grouping rule.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7673,16 +7674,17 @@
           "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to symbol labels and shared pledge of care or sort symbols by attributes.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Sort six symbol cards by a chosen attribute and explain the grouping rule.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Sort six symbol cards by a chosen attribute and explain the grouping rule."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate civic symbols and classroom agreements by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare two symbols and explain how each helps people communicate.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7717,16 +7719,17 @@
           "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about civic symbols and classroom agreements.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Compare two symbols and explain how each helps people communicate.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Compare two symbols and explain how each helps people communicate."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Classroom flag” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Design an original belonging symbol with at least two purposeful features.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7761,16 +7764,17 @@
           "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to classroom flag in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Design an original belonging symbol with at least two purposeful features.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Design an original belonging symbol with at least two purposeful features."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about symbols, flags, and civic belonging, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Interpret a new contextual symbol and reflect on one respectful action.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7805,10 +7809,11 @@
           "familyConnection": "At home, notice one example of “symbols, flags, and civic belonging” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Interpret a new contextual symbol and reflect on one respectful action.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Interpret a new contextual symbol and reflect on one respectful action."
         }
       ],
       "weeklyAssessment": {
@@ -7894,7 +7899,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do numbers help us solve real problems?” and use at least one example to notice or communicate an idea related to neighborhood market and number stories.",
+          "objective": "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7929,16 +7934,17 @@
           "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about neighborhood market and number stories.",
-            "Attempts one activity connected to story problem language or compose and decompose to 10."
+            "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise story problem language and compose and decompose to 10 through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7973,16 +7979,17 @@
           "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to story problem language or compose and decompose to 10.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate community economy and fair exchange by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8017,16 +8024,17 @@
           "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about community economy and fair exchange.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Market math book” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8061,16 +8069,17 @@
           "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to market math book in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about neighborhood market and number stories, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8105,10 +8114,11 @@
           "familyConnection": "At home, notice one example of “neighborhood market and number stories” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging."
         }
       ],
       "weeklyAssessment": {
@@ -8194,7 +8204,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do we care for our bodies?” and use at least one example to notice or communicate an idea related to health, food, and growing bodies.",
+          "objective": "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8229,16 +8239,17 @@
           "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about health, food, and growing bodies.",
-            "Attempts one activity connected to health vocabulary or sort food groups/colors and count healthy choices."
+            "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise health vocabulary and sort food groups/colors and count healthy choices through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8273,16 +8284,17 @@
           "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to health vocabulary or sort food groups/colors and count healthy choices.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate body needs and healthy habits by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8317,16 +8329,17 @@
           "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about body needs and healthy habits.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Healthy plate collage” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8361,16 +8374,17 @@
           "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to healthy plate collage in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about health, food, and growing bodies, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8405,10 +8419,11 @@
           "familyConnection": "At home, notice one example of “health, food, and growing bodies” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth."
         }
       ],
       "weeklyAssessment": {
@@ -8494,7 +8509,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How does movement help us learn?” and use at least one example to notice or communicate an idea related to movement, balance, and the body.",
+          "objective": "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8529,16 +8544,17 @@
           "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about movement, balance, and the body.",
-            "Attempts one activity connected to action verbs or position, direction, and movement patterns."
+            "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise action verbs and position, direction, and movement patterns through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8573,16 +8589,17 @@
           "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to action verbs or position, direction, and movement patterns.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate body movement, bones/muscles basics by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8617,16 +8634,17 @@
           "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about body movement, bones/muscles basics.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Movement maze” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8661,16 +8679,17 @@
           "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to movement maze in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about movement, balance, and the body, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8705,10 +8724,11 @@
           "familyConnection": "At home, notice one example of “movement, balance, and the body” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model."
         }
       ],
       "weeklyAssessment": {
@@ -8794,7 +8814,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can patterns become art and music?” and use at least one example to notice or communicate an idea related to art, music, and pattern makers.",
+          "objective": "Keep a steady four-beat pulse and distinguish it from a changing rhythm.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8829,16 +8849,17 @@
           "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about art, music, and pattern makers.",
-            "Attempts one activity connected to describe art and music or patterns, shapes, and counting beats."
+            "Keep a steady four-beat pulse and distinguish it from a changing rhythm.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Keep a steady four-beat pulse and distinguish it from a changing rhythm."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise describe art and music and patterns, shapes, and counting beats through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Create and explain a repeating AB or AAB pattern using colors and sounds.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8873,16 +8894,17 @@
           "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to describe art and music or patterns, shapes, and counting beats.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Create and explain a repeating AB or AAB pattern using colors and sounds.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Create and explain a repeating AB or AAB pattern using colors and sounds."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate sound, vibration, and design by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Observe how changing tempo differs from changing loudness.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8917,16 +8939,17 @@
           "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about sound, vibration, and design.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Observe how changing tempo differs from changing loudness.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Observe how changing tempo differs from changing loudness."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Gallery and concert” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Compose and revise a four-beat musical phrase using a picture score.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8961,16 +8984,17 @@
           "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to gallery and concert in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Compose and revise a four-beat musical phrase using a picture score.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Compose and revise a four-beat musical phrase using a picture score."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about art, music, and pattern makers, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Identify a repeating unit in a new sound pattern and share a creative choice.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9005,10 +9029,11 @@
           "familyConnection": "At home, notice one example of “art, music, and pattern makers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Identify a repeating unit in a new sound pattern and share a creative choice.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Identify a repeating unit in a new sound pattern and share a creative choice."
         }
       ],
       "weeklyAssessment": {
@@ -9094,7 +9119,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What tiny living things can we observe?” and use at least one example to notice or communicate an idea related to bugs, gardens, and tiny worlds.",
+          "objective": "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9129,16 +9154,17 @@
           "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about bugs, gardens, and tiny worlds.",
-            "Attempts one activity connected to observation words and detail labels or count legs/wings and graph garden life."
+            "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise observation words and detail labels and count legs/wings and graph garden life through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9173,16 +9199,17 @@
           "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to observation words and detail labels or count legs/wings and graph garden life.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate animal structures and habitats by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9217,16 +9244,17 @@
           "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about animal structures and habitats.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Bug field guide” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9261,16 +9289,17 @@
           "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to bug field guide in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about bugs, gardens, and tiny worlds, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9305,10 +9334,11 @@
           "familyConnection": "At home, notice one example of “bugs, gardens, and tiny worlds” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page."
         }
       ],
       "weeklyAssessment": {
@@ -9394,7 +9424,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How is water a home?” and use at least one example to notice or communicate an idea related to water worlds: pond, river, and ocean.",
+          "objective": "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9429,16 +9459,17 @@
           "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about water worlds: pond, river, and ocean.",
-            "Attempts one activity connected to water habitat vocabulary or sort/count water animals."
+            "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise water habitat vocabulary and sort/count water animals through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9473,16 +9504,17 @@
           "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to water habitat vocabulary or sort/count water animals.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate habitats and resources by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9517,16 +9549,17 @@
           "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about habitats and resources.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Water habitat mural” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9561,16 +9594,17 @@
           "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to water habitat mural in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about water worlds: pond, river, and ocean, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9605,10 +9639,11 @@
           "familyConnection": "At home, notice one example of “water worlds: pond, river, and ocean” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page."
         }
       ],
       "weeklyAssessment": {
@@ -9695,7 +9730,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What patterns can we see in the sky?” and use at least one example to notice or communicate an idea related to space, moon, and day/night.",
+          "objective": "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9730,16 +9765,17 @@
           "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about space, moon, and day/night.",
-            "Attempts one activity connected to sky words and question sentences or sequence day/night and count sky observations."
+            "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise sky words and question sentences and sequence day/night and count sky observations through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9774,16 +9810,17 @@
           "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to sky words and question sentences or sequence day/night and count sky observations.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate sun, moon, stars, and day/night patterns by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9818,16 +9855,17 @@
           "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about sun, moon, stars, and day/night patterns.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Night-sky journal” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9862,16 +9900,17 @@
           "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to night-sky journal in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about space, moon, and day/night, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9906,10 +9945,11 @@
           "familyConnection": "At home, notice one example of “space, moon, and day/night” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal."
         }
       ],
       "weeklyAssessment": {
@@ -9996,7 +10036,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can tools help us create safely?” and use at least one example to notice or communicate an idea related to tools, technology, and digital citizenship.",
+          "objective": "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10031,16 +10071,17 @@
           "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about tools, technology, and digital citizenship.",
-            "Attempts one activity connected to sequence words: first, next, last or coding patterns and directional language."
+            "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise sequence words: first, next, last and coding patterns and directional language through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10075,16 +10116,17 @@
           "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to sequence words: first, next, last or coding patterns and directional language.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate simple tools and digital citizenship by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10119,16 +10161,17 @@
           "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about simple tools and digital citizenship.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Unplugged robot map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10163,16 +10206,17 @@
           "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to unplugged robot map in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about tools, technology, and digital citizenship, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10207,10 +10251,11 @@
           "familyConnection": "At home, notice one example of “tools, technology, and digital citizenship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure."
         }
       ],
       "weeklyAssessment": {
@@ -10297,7 +10342,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What big question do I want to explore?” and use at least one example to notice or communicate an idea related to my big question capstone.",
+          "objective": "Choose a focused, investigable question, share what is already known, and identify one thing still to find out.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10332,16 +10377,17 @@
           "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about my big question capstone.",
-            "Attempts one activity connected to question words and oral presentation or choose math tools for a project."
+            "Choose a focused, investigable question, share what is already known, and identify one thing still to find out.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Choose a focused, investigable question, share what is already known, and identify one thing still to find out."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise question words and oral presentation and choose math tools for a project through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10376,16 +10422,17 @@
           "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to question words and oral presentation or choose math tools for a project.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate inquiry, evidence, design, and communication by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10420,16 +10467,17 @@
           "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about inquiry, evidence, design, and communication.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Big question board” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10464,16 +10512,17 @@
           "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to big question board in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about my big question capstone, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10508,10 +10557,11 @@
           "familyConnection": "At home, notice one example of “my big question capstone” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question."
         }
       ],
       "weeklyAssessment": {
@@ -10597,7 +10647,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can I show I am ready for first grade?” and use at least one example to notice or communicate an idea related to kindergarten review and final celebration.",
+          "objective": "Choose two portfolio samples and describe evidence of personal growth.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10632,16 +10682,17 @@
           "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about kindergarten review and final celebration.",
-            "Attempts one activity connected to review letters, sounds, words, and stories or review numbers, shapes, data, and problem solving."
+            "Choose two portfolio samples and describe evidence of personal growth.",
+            "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Choose two portfolio samples and describe evidence of personal growth."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise review letters, sounds, words, and stories and review numbers, shapes, data, and problem solving through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Demonstrate familiar letter–sound connections and retell a short story in sequence.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10676,16 +10727,17 @@
           "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to review letters, sounds, words, and stories or review numbers, shapes, data, and problem solving.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrate familiar letter–sound connections and retell a short story in sequence.",
+            "Completes a fresh example and shows or explains one step in the strategy."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Demonstrate familiar letter–sound connections and retell a short story in sequence."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate review science/social studies/arts/wellness by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Solve a number problem with objects and explain a prior science observation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10720,16 +10772,17 @@
           "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about review science/social studies/arts/wellness.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Solve a number problem with objects and explain a prior science observation.",
+            "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Solve a number problem with objects and explain a prior science observation."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Portfolio celebration” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Assemble and revise a showcase connecting language, mathematics, and inquiry.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10764,16 +10817,17 @@
           "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to portfolio celebration in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Assemble and revise a showcase connecting language, mathematics, and inquiry.",
+            "Creates or revises a representation and explains one purposeful choice."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Assemble and revise a showcase connecting language, mathematics, and inquiry."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about kindergarten review and final celebration, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Share a learning achievement and set one future goal without compulsory performance.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -10808,10 +10862,11 @@
           "familyConnection": "At home, notice one example of “kindergarten review and final celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Share a learning achievement and set one future goal without compulsory performance.",
+            "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Share a learning achievement and set one future goal without compulsory performance."
         }
       ],
       "weeklyAssessment": {
