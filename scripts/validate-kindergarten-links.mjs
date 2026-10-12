@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 
 const ROOT = process.cwd();
 const SKIP_DIRS = new Set([".git", "node_modules", ".next", "dist", "build"]);
-const EXTERNAL_SCHEMES = /^(?:https?:|mailto:|tel:|data:|javascript:|blob:|//)/i;
+const EXTERNAL_SCHEMES = /^(?:https?:|mailto:|tel:|data:|javascript:|blob:|\/\/)/i;
 const htmlFiles = [];
 const externalMounts = new Set();
 const missing = [];
