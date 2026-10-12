@@ -10881,245 +10881,326 @@ window.KHAE_KINDERGARTEN_DATA = {
       "items": [
         {
           "number": 1,
-          "domain": "Literacy",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Learning identity and help-seeking",
+          "prompt": "Participates in a familiar learning routine and communicates a need for help, clarification, a break, or an access support through an appropriate mode.",
+          "requiredCore": false
         },
         {
           "number": 2,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Print and name awareness",
+          "prompt": "Recognizes or uses meaningful print, name/label information, or another developmentally appropriate print concept in context.",
+          "requiredCore": false
         },
         {
           "number": 3,
-          "domain": "Inquiry",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Listening / receptive comprehension",
+          "prompt": "Responds to a short story, explanation, signed/visual text, or accessible presentation with one relevant idea, answer, question, or selection.",
+          "requiredCore": false
         },
         {
           "number": 4,
-          "domain": "SEL",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Story sequence and retelling",
+          "prompt": "Sequences and retells a three-part story with beginning, middle, and end while preserving important meaning rather than exact memorized wording.",
+          "requiredCore": true
         },
         {
           "number": 5,
-          "domain": "Arts/Movement",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Rhyme / patterned-language recognition",
+          "prompt": "Identifies or generates an age-appropriate rhyme or equivalent patterned-language relationship through an appropriate spoken, signed, visual, tactile, or other accessible pathway.",
+          "requiredCore": true
         },
         {
           "number": 6,
           "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Syllable / word-part segmentation",
+          "prompt": "Segments and counts syllables or an appropriate language-pattern unit in familiar examples without confusing the count with written-letter count.",
+          "requiredCore": false
         },
         {
           "number": 7,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Beginning sound / letter relationship",
+          "prompt": "Identifies a beginning phonological feature and demonstrates that written letters and spoken sounds are related but not perfectly one-to-one in an age-appropriate example.",
+          "requiredCore": false
         },
         {
           "number": 8,
-          "domain": "Inquiry",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Language access and variation",
+          "prompt": "Uses an appropriate home-language, dialect, accent, signed-language, AAC, visual/tactile, or other access pathway without treating speech volume, hearing, eye contact, or one pronunciation as intelligence/mastery.",
+          "requiredCore": true
         },
         {
           "number": 9,
-          "domain": "SEL",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "One-to-one counting",
+          "prompt": "Counts a small set with one-to-one correspondence and states or represents the total accurately.",
+          "requiredCore": true
         },
         {
           "number": 10,
-          "domain": "Arts/Movement",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Cardinality and representation",
+          "prompt": "Shows that the last count represents how many are in the set and represents the amount with objects, marks, numeral, tactile symbols, AAC, or another accessible form.",
+          "requiredCore": false
         },
         {
           "number": 11,
-          "domain": "Literacy",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Quantity comparison",
+          "prompt": "Counts and compares two sets using more, fewer, same, numerical totals, or an age-appropriate difference strategy.",
+          "requiredCore": true
         },
         {
           "number": 12,
-          "domain": "Math",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Compose and decompose to 5",
+          "prompt": "Builds or takes apart a quantity to 5 in more than one valid way and explains the parts/whole relationship.",
+          "requiredCore": true
         },
         {
           "number": 13,
-          "domain": "Inquiry",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Number-story meaning",
+          "prompt": "Models a simple joining, separating, or part-part-whole situation and explains what the quantities represent.",
+          "requiredCore": false
         },
         {
           "number": 14,
-          "domain": "SEL",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Repeating pattern rule",
+          "prompt": "Identifies, extends, repairs, or creates a repeating pattern and identifies the smallest repeating unit.",
+          "requiredCore": true
         },
         {
           "number": 15,
-          "domain": "Arts/Movement",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Shape properties",
+          "prompt": "Describes a common two- or three-dimensional shape by relevant properties and recognizes that orientation, color, or size does not alone change its identity.",
+          "requiredCore": false
         },
         {
           "number": 16,
-          "domain": "Literacy",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Spatial / map representation",
+          "prompt": "Uses positional or directional language or a simple symbol/key to interpret or create a safe fictional route, map, or spatial model.",
+          "requiredCore": false
         },
         {
           "number": 17,
-          "domain": "Math",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Fair length measurement",
+          "prompt": "Measures or compares length/height from a common start using repeated equal-size units with no intentional gaps/overlaps.",
+          "requiredCore": true
         },
         {
           "number": 18,
-          "domain": "Inquiry",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Measurement communication and error detection",
+          "prompt": "Reports a measurement as number plus unit and identifies or repairs an unfair measurement such as mixed units, shifted start, gaps, or overlaps.",
+          "requiredCore": true
         },
         {
           "number": 19,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Weight / capacity attribute reasoning",
+          "prompt": "Distinguishes length/height from weight or capacity and uses evidence appropriate to the named attribute rather than visual size alone.",
+          "requiredCore": false
         },
         {
           "number": 20,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Rule-based classification",
+          "prompt": "States a classification rule before sorting and sorts examples according to observable or known evidence.",
+          "requiredCore": false
         },
         {
           "number": 21,
-          "domain": "Literacy",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Observation versus inference",
+          "prompt": "Distinguishes what is directly observed from a guess, inference, prediction, or human-like story.",
+          "requiredCore": true
         },
         {
           "number": 22,
-          "domain": "Math",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Prediction, evidence, and revision",
+          "prompt": "Makes a simple prediction, compares it with evidence, and revises or qualifies the idea when evidence changes.",
+          "requiredCore": false
         },
         {
           "number": 23,
-          "domain": "Inquiry",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Weather / data reasoning",
+          "prompt": "Uses a simple weather observation or graph/data display to make a supported present-tense comparison or claim without treating a short sample as a guaranteed forecast.",
+          "requiredCore": false
         },
         {
           "number": 24,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Plant structures and needs",
+          "prompt": "Identifies common plant structures/functions or explains suitable access to water, light, air, space, and growing conditions without teaching soil as plant food.",
+          "requiredCore": false
         },
         {
           "number": 25,
-          "domain": "Arts/Movement",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Animal structures, needs, and humane care",
+          "prompt": "Connects an animal structure/behavior or habitat feature to a need and knows wild animals are observed from a safe distance rather than fed, chased, captured, or handled.",
+          "requiredCore": false
         },
         {
           "number": 26,
-          "domain": "Literacy",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Light, shadow, and Sun safety",
+          "prompt": "Explains an age-appropriate light-source/object/shadow relationship and knows never to look directly at the Sun or use unsafe lasers, flames, heat, or lights aimed at eyes.",
+          "requiredCore": true
         },
         {
           "number": 27,
-          "domain": "Math",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Earth rotation / day-night / seasonal care",
+          "prompt": "Uses a simple Earth-rotation model for day/night and avoids claiming that winter or daylight patterns are identical everywhere.",
+          "requiredCore": false
         },
         {
           "number": 28,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Model purpose and limitation",
+          "prompt": "Uses a map, habitat, plant, engineering, light, or other model for a stated purpose and names at least one thing the model leaves out or cannot prove.",
+          "requiredCore": true
         },
         {
           "number": 29,
-          "domain": "SEL",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Location privacy and navigation safety",
+          "prompt": "Knows that home address, live location, school route, bus stop, or identifying location is not required and that a classroom route activity never authorizes independent travel.",
+          "requiredCore": true
         },
         {
           "number": 30,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Community work / goods / services",
+          "prompt": "Distinguishes a good from a service or explains a community-care action without ranking jobs or stereotyping who performs work.",
+          "requiredCore": false
         },
         {
           "number": 31,
-          "domain": "Literacy",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Needs, wants, and economic dignity",
+          "prompt": "Explains a fictional need/want or resource choice in context and knows money, possessions, saving ability, housing, food access, or family finances do not determine human worth or responsibility.",
+          "requiredCore": true
         },
         {
           "number": 32,
-          "domain": "Math",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Consent, helping, and voluntary sharing",
+          "prompt": "Knows that kindness/helping never requires unsafe secrets, unwanted touch, forgiveness, money, gifts, food, comfort items, or surrendering personal possessions.",
+          "requiredCore": true
         },
         {
           "number": 33,
-          "domain": "Inquiry",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Safety and responsible tool use",
+          "prompt": "Applies an appropriate trusted-adult, material, movement, plant/animal, weather, light, or classroom-tool safety boundary in a relevant scenario.",
+          "requiredCore": true
         },
         {
           "number": 34,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Engineering / fair-test revision",
+          "prompt": "Tests or interprets a small safe model against a stated criterion under reasonably consistent conditions and uses evidence to revise or explain a design improvement.",
+          "requiredCore": false
         },
         {
           "number": 35,
-          "domain": "Arts/Movement",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Creative representation",
+          "prompt": "Communicates an academic idea through drawing, building, movement, music/rhythm, dramatic representation, design, dictation, or another accessible creative form.",
+          "requiredCore": false
         },
         {
           "number": 36,
-          "domain": "Literacy",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Self-regulation and persistence",
+          "prompt": "Uses a developmentally appropriate strategy such as pausing, asking for help, trying another representation, revising, or returning to a task without speed or compliance being treated as intelligence.",
+          "requiredCore": false
         },
         {
           "number": 37,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Collaboration and respectful communication",
+          "prompt": "Participates in a shared task or exchange while respecting turn-taking, communication differences, boundaries, and another person's right to a different idea or access need.",
+          "requiredCore": false
         },
         {
           "number": 38,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Error analysis and repair",
+          "prompt": "Identifies at least one error, misconception, weak strategy, or missing piece of evidence and demonstrates a correction, improved representation, or more accurate explanation.",
+          "requiredCore": true
         },
         {
           "number": 39,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Integrated transfer demonstration",
+          "prompt": "Completes a novel age-appropriate task that combines communication with mathematical representation and inquiry/evidence reasoning, including a relevant safety, privacy, dignity, model-limit, or revision principle.",
+          "requiredCore": true
         },
         {
           "number": 40,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Growth and evidence reflection",
+          "prompt": "Selects or discusses one work sample/model/explanation as evidence of learning, names one area of growth, and identifies a reasonable next learning target without ranking against peers.",
+          "requiredCore": false
         }
-      ]
+      ],
+      "rubricSource": "curriculum/data/midyear-mastery.js"
     },
     "final": {
       "title": "Kindergarten Final Readiness Demonstration",
@@ -11131,303 +11212,404 @@ window.KHAE_KINDERGARTEN_DATA = {
           "number": 1,
           "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Integrated communication",
+          "prompt": "Communicates an idea clearly through speech, sign, AAC, drawing, gesture, objects, or another accessible mode.",
+          "requiredCore": true
         },
         {
           "number": 2,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Name and meaningful print",
+          "prompt": "Recognizes or uses familiar name print, labels, or symbols in context.",
+          "requiredCore": false
         },
         {
           "number": 3,
-          "domain": "Inquiry",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Letter recognition",
+          "prompt": "Identifies taught familiar letters across more than one example.",
+          "requiredCore": false
         },
         {
           "number": 4,
-          "domain": "SEL",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Letter-sound connection",
+          "prompt": "Connects familiar taught letters with plausible sounds and handles a new example with reasonable support.",
+          "requiredCore": true
         },
         {
           "number": 5,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Phonological awareness",
+          "prompt": "Demonstrates age-appropriate rhyme, syllable, or beginning-sound awareness.",
+          "requiredCore": false
         },
         {
           "number": 6,
           "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Listening comprehension",
+          "prompt": "Responds to a short story, explanation, signed/visual text, or accessible presentation with a relevant idea.",
+          "requiredCore": true
         },
         {
           "number": 7,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Story sequence",
+          "prompt": "Sequences beginning, middle, and end or three meaningful events in a story.",
+          "requiredCore": true
         },
         {
           "number": 8,
-          "domain": "Inquiry",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Story evidence",
+          "prompt": "Uses a detail from a story or image to support a response.",
+          "requiredCore": false
         },
         {
           "number": 9,
-          "domain": "SEL",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Emergent writing",
+          "prompt": "Communicates a meaningful idea through drawing, dictation, labels, copied print, or emergent writing.",
+          "requiredCore": false
         },
         {
           "number": 10,
-          "domain": "Arts/Movement",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Vocabulary transfer",
+          "prompt": "Uses or explains a taught word in a new appropriate context.",
+          "requiredCore": false
         },
         {
           "number": 11,
-          "domain": "Literacy",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "One-to-one counting",
+          "prompt": "Counts a concrete set with one count per object.",
+          "requiredCore": true
         },
         {
           "number": 12,
-          "domain": "Math",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Cardinality",
+          "prompt": "Represents that the final count names the set's total.",
+          "requiredCore": true
         },
         {
           "number": 13,
-          "domain": "Inquiry",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Numeral and quantity",
+          "prompt": "Matches a familiar numeral, mark, or tactile symbol to a quantity.",
+          "requiredCore": false
         },
         {
           "number": 14,
-          "domain": "SEL",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Quantity comparison",
+          "prompt": "Compares groups using more, fewer, same, or a supported numerical difference.",
+          "requiredCore": true
         },
         {
           "number": 15,
-          "domain": "Arts/Movement",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Compose numbers",
+          "prompt": "Builds a number to 10 from two parts using objects, images, or another representation.",
+          "requiredCore": true
         },
         {
           "number": 16,
-          "domain": "Literacy",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Decompose numbers",
+          "prompt": "Shows a quantity in more than one valid part-part-whole arrangement.",
+          "requiredCore": false
         },
         {
           "number": 17,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Number-story reasoning",
+          "prompt": "Models a simple joining, separating, or comparison story and explains what the quantities mean.",
+          "requiredCore": false
         },
         {
           "number": 18,
-          "domain": "Inquiry",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Pattern rule",
+          "prompt": "Identifies, extends, or repairs a repeating pattern and indicates what repeats.",
+          "requiredCore": true
         },
         {
           "number": 19,
-          "domain": "SEL",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Shape properties",
+          "prompt": "Describes common shapes by relevant properties rather than color or orientation alone.",
+          "requiredCore": false
         },
         {
           "number": 20,
-          "domain": "Arts/Movement",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Spatial language",
+          "prompt": "Uses positional or directional language to describe a model, route, or arrangement.",
+          "requiredCore": false
         },
         {
           "number": 21,
-          "domain": "Literacy",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Measurement fairness",
+          "prompt": "Measures or compares using a common starting point and repeated equal-size units.",
+          "requiredCore": true
         },
         {
           "number": 22,
-          "domain": "Math",
+          "domain": "Literacy",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Measurement communication",
+          "prompt": "Reports a measurement as a number plus unit or identifies a limitation in the comparison.",
+          "requiredCore": false
         },
         {
           "number": 23,
-          "domain": "Inquiry",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Data representation",
+          "prompt": "Creates or reads a simple count, tally, picture graph, or category display.",
+          "requiredCore": false
         },
         {
           "number": 24,
-          "domain": "SEL",
+          "domain": "Mathematics",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Data-based claim",
+          "prompt": "Makes a claim supported by the displayed sample and avoids overgeneralizing.",
+          "requiredCore": true
         },
         {
           "number": 25,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Classification rule",
+          "prompt": "States or selects a sorting rule and classifies examples according to observable evidence.",
+          "requiredCore": false
         },
         {
           "number": 26,
-          "domain": "Literacy",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Observation versus inference",
+          "prompt": "Distinguishes a direct observation from a guess, prediction, or story.",
+          "requiredCore": true
         },
         {
           "number": 27,
-          "domain": "Math",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Prediction and evidence",
+          "prompt": "Makes a simple prediction, checks evidence, and revises or qualifies an idea.",
+          "requiredCore": false
         },
         {
           "number": 28,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Living things and needs",
+          "prompt": "Connects living things with needs or structures using accurate age-appropriate evidence.",
+          "requiredCore": false
         },
         {
           "number": 29,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Weather and sky reasoning",
+          "prompt": "Interprets a simple weather, sunlight, shadow, or day/night observation without unsafe claims.",
+          "requiredCore": false
         },
         {
           "number": 30,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Water and material change",
+          "prompt": "Describes an age-appropriate material or water change and recognizes that models have limits.",
+          "requiredCore": false
         },
         {
           "number": 31,
-          "domain": "Literacy",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Habitat and animal care",
+          "prompt": "Connects an animal need with a habitat feature and respects safe, humane wildlife boundaries.",
+          "requiredCore": true
         },
         {
           "number": 32,
-          "domain": "Math",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Earth care reasoning",
+          "prompt": "Makes a context-aware material or stewardship choice without assuming every item is locally recyclable.",
+          "requiredCore": false
         },
         {
           "number": 33,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Force and motion",
+          "prompt": "Describes or tests a simple motion interaction using a safe model.",
+          "requiredCore": false
         },
         {
           "number": 34,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Fair-test thinking",
+          "prompt": "Names a variable or comparison condition that should stay the same for a fair test.",
+          "requiredCore": false
         },
         {
           "number": 35,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Engineering criteria",
+          "prompt": "Builds or explains a model against a stated purpose or design constraint.",
+          "requiredCore": false
         },
         {
           "number": 36,
-          "domain": "Literacy",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Design revision",
+          "prompt": "Uses feedback or evidence to revise a design or explain a reasonable improvement.",
+          "requiredCore": false
         },
         {
           "number": 37,
-          "domain": "Math",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Map and model limitation",
+          "prompt": "Explains that a map or model represents selected features and leaves other features out.",
+          "requiredCore": false
         },
         {
           "number": 38,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Civic/community understanding",
+          "prompt": "Explains a community role, symbol, shared rule, or service without stereotyping people.",
+          "requiredCore": false
         },
         {
           "number": 39,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Needs and wants",
+          "prompt": "Distinguishes a contextual need from a want using a fictional or familiar example.",
+          "requiredCore": false
         },
         {
           "number": 40,
-          "domain": "Arts/Movement",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Consent and boundaries",
+          "prompt": "Identifies a safe way to ask for help, respect a boundary, or make sharing voluntary.",
+          "requiredCore": true
         },
         {
           "number": 41,
-          "domain": "Literacy",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Safety and tools",
+          "prompt": "Applies an appropriate trusted-adult or material safety rule in a relevant scenario.",
+          "requiredCore": true
         },
         {
           "number": 42,
-          "domain": "Math",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Self-regulation",
+          "prompt": "Chooses a reasonable strategy such as pause, ask for help, change representation, or take a break.",
+          "requiredCore": false
         },
         {
           "number": 43,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Persistence with strategy",
+          "prompt": "Tries a strategy and can explain or show what was changed, without speed being the goal.",
+          "requiredCore": false
         },
         {
           "number": 44,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Error detection",
+          "prompt": "Identifies an error, missing evidence, or mismatch and attempts a correction.",
+          "requiredCore": true
         },
         {
           "number": 45,
-          "domain": "Arts/Movement",
+          "domain": "Social-Emotional / Safety",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Collaboration",
+          "prompt": "Participates in a shared task while respecting turns, communication differences, and boundaries.",
+          "requiredCore": false
         },
         {
           "number": 46,
-          "domain": "Literacy",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Demonstrate oral language, print awareness, sound/letter play, shared reading, retelling, drawing/writing attempt, or presentation voice."
+          "label": "Creative representation",
+          "prompt": "Uses art, movement, music, drama, building, or another accessible form to communicate an idea.",
+          "requiredCore": false
         },
         {
           "number": 47,
-          "domain": "Math",
+          "domain": "Arts / Making",
           "points": 1,
-          "prompt": "Demonstrate counting, comparison, sorting, patterning, shapes, measurement, data, or number-story reasoning with manipulatives."
+          "label": "Portfolio evidence",
+          "prompt": "Selects a work sample or model and communicates what it shows about learning.",
+          "requiredCore": false
         },
         {
           "number": 48,
-          "domain": "Inquiry",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate observation, evidence, community understanding, living things, weather, motion, stewardship, or safe tool use."
+          "label": "Independent transfer",
+          "prompt": "Applies a familiar skill to a new age-appropriate problem with reduced prompting.",
+          "requiredCore": true
         },
         {
           "number": 49,
-          "domain": "SEL",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Demonstrate routine, safety, friendship, feelings language, persistence, repair language, or responsible choice-making."
+          "label": "Integrated reasoning",
+          "prompt": "Combines communication, mathematics, and evidence-based inquiry in one task.",
+          "requiredCore": true
         },
         {
           "number": 50,
-          "domain": "Arts/Movement",
+          "domain": "Inquiry / Community",
           "points": 1,
-          "prompt": "Create, sing, move, build, act, design, respond, or explain through art, music, drama, or movement."
+          "label": "Next-step reflection",
+          "prompt": "Identifies one strength and one reasonable next learning target without peer ranking.",
+          "requiredCore": false
         }
-      ]
+      ],
+      "rubricSource": "curriculum/data/final-mastery.js"
     },
     "certification": {
       "threshold": 80,
