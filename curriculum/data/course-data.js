@@ -2463,7 +2463,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about patterns, music, and movement.",
             "Attempts one activity connected to rhyming, syllable claps, repeated words or ab, aab, abc patterns."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "discover repeating units and distinguish pattern from randomness."
         },
         {
           "day": "Tuesday",
@@ -2507,7 +2508,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to rhyming, syllable claps, repeated words or ab, aab, abc patterns.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "connect beat, rhythm, syllables, and rhyme without confusing them."
         },
         {
           "day": "Wednesday",
@@ -2551,7 +2553,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about patterns in music, dance, and nature.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "translate one pattern rule across visual, tactile, sound, and movement forms."
         },
         {
           "day": "Thursday",
@@ -2595,7 +2598,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to pattern performance in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "design and rehearse an original pattern performance with respectful choices."
         },
         {
           "day": "Friday",
@@ -2639,7 +2643,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery."
         }
       ],
       "weeklyAssessment": {
@@ -2794,7 +2799,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about families, homes, and traditions.",
             "Attempts one activity connected to oral history and story sequence or compare lengths and heights."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "understand that families and caring communities can take many forms."
         },
         {
           "day": "Tuesday",
@@ -2838,7 +2844,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to oral history and story sequence or compare lengths and heights.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "listen to and sequence an oral-history or fictional past/present story."
         },
         {
           "day": "Wednesday",
@@ -2882,7 +2889,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about past/present, families, culture, and respect.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "compare home/building objects using nonstandard length and height measures."
         },
         {
           "day": "Thursday",
@@ -2926,7 +2934,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to family house drawing in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "explore traditions as meaningful repeated practices that can vary and change."
         },
         {
           "day": "Friday",
@@ -2970,7 +2979,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate story sequence, measurement, past/present, belonging, privacy, and respect."
         }
       ],
       "weeklyAssessment": {
@@ -3125,7 +3135,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about maps, places, and community.",
             "Attempts one activity connected to map words and labels or count steps and compare distances."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "understand a map as a selective model, not the place itself."
         },
         {
           "day": "Tuesday",
@@ -3169,7 +3180,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to map words and labels or count steps and compare distances.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "design symbols, labels, and a readable legend/key."
         },
         {
           "day": "Wednesday",
@@ -3213,7 +3225,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about maps, symbols, places, and directions.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "follow, describe, and compare routes using consistent model units."
         },
         {
           "day": "Thursday",
@@ -3257,7 +3270,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to classroom treasure map in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "plan a fictional community around varied needs and accessible routes."
         },
         {
           "day": "Friday",
@@ -3301,7 +3315,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "navigate, explain, test, revise, and reflect."
         }
       ],
       "weeklyAssessment": {
@@ -3456,7 +3471,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about plants and gardens.",
             "Attempts one activity connected to plant vocabulary and sequence words or measure plant growth informally."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "investigate seeds and plant structures/functions."
         },
         {
           "day": "Tuesday",
@@ -3500,7 +3516,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to plant vocabulary and sequence words or measure plant growth informally.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "distinguish plant needs, resources, and common misconceptions."
         },
         {
           "day": "Wednesday",
@@ -3544,7 +3561,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about living things need water, light, and care.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "measure and journal change from a consistent baseline."
         },
         {
           "day": "Thursday",
@@ -3588,7 +3606,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to seed cup and plant journal in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "use fair-test thinking, evidence, and responsible care."
         },
         {
           "day": "Friday",
@@ -3632,7 +3651,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate structures, needs, sequence, measurement, evidence, and stewardship."
         }
       ],
       "weeklyAssessment": {
@@ -3787,7 +3807,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about animals and habitats.",
             "Attempts one activity connected to animal sounds and alliteration or sort and count animal groups."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "distinguish observations about animal structures and behaviors from guesses."
         },
         {
           "day": "Tuesday",
@@ -3831,7 +3852,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to animal sounds and alliteration or sort and count animal groups.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "classify animals by stated evidence-based rules and count/compare groups."
         },
         {
           "day": "Wednesday",
@@ -3875,7 +3897,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about needs of living things and habitats.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "connect habitat resources and conditions to animal needs."
         },
         {
           "day": "Thursday",
@@ -3919,7 +3942,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to habitat diorama in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "engineer and revise a habitat model that explains its choices."
         },
         {
           "day": "Friday",
@@ -3963,7 +3987,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate needs, classification, habitat fit, evidence, and humane care."
         }
       ],
       "weeklyAssessment": {
@@ -4118,7 +4143,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about gratitude, giving, and storytelling.",
             "Attempts one activity connected to retelling and story beginning/middle/end or add and take apart numbers to 5."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "build and retell a clear beginning-middle-end narrative."
         },
         {
           "day": "Tuesday",
@@ -4162,7 +4188,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to retelling and story beginning/middle/end or add and take apart numbers to 5.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "compose and take apart quantities to 5 using number stories."
         },
         {
           "day": "Wednesday",
@@ -4206,7 +4233,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about community helpers and acts of care.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "investigate visible acts of community care without ranking people or jobs."
         },
         {
           "day": "Thursday",
@@ -4250,7 +4278,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to thank-you card workshop in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "create an authentic appreciation message or equivalent chosen response."
         },
         {
           "day": "Friday",
@@ -4294,7 +4323,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate story, number, care, boundaries, and reflection."
         }
       ],
       "weeklyAssessment": {
@@ -4449,7 +4479,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about sounds, rhymes, and word play.",
             "Attempts one activity connected to rhyme, syllables, onset sounds or count sounds, beats, and objects."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "identify and generate rhyme in an appropriate language pathway."
         },
         {
           "day": "Tuesday",
@@ -4493,7 +4524,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to rhyme, syllables, onset sounds or count sounds, beats, and objects.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "segment and count syllables without confusing syllables with letters."
         },
         {
           "day": "Wednesday",
@@ -4537,7 +4569,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about language as communication.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "notice beginning sounds and distinguish sound from spelling."
         },
         {
           "day": "Thursday",
@@ -4581,7 +4614,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to rhyme parade in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "create word-play patterns and explain the rule."
         },
         {
           "day": "Friday",
@@ -4625,7 +4659,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "retrieve, compare, correct misconceptions, and prepare for mastery."
         }
       ],
       "weeklyAssessment": {
@@ -4780,7 +4815,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about measurement and builders.",
             "Attempts one activity connected to measurement words and describing structures or measure with nonstandard units."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "compare length/height directly from a common starting point."
         },
         {
           "day": "Tuesday",
@@ -4824,7 +4860,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to measurement words and describing structures or measure with nonstandard units.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "measure with repeated equal-size nonstandard units and report the unit."
         },
         {
           "day": "Wednesday",
@@ -4868,7 +4905,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about structure, balance, and materials.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "investigate heavier/lighter and capacity without confusing size, weight, and amount held."
         },
         {
           "day": "Thursday",
@@ -4912,7 +4950,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to block bridge challenge in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "design, test, measure, and revise a tabletop model bridge under a stated constraint."
         },
         {
           "day": "Friday",
@@ -4956,7 +4995,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate fair measurement, evidence, engineering decisions, and reflection."
         }
       ],
       "weeklyAssessment": {
@@ -5111,7 +5151,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about needs, wants, money, and choices.",
             "Attempts one activity connected to decision words and opinion starters or count pennies/counters and compare amounts."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "examine needs, wants, and context without shaming different lives."
         },
         {
           "day": "Tuesday",
@@ -5155,7 +5196,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to decision words and opinion starters or count pennies/counters and compare amounts.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "count, represent, and compare token amounts with one-to-one correspondence."
         },
         {
           "day": "Wednesday",
@@ -5199,7 +5241,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about needs, wants, goods, and services.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "distinguish goods/services and trace how work/resources help meet needs."
         },
         {
           "day": "Thursday",
@@ -5243,7 +5286,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to classroom market in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing."
         },
         {
           "day": "Friday",
@@ -5287,7 +5331,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate quantity, priorities, choice reasoning, dignity, and reflection."
         }
       ],
       "weeklyAssessment": {
@@ -5442,7 +5487,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about winter, light, and shadows.",
             "Attempts one activity connected to light/shadow vocabulary or compare shadow lengths."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "identify light sources and explain how an opaque object can block light to form a shadow."
         },
         {
           "day": "Tuesday",
@@ -5486,7 +5532,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to light/shadow vocabulary or compare shadow lengths.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "change source/object/screen position and observe how the shadow changes."
         },
         {
           "day": "Wednesday",
@@ -5530,7 +5577,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about sunlight, shadow, day/night patterns.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "measure and compare shadow/model lengths using a consistent baseline and unit."
         },
         {
           "day": "Thursday",
@@ -5574,7 +5622,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to shadow puppet theatre in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype."
         },
         {
           "day": "Friday",
@@ -5618,7 +5667,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "retrieve, explain, repair misconceptions, and integrate evidence safely."
         }
       ],
       "weeklyAssessment": {
@@ -5773,7 +5823,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about midyear review and celebration.",
             "Attempts one activity connected to review print, sounds, retelling, and oral language or review counting, shapes, patterns, and comparison."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "take a low-stakes retrieval snapshot across first-semester domains."
         },
         {
           "day": "Tuesday",
@@ -5817,7 +5868,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to review print, sounds, retelling, and oral language or review counting, shapes, patterns, and comparison.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "target literacy/language needs with explicit remediation and transfer."
         },
         {
           "day": "Wednesday",
@@ -5861,7 +5913,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about review observation, maps, living things, and weather.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "target mathematics/quantitative reasoning needs with concrete representations."
         },
         {
           "day": "Thursday",
@@ -5905,7 +5958,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to midyear portfolio cover in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "integrate inquiry, community, design, evidence, safety, and model reasoning."
         },
         {
           "day": "Friday",
@@ -5949,7 +6003,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery."
         }
       ],
       "weeklyAssessment": {
@@ -6104,7 +6159,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about new year, goals, and growth mindset.",
             "Attempts one activity connected to i can / i am learning sentence frames or count forward/back and compare strategies."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "compare the learner’s own past/current evidence and describe change without peer ranking."
         },
         {
           "day": "Tuesday",
@@ -6148,7 +6204,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to i can / i am learning sentence frames or count forward/back and compare strategies.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "design a small, observable learning goal and identify strategies/supports."
         },
         {
           "day": "Wednesday",
@@ -6192,7 +6249,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about growth as change over time.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "investigate forward/backward number sequences and compare valid strategies without speed pressure."
         },
         {
           "day": "Thursday",
@@ -6236,7 +6294,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to goal garden in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed."
         },
         {
           "day": "Friday",
@@ -6280,7 +6339,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection."
         }
       ],
       "weeklyAssessment": {
@@ -6435,7 +6495,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about stories around the world.",
             "Attempts one activity connected to characters, setting, and story sequence or compare story collections."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "distinguish story, source, teller/author, version, retelling, and uncertain origin."
         },
         {
           "day": "Tuesday",
@@ -6479,7 +6540,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to characters, setting, and story sequence or compare story collections.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "compare character, setting, sequence, and evidence across two provided stories/versions."
         },
         {
           "day": "Wednesday",
@@ -6523,7 +6585,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about maps, cultures, traditions, and respect.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "connect story context to maps/place carefully while revisiting map purpose and limits."
         },
         {
           "day": "Thursday",
@@ -6567,7 +6630,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to world story suitcase in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material."
         },
         {
           "day": "Friday",
@@ -6611,7 +6675,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context."
         }
       ],
       "weeklyAssessment": {
@@ -6766,7 +6831,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about living and nonliving things.",
             "Attempts one activity connected to living/nonliving vocabulary or sort, tally, and graph."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "gather multiple evidence clues for living systems instead of using motion or appearance alone."
         },
         {
           "day": "Tuesday",
@@ -6810,7 +6876,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to living/nonliving vocabulary or sort, tally, and graph.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "distinguish living now, once-living/material from living things, and never-living examples."
         },
         {
           "day": "Wednesday",
@@ -6854,7 +6921,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about living things grow and need resources.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category."
         },
         {
           "day": "Thursday",
@@ -6898,7 +6966,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to living/nonliving museum in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models."
         },
         {
           "day": "Friday",
@@ -6942,7 +7011,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference."
         }
       ],
       "weeklyAssessment": {
@@ -7097,7 +7167,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about water, ice, and weather changes.",
             "Attempts one activity connected to water words and procedural language or sequence events and compare temperatures informally."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance."
         },
         {
           "day": "Tuesday",
@@ -7141,7 +7212,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to water words and procedural language or sequence events and compare temperatures informally.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "investigate melting/freezing through safe fair comparisons and sequence evidence."
         },
         {
           "day": "Wednesday",
@@ -7185,7 +7257,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about water, ice, and weather change.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "reason about evaporation and condensation without requiring boiling."
         },
         {
           "day": "Thursday",
@@ -7229,7 +7302,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to ice investigation in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits."
         },
         {
           "day": "Friday",
@@ -7273,7 +7347,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety."
         }
       ],
       "weeklyAssessment": {
@@ -7428,7 +7503,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about earth care and stewardship.",
             "Attempts one activity connected to environmental vocabulary and shared writing or count/reuse materials and sort recycling."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling."
         },
         {
           "day": "Tuesday",
@@ -7472,7 +7548,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to environmental vocabulary and shared writing or count/reuse materials and sort recycling.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking."
         },
         {
           "day": "Wednesday",
@@ -7516,7 +7593,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about earth materials and human choices.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints."
         },
         {
           "day": "Thursday",
@@ -7560,7 +7638,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to recycled art build in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "reason from shared-place/habitat evidence and design a safe, community-scale improvement."
         },
         {
           "day": "Friday",
@@ -7604,7 +7683,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning."
         }
       ],
       "weeklyAssessment": {
@@ -7760,7 +7840,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about transportation and engineering.",
             "Attempts one activity connected to transportation words and labels or measure ramp distance."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "identify pushes/pulls and describe changes in motion from evidence."
         },
         {
           "day": "Tuesday",
@@ -7804,7 +7885,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to transportation words and labels or measure ramp distance.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials."
         },
         {
           "day": "Wednesday",
@@ -7848,7 +7930,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about push, pull, motion, and design testing.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "reason about wheels/axles, surfaces, friction, and design tradeoffs."
         },
         {
           "day": "Thursday",
@@ -7892,7 +7975,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to ramp lab in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "design an accessible fictional transportation system/route around stated needs and constraints."
         },
         {
           "day": "Friday",
@@ -7936,7 +8020,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision."
         }
       ],
       "weeklyAssessment": {
@@ -8091,7 +8176,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates one relevant idea or question about jobs, tools, and community helpers.",
             "Attempts one activity connected to question words and interview practice or count tools and make helper graph."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonArc": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes."
         },
         {
           "day": "Tuesday",
@@ -8135,7 +8221,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example connected to question words and interview practice or count tools and make helper graph.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonArc": "match tools to purposes, training/authorization, and safety constraints."
         },
         {
           "day": "Wednesday",
@@ -8179,7 +8266,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Records or communicates at least one observation or piece of evidence about goods/services; helpers and responsibilities.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonArc": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions."
         },
         {
           "day": "Thursday",
@@ -8223,7 +8311,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or contributes to community helper badge in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonArc": "practice consent-aware questions and map interdependent community roles from provided sources."
         },
         {
           "day": "Friday",
@@ -8267,7 +8356,8 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonArc": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning."
         }
       ],
       "weeklyAssessment": {
