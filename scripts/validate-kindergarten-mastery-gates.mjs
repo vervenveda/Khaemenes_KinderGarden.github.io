@@ -72,7 +72,7 @@ const engineVersion=gate.match(/\bconst VERSION="(\d+)\.(\d+)\.(\d+)"/)?.slice(1
 assert.ok(engineVersion&&(engineVersion[0]>1||(engineVersion[0]===1&&(engineVersion[1]>2||(engineVersion[1]===2&&engineVersion[2]>=21)))),"mastery engine must remain on Week 25 rollout contract (v1.2.21) or later");
 for(const marker of [
   'const PASS=80','const TOTAL_WEEKS=36','const DAYS_PER_WEEK=5',
-  'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25])',
+  'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36])',
   'reviewedUnlocks:false','legacyScoresUnlock:false','directUrlUnlocks:false',
   'bestMasteryPreserved:true','dailyEvidenceIsMastery:false','recordDayEvidence',
   'canOpenDay','allDaysComplete','essentialSatisfied=true','clearActiveMasteryRecord','adultAffirmed!==true'
@@ -167,6 +167,12 @@ for(let unit=26;unit<=36;unit++){
   assert.ok(html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} must link directly to the current mastery rubric`);
   assert.ok(!html.includes(`href="../../assessments/unit-${n}-assessment.html"`),`Week ${unit} must not route learners through the retired assessment shell`);
   assert.ok(!html.includes('href="../../assessments/weekly-assessments.html"'),`Week ${unit} assessment navigation must use the canonical mastery route`);
+  assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`Week ${unit} formal content must load its own mastery gate`);
+  assert.equal((html.match(/<article class="lesson" data-panel="\\d+"/g)||[]).length,5,`Week ${unit} must expose five sequential daily panels`);
+  for(let day=1;day<=5;day++)assert.ok(html.includes(`data-panel="${day}"`)&&html.includes(`data-open-day="${day}"`)&&html.includes(`data-save-feedback="${day}"`),`Week ${unit} day ${day} must have navigation and evidence controls`);
+  assert.ok(html.includes("G.canOpenDay(UNIT,d)")&&html.includes("G.recordDayEvidence"),`Week ${unit} must enforce sequential, learner-scoped daily evidence`);
+  assert.ok(html.includes("G.allDaysComplete(UNIT)")&&html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} mastery must require all five daily receipts`);
+  assertInlineScriptsParse(`Capstone Week ${unit}`,html);
 }
 
 const assessmentRoot=path.join(ROOT,"curriculum","assessments");
