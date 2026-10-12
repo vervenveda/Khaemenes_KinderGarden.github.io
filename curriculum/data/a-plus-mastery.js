@@ -301,7 +301,7 @@
       ["Interview consent and privacy boundary","Knows a person may decline a question and does not require salary, medical/disability details, immigration/citizenship status, religion, family status, home address, trauma, political beliefs, confidential workplace information, or family employment disclosure.",true],
       ["Community system interdependence","Maps or explains at least three roles/resources in a fictional community service/system and identifies a dependency between them without ranking a single helper as working alone or being inherently more important.",true],
       ["Integrated work dignity and safety explanation","Integrates task/source evidence, paid/unpaid contribution, tool function/safety, goods/services, checked data, respectful questions/privacy, and system interdependence while rejecting occupational stereotypes and unsafe real-work imitation.",true]
-    ]
+    ],
     26:[
       ["Symbol meaning","Explains or shows what a classroom/community symbol is intended to communicate.",true],
       ["Symbol evidence","Uses visible features or stated context as evidence for an interpretation."],
