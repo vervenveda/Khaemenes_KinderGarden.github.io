@@ -261,12 +261,12 @@ assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-ev
 
 assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progression:'),"curriculum preview must display the formal lesson progression arc when present");
 
-for(let unit=5;unit<=20;unit++){
+for(let unit=5;unit<=22;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
   assert.equal((html.match(/Teach · Practise · Correct · Transfer/g)||[]).length,5,"Week "+unit+" must include a five-day instructional cycle");
   for(const phrase of ["Prerequisite retrieval","Explicit teacher model","Guided-to-independent practice","Common misconception and correction","Fresh transfer check","Record independent, prompted, or not-yet"]){
-    if(phrase==="Record independent, prompted, or not-yet")assert.ok(html.includes(phrase)||html.includes("Score each target skill separately")||html.includes("Assess the named subskill separately")||html.includes("Record the target skills separately")||html.includes("Record each target separately"),"Week "+unit+" instructional cycle must distinguish independent transfer from guided success");else assert.ok(html.includes(phrase),"Week "+unit+" instructional cycle must include: "+phrase);
+    if(phrase==="Record independent, prompted, or not-yet")assert.ok(html.includes(phrase)||html.includes("Score each target skill separately")||html.includes("Assess the named subskill separately")||html.includes("Record the target skills separately")||html.includes("Record each target separately")||html.includes("Score concept reasoning, classification/data accuracy"),"Week "+unit+" instructional cycle must distinguish independent transfer from guided success");else assert.ok(html.includes(phrase),"Week "+unit+" instructional cycle must include: "+phrase);
   }
   assertInlineScriptsParse("Instructional Depth Week "+unit,html);
 }
