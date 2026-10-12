@@ -2718,7 +2718,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “Where do we find patterns?” and use at least one example to notice or communicate an idea related to patterns, music, and movement.",
+          "objective": "Discover repeating units and distinguish pattern from randomness. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2753,17 +2753,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about patterns, music, and movement.",
-            "Attempts one activity connected to rhyming, syllable claps, repeated words or ab, aab, abc patterns."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "discover repeating units and distinguish pattern from randomness."
+          "formalLessonArc": "discover repeating units and distinguish pattern from randomness.",
+          "formalLessonTarget": "Discover repeating units and distinguish pattern from randomness"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise rhyming, syllable claps, repeated words and ab, aab, abc patterns through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Connect beat, rhythm, syllables, and rhyme without confusing them. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2798,17 +2799,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to rhyming, syllable claps, repeated words or ab, aab, abc patterns.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "connect beat, rhythm, syllables, and rhyme without confusing them."
+          "formalLessonArc": "connect beat, rhythm, syllables, and rhyme without confusing them.",
+          "formalLessonTarget": "Connect beat, rhythm, syllables, and rhyme without confusing them"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate patterns in music, dance, and nature by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Translate one pattern rule across visual, tactile, sound, and movement forms. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2843,17 +2845,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about patterns in music, dance, and nature.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "translate one pattern rule across visual, tactile, sound, and movement forms."
+          "formalLessonArc": "translate one pattern rule across visual, tactile, sound, and movement forms.",
+          "formalLessonTarget": "Translate one pattern rule across visual, tactile, sound, and movement forms"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Pattern performance” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Design and rehearse an original pattern performance with respectful choices. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2888,17 +2891,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to pattern performance in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "design and rehearse an original pattern performance with respectful choices."
+          "formalLessonArc": "design and rehearse an original pattern performance with respectful choices.",
+          "formalLessonTarget": "Design and rehearse an original pattern performance with respectful choices"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about patterns, music, and movement, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Retrieve, conduct, repair errors, explain the rule, and prepare for mastery. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -2933,11 +2937,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery."
+          "formalLessonArc": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery.",
+          "formalLessonTarget": "Retrieve, conduct, repair errors, explain the rule, and prepare for mastery"
         }
       ],
       "weeklyAssessment": {
@@ -3041,27 +3046,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “Where do we find patterns?” and use at least one example to notice or communicate an idea related to patterns, music, and movement.",
+            "target": "Discover repeating units and distinguish pattern from randomness. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "discover repeating units and distinguish pattern from randomness."
           },
           {
             "day": "Tuesday",
-            "target": "Practise rhyming, syllable claps, repeated words and ab, aab, abc patterns through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Connect beat, rhythm, syllables, and rhyme without confusing them. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "connect beat, rhythm, syllables, and rhyme without confusing them."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate patterns in music, dance, and nature by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Translate one pattern rule across visual, tactile, sound, and movement forms. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "translate one pattern rule across visual, tactile, sound, and movement forms."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Pattern performance” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Design and rehearse an original pattern performance with respectful choices. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "design and rehearse an original pattern performance with respectful choices."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about patterns, music, and movement, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Retrieve, conduct, repair errors, explain the rule, and prepare for mastery. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery."
           }
         ]
@@ -3093,7 +3098,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What makes a home and family special?” and use at least one example to notice or communicate an idea related to families, homes, and traditions.",
+          "objective": "Understand that families and caring communities can take many forms. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3128,17 +3133,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about families, homes, and traditions.",
-            "Attempts one activity connected to oral history and story sequence or compare lengths and heights."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "understand that families and caring communities can take many forms."
+          "formalLessonArc": "understand that families and caring communities can take many forms.",
+          "formalLessonTarget": "Understand that families and caring communities can take many forms"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise oral history and story sequence and compare lengths and heights through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Listen to and sequence an oral-history or fictional past/present story. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3173,17 +3179,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to oral history and story sequence or compare lengths and heights.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "listen to and sequence an oral-history or fictional past/present story."
+          "formalLessonArc": "listen to and sequence an oral-history or fictional past/present story.",
+          "formalLessonTarget": "Listen to and sequence an oral-history or fictional past/present story"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate past/present, families, culture, and respect by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare home/building objects using nonstandard length and height measures. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3218,17 +3225,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about past/present, families, culture, and respect.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "compare home/building objects using nonstandard length and height measures."
+          "formalLessonArc": "compare home/building objects using nonstandard length and height measures.",
+          "formalLessonTarget": "Compare home/building objects using nonstandard length and height measures"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Family house drawing” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Explore traditions as meaningful repeated practices that can vary and change. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3263,17 +3271,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to family house drawing in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "explore traditions as meaningful repeated practices that can vary and change."
+          "formalLessonArc": "explore traditions as meaningful repeated practices that can vary and change.",
+          "formalLessonTarget": "Explore traditions as meaningful repeated practices that can vary and change"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about families, homes, and traditions, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate story sequence, measurement, past/present, belonging, privacy, and respect. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3308,11 +3317,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate story sequence, measurement, past/present, belonging, privacy, and respect."
+          "formalLessonArc": "integrate story sequence, measurement, past/present, belonging, privacy, and respect.",
+          "formalLessonTarget": "Integrate story sequence, measurement, past/present, belonging, privacy, and respect"
         }
       ],
       "weeklyAssessment": {
@@ -3416,27 +3426,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “What makes a home and family special?” and use at least one example to notice or communicate an idea related to families, homes, and traditions.",
+            "target": "Understand that families and caring communities can take many forms. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "understand that families and caring communities can take many forms."
           },
           {
             "day": "Tuesday",
-            "target": "Practise oral history and story sequence and compare lengths and heights through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Listen to and sequence an oral-history or fictional past/present story. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "listen to and sequence an oral-history or fictional past/present story."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate past/present, families, culture, and respect by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Compare home/building objects using nonstandard length and height measures. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compare home/building objects using nonstandard length and height measures."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Family house drawing” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Explore traditions as meaningful repeated practices that can vary and change. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "explore traditions as meaningful repeated practices that can vary and change."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about families, homes, and traditions, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate story sequence, measurement, past/present, belonging, privacy, and respect. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate story sequence, measurement, past/present, belonging, privacy, and respect."
           }
         ]
@@ -3468,7 +3478,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can a map help us find and explain?” and use at least one example to notice or communicate an idea related to maps, places, and community.",
+          "objective": "Understand a map as a selective model, not the place itself. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3503,17 +3513,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about maps, places, and community.",
-            "Attempts one activity connected to map words and labels or count steps and compare distances."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "understand a map as a selective model, not the place itself."
+          "formalLessonArc": "understand a map as a selective model, not the place itself.",
+          "formalLessonTarget": "Understand a map as a selective model, not the place itself"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise map words and labels and count steps and compare distances through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Design symbols, labels, and a readable legend/key. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3548,17 +3559,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to map words and labels or count steps and compare distances.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "design symbols, labels, and a readable legend/key."
+          "formalLessonArc": "design symbols, labels, and a readable legend/key.",
+          "formalLessonTarget": "Design symbols, labels, and a readable legend/key"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate maps, symbols, places, and directions by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Follow, describe, and compare routes using consistent model units. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3593,17 +3605,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about maps, symbols, places, and directions.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "follow, describe, and compare routes using consistent model units."
+          "formalLessonArc": "follow, describe, and compare routes using consistent model units.",
+          "formalLessonTarget": "Follow, describe, and compare routes using consistent model units"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Classroom treasure map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Plan a fictional community around varied needs and accessible routes. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3638,17 +3651,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to classroom treasure map in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "plan a fictional community around varied needs and accessible routes."
+          "formalLessonArc": "plan a fictional community around varied needs and accessible routes.",
+          "formalLessonTarget": "Plan a fictional community around varied needs and accessible routes"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about maps, places, and community, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Navigate, explain, test, revise, and reflect. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3683,11 +3697,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "navigate, explain, test, revise, and reflect."
+          "formalLessonArc": "navigate, explain, test, revise, and reflect.",
+          "formalLessonTarget": "Navigate, explain, test, revise, and reflect"
         }
       ],
       "weeklyAssessment": {
@@ -3791,27 +3806,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How can a map help us find and explain?” and use at least one example to notice or communicate an idea related to maps, places, and community.",
+            "target": "Understand a map as a selective model, not the place itself. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "understand a map as a selective model, not the place itself."
           },
           {
             "day": "Tuesday",
-            "target": "Practise map words and labels and count steps and compare distances through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Design symbols, labels, and a readable legend/key. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "design symbols, labels, and a readable legend/key."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate maps, symbols, places, and directions by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Follow, describe, and compare routes using consistent model units. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "follow, describe, and compare routes using consistent model units."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Classroom treasure map” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Plan a fictional community around varied needs and accessible routes. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "plan a fictional community around varied needs and accessible routes."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about maps, places, and community, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Navigate, explain, test, revise, and reflect. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "navigate, explain, test, revise, and reflect."
           }
         ]
@@ -3843,7 +3858,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What do plants need to grow?” and use at least one example to notice or communicate an idea related to plants and gardens.",
+          "objective": "Investigate seeds and plant structures/functions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3878,17 +3893,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about plants and gardens.",
-            "Attempts one activity connected to plant vocabulary and sequence words or measure plant growth informally."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "investigate seeds and plant structures/functions."
+          "formalLessonArc": "investigate seeds and plant structures/functions.",
+          "formalLessonTarget": "Investigate seeds and plant structures/functions"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise plant vocabulary and sequence words and measure plant growth informally through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Distinguish plant needs, resources, and common misconceptions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3923,17 +3939,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to plant vocabulary and sequence words or measure plant growth informally.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "distinguish plant needs, resources, and common misconceptions."
+          "formalLessonArc": "distinguish plant needs, resources, and common misconceptions.",
+          "formalLessonTarget": "Distinguish plant needs, resources, and common misconceptions"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate living things need water, light, and care by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Measure and journal change from a consistent baseline. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -3968,17 +3985,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about living things need water, light, and care.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "measure and journal change from a consistent baseline."
+          "formalLessonArc": "measure and journal change from a consistent baseline.",
+          "formalLessonTarget": "Measure and journal change from a consistent baseline"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Seed cup and plant journal” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Use fair-test thinking, evidence, and responsible care. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4013,17 +4031,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to seed cup and plant journal in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "use fair-test thinking, evidence, and responsible care."
+          "formalLessonArc": "use fair-test thinking, evidence, and responsible care.",
+          "formalLessonTarget": "Use fair-test thinking, evidence, and responsible care"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about plants and gardens, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate structures, needs, sequence, measurement, evidence, and stewardship. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4058,11 +4077,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate structures, needs, sequence, measurement, evidence, and stewardship."
+          "formalLessonArc": "integrate structures, needs, sequence, measurement, evidence, and stewardship.",
+          "formalLessonTarget": "Integrate structures, needs, sequence, measurement, evidence, and stewardship"
         }
       ],
       "weeklyAssessment": {
@@ -4166,27 +4186,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “What do plants need to grow?” and use at least one example to notice or communicate an idea related to plants and gardens.",
+            "target": "Investigate seeds and plant structures/functions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "investigate seeds and plant structures/functions."
           },
           {
             "day": "Tuesday",
-            "target": "Practise plant vocabulary and sequence words and measure plant growth informally through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Distinguish plant needs, resources, and common misconceptions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "distinguish plant needs, resources, and common misconceptions."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate living things need water, light, and care by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Measure and journal change from a consistent baseline. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "measure and journal change from a consistent baseline."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Seed cup and plant journal” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Use fair-test thinking, evidence, and responsible care. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "use fair-test thinking, evidence, and responsible care."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about plants and gardens, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate structures, needs, sequence, measurement, evidence, and stewardship. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate structures, needs, sequence, measurement, evidence, and stewardship."
           }
         ]
@@ -4218,7 +4238,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do animals meet their needs?” and use at least one example to notice or communicate an idea related to animals and habitats.",
+          "objective": "Distinguish observations about animal structures and behaviors from guesses. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4253,17 +4273,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about animals and habitats.",
-            "Attempts one activity connected to animal sounds and alliteration or sort and count animal groups."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "distinguish observations about animal structures and behaviors from guesses."
+          "formalLessonArc": "distinguish observations about animal structures and behaviors from guesses.",
+          "formalLessonTarget": "Distinguish observations about animal structures and behaviors from guesses"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise animal sounds and alliteration and sort and count animal groups through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Classify animals by stated evidence-based rules and count/compare groups. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4298,17 +4319,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to animal sounds and alliteration or sort and count animal groups.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "classify animals by stated evidence-based rules and count/compare groups."
+          "formalLessonArc": "classify animals by stated evidence-based rules and count/compare groups.",
+          "formalLessonTarget": "Classify animals by stated evidence-based rules and count/compare groups"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate needs of living things and habitats by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Connect habitat resources and conditions to animal needs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4343,17 +4365,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about needs of living things and habitats.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "connect habitat resources and conditions to animal needs."
+          "formalLessonArc": "connect habitat resources and conditions to animal needs.",
+          "formalLessonTarget": "Connect habitat resources and conditions to animal needs"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Habitat diorama” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Engineer and revise a habitat model that explains its choices. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4388,17 +4411,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to habitat diorama in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "engineer and revise a habitat model that explains its choices."
+          "formalLessonArc": "engineer and revise a habitat model that explains its choices.",
+          "formalLessonTarget": "Engineer and revise a habitat model that explains its choices"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about animals and habitats, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate needs, classification, habitat fit, evidence, and humane care. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4433,11 +4457,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate needs, classification, habitat fit, evidence, and humane care."
+          "formalLessonArc": "integrate needs, classification, habitat fit, evidence, and humane care.",
+          "formalLessonTarget": "Integrate needs, classification, habitat fit, evidence, and humane care"
         }
       ],
       "weeklyAssessment": {
@@ -4541,27 +4566,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do animals meet their needs?” and use at least one example to notice or communicate an idea related to animals and habitats.",
+            "target": "Distinguish observations about animal structures and behaviors from guesses. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "distinguish observations about animal structures and behaviors from guesses."
           },
           {
             "day": "Tuesday",
-            "target": "Practise animal sounds and alliteration and sort and count animal groups through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Classify animals by stated evidence-based rules and count/compare groups. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "classify animals by stated evidence-based rules and count/compare groups."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate needs of living things and habitats by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Connect habitat resources and conditions to animal needs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "connect habitat resources and conditions to animal needs."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Habitat diorama” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Engineer and revise a habitat model that explains its choices. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "engineer and revise a habitat model that explains its choices."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about animals and habitats, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate needs, classification, habitat fit, evidence, and humane care. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate needs, classification, habitat fit, evidence, and humane care."
           }
         ]
@@ -4593,7 +4618,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can stories and actions show gratitude?” and use at least one example to notice or communicate an idea related to gratitude, giving, and storytelling.",
+          "objective": "Build and retell a clear beginning-middle-end narrative. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4628,17 +4653,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about gratitude, giving, and storytelling.",
-            "Attempts one activity connected to retelling and story beginning/middle/end or add and take apart numbers to 5."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "build and retell a clear beginning-middle-end narrative."
+          "formalLessonArc": "build and retell a clear beginning-middle-end narrative.",
+          "formalLessonTarget": "Build and retell a clear beginning-middle-end narrative"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise retelling and story beginning/middle/end and add and take apart numbers to 5 through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Compose and take apart quantities to 5 using number stories. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4673,17 +4699,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to retelling and story beginning/middle/end or add and take apart numbers to 5.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "compose and take apart quantities to 5 using number stories."
+          "formalLessonArc": "compose and take apart quantities to 5 using number stories.",
+          "formalLessonTarget": "Compose and take apart quantities to 5 using number stories"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate community helpers and acts of care by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Investigate visible acts of community care without ranking people or jobs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4718,17 +4745,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about community helpers and acts of care.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "investigate visible acts of community care without ranking people or jobs."
+          "formalLessonArc": "investigate visible acts of community care without ranking people or jobs.",
+          "formalLessonTarget": "Investigate visible acts of community care without ranking people or jobs"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Thank-you card workshop” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create an authentic appreciation message or equivalent chosen response. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4763,17 +4791,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to thank-you card workshop in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "create an authentic appreciation message or equivalent chosen response."
+          "formalLessonArc": "create an authentic appreciation message or equivalent chosen response.",
+          "formalLessonTarget": "Create an authentic appreciation message or equivalent chosen response"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about gratitude, giving, and storytelling, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate story, number, care, boundaries, and reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -4808,11 +4837,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate story, number, care, boundaries, and reflection."
+          "formalLessonArc": "integrate story, number, care, boundaries, and reflection.",
+          "formalLessonTarget": "Integrate story, number, care, boundaries, and reflection"
         }
       ],
       "weeklyAssessment": {
@@ -4916,27 +4946,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How can stories and actions show gratitude?” and use at least one example to notice or communicate an idea related to gratitude, giving, and storytelling.",
+            "target": "Build and retell a clear beginning-middle-end narrative. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "build and retell a clear beginning-middle-end narrative."
           },
           {
             "day": "Tuesday",
-            "target": "Practise retelling and story beginning/middle/end and add and take apart numbers to 5 through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Compose and take apart quantities to 5 using number stories. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compose and take apart quantities to 5 using number stories."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate community helpers and acts of care by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Investigate visible acts of community care without ranking people or jobs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "investigate visible acts of community care without ranking people or jobs."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Thank-you card workshop” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Create an authentic appreciation message or equivalent chosen response. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "create an authentic appreciation message or equivalent chosen response."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about gratitude, giving, and storytelling, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate story, number, care, boundaries, and reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate story, number, care, boundaries, and reflection."
           }
         ]
@@ -4968,7 +4998,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do sounds make words playful?” and use at least one example to notice or communicate an idea related to sounds, rhymes, and word play.",
+          "objective": "Identify and generate rhyme in an appropriate language pathway. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5003,17 +5033,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about sounds, rhymes, and word play.",
-            "Attempts one activity connected to rhyme, syllables, onset sounds or count sounds, beats, and objects."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "identify and generate rhyme in an appropriate language pathway."
+          "formalLessonArc": "identify and generate rhyme in an appropriate language pathway.",
+          "formalLessonTarget": "Identify and generate rhyme in an appropriate language pathway"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise rhyme, syllables, onset sounds and count sounds, beats, and objects through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Segment and count syllables without confusing syllables with letters. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5048,17 +5079,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to rhyme, syllables, onset sounds or count sounds, beats, and objects.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "segment and count syllables without confusing syllables with letters."
+          "formalLessonArc": "segment and count syllables without confusing syllables with letters.",
+          "formalLessonTarget": "Segment and count syllables without confusing syllables with letters"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate language as communication by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Notice beginning sounds and distinguish sound from spelling. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5093,17 +5125,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about language as communication.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "notice beginning sounds and distinguish sound from spelling."
+          "formalLessonArc": "notice beginning sounds and distinguish sound from spelling.",
+          "formalLessonTarget": "Notice beginning sounds and distinguish sound from spelling"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Rhyme parade” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Create word-play patterns and explain the rule. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5138,17 +5171,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to rhyme parade in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "create word-play patterns and explain the rule."
+          "formalLessonArc": "create word-play patterns and explain the rule.",
+          "formalLessonTarget": "Create word-play patterns and explain the rule"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about sounds, rhymes, and word play, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Retrieve, compare, correct misconceptions, and prepare for mastery. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5183,11 +5217,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "retrieve, compare, correct misconceptions, and prepare for mastery."
+          "formalLessonArc": "retrieve, compare, correct misconceptions, and prepare for mastery.",
+          "formalLessonTarget": "Retrieve, compare, correct misconceptions, and prepare for mastery"
         }
       ],
       "weeklyAssessment": {
@@ -5291,27 +5326,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do sounds make words playful?” and use at least one example to notice or communicate an idea related to sounds, rhymes, and word play.",
+            "target": "Identify and generate rhyme in an appropriate language pathway. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "identify and generate rhyme in an appropriate language pathway."
           },
           {
             "day": "Tuesday",
-            "target": "Practise rhyme, syllables, onset sounds and count sounds, beats, and objects through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Segment and count syllables without confusing syllables with letters. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "segment and count syllables without confusing syllables with letters."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate language as communication by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Notice beginning sounds and distinguish sound from spelling. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "notice beginning sounds and distinguish sound from spelling."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Rhyme parade” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Create word-play patterns and explain the rule. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "create word-play patterns and explain the rule."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about sounds, rhymes, and word play, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Retrieve, compare, correct misconceptions, and prepare for mastery. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "retrieve, compare, correct misconceptions, and prepare for mastery."
           }
         ]
@@ -5343,7 +5378,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can we compare and build carefully?” and use at least one example to notice or communicate an idea related to measurement and builders.",
+          "objective": "Compare length/height directly from a common starting point. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5378,17 +5413,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about measurement and builders.",
-            "Attempts one activity connected to measurement words and describing structures or measure with nonstandard units."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "compare length/height directly from a common starting point."
+          "formalLessonArc": "compare length/height directly from a common starting point.",
+          "formalLessonTarget": "Compare length/height directly from a common starting point"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise measurement words and describing structures and measure with nonstandard units through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Measure with repeated equal-size nonstandard units and report the unit. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5423,17 +5459,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to measurement words and describing structures or measure with nonstandard units.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "measure with repeated equal-size nonstandard units and report the unit."
+          "formalLessonArc": "measure with repeated equal-size nonstandard units and report the unit.",
+          "formalLessonTarget": "Measure with repeated equal-size nonstandard units and report the unit"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate structure, balance, and materials by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Investigate heavier/lighter and capacity without confusing size, weight, and amount held. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5468,17 +5505,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about structure, balance, and materials.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "investigate heavier/lighter and capacity without confusing size, weight, and amount held."
+          "formalLessonArc": "investigate heavier/lighter and capacity without confusing size, weight, and amount held.",
+          "formalLessonTarget": "Investigate heavier/lighter and capacity without confusing size, weight, and amount held"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Block bridge challenge” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Design, test, measure, and revise a tabletop model bridge under a stated constraint. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5513,17 +5551,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to block bridge challenge in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "design, test, measure, and revise a tabletop model bridge under a stated constraint."
+          "formalLessonArc": "design, test, measure, and revise a tabletop model bridge under a stated constraint.",
+          "formalLessonTarget": "Design, test, measure, and revise a tabletop model bridge under a stated constraint"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about measurement and builders, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate fair measurement, evidence, engineering decisions, and reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5558,11 +5597,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate fair measurement, evidence, engineering decisions, and reflection."
+          "formalLessonArc": "integrate fair measurement, evidence, engineering decisions, and reflection.",
+          "formalLessonTarget": "Integrate fair measurement, evidence, engineering decisions, and reflection"
         }
       ],
       "weeklyAssessment": {
@@ -5666,27 +5706,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How can we compare and build carefully?” and use at least one example to notice or communicate an idea related to measurement and builders.",
+            "target": "Compare length/height directly from a common starting point. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compare length/height directly from a common starting point."
           },
           {
             "day": "Tuesday",
-            "target": "Practise measurement words and describing structures and measure with nonstandard units through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Measure with repeated equal-size nonstandard units and report the unit. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "measure with repeated equal-size nonstandard units and report the unit."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate structure, balance, and materials by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Investigate heavier/lighter and capacity without confusing size, weight, and amount held. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "investigate heavier/lighter and capacity without confusing size, weight, and amount held."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Block bridge challenge” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Design, test, measure, and revise a tabletop model bridge under a stated constraint. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "design, test, measure, and revise a tabletop model bridge under a stated constraint."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about measurement and builders, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate fair measurement, evidence, engineering decisions, and reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate fair measurement, evidence, engineering decisions, and reflection."
           }
         ]
@@ -5718,7 +5758,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do we make wise choices?” and use at least one example to notice or communicate an idea related to needs, wants, money, and choices.",
+          "objective": "Examine needs, wants, and context without shaming different lives. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5753,17 +5793,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about needs, wants, money, and choices.",
-            "Attempts one activity connected to decision words and opinion starters or count pennies/counters and compare amounts."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "examine needs, wants, and context without shaming different lives."
+          "formalLessonArc": "examine needs, wants, and context without shaming different lives.",
+          "formalLessonTarget": "Examine needs, wants, and context without shaming different lives"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise decision words and opinion starters and count pennies/counters and compare amounts through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Count, represent, and compare token amounts with one-to-one correspondence. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5798,17 +5839,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to decision words and opinion starters or count pennies/counters and compare amounts.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "count, represent, and compare token amounts with one-to-one correspondence."
+          "formalLessonArc": "count, represent, and compare token amounts with one-to-one correspondence.",
+          "formalLessonTarget": "Count, represent, and compare token amounts with one-to-one correspondence"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate needs, wants, goods, and services by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Distinguish goods/services and trace how work/resources help meet needs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5843,17 +5885,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about needs, wants, goods, and services.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "distinguish goods/services and trace how work/resources help meet needs."
+          "formalLessonArc": "distinguish goods/services and trace how work/resources help meet needs.",
+          "formalLessonTarget": "Distinguish goods/services and trace how work/resources help meet needs"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Classroom market” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5888,17 +5931,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to classroom market in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing."
+          "formalLessonArc": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing.",
+          "formalLessonTarget": "Use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about needs, wants, money, and choices, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate quantity, priorities, choice reasoning, dignity, and reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -5933,11 +5977,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate quantity, priorities, choice reasoning, dignity, and reflection."
+          "formalLessonArc": "integrate quantity, priorities, choice reasoning, dignity, and reflection.",
+          "formalLessonTarget": "Integrate quantity, priorities, choice reasoning, dignity, and reflection"
         }
       ],
       "weeklyAssessment": {
@@ -6041,27 +6086,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do we make wise choices?” and use at least one example to notice or communicate an idea related to needs, wants, money, and choices.",
+            "target": "Examine needs, wants, and context without shaming different lives. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "examine needs, wants, and context without shaming different lives."
           },
           {
             "day": "Tuesday",
-            "target": "Practise decision words and opinion starters and count pennies/counters and compare amounts through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Count, represent, and compare token amounts with one-to-one correspondence. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "count, represent, and compare token amounts with one-to-one correspondence."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate needs, wants, goods, and services by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Distinguish goods/services and trace how work/resources help meet needs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "distinguish goods/services and trace how work/resources help meet needs."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Classroom market” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about needs, wants, money, and choices, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate quantity, priorities, choice reasoning, dignity, and reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate quantity, priorities, choice reasoning, dignity, and reflection."
           }
         ]
@@ -6093,7 +6138,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What can light and shadow show us?” and use at least one example to notice or communicate an idea related to winter, light, and shadows.",
+          "objective": "Identify light sources and explain how an opaque object can block light to form a shadow. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6128,17 +6173,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about winter, light, and shadows.",
-            "Attempts one activity connected to light/shadow vocabulary or compare shadow lengths."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "identify light sources and explain how an opaque object can block light to form a shadow."
+          "formalLessonArc": "identify light sources and explain how an opaque object can block light to form a shadow.",
+          "formalLessonTarget": "Identify light sources and explain how an opaque object can block light to form a shadow"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise light/shadow vocabulary and compare shadow lengths through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Change source/object/screen position and observe how the shadow changes. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6173,17 +6219,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to light/shadow vocabulary or compare shadow lengths.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "change source/object/screen position and observe how the shadow changes."
+          "formalLessonArc": "change source/object/screen position and observe how the shadow changes.",
+          "formalLessonTarget": "Change source/object/screen position and observe how the shadow changes"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate sunlight, shadow, day/night patterns by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Measure and compare shadow/model lengths using a consistent baseline and unit. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6218,17 +6265,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about sunlight, shadow, day/night patterns.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "measure and compare shadow/model lengths using a consistent baseline and unit."
+          "formalLessonArc": "measure and compare shadow/model lengths using a consistent baseline and unit.",
+          "formalLessonTarget": "Measure and compare shadow/model lengths using a consistent baseline and unit"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Shadow puppet theatre” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6263,17 +6311,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to shadow puppet theatre in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype."
+          "formalLessonArc": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype.",
+          "formalLessonTarget": "Model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about winter, light, and shadows, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Retrieve, explain, repair misconceptions, and integrate evidence safely. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6308,11 +6357,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "retrieve, explain, repair misconceptions, and integrate evidence safely."
+          "formalLessonArc": "retrieve, explain, repair misconceptions, and integrate evidence safely.",
+          "formalLessonTarget": "Retrieve, explain, repair misconceptions, and integrate evidence safely"
         }
       ],
       "weeklyAssessment": {
@@ -6416,27 +6466,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “What can light and shadow show us?” and use at least one example to notice or communicate an idea related to winter, light, and shadows.",
+            "target": "Identify light sources and explain how an opaque object can block light to form a shadow. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "identify light sources and explain how an opaque object can block light to form a shadow."
           },
           {
             "day": "Tuesday",
-            "target": "Practise light/shadow vocabulary and compare shadow lengths through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Change source/object/screen position and observe how the shadow changes. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "change source/object/screen position and observe how the shadow changes."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate sunlight, shadow, day/night patterns by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Measure and compare shadow/model lengths using a consistent baseline and unit. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "measure and compare shadow/model lengths using a consistent baseline and unit."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Shadow puppet theatre” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about winter, light, and shadows, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Retrieve, explain, repair misconceptions, and integrate evidence safely. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "retrieve, explain, repair misconceptions, and integrate evidence safely."
           }
         ]
@@ -6468,7 +6518,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “What have I learned so far?” and use at least one example to notice or communicate an idea related to midyear review and celebration.",
+          "objective": "Take a low-stakes retrieval snapshot across first-semester domains. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6503,17 +6553,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about midyear review and celebration.",
-            "Attempts one activity connected to review print, sounds, retelling, and oral language or review counting, shapes, patterns, and comparison."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "take a low-stakes retrieval snapshot across first-semester domains."
+          "formalLessonArc": "take a low-stakes retrieval snapshot across first-semester domains.",
+          "formalLessonTarget": "Take a low-stakes retrieval snapshot across first-semester domains"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise review print, sounds, retelling, and oral language and review counting, shapes, patterns, and comparison through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Target literacy/language needs with explicit remediation and transfer. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6548,17 +6599,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to review print, sounds, retelling, and oral language or review counting, shapes, patterns, and comparison.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "target literacy/language needs with explicit remediation and transfer."
+          "formalLessonArc": "target literacy/language needs with explicit remediation and transfer.",
+          "formalLessonTarget": "Target literacy/language needs with explicit remediation and transfer"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate review observation, maps, living things, and weather by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Target mathematics/quantitative reasoning needs with concrete representations. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6593,17 +6645,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about review observation, maps, living things, and weather.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "target mathematics/quantitative reasoning needs with concrete representations."
+          "formalLessonArc": "target mathematics/quantitative reasoning needs with concrete representations.",
+          "formalLessonTarget": "Target mathematics/quantitative reasoning needs with concrete representations"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Midyear portfolio cover” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Integrate inquiry, community, design, evidence, safety, and model reasoning. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6638,17 +6691,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to midyear portfolio cover in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "integrate inquiry, community, design, evidence, safety, and model reasoning."
+          "formalLessonArc": "integrate inquiry, community, design, evidence, safety, and model reasoning.",
+          "formalLessonTarget": "Integrate inquiry, community, design, evidence, safety, and model reasoning"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about midyear review and celebration, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6683,11 +6737,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery."
+          "formalLessonArc": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery.",
+          "formalLessonTarget": "Revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery"
         }
       ],
       "weeklyAssessment": {
@@ -6791,27 +6846,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “What have I learned so far?” and use at least one example to notice or communicate an idea related to midyear review and celebration.",
+            "target": "Take a low-stakes retrieval snapshot across first-semester domains. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "take a low-stakes retrieval snapshot across first-semester domains."
           },
           {
             "day": "Tuesday",
-            "target": "Practise review print, sounds, retelling, and oral language and review counting, shapes, patterns, and comparison through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Target literacy/language needs with explicit remediation and transfer. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "target literacy/language needs with explicit remediation and transfer."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate review observation, maps, living things, and weather by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Target mathematics/quantitative reasoning needs with concrete representations. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "target mathematics/quantitative reasoning needs with concrete representations."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Midyear portfolio cover” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Integrate inquiry, community, design, evidence, safety, and model reasoning. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate inquiry, community, design, evidence, safety, and model reasoning."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about midyear review and celebration, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery."
           }
         ]
@@ -6843,7 +6898,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do we grow when learning is hard?” and use at least one example to notice or communicate an idea related to new year, goals, and growth mindset.",
+          "objective": "Compare the learner’s own past/current evidence and describe change without peer ranking. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6878,17 +6933,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about new year, goals, and growth mindset.",
-            "Attempts one activity connected to i can / i am learning sentence frames or count forward/back and compare strategies."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "compare the learner’s own past/current evidence and describe change without peer ranking."
+          "formalLessonArc": "compare the learner’s own past/current evidence and describe change without peer ranking.",
+          "formalLessonTarget": "Compare the learner’s own past/current evidence and describe change without peer ranking"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise i can / i am learning sentence frames and count forward/back and compare strategies through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Design a small, observable learning goal and identify strategies/supports. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6923,17 +6979,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to i can / i am learning sentence frames or count forward/back and compare strategies.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "design a small, observable learning goal and identify strategies/supports."
+          "formalLessonArc": "design a small, observable learning goal and identify strategies/supports.",
+          "formalLessonTarget": "Design a small, observable learning goal and identify strategies/supports"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate growth as change over time by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Investigate forward/backward number sequences and compare valid strategies without speed pressure. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -6968,17 +7025,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about growth as change over time.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "investigate forward/backward number sequences and compare valid strategies without speed pressure."
+          "formalLessonArc": "investigate forward/backward number sequences and compare valid strategies without speed pressure.",
+          "formalLessonTarget": "Investigate forward/backward number sequences and compare valid strategies without speed pressure"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Goal garden” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Test a strategy, notice evidence, ask for support, and revise the goal/plan when needed. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7013,17 +7071,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to goal garden in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed."
+          "formalLessonArc": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed.",
+          "formalLessonTarget": "Test a strategy, notice evidence, ask for support, and revise the goal/plan when needed"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about new year, goals, and growth mindset, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7058,11 +7117,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection."
+          "formalLessonArc": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection.",
+          "formalLessonTarget": "Integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection"
         }
       ],
       "weeklyAssessment": {
@@ -7166,27 +7226,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do we grow when learning is hard?” and use at least one example to notice or communicate an idea related to new year, goals, and growth mindset.",
+            "target": "Compare the learner’s own past/current evidence and describe change without peer ranking. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compare the learner’s own past/current evidence and describe change without peer ranking."
           },
           {
             "day": "Tuesday",
-            "target": "Practise i can / i am learning sentence frames and count forward/back and compare strategies through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Design a small, observable learning goal and identify strategies/supports. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "design a small, observable learning goal and identify strategies/supports."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate growth as change over time by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Investigate forward/backward number sequences and compare valid strategies without speed pressure. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "investigate forward/backward number sequences and compare valid strategies without speed pressure."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Goal garden” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Test a strategy, notice evidence, ask for support, and revise the goal/plan when needed. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about new year, goals, and growth mindset, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection."
           }
         ]
@@ -7218,7 +7278,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do stories travel across the world?” and use at least one example to notice or communicate an idea related to stories around the world.",
+          "objective": "Distinguish story, source, teller/author, version, retelling, and uncertain origin. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7253,17 +7313,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about stories around the world.",
-            "Attempts one activity connected to characters, setting, and story sequence or compare story collections."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "distinguish story, source, teller/author, version, retelling, and uncertain origin."
+          "formalLessonArc": "distinguish story, source, teller/author, version, retelling, and uncertain origin.",
+          "formalLessonTarget": "Distinguish story, source, teller/author, version, retelling, and uncertain origin"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise characters, setting, and story sequence and compare story collections through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Compare character, setting, sequence, and evidence across two provided stories/versions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7298,17 +7359,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to characters, setting, and story sequence or compare story collections.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "compare character, setting, sequence, and evidence across two provided stories/versions."
+          "formalLessonArc": "compare character, setting, sequence, and evidence across two provided stories/versions.",
+          "formalLessonTarget": "Compare character, setting, sequence, and evidence across two provided stories/versions"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate maps, cultures, traditions, and respect by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Connect story context to maps/place carefully while revisiting map purpose and limits. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7343,17 +7405,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about maps, cultures, traditions, and respect.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "connect story context to maps/place carefully while revisiting map purpose and limits."
+          "formalLessonArc": "connect story context to maps/place carefully while revisiting map purpose and limits.",
+          "formalLessonTarget": "Connect story context to maps/place carefully while revisiting map purpose and limits"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “World story suitcase” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7388,17 +7451,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to world story suitcase in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material."
+          "formalLessonArc": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material.",
+          "formalLessonTarget": "Compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about stories around the world, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate source, story evidence, map reasoning, variation, mathematics, and respectful context. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7433,11 +7497,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context."
+          "formalLessonArc": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context.",
+          "formalLessonTarget": "Integrate source, story evidence, map reasoning, variation, mathematics, and respectful context"
         }
       ],
       "weeklyAssessment": {
@@ -7541,27 +7606,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do stories travel across the world?” and use at least one example to notice or communicate an idea related to stories around the world.",
+            "target": "Distinguish story, source, teller/author, version, retelling, and uncertain origin. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "distinguish story, source, teller/author, version, retelling, and uncertain origin."
           },
           {
             "day": "Tuesday",
-            "target": "Practise characters, setting, and story sequence and compare story collections through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Compare character, setting, sequence, and evidence across two provided stories/versions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compare character, setting, sequence, and evidence across two provided stories/versions."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate maps, cultures, traditions, and respect by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Connect story context to maps/place carefully while revisiting map purpose and limits. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "connect story context to maps/place carefully while revisiting map purpose and limits."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “World story suitcase” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about stories around the world, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate source, story evidence, map reasoning, variation, mathematics, and respectful context. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context."
           }
         ]
@@ -7593,7 +7658,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can we tell what is living?” and use at least one example to notice or communicate an idea related to living and nonliving things.",
+          "objective": "Gather multiple evidence clues for living systems instead of using motion or appearance alone. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7628,17 +7693,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about living and nonliving things.",
-            "Attempts one activity connected to living/nonliving vocabulary or sort, tally, and graph."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "gather multiple evidence clues for living systems instead of using motion or appearance alone."
+          "formalLessonArc": "gather multiple evidence clues for living systems instead of using motion or appearance alone.",
+          "formalLessonTarget": "Gather multiple evidence clues for living systems instead of using motion or appearance alone"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise living/nonliving vocabulary and sort, tally, and graph through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Distinguish living now, once-living/material from living things, and never-living examples. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7673,17 +7739,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to living/nonliving vocabulary or sort, tally, and graph.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "distinguish living now, once-living/material from living things, and never-living examples."
+          "formalLessonArc": "distinguish living now, once-living/material from living things, and never-living examples.",
+          "formalLessonTarget": "Distinguish living now, once-living/material from living things, and never-living examples"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate living things grow and need resources by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "State a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7718,17 +7785,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about living things grow and need resources.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category."
+          "formalLessonArc": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category.",
+          "formalLessonTarget": "State a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Living/nonliving museum” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7763,17 +7831,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to living/nonliving museum in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models."
+          "formalLessonArc": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models.",
+          "formalLessonTarget": "Test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about living and nonliving things, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -7808,11 +7877,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference."
+          "formalLessonArc": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference.",
+          "formalLessonTarget": "Integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference"
         }
       ],
       "weeklyAssessment": {
@@ -7916,27 +7986,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How can we tell what is living?” and use at least one example to notice or communicate an idea related to living and nonliving things.",
+            "target": "Gather multiple evidence clues for living systems instead of using motion or appearance alone. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "gather multiple evidence clues for living systems instead of using motion or appearance alone."
           },
           {
             "day": "Tuesday",
-            "target": "Practise living/nonliving vocabulary and sort, tally, and graph through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Distinguish living now, once-living/material from living things, and never-living examples. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "distinguish living now, once-living/material from living things, and never-living examples."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate living things grow and need resources by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "State a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Living/nonliving museum” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about living and nonliving things, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference."
           }
         ]
@@ -7968,7 +8038,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can water change?” and use at least one example to notice or communicate an idea related to water, ice, and weather changes.",
+          "objective": "Identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8003,17 +8073,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about water, ice, and weather changes.",
-            "Attempts one activity connected to water words and procedural language or sequence events and compare temperatures informally."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance."
+          "formalLessonArc": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance.",
+          "formalLessonTarget": "Identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise water words and procedural language and sequence events and compare temperatures informally through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Investigate melting/freezing through safe fair comparisons and sequence evidence. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8048,17 +8119,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to water words and procedural language or sequence events and compare temperatures informally.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "investigate melting/freezing through safe fair comparisons and sequence evidence."
+          "formalLessonArc": "investigate melting/freezing through safe fair comparisons and sequence evidence.",
+          "formalLessonTarget": "Investigate melting/freezing through safe fair comparisons and sequence evidence"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate water, ice, and weather change by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Reason about evaporation and condensation without requiring boiling. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8093,17 +8165,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about water, ice, and weather change.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "reason about evaporation and condensation without requiring boiling."
+          "formalLessonArc": "reason about evaporation and condensation without requiring boiling.",
+          "formalLessonTarget": "Reason about evaporation and condensation without requiring boiling"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Ice investigation” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8138,17 +8211,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to ice investigation in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits."
+          "formalLessonArc": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits.",
+          "formalLessonTarget": "Connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about water, ice, and weather changes, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate state changes, evidence, data, weather reasoning, misconceptions, and safety. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8183,11 +8257,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety."
+          "formalLessonArc": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety.",
+          "formalLessonTarget": "Integrate state changes, evidence, data, weather reasoning, misconceptions, and safety"
         }
       ],
       "weeklyAssessment": {
@@ -8291,27 +8366,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How can water change?” and use at least one example to notice or communicate an idea related to water, ice, and weather changes.",
+            "target": "Identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance."
           },
           {
             "day": "Tuesday",
-            "target": "Practise water words and procedural language and sequence events and compare temperatures informally through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Investigate melting/freezing through safe fair comparisons and sequence evidence. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "investigate melting/freezing through safe fair comparisons and sequence evidence."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate water, ice, and weather change by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Reason about evaporation and condensation without requiring boiling. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "reason about evaporation and condensation without requiring boiling."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Ice investigation” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about water, ice, and weather changes, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate state changes, evidence, data, weather reasoning, misconceptions, and safety. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety."
           }
         ]
@@ -8343,7 +8418,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can we take care of shared places?” and use at least one example to notice or communicate an idea related to earth care and stewardship.",
+          "objective": "Identify material pathways and reject the idea that a recycling symbol guarantees local recycling. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8378,17 +8453,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about earth care and stewardship.",
-            "Attempts one activity connected to environmental vocabulary and shared writing or count/reuse materials and sort recycling."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling."
+          "formalLessonArc": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling.",
+          "formalLessonTarget": "Identify material pathways and reject the idea that a recycling symbol guarantees local recycling"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise environmental vocabulary and shared writing and count/reuse materials and sort recycling through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8423,17 +8499,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to environmental vocabulary and shared writing or count/reuse materials and sort recycling.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking."
+          "formalLessonArc": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking.",
+          "formalLessonTarget": "Use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate earth materials and human choices by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8468,17 +8545,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about earth materials and human choices.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints."
+          "formalLessonArc": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints.",
+          "formalLessonTarget": "Compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Recycled art build” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Reason from shared-place/habitat evidence and design a safe, community-scale improvement. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8513,17 +8591,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to recycled art build in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "reason from shared-place/habitat evidence and design a safe, community-scale improvement."
+          "formalLessonArc": "reason from shared-place/habitat evidence and design a safe, community-scale improvement.",
+          "formalLessonTarget": "Reason from shared-place/habitat evidence and design a safe, community-scale improvement"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about earth care and stewardship, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8558,11 +8637,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning."
+          "formalLessonArc": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning.",
+          "formalLessonTarget": "Integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning"
         }
       ],
       "weeklyAssessment": {
@@ -8666,27 +8746,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How can we take care of shared places?” and use at least one example to notice or communicate an idea related to earth care and stewardship.",
+            "target": "Identify material pathways and reject the idea that a recycling symbol guarantees local recycling. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling."
           },
           {
             "day": "Tuesday",
-            "target": "Practise environmental vocabulary and shared writing and count/reuse materials and sort recycling through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate earth materials and human choices by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Recycled art build” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Reason from shared-place/habitat evidence and design a safe, community-scale improvement. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "reason from shared-place/habitat evidence and design a safe, community-scale improvement."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about earth care and stewardship, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning."
           }
         ]
@@ -8719,7 +8799,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do people and things move?” and use at least one example to notice or communicate an idea related to transportation and engineering.",
+          "objective": "Identify pushes/pulls and describe changes in motion from evidence. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8754,17 +8834,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about transportation and engineering.",
-            "Attempts one activity connected to transportation words and labels or measure ramp distance."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "identify pushes/pulls and describe changes in motion from evidence."
+          "formalLessonArc": "identify pushes/pulls and describe changes in motion from evidence.",
+          "formalLessonTarget": "Identify pushes/pulls and describe changes in motion from evidence"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise transportation words and labels and measure ramp distance through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Run a fair toy-ramp comparison, measure from a common reference, and repeat trials. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8799,17 +8880,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to transportation words and labels or measure ramp distance.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials."
+          "formalLessonArc": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials.",
+          "formalLessonTarget": "Run a fair toy-ramp comparison, measure from a common reference, and repeat trials"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate push, pull, motion, and design testing by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Reason about wheels/axles, surfaces, friction, and design tradeoffs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8844,17 +8926,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about push, pull, motion, and design testing.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "reason about wheels/axles, surfaces, friction, and design tradeoffs."
+          "formalLessonArc": "reason about wheels/axles, surfaces, friction, and design tradeoffs.",
+          "formalLessonTarget": "Reason about wheels/axles, surfaces, friction, and design tradeoffs"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Ramp lab” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Design an accessible fictional transportation system/route around stated needs and constraints. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8889,17 +8972,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to ramp lab in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "design an accessible fictional transportation system/route around stated needs and constraints."
+          "formalLessonArc": "design an accessible fictional transportation system/route around stated needs and constraints.",
+          "formalLessonTarget": "Design an accessible fictional transportation system/route around stated needs and constraints"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about transportation and engineering, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -8934,11 +9018,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision."
+          "formalLessonArc": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision.",
+          "formalLessonTarget": "Integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision"
         }
       ],
       "weeklyAssessment": {
@@ -9042,27 +9127,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do people and things move?” and use at least one example to notice or communicate an idea related to transportation and engineering.",
+            "target": "Identify pushes/pulls and describe changes in motion from evidence. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "identify pushes/pulls and describe changes in motion from evidence."
           },
           {
             "day": "Tuesday",
-            "target": "Practise transportation words and labels and measure ramp distance through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Run a fair toy-ramp comparison, measure from a common reference, and repeat trials. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate push, pull, motion, and design testing by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Reason about wheels/axles, surfaces, friction, and design tradeoffs. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "reason about wheels/axles, surfaces, friction, and design tradeoffs."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Ramp lab” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Design an accessible fictional transportation system/route around stated needs and constraints. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "design an accessible fictional transportation system/route around stated needs and constraints."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about transportation and engineering, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision."
           }
         ]
@@ -9094,7 +9179,7 @@ window.KHAE_KINDERGARTEN_DATA = {
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How do people help a community work?” and use at least one example to notice or communicate an idea related to jobs, tools, and community helpers.",
+          "objective": "Infer community contributions from tasks/responsibilities rather than uniforms or stereotypes. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9129,17 +9214,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Communicates one relevant idea or question about jobs, tools, and community helpers.",
-            "Attempts one activity connected to question words and interview practice or count tools and make helper graph."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonArc": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes."
+          "formalLessonArc": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes.",
+          "formalLessonTarget": "Infer community contributions from tasks/responsibilities rather than uniforms or stereotypes"
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise question words and interview practice and count tools and make helper graph through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Match tools to purposes, training/authorization, and safety constraints. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9174,17 +9260,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Completes a guided example connected to question words and interview practice or count tools and make helper graph.",
-            "Shows or communicates a strategy using an accessible representation."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonArc": "match tools to purposes, training/authorization, and safety constraints."
+          "formalLessonArc": "match tools to purposes, training/authorization, and safety constraints.",
+          "formalLessonTarget": "Match tools to purposes, training/authorization, and safety constraints"
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate goods/services; helpers and responsibilities by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9219,17 +9306,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Records or communicates at least one observation or piece of evidence about goods/services; helpers and responsibilities.",
-            "Connects a conclusion to what was observed, tested, sorted, or compared."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonArc": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions."
+          "formalLessonArc": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions.",
+          "formalLessonTarget": "Distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions"
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Community helper badge” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Practice consent-aware questions and map interdependent community roles from provided sources. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9264,17 +9352,18 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Creates or contributes to community helper badge in an accessible form.",
-            "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonArc": "practice consent-aware questions and map interdependent community roles from provided sources."
+          "formalLessonArc": "practice consent-aware questions and map interdependent community roles from provided sources.",
+          "formalLessonTarget": "Practice consent-aware questions and map interdependent community roles from provided sources"
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about jobs, tools, and community helpers, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning. The learner shows this through a concrete example, model, representation, or accessible explanation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -9309,11 +9398,12 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
-            "Explains, shows, or selects one piece of evidence and one next learning step."
+            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
+            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonArc": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning."
+          "formalLessonArc": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning.",
+          "formalLessonTarget": "Integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning"
         }
       ],
       "weeklyAssessment": {
@@ -9417,27 +9507,27 @@ window.KHAE_KINDERGARTEN_DATA = {
         "weeklyProgression": [
           {
             "day": "Monday",
-            "target": "Introduce the unit question “How do people help a community work?” and use at least one example to notice or communicate an idea related to jobs, tools, and community helpers.",
+            "target": "Infer community contributions from tasks/responsibilities rather than uniforms or stereotypes. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes."
           },
           {
             "day": "Tuesday",
-            "target": "Practise question words and interview practice and count tools and make helper graph through guided, hands-on examples, then explain or show one strategy.",
+            "target": "Match tools to purposes, training/authorization, and safety constraints. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "match tools to purposes, training/authorization, and safety constraints."
           },
           {
             "day": "Wednesday",
-            "target": "Investigate goods/services; helpers and responsibilities by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+            "target": "Distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions."
           },
           {
             "day": "Thursday",
-            "target": "Apply the week’s learning by creating or revising “Community helper badge” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+            "target": "Practice consent-aware questions and map interdependent community roles from provided sources. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "practice consent-aware questions and map interdependent community roles from provided sources."
           },
           {
             "day": "Friday",
-            "target": "Demonstrate transfer of the week’s learning through an age-appropriate task about jobs, tools, and community helpers, use evidence or a strategy independently where possible, and reflect on a next step.",
+            "target": "Integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning. The learner shows this through a concrete example, model, representation, or accessible explanation.",
             "lessonFocus": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning."
           }
         ]
