@@ -13,10 +13,33 @@
     "80 percent mastery threshold unchanged",
     "Beta helper coverage",
     "no direct external fetch from learner runtime",
-    "no public Academy URL as operational authority"
+    "no public Academy URL as operational authority",
+    "CI actions pinned to full commit SHAs",
+    "checkout credentials not persisted",
+    "CI workflow permissions read-only",
+    "learner runtime has no direct third-party scripts or fetch dependencies"
   ],
   "operationalNode": false,
   "operationalPython": false,
   "githubActionsAuthority": false,
-  "legacyEvidence": "evidence/legacy-maintenance/"
+  "legacyEvidence": "evidence/legacy-maintenance/",
+  "developmentTimeDependencies": {
+    "authority": "validation-only",
+    "githubActionsRunner": "github-hosted ubuntu-latest; external development-time service, not learner runtime",
+    "actions": [
+      {
+        "name": "actions/checkout",
+        "version": "v7.0.1",
+        "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+        "persistCredentials": false
+      },
+      {
+        "name": "actions/setup-node",
+        "version": "v7.1.0",
+        "commit": "949feb2413d6458794dcd2491c4babbbce0c15c1",
+        "nodeVersion": "20"
+      }
+    ],
+    "note": "These are pinned third-party CI dependencies. The learner-facing runtime does not depend on GitHub Actions or Node."
+  }
 }
