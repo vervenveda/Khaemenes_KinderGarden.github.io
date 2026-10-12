@@ -2753,8 +2753,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies the repeating unit in a supplied pattern and distinguishes it from a sequence with no repeating rule.",
+            "Extends an AB, AAB, or ABC pattern by at least two elements and checks the order against the rule."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "discover repeating units and distinguish pattern from randomness.",
@@ -2799,8 +2799,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Shows a steady beat in an accessible way and distinguishes it from a changing rhythm.",
+            "Counts or represents syllables in a familiar word and identifies rhyme by the ending sound, not by matching letters."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "connect beat, rhythm, syllables, and rhyme without confusing them.",
@@ -2845,8 +2845,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Represents the same pattern rule in two forms, such as color and movement or picture and sound.",
+            "Explains or shows which feature must stay the same for a translation to preserve the rule."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "translate one pattern rule across visual, tactile, sound, and movement forms.",
@@ -2891,8 +2891,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Creates a short original pattern in a chosen mode and labels or communicates its repeating unit.",
+            "Uses feedback or self-checking to revise one pattern element while preserving the intended rule."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "design and rehearse an original pattern performance with respectful choices.",
@@ -2937,8 +2937,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “patterns, music, and movement” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Finds and repairs one deliberately incorrect element in a pattern and explains what rule it broke.",
+            "Transfers a pattern rule to a fresh example and describes one piece of evidence that it is correct."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery.",
@@ -3133,8 +3133,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Describes a family or caring community example without assuming every household has the same structure or traditions.",
+            "Sequences three events from a fictional or voluntarily chosen story and supports the order with a story clue."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "understand that families and caring communities can take many forms.",
@@ -3179,8 +3179,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies a teller/source or distinguishes a remembered event from a fictional event when the source is provided.",
+            "Measures two objects from a common starting point using equal nonstandard units and reports the comparison."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "listen to and sequence an oral-history or fictional past/present story.",
@@ -3225,8 +3225,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Sorts examples of a tradition as a repeated practice while recognizing practices vary and can change.",
+            "Explains one respectful similarity or difference without ranking families or treating one practice as universal."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "compare home/building objects using nonstandard length and height measures.",
@@ -3271,8 +3271,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Creates a past/present story sequence or representation that protects private information.",
+            "Uses a repeated equal-size unit to compare a pair of home/building models and explains why the comparison is fair."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "explore traditions as meaningful repeated practices that can vary and change.",
@@ -3317,8 +3317,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “families, homes, and traditions” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Integrates a story sequence and one fair measurement in a new fictional scenario.",
+            "Explains one belonging/privacy boundary and supports it with a concrete example."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate story sequence, measurement, past/present, belonging, privacy, and respect.",
@@ -3513,8 +3513,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Explains that a map is a selective representation and points to one feature it includes or omits.",
+            "Uses map symbols to identify at least two features on a simple fictional map."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "understand a map as a selective model, not the place itself.",
@@ -3559,8 +3559,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Creates a legend/key where each symbol has a clear meaning and matches it consistently to map features.",
+            "Adds a label or symbol to a new map and explains how it helps another person interpret the representation."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "design symbols, labels, and a readable legend/key.",
@@ -3605,8 +3605,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Follows a route of at least two steps using consistent positional/directional language.",
+            "Compares two routes using the same unit or step-count method and explains what the numbers represent."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "follow, describe, and compare routes using consistent model units.",
@@ -3651,8 +3651,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Designs a fictional community map with at least one accessible route or varied user need represented.",
+            "Explains how one map choice serves a stated need and identifies one limitation of the map."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "plan a fictional community around varied needs and accessible routes.",
@@ -3697,8 +3697,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “maps, places, and community” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Navigates an unfamiliar simple map, states the route rule, and checks the destination against the model.",
+            "Tests and revises one symbol, label, or route after noticing ambiguity; does not share real home-location details."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "navigate, explain, test, revise, and reflect.",
@@ -3893,8 +3893,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Labels or points to at least two plant structures and connects one structure to a plausible function.",
+            "Distinguishes an observed plant feature from a prediction about what will happen next."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "investigate seeds and plant structures/functions.",
@@ -3939,8 +3939,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Matches plant needs to resources and corrects one misconception using a provided example.",
+            "Explains why light, water, and suitable conditions are resources rather than plant parts."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "distinguish plant needs, resources, and common misconceptions.",
@@ -3985,8 +3985,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Records change from a consistent baseline using a dated drawing, mark, or measurement.",
+            "Compares two observations and describes what changed without claiming one observation proves the cause."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "measure and journal change from a consistent baseline.",
@@ -4031,8 +4031,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies what was kept the same and what was changed in a simple plant-care comparison.",
+            "Uses safe, appropriate plant-care materials and explains one responsible care choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "use fair-test thinking, evidence, and responsible care.",
@@ -4077,8 +4077,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “plants and gardens” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses a sequence of plant observations to support a conclusion about growth or needs.",
+            "Identifies one limit or next question that would need more observations to answer."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate structures, needs, sequence, measurement, evidence, and stewardship.",
@@ -4273,8 +4273,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Describes two visible animal structures or behaviors and separates observation from guess.",
+            "Connects one structure or behavior to a possible function using cautious, evidence-based language."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "distinguish observations about animal structures and behaviors from guesses.",
@@ -4319,8 +4319,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "States a sorting rule before classifying animal examples and applies the rule consistently.",
+            "Counts and compares the resulting groups accurately, explaining the comparison used."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "classify animals by stated evidence-based rules and count/compare groups.",
@@ -4365,8 +4365,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Matches an animal to a habitat resource or condition and identifies the evidence clue.",
+            "Explains why a habitat is more than scenery by naming a need such as food, water, shelter, or conditions."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "connect habitat resources and conditions to animal needs.",
@@ -4411,8 +4411,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Builds or draws a habitat model with at least two features linked to an animal need.",
+            "Tests the model against a stated need and revises or explains one design choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "engineer and revise a habitat model that explains its choices.",
@@ -4457,8 +4457,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “animals and habitats” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Classifies a new animal example using a stated rule and supports a habitat match with evidence.",
+            "Names one thing a picture/model cannot prove and demonstrates humane observation boundaries."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate needs, classification, habitat fit, evidence, and humane care.",
@@ -4653,8 +4653,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Retells a familiar or fictional story with beginning, middle, and end in a sensible order.",
+            "Uses one story detail to support an explanation of what happened or why."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "build and retell a clear beginning-middle-end narrative.",
@@ -4699,8 +4699,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Models a total of up to five as two parts with objects, drawings, or marks.",
+            "Changes one part while keeping the whole constant and verifies the total by recounting."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "compose and take apart quantities to 5 using number stories.",
@@ -4745,8 +4745,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies a visible act of care and names the need or effect it may address.",
+            "Avoids ranking people/jobs and recognizes that helping may require consent or boundaries."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "investigate visible acts of community care without ranking people or jobs.",
@@ -4791,8 +4791,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Creates a specific appreciation message or equivalent representation tied to a genuine observed action.",
+            "Communicates appreciation without requiring a gift, public performance, personal disclosure, or reciprocal promise."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "create an authentic appreciation message or equivalent chosen response.",
@@ -4837,8 +4837,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “gratitude, giving, and storytelling” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Combines an ordered story and a number model to five in a new example.",
+            "Explains one care/consent boundary and one piece of evidence supporting the interpretation."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate story, number, care, boundaries, and reflection.",
@@ -5033,8 +5033,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies a rhyming pair and generates or selects another example in an appropriate language pathway.",
+            "Explains that rhyme depends on spoken sound, not on matching final letters."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify and generate rhyme in an appropriate language pathway.",
@@ -5079,8 +5079,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Segments a familiar word into spoken syllables and represents each syllable with one tap, token, or mark.",
+            "Distinguishes the number of syllables from the number of letters in an example."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "segment and count syllables without confusing syllables with letters.",
@@ -5125,8 +5125,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies a beginning sound in a taught example and distinguishes it from the letter name or spelling.",
+            "Uses a picture, token, sign, or spoken response to sort examples by beginning sound without accent-based judgment."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "notice beginning sounds and distinguish sound from spelling.",
@@ -5171,8 +5171,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Creates a word-play or sound pattern, states the rule, and supplies a valid next example.",
+            "Checks a near-miss example and explains which part does not follow the stated rule."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "create word-play patterns and explain the rule.",
@@ -5217,8 +5217,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “sounds, rhymes, and word play” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Corrects one example where rhyme, syllable, onset, letter, or spelling was confused.",
+            "Transfers the correct sound concept to a fresh word/picture and communicates the distinguishing clue."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "retrieve, compare, correct misconceptions, and prepare for mastery.",
@@ -5413,8 +5413,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Compares two lengths or heights from the same starting point and states which is longer/shorter or equal.",
+            "Explains why moving the starting point would make the comparison unfair."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "compare length/height directly from a common starting point.",
@@ -5459,8 +5459,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Measures an object using repeated equal-size units with no gaps or overlaps and names the unit.",
+            "Explains why changing the unit size changes the count even when the object does not change."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "measure with repeated equal-size nonstandard units and report the unit.",
@@ -5505,8 +5505,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Separately identifies evidence about length, weight, or capacity rather than treating them as the same attribute.",
+            "Makes a prediction then compares it with a safe measurement or demonstration."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "investigate heavier/lighter and capacity without confusing size, weight, and amount held.",
@@ -5551,8 +5551,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Tests a tabletop bridge model against one stated constraint using a consistent method.",
+            "Records a result and changes one design feature, then explains what the comparison suggests."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "design, test, measure, and revise a tabletop model bridge under a stated constraint.",
@@ -5597,8 +5597,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “measurement and builders” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses consistent units and evidence to compare two model designs fairly.",
+            "Names one limit of the test and one next revision or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate fair measurement, evidence, engineering decisions, and reflection.",
@@ -5793,8 +5793,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Classifies a fictional scenario as a need, want, or context-dependent choice and gives a reason.",
+            "Explains a choice without shaming different resources, cultures, bodies, or family circumstances."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "examine needs, wants, and context without shaming different lives.",
@@ -5839,8 +5839,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Counts tokens one-to-one and records a total accurately.",
+            "Compares two token amounts and explains what the token model represents and does not represent."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "count, represent, and compare token amounts with one-to-one correspondence.",
@@ -5885,8 +5885,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Distinguishes a good from a service using a concrete example and reason.",
+            "Traces how a provided example of work or a resource can help meet a need without ranking jobs."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "distinguish goods/services and trace how work/resources help meet needs.",
@@ -5931,8 +5931,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Chooses among fictional options under a stated token constraint and explains a tradeoff.",
+            "Shows how saving, spending, or voluntary sharing changes the available quantity in the model."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing.",
@@ -5977,8 +5977,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “needs, wants, money, and choices” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Solves a new fictional choice problem using quantities and a stated need or constraint.",
+            "Explains why token amount does not measure human worth and identifies one reasonable alternative choice."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate quantity, priorities, choice reasoning, dignity, and reflection.",
@@ -6173,8 +6173,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies a light source, an opaque object, and a surface/screen in a shadow model.",
+            "Explains that a shadow is observed where light is blocked, without treating the shadow as a separate object."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify light sources and explain how an opaque object can block light to form a shadow.",
@@ -6219,8 +6219,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Changes one source/object/screen position while keeping the rest as consistent as possible.",
+            "Predicts and describes one resulting shadow change using observed evidence."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "change source/object/screen position and observe how the shadow changes.",
@@ -6265,8 +6265,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Measures two shadow/model lengths from the same baseline with equal units.",
+            "Compares the results and states one variable or condition that could affect the measurement."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "measure and compare shadow/model lengths using a consistent baseline and unit.",
@@ -6311,8 +6311,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses a model of Earth turning to explain day/night at a simple level.",
+            "Distinguishes a model representation from a literal scale picture and avoids claiming local weather proves a season."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype.",
@@ -6357,8 +6357,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “winter, light, and shadows” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Explains a shadow result using the source-object-screen relationship and a recorded comparison.",
+            "Identifies a safe observation method and one thing the experiment cannot establish."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "retrieve, explain, repair misconceptions, and integrate evidence safely.",
@@ -6553,8 +6553,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Attempts a low-stakes retrieval sample and labels evidence as secure, emerging, or needs support without awarding mastery from the snapshot.",
+            "Uses the snapshot to select one specific next teaching target rather than a global learner label."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "take a low-stakes retrieval snapshot across first-semester domains.",
@@ -6599,8 +6599,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Practices one identified literacy/language target with explicit modeling and guided support.",
+            "Demonstrates the target on a fresh parallel example after practice and notes what support was useful."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "target literacy/language needs with explicit remediation and transfer.",
@@ -6645,8 +6645,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Represents a math problem with objects, drawings, marks, or numerals and explains the relationship.",
+            "Retries a changed-but-equivalent problem to show whether the strategy transfers."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "target mathematics/quantitative reasoning needs with concrete representations.",
@@ -6691,8 +6691,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Connects a claim to one observation, model feature, or provided source across a small integrated task.",
+            "Names one limitation or safety boundary in the inquiry/design example."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "integrate inquiry, community, design, evidence, safety, and model reasoning.",
@@ -6737,8 +6737,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “midyear review and celebration” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Compares the first sample and fresh follow-up task to identify growth or a remaining gap.",
+            "Identifies one readiness strength and one next target; formal midyear credit still comes only from the separate mastery gate."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery.",
@@ -6933,8 +6933,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Compares their own earlier and current work and names one observed change without peer ranking.",
+            "Distinguishes a visible piece of evidence from a judgment such as 'good' or 'bad'."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "compare the learner’s own past/current evidence and describe change without peer ranking.",
@@ -6979,8 +6979,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Sets one small, observable learning goal and identifies a strategy or support that may help.",
+            "Explains how success could be noticed or recorded in a concrete example."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "design a small, observable learning goal and identify strategies/supports.",
@@ -7025,8 +7025,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Extends a forward or backward number sequence and explains the step rule.",
+            "Compares two valid strategies without using speed as the measure of understanding."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "investigate forward/backward number sequences and compare valid strategies without speed pressure.",
@@ -7071,8 +7071,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Tests a strategy, reviews the result, and decides whether to keep or revise it.",
+            "Uses help-seeking, rest, or a changed tool appropriately when the first attempt is not effective."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed.",
@@ -7117,8 +7117,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “new year, goals, and growth mindset” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Connects goal, strategy, and a piece of observed evidence in a short reflection.",
+            "Chooses a next step based on what the evidence shows, not a fixed-ability label."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection.",
@@ -7313,8 +7313,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies whether a provided passage is a story, source note, or retelling and names what is known versus uncertain.",
+            "Uses a source/teller/author detail accurately when one is provided."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "distinguish story, source, teller/author, version, retelling, and uncertain origin.",
@@ -7359,8 +7359,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Compares two provided versions by character, setting, or event sequence and points to a specific detail.",
+            "Separates a textual/picture clue from an assumption that is not supported."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "compare character, setting, sequence, and evidence across two provided stories/versions.",
@@ -7405,8 +7405,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses a fictional map/place clue to explain one story setting and states one map limitation.",
+            "Avoids presenting uncertain origins or cultural claims as facts."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "connect story context to maps/place carefully while revisiting map purpose and limits.",
@@ -7451,8 +7451,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Counts or compares a simple feature/motif across two provided story versions and records the comparison.",
+            "Creates an original variation using a general motif without copying a restricted passage."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material.",
@@ -7497,8 +7497,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “stories around the world” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Combines a source distinction, story detail, and simple comparison in a fresh task.",
+            "Names one respectful context or attribution choice that matters when sharing a story."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context.",
@@ -7693,8 +7693,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses at least two clues beyond movement or appearance to discuss whether an example is living.",
+            "States what evidence is present and what remains unknown."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "gather multiple evidence clues for living systems instead of using motion or appearance alone.",
@@ -7739,8 +7739,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Sorts examples into living now, once-living materials, and never-living examples using the taught definitions.",
+            "Explains an example where appearance alone is misleading."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "distinguish living now, once-living/material from living things, and never-living examples.",
@@ -7785,8 +7785,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "States a classification rule before sorting, then tallies or graphs a provided sample.",
+            "Uses an uncertainty category when the sample does not support a confident classification."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category.",
@@ -7831,8 +7831,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Tests the rule against a counterexample such as a robot, crystal, fire, or dormant seed model.",
+            "Revises or qualifies a classification when the evidence does not fit the original rule."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models.",
@@ -7877,8 +7877,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “living and nonliving things” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Explains a classification with evidence, data, and an appropriate uncertainty note.",
+            "Names a safe and humane way to observe living things without disturbing them."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference.",
@@ -8073,8 +8073,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Classifies water as ice, liquid water, or water vapor and distinguishes state from substance identity.",
+            "Explains that visible mist/droplets are not the same thing as invisible water vapor."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance.",
@@ -8119,8 +8119,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Orders a safe melting/freezing sequence and identifies what changed and what stayed water.",
+            "Compares two observations from a fair setup without overclaiming causation."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "investigate melting/freezing through safe fair comparisons and sequence evidence.",
@@ -8165,8 +8165,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Explains evaporation or condensation with a safe model or supplied images and no boiling activity.",
+            "Distinguishes a directly observed event from an inferred process when the process itself is not visible."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "reason about evaporation and condensation without requiring boiling.",
@@ -8211,8 +8211,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Connects a supplied cloud/precipitation illustration to a water-change idea and names a model limitation.",
+            "Uses weather data or a sequence clue to support the explanation without treating the model as a complete forecast."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits.",
@@ -8257,8 +8257,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “water, ice, and weather changes” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses evidence to explain one state change and sequence the process accurately.",
+            "Identifies one misconception, safety limit, or additional observation that could refine the explanation."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety.",
@@ -8453,8 +8453,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Explains that a recycling symbol does not guarantee acceptance by a local recycling program.",
+            "Uses the stated classroom/local rule rather than guessing when an item is uncertain."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling.",
@@ -8499,8 +8499,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Sorts a clean sample or picture set by a stated rule, counts groups, and records uncertain items separately.",
+            "Explains how the rule determines the grouping and does not treat the symbol alone as proof."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking.",
@@ -8545,8 +8545,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Compares reduce, reuse, repair, recycle, compost, or disposal for a fictional item under a stated constraint.",
+            "Gives a reason that includes safety, material, or local-program information."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints.",
@@ -8591,8 +8591,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Proposes a small shared-place improvement and points to one observation or provided source that supports it.",
+            "Keeps the plan safe and accessible and avoids blaming individuals for system-level constraints."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "reason from shared-place/habitat evidence and design a safe, community-scale improvement.",
@@ -8637,8 +8637,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “earth care and stewardship” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Uses material pathway reasoning, one math representation, and a stated local rule in a new scenario.",
+            "Explains when to ask an adult or consult local guidance instead of making an unsupported claim."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning.",
@@ -8834,8 +8834,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Identifies a push or pull and describes the observed change in motion.",
+            "Connects the motion claim to a specific start/end observation rather than a guess."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify pushes/pulls and describe changes in motion from evidence.",
@@ -8880,8 +8880,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Runs or interprets repeated ramp trials from a common start and changes one intended variable.",
+            "Measures outcomes consistently and reports variation or uncertainty instead of selecting only one favorable trial."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials.",
@@ -8926,8 +8926,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Explains a plausible role of wheels, axles, surfaces, or friction in the tested design.",
+            "Supports the explanation with a comparison or model feature and avoids assuming one design works best everywhere."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "reason about wheels/axles, surfaces, friction, and design tradeoffs.",
@@ -8972,8 +8972,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Creates an accessible fictional route/system that meets at least one stated need and one constraint.",
+            "Explains one tradeoff and how the design accommodates a different user need."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "design an accessible fictional transportation system/route around stated needs and constraints.",
@@ -9018,8 +9018,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “transportation and engineering” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Combines force/motion evidence, a consistent measurement, and one design revision in a new task.",
+            "Limits the conclusion to the tested sample and names one safe next test."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision.",
@@ -9214,8 +9214,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Infers a community contribution from tasks or responsibilities rather than clothing, uniform, or stereotype.",
+            "Uses a concrete example to explain how a role can help a community."
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes.",
@@ -9260,8 +9260,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Matches a familiar tool to a task and identifies when training, permission, or safety guidance is needed.",
+            "Rejects a tool/task match that violates the stated safety or authorization condition."
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "match tools to purposes, training/authorization, and safety constraints.",
@@ -9306,8 +9306,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Sorts examples of goods and services using a stated rule and represents sample counts in a simple graph.",
+            "Explains what the small sample shows and avoids generalizing beyond the provided evidence."
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions.",
@@ -9352,8 +9352,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Forms a respectful, consent-aware question for a fictional helper scenario and protects private information.",
+            "Uses a provided source or role/task clue to show how different community roles depend on one another."
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "practice consent-aware questions and map interdependent community roles from provided sources.",
@@ -9398,8 +9398,8 @@ window.KHAE_KINDERGARTEN_DATA = {
           "familyConnection": "At home, notice one example of “jobs, tools, and community helpers” and invite the child to tell, draw, count, or act it out.",
           "evidence": "Adult observation, child explanation, work sample, oral language, cooperative play, and assessment item.",
           "successCriteria": [
-            "Demonstrates the named skill or reasoning in a concrete, pictured, modeled, or otherwise accessible task.",
-            "Communicates one relevant rule, clue, observation, comparison, measurement, or reason that supports the response."
+            "Integrates task, tool, goods/service, and safety reasoning in an unfamiliar scenario.",
+            "Explains one contribution without ranking work and identifies one privacy or consent boundary."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning.",
