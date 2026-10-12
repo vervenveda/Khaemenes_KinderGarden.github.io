@@ -83,10 +83,11 @@ External science websites that remain in the repository are optional enrichment
 links only. They are not curriculum, mastery, family, mentor, or persistence
 authority.
 
-## Maintenance sovereignty
+## Maintenance and CI dependency boundary
 
-GitHub Actions and Node maintenance scripts from the prior repository were moved
-to `evidence/legacy-maintenance/` and are no longer operational authority.
+The learner runtime does not depend on GitHub Actions or Node. The repository does retain one GitHub Actions workflow for developer-time validation only; this workflow is not learner, identity, mastery, or persistence authority. Because CI runs on GitHub-hosted infrastructure and uses third-party Actions, it is a development-time external dependency, not a sovereign runtime component.
+
+Hardening applied: `actions/checkout` and `actions/setup-node` are pinned to full commit SHAs, checkout credentials are not persisted, and the workflow grants only `contents: read`. Local/native validation remains the independent acceptance path; the CI result is supporting evidence, not operational authority.
 
 Current validation requirements are declared in:
 
