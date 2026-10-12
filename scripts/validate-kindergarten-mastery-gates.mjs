@@ -92,6 +92,7 @@ assert.ok(mastery.includes('G.recordMilestoneEvidence({kind:mode,met:s.checked,t
 assertInlineScriptsParse("Mastery surface",mastery);
 
 assert.ok(mastery.includes('../data/final-mastery.js')&&mastery.includes('FINAL.length===50')&&mastery.includes('40 of 50'),"final mastery UI must use canonical 50-item rubric");
+const courseData=JSON.parse(courseJsonSource);
 const finalWindow={};
 new Function("window",finalSource)(finalWindow);
 const FINAL=finalWindow.KHAE_KINDER_FINAL_MASTERY;
@@ -108,7 +109,6 @@ assert.equal(courseData.assessments.final.rubricSource,"curriculum/data/final-ma
 assert.ok(FINAL.some(row=>row[2]===true),"final readiness rubric must include essential core criteria");
 assert.ok(FINAL.every(row=>row.length>=2&&String(row[0]).trim()&&String(row[1]).trim()),"each final criterion must have a label and observable evidence prompt");
 
-const courseData=JSON.parse(courseJsonSource);
 const courseJsWindow={};
 new Function("window",courseJsSource)(courseJsWindow);
 assert.deepEqual(courseJsWindow.KHAE_KINDERGARTEN_DATA,courseData,"course-data.js must remain semantically synchronized with course-data.json");
