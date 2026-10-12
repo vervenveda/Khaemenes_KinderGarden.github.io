@@ -15,6 +15,13 @@ const finalSource=read("curriculum/data/final-mastery.js");
 const courseJsonSource=read("curriculum/data/course-data.json");
 const courseJsSource=read("curriculum/data/course-data.js");
 const TAG="data-khaemenes-kindergarten-formal-gate";
+const workflow=read(".github/workflows/kindergarten-formal-gate-rollout.yml");
+assert.match(workflow,/uses:\\s+actions\\/checkout@[0-9a-f]{40}/,"checkout action must be pinned to a full commit SHA");
+assert.match(workflow,/uses:\\s+actions\\/setup-node@[0-9a-f]{40}/,"setup-node action must be pinned to a full commit SHA");
+assert.match(workflow,/persist-credentials:\\s*false/,"checkout credentials must not persist into later workflow steps");
+assert.match(workflow,/permissions:\\s*\\n\\s+contents:\\s+read/,"validation workflow must use read-only repository permissions");
+assert.ok(!workflow.includes("actions/checkout@v4")&&!workflow.includes("actions/setup-node@v4"),"floating action tags must not be reintroduced");
+
 
 const rubricWindow={};
 new Function("window",rubricSource)(rubricWindow);
