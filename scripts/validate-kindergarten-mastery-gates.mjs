@@ -252,6 +252,10 @@ for(let unit=8;unit<=25;unit++){
   const unitData=courseData.units.find(item=>Number(item.unit)===unit);
   assert.equal(arcRows.length,5,"Week "+unit+" formal learning arc must define five daily focus statements");
   assert.deepEqual(unitData.lessons.map(lesson=>lesson.formalLessonArc),arcRows.map(row=>row.goal),"Week "+unit+" preview progression must match the formal learning arc");
+  const specificTargets=arcRows.map(row=>{const clean=row.goal.replace(/[.!?]+$/,"");return clean.charAt(0).toUpperCase()+clean.slice(1);});
+  assert.deepEqual(unitData.lessons.map(lesson=>lesson.formalLessonTarget),specificTargets,"Week "+unit+" formal learning targets must align to the day-specific arc");
+  assert.ok(unitData.lessons.every((lesson,index)=>lesson.objective===specificTargets[index]+". The learner shows this through a concrete example, model, representation, or accessible explanation."),"Week "+unit+" objectives must contain the specific arc plus an observable demonstration expectation");
+  assert.ok(unitData.lessons.every(lesson=>Array.isArray(lesson.successCriteria)&&lesson.successCriteria.length>=2),"Week "+unit+" objectives must have observable evidence criteria");
   assert.equal(new Set(arcRows.map(row=>row.goal)).size,5,"Week "+unit+" learning arc should establish five distinct daily purposes");
 }
 
