@@ -199,8 +199,7 @@ qa(".save-day").forEach(b=>b.addEventListener("click",()=>{
  catch(e){feedback.textContent="Evidence not saved: "+String(e&&e.message||e);}
 }));
 window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);
-window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);
-refresh();
+window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);window.addEventListener("khaemenes-kindergarten-formal-gate-open",refresh);refresh();
 })();
 </script>
 </body>
