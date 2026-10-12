@@ -258,6 +258,13 @@ for(const dir of lessonDirs){
   const html=read(canonical);
   assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`${canonical} must fail closed in head`);
   assert.ok(html.includes('fetch("formal-content.html"'),`${canonical} may hydrate only after gate opens`);
+  const formalHtml=read(preserved);
+  assert.ok(formalHtml.includes('src="../../../assets/vnv-beta-link.js"'),`${preserved} must load beta script relative to repository root`);
+  assert.ok(!formalHtml.includes('src="/assets/vnv-beta-link.js"'),`${preserved} must not use a project-hosting root-absolute asset URL`);
+  if(Number(dir.slice(5))>=5&&Number(dir.slice(5))<=25){
+    assert.ok(formalHtml.includes(`../../mastery/index.html?unit=${Number(dir.slice(5))}`),`${preserved} must link to the explicit mastery index file`);
+    assert.ok(!formalHtml.includes("../../mastery/?unit="),`${preserved} must not depend on directory-index URL normalization`);
+  }
 }
 
 
@@ -267,6 +274,17 @@ assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-ev
 
 
 assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progression:'),"curriculum preview must display the formal lesson progression arc when present");
+const masteryPage=read("curriculum/mastery/index.html");
+assert.ok(masteryPage.includes('src="../../assets/vnv-beta-link.js"'),"canonical mastery page must load beta script relative to repository root");
+assert.ok(!masteryPage.includes('src="/assets/vnv-beta-link.js"'),"canonical mastery page must not use a root-absolute asset path");
+for(const [path,target,label] of [
+ ["curriculum/assessments/midterm.html","../mastery/index.html?milestone=midterm","Open Current Midyear Demonstration"],
+ ["curriculum/assessments/final-exam.html","../mastery/index.html?milestone=final","Open Current Final Demonstration"],
+ ["curriculum/assessments/weekly-assessments.html","../index.html#units","Open Weekly Curriculum and Mastery"]
+]){
+  const page=read(path);
+  assert.ok(page.includes('href="'+target+'"')&&page.includes(label),path+" must provide a working link to the current learner path");
+}
 
 
 {
