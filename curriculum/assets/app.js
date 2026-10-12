@@ -38,9 +38,10 @@
         ${lessons.slice(0,5).map((lesson,index)=>`
           <div class="preview-day">
             <strong>${esc(lesson.day||["Monday","Tuesday","Wednesday","Thursday","Friday"][index])} · ${esc(lesson.title||`Lesson ${index+1}`)}</strong>
-            <span>${unit.verticalAlignment?`<div class="vertical-map"><strong>Builds on:</strong> ${esc(unit.verticalAlignment.before)}<br><strong>Deepens:</strong> ${esc(unit.verticalAlignment.deepen)}<br><strong>Transfer check:</strong> ${esc(unit.verticalAlignment.transfer)}<br><strong>Prepares for:</strong> ${esc(unit.verticalAlignment.next)}<br><strong>Responsive support:</strong> ${esc(unit.verticalAlignment.support)}</div>`:""}${esc("Learning target: "+(lesson.objective||"Integrated Kinder Garden learning block."))}${lesson.formalLessonArc?`<br><strong>Lesson progression:</strong> ${esc(lesson.formalLessonArc)}`:""}${lesson.successCriteria?.length?`<br><strong>Success looks like:</strong> ${lesson.successCriteria.map(esc).join(" ")}`:""}${lesson.workshop?`<br><strong>Workshop:</strong> ${esc(lesson.workshop)}`:""}</span>
+            <span>${esc("Learning target: "+(lesson.objective||"Integrated Kinder Garden learning block."))}${lesson.formalLessonArc?`<br><strong>Lesson progression:</strong> ${esc(lesson.formalLessonArc)}`:""}${lesson.successCriteria?.length?`<br><strong>Success looks like:</strong> ${lesson.successCriteria.map(esc).join(" ")}`:""}${lesson.workshop?`<br><strong>Workshop:</strong> ${esc(lesson.workshop)}`:""}</span>
           </div>`).join("")}
       </div>
+      ${unit.verticalAlignment?`<div class="vertical-map"><strong>Builds on:</strong> ${esc(unit.verticalAlignment.before)}<br><strong>Deepens:</strong> ${esc(unit.verticalAlignment.deepen)}<br><strong>Transfer check:</strong> ${esc(unit.verticalAlignment.transfer)}<br><strong>Prepares for:</strong> ${esc(unit.verticalAlignment.next)}<br><strong>Responsive support:</strong> ${esc(unit.verticalAlignment.support)}</div>`:""}
     </details>`;
   }
 
