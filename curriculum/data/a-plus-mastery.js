@@ -302,6 +302,138 @@
       ["Community system interdependence","Maps or explains at least three roles/resources in a fictional community service/system and identifies a dependency between them without ranking a single helper as working alone or being inherently more important.",true],
       ["Integrated work dignity and safety explanation","Integrates task/source evidence, paid/unpaid contribution, tool function/safety, goods/services, checked data, respectful questions/privacy, and system interdependence while rejecting occupational stereotypes and unsafe real-work imitation.",true]
     ]
+    26:[
+      ["Symbol meaning","Explains or shows what a classroom/community symbol is intended to communicate.",true],
+      ["Symbol evidence","Uses visible features or stated context as evidence for an interpretation."],
+      ["Rule-based sorting","Sorts symbols by a named feature and checks each item against the rule.",true],
+      ["Symbol comparison","Compares two symbols and identifies a meaningful similarity or difference."],
+      ["Context transfer","Interprets an unfamiliar, fictional symbol using context clues rather than assuming one universal meaning."],
+      ["Belonging and respectful use","Explains that symbols can mean different things to different groups and uses them respectfully.",true],
+      ["Original emblem design","Creates an original symbol with at least two purposeful features."],
+      ["Design explanation","Explains or represents why a feature was selected."],
+      ["Classroom agreement","Connects a shared symbol or agreement to a safe, respectful action.",true],
+      ["Reflection and revision","Reviews an interpretation or design and communicates one improvement."]
+    ],
+    27:[
+      ["Number-story comprehension","Identifies what quantities represent in a fictional market or everyday number story.",true],
+      ["Compose numbers to 10","Represents a total to 10 as two or more parts using objects, marks, or numerals.",true],
+      ["Decompose and verify","Shows more than one valid part-part-whole arrangement and verifies the total."],
+      ["Counting correspondence","Counts tokens or counters with one-to-one correspondence."],
+      ["Compare quantities","Compares two represented quantities accurately.",true],
+      ["Goods and services","Distinguishes a good from a service using an example and a reason."],
+      ["Choice and tradeoff","Chooses among fictional options with a stated constraint and explains the tradeoff."],
+      ["Fair exchange model","Uses a consistent token model without implying that token amount measures human worth.",true],
+      ["Story problem representation","Builds, draws, or explains a model that matches a new number story."],
+      ["Reasoning reflection","Explains a strategy or corrects a mismatch between the story and the model."]
+    ],
+    28:[
+      ["Body-care knowledge","Identifies an age-appropriate body need or healthy routine without moralizing body size or appearance.",true],
+      ["Food-group sorting","Sorts food examples by a stated attribute or provided classification rule."],
+      ["Classification flexibility","Recognizes that a food may fit more than one reasonable category depending on the rule."],
+      ["Count and represent","Counts or represents objects in a food/category set accurately.",true],
+      ["Compare groups","Compares two groups using more, fewer, same, or a number-based explanation."],
+      ["Needs and preferences","Distinguishes a general body need from an individual preference or circumstance."],
+      ["Safety and allergies","Knows food tasting is optional and follows adult instructions for allergy and food safety.",true],
+      ["Accessible healthy-choice communication","Communicates a care choice through a fictional example or accessible representation without requiring personal health disclosures."],
+      ["Healthy-plate artifact","Creates or arranges a model and explains one design choice."],
+      ["Reflection without stigma","Explains a helpful habit while respecting different bodies, cultures, access needs, and food availability."]
+    ],
+    29:[
+      ["Movement vocabulary","Uses or selects accurate action, position, or direction words."],
+      ["Balance and body control","Demonstrates or represents a safe balance or coordinated movement task.",true],
+      ["Spatial route sequence","Follows or builds a simple route using clear positional instructions.",true],
+      ["Movement pattern","Creates, extends, or identifies a repeating movement sequence."],
+      ["Body-system concept","Describes an age-appropriate role of a body part or system without unsupported medical claims."],
+      ["Safe risk judgment","Identifies a safe modification, stopping point, or adult-help choice in a movement scenario.",true],
+      ["Accessibility and movement","Recognizes that movement can be completed or communicated in different ways."],
+      ["Movement-maze design","Creates or modifies a movement route or model to meet a stated constraint."],
+      ["Testing and revision","Tests the route/model and identifies a change that improves clarity, access, or safety.",true],
+      ["Reflection and self-regulation","Names or selects a useful strategy for pausing, asking for support, or trying a different movement."]
+    ],
+    30:[
+      ["Pattern structure","Identifies or creates a repeating pattern in art, music, movement, or objects.",true],
+      ["Beat and rhythm","Distinguishes a steady beat from a changing rhythm through an accessible performance or representation.",true],
+      ["Counted pattern","Uses counting to describe beats, repetitions, or features."],
+      ["Sound and vibration","Describes an observable sound/vibration relationship using a safe example."],
+      ["Art observation","Describes a visible, audible, tactile, or structural feature without treating personal preference as fact."],
+      ["Creative intent","Creates an original art or music idea with a stated purpose."],
+      ["Revision and evidence","Changes one feature after listening, viewing, testing, or receiving feedback.",true],
+      ["Respectful participation","Respects others' sensory boundaries and offers quiet, visual, or nonperformance participation options.",true],
+      ["Presentation or documentation","Shares, records, or represents an artifact in an accessible form."],
+      ["Reflection","Identifies one pattern, choice, or revision used in the finished work."]
+    ],
+    31:[
+      ["Careful organism observation","Records an observable feature of a small animal or insect without unsupported interpretation.",true],
+      ["Observation versus inference","Separates a directly observed detail from a guess or human-like story.",true],
+      ["Structure and function","Connects one observable structure or behavior to a possible function with age-appropriate caution."],
+      ["Classification rule","States a sorting rule before classifying examples."],
+      ["Count and compare","Counts observable features or example groups and compares totals."],
+      ["Habitat relationship","Connects an organism need to a plausible habitat resource."],
+      ["Humane observation","Uses pictures, models, or distant observation; does not need to touch, catch, feed, or disturb wildlife.",true],
+      ["Field-guide communication","Creates a field-guide entry using a drawing, label, dictated description, or accessible form."],
+      ["Evidence limitation","Names something the observation cannot prove or what additional evidence would help."],
+      ["Revision and reflection","Corrects an initial classification or explanation when the evidence calls for it."]
+    ],
+    32:[
+      ["Habitat concept","Explains that a habitat provides resources or conditions that living things need.",true],
+      ["Water environment comparison","Identifies a meaningful difference among pond, river, and ocean models or examples."],
+      ["Rule-based animal sorting","Sorts water-animal examples using a stated trait or habitat rule.",true],
+      ["Counting and graphing","Counts or represents a set of habitat examples in a simple tally or graph."],
+      ["Graph interpretation","Makes a sample-based claim supported by the displayed data."],
+      ["Need-resource connection","Connects an animal need with a habitat feature or resource."],
+      ["Model limitation","Identifies something a mural or habitat model leaves out or cannot prove.",true],
+      ["Water safety","Identifies an appropriate trusted-adult boundary around water and does not treat the lesson as permission for independent water access.",true],
+      ["Habitat design","Creates a habitat representation with more than one need-linked feature."],
+      ["Evidence reflection","Explains one design choice using the habitat evidence."]
+    ],
+    33:[
+      ["Sky observation","Records an observable sky feature or uses a safe supplied observation."],
+      ["Day/night sequence","Orders day/night observations or a simple model without claiming the Sun circles Earth daily.",true],
+      ["Sun and Moon distinction","Distinguishes the Sun and Moon using age-appropriate observations or model evidence.",true],
+      ["Pattern over time","Sequences or compares observations over time without claiming one short sample proves a universal rule."],
+      ["Count and represent","Counts sky observations, symbols, or model objects accurately."],
+      ["Model interpretation","Uses a model to explain one aspect of a sky pattern."],
+      ["Model limitation","Identifies one thing the model cannot show or establish.",true],
+      ["Observation versus story","Separates what can be observed from an imaginative explanation."],
+      ["Sun safety","Knows never to look directly at the Sun and uses adult-guided, safe observation only.",true],
+      ["Sky journal reflection","Communicates one observation, question, or revised idea in a journal or equivalent accessible form."]
+    ],
+    34:[
+      ["Tool purpose","Matches a tool to a suitable task and explains or shows why it helps."],
+      ["Sequence and algorithm","Creates or follows a clear first/next/last sequence for an unplugged task.",true],
+      ["Directional language","Uses consistent direction or position words to guide a model or peer."],
+      ["Pattern debugging","Finds and repairs a missing, duplicated, or out-of-order step in a sequence.",true],
+      ["Cause and effect","Predicts a likely result of changing one instruction and tests the prediction."],
+      ["Digital privacy","Recognizes that passwords, private messages, personal location, and identifying details should not be shared in a learning activity.",true],
+      ["Ask-before-use safety","Knows that understanding a tool does not itself authorize using it; seeks adult permission when appropriate.",true],
+      ["Accessible algorithm","Designs instructions that another learner can follow using an accessible representation."],
+      ["Test and revise","Tests instructions, identifies ambiguity, and revises one step.",true],
+      ["Responsible technology reflection","Names one helpful use and one safety or privacy boundary for a tool."]
+    ],
+    35:[
+      ["Question focus","States or selects a focused, age-appropriate question that can be explored through observation, comparison, or a model.",true],
+      ["Prior-knowledge distinction","Separates what is already known from what is still a question."],
+      ["Evidence plan","Chooses an appropriate way to gather evidence for the question.",true],
+      ["Literacy communication","Records or communicates the question and one finding through an accessible form."],
+      ["Mathematics tool choice","Chooses a suitable counting, sorting, measuring, pattern, or data tool and explains its use."],
+      ["Inquiry observation","Gathers or interprets evidence without presenting a guess as a confirmed finding.",true],
+      ["Model or maker artifact","Creates a model, diagram, performance, or artifact that relates to the question."],
+      ["Revision from evidence","Changes a model or explanation based on a finding or feedback.",true],
+      ["Source and safety awareness","Uses safe materials and appropriate sources, and avoids sharing private information."],
+      ["Capstone explanation","Communicates the question, evidence, result or uncertainty, and one next question."]
+    ],
+    36:[
+      ["Integrated literacy readiness","Demonstrates a familiar letter/sound, meaningful print, listening, or story skill in a fresh age-appropriate example.",true],
+      ["Story comprehension and sequence","Retells or sequences meaningful events and supports a response with a story detail.",true],
+      ["Emergent writing and communication","Communicates an idea through drawing, dictation, labels, copied print, emergent writing, AAC, or another accessible form."],
+      ["Counting and cardinality","Counts a concrete set accurately and represents what the total means.",true],
+      ["Number composition","Models a joining, separating, or part-part-whole problem with a matching representation."],
+      ["Geometry, pattern, or measurement","Applies one familiar spatial, shape, repeating-pattern, or fair-measurement skill to a new task."],
+      ["Evidence-based inquiry","Communicates an observation and distinguishes it from a guess or prediction.",true],
+      ["Problem-solving and revision","Identifies an error or obstacle, tries a reasonable strategy, and explains or shows a correction.",true],
+      ["Portfolio evidence and growth","Selects a work sample or model and communicates what it demonstrates about learning."],
+      ["Integrated first-grade readiness","Connects communication, mathematics, and inquiry in one novel age-appropriate task and identifies a next learning target.",true]
+    ]
   };
   global.KHAE_KINDER_A_PLUS_MASTERY=Object.freeze(R);
 })(window);
