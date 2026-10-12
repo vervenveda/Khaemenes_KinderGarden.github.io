@@ -65,7 +65,8 @@ function assertInlineScriptsParse(label,html){
   }
 }
 
-assert.ok(gate.includes('const VERSION="1.2.21"'),"mastery engine must remain on Week 25 rollout contract or later");
+const engineVersion=gate.match(/\bconst VERSION="(\d+)\.(\d+)\.(\d+)"/)?.slice(1).map(Number);
+assert.ok(engineVersion&&(engineVersion[0]>1||(engineVersion[0]===1&&(engineVersion[1]>2||(engineVersion[1]===2&&engineVersion[2]>=21)))),"mastery engine must remain on Week 25 rollout contract (v1.2.21) or later");
 for(const marker of [
   'const PASS=80','const TOTAL_WEEKS=36','const DAYS_PER_WEEK=5',
   'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25])',
