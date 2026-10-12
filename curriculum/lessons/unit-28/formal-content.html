@@ -136,8 +136,8 @@ article.lesson[data-panel]{display:none}article.lesson[data-panel].active{displa
 @media(prefers-reduced-motion:reduce){.daily-progress span{transition:none}}
 </style>
 <section class="card week-card" style="margin-top:22px">
-            <h3>Weekly Mastery Check</h3>
-            <table><thead><tr><th>#</th><th>Domain</th><th>Evidence Prompt</th><th>Met</th></tr></thead><tbody><tr><td>1</td><td>Literacy</td><td>Uses oral language, drawing, gesture, or early writing to explain the unit idea: Health, Food, and Growing Bodies.</td><td>□</td></tr>
+            <h3>Practice Reflection Checklist — Not Formal Mastery</h3><p role="note">Use this checklist for informal reflection only. It does not record official mastery or unlock a week. The official rubric opens after all five daily evidence receipts.</p>
+            <table><thead><tr><th>#</th><th>Domain</th><th>Evidence Prompt</th><th>Practice note</th></tr></thead><tbody><tr><td>1</td><td>Literacy</td><td>Uses oral language, drawing, gesture, or early writing to explain the unit idea: Health, Food, and Growing Bodies.</td><td>□</td></tr>
 <tr><td>2</td><td>Literacy</td><td>Participates in the literacy focus: Health vocabulary.</td><td>□</td></tr>
 <tr><td>3</td><td>Literacy</td><td>Listens to a short read-aloud and answers or asks one relevant question.</td><td>□</td></tr>
 <tr><td>4</td><td>Writing/Fine Motor</td><td>Draws, traces, labels, dictates, or attempts marks connected to the unit.</td><td>□</td></tr>
@@ -185,7 +185,12 @@ const lessons=qa("article.lesson");
 if(lessons.length!==5){q("#dailyPathMessage").textContent="Teacher review is needed: this page must contain five daily lesson sections.";return;}
 lessons.forEach((p,i)=>{
  p.dataset.panel=String(i+1);const d=i+1,box=document.createElement("div");box.className="daily-evidence-action";
- box.innerHTML='<p><strong>Day '+d+' success check:</strong> Tell or show what you learned, using your usual communication tools.</p><button type="button" class="action gold save-day" data-day="'+d+'">Save Day '+d+' Evidence</button><p class="feedback" data-save-feedback="'+d+'" role="status" aria-live="polite"></p>';
+ const targetLine=[...p.querySelectorAll("p")].find(line=>/Daily learning target:/i.test(line.textContent));
+ const targetText=targetLine?targetLine.textContent.replace(/Daily learning target:\\s*/i,"").trim():"Tell or show what you learned today.";
+ const target=document.createElement("p"),targetLabel=document.createElement("strong");targetLabel.textContent="Evidence target: ";target.append(targetLabel,document.createTextNode(targetText));box.appendChild(target);
+ const reminder=document.createElement("p");reminder.textContent="When your grown-up has observed this learning, save the daily evidence below.";box.appendChild(reminder);
+ const save=document.createElement("button");save.type="button";save.className="action gold save-day";save.dataset.day=String(d);save.textContent="Save Day "+d+" Evidence";box.appendChild(save);
+ const feedback=document.createElement("p");feedback.className="feedback";feedback.dataset.saveFeedback=String(d);feedback.setAttribute("role","status");feedback.setAttribute("aria-live","polite");box.appendChild(feedback);
  p.appendChild(box);
 });
 qa(".save-day").forEach(b=>b.addEventListener("click",()=>{
