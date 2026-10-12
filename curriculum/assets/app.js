@@ -38,7 +38,7 @@
         ${lessons.slice(0,5).map((lesson,index)=>`
           <div class="preview-day">
             <strong>${esc(lesson.day||["Monday","Tuesday","Wednesday","Thursday","Friday"][index])} · ${esc(lesson.title||`Lesson ${index+1}`)}</strong>
-            <span>${esc("Learning target: "+(lesson.objective||"Integrated Kinder Garden learning block."))}${lesson.successCriteria?.length?`<br><strong>Success looks like:</strong> ${lesson.successCriteria.map(esc).join(" ")}`:""}${lesson.workshop?`<br><strong>Workshop:</strong> ${esc(lesson.workshop)}`:""}</span>
+            <span>${esc("Learning target: "+(lesson.objective||"Integrated Kinder Garden learning block."))}${lesson.formalLessonArc?`<br><strong>Lesson progression:</strong> ${esc(lesson.formalLessonArc)}`:""}${lesson.successCriteria?.length?`<br><strong>Success looks like:</strong> ${lesson.successCriteria.map(esc).join(" ")}`:""}${lesson.workshop?`<br><strong>Workshop:</strong> ${esc(lesson.workshop)}`:""}</span>
           </div>`).join("")}
       </div>
     </details>`;
