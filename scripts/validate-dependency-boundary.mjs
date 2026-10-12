@@ -16,6 +16,12 @@ function walk(dir,out=[]){
 }
 const files=walk(ROOT).filter(p=>!rel(p).startsWith("scripts/")||rel(p)==="scripts/validate-dependency-boundary.mjs");
 const errors=[];
+const approvedOwnedRuntimeUrls=new Set([
+  "https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-mastery-gates.js",
+  "https://vervenveda.com/assets/vnv-beta-link.js",
+  "https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"
+]);
+let approvedOwnedRuntimeCount=0;
 const remoteRuntimeTag=/<(?:script|link|iframe|audio|source|img|video|track)\b[^>]*(?:src|href|poster)=["']\s*https?:\/\/[^"']+["'][^>]*>/gi;
 const externalFetch=/\bfetch\s*\(\s*["'`]\s*https?:\/\//i;
 const externalImport=/\bimport\s*\(\s*["'`]\s*https?:\/\//i;
@@ -27,7 +33,12 @@ const unsafeBlank=/<a\b[^>]*target=["']_blank["'][^>]*>/gi;
 for(const full of files){
   const p=rel(full),text=fs.readFileSync(full,"utf8");
   for(const m of text.matchAll(remoteRuntimeTag)){
-    errors.push(p+": remote runtime resource tag: "+m[0].replace(/\s+/g," ").slice(0,180));
+    const resource=m[0].match(/(?:src|href|poster)=["'](https?:\/\/[^"']+)["']/i)?.[1];
+    if(resource&&approvedOwnedRuntimeUrls.has(resource)){
+      approvedOwnedRuntimeCount++;
+    }else{
+      errors.push(p+": unapproved remote runtime resource tag: "+m[0].replace(/\s+/g," ").slice(0,180));
+    }
   }
   if((/\.(?:js|html)$/i).test(p)){
     if(externalFetch.test(text))errors.push(p+": direct fetch() to a literal third-party URL");
@@ -54,7 +65,8 @@ if(errors.length){
   process.exitCode=1;
 }else{
   console.log("Dependency boundary: PASS");
-  console.log("- no remote runtime resource tags or remote font providers");
+  console.log("- no unapproved remote runtime resources; approved owned-ecosystem runtime tags: "+approvedOwnedRuntimeCount);
+  console.log("- no remote font providers");
   console.log("- no literal third-party fetch/import/XHR calls");
   console.log("- no remote CSS imports");
   console.log("- external new-tab links use noopener");
