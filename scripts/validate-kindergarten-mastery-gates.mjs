@@ -174,12 +174,28 @@ for(const unit of courseData.units){
   assert.equal(new Set(weekly.items.map(item=>item.prompt)).size,10,`Unit ${unit.unit} weekly assessment prompts must be distinct`);
   assert.equal(weekly.rubricSource,"curriculum/data/a-plus-mastery.js",`Unit ${unit.unit} assessment must identify its canonical rubric source`);
   assert.deepEqual(weekly.items.map(item=>({label:item.criterionLabel,prompt:item.prompt,required:item.requiredCore===true})),weeklyRubric.map(row=>({label:row[0],prompt:row[1],required:row[2]===true})),`Unit ${unit.unit} assessment evidence must align exactly to its mastery rubric`);
+  for(let dayIndex=0;dayIndex<5;dayIndex++){
+    const lesson=unit.lessons[dayIndex],iq=lesson.instructionalQuality;
+    const expected=weeklyRubric.slice(dayIndex*2,dayIndex*2+2).map(row=>row[0]);
+    assert.deepEqual(iq.rubricCriteria,expected,`Unit ${unit.unit} ${lesson.day} instructional evidence must map to its two rubric criteria`);
+  }
   assert.equal(new Set(unit.lessons.map(l=>l.objective)).size,5,`Unit ${unit.unit} must have five day-specific objectives`);
   assert.equal(new Set(unit.lessons.map(l=>JSON.stringify(l.teacherScript))).size,5,`Unit ${unit.unit} must have five day-specific teacher scripts`);
   for(const lesson of unit.lessons){
     assert.ok(String(lesson.objective||"").trim(),`Unit ${unit.unit} ${lesson.day} must have an objective`);
     assert.ok(Array.isArray(lesson.teacherScript)&&lesson.teacherScript.length>=4,`Unit ${unit.unit} ${lesson.day} must have an actionable teacher sequence`);
     assert.ok(Array.isArray(lesson.successCriteria)&&lesson.successCriteria.length>=2,`Unit ${unit.unit} ${lesson.day} must define observable success criteria`);
+    const iq=lesson.instructionalQuality;
+    assert.ok(iq&&typeof iq==="object",`Unit ${unit.unit} ${lesson.day} must define an instructional quality contract`);
+    for(const field of ["prerequisiteCheck","explicitModel","guidedPractice","misconceptionCorrection","transferTask","assessmentEvidence","reteachIfNeeded"]){
+      assert.ok(typeof iq[field]==="string"&&iq[field].trim().length>=60,`Unit ${unit.unit} ${lesson.day} instructionalQuality.${field} must be substantive`);
+    }
+    assert.equal(iq.target,lesson.formalLessonTarget||lesson.objective,`Unit ${unit.unit} ${lesson.day} quality target must match the canonical lesson objective`);
+    assert.ok(Array.isArray(iq.rubricCriteria)&&iq.rubricCriteria.length===2,`Unit ${unit.unit} ${lesson.day} must identify two assessment criteria`);
+    assert.ok(iq.transferTask.toLowerCase().includes("new example")||iq.transferTask.toLowerCase().includes("new task")||iq.transferTask.toLowerCase().includes("unfamiliar")||iq.transferTask.toLowerCase().includes("new object"),`Unit ${unit.unit} ${lesson.day} transfer check must use a fresh example`);
+    assert.ok(/model|demonstrat|think aloud/i.test(iq.explicitModel),`Unit ${unit.unit} ${lesson.day} must explicitly model the skill`);
+    assert.ok(/gradual release|solve together|parallel example/i.test(iq.guidedPractice),`Unit ${unit.unit} ${lesson.day} must include supported guided practice`);
+
   }
 }
 
