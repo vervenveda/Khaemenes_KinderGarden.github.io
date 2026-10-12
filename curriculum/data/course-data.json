@@ -698,7 +698,7 @@
           "day": "Monday",
           "title": "Wonder Launch",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Introduce the unit question “How can words help us care for ourselves and others?” and use at least one example to notice or communicate an idea related to feelings, friendship, and voice.",
+          "objective": "Name or communicate one feeling and choose a safe, respectful way to express a need or preference; recognize that speech, gesture, drawing, sign, and AAC are valid ways to communicate.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -736,13 +736,14 @@
             "Communicates one relevant idea or question about feelings, friendship, and voice.",
             "Attempts one activity connected to rhyming, beginning sounds, feelings vocabulary or compare groups: more, less, same."
           ],
-          "instructionalPurpose": "Introduce and notice"
+          "instructionalPurpose": "Introduce and notice",
+          "formalLessonTarget": "Name or communicate one feeling and choose a safe, respectful way to express a need or preference; recognize that speech, gesture, drawing, sign, and AAC are valid ways to communicate."
         },
         {
           "day": "Tuesday",
           "title": "Guided Skill Lab",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Practise rhyming, beginning sounds, feelings vocabulary and compare groups: more, less, same through guided, hands-on examples, then explain or show one strategy.",
+          "objective": "Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -780,13 +781,14 @@
             "Completes a guided example connected to rhyming, beginning sounds, feelings vocabulary or compare groups: more, less, same.",
             "Shows or communicates a strategy using an accessible representation."
           ],
-          "instructionalPurpose": "Guided skill practice"
+          "instructionalPurpose": "Guided skill practice",
+          "formalLessonTarget": "Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation."
         },
         {
           "day": "Wednesday",
           "title": "Inquiry Workshop",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Investigate families, friendships, kindness, and classroom citizenship by observing, sorting, mapping, testing, or comparing evidence and communicating what the evidence supports.",
+          "objective": "Children compare groups and notice how words help communities stay kind and safe.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -824,13 +826,14 @@
             "Records or communicates at least one observation or piece of evidence about families, friendships, kindness, and classroom citizenship.",
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
-          "instructionalPurpose": "Evidence-based investigation"
+          "instructionalPurpose": "Evidence-based investigation",
+          "formalLessonTarget": "Children compare groups and notice how words help communities stay kind and safe."
         },
         {
           "day": "Thursday",
           "title": "Create & Communicate",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Apply the week’s learning by creating or revising “Feelings wheel and friendship bracelet” and explaining one purposeful choice using the unit’s vocabulary or evidence.",
+          "objective": "Children create, explain, and practice repair language with a partner or small group.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -868,13 +871,14 @@
             "Creates or contributes to feelings wheel and friendship bracelet in an accessible form.",
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
-          "instructionalPurpose": "Create, apply, and revise"
+          "instructionalPurpose": "Create, apply, and revise",
+          "formalLessonTarget": "Children create, explain, and practice repair language with a partner or small group."
         },
         {
           "day": "Friday",
           "title": "Review, Assessment & Reflection",
           "duration": "45–75 minute flexible learning block plus centers",
-          "objective": "Demonstrate transfer of the week’s learning through an age-appropriate task about feelings, friendship, and voice, use evidence or a strategy independently where possible, and reflect on a next step.",
+          "objective": "Children share one growth moment and celebrate voice, friendship, and feelings language.",
           "materials": [
             "Picture cards",
             "Drawing tools",
@@ -912,7 +916,8 @@
             "Demonstrates at least one target skill in a fresh example, with supports recorded when used.",
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
-          "instructionalPurpose": "Transfer, assess, and reflect"
+          "instructionalPurpose": "Transfer, assess, and reflect",
+          "formalLessonTarget": "Children share one growth moment and celebrate voice, friendship, and feelings language."
         }
       ],
       "weeklyAssessment": {
