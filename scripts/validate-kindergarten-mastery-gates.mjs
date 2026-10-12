@@ -174,6 +174,7 @@ for(let unit=26;unit<=36;unit++){
   assert.ok(html.includes("G.allDaysComplete(UNIT)")&&html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} mastery must require all five daily receipts`);
   assert.ok(html.includes("Evidence target:")&&html.includes("Daily learning target:\\s*"),`Week ${unit} daily evidence must display its lesson-specific target`);
   assert.ok(html.includes("When your grown-up has observed this learning"),`Week ${unit} daily evidence prompt must describe adult observation`);
+  assert.ok(html.includes('khaemenes-kindergarten-formal-gate-open",refresh'),`Week ${unit} daily controls must refresh after authorization resolves`);
   assert.ok(html.includes("Practice Reflection Checklist — Not Formal Mastery")&&html.includes("does not record official mastery"),`Week ${unit} static checklist must be clearly marked practice-only`);
   assertInlineScriptsParse(`Capstone Week ${unit}`,html);
 }
