@@ -1,10 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import assert from "node:assert/strict";
+import { fileURLToPath } from "node:url";
 
-const ROOT = process.cwd();
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SKIP_DIRS = new Set([".git", "node_modules", ".next", "dist", "build"]);
-const EXTERNAL_SCHEMES = /^(?:https?:|mailto:|tel:|data:|javascript:|blob:|\/\/)/i;
+const EXTERNAL_SCHEMES = /^(?:https?:|mailto:|tel:|data:|javascript:|blob:|about:|\/\/)/i;
 const htmlFiles = [];
 const externalMounts = new Set();
 const missing = [];
