@@ -79,6 +79,57 @@ for(const marker of [
 ])assert.ok(gate.includes(marker),`authority must preserve ${marker}`);
 assert.ok(gate.includes('const best=Math.max(old.bestPercent,percent)')&&gate.includes('const bestQualified=Math.max(old.bestQualifiedPercent,essential?percent:0)'),"best evidence and qualifying mastery must be preserved");
 assert.ok(gate.includes('n>=19&&!milestoneMastery("midterm").mastered'),"Week 19+ must require midyear mastery");
+
+function makeGateHarness({failWrites=false}={}){
+  const key="khaemenes_kindergarten_mastery_receipts_v1";
+  const learnerId="validator-learner";
+  const weeks={};
+  for(let unit=1;unit<=25;unit++)weeks[unit]={bestPercent:100,bestQualifiedPercent:100,latestPercent:100,mastered:true,attempts:[]};
+  const record={version:"1.3.0",learnerId,weeks,daily:{},midterm:{bestPercent:100,bestQualifiedPercent:100,latestPercent:100,mastered:true,attempts:[]},final:null,portfolio:false};
+  const values=new Map([[key,JSON.stringify({[learnerId]:record})]]);
+  const events=[];
+  const win={
+    location:{pathname:"/"},
+    localStorage:{
+      getItem(k){return values.has(k)?values.get(k):null;},
+      setItem(k,v){if(failWrites)throw new Error("simulated-storage-failure");values.set(k,String(v));}
+    },
+    KhaemenesKinderContinuity:{getLearnerSummary(){return {hasProfile:true,hasLinkedLearner:true,stageEligible:true,learnerId,nickname:"Test Learner",guardianAuthorized:true};}},
+    dispatchEvent(event){events.push(event);return true;},
+    document:null,
+    setTimeout,
+    clearTimeout,
+    URLSearchParams
+  };
+  class MockCustomEvent{constructor(type,init={}){this.type=type;this.detail=init.detail}}
+  new Function("window","CustomEvent",gate)(win,MockCustomEvent);
+  return {G:win.KhaemenesKinderMasteryGates,values,events,key,learnerId};
+}
+{
+  const h=makeGateHarness(),G=h.G;
+  assert.equal(G.canOpenDay(26,1),true,"capstone day 1 should be available after prerequisites");
+  assert.equal(G.canOpenDay(26,2),false,"capstone day 2 must stay locked before day 1 evidence");
+  assert.equal(G.canAssessWeek(26),false,"weekly mastery must stay locked before five daily receipts");
+  assert.throws(()=>G.recordDayEvidence({unit:26,day:1,adultAffirmed:false}),/adult-affirmation-required/,"capstone daily receipt must reject missing adult affirmation");
+  assert.equal(G.dayEvidence(26,1).completed,false,"rejected receipt must not be persisted");
+  for(let day=1;day<=5;day++){
+    assert.equal(G.canOpenDay(26,day),true,`day ${day} should unlock in order after previous days are recorded`);
+    assert.throws(()=>G.recordDayEvidence({unit:26,day,adultAffirmed:false}),/adult-affirmation-required/,`day ${day} must reject unaffirmed evidence`);
+    G.recordDayEvidence({unit:26,day,adultAffirmed:true,source:"validator-test",evidenceType:"observed-practice"});
+    assert.equal(G.dayEvidence(26,day).completed,true,`day ${day} receipt should persist after affirmation`);
+    assert.equal(G.dayEvidence(26,day).adultAffirmed,true,`day ${day} record should retain affirmation`);
+    if(day<5)assert.equal(G.canOpenDay(26,day+1),true,`day ${day+1} should unlock after day ${day}`);
+  }
+  assert.equal(G.allDaysComplete(26),true,"five saved receipts should complete the daily sequence");
+  assert.equal(G.canAssessWeek(26),true,"weekly mastery should become eligible after five saved receipts");
+}
+{
+  const h=makeGateHarness({failWrites:true}),G=h.G;
+  assert.throws(()=>G.recordDayEvidence({unit:26,day:1,adultAffirmed:true}),/daily-evidence-save-failed/,"failed local persistence must throw");
+  assert.equal(G.dayEvidence(26,1).completed,false,"failed local persistence must not create a receipt");
+  assert.equal(h.events.some(e=>e.type==="khaemenes-kindergarten-daily-evidence-changed"),false,"failed local persistence must not dispatch a saved event");
+}
+
 assert.ok(gate.includes('for(let i=1;i<=18;i++)if(!weekMastery(i).mastered)return false'),"midyear must require Weeks 1-18");
 assert.ok(gate.includes('for(let i=1;i<=TOTAL_WEEKS;i++)if(!weekMastery(i).mastered)return false'),"final must require all 36 weeks");
 assert.ok(gate.includes('function recordMilestoneEvidence({')&&gate.includes('source="adult-observed-performance-demonstration",\n    adultAffirmed=false,\n    essentialSatisfied=true')&&gate.includes('met,total,source,adultAffirmed,essentialSatisfied'),"milestone authority must accept and enforce essential core evidence");
