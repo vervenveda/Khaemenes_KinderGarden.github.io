@@ -223,6 +223,20 @@ assert.ok(gate.includes('if(CAPSTONE_UNITS.has(n)&&adultAffirmed!==true)throw ne
 assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-evidence-save-failed")'),"daily evidence must not announce success when persistence fails");
 
 
+
+assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progression:'),"curriculum preview must display the formal lesson progression arc when present");
+for(let unit=8;unit<=25;unit++){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  const overview=html.match(/<section class="week-overview">([\s\S]*?)<\/section>/i)?.[1]||"";
+  const arcRows=[...overview.matchAll(/<p class="compact"><strong>(Monday|Tuesday|Wednesday|Thursday|Friday):<\/strong>\s*([\s\S]*?)<\/p>/gi)]
+    .map(m=>({day:m[1],goal:m[2].replace(/<[^>]*>/g,"").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,"<").replace(/&gt;/g,">").trim()}));
+  const unitData=courseData.units.find(item=>Number(item.unit)===unit);
+  assert.equal(arcRows.length,5,"Week "+unit+" formal learning arc must define five daily focus statements");
+  assert.deepEqual(unitData.lessons.map(lesson=>lesson.formalLessonArc),arcRows.map(row=>row.goal),"Week "+unit+" preview progression must match the formal learning arc");
+  assert.equal(new Set(arcRows.map(row=>row.goal)).size,5,"Week "+unit+" learning arc should establish five distinct daily purposes");
+}
+
 for(const unit of [2,3,4]){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
