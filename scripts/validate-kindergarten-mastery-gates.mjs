@@ -261,7 +261,7 @@ assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-ev
 
 assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progression:'),"curriculum preview must display the formal lesson progression arc when present");
 
-for(let unit=5;unit<=14;unit++){
+for(let unit=5;unit<=16;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
   assert.equal((html.match(/Teach · Practise · Correct · Transfer/g)||[]).length,5,"Week "+unit+" must include a five-day instructional cycle");
