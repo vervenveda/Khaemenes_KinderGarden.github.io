@@ -278,6 +278,24 @@ assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progressi
   assertInlineScriptsParse("Instructional Depth Week 16",w16);
 }
 
+
+for(const unit of [17,18]){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  assert.equal((html.match(/kg-depth-cycle/g)||[]).length,5,"Week "+unit+" must retain five instructional depth cycles");
+  assert.equal((html.match(/kg-evidence-decision/g)||[]).length,5,"Week "+unit+" must define evidence and next-step decisions for every day");
+  for(const text of ["Fresh transfer check","Common misconception and correction","independent","prompted","not yet"]){
+    assert.ok(html.toLowerCase().includes(text.toLowerCase()),"Week "+unit+" must distinguish transfer and response support: "+text);
+  }
+  assertInlineScriptsParse("Instructional Depth Week "+unit,html);
+}
+const week17=read("curriculum/lessons/unit-17/formal-content.html");
+assert.ok(week17.includes("Never use direct Sun viewing")||week17.includes("never look directly at the Sun"),"Week 17 must preserve Sun-observation safety");
+assert.ok(week17.includes("same baseline and unit")||week17.includes("same baseline"),"Week 17 must preserve fair measurement requirements");
+const week18=read("curriculum/lessons/unit-18/formal-content.html");
+assert.ok(week18.includes("not weekly mastery")||week18.includes("does not award mastery")||week18.includes("not mastery credit"),"Week 18 snapshot must remain diagnostic and not award mastery");
+assert.ok(week18.includes("formal midyear gate"),"Week 18 must remain distinct from the formal midyear milestone gate");
+
 for(let unit=5;unit<=30;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
