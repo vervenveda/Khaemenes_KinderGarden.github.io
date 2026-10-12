@@ -131,7 +131,7 @@
 .day-sequence{margin:18px 0;padding:18px;border:2px solid #d9e9d5;border-radius:16px;background:#fbfff8}
 .day-sequence h2,.day-sequence h3{color:#285b3c}
 .daily-progress{height:10px;border-radius:999px;overflow:hidden;background:#e7eee5}.daily-progress span{display:block;width:0;height:100%;background:#4a9b5c;transition:width .2s ease}
-.daily-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0}.daily-tabs button:disabled{opacity:.45;cursor:not-allowed}.daily-tabs button.done{background:#e5f7e5;border-color:#79bd76;color:#29643a}
+.adult-confirm-label{display:flex;align-items:flex-start;gap:8px;margin:10px auto;max-width:520px;text-align:left;font-size:.86rem;line-height:1.4}.adult-confirm-label input{margin-top:3px;flex:0 0 auto}.daily-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0}.daily-tabs button:disabled{opacity:.45;cursor:not-allowed}.daily-tabs button.done{background:#e5f7e5;border-color:#79bd76;color:#29643a}
 article.lesson[data-panel]{display:none}article.lesson[data-panel].active{display:block}
 @media(prefers-reduced-motion:reduce){.daily-progress span{transition:none}}
 </style>
@@ -189,13 +189,17 @@ lessons.forEach((p,i)=>{
  const targetText=targetLine?targetLine.textContent.replace(/Daily learning target:\s*/i,"").trim():"Tell or show what you learned today.";
  const target=document.createElement("p"),targetLabel=document.createElement("strong");targetLabel.textContent="Evidence target: ";target.append(targetLabel,document.createTextNode(targetText));box.appendChild(target);
  const reminder=document.createElement("p");reminder.textContent="When your grown-up has observed this learning, save the daily evidence below.";box.appendChild(reminder);
+ const confirmLabel=document.createElement("label");confirmLabel.className="adult-confirm-label";
+ const confirm=document.createElement("input");confirm.type="checkbox";confirm.dataset.adultConfirm=UNIT+"-"+d;
+ confirmLabel.appendChild(confirm);confirmLabel.appendChild(document.createTextNode(" An authorized grown-up observed this learning and confirms the evidence is complete."));
+ box.appendChild(confirmLabel);
  const save=document.createElement("button");save.type="button";save.className="action gold save-day";save.dataset.day=String(d);save.textContent="Save Day "+d+" Evidence";box.appendChild(save);
  const feedback=document.createElement("p");feedback.className="feedback";feedback.dataset.saveFeedback=String(d);feedback.setAttribute("role","status");feedback.setAttribute("aria-live","polite");box.appendChild(feedback);
  p.appendChild(box);
 });
 qa(".save-day").forEach(b=>b.addEventListener("click",()=>{
  const day=Number(b.dataset.day),feedback=q('[data-save-feedback="'+day+'"]');
- try{G.recordDayEvidence({unit:UNIT,day,evidenceType:"capstone-daily-learning-evidence",source:"capstone-sequential-learning-path",completed:true});feedback.textContent="Day "+day+" evidence saved. It opens the next eligible day; it does not award mastery.";refresh();}
+ const adultCheck=q('[data-adult-confirm="'+UNIT+"-"+day+'"]');if(!adultCheck||!adultCheck.checked){feedback.textContent="Please ask an authorized grown-up to observe the learning and confirm the evidence first.";return;}try{G.recordDayEvidence({unit:UNIT,day,evidenceType:"capstone-daily-learning-evidence",source:"capstone-sequential-learning-path",completed:true,adultAffirmed:adultCheck.checked});feedback.textContent="Day "+day+" evidence saved. It opens the next eligible day; it does not award mastery.";refresh();}
  catch(e){feedback.textContent="Evidence not saved: "+String(e&&e.message||e);}
 }));
 window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);
