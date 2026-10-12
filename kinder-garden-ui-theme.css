@@ -373,3 +373,38 @@ footer{background:#294b62}
   .hero-garden{min-height:330px}
   .garden-scene{border-radius:18px}
 }
+
+
+/* === Khaemenes Kinder Garden typography standard (layout-preserving) === */
+:root{
+  --kg-eyebrow-size:55px;
+  --kg-page-h1-size:33px;
+  --kg-descriptor-h2-size:24px;
+}
+/* Eyebrow / overline: the prominent pre-title requested for the site. */
+.eyebrow,.eyebrow-title,.kicker,.overline,.pretitle,.hero-kicker,[data-role="eyebrow"],p[class*="eyebrow"]{
+  font-size:clamp(30px,4.3vw,var(--kg-eyebrow-size)) !important;
+  line-height:1.04 !important;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+/* Main page heading. The line box is kept generous to avoid clipping existing title treatments. */
+h1,.page-title,.hero-title,[data-role="page-title"]{
+  font-size:clamp(28px,2.6vw,var(--kg-page-h1-size)) !important;
+  line-height:1.16 !important;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+/* Descriptor/subtitle H2 only; section headings retain their current hierarchy/layout. */
+h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.hero h1 + .subtitle,.hero h1 span,.hero-title + .lead-heading{
+  font-size:clamp(20px,2.1vw,var(--kg-descriptor-h2-size)) !important;
+  line-height:1.25 !important;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+@media(max-width:600px){
+  .eyebrow,.eyebrow-title,.kicker,.overline,.pretitle,.hero-kicker,[data-role="eyebrow"],p[class*="eyebrow"]{font-size:clamp(28px,8vw,40px)!important}
+  h1,.page-title,.hero-title,[data-role="page-title"]{font-size:30px!important}
+  h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.hero h1 + .subtitle,.hero h1 span,.hero-title + .lead-heading{font-size:22px!important}
+}
+/* === End typography standard === */
