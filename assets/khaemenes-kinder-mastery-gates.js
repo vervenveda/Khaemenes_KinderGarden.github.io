@@ -258,11 +258,13 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     evidenceType="daily-learning-evidence",
     artifact="",
     source="learner-application",
-    completed=true
+    completed=true,
+    adultAffirmed=false
   }={}){
     const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
     const d=normalizeDay(day);
     if(!formalAccess())throw new Error("formal-access-required");
+    if(CAPSTONE_UNITS.has(n)&&adultAffirmed!==true)throw new Error("adult-affirmation-required");
     if(!canOpenDay(n,d))throw new Error("day-not-eligible");
     if(!sequenceRequired(n))throw new Error("daily-sequence-not-enabled");
     if(completed!==true)throw new Error("daily-evidence-incomplete");
@@ -280,7 +282,8 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
       updatedAt:now(),
       source:String(source||"learner-application").slice(0,100),
       evidenceType:String(evidenceType||"daily-learning-evidence").slice(0,100),
-      artifact:String(artifact||"").slice(0,500)
+      artifact:String(artifact||"").slice(0,500),
+      ...(CAPSTONE_UNITS.has(n)?{adultAffirmed:true,adultAffirmedAt:now()}: {})
     };
     saveLearnerRecord(record);
     global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-daily-evidence-changed",{
