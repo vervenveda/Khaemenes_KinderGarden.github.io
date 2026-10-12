@@ -375,7 +375,7 @@ for(const phrase of ["compare the learner only with their own earlier evidence",
   assert.ok(week19.includes(phrase.toLowerCase()),"Week 19 must preserve growth-mindset and strategy reasoning: "+phrase);
 }
 const week20=read("curriculum/lessons/unit-20/formal-content.html").toLowerCase();
-for(const phrase of ["origin can be uncertain","cannot define a whole culture","the source actually shows","repeated motif is treated as proof of ownership or origin","entirely new teacher-created story excerpts"]){
+for(const phrase of ["origin can be uncertain","cannot define a whole culture","return to the source and limit the claim","repeated motif is treated as proof of ownership or origin","entirely new teacher-created story excerpts"]){
   assert.ok(week20.includes(phrase.toLowerCase()),"Week 20 must preserve source literacy and respectful interpretation: "+phrase);
 }
 
