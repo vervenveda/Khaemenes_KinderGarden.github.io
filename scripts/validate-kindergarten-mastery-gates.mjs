@@ -192,7 +192,7 @@ for(const unit of courseData.units){
     }
     assert.equal(iq.target,lesson.formalLessonTarget||lesson.objective,`Unit ${unit.unit} ${lesson.day} quality target must match the canonical lesson objective`);
     assert.ok(Array.isArray(iq.rubricCriteria)&&iq.rubricCriteria.length===2,`Unit ${unit.unit} ${lesson.day} must identify two assessment criteria`);
-    assert.ok(/new example|new task|unfamiliar|new object|change the example|change one design constraint|fresh example|fresh task/i.test(iq.transferTask),`Unit ${unit.unit} ${lesson.day} transfer check must use a fresh example`);
+    assert.ok(/new example|new task|unfamiliar|new object|new observation|new sample|change the example|change one design constraint|fresh example|fresh task/i.test(iq.transferTask),`Unit ${unit.unit} ${lesson.day} transfer check must use a fresh example`);
     assert.ok(/model|demonstrat|think aloud/i.test(iq.explicitModel),`Unit ${unit.unit} ${lesson.day} must explicitly model the skill`);
     assert.ok(/gradual release|solve together|parallel example/i.test(iq.guidedPractice),`Unit ${unit.unit} ${lesson.day} must include supported guided practice`);
 
