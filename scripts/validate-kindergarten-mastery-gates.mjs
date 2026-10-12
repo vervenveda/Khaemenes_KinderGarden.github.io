@@ -11,6 +11,9 @@ const index=read("curriculum/index.html");
 const mastery=read("curriculum/mastery/index.html");
 const rubricSource=read("curriculum/data/a-plus-mastery.js");
 const midyearSource=read("curriculum/data/midyear-mastery.js");
+const finalSource=read("curriculum/data/final-mastery.js");
+const courseJsonSource=read("curriculum/data/course-data.json");
+const courseJsSource=read("curriculum/data/course-data.js");
 const TAG="data-khaemenes-kindergarten-formal-gate";
 
 const rubricWindow={};
@@ -87,6 +90,39 @@ assert.ok(index.includes('id="portfolioAffirm"')&&index.includes('khaemenes-kind
 for(const marker of ['weeklyCriteria','milestoneRounds','recordWeekEvidence','recordMilestoneEvidence','Passing: <strong>80%</strong>','Authorized adult affirmation','REQUIRED CORE','essentialSatisfied:s.essentialSatisfied','all five daily learning experiences are complete','../data/a-plus-mastery.js','KHAE_KINDER_A_PLUS_MASTERY','../data/midyear-mastery.js','KHAE_KINDER_MIDYEAR_MASTERY','MIDYEAR.length===40','at least 32 of 40 observed criteria','midyear-a-plus-performance-demonstration'])assert.ok(mastery.includes(marker),`mastery UI must preserve ${marker}`);
 assert.ok(mastery.includes('G.recordMilestoneEvidence({kind:mode,met:s.checked,total:s.total')&&mastery.includes('adultAffirmed:true,essentialSatisfied:s.essentialSatisfied'),"mastery UI must pass milestone essential-core state into authority");
 assertInlineScriptsParse("Mastery surface",mastery);
+
+assert.ok(mastery.includes('../data/final-mastery.js')&&mastery.includes('FINAL.length===50')&&mastery.includes('40 of 50'),"final mastery UI must use canonical 50-item rubric");
+const finalWindow={};
+new Function("window",finalSource)(finalWindow);
+const FINAL=finalWindow.KHAE_KINDER_FINAL_MASTERY;
+assert.ok(Array.isArray(FINAL),"final readiness rubric must load");
+assert.equal(FINAL.length,50,"final readiness rubric must contain exactly 50 criteria");
+assert.ok(FINAL.some(row=>row[2]===true),"final readiness rubric must include essential core criteria");
+assert.ok(FINAL.every(row=>row.length>=2&&String(row[0]).trim()&&String(row[1]).trim()),"each final criterion must have a label and observable evidence prompt");
+
+const courseData=JSON.parse(courseJsonSource);
+const courseJsWindow={};
+new Function("window",courseJsSource)(courseJsWindow);
+assert.deepEqual(courseJsWindow.KHAE_KINDERGARTEN_DATA,courseData,"course-data.js must remain semantically synchronized with course-data.json");
+assert.equal(courseData.units.length,36,"course data must contain all 36 units");
+assert.equal(courseData.units.reduce((sum,u)=>sum+(u.lessons||[]).length,0),180,"course data must contain 180 daily lessons");
+for(const unit of courseData.units){
+  assert.equal(unit.lessons.length,5,`Unit ${unit.unit} must contain five daily lessons`);
+  assert.equal(new Set(unit.lessons.map(l=>l.objective)).size,5,`Unit ${unit.unit} must have five day-specific objectives`);
+  assert.equal(new Set(unit.lessons.map(l=>JSON.stringify(l.teacherScript))).size,5,`Unit ${unit.unit} must have five day-specific teacher scripts`);
+  for(const lesson of unit.lessons){
+    assert.ok(String(lesson.objective||"").trim(),`Unit ${unit.unit} ${lesson.day} must have an objective`);
+    assert.ok(Array.isArray(lesson.teacherScript)&&lesson.teacherScript.length>=4,`Unit ${unit.unit} ${lesson.day} must have an actionable teacher sequence`);
+    assert.ok(Array.isArray(lesson.successCriteria)&&lesson.successCriteria.length>=2,`Unit ${unit.unit} ${lesson.day} must define observable success criteria`);
+  }
+}
+for(let unit=1;unit<=36;unit++){
+  const rows=RUBRICS[unit];
+  assert.ok(Array.isArray(rows),`Week ${unit} must have a unit-specific mastery rubric`);
+  assert.equal(rows.length,10,`Week ${unit} must have exactly 10 rubric criteria`);
+  assert.ok(rows.some(row=>row[2]===true),`Week ${unit} must mark essential core criteria`);
+}
+
 
 for(const cfg of UPGRADED){
   const rows=RUBRICS[cfg.unit];
