@@ -449,6 +449,36 @@ for(let unit=26;unit<=36;unit++){
   assertInlineScriptsParse(`Capstone Week ${unit}`,html);
 }
 
+
+for(let unit=1;unit<=36;unit++){
+  const n=String(unit).padStart(2,"0");
+  const wrapperPath="curriculum/lessons/unit-"+n+"/index.html";
+  const lessonPath="curriculum/lessons/unit-"+n+"/formal-content.html";
+  const wrapper=read(wrapperPath);
+  const html=read(lessonPath);
+  assert.ok(wrapper.includes('src="../../../assets/khaemenes-kinder-mastery-gates.js"'),"Week "+unit+" wrapper must load its local mastery-gate asset");
+  assert.ok(wrapper.includes('fetch("formal-content.html"'),"Week "+unit+" wrapper must load the sibling formal lesson file");
+  assert.ok(exists(lessonPath),"Week "+unit+" formal content target must exist");
+  const localRefs=[...html.matchAll(/(?:href|src|action)\s*=\s*["']([^"']+)["']/gi)].map(m=>m[1].trim());
+  for(const ref of localRefs){
+    if(!ref||ref.startsWith("#")||/^(https?:|mailto:|tel:|data:|javascript:|\/\/)/i.test(ref)||ref.includes("$"+"{"))continue;
+    if(ref.startsWith("/stos/"))continue;
+    const clean=ref.split("#")[0].split("?")[0];
+    if(!clean)continue;
+    const target=clean.startsWith("/")?path.join(ROOT,clean.replace(/^\/+/,"")):path.resolve(ROOT,path.dirname(lessonPath),clean);
+    assert.ok(fs.existsSync(target),"Week "+unit+" has a missing local href/src target: "+ref+" -> "+path.relative(ROOT,target));
+  }
+}
+for(let unit=1;unit<=4;unit++){
+  const n=String(unit).padStart(2,"0"),html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  assert.ok(html.includes('src="../../../assets/lesson.js"'),"Week "+unit+" must load the real shared lesson.js from repository assets");
+  assert.ok(html.includes('src="../../../assets/naib-mentor-adapter.js"'),"Week "+unit+" must load the real NAIB adapter from repository assets");
+}
+for(let unit=26;unit<=36;unit++){
+  const n=String(unit).padStart(2,"0"),html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  assert.ok(html.includes('src="../../../assets/khaemenes-kinder-mastery-gates.js"'),"Week "+unit+" capstone must use the local mastery-gate asset");
+}
+
 const assessmentRoot=path.join(ROOT,"curriculum","assessments");
 const assessmentNames=fs.readdirSync(assessmentRoot,{withFileTypes:true}).filter(e=>e.isFile()&&(/^unit-\d{2}-assessment\.html$/.test(e.name)||["midterm.html","final-exam.html","weekly-assessments.html"].includes(e.name))).map(e=>e.name);
 assert.equal(assessmentNames.length,39,"39 legacy assessment routes must be accounted for");
