@@ -182,6 +182,24 @@ for(const unit of courseData.units){
     assert.ok(Array.isArray(lesson.successCriteria)&&lesson.successCriteria.length>=2,`Unit ${unit.unit} ${lesson.day} must define observable success criteria`);
   }
 }
+
+for(const unit of courseData.units){
+  const v=unit.verticalAlignment;
+  assert.ok(v&&Array.isArray(v.strands)&&v.strands.length>=2,"Week "+unit.unit+" must declare its instructional strands");
+  for(const field of ["before","deepen","transfer","next","support"])assert.ok(typeof v[field]==="string"&&v[field].trim().length>=50,"Week "+unit.unit+" needs substantive vertical-alignment guidance: "+field);
+  assert.equal(v.weeklyProgression.length,5,"Week "+unit.unit+" vertical map must include all five instructional days");
+  assert.deepEqual(v.weeklyProgression.map(day=>({day:day.day,target:day.target,lessonFocus:day.lessonFocus||null})),unit.lessons.map(lesson=>({day:lesson.day,target:lesson.objective,lessonFocus:lesson.formalLessonArc||null})),"Week "+unit.unit+" progression map must match the canonical five lesson records");
+}
+for(const unit of [1,5,6,7]){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  const targets=[...html.matchAll(/<p[^>]*>\s*<strong>(?:Daily learning target|Daily objective|Objective):<\/strong>\s*([\s\S]*?)<\/p>/gi)].map(m=>m[1].replace(/<[^>]*>/g,"").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,"<").replace(/&gt;/g,">").trim()).slice(0,5);
+  const source=courseData.units.find(item=>Number(item.unit)===unit);
+  assert.equal(targets.length,5,"Week "+unit+" must expose five formal daily targets");
+  assert.deepEqual(source.lessons.map(lesson=>lesson.objective),targets,"Week "+unit+" preview objectives must match formal lesson targets");
+  assert.deepEqual(source.lessons.map(lesson=>lesson.formalLessonTarget),targets,"Week "+unit+" formal target metadata must remain synchronized");
+}
+
 for(let unit=1;unit<=36;unit++){
   const rows=RUBRICS[unit];
   assert.ok(Array.isArray(rows),`Week ${unit} must have a unit-specific mastery rubric`);
