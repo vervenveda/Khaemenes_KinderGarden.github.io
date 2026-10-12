@@ -162,6 +162,7 @@ for(const dir of lessonDirs){
 
 
 assert.ok(gate.includes('if(CAPSTONE_UNITS.has(n)&&adultAffirmed!==true)throw new Error("adult-affirmation-required")'),"capstone daily evidence must require explicit adult affirmation");
+assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-evidence-save-failed")'),"daily evidence must not announce success when persistence fails");
 
 for(let unit=26;unit<=36;unit++){
   const n=String(unit).padStart(2,"0");
