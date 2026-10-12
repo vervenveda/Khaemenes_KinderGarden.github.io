@@ -54,8 +54,10 @@ Participation evidence remains separate from mastery.
 - removed remote Google audio/font runtime dependencies;
 - internalized owned Academy/Verve N Veda navigation routes;
 - preserved external science websites only as optional enrichment links;
-- moved GitHub Actions and Node maintenance scripts to historical evidence;
-- no GitHub Actions or Node maintenance path remains operational authority.
+- moved obsolete maintenance scripts to historical evidence;
+- one GitHub Actions workflow remains active for validation only, not learner/runtime authority;
+- CI Actions are SHA-pinned, checkout credentials are disabled after checkout, and token permissions are read-only;
+- GitHub-hosted CI remains an explicitly acknowledged development-time third-party dependency, not part of the sovereign learner runtime.
 
 ## Verification summary
 
