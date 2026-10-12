@@ -167,6 +167,13 @@ assert.equal(courseData.units.length,36,"course data must contain all 36 units")
 assert.equal(courseData.units.reduce((sum,u)=>sum+(u.lessons||[]).length,0),180,"course data must contain 180 daily lessons");
 for(const unit of courseData.units){
   assert.equal(unit.lessons.length,5,`Unit ${unit.unit} must contain five daily lessons`);
+  const weekly=unit.weeklyAssessment;
+  const weeklyRubric=RUBRICS[unit.unit];
+  assert.equal(weekly.passingScore,80,`Unit ${unit.unit} weekly assessment must retain the 80% threshold`);
+  assert.equal(weekly.items.length,10,`Unit ${unit.unit} weekly assessment must contain 10 unit-specific evidence items`);
+  assert.equal(new Set(weekly.items.map(item=>item.prompt)).size,10,`Unit ${unit.unit} weekly assessment prompts must be distinct`);
+  assert.equal(weekly.rubricSource,"curriculum/data/a-plus-mastery.js",`Unit ${unit.unit} assessment must identify its canonical rubric source`);
+  assert.deepEqual(weekly.items.map(item=>({label:item.criterionLabel,prompt:item.prompt,required:item.requiredCore===true})),weeklyRubric.map(row=>({label:row[0],prompt:row[1],required:row[2]===true})),`Unit ${unit.unit} assessment evidence must align exactly to its mastery rubric`);
   assert.equal(new Set(unit.lessons.map(l=>l.objective)).size,5,`Unit ${unit.unit} must have five day-specific objectives`);
   assert.equal(new Set(unit.lessons.map(l=>JSON.stringify(l.teacherScript))).size,5,`Unit ${unit.unit} must have five day-specific teacher scripts`);
   for(const lesson of unit.lessons){
