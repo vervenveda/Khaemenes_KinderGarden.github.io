@@ -354,6 +354,31 @@ for(const phrase of ["Rhyme is about sound, not matching letters","Syllables are
   assert.ok(week14.toLowerCase().includes(phrase.toLowerCase()),"Week 14 must preserve key phonological distinction and access coverage: "+phrase);
 }
 
+
+for(const unit of [19,20]){
+  const n=String(unit).padStart(2,"0");
+  const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
+  const cycles=[...html.matchAll(/<div class="kg-depth-cycle"[\s\S]*?<\/div>/gi)].map(m=>m[0]);
+  assert.equal(cycles.length,5,"Week "+unit+" must have five distinct instructional-depth cycles");
+  for(const cycle of cycles){
+    for(const phrase of ["Prerequisite retrieval","Explicit teacher model","Guided-to-independent practice","Common misconception and correction","Fresh transfer check","Evidence rule"]){
+      assert.ok(cycle.includes(phrase),"Week "+unit+" cycle must include "+phrase);
+    }
+  }
+  assertInlineScriptsParse("Vertical Instruction Week "+unit,html);
+  const unitData=courseData.units.find(item=>Number(item.unit)===unit);
+  assert.equal(unitData.weeklyAssessment.items.length,10,"Week "+unit+" assessment must contain ten rubric-aligned items");
+  assert.ok(unitData.weeklyAssessment.items.every((item,index)=>item.criterionLabel===RUBRICS[unit][index][0]&&item.prompt===RUBRICS[unit][index][1]&&item.requiredCore===(RUBRICS[unit][index][2]===true)),"Week "+unit+" assessment must align item-by-item with its specialized rubric");
+}
+const week19=read("curriculum/lessons/unit-19/formal-content.html").toLowerCase();
+for(const phrase of ["compare the learner only with their own earlier evidence","identity label","different starting point and direction","access tools let us observe the target skill more fairly","fresh integrated challenge"]){
+  assert.ok(week19.includes(phrase.toLowerCase()),"Week 19 must preserve growth-mindset and strategy reasoning: "+phrase);
+}
+const week20=read("curriculum/lessons/unit-20/formal-content.html").toLowerCase();
+for(const phrase of ["origin can be uncertain","cannot define a whole culture","the source actually shows","repeated motif is treated as proof of ownership or origin","entirely new teacher-created story excerpts"]){
+  assert.ok(week20.includes(phrase.toLowerCase()),"Week 20 must preserve source literacy and respectful interpretation: "+phrase);
+}
+
 for(let unit=8;unit<=25;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
