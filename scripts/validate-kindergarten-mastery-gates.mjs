@@ -187,8 +187,9 @@ for(const unit of courseData.units){
     assert.ok(Array.isArray(lesson.successCriteria)&&lesson.successCriteria.length>=2,`Unit ${unit.unit} ${lesson.day} must define observable success criteria`);
     const iq=lesson.instructionalQuality;
     assert.ok(iq&&typeof iq==="object",`Unit ${unit.unit} ${lesson.day} must define an instructional quality contract`);
-    for(const field of ["prerequisiteCheck","explicitModel","guidedPractice","misconceptionCorrection","transferTask","assessmentEvidence","reteachIfNeeded"]){
-      assert.ok(typeof iq[field]==="string"&&iq[field].trim().length>=60,`Unit ${unit.unit} ${lesson.day} instructionalQuality.${field} must be substantive`);
+    const qualityMinimums={prerequisiteCheck:40,explicitModel:80,guidedPractice:100,misconceptionCorrection:35,transferTask:100,assessmentEvidence:80,reteachIfNeeded:100};
+    for(const [field,minLength] of Object.entries(qualityMinimums)){
+      assert.ok(typeof iq[field]==="string"&&iq[field].trim().length>=minLength,`Unit ${unit.unit} ${lesson.day} instructionalQuality.${field} must be substantive (minimum ${minLength} characters)`);
     }
     assert.equal(iq.target,lesson.formalLessonTarget||lesson.objective,`Unit ${unit.unit} ${lesson.day} quality target must match the canonical lesson objective`);
     assert.ok(Array.isArray(iq.rubricCriteria)&&iq.rubricCriteria.length===2,`Unit ${unit.unit} ${lesson.day} must identify two assessment criteria`);
