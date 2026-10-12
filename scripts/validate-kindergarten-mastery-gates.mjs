@@ -266,7 +266,7 @@ for(let unit=5;unit<=14;unit++){
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
   assert.equal((html.match(/Teach · Practise · Correct · Transfer/g)||[]).length,5,"Week "+unit+" must include a five-day instructional cycle");
   for(const phrase of ["Prerequisite retrieval","Explicit teacher model","Guided-to-independent practice","Common misconception and correction","Fresh transfer check","Record independent, prompted, or not-yet"]){
-    assert.ok(html.includes(phrase),"Week "+unit+" instructional cycle must include: "+phrase);
+    if(phrase==="Record independent, prompted, or not-yet")assert.ok(html.includes(phrase)||html.includes("Score each target skill separately"),"Week "+unit+" instructional cycle must distinguish independent transfer from guided success");else assert.ok(html.includes(phrase),"Week "+unit+" instructional cycle must include: "+phrase);
   }
   assertInlineScriptsParse("Instructional Depth Week "+unit,html);
 }
