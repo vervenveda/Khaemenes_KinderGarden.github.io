@@ -193,7 +193,9 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
       at:value?.at||null,
       source:value?.source||null,
       evidenceType:value?.evidenceType||null,
-      artifact:value?.artifact||null
+      artifact:value?.artifact||null,
+      adultAffirmed:Boolean(value?.adultAffirmed),
+      adultAffirmedAt:value?.adultAffirmedAt||null
     });
   }
 
