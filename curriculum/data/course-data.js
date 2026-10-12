@@ -132,7 +132,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Recognize your name, identify a feeling, and count a small group of classroom objects."
+          "formalLessonTarget": "Recognize your name, identify a feeling, and count a small group of classroom objects.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Entry baseline: do not assume formal preschool skills. Invite an informal observation of communication, name recognition, object matching, and participation preferences.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Names, print awareness, listening routines. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count, match, and sort classroom objects. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Names and pictures communicate different information; model how each functions.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Learning identity and help-seeking\" and \"Name and belonging\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Learning identity and help-seeking\" and a reasoning sample for \"Name and belonging\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, model one step, reduce the choice set, use concrete objects and visual schedules, and record which supports helped; do not require public disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Recognize your name, identify a feeling, and count a small group of classroom objects.",
+            "rubricCriteria": [
+              "Learning identity and help-seeking",
+              "Name and belonging"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -177,7 +192,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example and communicates one step or choice."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Sort classroom materials by what they are used for and explain where they belong."
+          "formalLessonTarget": "Sort classroom materials by what they are used for and explain where they belong.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count, match, and sort classroom objects using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Letter names, whole words, and meanings are different; compare examples side by side.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Listening and shared attention\" and \"Print awareness\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Listening and shared attention\" and a reasoning sample for \"Print awareness\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, model one step, reduce the choice set, use concrete objects and visual schedules, and record which supports helped; do not require public disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Sort classroom materials by what they are used for and explain where they belong.",
+            "rubricCriteria": [
+              "Listening and shared attention",
+              "Print awareness"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -222,7 +252,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Uses an observation, comparison, or stated rule to support an explanation."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Put a simple classroom routine in order and explain why routines help."
+          "formalLessonTarget": "Put a simple classroom routine in order and explain why routines help.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to classroom community, safe routines, and responsibility. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Story guesses need a supporting detail from the text or picture.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"One-to-one counting\" and \"Sort and explain\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"One-to-one counting\" and a reasoning sample for \"Sort and explain\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, model one step, reduce the choice set, use concrete objects and visual schedules, and record which supports helped; do not require public disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Put a simple classroom routine in order and explain why routines help.",
+            "rubricCriteria": [
+              "One-to-one counting",
+              "Sort and explain"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -267,7 +312,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises an artifact and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Use simple symbols to represent classroom spaces and choose one helpful responsibility."
+          "formalLessonTarget": "Use simple symbols to represent classroom spaces and choose one helpful responsibility.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of name collage and classroom map using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "One-to-one counting requires each item to be counted once; use touching, moving, or pointing.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Safe routines\" and \"Community map or collage\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Safe routines\" and a reasoning sample for \"Community map or collage\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, model one step, reduce the choice set, use concrete objects and visual schedules, and record which supports helped; do not require public disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use simple symbols to represent classroom spaces and choose one helpful responsibility.",
+            "rubricCriteria": [
+              "Safe routines",
+              "Community map or collage"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -312,7 +372,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Reflect on belonging, helping, counting, organization, and trying again."
+          "formalLessonTarget": "Reflect on belonging, helping, counting, organization, and trying again.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count, match, and sort classroom objects and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to classroom community, safe routines, and responsibility or name collage and classroom map. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Transfer requires a new label, text, or object set.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Self-awareness\" and \"Reflection and participation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Self-awareness\" and a reasoning sample for \"Reflection and participation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, model one step, reduce the choice set, use concrete objects and visual schedules, and record which supports helped; do not require public disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Reflect on belonging, helping, counting, organization, and trying again.",
+            "rubricCriteria": [
+              "Self-awareness",
+              "Reflection and participation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -507,7 +582,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Identifies or matches a familiar name letter and explains what one label communicates."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning."
+          "formalLessonTarget": "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 1 name/label noticing, listening routines, object matching, and one-to-one counting; establish these with a quick baseline if not yet secure.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Name letters, environmental print, story parts. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count to 10 with one-to-one correspondence. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A name, a letter, a word, and a picture are related but different.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Name-letter recognition\" and \"Letter and sound relationship\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Name-letter recognition\" and a reasoning sample for \"Letter and sound relationship\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, start with the learner's own name or a highly familiar label; avoid guessing at untaught letter-sound correspondences and accept pointing, matching, dictation, or AAC. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify or match familiar letters in the learner's name and explain or show that a familiar label or sign carries meaning.",
+            "rubricCriteria": [
+              "Name-letter recognition",
+              "Letter and sound relationship"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -552,7 +642,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Attempts a taught letter-sound match or sort and explains the rule."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule."
+          "formalLessonTarget": "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count to 10 with one-to-one correspondence using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Letter names and letter sounds are not interchangeable; use taught examples only.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Environmental print\" and \"Story elements\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Environmental print\" and a reasoning sample for \"Story elements\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, start with the learner's own name or a highly familiar label; avoid guessing at untaught letter-sound correspondences and accept pointing, matching, dictation, or AAC. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Match a small set of taught familiar letters to example sounds when appropriate, then sort name-letter cards using a stated rule.",
+            "rubricCriteria": [
+              "Environmental print",
+              "Story elements"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -597,7 +702,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Identifies a character and setting and uses a story clue."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail."
+          "formalLessonTarget": "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to books, authors, illustrators, characters, and settings. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A story prediction differs from a detail supported by the text or illustration.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"One-to-one counting to 10\" and \"Cardinality\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"One-to-one counting to 10\" and a reasoning sample for \"Cardinality\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, start with the learner's own name or a highly familiar label; avoid guessing at untaught letter-sound correspondences and accept pointing, matching, dictation, or AAC. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify a character and a setting in a familiar story and ask or answer one relevant question using a picture or story detail.",
+            "rubricCriteria": [
+              "One-to-one counting to 10",
+              "Cardinality"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -642,7 +762,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates an accessible name-book page and counts a small set one-to-one when appropriate."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one."
+          "formalLessonTarget": "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of make a name book using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "The last count tells the total only when each item was counted once.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Question and response\" and \"Name-book creation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Question and response\" and a reasoning sample for \"Name-book creation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, start with the learner's own name or a highly familiar label; avoid guessing at untaught letter-sound correspondences and accept pointing, matching, dictation, or AAC. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create a name-book page using drawing, marks, copied print, labels, dictation, AAC, or another accessible form, and count a small set of marks or letters one-to-one.",
+            "rubricCriteria": [
+              "Question and response",
+              "Name-book creation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -687,7 +822,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Transfers a name-print, story, or counting skill to a fresh example."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence."
+          "formalLessonTarget": "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count to 10 with one-to-one correspondence and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to books, authors, illustrators, characters, and settings or make a name book. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Repeated practice is not transfer; change the label or story example.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Listening and turn-taking\" and \"Transfer and reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Listening and turn-taking\" and a reasoning sample for \"Transfer and reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, start with the learner's own name or a highly familiar label; avoid guessing at untaught letter-sound correspondences and accept pointing, matching, dictation, or AAC. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use a fresh name-letter or environmental-print example, respond to a story question, and count a small collection with one-to-one correspondence.",
+            "rubricCriteria": [
+              "Listening and turn-taking",
+              "Transfer and reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -882,7 +1032,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Attempts one activity connected to rhyming, beginning sounds, feelings vocabulary or compare groups: more, less, same."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Name or communicate one feeling and choose a safe, respectful way to express a need or preference; recognize that speech, gesture, drawing, sign, and AAC are valid ways to communicate."
+          "formalLessonTarget": "Name or communicate one feeling and choose a safe, respectful way to express a need or preference; recognize that speech, gesture, drawing, sign, and AAC are valid ways to communicate.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from familiar words, shared listening, and turn-taking in Weeks 1–2.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Rhyming, beginning sounds, feelings vocabulary. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Compare groups: more, less, same. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Communication does not need to be spoken aloud.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Feelings vocabulary\" and \"Rhyming awareness\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Feelings vocabulary\" and a reasoning sample for \"Rhyming awareness\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not require a child to disclose a personal feeling or perform aloud; use fictional characters, picture choices, AAC, and concrete quantity sets. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Name or communicate one feeling and choose a safe, respectful way to express a need or preference; recognize that speech, gesture, drawing, sign, and AAC are valid ways to communicate.",
+            "rubricCriteria": [
+              "Feelings vocabulary",
+              "Rhyming awareness"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -927,7 +1092,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Shows or communicates a strategy using an accessible representation."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation."
+          "formalLessonTarget": "Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through compare groups: more, less, same using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Rhyme depends on ending sounds, not simply starting alike.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Beginning-sound awareness\" and \"Compare quantities\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Beginning-sound awareness\" and a reasoning sample for \"Compare quantities\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not require a child to disclose a personal feeling or perform aloud; use fictional characters, picture choices, AAC, and concrete quantity sets. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Children practice rhyme, beginning sounds, and friendship language with manipulatives and conversation.",
+            "rubricCriteria": [
+              "Beginning-sound awareness",
+              "Compare quantities"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -972,7 +1152,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Connects a conclusion to what was observed, tested, sorted, or compared."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Children compare groups and notice how words help communities stay kind and safe."
+          "formalLessonTarget": "Children compare groups and notice how words help communities stay kind and safe.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to families, friendships, kindness, and classroom citizenship. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "People may feel differently; do not require personal disclosure.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Friendship and perspective\" and \"Listening to a peer\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Friendship and perspective\" and a reasoning sample for \"Listening to a peer\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not require a child to disclose a personal feeling or perform aloud; use fictional characters, picture choices, AAC, and concrete quantity sets. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Children compare groups and notice how words help communities stay kind and safe.",
+            "rubricCriteria": [
+              "Friendship and perspective",
+              "Listening to a peer"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -1017,7 +1212,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Explains or shows one deliberate choice, feature, or revision connected to the learning goal."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Children create, explain, and practice repair language with a partner or small group."
+          "formalLessonTarget": "Children create, explain, and practice repair language with a partner or small group.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of feelings wheel and friendship bracelet using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "More/fewer/same are quantity comparisons that can be checked by matching or counting.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Repair language\" and \"Feelings-wheel artifact\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Repair language\" and a reasoning sample for \"Feelings-wheel artifact\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not require a child to disclose a personal feeling or perform aloud; use fictional characters, picture choices, AAC, and concrete quantity sets. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Children create, explain, and practice repair language with a partner or small group.",
+            "rubricCriteria": [
+              "Repair language",
+              "Feelings-wheel artifact"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -1062,7 +1272,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Explains, shows, or selects one piece of evidence and one next learning step."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Children share one growth moment and celebrate voice, friendship, and feelings language."
+          "formalLessonTarget": "Children share one growth moment and celebrate voice, friendship, and feelings language.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using compare groups: more, less, same and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to families, friendships, kindness, and classroom citizenship or feelings wheel and friendship bracelet. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A repair phrase respects boundaries but does not force forgiveness.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Respectful boundaries\" and \"Reflection and transfer\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Respectful boundaries\" and a reasoning sample for \"Reflection and transfer\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not require a child to disclose a personal feeling or perform aloud; use fictional characters, picture choices, AAC, and concrete quantity sets. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Children share one growth moment and celebrate voice, friendship, and feelings language.",
+            "rubricCriteria": [
+              "Respectful boundaries",
+              "Reflection and transfer"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -1257,7 +1482,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates two directly observed details using a safe, chosen mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling."
+          "formalLessonTarget": "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 3's noticing and communicating, without assuming every child is comfortable with sensory exploration.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Describing words and sound matching. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sort and classify by attributes. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "An observation is noticed evidence; an inference is an explanation.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Sensory observation\" and \"Observation versus inference\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Sensory observation\" and a reasoning sample for \"Observation versus inference\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require tasting; touch and smell remain optional. Use pictures, adult descriptions, distance observation, gesture, or AAC; do not use surprise sensory exposure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Observe a safe classroom object or picture and communicate two directly noticed details, while choosing a safe way to participate without mandatory touching, tasting, or smelling.",
+            "rubricCriteria": [
+              "Sensory observation",
+              "Observation versus inference"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -1302,7 +1542,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Sorts picture cards and recognizes that no sense must be physically used to complete the task."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required."
+          "formalLessonTarget": "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sort and classify by attributes using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Picture evidence is valid; touching, tasting, or smelling are not required.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Descriptive language\" and \"Attribute classification\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Descriptive language\" and a reasoning sample for \"Attribute classification\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require tasting; touch and smell remain optional. Use pictures, adult descriptions, distance observation, gesture, or AAC; do not use surprise sensory exposure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Sort familiar picture cards by the sense that could provide information, recognizing that some objects can be explored through more than one sense and that tasting is not required.",
+            "rubricCriteria": [
+              "Descriptive language",
+              "Attribute classification"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -1347,7 +1602,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Separates an observed detail from a guess and identifies a clue."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame."
+          "formalLessonTarget": "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to scientific observation through safe sense routines. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Objects can be sorted by different attributes; state the current rule.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Compare and classify\" and \"Sound matching\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Compare and classify\" and a reasoning sample for \"Sound matching\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require tasting; touch and smell remain optional. Use pictures, adult descriptions, distance observation, gesture, or AAC; do not use surprise sensory exposure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish a directly observed detail from a guess about the object, using a safe visual or supplied-picture investigation and an “I notice / I think” frame.",
+            "rubricCriteria": [
+              "Compare and classify",
+              "Sound matching"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -1392,7 +1662,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates an accessible observation record with two details."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper."
+          "formalLessonTarget": "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of senses journal using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "One object can provide clues through multiple senses, but no sense is compulsory.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Safe sensory choices\" and \"Senses journal\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Safe sensory choices\" and a reasoning sample for \"Senses journal\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require tasting; touch and smell remain optional. Use pictures, adult descriptions, distance observation, gesture, or AAC; do not use surprise sensory exposure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create a simple sensory-observation map or journal using two observed details and a chosen representation; select an accessible role such as observer, listener, recorder, or materials helper.",
+            "rubricCriteria": [
+              "Safe sensory choices",
+              "Senses journal"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -1437,7 +1722,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies observation-versus-inference reasoning to a fresh example and chooses a safe way to participate."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question."
+          "formalLessonTarget": "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sort and classify by attributes and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to scientific observation through safe sense routines or senses journal. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A guess is not a fact without supporting evidence.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Evidence-based explanation\" and \"Reflection and careful noticing\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence-based explanation\" and a reasoning sample for \"Reflection and careful noticing\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require tasting; touch and smell remain optional. Use pictures, adult descriptions, distance observation, gesture, or AAC; do not use surprise sensory exposure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use a fresh picture or safe object example to name an observation, distinguish it from an inference, choose a safe participation method, and communicate one next question.",
+            "rubricCriteria": [
+              "Evidence-based explanation",
+              "Reflection and careful noticing"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -1632,7 +1932,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation."
+          "formalLessonTarget": "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 4's careful noticing, descriptive language, and attribute sorting.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Nature words and letter sounds. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Create and extend patterns. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Seasonal evidence varies by climate and place.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Unit idea\" and \"Literacy\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Unit idea\" and a reasoning sample for \"Literacy\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer image samples when outdoor materials are unavailable; treat season signs as observations rather than assuming every climate has snow or leaf-color change. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Observe and describe natural objects or images using specific words, identify the beginning sound in leaf, and record one weather observation.",
+            "rubricCriteria": [
+              "Unit idea",
+              "Literacy"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -1677,7 +1992,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example and communicates one step or choice."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary."
+          "formalLessonTarget": "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through create and extend patterns using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A repeating pattern contains a unit that repeats.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Listening / reading\" and \"Writing / fine motor\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Listening / reading\" and a reasoning sample for \"Writing / fine motor\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer image samples when outdoor materials are unavailable; treat season signs as observations rather than assuming every climate has snow or leaf-color change. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create, extend, and explain repeating patterns using color, shape, movement, or objects while reusing Monday’s nature vocabulary.",
+            "rubricCriteria": [
+              "Listening / reading",
+              "Writing / fine motor"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -1722,7 +2052,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Uses an observation, comparison, or stated rule to support an explanation."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence."
+          "formalLessonTarget": "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to seasonal weather and living things. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "One observed leaf does not prove a seasonal cause.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Mathematics / pattern\" and \"Math reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Mathematics / pattern\" and a reasoning sample for \"Math reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer image samples when outdoor materials are unavailable; treat season signs as observations rather than assuming every climate has snow or leaf-color change. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare seasonal changes, connect weather to observations, and make a simple prediction using evidence.",
+            "rubricCriteria": [
+              "Mathematics / pattern",
+              "Math reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -1767,7 +2112,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises an artifact and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice."
+          "formalLessonTarget": "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of leaf rubbings and pattern crown using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Count each unit once and preserve the rule when extending.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Inquiry\" and \"Maker / arts\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Inquiry\" and a reasoning sample for \"Maker / arts\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer image samples when outdoor materials are unavailable; treat season signs as observations rather than assuming every climate has snow or leaf-color change. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create a visual or tactile artifact that combines nature observation and a repeating pattern, then explain one artistic and one scientific choice.",
+            "rubricCriteria": [
+              "Inquiry",
+              "Maker / arts"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -1812,7 +2172,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration."
+          "formalLessonTarget": "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using create and extend patterns and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to seasonal weather and living things or leaf rubbings and pattern crown. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use a new image/object to test transfer beyond copying.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Social-emotional\" and \"Participation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Social-emotional\" and a reasoning sample for \"Participation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer image samples when outdoor materials are unavailable; treat season signs as observations rather than assuming every climate has snow or leaf-color change. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Retrieve the week's most important ideas without notes, identify anything that needs another try, and prepare for the adult-observed mastery demonstration.",
+            "rubricCriteria": [
+              "Social-emotional",
+              "Participation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -2007,7 +2382,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence."
+          "formalLessonTarget": "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 5's nature noticing, vocabulary, and pattern structure.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Weather vocabulary and shared writing. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Graph daily weather and count totals. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "One day's weather does not define a climate or season.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Weather communication\" and \"Observation vs inference\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Weather communication\" and a reasoning sample for \"Observation vs inference\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a provided sample data set if daily observation is unavailable; never use the graph to claim certainty about future weather. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Describe current weather with accurate vocabulary, separate observation from inference, and create one shared weather sentence.",
+            "rubricCriteria": [
+              "Weather communication",
+              "Observation vs inference"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -2052,7 +2442,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example and communicates one step or choice."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future."
+          "formalLessonTarget": "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through graph daily weather and count totals using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Graph marks represent counts, not predictions by themselves.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Listening / shared writing\" and \"Weather data\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Listening / shared writing\" and a reasoning sample for \"Weather data\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a provided sample data set if daily observation is unavailable; never use the graph to claim certainty about future weather. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Read a simple five-day weather data set, count totals, compare categories, and explain what the graph shows without pretending it predicts the future.",
+            "rubricCriteria": [
+              "Listening / shared writing",
+              "Weather data"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -2097,7 +2502,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Uses an observation, comparison, or stated rule to support an explanation."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object."
+          "formalLessonTarget": "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to weather, sunlight, shade, and safety. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Sunlight, shade, and temperature are related but distinct observations.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Data reasoning\" and \"Sunlight / shade inquiry\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Data reasoning\" and a reasoning sample for \"Sunlight / shade inquiry\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a provided sample data set if daily observation is unavailable; never use the graph to claim certainty about future weather. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare light and shade safely, identify a shadow as evidence that light is blocked, and explain one way shade can affect a place or object.",
+            "rubricCriteria": [
+              "Data reasoning",
+              "Sunlight / shade inquiry"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -2142,7 +2562,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises an artifact and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool."
+          "formalLessonTarget": "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of weather wheel using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Weather actions depend on context and trusted-adult guidance.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Sun and severe-weather safety\" and \"Weather-ready design\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Sun and severe-weather safety\" and a reasoning sample for \"Weather-ready design\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a provided sample data set if daily observation is unavailable; never use the graph to claim certainty about future weather. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Match clothing/actions to weather conditions using reasoning—not stereotypes—and create a simple weather wheel or accessible weather-choice tool.",
+            "rubricCriteria": [
+              "Sun and severe-weather safety",
+              "Weather-ready design"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -2187,7 +2622,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery."
+          "formalLessonTarget": "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using graph daily weather and count totals and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to weather, sunlight, shade, and safety or weather wheel. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Claims must fit the displayed sample.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Reasoned choice\" and \"Weather report / reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Reasoned choice\" and a reasoning sample for \"Weather report / reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a provided sample data set if daily observation is unavailable; never use the graph to claim certainty about future weather. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Retrieve the week's core science, data, vocabulary, and safety ideas; communicate a short evidence-based weather report; and identify anything needing remediation before mastery.",
+            "rubricCriteria": [
+              "Reasoned choice",
+              "Weather report / reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -2382,7 +2832,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Shows the target skill on a concrete or pictured example using an accessible response mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature."
+          "formalLessonTarget": "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 5's sorting/pattern rules and Week 6's careful description of observable features.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Shape words and positional words. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Identify, compose, and sort shapes. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Color alone does not define a shape; rotate and compare examples.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Shape properties\" and \"2D / 3D distinction\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Shape properties\" and a reasoning sample for \"2D / 3D distinction\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use large manipulatives, tactile or high-contrast shapes, and verbal/pointing responses; assess properties rather than drawing precision. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify common 2D and 3D shapes by properties, explain that turning or resizing a shape does not change its identity, and describe at least one edge/corner/curve/face feature.",
+            "rubricCriteria": [
+              "Shape properties",
+              "2D / 3D distinction"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -2427,7 +2892,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a guided example and communicates one step or choice."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Use positional words accurately and compose familiar shapes into a larger figure or design."
+          "formalLessonTarget": "Use positional words accurately and compose familiar shapes into a larger figure or design.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through identify, compose, and sort shapes using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A 2D drawing may represent a 3D object but is not the object itself.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Spatial language\" and \"Shape composition\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Spatial language\" and a reasoning sample for \"Shape composition\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use large manipulatives, tactile or high-contrast shapes, and verbal/pointing responses; assess properties rather than drawing precision. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use positional words accurately and compose familiar shapes into a larger figure or design.",
+            "rubricCriteria": [
+              "Spatial language",
+              "Shape composition"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -2472,7 +2952,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Uses an observation, comparison, or stated rule to support an explanation."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule."
+          "formalLessonTarget": "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to design, structure, and spatial reasoning. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Position words rely on a reference point and starting location.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Attribute classification\" and \"Color / visual design observation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Attribute classification\" and a reasoning sample for \"Color / visual design observation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use large manipulatives, tactile or high-contrast shapes, and verbal/pointing responses; assess properties rather than drawing precision. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Sort the same objects by different attributes, explain the sorting rule, and explore color mixing or layering as an observation rather than a memorized rule.",
+            "rubricCriteria": [
+              "Attribute classification",
+              "Color / visual design observation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -2517,7 +3012,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises an artifact and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works."
+          "formalLessonTarget": "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of shape city using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Shapes can be composed in multiple valid ways.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Geometry-rich design\" and \"Design reasoning and revision\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Geometry-rich design\" and a reasoning sample for \"Design reasoning and revision\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use large manipulatives, tactile or high-contrast shapes, and verbal/pointing responses; assess properties rather than drawing precision. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Plan and create a Shape City using geometric forms and spatial relationships, test one design choice, and revise or explain why it works.",
+            "rubricCriteria": [
+              "Geometry-rich design",
+              "Design reasoning and revision"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -2562,7 +3072,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies the skill to a fresh example, identifies evidence, and names one next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery."
+          "formalLessonTarget": "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using identify, compose, and sort shapes and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to design, structure, and spatial reasoning or shape city. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A design is judged against its stated constraint, not resemblance to the model.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Mathematical communication\" and \"Persistence / reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Mathematical communication\" and a reasoning sample for \"Persistence / reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use large manipulatives, tactile or high-contrast shapes, and verbal/pointing responses; assess properties rather than drawing precision. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Retrieve core geometry ideas, explain a design using shape properties and positional language, and identify one successful revision or next step before formal mastery.",
+            "rubricCriteria": [
+              "Mathematical communication",
+              "Persistence / reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -2758,7 +3283,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "discover repeating units and distinguish pattern from randomness.",
-          "formalLessonTarget": "Discover repeating units and distinguish pattern from randomness"
+          "formalLessonTarget": "Discover repeating units and distinguish pattern from randomness",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 5's repeating-pattern experience, Week 3's rhyme exposure, and Week 7's visual/spatial representations.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Rhyming, syllable claps, repeated words. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: AB, AAB, ABC patterns. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A repeating unit is the chunk that repeats.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Repeating pattern rule\" and \"Pattern reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Repeating pattern rule\" and a reasoning sample for \"Pattern reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer non-auditory and non-movement equivalents; distinguish steady beat, rhythm, syllable, and rhyme rather than treating them as the same skill. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Discover repeating units and distinguish pattern from randomness",
+            "rubricCriteria": [
+              "Repeating pattern rule",
+              "Pattern reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -2804,7 +3344,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "connect beat, rhythm, syllables, and rhyme without confusing them.",
-          "formalLessonTarget": "Connect beat, rhythm, syllables, and rhyme without confusing them"
+          "formalLessonTarget": "Connect beat, rhythm, syllables, and rhyme without confusing them",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through ab, aab, abc patterns using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Beat, rhythm, rhyme, and syllable are different concepts.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Beat and rhythm\" and \"Syllable and rhyme\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Beat and rhythm\" and a reasoning sample for \"Syllable and rhyme\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer non-auditory and non-movement equivalents; distinguish steady beat, rhythm, syllable, and rhyme rather than treating them as the same skill. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Connect beat, rhythm, syllables, and rhyme without confusing them",
+            "rubricCriteria": [
+              "Beat and rhythm",
+              "Syllable and rhyme"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -2850,7 +3405,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "translate one pattern rule across visual, tactile, sound, and movement forms.",
-          "formalLessonTarget": "Translate one pattern rule across visual, tactile, sound, and movement forms"
+          "formalLessonTarget": "Translate one pattern rule across visual, tactile, sound, and movement forms",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to patterns in music, dance, and nature. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "The same pattern rule can appear in different materials or modes.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Pattern translation\" and \"Representation reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Pattern translation\" and a reasoning sample for \"Representation reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer non-auditory and non-movement equivalents; distinguish steady beat, rhythm, syllable, and rhyme rather than treating them as the same skill. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Translate one pattern rule across visual, tactile, sound, and movement forms",
+            "rubricCriteria": [
+              "Pattern translation",
+              "Representation reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -2896,7 +3466,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "design and rehearse an original pattern performance with respectful choices.",
-          "formalLessonTarget": "Design and rehearse an original pattern performance with respectful choices"
+          "formalLessonTarget": "Design and rehearse an original pattern performance with respectful choices",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of pattern performance using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Equivalent quiet, visual, tactile, or seated participation counts.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Pattern performance / maker\" and \"Self-regulation and safety\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Pattern performance / maker\" and a reasoning sample for \"Self-regulation and safety\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer non-auditory and non-movement equivalents; distinguish steady beat, rhythm, syllable, and rhyme rather than treating them as the same skill. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design and rehearse an original pattern performance with respectful choices",
+            "rubricCriteria": [
+              "Pattern performance / maker",
+              "Self-regulation and safety"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -2942,7 +3527,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "retrieve, conduct, repair errors, explain the rule, and prepare for mastery.",
-          "formalLessonTarget": "Retrieve, conduct, repair errors, explain the rule, and prepare for mastery"
+          "formalLessonTarget": "Retrieve, conduct, repair errors, explain the rule, and prepare for mastery",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using ab, aab, abc patterns and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to patterns in music, dance, and nature or pattern performance. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Change the surface representation while keeping the pattern rule.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Respectful creative choices\" and \"Transfer / reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Respectful creative choices\" and a reasoning sample for \"Transfer / reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer non-auditory and non-movement equivalents; distinguish steady beat, rhythm, syllable, and rhyme rather than treating them as the same skill. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Retrieve, conduct, repair errors, explain the rule, and prepare for mastery",
+            "rubricCriteria": [
+              "Respectful creative choices",
+              "Transfer / reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -3138,7 +3738,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "understand that families and caring communities can take many forms.",
-          "formalLessonTarget": "Understand that families and caring communities can take many forms"
+          "formalLessonTarget": "Understand that families and caring communities can take many forms",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Weeks 2–3 story listening and Week 7 positional/spatial language.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Oral history and story sequence. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Compare lengths and heights. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Families and homes vary; there is no single expected form.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Privacy and belonging\" and \"Story sequence / oral history\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Privacy and belonging\" and a reasoning sample for \"Story sequence / oral history\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional or learner-selected family examples; do not require sharing family structure, traditions, names, or private history. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Understand that families and caring communities can take many forms",
+            "rubricCriteria": [
+              "Privacy and belonging",
+              "Story sequence / oral history"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -3184,7 +3799,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "listen to and sequence an oral-history or fictional past/present story.",
-          "formalLessonTarget": "Listen to and sequence an oral-history or fictional past/present story"
+          "formalLessonTarget": "Listen to and sequence an oral-history or fictional past/present story",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through compare lengths and heights using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Past/present claims require clues or a source.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Past and present\" and \"Measurement with equal units\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Past and present\" and a reasoning sample for \"Measurement with equal units\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional or learner-selected family examples; do not require sharing family structure, traditions, names, or private history. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Listen to and sequence an oral-history or fictional past/present story",
+            "rubricCriteria": [
+              "Past and present",
+              "Measurement with equal units"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -3230,7 +3860,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "compare home/building objects using nonstandard length and height measures.",
-          "formalLessonTarget": "Compare home/building objects using nonstandard length and height measures"
+          "formalLessonTarget": "Compare home/building objects using nonstandard length and height measures",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to past/present, families, culture, and respect. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Fair measurement starts at the same point using equal units without gaps.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Measurement comparison\" and \"Tradition without stereotype\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Measurement comparison\" and a reasoning sample for \"Tradition without stereotype\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional or learner-selected family examples; do not require sharing family structure, traditions, names, or private history. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare home/building objects using nonstandard length and height measures",
+            "rubricCriteria": [
+              "Measurement comparison",
+              "Tradition without stereotype"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -3276,7 +3921,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "explore traditions as meaningful repeated practices that can vary and change.",
-          "formalLessonTarget": "Explore traditions as meaningful repeated practices that can vary and change"
+          "formalLessonTarget": "Explore traditions as meaningful repeated practices that can vary and change",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of family house drawing using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Traditions vary and change even within a community.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Source and respect reasoning\" and \"Private-information boundary\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Source and respect reasoning\" and a reasoning sample for \"Private-information boundary\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional or learner-selected family examples; do not require sharing family structure, traditions, names, or private history. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Explore traditions as meaningful repeated practices that can vary and change",
+            "rubricCriteria": [
+              "Source and respect reasoning",
+              "Private-information boundary"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -3322,7 +3982,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate story sequence, measurement, past/present, belonging, privacy, and respect.",
-          "formalLessonTarget": "Integrate story sequence, measurement, past/present, belonging, privacy, and respect"
+          "formalLessonTarget": "Integrate story sequence, measurement, past/present, belonging, privacy, and respect",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using compare lengths and heights and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to past/present, families, culture, and respect or family house drawing. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Fictional or chosen examples protect privacy.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Integrated belonging artifact\" and \"Reflection and respectful learning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Integrated belonging artifact\" and a reasoning sample for \"Reflection and respectful learning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional or learner-selected family examples; do not require sharing family structure, traditions, names, or private history. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate story sequence, measurement, past/present, belonging, privacy, and respect",
+            "rubricCriteria": [
+              "Integrated belonging artifact",
+              "Reflection and respectful learning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -3518,7 +4193,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "understand a map as a selective model, not the place itself.",
-          "formalLessonTarget": "Understand a map as a selective model, not the place itself"
+          "formalLessonTarget": "Understand a map as a selective model, not the place itself",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 7's spatial language and Week 9's sequencing/measurement.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Map words and labels. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count steps and compare distances. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A map is a selective model, not the place itself.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Map as model\" and \"Symbols and legend\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Map as model\" and a reasoning sample for \"Symbols and legend\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional places and avoid personal home-location details; provide tactile, high-contrast, or verbal route alternatives. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Understand a map as a selective model, not the place itself",
+            "rubricCriteria": [
+              "Map as model",
+              "Symbols and legend"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -3564,7 +4254,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "design symbols, labels, and a readable legend/key.",
-          "formalLessonTarget": "Design symbols, labels, and a readable legend/key"
+          "formalLessonTarget": "Design symbols, labels, and a readable legend/key",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count steps and compare distances using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A legend explains symbols; check the key.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Spatial and route language\" and \"Consistent distance units\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Spatial and route language\" and a reasoning sample for \"Consistent distance units\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional places and avoid personal home-location details; provide tactile, high-contrast, or verbal route alternatives. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design symbols, labels, and a readable legend/key",
+            "rubricCriteria": [
+              "Spatial and route language",
+              "Consistent distance units"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -3610,7 +4315,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "follow, describe, and compare routes using consistent model units.",
-          "formalLessonTarget": "Follow, describe, and compare routes using consistent model units"
+          "formalLessonTarget": "Follow, describe, and compare routes using consistent model units",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to maps, symbols, places, and directions. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Route comparisons need a consistent unit or step convention.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Route comparison\" and \"Location privacy\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Route comparison\" and a reasoning sample for \"Location privacy\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional places and avoid personal home-location details; provide tactile, high-contrast, or verbal route alternatives. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Follow, describe, and compare routes using consistent model units",
+            "rubricCriteria": [
+              "Route comparison",
+              "Location privacy"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -3656,7 +4376,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "plan a fictional community around varied needs and accessible routes.",
-          "formalLessonTarget": "Plan a fictional community around varied needs and accessible routes"
+          "formalLessonTarget": "Plan a fictional community around varied needs and accessible routes",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of classroom treasure map using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Never reveal a child's real home location in a map task.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Community access reasoning\" and \"Map limitation and purpose\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Community access reasoning\" and a reasoning sample for \"Map limitation and purpose\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional places and avoid personal home-location details; provide tactile, high-contrast, or verbal route alternatives. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Plan a fictional community around varied needs and accessible routes",
+            "rubricCriteria": [
+              "Community access reasoning",
+              "Map limitation and purpose"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -3702,7 +4437,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "navigate, explain, test, revise, and reflect.",
-          "formalLessonTarget": "Navigate, explain, test, revise, and reflect"
+          "formalLessonTarget": "Navigate, explain, test, revise, and reflect",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count steps and compare distances and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to maps, symbols, places, and directions or classroom treasure map. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Support map claims with a symbol, route, or key.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Map testing and revision\" and \"Navigator reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Map testing and revision\" and a reasoning sample for \"Navigator reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use fictional places and avoid personal home-location details; provide tactile, high-contrast, or verbal route alternatives. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Navigate, explain, test, revise, and reflect",
+            "rubricCriteria": [
+              "Map testing and revision",
+              "Navigator reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -3898,7 +4648,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "investigate seeds and plant structures/functions.",
-          "formalLessonTarget": "Investigate seeds and plant structures/functions"
+          "formalLessonTarget": "Investigate seeds and plant structures/functions",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Weeks 4–6 observation, description, and data recording.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Plant vocabulary and sequence words. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Measure plant growth informally. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Plants need resources, but conditions and amounts vary.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Plant structures and functions\" and \"Living-plant needs\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Plant structures and functions\" and a reasoning sample for \"Living-plant needs\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied growth records if a plant has not grown; avoid implying that one short observation proves a general causal rule. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Investigate seeds and plant structures/functions",
+            "rubricCriteria": [
+              "Plant structures and functions",
+              "Living-plant needs"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -3944,7 +4709,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "distinguish plant needs, resources, and common misconceptions.",
-          "formalLessonTarget": "Distinguish plant needs, resources, and common misconceptions"
+          "formalLessonTarget": "Distinguish plant needs, resources, and common misconceptions",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through measure plant growth informally using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Plant structure and function are related but not identical.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Growth sequence\" and \"Growth measurement\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Growth sequence\" and a reasoning sample for \"Growth measurement\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied growth records if a plant has not grown; avoid implying that one short observation proves a general causal rule. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish plant needs, resources, and common misconceptions",
+            "rubricCriteria": [
+              "Growth sequence",
+              "Growth measurement"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -3990,7 +4770,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "measure and journal change from a consistent baseline.",
-          "formalLessonTarget": "Measure and journal change from a consistent baseline"
+          "formalLessonTarget": "Measure and journal change from a consistent baseline",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to living things need water, light, and care. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Compare growth using consistent measures and dates.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Observation journal\" and \"Evidence vs prediction\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Observation journal\" and a reasoning sample for \"Evidence vs prediction\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied growth records if a plant has not grown; avoid implying that one short observation proves a general causal rule. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Measure and journal change from a consistent baseline",
+            "rubricCriteria": [
+              "Observation journal",
+              "Evidence vs prediction"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -4036,7 +4831,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "use fair-test thinking, evidence, and responsible care.",
-          "formalLessonTarget": "Use fair-test thinking, evidence, and responsible care"
+          "formalLessonTarget": "Use fair-test thinking, evidence, and responsible care",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of seed cup and plant journal using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "One plant or trial cannot establish a universal cause.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Fair-test thinking\" and \"Seed and plant safety\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Fair-test thinking\" and a reasoning sample for \"Seed and plant safety\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied growth records if a plant has not grown; avoid implying that one short observation proves a general causal rule. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use fair-test thinking, evidence, and responsible care",
+            "rubricCriteria": [
+              "Fair-test thinking",
+              "Seed and plant safety"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -4082,7 +4892,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate structures, needs, sequence, measurement, evidence, and stewardship.",
-          "formalLessonTarget": "Integrate structures, needs, sequence, measurement, evidence, and stewardship"
+          "formalLessonTarget": "Integrate structures, needs, sequence, measurement, evidence, and stewardship",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using measure plant growth informally and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to living things need water, light, and care or seed cup and plant journal. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Label predictions separately from observations.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Care and stewardship\" and \"Plant scientist reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Care and stewardship\" and a reasoning sample for \"Plant scientist reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied growth records if a plant has not grown; avoid implying that one short observation proves a general causal rule. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate structures, needs, sequence, measurement, evidence, and stewardship",
+            "rubricCriteria": [
+              "Care and stewardship",
+              "Plant scientist reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -4278,7 +5103,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "distinguish observations about animal structures and behaviors from guesses.",
-          "formalLessonTarget": "Distinguish observations about animal structures and behaviors from guesses"
+          "formalLessonTarget": "Distinguish observations about animal structures and behaviors from guesses",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 11's plant-need reasoning and Weeks 4–6 observation practices.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Animal sounds and alliteration. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sort and count animal groups. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Features can suggest function but may not prove intention.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Animal observation vs inference\" and \"Structure / behavior function\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Animal observation vs inference\" and a reasoning sample for \"Structure / behavior function\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use images/models or distant observation; never require catching, touching, feeding, or disturbing wildlife. Treat behavior as evidence, not a human personality label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish observations about animal structures and behaviors from guesses",
+            "rubricCriteria": [
+              "Animal observation vs inference",
+              "Structure / behavior function"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -4324,7 +5164,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "classify animals by stated evidence-based rules and count/compare groups.",
-          "formalLessonTarget": "Classify animals by stated evidence-based rules and count/compare groups"
+          "formalLessonTarget": "Classify animals by stated evidence-based rules and count/compare groups",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sort and count animal groups using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "State a classification rule and apply it to counterexamples.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Evidence-based classification\" and \"Count and compare groups\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence-based classification\" and a reasoning sample for \"Count and compare groups\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use images/models or distant observation; never require catching, touching, feeding, or disturbing wildlife. Treat behavior as evidence, not a human personality label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Classify animals by stated evidence-based rules and count/compare groups",
+            "rubricCriteria": [
+              "Evidence-based classification",
+              "Count and compare groups"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -4370,7 +5225,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "connect habitat resources and conditions to animal needs.",
-          "formalLessonTarget": "Connect habitat resources and conditions to animal needs"
+          "formalLessonTarget": "Connect habitat resources and conditions to animal needs",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to needs of living things and habitats. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Habitat fit depends on resources and conditions, not appearance alone.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Some / not-all reasoning\" and \"Habitat resources and conditions\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Some / not-all reasoning\" and a reasoning sample for \"Habitat resources and conditions\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use images/models or distant observation; never require catching, touching, feeding, or disturbing wildlife. Treat behavior as evidence, not a human personality label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Connect habitat resources and conditions to animal needs",
+            "rubricCriteria": [
+              "Some / not-all reasoning",
+              "Habitat resources and conditions"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -4416,7 +5286,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "engineer and revise a habitat model that explains its choices.",
-          "formalLessonTarget": "Engineer and revise a habitat model that explains its choices"
+          "formalLessonTarget": "Engineer and revise a habitat model that explains its choices",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of habitat diorama using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A graph describes the sample, not every animal.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Habitat model reasoning\" and \"Design testing and revision\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Habitat model reasoning\" and a reasoning sample for \"Design testing and revision\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use images/models or distant observation; never require catching, touching, feeding, or disturbing wildlife. Treat behavior as evidence, not a human personality label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Engineer and revise a habitat model that explains its choices",
+            "rubricCriteria": [
+              "Habitat model reasoning",
+              "Design testing and revision"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -4462,7 +5347,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate needs, classification, habitat fit, evidence, and humane care.",
-          "formalLessonTarget": "Integrate needs, classification, habitat fit, evidence, and humane care"
+          "formalLessonTarget": "Integrate needs, classification, habitat fit, evidence, and humane care",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sort and count animal groups and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to needs of living things and habitats or habitat diorama. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use humane observation; never require catching or disturbing wildlife.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Humane wildlife boundary\" and \"Animal scientist reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Humane wildlife boundary\" and a reasoning sample for \"Animal scientist reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use images/models or distant observation; never require catching, touching, feeding, or disturbing wildlife. Treat behavior as evidence, not a human personality label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate needs, classification, habitat fit, evidence, and humane care",
+            "rubricCriteria": [
+              "Humane wildlife boundary",
+              "Animal scientist reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -4658,7 +5558,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "build and retell a clear beginning-middle-end narrative.",
-          "formalLessonTarget": "Build and retell a clear beginning-middle-end narrative"
+          "formalLessonTarget": "Build and retell a clear beginning-middle-end narrative",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 9's story sequence, Week 3's communication/relationship skills, and earlier small-set counting.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Retelling and story beginning/middle/end. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Add and take apart numbers to 5. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Beginning, middle, and end refer to event order.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Story sequence and retelling\" and \"Story evidence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Story sequence and retelling\" and a reasoning sample for \"Story evidence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, gratitude is optional; never require a performance, gift, personal disclosure, or a claim that every act of care must be repaid. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Build and retell a clear beginning-middle-end narrative",
+            "rubricCriteria": [
+              "Story sequence and retelling",
+              "Story evidence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -4704,7 +5619,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "compose and take apart quantities to 5 using number stories.",
-          "formalLessonTarget": "Compose and take apart quantities to 5 using number stories"
+          "formalLessonTarget": "Compose and take apart quantities to 5 using number stories",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through add and take apart numbers to 5 using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A number can be decomposed in different ways while retaining its total.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Compose numbers to 5\" and \"Decompose numbers to 5\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Compose numbers to 5\" and a reasoning sample for \"Decompose numbers to 5\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, gratitude is optional; never require a performance, gift, personal disclosure, or a claim that every act of care must be repaid. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compose and take apart quantities to 5 using number stories",
+            "rubricCriteria": [
+              "Compose numbers to 5",
+              "Decompose numbers to 5"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -4750,7 +5680,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "investigate visible acts of community care without ranking people or jobs.",
-          "formalLessonTarget": "Investigate visible acts of community care without ranking people or jobs"
+          "formalLessonTarget": "Investigate visible acts of community care without ranking people or jobs",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to community helpers and acts of care. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Do not rank care, jobs, gifts, or people by status.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Number-story meaning\" and \"Community-care reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Number-story meaning\" and a reasoning sample for \"Community-care reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, gratitude is optional; never require a performance, gift, personal disclosure, or a claim that every act of care must be repaid. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Investigate visible acts of community care without ranking people or jobs",
+            "rubricCriteria": [
+              "Number-story meaning",
+              "Community-care reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -4796,7 +5741,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "create an authentic appreciation message or equivalent chosen response.",
-          "formalLessonTarget": "Create an authentic appreciation message or equivalent chosen response"
+          "formalLessonTarget": "Create an authentic appreciation message or equivalent chosen response",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of thank-you card workshop using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Gratitude is voluntary; no child owes a gift or public performance.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Consent and helping boundary\" and \"Authentic appreciation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Consent and helping boundary\" and a reasoning sample for \"Authentic appreciation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, gratitude is optional; never require a performance, gift, personal disclosure, or a claim that every act of care must be repaid. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create an authentic appreciation message or equivalent chosen response",
+            "rubricCriteria": [
+              "Consent and helping boundary",
+              "Authentic appreciation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -4842,7 +5802,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate story, number, care, boundaries, and reflection.",
-          "formalLessonTarget": "Integrate story, number, care, boundaries, and reflection"
+          "formalLessonTarget": "Integrate story, number, care, boundaries, and reflection",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using add and take apart numbers to 5 and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to community helpers and acts of care or thank-you card workshop. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use a fresh story and a new number model.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Economic and privacy fairness\" and \"Integrated story-number reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Economic and privacy fairness\" and a reasoning sample for \"Integrated story-number reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, gratitude is optional; never require a performance, gift, personal disclosure, or a claim that every act of care must be repaid. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate story, number, care, boundaries, and reflection",
+            "rubricCriteria": [
+              "Economic and privacy fairness",
+              "Integrated story-number reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -5038,7 +6013,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify and generate rhyme in an appropriate language pathway.",
-          "formalLessonTarget": "Identify and generate rhyme in an appropriate language pathway"
+          "formalLessonTarget": "Identify and generate rhyme in an appropriate language pathway",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 3's introductory rhyme/beginning-sound work and Week 8's sound/rhythm connections.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Rhyme, syllables, onset sounds. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count sounds, beats, and objects. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Rhyme concerns ending sounds; syllables and starting sounds are distinct.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Rhyme recognition / generation\" and \"Rhyme vs spelling\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Rhyme recognition / generation\" and a reasoning sample for \"Rhyme vs spelling\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, respect home-language and dialect differences; allow picture, token, sign, or other language pathways and don't equate accent with error. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify and generate rhyme in an appropriate language pathway",
+            "rubricCriteria": [
+              "Rhyme recognition / generation",
+              "Rhyme vs spelling"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -5084,7 +6074,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "segment and count syllables without confusing syllables with letters.",
-          "formalLessonTarget": "Segment and count syllables without confusing syllables with letters"
+          "formalLessonTarget": "Segment and count syllables without confusing syllables with letters",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count sounds, beats, and objects using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A syllable is a spoken beat/chunk, not a letter count.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Syllable segmentation\" and \"Syllable vs letter count\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Syllable segmentation\" and a reasoning sample for \"Syllable vs letter count\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, respect home-language and dialect differences; allow picture, token, sign, or other language pathways and don't equate accent with error. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Segment and count syllables without confusing syllables with letters",
+            "rubricCriteria": [
+              "Syllable segmentation",
+              "Syllable vs letter count"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -5130,7 +6135,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "notice beginning sounds and distinguish sound from spelling.",
-          "formalLessonTarget": "Notice beginning sounds and distinguish sound from spelling"
+          "formalLessonTarget": "Notice beginning sounds and distinguish sound from spelling",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to language as communication. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Letter names and speech sounds differ; respect dialect and home language.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Beginning sound / feature\" and \"Sound-letter distinction\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Beginning sound / feature\" and a reasoning sample for \"Sound-letter distinction\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, respect home-language and dialect differences; allow picture, token, sign, or other language pathways and don't equate accent with error. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Notice beginning sounds and distinguish sound from spelling",
+            "rubricCriteria": [
+              "Beginning sound / feature",
+              "Sound-letter distinction"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -5176,7 +6196,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "create word-play patterns and explain the rule.",
-          "formalLessonTarget": "Create word-play patterns and explain the rule"
+          "formalLessonTarget": "Create word-play patterns and explain the rule",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of rhyme parade using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Apply the sound-feature rule to new examples.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Count and compare language units\" and \"Rule-based word play\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Count and compare language units\" and a reasoning sample for \"Rule-based word play\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, respect home-language and dialect differences; allow picture, token, sign, or other language pathways and don't equate accent with error. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create word-play patterns and explain the rule",
+            "rubricCriteria": [
+              "Count and compare language units",
+              "Rule-based word play"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -5222,7 +6257,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "retrieve, compare, correct misconceptions, and prepare for mastery.",
-          "formalLessonTarget": "Retrieve, compare, correct misconceptions, and prepare for mastery"
+          "formalLessonTarget": "Retrieve, compare, correct misconceptions, and prepare for mastery",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count sounds, beats, and objects and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to language as communication or rhyme parade. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Speaking aloud is not required to demonstrate sound awareness.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Language-access respect\" and \"Language pattern reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Language-access respect\" and a reasoning sample for \"Language pattern reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, respect home-language and dialect differences; allow picture, token, sign, or other language pathways and don't equate accent with error. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Retrieve, compare, correct misconceptions, and prepare for mastery",
+            "rubricCriteria": [
+              "Language-access respect",
+              "Language pattern reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -5418,7 +6468,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "compare length/height directly from a common starting point.",
-          "formalLessonTarget": "Compare length/height directly from a common starting point"
+          "formalLessonTarget": "Compare length/height directly from a common starting point",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds from Week 9's direct measurement and Week 7's design composition.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Measurement words and describing structures. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Measure with nonstandard units. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Length, weight, and capacity are different attributes.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Direct comparison from common start\" and \"Consistent nonstandard measurement\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Direct comparison from common start\" and a reasoning sample for \"Consistent nonstandard measurement\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use safe lightweight materials and stable tabletop tests; praise revision and reasoning over the tallest or strongest structure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare length/height directly from a common starting point",
+            "rubricCriteria": [
+              "Direct comparison from common start",
+              "Consistent nonstandard measurement"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -5464,7 +6529,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "measure with repeated equal-size nonstandard units and report the unit.",
-          "formalLessonTarget": "Measure with repeated equal-size nonstandard units and report the unit"
+          "formalLessonTarget": "Measure with repeated equal-size nonstandard units and report the unit",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through measure with nonstandard units using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Fair nonstandard measures use equal units and a common starting point.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Number plus unit communication\" and \"Measurement error detection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Number plus unit communication\" and a reasoning sample for \"Measurement error detection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use safe lightweight materials and stable tabletop tests; praise revision and reasoning over the tallest or strongest structure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Measure with repeated equal-size nonstandard units and report the unit",
+            "rubricCriteria": [
+              "Number plus unit communication",
+              "Measurement error detection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -5510,7 +6590,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "investigate heavier/lighter and capacity without confusing size, weight, and amount held.",
-          "formalLessonTarget": "Investigate heavier/lighter and capacity without confusing size, weight, and amount held"
+          "formalLessonTarget": "Investigate heavier/lighter and capacity without confusing size, weight, and amount held",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to structure, balance, and materials. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Larger does not automatically mean heavier or greater capacity.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Weight reasoning\" and \"Capacity reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Weight reasoning\" and a reasoning sample for \"Capacity reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use safe lightweight materials and stable tabletop tests; praise revision and reasoning over the tallest or strongest structure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Investigate heavier/lighter and capacity without confusing size, weight, and amount held",
+            "rubricCriteria": [
+              "Weight reasoning",
+              "Capacity reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -5556,7 +6651,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "design, test, measure, and revise a tabletop model bridge under a stated constraint.",
-          "formalLessonTarget": "Design, test, measure, and revise a tabletop model bridge under a stated constraint"
+          "formalLessonTarget": "Design, test, measure, and revise a tabletop model bridge under a stated constraint",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of block bridge challenge using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Design tradeoffs depend on the criteria given.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Attribute distinction\" and \"Engineering constraint and fair test\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Attribute distinction\" and a reasoning sample for \"Engineering constraint and fair test\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use safe lightweight materials and stable tabletop tests; praise revision and reasoning over the tallest or strongest structure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design, test, measure, and revise a tabletop model bridge under a stated constraint",
+            "rubricCriteria": [
+              "Attribute distinction",
+              "Engineering constraint and fair test"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -5602,7 +6712,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate fair measurement, evidence, engineering decisions, and reflection.",
-          "formalLessonTarget": "Integrate fair measurement, evidence, engineering decisions, and reflection"
+          "formalLessonTarget": "Integrate fair measurement, evidence, engineering decisions, and reflection",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using measure with nonstandard units and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to structure, balance, and materials or block bridge challenge. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A single bridge trial does not prove universal strength.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Evidence-based design revision\" and \"Measurement access and safety\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence-based design revision\" and a reasoning sample for \"Measurement access and safety\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use safe lightweight materials and stable tabletop tests; praise revision and reasoning over the tallest or strongest structure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate fair measurement, evidence, engineering decisions, and reflection",
+            "rubricCriteria": [
+              "Evidence-based design revision",
+              "Measurement access and safety"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -5798,7 +6923,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "examine needs, wants, and context without shaming different lives.",
-          "formalLessonTarget": "Examine needs, wants, and context without shaming different lives"
+          "formalLessonTarget": "Examine needs, wants, and context without shaming different lives",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on counting/cardinality, part-whole work, and Week 15's explicit comparison rules.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Decision words and opinion starters. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count pennies/counters and compare amounts. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Needs and wants depend on context and must not shame families.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Needs and wants in context\" and \"Economic privacy and dignity\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Needs and wants in context\" and a reasoning sample for \"Economic privacy and dignity\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, tokens are mathematical models, not measures of personal worth; keep examples fictional, avoid ranking jobs, and accept different reasonable priorities. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Examine needs, wants, and context without shaming different lives",
+            "rubricCriteria": [
+              "Needs and wants in context",
+              "Economic privacy and dignity"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -5844,7 +6984,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "count, represent, and compare token amounts with one-to-one correspondence.",
-          "formalLessonTarget": "Count, represent, and compare token amounts with one-to-one correspondence"
+          "formalLessonTarget": "Count, represent, and compare token amounts with one-to-one correspondence",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count pennies/counters and compare amounts using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Tokens represent quantities, not personal worth.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Token counting\" and \"Amount comparison\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Token counting\" and a reasoning sample for \"Amount comparison\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, tokens are mathematical models, not measures of personal worth; keep examples fictional, avoid ranking jobs, and accept different reasonable priorities. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Count, represent, and compare token amounts with one-to-one correspondence",
+            "rubricCriteria": [
+              "Token counting",
+              "Amount comparison"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -5890,7 +7045,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "distinguish goods/services and trace how work/resources help meet needs.",
-          "formalLessonTarget": "Distinguish goods/services and trace how work/resources help meet needs"
+          "formalLessonTarget": "Distinguish goods/services and trace how work/resources help meet needs",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to needs, wants, goods, and services. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Goods are items and services are actions/help; some examples mix both.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Goods and services\" and \"Work and system respect\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Goods and services\" and a reasoning sample for \"Work and system respect\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, tokens are mathematical models, not measures of personal worth; keep examples fictional, avoid ranking jobs, and accept different reasonable priorities. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish goods/services and trace how work/resources help meet needs",
+            "rubricCriteria": [
+              "Goods and services",
+              "Work and system respect"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -5936,7 +7106,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing.",
-          "formalLessonTarget": "Use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing"
+          "formalLessonTarget": "Use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of classroom market using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Fairness depends on the stated rule, not just identical appearance.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Constrained choice and tradeoff\" and \"Saving reasoning without moralization\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Constrained choice and tradeoff\" and a reasoning sample for \"Saving reasoning without moralization\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, tokens are mathematical models, not measures of personal worth; keep examples fictional, avoid ranking jobs, and accept different reasonable priorities. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use a fictional market to reason about choices, tradeoffs, saving, and voluntary sharing",
+            "rubricCriteria": [
+              "Constrained choice and tradeoff",
+              "Saving reasoning without moralization"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -5982,7 +7167,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate quantity, priorities, choice reasoning, dignity, and reflection.",
-          "formalLessonTarget": "Integrate quantity, priorities, choice reasoning, dignity, and reflection"
+          "formalLessonTarget": "Integrate quantity, priorities, choice reasoning, dignity, and reflection",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count pennies/counters and compare amounts and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to needs, wants, goods, and services or classroom market. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Change the budget or constraint while keeping the number reasoning.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Voluntary sharing and consent\" and \"Integrated decision reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Voluntary sharing and consent\" and a reasoning sample for \"Integrated decision reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, tokens are mathematical models, not measures of personal worth; keep examples fictional, avoid ranking jobs, and accept different reasonable priorities. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate quantity, priorities, choice reasoning, dignity, and reflection",
+            "rubricCriteria": [
+              "Voluntary sharing and consent",
+              "Integrated decision reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -6178,7 +7378,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify light sources and explain how an opaque object can block light to form a shadow.",
-          "formalLessonTarget": "Identify light sources and explain how an opaque object can block light to form a shadow"
+          "formalLessonTarget": "Identify light sources and explain how an opaque object can block light to form a shadow",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 6's sunlight/weather observations and Week 15's consistent measurement.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Light/shadow vocabulary. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Compare shadow lengths. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A shadow needs a light source, object, and surface.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Light source / shadow relationship\" and \"Controlled shadow change\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Light source / shadow relationship\" and a reasoning sample for \"Controlled shadow change\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a flashlight and paper model; never look directly at the Sun. Use indirect evidence and do not use shadow change alone as proof of every sky claim. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify light sources and explain how an opaque object can block light to form a shadow",
+            "rubricCriteria": [
+              "Light source / shadow relationship",
+              "Controlled shadow change"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -6224,7 +7439,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "change source/object/screen position and observe how the shadow changes.",
-          "formalLessonTarget": "Change source/object/screen position and observe how the shadow changes"
+          "formalLessonTarget": "Change source/object/screen position and observe how the shadow changes",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through compare shadow lengths using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Change one variable at a time to test a shadow change.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Shadow geometry reasoning\" and \"Consistent shadow measurement\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Shadow geometry reasoning\" and a reasoning sample for \"Consistent shadow measurement\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a flashlight and paper model; never look directly at the Sun. Use indirect evidence and do not use shadow change alone as proof of every sky claim. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Change source/object/screen position and observe how the shadow changes",
+            "rubricCriteria": [
+              "Shadow geometry reasoning",
+              "Consistent shadow measurement"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -6270,7 +7500,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "measure and compare shadow/model lengths using a consistent baseline and unit.",
-          "formalLessonTarget": "Measure and compare shadow/model lengths using a consistent baseline and unit"
+          "formalLessonTarget": "Measure and compare shadow/model lengths using a consistent baseline and unit",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to sunlight, shadow, day/night patterns. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use a common baseline and unit for measurements.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Measurement error and model limits\" and \"Earth rotation / day-night\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Measurement error and model limits\" and a reasoning sample for \"Earth rotation / day-night\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a flashlight and paper model; never look directly at the Sun. Use indirect evidence and do not use shadow change alone as proof of every sky claim. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Measure and compare shadow/model lengths using a consistent baseline and unit",
+            "rubricCriteria": [
+              "Measurement error and model limits",
+              "Earth rotation / day-night"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -6316,7 +7561,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype.",
-          "formalLessonTarget": "Model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype"
+          "formalLessonTarget": "Model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of shadow puppet theatre using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Earth's rotation explains day/night; the Sun does not circle Earth daily.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Seasonal / global reasoning\" and \"Light investigation safety\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Seasonal / global reasoning\" and a reasoning sample for \"Light investigation safety\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a flashlight and paper model; never look directly at the Sun. Use indirect evidence and do not use shadow change alone as proof of every sky claim. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Model Earth’s rotation for day/night and compare seasonal light without a snow/cold stereotype",
+            "rubricCriteria": [
+              "Seasonal / global reasoning",
+              "Light investigation safety"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -6362,7 +7622,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "retrieve, explain, repair misconceptions, and integrate evidence safely.",
-          "formalLessonTarget": "Retrieve, explain, repair misconceptions, and integrate evidence safely"
+          "formalLessonTarget": "Retrieve, explain, repair misconceptions, and integrate evidence safely",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using compare shadow lengths and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to sunlight, shadow, day/night patterns or shadow puppet theatre. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "One shadow observation does not prove every sky explanation.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Accessible science participation\" and \"Integrated light scientist reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Accessible science participation\" and a reasoning sample for \"Integrated light scientist reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use a flashlight and paper model; never look directly at the Sun. Use indirect evidence and do not use shadow change alone as proof of every sky claim. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Retrieve, explain, repair misconceptions, and integrate evidence safely",
+            "rubricCriteria": [
+              "Accessible science participation",
+              "Integrated light scientist reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -6558,7 +7833,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "take a low-stakes retrieval snapshot across first-semester domains.",
-          "formalLessonTarget": "Take a low-stakes retrieval snapshot across first-semester domains"
+          "formalLessonTarget": "Take a low-stakes retrieval snapshot across first-semester domains",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Consolidates Weeks 1–17; use prior learner evidence, not age or speed assumptions, to choose targets.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Review print, sounds, retelling, and oral language. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Review counting, shapes, patterns, and comparison. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A snapshot identifies teaching needs; it is not a diagnosis or mastery score.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Cross-domain retrieval\" and \"Literacy transfer after remediation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Cross-domain retrieval\" and a reasoning sample for \"Literacy transfer after remediation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, treat errors as diagnostic evidence, avoid fluency theater and peer comparison, and give more than one mode of response. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Take a low-stakes retrieval snapshot across first-semester domains",
+            "rubricCriteria": [
+              "Cross-domain retrieval",
+              "Literacy transfer after remediation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -6604,7 +7894,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "target literacy/language needs with explicit remediation and transfer.",
-          "formalLessonTarget": "Target literacy/language needs with explicit remediation and transfer"
+          "formalLessonTarget": "Target literacy/language needs with explicit remediation and transfer",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through review counting, shapes, patterns, and comparison using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Success with support is useful evidence; record the support.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Mathematics transfer after remediation\" and \"Inquiry and evidence transfer\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Mathematics transfer after remediation\" and a reasoning sample for \"Inquiry and evidence transfer\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, treat errors as diagnostic evidence, avoid fluency theater and peer comparison, and give more than one mode of response. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Target literacy/language needs with explicit remediation and transfer",
+            "rubricCriteria": [
+              "Mathematics transfer after remediation",
+              "Inquiry and evidence transfer"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -6650,7 +7955,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "target mathematics/quantitative reasoning needs with concrete representations.",
-          "formalLessonTarget": "Target mathematics/quantitative reasoning needs with concrete representations"
+          "formalLessonTarget": "Target mathematics/quantitative reasoning needs with concrete representations",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to review observation, maps, living things, and weather. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Identical repeats measure memory; use a parallel fresh example.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Error analysis and repair\" and \"Privacy safety and dignity transfer\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Error analysis and repair\" and a reasoning sample for \"Privacy safety and dignity transfer\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, treat errors as diagnostic evidence, avoid fluency theater and peer comparison, and give more than one mode of response. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Target mathematics/quantitative reasoning needs with concrete representations",
+            "rubricCriteria": [
+              "Error analysis and repair",
+              "Privacy safety and dignity transfer"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -6696,7 +8016,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "integrate inquiry, community, design, evidence, safety, and model reasoning.",
-          "formalLessonTarget": "Integrate inquiry, community, design, evidence, safety, and model reasoning"
+          "formalLessonTarget": "Integrate inquiry, community, design, evidence, safety, and model reasoning",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of midyear portfolio cover using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Speed is not the same as understanding.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Integrated practice demonstration\" and \"Accessible mastery participation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Integrated practice demonstration\" and a reasoning sample for \"Accessible mastery participation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, treat errors as diagnostic evidence, avoid fluency theater and peer comparison, and give more than one mode of response. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate inquiry, community, design, evidence, safety, and model reasoning",
+            "rubricCriteria": [
+              "Integrated practice demonstration",
+              "Accessible mastery participation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -6742,7 +8077,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery.",
-          "formalLessonTarget": "Revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery"
+          "formalLessonTarget": "Revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using review counting, shapes, patterns, and comparison and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to review observation, maps, living things, and weather or midyear portfolio cover. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Formal readiness depends on the mastery gate, not only remediation completion.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Portfolio and growth reflection\" and \"Midyear authority boundary\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Portfolio and growth reflection\" and a reasoning sample for \"Midyear authority boundary\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, treat errors as diagnostic evidence, avoid fluency theater and peer comparison, and give more than one mode of response. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Revisit weak spots, organize evidence, reflect on growth, and determine readiness for Week 18 mastery",
+            "rubricCriteria": [
+              "Portfolio and growth reflection",
+              "Midyear authority boundary"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -6938,7 +8288,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "compare the learner’s own past/current evidence and describe change without peer ranking.",
-          "formalLessonTarget": "Compare the learner’s own past/current evidence and describe change without peer ranking"
+          "formalLessonTarget": "Compare the learner’s own past/current evidence and describe change without peer ranking",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 18's retrieval, targeted support, and recorded learning evidence.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: I can / I am learning sentence frames. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count forward/back and compare strategies. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A goal describes an observable next step, not a fixed trait.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Evidence-based learning growth\" and \"Observable academic goal\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence-based learning growth\" and a reasoning sample for \"Observable academic goal\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use learner-chosen goals, normalize asking for help/breaks, and do not describe a single performance as fixed ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare the learner’s own past/current evidence and describe change without peer ranking",
+            "rubricCriteria": [
+              "Evidence-based learning growth",
+              "Observable academic goal"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -6984,7 +8349,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "design a small, observable learning goal and identify strategies/supports.",
-          "formalLessonTarget": "Design a small, observable learning goal and identify strategies/supports"
+          "formalLessonTarget": "Design a small, observable learning goal and identify strategies/supports",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count forward/back and compare strategies using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "State the rule behind a number sequence.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Strategy and support plan\" and \"Forward number sequence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Strategy and support plan\" and a reasoning sample for \"Forward number sequence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use learner-chosen goals, normalize asking for help/breaks, and do not describe a single performance as fixed ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design a small, observable learning goal and identify strategies/supports",
+            "rubricCriteria": [
+              "Strategy and support plan",
+              "Forward number sequence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -7030,7 +8410,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "investigate forward/backward number sequences and compare valid strategies without speed pressure.",
-          "formalLessonTarget": "Investigate forward/backward number sequences and compare valid strategies without speed pressure"
+          "formalLessonTarget": "Investigate forward/backward number sequences and compare valid strategies without speed pressure",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to growth as change over time. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A strategy may need adapting in a new situation.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Backward number sequence\" and \"Strategy comparison without speed\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Backward number sequence\" and a reasoning sample for \"Strategy comparison without speed\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use learner-chosen goals, normalize asking for help/breaks, and do not describe a single performance as fixed ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Investigate forward/backward number sequences and compare valid strategies without speed pressure",
+            "rubricCriteria": [
+              "Backward number sequence",
+              "Strategy comparison without speed"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -7076,7 +8471,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "test a strategy, notice evidence, ask for support, and revise the goal/plan when needed.",
-          "formalLessonTarget": "Test a strategy, notice evidence, ask for support, and revise the goal/plan when needed"
+          "formalLessonTarget": "Test a strategy, notice evidence, ask for support, and revise the goal/plan when needed",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of goal garden using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Revising a goal is learning, not failure.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Evidence-based strategy revision\" and \"Growth-mindset nuance and access\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence-based strategy revision\" and a reasoning sample for \"Growth-mindset nuance and access\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use learner-chosen goals, normalize asking for help/breaks, and do not describe a single performance as fixed ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Test a strategy, notice evidence, ask for support, and revise the goal/plan when needed",
+            "rubricCriteria": [
+              "Evidence-based strategy revision",
+              "Growth-mindset nuance and access"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -7122,7 +8532,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection.",
-          "formalLessonTarget": "Integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection"
+          "formalLessonTarget": "Integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count forward/back and compare strategies and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to growth as change over time or goal garden. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Compare the learner's work across attempts, not against peers.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Goal privacy and dignity\" and \"Integrated learning-growth reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Goal privacy and dignity\" and a reasoning sample for \"Integrated learning-growth reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use learner-chosen goals, normalize asking for help/breaks, and do not describe a single performance as fixed ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate evidence, goal, strategy, math reasoning, correction, and next-step reflection",
+            "rubricCriteria": [
+              "Goal privacy and dignity",
+              "Integrated learning-growth reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -7318,7 +8743,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "distinguish story, source, teller/author, version, retelling, and uncertain origin.",
-          "formalLessonTarget": "Distinguish story, source, teller/author, version, retelling, and uncertain origin"
+          "formalLessonTarget": "Distinguish story, source, teller/author, version, retelling, and uncertain origin",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Weeks 2 and 9 story comprehension, Week 10 map-as-model reasoning, and Week 14 language analysis.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Characters, setting, and story sequence. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Compare story collections. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A source, version, retelling, and uncertain origin are different.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Story source / version reasoning\" and \"Source uncertainty and representation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Story source / version reasoning\" and a reasoning sample for \"Source uncertainty and representation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not present uncertain story origins as facts; use appropriate, credited/public-domain or teacher-created versions and avoid cultural flattening. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish story, source, teller/author, version, retelling, and uncertain origin",
+            "rubricCriteria": [
+              "Story source / version reasoning",
+              "Source uncertainty and representation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -7364,7 +8804,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "compare character, setting, sequence, and evidence across two provided stories/versions.",
-          "formalLessonTarget": "Compare character, setting, sequence, and evidence across two provided stories/versions"
+          "formalLessonTarget": "Compare character, setting, sequence, and evidence across two provided stories/versions",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through compare story collections using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Link a story detail to the version or illustration used.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Character setting and sequence evidence\" and \"Comparative story evidence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Character setting and sequence evidence\" and a reasoning sample for \"Comparative story evidence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not present uncertain story origins as facts; use appropriate, credited/public-domain or teacher-created versions and avoid cultural flattening. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare character, setting, sequence, and evidence across two provided stories/versions",
+            "rubricCriteria": [
+              "Character setting and sequence evidence",
+              "Comparative story evidence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -7410,7 +8865,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "connect story context to maps/place carefully while revisiting map purpose and limits.",
-          "formalLessonTarget": "Connect story context to maps/place carefully while revisiting map purpose and limits"
+          "formalLessonTarget": "Connect story context to maps/place carefully while revisiting map purpose and limits",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to maps, cultures, traditions, and respect. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A map or place context does not prove historical origin.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Story-sample mathematics\" and \"Map and place model limits\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Story-sample mathematics\" and a reasoning sample for \"Map and place model limits\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not present uncertain story origins as facts; use appropriate, credited/public-domain or teacher-created versions and avoid cultural flattening. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Connect story context to maps/place carefully while revisiting map purpose and limits",
+            "rubricCriteria": [
+              "Story-sample mathematics",
+              "Map and place model limits"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -7456,7 +8926,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material.",
-          "formalLessonTarget": "Compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material"
+          "formalLessonTarget": "Compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of world story suitcase using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A graph describes the provided stories only.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Translation and storytelling-form respect\" and \"Version motif and respectful variation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Translation and storytelling-form respect\" and a reasoning sample for \"Version motif and respectful variation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not present uncertain story origins as facts; use appropriate, credited/public-domain or teacher-created versions and avoid cultural flattening. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare versions/motifs, count and graph evidence, and create a respectful original variation without copying restricted material",
+            "rubricCriteria": [
+              "Translation and storytelling-form respect",
+              "Version motif and respectful variation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -7502,7 +8987,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate source, story evidence, map reasoning, variation, mathematics, and respectful context.",
-          "formalLessonTarget": "Integrate source, story evidence, map reasoning, variation, mathematics, and respectful context"
+          "formalLessonTarget": "Integrate source, story evidence, map reasoning, variation, mathematics, and respectful context",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using compare story collections and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to maps, cultures, traditions, and respect or world story suitcase. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Create a respectful variation without copying restricted text or flattening culture.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Protected-material and identity boundary\" and \"Integrated respectful story scholarship\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Protected-material and identity boundary\" and a reasoning sample for \"Integrated respectful story scholarship\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, do not present uncertain story origins as facts; use appropriate, credited/public-domain or teacher-created versions and avoid cultural flattening. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate source, story evidence, map reasoning, variation, mathematics, and respectful context",
+            "rubricCriteria": [
+              "Protected-material and identity boundary",
+              "Integrated respectful story scholarship"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -7698,7 +9198,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "gather multiple evidence clues for living systems instead of using motion or appearance alone.",
-          "formalLessonTarget": "Gather multiple evidence clues for living systems instead of using motion or appearance alone"
+          "formalLessonTarget": "Gather multiple evidence clues for living systems instead of using motion or appearance alone",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Weeks 11–12 plant/animal needs and Week 4's observation-versus-inference language.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Living/nonliving vocabulary. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sort, tally, and graph. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Movement alone does not prove something is living; use multiple clues.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Multiple evidence clues for life\" and \"Living needs and diversity\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Multiple evidence clues for life\" and a reasoning sample for \"Living needs and diversity\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, include edge cases like dormant seeds carefully; do not claim motion alone proves life or imply that uncertainty is failure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Gather multiple evidence clues for living systems instead of using motion or appearance alone",
+            "rubricCriteria": [
+              "Multiple evidence clues for life",
+              "Living needs and diversity"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -7744,7 +9259,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "distinguish living now, once-living/material from living things, and never-living examples.",
-          "formalLessonTarget": "Distinguish living now, once-living/material from living things, and never-living examples"
+          "formalLessonTarget": "Distinguish living now, once-living/material from living things, and never-living examples",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sort, tally, and graph using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Living, once-living, and never-living are different categories.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Living / once-living / never-living distinction\" and \"Rule-first classification with uncertainty\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Living / once-living / never-living distinction\" and a reasoning sample for \"Rule-first classification with uncertainty\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, include edge cases like dormant seeds carefully; do not claim motion alone proves life or imply that uncertainty is failure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish living now, once-living/material from living things, and never-living examples",
+            "rubricCriteria": [
+              "Living / once-living / never-living distinction",
+              "Rule-first classification with uncertainty"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -7790,7 +9320,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "state a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category.",
-          "formalLessonTarget": "State a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category"
+          "formalLessonTarget": "State a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to living things grow and need resources. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "State the rule first and allow an uncertainty category.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Tally graph and sample reasoning\" and \"Counterexample reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Tally graph and sample reasoning\" and a reasoning sample for \"Counterexample reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, include edge cases like dormant seeds carefully; do not claim motion alone proves life or imply that uncertainty is failure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "State a classification rule first, sort a provided sample, tally/graph it, and keep an uncertainty category",
+            "rubricCriteria": [
+              "Tally graph and sample reasoning",
+              "Counterexample reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -7836,7 +9381,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models.",
-          "formalLessonTarget": "Test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models"
+          "formalLessonTarget": "Test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of living/nonliving museum using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A graph represents the sample, not all living things.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Dormancy and hidden-evidence reasoning\" and \"Model and observation limits\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Dormancy and hidden-evidence reasoning\" and a reasoning sample for \"Model and observation limits\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, include edge cases like dormant seeds carefully; do not claim motion alone proves life or imply that uncertainty is failure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Test counterexamples such as robots, fire, crystals, dormant seeds, and realistic models",
+            "rubricCriteria": [
+              "Dormancy and hidden-evidence reasoning",
+              "Model and observation limits"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -7882,7 +9442,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference.",
-          "formalLessonTarget": "Integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference"
+          "formalLessonTarget": "Integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sort, tally, and graph and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to living things grow and need resources or living/nonliving museum. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Images and short observations have limits; identify needed evidence.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Humane safety and care boundary\" and \"Integrated living-systems explanation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Humane safety and care boundary\" and a reasoning sample for \"Integrated living-systems explanation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, include edge cases like dormant seeds carefully; do not claim motion alone proves life or imply that uncertainty is failure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate evidence, classification, data, uncertainty, care, and safety in a scientist conference",
+            "rubricCriteria": [
+              "Humane safety and care boundary",
+              "Integrated living-systems explanation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -8078,7 +9653,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance.",
-          "formalLessonTarget": "Identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance"
+          "formalLessonTarget": "Identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 6 weather observation and Week 21 living/material classification.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Water words and procedural language. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sequence events and compare temperatures informally. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Ice, liquid water, and water vapor are states of one substance.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Water state and substance identity\" and \"Water vapor / visible mist distinction\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Water state and substance identity\" and a reasoning sample for \"Water vapor / visible mist distinction\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use teacher-prepared ice/cool surfaces or images; no boiling-water activity. State that a classroom model simplifies real weather systems. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify water as solid ice, liquid water, or gaseous water vapor and separate state from substance",
+            "rubricCriteria": [
+              "Water state and substance identity",
+              "Water vapor / visible mist distinction"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -8124,7 +9714,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "investigate melting/freezing through safe fair comparisons and sequence evidence.",
-          "formalLessonTarget": "Investigate melting/freezing through safe fair comparisons and sequence evidence"
+          "formalLessonTarget": "Investigate melting/freezing through safe fair comparisons and sequence evidence",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sequence events and compare temperatures informally using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Water vapor is invisible gas; mist/droplets are liquid.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Melting and freezing direction\" and \"Fair state-change comparison\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Melting and freezing direction\" and a reasoning sample for \"Fair state-change comparison\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use teacher-prepared ice/cool surfaces or images; no boiling-water activity. State that a classroom model simplifies real weather systems. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Investigate melting/freezing through safe fair comparisons and sequence evidence",
+            "rubricCriteria": [
+              "Melting and freezing direction",
+              "Fair state-change comparison"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -8170,7 +9775,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "reason about evaporation and condensation without requiring boiling.",
-          "formalLessonTarget": "Reason about evaporation and condensation without requiring boiling"
+          "formalLessonTarget": "Reason about evaporation and condensation without requiring boiling",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to water, ice, and weather change. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Melting/freezing differ from evaporation/condensation.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Evaporation below boiling\" and \"Condensation reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evaporation below boiling\" and a reasoning sample for \"Condensation reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use teacher-prepared ice/cool surfaces or images; no boiling-water activity. State that a classroom model simplifies real weather systems. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Reason about evaporation and condensation without requiring boiling",
+            "rubricCriteria": [
+              "Evaporation below boiling",
+              "Condensation reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -8216,7 +9836,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits.",
-          "formalLessonTarget": "Connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits"
+          "formalLessonTarget": "Connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of ice investigation using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Do not boil water; use safe models or supplied evidence.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Cloud and precipitation accuracy\" and \"Weather data and model limits\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Cloud and precipitation accuracy\" and a reasoning sample for \"Weather data and model limits\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use teacher-prepared ice/cool surfaces or images; no boiling-water activity. State that a classroom model simplifies real weather systems. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Connect droplets/ice crystals, clouds, precipitation, and weather observations while naming model limits",
+            "rubricCriteria": [
+              "Cloud and precipitation accuracy",
+              "Weather data and model limits"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -8262,7 +9897,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate state changes, evidence, data, weather reasoning, misconceptions, and safety.",
-          "formalLessonTarget": "Integrate state changes, evidence, data, weather reasoning, misconceptions, and safety"
+          "formalLessonTarget": "Integrate state changes, evidence, data, weather reasoning, misconceptions, and safety",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sequence events and compare temperatures informally and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to water, ice, and weather change or ice investigation. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Weather models simplify real processes.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Water investigation safety and access\" and \"Integrated water-change explanation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Water investigation safety and access\" and a reasoning sample for \"Integrated water-change explanation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use teacher-prepared ice/cool surfaces or images; no boiling-water activity. State that a classroom model simplifies real weather systems. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate state changes, evidence, data, weather reasoning, misconceptions, and safety",
+            "rubricCriteria": [
+              "Water investigation safety and access",
+              "Integrated water-change explanation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -8458,7 +10108,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify material pathways and reject the idea that a recycling symbol guarantees local recycling.",
-          "formalLessonTarget": "Identify material pathways and reject the idea that a recycling symbol guarantees local recycling"
+          "formalLessonTarget": "Identify material pathways and reject the idea that a recycling symbol guarantees local recycling",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 22's material-state reasoning, Week 6 graphing, and Weeks 9–10 shared-place/community concepts.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Environmental vocabulary and shared writing. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count/reuse materials and sort recycling. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A recycling symbol does not guarantee local acceptance.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Material pathway reasoning\" and \"Local recycling rule reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Material pathway reasoning\" and a reasoning sample for \"Local recycling rule reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, no sharp, dirty, chemical, or unknown waste handling; local rules vary, and recycling symbols do not guarantee local acceptance. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify material pathways and reject the idea that a recycling symbol guarantees local recycling",
+            "rubricCriteria": [
+              "Material pathway reasoning",
+              "Local recycling rule reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -8504,7 +10169,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking.",
-          "formalLessonTarget": "Use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking"
+          "formalLessonTarget": "Use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count/reuse materials and sort recycling using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "State the sorting rule and flag uncertain materials for checking.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Rule-first sorting with uncertainty\" and \"Waste-sample tally and graph\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Rule-first sorting with uncertainty\" and a reasoning sample for \"Waste-sample tally and graph\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, no sharp, dirty, chemical, or unknown waste handling; local rules vary, and recycling symbols do not guarantee local acceptance. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use a stated local/classroom rule to sort, tally, graph, and mark uncertain items for checking",
+            "rubricCriteria": [
+              "Rule-first sorting with uncertainty",
+              "Waste-sample tally and graph"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -8550,7 +10230,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints.",
-          "formalLessonTarget": "Compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints"
+          "formalLessonTarget": "Compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to earth materials and human choices. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Reduce, reuse, repair, recycle, compost, and disposal are different choices.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Reduce reuse repair tradeoff\" and \"Safety hygiene and accessibility boundary\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Reduce reuse repair tradeoff\" and a reasoning sample for \"Safety hygiene and accessibility boundary\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, no sharp, dirty, chemical, or unknown waste handling; local rules vary, and recycling symbols do not guarantee local acceptance. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare reduce, reuse, repair, recycle, compost, and disposal choices under safety/access constraints",
+            "rubricCriteria": [
+              "Reduce reuse repair tradeoff",
+              "Safety hygiene and accessibility boundary"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -8596,7 +10291,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "reason from shared-place/habitat evidence and design a safe, community-scale improvement.",
-          "formalLessonTarget": "Reason from shared-place/habitat evidence and design a safe, community-scale improvement"
+          "formalLessonTarget": "Reason from shared-place/habitat evidence and design a safe, community-scale improvement",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of recycled art build using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A small sample graph cannot prove community-wide habits.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Systems and shared responsibility\" and \"Shared-place evidence without blame\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Systems and shared responsibility\" and a reasoning sample for \"Shared-place evidence without blame\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, no sharp, dirty, chemical, or unknown waste handling; local rules vary, and recycling symbols do not guarantee local acceptance. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Reason from shared-place/habitat evidence and design a safe, community-scale improvement",
+            "rubricCriteria": [
+              "Systems and shared responsibility",
+              "Shared-place evidence without blame"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -8642,7 +10352,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning.",
-          "formalLessonTarget": "Integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning"
+          "formalLessonTarget": "Integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count/reuse materials and sort recycling and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to earth materials and human choices or recycled art build. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Handle only clean, safe materials; never touch unknown or hazardous waste.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Habitat and cleanup safety\" and \"Integrated stewardship decision\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Habitat and cleanup safety\" and a reasoning sample for \"Integrated stewardship decision\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, no sharp, dirty, chemical, or unknown waste handling; local rules vary, and recycling symbols do not guarantee local acceptance. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate local rules, math, material pathways, system responsibility, safety, and stewardship reasoning",
+            "rubricCriteria": [
+              "Habitat and cleanup safety",
+              "Integrated stewardship decision"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -8839,7 +10564,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "identify pushes/pulls and describe changes in motion from evidence.",
-          "formalLessonTarget": "Identify pushes/pulls and describe changes in motion from evidence"
+          "formalLessonTarget": "Identify pushes/pulls and describe changes in motion from evidence",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 15 measurement and Week 7 shape/design problem solving.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Transportation words and labels. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Measure ramp distance. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Push/pull describes an interaction; observe what changes.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Force and motion interaction\" and \"Gravity and ramp reasoning\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Force and motion interaction\" and a reasoning sample for \"Gravity and ramp reasoning\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use stable ramps and light objects; don't frame one trial as universal proof, and offer seated/accessible building roles. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify pushes/pulls and describe changes in motion from evidence",
+            "rubricCriteria": [
+              "Force and motion interaction",
+              "Gravity and ramp reasoning"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -8885,7 +10625,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "run a fair toy-ramp comparison, measure from a common reference, and repeat trials.",
-          "formalLessonTarget": "Run a fair toy-ramp comparison, measure from a common reference, and repeat trials"
+          "formalLessonTarget": "Run a fair toy-ramp comparison, measure from a common reference, and repeat trials",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through measure ramp distance using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A fair test changes one variable and holds others stable.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Fair-test variable control\" and \"Consistent measurement and repeated trials\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Fair-test variable control\" and a reasoning sample for \"Consistent measurement and repeated trials\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use stable ramps and light objects; don't frame one trial as universal proof, and offer seated/accessible building roles. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Run a fair toy-ramp comparison, measure from a common reference, and repeat trials",
+            "rubricCriteria": [
+              "Fair-test variable control",
+              "Consistent measurement and repeated trials"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -8931,7 +10686,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "reason about wheels/axles, surfaces, friction, and design tradeoffs.",
-          "formalLessonTarget": "Reason about wheels/axles, surfaces, friction, and design tradeoffs"
+          "formalLessonTarget": "Reason about wheels/axles, surfaces, friction, and design tradeoffs",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to push, pull, motion, and design testing. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Measure from the same point and repeat trials.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Evidence conclusion limits\" and \"Wheels axles friction and surfaces\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence conclusion limits\" and a reasoning sample for \"Wheels axles friction and surfaces\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use stable ramps and light objects; don't frame one trial as universal proof, and offer seated/accessible building roles. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Reason about wheels/axles, surfaces, friction, and design tradeoffs",
+            "rubricCriteria": [
+              "Evidence conclusion limits",
+              "Wheels axles friction and surfaces"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -8977,7 +10747,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "design an accessible fictional transportation system/route around stated needs and constraints.",
-          "formalLessonTarget": "Design an accessible fictional transportation system/route around stated needs and constraints"
+          "formalLessonTarget": "Design an accessible fictional transportation system/route around stated needs and constraints",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of ramp lab using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Judge designs against stated criteria and constraints.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Engineering criteria constraints and tradeoffs\" and \"Design test and revision\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Engineering criteria constraints and tradeoffs\" and a reasoning sample for \"Design test and revision\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use stable ramps and light objects; don't frame one trial as universal proof, and offer seated/accessible building roles. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design an accessible fictional transportation system/route around stated needs and constraints",
+            "rubricCriteria": [
+              "Engineering criteria constraints and tradeoffs",
+              "Design test and revision"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -9023,7 +10808,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision.",
-          "formalLessonTarget": "Integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision"
+          "formalLessonTarget": "Integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using measure ramp distance and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to push, pull, motion, and design testing or ramp lab. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A result applies to tested conditions, not a universal law.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Transportation access privacy and systems\" and \"Integrated engineering safety explanation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Transportation access privacy and systems\" and a reasoning sample for \"Integrated engineering safety explanation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use stable ramps and light objects; don't frame one trial as universal proof, and offer seated/accessible building roles. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate force, fair-test, measurement, repeated evidence, accessibility, safety, and engineering revision",
+            "rubricCriteria": [
+              "Transportation access privacy and systems",
+              "Integrated engineering safety explanation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -9219,7 +11019,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Introduce and notice",
           "formalLessonArc": "infer community contributions from tasks/responsibilities rather than uniforms or stereotypes.",
-          "formalLessonTarget": "Infer community contributions from tasks/responsibilities rather than uniforms or stereotypes"
+          "formalLessonTarget": "Infer community contributions from tasks/responsibilities rather than uniforms or stereotypes",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Weeks 9–10 community/place learning and Week 16 goods/services and fictional market models.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Question words and interview practice. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count tools and make helper graph. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Infer contribution from tasks, not uniforms or stereotypes.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Task source and contribution reasoning\" and \"Paid unpaid work and dignity\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Task source and contribution reasoning\" and a reasoning sample for \"Paid unpaid work and dignity\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, avoid job stereotypes, uniform-based assumptions, and ranking work; protect real people's privacy and avoid unnecessary interviews. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Infer community contributions from tasks/responsibilities rather than uniforms or stereotypes",
+            "rubricCriteria": [
+              "Task source and contribution reasoning",
+              "Paid unpaid work and dignity"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -9265,7 +11080,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Guided skill practice",
           "formalLessonArc": "match tools to purposes, training/authorization, and safety constraints.",
-          "formalLessonTarget": "Match tools to purposes, training/authorization, and safety constraints"
+          "formalLessonTarget": "Match tools to purposes, training/authorization, and safety constraints",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count tools and make helper graph using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Tool choice includes purpose, safety, permission, and access.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Tool function and task fit\" and \"Tool authorization safety and access\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Tool function and task fit\" and a reasoning sample for \"Tool authorization safety and access\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, avoid job stereotypes, uniform-based assumptions, and ranking work; protect real people's privacy and avoid unnecessary interviews. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Match tools to purposes, training/authorization, and safety constraints",
+            "rubricCriteria": [
+              "Tool function and task fit",
+              "Tool authorization safety and access"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -9311,7 +11141,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Evidence-based investigation",
           "formalLessonArc": "distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions.",
-          "formalLessonTarget": "Distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions"
+          "formalLessonTarget": "Distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to goods/services; helpers and responsibilities. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Some real examples mix goods and services; discuss context.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Goods services and mixed cases\" and \"Work sample tally graph and limits\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Goods services and mixed cases\" and a reasoning sample for \"Work sample tally graph and limits\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, avoid job stereotypes, uniform-based assumptions, and ranking work; protect real people's privacy and avoid unnecessary interviews. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Distinguish goods/services, classify a provided work sample, tally/graph, and limit conclusions",
+            "rubricCriteria": [
+              "Goods services and mixed cases",
+              "Work sample tally graph and limits"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -9357,7 +11202,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Create, apply, and revise",
           "formalLessonArc": "practice consent-aware questions and map interdependent community roles from provided sources.",
-          "formalLessonTarget": "Practice consent-aware questions and map interdependent community roles from provided sources"
+          "formalLessonTarget": "Practice consent-aware questions and map interdependent community roles from provided sources",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of community helper badge using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Graphs describe the sample and do not rank workers' value.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Respectful question and source reasoning\" and \"Interview consent and privacy boundary\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Respectful question and source reasoning\" and a reasoning sample for \"Interview consent and privacy boundary\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, avoid job stereotypes, uniform-based assumptions, and ranking work; protect real people's privacy and avoid unnecessary interviews. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Practice consent-aware questions and map interdependent community roles from provided sources",
+            "rubricCriteria": [
+              "Respectful question and source reasoning",
+              "Interview consent and privacy boundary"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -9403,7 +11263,22 @@ window.KHAE_KINDERGARTEN_DATA = {
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
           "formalLessonArc": "integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning.",
-          "formalLessonTarget": "Integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning"
+          "formalLessonTarget": "Integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count tools and make helper graph and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to goods/services; helpers and responsibilities or community helper badge. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Interview questions require consent and privacy.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Community system interdependence\" and \"Integrated work dignity and safety explanation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Community system interdependence\" and a reasoning sample for \"Integrated work dignity and safety explanation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, avoid job stereotypes, uniform-based assumptions, and ranking work; protect real people's privacy and avoid unnecessary interviews. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Integrate work, tools, goods/services, evidence, dignity, privacy, safety, and system reasoning",
+            "rubricCriteria": [
+              "Community system interdependence",
+              "Integrated work dignity and safety explanation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -9598,7 +11473,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Identify two familiar classroom or community symbols and explain one meaning."
+          "formalLessonTarget": "Identify two familiar classroom or community symbols and explain one meaning.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 10 symbols/maps, Week 25 community roles, and earlier sort-by-rule practice.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Symbol labels and shared pledge of care. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sort symbols by attributes. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Symbols' meanings depend on group and context.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Symbol meaning\" and \"Symbol evidence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Symbol meaning\" and a reasoning sample for \"Symbol evidence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, teach that symbols can mean different things across groups; participation and belonging must not require pledges or political/religious disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify two familiar classroom or community symbols and explain one meaning.",
+            "rubricCriteria": [
+              "Symbol meaning",
+              "Symbol evidence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -9643,7 +11533,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Sort six symbol cards by a chosen attribute and explain the grouping rule."
+          "formalLessonTarget": "Sort six symbol cards by a chosen attribute and explain the grouping rule.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sort symbols by attributes using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Support interpretations with visible details or provided context.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Rule-based sorting\" and \"Symbol comparison\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Rule-based sorting\" and a reasoning sample for \"Symbol comparison\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, teach that symbols can mean different things across groups; participation and belonging must not require pledges or political/religious disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Sort six symbol cards by a chosen attribute and explain the grouping rule.",
+            "rubricCriteria": [
+              "Rule-based sorting",
+              "Symbol comparison"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -9688,7 +11593,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Compare two symbols and explain how each helps people communicate."
+          "formalLessonTarget": "Compare two symbols and explain how each helps people communicate.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to civic symbols and classroom agreements. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "State and apply a named sorting attribute.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Context transfer\" and \"Belonging and respectful use\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Context transfer\" and a reasoning sample for \"Belonging and respectful use\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, teach that symbols can mean different things across groups; participation and belonging must not require pledges or political/religious disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare two symbols and explain how each helps people communicate.",
+            "rubricCriteria": [
+              "Context transfer",
+              "Belonging and respectful use"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -9733,7 +11653,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Design an original belonging symbol with at least two purposeful features."
+          "formalLessonTarget": "Design an original belonging symbol with at least two purposeful features.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of classroom flag using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Assess a design's purpose, not resemblance to a model.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Original emblem design\" and \"Design explanation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Original emblem design\" and a reasoning sample for \"Design explanation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, teach that symbols can mean different things across groups; participation and belonging must not require pledges or political/religious disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design an original belonging symbol with at least two purposeful features.",
+            "rubricCriteria": [
+              "Original emblem design",
+              "Design explanation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -9778,7 +11713,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Interpret a new contextual symbol and reflect on one respectful action."
+          "formalLessonTarget": "Interpret a new contextual symbol and reflect on one respectful action.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sort symbols by attributes and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to civic symbols and classroom agreements or classroom flag. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Civic belonging must not require pledges or personal belief disclosure.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Classroom agreement\" and \"Reflection and revision\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Classroom agreement\" and a reasoning sample for \"Reflection and revision\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, teach that symbols can mean different things across groups; participation and belonging must not require pledges or political/religious disclosure. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Interpret a new contextual symbol and reflect on one respectful action.",
+            "rubricCriteria": [
+              "Classroom agreement",
+              "Reflection and revision"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -9973,7 +11923,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts."
+          "formalLessonTarget": "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on earlier one-to-one counting and Week 13/16 part-whole and fictional-market experiences.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Story problem language. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Compose and decompose to 10. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Count objects one-to-one; skipping or double-counting changes the total.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Number-story comprehension\" and \"Compose numbers to 10\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Number-story comprehension\" and a reasoning sample for \"Compose numbers to 10\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use objects or drawings before numerals; keep market examples fictional and avoid equating quantity/money with fairness or worth. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Model a market story using up to ten counters, name how many items there are altogether, and explain one way to split the collection into two parts.",
+            "rubricCriteria": [
+              "Number-story comprehension",
+              "Compose numbers to 10"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -10018,7 +11983,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total."
+          "formalLessonTarget": "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through compose and decompose to 10 using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Parts must add to the whole; verify with concrete objects.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Decompose and verify\" and \"Counting correspondence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Decompose and verify\" and a reasoning sample for \"Counting correspondence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use objects or drawings before numerals; keep market examples fictional and avoid equating quantity/money with fairness or worth. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compose and decompose quantities up to ten using two groups, represent one quantity in two different ways, and explain how both representations have the same total.",
+            "rubricCriteria": [
+              "Decompose and verify",
+              "Counting correspondence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -10063,7 +12043,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal."
+          "formalLessonTarget": "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to community economy and fair exchange. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Fair sharing depends on the named constraints.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Compare quantities\" and \"Goods and services\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Compare quantities\" and a reasoning sample for \"Goods and services\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use objects or drawings before numerals; keep market examples fictional and avoid equating quantity/money with fairness or worth. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Solve a pretend-market sharing problem with up to ten objects, compare two fair distributions, and explain what makes a share equal or unequal.",
+            "rubricCriteria": [
+              "Compare quantities",
+              "Goods and services"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -10108,7 +12103,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole."
+          "formalLessonTarget": "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of market math book using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Tokens are models and do not measure human worth.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Choice and tradeoff\" and \"Fair exchange model\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Choice and tradeoff\" and a reasoning sample for \"Fair exchange model\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use objects or drawings before numerals; keep market examples fictional and avoid equating quantity/money with fairness or worth. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create an original market story with a total of up to ten objects, represent its two parts using objects or pictures, and explain how the parts make the whole.",
+            "rubricCriteria": [
+              "Choice and tradeoff",
+              "Fair exchange model"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -10153,7 +12163,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging."
+          "formalLessonTarget": "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using compose and decompose to 10 and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to community economy and fair exchange or market math book. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Change quantities in a new story while preserving the part-whole structure.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Story problem representation\" and \"Reasoning reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Story problem representation\" and a reasoning sample for \"Reasoning reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use objects or drawings before numerals; keep market examples fictional and avoid equating quantity/money with fairness or worth. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Solve a new number story using up to ten objects, explain how two parts make a whole, and identify one strategy that helped when a problem was challenging.",
+            "rubricCriteria": [
+              "Story problem representation",
+              "Reasoning reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -10348,7 +12373,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need."
+          "formalLessonTarget": "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 4 safety/observation and Week 27 sorting/counting, using images and fictional scenarios.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Health vocabulary. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sort food groups/colors and count healthy choices. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A visual color sort is not automatically a nutrition category.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Body-care knowledge\" and \"Food-group sorting\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Body-care knowledge\" and a reasoning sample for \"Food-group sorting\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require food tasting or personal health disclosures; account for allergies, culture, disability, availability, and different bodies without stigma. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify at least three everyday body needs, such as food, water, sleep, movement, and care, and explain one practical way to meet a need.",
+            "rubricCriteria": [
+              "Body-care knowledge",
+              "Food-group sorting"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -10393,7 +12433,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups."
+          "formalLessonTarget": "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sort food groups/colors and count healthy choices using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "An item may fit multiple groups depending on the rule.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Classification flexibility\" and \"Count and represent\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Classification flexibility\" and a reasoning sample for \"Count and represent\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require food tasting or personal health disclosures; account for allergies, culture, disability, availability, and different bodies without stigma. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Sort eight illustrated food cards using a stated observable attribute, count each group accurately, and explain how a different sorting rule changes the groups.",
+            "rubricCriteria": [
+              "Classification flexibility",
+              "Count and represent"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -10438,7 +12493,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need."
+          "formalLessonTarget": "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to body needs and healthy habits. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Needs and preferences vary; avoid universalizing one choice.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Compare groups\" and \"Needs and preferences\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Compare groups\" and a reasoning sample for \"Needs and preferences\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require food tasting or personal health disclosures; account for allergies, culture, disability, availability, and different bodies without stigma. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Match water, rest, movement, and asking for care to everyday situations, and explain two ways people can respond safely to a body need.",
+            "rubricCriteria": [
+              "Compare groups",
+              "Needs and preferences"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -10483,7 +12553,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs."
+          "formalLessonTarget": "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of healthy plate collage using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Never require tasting or personal health disclosures.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Safety and allergies\" and \"Accessible healthy-choice communication\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Safety and allergies\" and a reasoning sample for \"Accessible healthy-choice communication\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require food tasting or personal health disclosures; account for allergies, culture, disability, availability, and different bodies without stigma. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create a three-scene picture story that shows at least two practical self-care choices, and explain how those choices help meet everyday body needs.",
+            "rubricCriteria": [
+              "Safety and allergies",
+              "Accessible healthy-choice communication"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -10528,7 +12613,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth."
+          "formalLessonTarget": "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sort food groups/colors and count healthy choices and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to body needs and healthy habits or healthy plate collage. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Frame choices safely and without body shame.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Healthy-plate artifact\" and \"Reflection without stigma\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Healthy-plate artifact\" and a reasoning sample for \"Reflection without stigma\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never require food tasting or personal health disclosures; account for allergies, culture, disability, availability, and different bodies without stigma. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Apply two everyday self-care ideas to unfamiliar picture scenarios, explain one reason for a choice, and select a learning example to reflect on growth.",
+            "rubricCriteria": [
+              "Healthy-plate artifact",
+              "Reflection without stigma"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -10723,7 +12823,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model."
+          "formalLessonTarget": "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 7 positional language, Week 8 movement patterns, and Week 15 balance/measurement.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Action verbs. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Position, direction, and movement patterns. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A paper model can show movement understanding without physical performance.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Movement vocabulary\" and \"Balance and body control\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Movement vocabulary\" and a reasoning sample for \"Balance and body control\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, provide seated, tabletop, visual, or paper-token alternatives; never require speed, full range of motion, or a particular physical ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Demonstrate or identify three action verbs and describe how joints and muscles help people move, using an accessible movement or visual model.",
+            "rubricCriteria": [
+              "Movement vocabulary",
+              "Balance and body control"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -10768,7 +12883,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway."
+          "formalLessonTarget": "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through position, direction, and movement patterns using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Position words require a reference direction and start point.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Spatial route sequence\" and \"Movement pattern\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Spatial route sequence\" and a reasoning sample for \"Movement pattern\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, provide seated, tabletop, visual, or paper-token alternatives; never require speed, full range of motion, or a particular physical ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Use at least three positional words accurately and create, extend, and explain an AB movement or symbol pattern using a safe, accessible pathway.",
+            "rubricCriteria": [
+              "Spatial route sequence",
+              "Movement pattern"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -10813,7 +12943,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend."
+          "formalLessonTarget": "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to body movement, bones/muscles basics. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Balance depends on support/base and load, not visual size alone.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Body-system concept\" and \"Safe risk judgment\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Body-system concept\" and a reasoning sample for \"Safe risk judgment\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, provide seated, tabletop, visual, or paper-token alternatives; never require speed, full range of motion, or a particular physical ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Investigate how a model stays balanced on a support, describe one change that makes it more stable, and identify a joint that allows a paper figure to bend.",
+            "rubricCriteria": [
+              "Body-system concept",
+              "Safe risk judgment"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -10858,7 +13003,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design."
+          "formalLessonTarget": "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of movement maze using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A movement pattern needs a repeating unit.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Accessibility and movement\" and \"Movement-maze design\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Accessibility and movement\" and a reasoning sample for \"Movement-maze design\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, provide seated, tabletop, visual, or paper-token alternatives; never require speed, full range of motion, or a particular physical ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design and revise a paper movement pathway containing three positional directions and one repeating pattern, then explain a purposeful change to the design.",
+            "rubricCriteria": [
+              "Accessibility and movement",
+              "Movement-maze design"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -10903,7 +13063,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model."
+          "formalLessonTarget": "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using position, direction, and movement patterns and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to body movement, bones/muscles basics or movement maze. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Access and safety are design constraints; no speed or full range required.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Testing and revision\" and \"Reflection and self-regulation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Testing and revision\" and a reasoning sample for \"Reflection and self-regulation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, provide seated, tabletop, visual, or paper-token alternatives; never require speed, full range of motion, or a particular physical ability. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Interpret a new paper pathway using three positional clues, extend a repeating movement-symbol pattern, and explain one observation about a stable paper model.",
+            "rubricCriteria": [
+              "Testing and revision",
+              "Reflection and self-regulation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -11098,7 +13273,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Keep a steady four-beat pulse and distinguish it from a changing rhythm."
+          "formalLessonTarget": "Keep a steady four-beat pulse and distinguish it from a changing rhythm.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 8 pattern/beat work and Week 7 design choices.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Describe art and music. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Patterns, shapes, and counting beats. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Beat is not identical to rhythm.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Pattern structure\" and \"Beat and rhythm\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Pattern structure\" and a reasoning sample for \"Beat and rhythm\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer silent/visual/tactile equivalents and quiet participation; assess the pattern/rule, not musical confidence or performance volume. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Keep a steady four-beat pulse and distinguish it from a changing rhythm.",
+            "rubricCriteria": [
+              "Pattern structure",
+              "Beat and rhythm"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -11143,7 +13333,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Create and explain a repeating AB or AAB pattern using colors and sounds."
+          "formalLessonTarget": "Create and explain a repeating AB or AAB pattern using colors and sounds.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through patterns, shapes, and counting beats using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A pattern rule predicts what comes next.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Counted pattern\" and \"Sound and vibration\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Counted pattern\" and a reasoning sample for \"Sound and vibration\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer silent/visual/tactile equivalents and quiet participation; assess the pattern/rule, not musical confidence or performance volume. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create and explain a repeating AB or AAB pattern using colors and sounds.",
+            "rubricCriteria": [
+              "Counted pattern",
+              "Sound and vibration"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -11188,7 +13393,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Observe how changing tempo differs from changing loudness."
+          "formalLessonTarget": "Observe how changing tempo differs from changing loudness.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to sound, vibration, and design. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Tempo is speed; loudness is volume.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Art observation\" and \"Creative intent\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Art observation\" and a reasoning sample for \"Creative intent\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer silent/visual/tactile equivalents and quiet participation; assess the pattern/rule, not musical confidence or performance volume. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Observe how changing tempo differs from changing loudness.",
+            "rubricCriteria": [
+              "Art observation",
+              "Creative intent"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -11233,7 +13453,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Compose and revise a four-beat musical phrase using a picture score."
+          "formalLessonTarget": "Compose and revise a four-beat musical phrase using a picture score.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of gallery and concert using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A picture score represents some features but omits others.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Revision and evidence\" and \"Respectful participation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Revision and evidence\" and a reasoning sample for \"Respectful participation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer silent/visual/tactile equivalents and quiet participation; assess the pattern/rule, not musical confidence or performance volume. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compose and revise a four-beat musical phrase using a picture score.",
+            "rubricCriteria": [
+              "Revision and evidence",
+              "Respectful participation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -11278,7 +13513,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Identify a repeating unit in a new sound pattern and share a creative choice."
+          "formalLessonTarget": "Identify a repeating unit in a new sound pattern and share a creative choice.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using patterns, shapes, and counting beats and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to sound, vibration, and design or gallery and concert. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Assess pattern and reasoning, not performance style.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Presentation or documentation\" and \"Reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Presentation or documentation\" and a reasoning sample for \"Reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, offer silent/visual/tactile equivalents and quiet participation; assess the pattern/rule, not musical confidence or performance volume. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify a repeating unit in a new sound pattern and share a creative choice.",
+            "rubricCriteria": [
+              "Presentation or documentation",
+              "Reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -11473,7 +13723,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess."
+          "formalLessonTarget": "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 12 animal structures/habitats and Week 21 rule-first classification and uncertainty.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Observation words and detail labels. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Count legs/wings and graph garden life. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A visible body feature is observation; function/motive is an inference.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Careful organism observation\" and \"Observation versus inference\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Careful organism observation\" and a reasoning sample for \"Observation versus inference\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied images/models; do not disturb small animals, and avoid projecting human motives onto animal behavior. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Observe a small garden animal or original drawing without disturbing it, describe two visible body features, and distinguish something noticed from a guess.",
+            "rubricCriteria": [
+              "Careful organism observation",
+              "Observation versus inference"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -11518,7 +13783,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph."
+          "formalLessonTarget": "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through count legs/wings and graph garden life using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use a stated classification feature consistently.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Structure and function\" and \"Classification rule\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Structure and function\" and a reasoning sample for \"Classification rule\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied images/models; do not disturb small animals, and avoid projecting human motives onto animal behavior. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Classify six original animal picture cards by an observable feature, count each group using one-to-one correspondence, and represent the counts in a simple picture graph.",
+            "rubricCriteria": [
+              "Structure and function",
+              "Classification rule"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -11563,7 +13843,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue."
+          "formalLessonTarget": "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to animal structures and habitats. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A habitat picture provides partial evidence only.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Count and compare\" and \"Habitat relationship\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Count and compare\" and a reasoning sample for \"Habitat relationship\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied images/models; do not disturb small animals, and avoid projecting human motives onto animal behavior. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare two illustrated microhabitats, recognize that small animals need suitable shelter, water, and food, and support a habitat choice with an observable clue.",
+            "rubricCriteria": [
+              "Count and compare",
+              "Habitat relationship"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -11608,7 +13903,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason."
+          "formalLessonTarget": "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of bug field guide using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A graph summarizes the depicted sample.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Humane observation\" and \"Field-guide communication\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Humane observation\" and a reasoning sample for \"Field-guide communication\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied images/models; do not disturb small animals, and avoid projecting human motives onto animal behavior. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create an original illustrated field-guide page that names one small garden animal, labels two accurate body features, and describes a plausible habitat with an observation-based reason.",
+            "rubricCriteria": [
+              "Humane observation",
+              "Field-guide communication"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -11653,7 +13963,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page."
+          "formalLessonTarget": "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using count legs/wings and graph garden life and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to animal structures and habitats or bug field guide. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Do not disturb living creatures.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Evidence limitation\" and \"Revision and reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence limitation\" and a reasoning sample for \"Revision and reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use supplied images/models; do not disturb small animals, and avoid projecting human motives onto animal behavior. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Classify an unfamiliar garden animal picture by visible features, describe a plausible habitat with one observation-based reason, and reflect on one improvement to a field-guide page.",
+            "rubricCriteria": [
+              "Evidence limitation",
+              "Revision and reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -11848,7 +14173,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs."
+          "formalLessonTarget": "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 12 habitat resources and Week 31 careful organism observation and representation.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Water habitat vocabulary. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sort/count water animals. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Pond, river, and ocean differ by attributes, not only being 'water places'.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Habitat concept\" and \"Water environment comparison\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Habitat concept\" and a reasoning sample for \"Water environment comparison\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use pictures and model water only; water-safety learning never grants independent access to ponds, rivers, pools, or oceans. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify a pond, river, and ocean from original illustrations, describe one observable difference between their environments, and ask one question about how an animal finds what it needs.",
+            "rubricCriteria": [
+              "Habitat concept",
+              "Water environment comparison"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -11893,7 +14233,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue."
+          "formalLessonTarget": "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sort/count water animals using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Habitat matches need a resource/condition clue.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Rule-based animal sorting\" and \"Counting and graphing\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Rule-based animal sorting\" and a reasoning sample for \"Counting and graphing\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use pictures and model water only; water-safety learning never grants independent access to ponds, rivers, pools, or oceans. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Sort six original animal picture cards by a supported freshwater or saltwater habitat, count each group accurately, and explain one animal-habitat match using a visible or known clue.",
+            "rubricCriteria": [
+              "Rule-based animal sorting",
+              "Counting and graphing"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -11938,7 +14293,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue."
+          "formalLessonTarget": "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to habitats and resources. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Some animals use multiple habitats across life stages; state model limits.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Graph interpretation\" and \"Need-resource connection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Graph interpretation\" and a reasoning sample for \"Need-resource connection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use pictures and model water only; water-safety learning never grants independent access to ponds, rivers, pools, or oceans. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Compare illustrated pond, river, and ocean habitats, identify one resource an aquatic animal needs, and explain a reasonable habitat prediction using a picture clue.",
+            "rubricCriteria": [
+              "Graph interpretation",
+              "Need-resource connection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -11983,7 +14353,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there."
+          "formalLessonTarget": "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of water habitat mural using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Graph claims must stay within the supplied set.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Model limitation\" and \"Water safety\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Model limitation\" and a reasoning sample for \"Water safety\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use pictures and model water only; water-safety learning never grants independent access to ponds, rivers, pools, or oceans. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create an original illustrated guide page for one water habitat, label two accurate environmental features, and explain how a suitable animal might find one resource there.",
+            "rubricCriteria": [
+              "Model limitation",
+              "Water safety"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -12028,7 +14413,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page."
+          "formalLessonTarget": "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sort/count water animals and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to habitats and resources or water habitat mural. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Water safety rules apply even during model activities.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Habitat design\" and \"Evidence reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Habitat design\" and a reasoning sample for \"Evidence reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, use pictures and model water only; water-safety learning never grants independent access to ponds, rivers, pools, or oceans. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Recognize a pond, river, and ocean in unfamiliar illustrations, justify one animal-habitat match using a relevant clue, and describe one improvement to a field-guide page.",
+            "rubricCriteria": [
+              "Habitat design",
+              "Evidence reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -12224,7 +14624,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun."
+          "formalLessonTarget": "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 6 sky/weather observation, Week 17 shadow/day-night model, and Week 22 weather/model-limit language.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Sky words and question sentences. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Sequence day/night and count sky observations. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Earth rotation, Moon orbit, and apparent phases are distinct.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Sky observation\" and \"Day/night sequence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Sky observation\" and a reasoning sample for \"Day/night sequence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never look directly at the Sun; use safe indirect observation, and label simplified sky models so they are not mistaken for scale drawings. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify day and night in original sky illustrations, order a simple day-to-night sequence, and explain that Earth turning changes which part faces the Sun.",
+            "rubricCriteria": [
+              "Sky observation",
+              "Day/night sequence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -12269,7 +14684,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape."
+          "formalLessonTarget": "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through sequence day/night and count sky observations using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "The Moon does not change its actual shape through phases.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Sun and Moon distinction\" and \"Pattern over time\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Sun and Moon distinction\" and a reasoning sample for \"Pattern over time\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never look directly at the Sun; use safe indirect observation, and label simplified sky models so they are not mistaken for scale drawings. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Recognize and compare three illustrated Moon appearances, describe what is visibly illuminated, and explain that the Moon does not change its actual shape.",
+            "rubricCriteria": [
+              "Sun and Moon distinction",
+              "Pattern over time"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -12314,7 +14744,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases."
+          "formalLessonTarget": "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to sun, moon, stars, and day/night patterns. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A card sequence is a model, not proof of causality.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Count and represent\" and \"Model interpretation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Count and represent\" and a reasoning sample for \"Model interpretation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never look directly at the Sun; use safe indirect observation, and label simplified sky models so they are not mistaken for scale drawings. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Identify the Sun as our source of daylight, model Earth turning to produce day and night, and describe how the Moon travels around Earth without confusing these movements with Moon phases.",
+            "rubricCriteria": [
+              "Count and represent",
+              "Model interpretation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -12359,7 +14804,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea."
+          "formalLessonTarget": "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of night-sky journal using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Sky models are simplified and not to scale.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Model limitation\" and \"Observation versus story\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Model limitation\" and a reasoning sample for \"Observation versus story\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never look directly at the Sun; use safe indirect observation, and label simplified sky models so they are not mistaken for scale drawings. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create a labeled sky-pattern page showing one day/night observation and one Moon observation, then explain which model or picture clue supports each idea.",
+            "rubricCriteria": [
+              "Model limitation",
+              "Observation versus story"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -12404,7 +14864,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal."
+          "formalLessonTarget": "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using sequence day/night and count sky observations and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to sun, moon, stars, and day/night patterns or night-sky journal. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Never look directly at the Sun.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Sun safety\" and \"Sky journal reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Sun safety\" and a reasoning sample for \"Sky journal reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, never look directly at the Sun; use safe indirect observation, and label simplified sky models so they are not mistaken for scale drawings. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Complete a new sky-sequence challenge, distinguish an observation from a guess, and select one piece of evidence to add to the sky journal.",
+            "rubricCriteria": [
+              "Sun safety",
+              "Sky journal reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -12600,7 +15075,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed."
+          "formalLessonTarget": "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 7 spatial terms, Week 8 pattern rules, Week 24 fair tests, and Week 25 tool/task safety.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Sequence words: first, next, last. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Coding patterns and directional language. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Tool purpose, safety, and permission are separate checks.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Tool purpose\" and \"Sequence and algorithm\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Tool purpose\" and a reasoning sample for \"Sequence and algorithm\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, keep technology activities unplugged unless separately authorized; never ask children to use real accounts, share personal details, or reveal passwords. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Match three familiar tools to appropriate tasks and explain one safe-use rule, including when an adult's permission is needed.",
+            "rubricCriteria": [
+              "Tool purpose",
+              "Sequence and algorithm"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -12645,7 +15135,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it."
+          "formalLessonTarget": "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through coding patterns and directional language using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Instructions must be clear and ordered enough for another person.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Directional language\" and \"Pattern debugging\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Directional language\" and a reasoning sample for \"Pattern debugging\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, keep technology activities unplugged unless separately authorized; never ask children to use real accounts, share personal details, or reveal passwords. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create and follow a three-step unplugged algorithm using first, next, and last, then check whether another person can follow it.",
+            "rubricCriteria": [
+              "Directional language",
+              "Pattern debugging"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -12690,7 +15195,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it."
+          "formalLessonTarget": "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to simple tools and digital citizenship. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Debug the failing step rather than changing everything randomly.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Cause and effect\" and \"Digital privacy\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Cause and effect\" and a reasoning sample for \"Digital privacy\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, keep technology activities unplugged unless separately authorized; never ask children to use real accounts, share personal details, or reveal passwords. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Guide a paper-token “robot” through a simple grid using directional words, find one unclear or incorrect instruction, and repair it.",
+            "rubricCriteria": [
+              "Cause and effect",
+              "Digital privacy"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -12735,7 +15255,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety."
+          "formalLessonTarget": "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of unplugged robot map using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A model grid is not a real location.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Ask-before-use safety\" and \"Accessible algorithm\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Ask-before-use safety\" and a reasoning sample for \"Accessible algorithm\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, keep technology activities unplugged unless separately authorized; never ask children to use real accounts, share personal details, or reveal passwords. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Design a short set of tool-use or classroom instructions, test them with a partner or grown-up, and revise one step for clarity or safety.",
+            "rubricCriteria": [
+              "Ask-before-use safety",
+              "Accessible algorithm"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -12780,7 +15315,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure."
+          "formalLessonTarget": "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using coding patterns and directional language and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to simple tools and digital citizenship or unplugged robot map. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Never share passwords, private messages, personal location, or identifying details.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Test and revise\" and \"Responsible technology reflection\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Test and revise\" and a reasoning sample for \"Responsible technology reflection\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, keep technology activities unplugged unless separately authorized; never ask children to use real accounts, share personal details, or reveal passwords. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Solve a new tool-and-sequence scenario, identify one digital privacy boundary, and explain a safe next step when unsure.",
+            "rubricCriteria": [
+              "Test and revise",
+              "Responsible technology reflection"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -12976,7 +15526,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Choose a focused, investigable question, share what is already known, and identify one thing still to find out."
+          "formalLessonTarget": "Choose a focused, investigable question, share what is already known, and identify one thing still to find out.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Builds on Week 18 targeted transfer, Week 19 goal-setting, Weeks 21–24 evidence/model skills, and Week 34 sequence/debug routines.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Question words and oral presentation. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Choose math tools for a project. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A broad wonder may not be investigable; narrow it.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Question focus\" and \"Prior-knowledge distinction\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Question focus\" and a reasoning sample for \"Prior-knowledge distinction\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, choose learner-interest questions that can be explored safely in the available setting; no internet research or public presentation is required. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Choose a focused, investigable question, share what is already known, and identify one thing still to find out.",
+            "rubricCriteria": [
+              "Question focus",
+              "Prior-knowledge distinction"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -13021,7 +15586,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan."
+          "formalLessonTarget": "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through choose math tools for a project using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A method must fit the question and safe materials available.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Evidence plan\" and \"Literacy communication\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence plan\" and a reasoning sample for \"Literacy communication\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, choose learner-interest questions that can be explored safely in the available setting; no internet research or public presentation is required. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Plan a safe way to investigate the question, choose a useful counting, sorting, measuring, or recording tool, and explain the plan.",
+            "rubricCriteria": [
+              "Evidence plan",
+              "Literacy communication"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -13066,7 +15646,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess."
+          "formalLessonTarget": "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to inquiry, evidence, design, and communication. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Record observations before explaining them.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Mathematics tool choice\" and \"Inquiry observation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Mathematics tool choice\" and a reasoning sample for \"Inquiry observation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, choose learner-interest questions that can be explored safely in the available setting; no internet research or public presentation is required. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Gather or examine evidence for the question, record at least two observations, and distinguish a noticed detail from a guess.",
+            "rubricCriteria": [
+              "Mathematics tool choice",
+              "Inquiry observation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -13111,7 +15706,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback."
+          "formalLessonTarget": "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of big question board using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A model communicates selected information, not more than evidence supports.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Model or maker artifact\" and \"Revision from evidence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Model or maker artifact\" and a reasoning sample for \"Revision from evidence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, choose learner-interest questions that can be explored safely in the available setting; no internet research or public presentation is required. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Create a model, picture, demonstration, or artifact that communicates the investigation, then revise one feature using evidence or feedback.",
+            "rubricCriteria": [
+              "Model or maker artifact",
+              "Revision from evidence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -13156,7 +15766,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question."
+          "formalLessonTarget": "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using choose math tools for a project and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to inquiry, evidence, design, and communication or big question board. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A private/AAC/dictated presentation can demonstrate learning.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Source and safety awareness\" and \"Capstone explanation\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Source and safety awareness\" and a reasoning sample for \"Capstone explanation\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, choose learner-interest questions that can be explored safely in the available setting; no internet research or public presentation is required. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Share a finding or uncertainty, connect it to a piece of evidence, select a portfolio sample, and pose one next question.",
+            "rubricCriteria": [
+              "Source and safety awareness",
+              "Capstone explanation"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
@@ -13351,7 +15976,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Communicates the observation or idea using speech, gesture, drawing, sign, AAC, pointing, or another accessible mode."
           ],
           "instructionalPurpose": "Introduce and notice",
-          "formalLessonTarget": "Choose two portfolio samples and describe evidence of personal growth."
+          "formalLessonTarget": "Choose two portfolio samples and describe evidence of personal growth.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Consolidates the full 36-week course; use prior evidence and accessible task options rather than age, speed, or presentation style alone.",
+            "explicitModel": "Think aloud while solving one worked example. Name the clue, model each step, and connect the result to the learning target.",
+            "guidedPractice": "Model the literacy focus: Review letters, sounds, words, and stories. Think aloud and repeat key words clearly. Offer a short hands-on first attempt with the math focus: Review numbers, shapes, data, and problem solving. Let learners use objects, movement, drawings, words, or AAC. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A portfolio sample is selected evidence, not the whole child.",
+            "transferTask": "Use a new object, picture, word, or scenario to check the prerequisite skill before the main teaching example. Tie the check to \"Integrated literacy readiness\" and \"Story comprehension and sequence\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Integrated literacy readiness\" and a reasoning sample for \"Story comprehension and sequence\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, permit alternate response modes, rest breaks, manipulatives when appropriate, and parallel fresh items; avoid compulsory performance and interpret results as evidence for planning, not a fixed label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Choose two portfolio samples and describe evidence of personal growth.",
+            "rubricCriteria": [
+              "Integrated literacy readiness",
+              "Story comprehension and sequence"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Tuesday",
@@ -13396,7 +16036,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Completes a fresh example and shows or explains one step in the strategy."
           ],
           "instructionalPurpose": "Guided skill practice",
-          "formalLessonTarget": "Demonstrate familiar letter–sound connections and retell a short story in sequence."
+          "formalLessonTarget": "Demonstrate familiar letter–sound connections and retell a short story in sequence.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model a worked example that builds on the previous day's skill; compare a correct example with a near-miss and explain the distinction.",
+            "guidedPractice": "Guide learners through review numbers, shapes, data, and problem solving using manipulatives, pictures, movement, or other accessible tools. Give each learner a new example and gradually reduce prompts; ask “What helped you decide?” Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use familiar taught content with fresh items/texts.",
+            "transferTask": "Change the example while keeping the same rule; ask the learner to choose and justify a strategy without copying the modeled item. Tie the check to \"Emergent writing and communication\" and \"Counting and cardinality\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Emergent writing and communication\" and a reasoning sample for \"Counting and cardinality\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, permit alternate response modes, rest breaks, manipulatives when appropriate, and parallel fresh items; avoid compulsory performance and interpret results as evidence for planning, not a fixed label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Demonstrate familiar letter–sound connections and retell a short story in sequence.",
+            "rubricCriteria": [
+              "Emergent writing and communication",
+              "Counting and cardinality"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Wednesday",
@@ -13441,7 +16096,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Supports a statement with an observation, comparison, or test result and distinguishes it from a guess."
           ],
           "instructionalPurpose": "Evidence-based investigation",
-          "formalLessonTarget": "Solve a number problem with objects and explain a prior science observation."
+          "formalLessonTarget": "Solve a number problem with objects and explain a prior science observation.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to observe, sort, count, test, or compare evidence. Label what is noticed separately from what is inferred.",
+            "guidedPractice": "Learners investigate using a safe activity, picture set, model, map, object collection, or demonstration linked to review science/social studies/arts/wellness. Record the evidence with drawings, tallies, arranged objects, labels, dictation, or another accessible method. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Use objects or pictures to verify number reasoning.",
+            "transferTask": "Use a new observation, sample, or scenario; ask what the evidence supports and what remains uncertain. Tie the check to \"Number composition\" and \"Geometry, pattern, or measurement\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Number composition\" and a reasoning sample for \"Geometry, pattern, or measurement\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, permit alternate response modes, rest breaks, manipulatives when appropriate, and parallel fresh items; avoid compulsory performance and interpret results as evidence for planning, not a fixed label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Solve a number problem with objects and explain a prior science observation.",
+            "rubricCriteria": [
+              "Number composition",
+              "Geometry, pattern, or measurement"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Thursday",
@@ -13486,7 +16156,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Creates or revises a representation and explains one purposeful choice."
           ],
           "instructionalPurpose": "Create, apply, and revise",
-          "formalLessonTarget": "Assemble and revise a showcase connecting language, mathematics, and inquiry."
+          "formalLessonTarget": "Assemble and revise a showcase connecting language, mathematics, and inquiry.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model planning and revision against the success criteria. Show a purposeful improvement, not only a perfect finished product.",
+            "guidedPractice": "Learners create, build, draw, perform, arrange, dramatize, or dictate a version of portfolio celebration using safe, low-cost materials. Pause for a “notice and improve” moment: learners identify one feature to keep and one possible revision. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "A showcase can be revised; neatness is not mastery.",
+            "transferTask": "Change one design constraint or context and ask the learner to apply, test, and revise the learned idea. Tie the check to \"Evidence-based inquiry\" and \"Problem-solving and revision\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Evidence-based inquiry\" and a reasoning sample for \"Problem-solving and revision\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, permit alternate response modes, rest breaks, manipulatives when appropriate, and parallel fresh items; avoid compulsory performance and interpret results as evidence for planning, not a fixed label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Assemble and revise a showcase connecting language, mathematics, and inquiry.",
+            "rubricCriteria": [
+              "Evidence-based inquiry",
+              "Problem-solving and revision"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         },
         {
           "day": "Friday",
@@ -13531,7 +16216,22 @@ window.KHAE_KINDERGARTEN_DATA = {
             "Applies learning to a fresh example, selects relevant evidence, and identifies a next step or question."
           ],
           "instructionalPurpose": "Transfer, assess, and reflect",
-          "formalLessonTarget": "Share a learning achievement and set one future goal without compulsory performance."
+          "formalLessonTarget": "Share a learning achievement and set one future goal without compulsory performance.",
+          "instructionalQuality": {
+            "prerequisiteCheck": "Retrieve the previous day's strategy with one short prompt; ask the learner to show it before introducing today's additional demand.",
+            "explicitModel": "Model how to choose a strategy for a new task without giving away the answer; explain how to check evidence and acknowledge uncertainty.",
+            "guidedPractice": "Present a concrete task using review numbers, shapes, data, and problem solving and ask the learner to show how they know. Ask the learner to connect one observation, idea, or artifact to review science/social studies/arts/wellness or portfolio celebration. Use gradual release: teacher demonstrates, solve together, learner attempts a parallel item with prompts, then fade prompts as ready.",
+            "misconceptionCorrection": "Readiness informs next instruction, not fixed prediction.",
+            "transferTask": "Give an unfamiliar but age-appropriate item not used during modeling or guided practice; require the learner to select a strategy and explain or show evidence. Tie the check to \"Portfolio evidence and growth\" and \"Integrated first-grade readiness\"; use different surface details from the modeled example while preserving the core concept.",
+            "assessmentEvidence": "Collect an observable sample for \"Portfolio evidence and growth\" and a reasoning sample for \"Integrated first-grade readiness\". Record the child's response mode, prompts, and supports; participation alone does not prove mastery.",
+            "reteachIfNeeded": "If the learner is not yet successful, permit alternate response modes, rest breaks, manipulatives when appropriate, and parallel fresh items; avoid compulsory performance and interpret results as evidence for planning, not a fixed label. Then model a smaller step, correct the misconception above, and try a new parallel item. Record which support helped; do not restart the whole lesson automatically.",
+            "target": "Share a learning achievement and set one future goal without compulsory performance.",
+            "rubricCriteria": [
+              "Portfolio evidence and growth",
+              "Integrated first-grade readiness"
+            ],
+            "reviewStatus": "instructional-sequence-added"
+          }
         }
       ],
       "weeklyAssessment": {
