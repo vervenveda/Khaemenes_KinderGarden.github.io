@@ -51,6 +51,8 @@ jobs:
           node --check curriculum/assets/app.js
       - name: Verify formal route coverage
         run: node scripts/inject-kindergarten-formal-gates.mjs --check
+      - name: Validate dependency boundary
+        run: node scripts/validate-dependency-boundary.mjs
       - name: Validate Academy mastery contract
         run: node scripts/validate-kindergarten-mastery-gates.mjs
       - name: Check whitespace integrity
