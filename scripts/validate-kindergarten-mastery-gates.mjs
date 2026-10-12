@@ -261,6 +261,23 @@ assert.ok(gate.includes('if(!saveLearnerRecord(record))throw new Error("daily-ev
 
 assert.ok(app.includes('lesson.formalLessonArc')&&app.includes('Lesson progression:'),"curriculum preview must display the formal lesson progression arc when present");
 
+
+{
+  const w15=read("curriculum/lessons/unit-15/formal-content.html");
+  assert.equal((w15.match(/<p><strong>Observable success criterion:<\/strong>/g)||[]).length,5,"Week 15 must have five daily observable success criteria");
+  for(const term of ["shared baseline","count and unit","length, weight, or capacity","keeps span and load constant","measurement flaw"]) assert.ok(w15.toLowerCase().includes(term.toLowerCase()),"Week 15 must explicitly assess: "+term);
+  assert.ok(w15.includes("same gap")&&w15.includes("same safe load units"),"Week 15 bridge assessment must hold test conditions consistent");
+  assert.ok(w15.includes("Guided success is not independent transfer"),"Week 15 must distinguish guided practice from independent transfer");
+  assertInlineScriptsParse("Instructional Depth Week 15",w15);
+  const w16=read("curriculum/lessons/unit-16/formal-content.html");
+  assert.equal((w16.match(/<p><strong>Observable success criterion:<\/strong>/g)||[]).length,5,"Week 16 must have five daily observable success criteria");
+  for(const term of ["scenario's context","mathematical model","physical good from an action/service","token budget","personal worth"]) assert.ok(w16.toLowerCase().includes(term.toLowerCase()),"Week 16 must explicitly assess: "+term);
+  assert.ok(w16.includes("Money/possessions do not measure")||w16.includes("money or possessions measure personal worth"),"Week 16 must explicitly correct money-worth misconceptions");
+  assert.ok(w16.includes("new prices")||w16.includes("unseen budget scenario"),"Week 16 must include a fresh budget-transfer task");
+  assert.ok(w16.includes("Multiple choices are acceptable"),"Week 16 must accept multiple reasoned choices under the stated constraints");
+  assertInlineScriptsParse("Instructional Depth Week 16",w16);
+}
+
 for(let unit=5;unit<=30;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read("curriculum/lessons/unit-"+n+"/formal-content.html");
