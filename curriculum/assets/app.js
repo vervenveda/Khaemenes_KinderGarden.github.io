@@ -38,7 +38,7 @@
         ${lessons.slice(0,5).map((lesson,index)=>`
           <div class="preview-day">
             <strong>${esc(lesson.day||["Monday","Tuesday","Wednesday","Thursday","Friday"][index])} · ${esc(lesson.title||`Lesson ${index+1}`)}</strong>
-            <span>${esc("Learning target: "+(lesson.objective||"Integrated Kinder Garden learning block."))}${lesson.formalLessonArc?`<br><strong>Lesson progression:</strong> ${esc(lesson.formalLessonArc)}`:""}${lesson.successCriteria?.length?`<br><strong>Success looks like:</strong> ${lesson.successCriteria.map(esc).join(" ")}`:""}${lesson.workshop?`<br><strong>Workshop:</strong> ${esc(lesson.workshop)}`:""}</span>
+            <span>${unit.verticalAlignment?`<div class="vertical-map"><strong>Builds on:</strong> ${esc(unit.verticalAlignment.before)}<br><strong>Deepens:</strong> ${esc(unit.verticalAlignment.deepen)}<br><strong>Transfer check:</strong> ${esc(unit.verticalAlignment.transfer)}<br><strong>Prepares for:</strong> ${esc(unit.verticalAlignment.next)}<br><strong>Responsive support:</strong> ${esc(unit.verticalAlignment.support)}</div>`:""}${esc("Learning target: "+(lesson.objective||"Integrated Kinder Garden learning block."))}${lesson.formalLessonArc?`<br><strong>Lesson progression:</strong> ${esc(lesson.formalLessonArc)}`:""}${lesson.successCriteria?.length?`<br><strong>Success looks like:</strong> ${lesson.successCriteria.map(esc).join(" ")}`:""}${lesson.workshop?`<br><strong>Workshop:</strong> ${esc(lesson.workshop)}`:""}</span>
           </div>`).join("")}
       </div>
     </details>`;
@@ -58,6 +58,7 @@
       .week-preview{width:100%;margin-top:.85rem;border:1px solid rgba(70,105,77,.14);border-radius:12px;background:#fff;text-align:left}
       .week-preview summary{cursor:pointer;padding:.7rem .8rem;color:#604b7e;font-size:.76rem;font-weight:900;text-align:center}
       .week-preview-list{display:grid;gap:.35rem;padding:.2rem .7rem .75rem}
+      .vertical-map{margin:.55rem .7rem;padding:.7rem;border-left:3px solid #8cab93;background:#f0f7ef;border-radius:8px;color:#425b49;font-size:.68rem;line-height:1.5}.vertical-map strong{color:#2c5239}
       .preview-day{padding:.55rem .6rem;border-radius:9px;background:#f8fbf7}
       .preview-day strong{display:block;color:#385443;font-size:.72rem}.preview-day span{display:block;margin-top:.15rem;color:#68766d;font-size:.66rem;line-height:1.4}
       .access-note{width:min(840px,100%);margin:0 auto 1rem;padding:.85rem;border-radius:14px;background:#fff6cf;color:#675729;font-size:.78rem}
