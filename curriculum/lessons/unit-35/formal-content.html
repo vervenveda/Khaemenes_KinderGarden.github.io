@@ -125,7 +125,7 @@
     <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-<script src="/assets/vnv-beta-link.js" defer></script>
+<script src="../../../assets/vnv-beta-link.js" defer></script>
 <script>
 (()=>{"use strict";const UNIT=35,G=window.KhaemenesKinderMasteryGates;const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
 function show(day){qa("article.lesson[data-panel]").forEach(p=>p.classList.toggle("active",Number(p.dataset.panel)===day));qa("[data-open-day]").forEach(b=>b.classList.toggle("active",Number(b.dataset.openDay)===day));const p=q('article.lesson[data-panel="'+day+'"]');if(p)p.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});}
