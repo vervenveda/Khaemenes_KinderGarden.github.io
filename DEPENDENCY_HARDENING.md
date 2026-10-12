@@ -19,3 +19,18 @@ The contract is recorded in `contracts/STOS_VALIDATION_PROFILE_v1.json`. The for
 ## Remaining verification limit
 
 Automated repository checks can detect source-level dependency regressions, but they do not prove browser-network isolation by themselves. For a complete offline acceptance test, load the published lesson with network access disabled and verify the local lesson, games, progress state, daily evidence flow, and mastery UI still work. Optional enrichment links may naturally be unavailable offline.
+
+
+## Regression enforcement added
+
+The active validation workflow also runs `scripts/validate-dependency-boundary.mjs`.
+It scans live source files for remote runtime resource tags, literal third-party
+`fetch()` / dynamic `import()` / XHR calls, remote CSS imports, remote font
+providers, and external links opened in a new tab without `rel=noopener`.
+
+The workflow triggers on HTML, JavaScript, CSS, dependency-policy, and validator
+changes so a dependency regression cannot bypass checks merely because the root
+landing page changed outside the original curriculum-only path filter.
+
+The scanner is a source-level guard. It does not claim that every runtime network
+request has been observed; offline browser acceptance remains a separate test.
