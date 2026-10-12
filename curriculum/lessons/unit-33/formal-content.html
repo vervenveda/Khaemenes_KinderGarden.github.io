@@ -144,7 +144,7 @@ lessons.forEach((p,i)=>{p.dataset.panel=String(i+1);const d=i+1,box=document.cre
  const feedback=document.createElement("p");feedback.className="feedback";feedback.dataset.saveFeedback=String(d);feedback.setAttribute("role","status");feedback.setAttribute("aria-live","polite");box.appendChild(feedback);
  p.appendChild(box);});
 qa(".save-day").forEach(b=>b.addEventListener("click",()=>{const day=Number(b.dataset.day),feedback=q('[data-save-feedback="'+day+'"]');try{G.recordDayEvidence({unit:UNIT,day,evidenceType:"capstone-daily-learning-evidence",source:"capstone-sequential-learning-path",completed:true});feedback.textContent="Day "+day+" evidence saved. It opens the next eligible day; it does not award mastery.";refresh();}catch(e){feedback.textContent="Evidence not saved: "+String(e&&e.message||e);}}));
-window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);refresh();})();
+window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);window.addEventListener("khaemenes-kindergarten-formal-gate-open",refresh);refresh();})();
 </script>
 </body>
 </html>
