@@ -168,7 +168,7 @@ for(let unit=26;unit<=36;unit++){
   assert.ok(!html.includes(`href="../../assessments/unit-${n}-assessment.html"`),`Week ${unit} must not route learners through the retired assessment shell`);
   assert.ok(!html.includes('href="../../assessments/weekly-assessments.html"'),`Week ${unit} assessment navigation must use the canonical mastery route`);
   assert.ok(html.includes(TAG)&&html.indexOf(TAG)<html.toLowerCase().indexOf("</head>"),`Week ${unit} formal content must load its own mastery gate`);
-  assert.equal((html.match(/<article class="lesson" data-panel="\\d+"/g)||[]).length,5,`Week ${unit} must expose five sequential daily panels`);
+  assert.equal((html.match(/<article class="lesson" data-panel="\d+"/g)||[]).length,5,`Week ${unit} must expose five sequential daily panels`);
   for(let day=1;day<=5;day++)assert.ok(html.includes(`data-panel="${day}"`)&&html.includes(`data-open-day="${day}"`)&&html.includes(`data-save-feedback="${day}"`),`Week ${unit} day ${day} must have navigation and evidence controls`);
   assert.ok(html.includes("G.canOpenDay(UNIT,d)")&&html.includes("G.recordDayEvidence"),`Week ${unit} must enforce sequential, learner-scoped daily evidence`);
   assert.ok(html.includes("G.allDaysComplete(UNIT)")&&html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} mastery must require all five daily receipts`);
