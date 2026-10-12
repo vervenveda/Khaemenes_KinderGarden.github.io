@@ -161,6 +161,8 @@ for(const dir of lessonDirs){
 }
 
 
+assert.ok(gate.includes('if(CAPSTONE_UNITS.has(n)&&adultAffirmed!==true)throw new Error("adult-affirmation-required")'),"capstone daily evidence must require explicit adult affirmation");
+
 for(let unit=26;unit<=36;unit++){
   const n=String(unit).padStart(2,"0");
   const html=read(`curriculum/lessons/unit-${n}/formal-content.html`);
@@ -171,6 +173,7 @@ for(let unit=26;unit<=36;unit++){
   assert.equal((html.match(/<article class="lesson" data-panel="\d+"/g)||[]).length,5,`Week ${unit} must expose five sequential daily panels`);
   for(let day=1;day<=5;day++)assert.ok(html.includes(`data-panel="${day}"`)&&html.includes(`data-open-day="${day}"`)&&html.includes("data-save-feedback="),`Week ${unit} day ${day} must have navigation and runtime evidence feedback controls`);
   assert.ok(html.includes("G.canOpenDay(UNIT,d)")&&html.includes("G.recordDayEvidence"),`Week ${unit} must enforce sequential, learner-scoped daily evidence`);
+  assert.ok(html.includes("data-adult-confirm")&&html.includes("adultAffirmed:adultCheck.checked")&&html.includes("Please ask an authorized grown-up"),`Week ${unit} must require an adult-observation confirmation before recording daily evidence`);
   assert.ok(html.includes("G.allDaysComplete(UNIT)")&&html.includes(`href="../../mastery/index.html?unit=${unit}"`),`Week ${unit} mastery must require all five daily receipts`);
   assert.ok(html.includes("Evidence target:")&&html.includes("Daily learning target:\\s*"),`Week ${unit} daily evidence must display its lesson-specific target`);
   assert.ok(html.includes("When your grown-up has observed this learning"),`Week ${unit} daily evidence prompt must describe adult observation`);
