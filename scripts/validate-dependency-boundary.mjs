@@ -19,7 +19,8 @@ const errors=[];
 const approvedOwnedRuntimeUrls=new Set([
   "https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-mastery-gates.js",
   "https://vervenveda.com/assets/vnv-beta-link.js",
-  "https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"
+  "https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js",
+  "https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-learning-continuation.js"
 ]);
 let approvedOwnedRuntimeCount=0;
 const remoteRuntimeTag=/<(?:script|link|iframe|audio|source|img|video|track)\b[^>]*(?:src|href|poster)=["']\s*https?:\/\/[^"']+["'][^>]*>/gi;
