@@ -578,6 +578,7 @@ h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.
 <script src="assets/khaemenes-kinder-resources.js"></script>
 <script src="assets/khaemenes-kinder-companions.js"></script>
 <script src="curriculum/data/course-data.js"></script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-learning-continuation.js"></script>
 <script>
 (() => {
 "use strict";
@@ -914,6 +915,56 @@ function positionLabel(pos){
  if(pos.type==="quiz")return `Week ${String(pos.week).padStart(2,"0")} · Weekly Mastery Check`;
  return pos.title;
 }
+
+function publishKinderContinuation(){
+ const C=window.KhaemenesLearningContinuation,continuity=window.KhaemenesKinderContinuity,progression=window.KhaemenesKinderProgression;
+ if(!C?.publish||!continuity?.getLearnerSummary||!progression?.position)return;
+ const learner=continuity.getLearnerSummary(),pos=progression.position();
+ if(!learner?.learnerId||!learner?.hasProfile)return;
+
+ const summary=continuity.curriculumSummary?.(80,36)||{};
+ let status="continue",nextLabel="Continue My Learning",family={needsAction:false,label:"",summary:"",href:""};
+
+ if(!learner.guardianAuthorized){
+   status="paused";
+   nextLabel="Finish Profile Setup";
+   family={needsAction:true,label:"Guardian review needed",summary:"Review guardian authorization so child-facing academic guidance can remain active.",href:kinderFamilyUrl()};
+ }else if(pos.type==="lesson"){
+   status=Number(pos.bestScore||0)>0&&Number(pos.bestScore||0)<80?"practice":"continue";
+   nextLabel=status==="practice"?"Practice This Lesson":"Continue My Learning";
+ }else if(["quiz","midterm","final"].includes(pos.type)){
+   status=Number(pos.bestScore||0)>0&&Number(pos.bestScore||0)<80?"corrections":"assessment";
+   nextLabel=status==="corrections"?"Review & Try Again":"Open Assessment";
+ }else if(pos.type==="portfolio"){
+   status="mastery";
+   nextLabel="Portfolio Review";
+   family={needsAction:true,label:"Portfolio review",summary:"Formal lessons and assessments are complete. A grown-up portfolio review is the remaining Kindergarten completion step.",href:pos.url};
+ }else if(pos.type==="complete"){
+   status="complete";
+   nextLabel="Open Certificate";
+ }
+
+ try{
+   C.publish({
+     learnerId:learner.learnerId,
+     courseId:"khaemenes-kindergarten-formal-path",
+     school:"Khaemenes Kinder Garden",
+     stage:"kindergarten",
+     grade:"K",
+     subject:"Integrated Foundations",
+     courseTitle:"Kinder Garden",
+     status,
+     nextLabel,
+     nextTitle:positionLabel(pos),
+     nextHref:pos.url||"#curriculum",
+     summary:naibMessageFor(pos),
+     progress:{completed:Number(summary.completedUnits||0),total:36,percent:Math.round(Number(summary.completedUnits||0)/36*100)},
+     mastery:{best:pos.bestScore,threshold:80,mastered:status==="complete"||Number(pos.bestScore||0)>=80},
+     family,
+     source:"kinder-naib-progression-v3"
+   });
+ }catch{}
+}
 function refreshHeroProfileButton(){
   const btn=$("#heroProfileButton"),title=$("#heroProfileMessage"),sub=$("#heroProfileSubtext");
   if(!btn)return;
@@ -957,6 +1008,7 @@ function naibMessageFor(pos){
 }
 function renderAcademicPlace(){
  const pos=window.KhaemenesKinderProgression.position(),learner=window.KhaemenesKinderContinuity?.getLearnerSummary?.(),child=learner?.nickname||"Kindergarten learner";
+ publishKinderContinuation();
  const strip=$("#academicPlaceStrip");
  if(strip)strip.innerHTML=`<strong>🧭 ${esc(child)} · ${esc(positionLabel(pos))}</strong><span>${esc(naibMessageFor(pos))}</span><div class="place-actions"><button class="btn gold" type="button" data-open-naib>Ask NAIB Where I Am</button><button class="btn primary" type="button" data-continue-academic>Continue</button></div>`;
  const title=$("#naibAcademicTitle"),loc=$("#naibAcademicLocation"),msg=$("#naibAcademicMessage");
