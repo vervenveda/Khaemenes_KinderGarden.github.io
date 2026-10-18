@@ -71,6 +71,90 @@ Archaemenes may support:
 
 Archaemenes does **not** replace the parent, guardian, educator, assessment engine, or course mastery authority.
 
+## Mentorship & Family Experience Hardening
+
+Kinder Garden now carries the one-Mentor architecture into the learner's daily and family experience.
+
+### Today with Archaemenes
+
+The child-facing campus includes a shared **Today with Archaemenes** pathway.
+
+The order is deliberate:
+
+1. **Learn** — the actual current formal Kindergarten step.
+2. **Practice** — an optional Kinder Garden resource matched to the lesson.
+3. **Explore** — a second matched Kinder or Crechè companion when useful.
+4. **Reset** — an optional calm / off-screen transition through Aurora.
+
+The formal lesson always remains first. Practice and exploration do not count as mastery and cannot unlock later curriculum.
+
+### Family Learning Snapshot
+
+The Kindergarten Family Curriculum Portal now includes a family snapshot that combines:
+
+- the current formal academic place;
+- weeks recorded at 80% mastery;
+- recorded weekly average;
+- recent support-path activity;
+- the current learning focus;
+- lesson-matched optional practice;
+- the latest optional grown-up observation.
+
+Where five-day formal evidence exists, the family view reads the existing mastery-gate record so it can identify the current daily step rather than only the current week.
+
+### Gentle grown-up observations
+
+Families may optionally record one of three observations:
+
+- **Exploring with support**
+- **Growing independence**
+- **Explaining confidently**
+
+These notes are complementary family context only.
+
+They do **not**:
+- change a score;
+- create mastery;
+- unlock a lesson;
+- satisfy an assessment;
+- alter the 80% gate;
+- diagnose ability, disability, readiness, or development.
+
+Formal academic evidence remains under the course engine and adult-observed assessment system.
+
+### Archaemenes Kindergarten context bridge
+
+Kinder Garden writes a sanitized browser-local context record:
+
+```text
+khaemenes_kindergarten_mentor_context_v1
+```
+
+It can include:
+
+- the active learner ID;
+- Archaemenes / Wise Owl communication style;
+- current formal academic position;
+- 36-week mastery summary;
+- current lesson focus;
+- NAIB-matched optional practice;
+- recent family observations;
+- recent support-path activity.
+
+The Academy Mentor accepts the Kindergarten context only when its learner ID matches the active learner in the Academy Family Registry.
+
+Archaemenes may then explain the current academic place, suggest matched practice after the formal step, provide a smaller clue, or recommend a healthy break.
+
+### Shared experience implementation
+
+The cross-surface experience layer lives in:
+
+`assets/khaemenes-kinder-experience.js`
+
+It is intentionally separate from the large historical root `index.html` so experience upgrades do not rewrite the formal curriculum engine.
+
+---
+
 ## NAIB boundary
 
 NAIB remains an academic navigation and delegation layer. NAIB can identify the learner's academic position, match resources to the current lesson, and recommend the appropriate next doorway.
