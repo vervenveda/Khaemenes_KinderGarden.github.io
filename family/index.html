@@ -800,7 +800,7 @@ footer{
         <div id="learnerList" class="learner-list"></div>
 
         <div class="actions">
-          <a class="btn soft" href="../#mentor">Set Up Kinder Learner & Mentor</a>
+          <a class="btn soft" href="/stos/mentor/" data-khaemenes-mentor="archaemenes">Open Archaemenes · Wise Owl</a>
           <a class="btn" href="/stos/khaemenes/family/">Adults, Permissions & Family Management</a>
         </div>
       </section>
@@ -897,6 +897,8 @@ footer{
 <script src="/stos/khaemenes/assets/khaemenes-family-registry.js"></script>
 <script src="../assets/khaemenes-kinder-family-adapter.js"></script>
 <script src="../assets/khaemenes-kinder-continuity.js"></script>
+<script src="../assets/khaemenes-kinder-resources.js"></script>
+<script src="../curriculum/data/course-data.js"></script>
 <script src="../assets/khaemenes-kinder-companions.js"></script>
 
 <script>
@@ -1148,8 +1150,8 @@ function renderProgress(learner){
   $("#activeLearner").innerHTML = learnerSummary.hasProfile ? `
     <p><strong>${esc(learnerSummary.nickname || "Kinder Garden learner")}</strong></p>
     <p>
-      ${esc(learnerSummary.mentor?.avatar || "🌱")}
-      ${esc(learnerSummary.mentor?.name || "Khaemenes Mentor")}
+      🦉
+      Archaemenes · Wise Owl
       ·
       ${learnerSummary.guardianAuthorized
         ? "guardian authorization active"
@@ -1274,7 +1276,12 @@ function exportCombined(){
       family:familyExport,
       kindergarten,
       activeLearner:api?.getLearnerSummary?.() || null,
-      note:"Family-controlled local educational backup. Not a diagnosis, authenticated invitation, or cloud sync."
+      mentorFamilyExperience:{
+        context:window.KhaemenesKinderExperience?.getContext?.() || null,
+        observations:window.KhaemenesKinderExperience?.observations?.() || [],
+        recentActivity:window.KhaemenesKinderExperience?.recentActivity?.() || []
+      },
+      note:"Family-controlled local educational backup. Parent observations are complementary notes, not grades, diagnoses, mastery evidence, authenticated invitations, or cloud sync."
     };
 
     const blob = new Blob(
@@ -1326,6 +1333,7 @@ render();
 
 })();
 </script>
+<script src="../assets/khaemenes-kinder-experience.js"></script>
 <script src="../assets/vnv-beta-link.js" defer></script>
 <!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
 </html>
