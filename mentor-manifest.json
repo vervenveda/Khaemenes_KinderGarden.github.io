@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "sourceId": "khaemenes.kindergarten",
   "name": "Khaemenes Kinder Garden",
   "classification": "educational",
@@ -42,11 +42,24 @@
       "title": "Khaemenes Kinder Garden",
       "description": "Kindergarten learning gateway with a 36-week curriculum, public learning tools, Family Registry continuity, and Archaemenes as the Academy Mentor.",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/",
-      "audiences": ["kindergarten", "parent"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["education", "navigation"],
+      "audiences": [
+        "kindergarten",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
       "skills": [],
-      "tags": ["kindergarten", "learning-home"],
+      "tags": [
+        "kindergarten",
+        "learning-home"
+      ],
       "mentorEligible": true,
       "featured": true
     },
@@ -55,11 +68,25 @@
       "title": "ABC Curriculum",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/ABC_curriculum_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["language-literacy"],
-      "skills": ["letters", "early-reading"],
-      "tags": ["alphabet", "literacy"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "letters",
+        "early-reading"
+      ],
+      "tags": [
+        "alphabet",
+        "literacy"
+      ],
       "mentorEligible": true,
       "minutes": 15,
       "energy": "steady"
@@ -69,11 +96,25 @@
       "title": "ABC Spelling Soup",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/ABC_spelling_soup_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["language-literacy"],
-      "skills": ["letters", "spelling"],
-      "tags": ["word-play", "literacy"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "letters",
+        "spelling"
+      ],
+      "tags": [
+        "word-play",
+        "literacy"
+      ],
       "mentorEligible": true,
       "minutes": 10,
       "energy": "playful"
@@ -83,11 +124,25 @@
       "title": "ABC Story",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/ABC_story_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["language-literacy"],
-      "skills": ["story", "letter-recognition"],
-      "tags": ["storytelling", "literacy"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "story",
+        "letter-recognition"
+      ],
+      "tags": [
+        "storytelling",
+        "literacy"
+      ],
       "mentorEligible": true,
       "minutes": 10,
       "energy": "gentle"
@@ -97,11 +152,25 @@
       "title": "Kindergarten Math Curriculum",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Math_curriculum_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["mathematics"],
-      "skills": ["number-sense", "early-math"],
-      "tags": ["math", "curriculum"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "number-sense",
+        "early-math"
+      ],
+      "tags": [
+        "math",
+        "curriculum"
+      ],
       "mentorEligible": true,
       "minutes": 20,
       "energy": "steady"
@@ -111,11 +180,25 @@
       "title": "Numbers 1–12",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Numbers_1-12_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["mathematics"],
-      "skills": ["counting", "number-recognition"],
-      "tags": ["numbers", "counting"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "counting",
+        "number-recognition"
+      ],
+      "tags": [
+        "numbers",
+        "counting"
+      ],
       "mentorEligible": true,
       "minutes": 8,
       "energy": "playful"
@@ -125,11 +208,25 @@
       "title": "Spelling Safari",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Spelling_safari_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["language-literacy"],
-      "skills": ["spelling", "phonics"],
-      "tags": ["words", "spelling"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "spelling",
+        "phonics"
+      ],
+      "tags": [
+        "words",
+        "spelling"
+      ],
       "mentorEligible": true,
       "minutes": 10,
       "energy": "playful"
@@ -139,11 +236,26 @@
       "title": "Weather Compass",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Weather_compass_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["science", "wonder"],
-      "skills": ["observation", "weather"],
-      "tags": ["weather", "science"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "science",
+        "wonder"
+      ],
+      "skills": [
+        "observation",
+        "weather"
+      ],
+      "tags": [
+        "weather",
+        "science"
+      ],
       "mentorEligible": true,
       "minutes": 10,
       "energy": "curious"
@@ -153,14 +265,57 @@
       "title": "Kinder Movement & PE",
       "description": "",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/PE_curriculum_index.html",
-      "audiences": ["kindergarten"],
-      "roles": ["student", "parent", "educator"],
-      "domains": ["movement", "physical-learning"],
-      "skills": ["gross-motor", "movement"],
-      "tags": ["movement", "off-screen"],
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "movement",
+        "physical-learning"
+      ],
+      "skills": [
+        "gross-motor",
+        "movement"
+      ],
+      "tags": [
+        "movement",
+        "off-screen"
+      ],
       "mentorEligible": true,
       "minutes": 15,
       "energy": "active"
     }
-  ]
+  ],
+  "mentorExperience": {
+    "sharedLayer": "assets/khaemenes-kinder-experience.js",
+    "contextKey": "khaemenes_kindergarten_mentor_context_v1",
+    "observationKey": "khaemenes_kindergarten_observations_v1",
+    "activityLogKey": "khaemenes_kindergarten_learning_log_v1",
+    "dailyPathPolicy": "formal-step-first",
+    "practicePolicy": "optional-lesson-matched-support",
+    "parentSnapshot": "seven-day-local-view",
+    "observations": {
+      "labels": [
+        "support",
+        "growing",
+        "explaining"
+      ],
+      "affectsMastery": false,
+      "affectsAssessment": false,
+      "affectsProgression": false,
+      "diagnostic": false
+    },
+    "mentorContextPolicy": "active-family-registry-learner-id-must-match"
+  },
+  "authorityMap": {
+    "familyRegistry": "learner identity and placement",
+    "naib": "academic position, matching, and routing",
+    "archaemenes": "educational mentorship and bounded Wise Owl support",
+    "courseEngine": "formal mastery, evidence, assessments, and progression",
+    "familyEducator": "human observation, judgment, and support"
+  }
 }
