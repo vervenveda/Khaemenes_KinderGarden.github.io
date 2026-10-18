@@ -64,7 +64,49 @@
   }
 
   function fallbackPosition(){
-    const week=Math.max(1,Math.min(36,Number(global.KhaemenesKinderContinuity?.nextUnit?.(36,80))||1));
+    const gates=global.KhaemenesKinderMasteryGates;
+    const completed=Number(gates?.completedWeeks?.())||0;
+
+    if(gates&&completed>=36){
+      const final=gates.milestoneMastery?.("final");
+      if(!final?.mastered){
+        return {type:"final",week:36,lesson:null,title:"Final Readiness Demonstration",url:"curriculum/mastery/?milestone=final"};
+      }
+      if(!gates.learnerRecord?.().portfolio){
+        return {type:"portfolio",week:36,lesson:null,title:"Portfolio Review",url:"curriculum/records/"};
+      }
+      return {type:"complete",week:36,lesson:null,title:"Kindergarten Complete",url:"curriculum/records/certificate.html"};
+    }
+
+    if(gates&&completed>=18&&!gates.milestoneMastery?.("midterm")?.mastered){
+      return {type:"midterm",week:18,lesson:null,title:"Midyear Demonstration",url:"curriculum/mastery/?milestone=midterm"};
+    }
+
+    const week=Math.max(1,Math.min(36,Number(gates?.nextWeek?.())||Number(global.KhaemenesKinderContinuity?.nextUnit?.(36,80))||1));
+
+    if(gates?.sequenceRequired?.(week)){
+      for(let day=1;day<=5;day++){
+        if(!gates.dayEvidence?.(week,day)?.completed){
+          return {
+            type:"lesson",
+            week,
+            lesson:day,
+            title:"Kindergarten Week "+String(week).padStart(2,"0")+" · Day "+day,
+            url:"curriculum/lessons/unit-"+String(week).padStart(2,"0")+"/"
+          };
+        }
+      }
+      if(!gates.weekMastery?.(week)?.mastered){
+        return {
+          type:"quiz",
+          week,
+          lesson:null,
+          title:"Weekly Mastery Check",
+          url:"curriculum/mastery/?unit="+week
+        };
+      }
+    }
+
     return {
       type:"lesson",
       week,
