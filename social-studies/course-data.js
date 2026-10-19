@@ -7,8 +7,8 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "dailyLessons": 180,
     "masteryThreshold": 80,
     "assessmentDraw": 5,
-    "questionBankPerWeek": 6,
-    "version": "1.0.0",
+    "questionBankPerWeek": 8,
+    "version": "1.1.0",
     "updated": "2026-10-19",
     "storageKey": "khaemenes_kindergarten_social_studies_v1",
     "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency.",
@@ -34,7 +34,14 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
       32,
       35
     ],
-    "localizationPolicy": "Keep the national Kindergarten Social Studies core and 80% mastery progression invariant. Localize age-appropriate community examples, maps, public services, symbols, historical clues, environmental choices, and civic evidence to the learner's state/local context."
+    "localizationPolicy": "Keep the national Kindergarten Social Studies core and 80% mastery progression invariant. Localize age-appropriate community examples, maps, public services, symbols, historical clues, environmental choices, and civic evidence to the learner's state/local context.",
+    "weeklyDraw": 5,
+    "weeklyCurrentItems": 8,
+    "midtermDraw": 18,
+    "finalDraw": 24,
+    "weeklyMode": "open-book with teacher read-aloud support",
+    "midtermMode": "closed-resource teacher-assisted/read-aloud",
+    "finalMode": "closed-resource teacher-assisted/read-aloud"
   },
   "frameworks": [
     {
@@ -179,6 +186,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "To stop people from learning"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W01-X1",
+          "prompt": "Which sentence best matches what we learned in Week 1, \"I Am Part of a Community\"?",
+          "choices": [
+            "A community is a group of people who share places, responsibilities, and ways of helping one another.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 1,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W01-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What makes a classroom a community?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 1,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W01-Q1",
+          "prompt": "What is a community?",
+          "choices": [
+            "A group of people who share places and responsibilities",
+            "Only one person working alone",
+            "A kind of weather",
+            "A number"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W01-Q2",
+          "prompt": "Which action helps a classroom community?",
+          "choices": [
+            "Putting materials away so others can use them",
+            "Hiding every shared pencil",
+            "Ignoring every rule",
+            "Taking another learner's work"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W01-Q3",
+          "prompt": "What does responsibility mean?",
+          "choices": [
+            "A job or action we are expected to take care of",
+            "A map symbol",
+            "Something that happened long ago",
+            "A kind of money"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W01-Q4",
+          "prompt": "Which is evidence about a classroom?",
+          "choices": [
+            "A photograph of the classroom",
+            "A made-up guess with no clue",
+            "A random number",
+            "A weather forecast from another place"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W01-Q5",
+          "prompt": "Which statement shows belonging?",
+          "choices": [
+            "I am an important member of this learning community.",
+            "Only one person matters in a community.",
+            "No one needs to help.",
+            "Rules are never useful."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W01-Q6",
+          "prompt": "Why do people share responsibilities?",
+          "choices": [
+            "So the community can work fairly and safely",
+            "So nobody has to help",
+            "To make maps disappear",
+            "To stop people from learning"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W01-X1",
+          "prompt": "Which sentence best matches what we learned in Week 1, \"I Am Part of a Community\"?",
+          "choices": [
+            "A community is a group of people who share places, responsibilities, and ways of helping one another.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 1,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W01-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What makes a classroom a community?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 1,
+          "kind": "inquiry"
         }
       ]
     },
@@ -297,6 +424,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "The same last name"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W02-X1",
+          "prompt": "Which sentence best matches what we learned in Week 2, \"Families and Many Ways to Belong\"?",
+          "choices": [
+            "Families may look, live, and celebrate in different ways while sharing care, connection, and responsibility.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 2,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W02-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can families be alike and different?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 2,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W02-Q1",
+          "prompt": "Families can be...",
+          "choices": [
+            "Different from one another and still be families",
+            "Only one exact size",
+            "Only people who live in one kind of home",
+            "Exactly the same everywhere"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W02-Q2",
+          "prompt": "What does compare mean?",
+          "choices": [
+            "Notice how things are alike and different",
+            "Erase differences",
+            "Guess without looking",
+            "Count money"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W02-Q3",
+          "prompt": "Which is a respectful way to learn about families?",
+          "choices": [
+            "Ask kind questions and let people choose what to share",
+            "Demand private information",
+            "Say one family is the only right kind",
+            "Laugh at differences"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W02-Q4",
+          "prompt": "What is a tradition?",
+          "choices": [
+            "A practice or custom people repeat and value",
+            "A compass direction",
+            "A traffic light",
+            "A coin"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W02-Q5",
+          "prompt": "Which can be a source about family history?",
+          "choices": [
+            "A story told by a family member",
+            "A random guess",
+            "A blank page with no information",
+            "A made-up fact presented as true"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W02-Q6",
+          "prompt": "What can families share even when they are different?",
+          "choices": [
+            "Care, connection, and responsibility",
+            "The exact same food every day",
+            "The exact same house",
+            "The same last name"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W02-X1",
+          "prompt": "Which sentence best matches what we learned in Week 2, \"Families and Many Ways to Belong\"?",
+          "choices": [
+            "Families may look, live, and celebrate in different ways while sharing care, connection, and responsibility.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 2,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W02-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can families be alike and different?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 2,
+          "kind": "inquiry"
         }
       ]
     },
@@ -415,6 +662,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Do facts matter?"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W03-X1",
+          "prompt": "Which sentence best matches what we learned in Week 3, \"Our School and the People Who Help It Work\"?",
+          "choices": [
+            "Schools work because people take different roles and cooperate to meet shared needs.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 3,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W03-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people help a school community?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 3,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W03-Q1",
+          "prompt": "What is a role?",
+          "choices": [
+            "A job or part someone has in a group",
+            "A type of landform",
+            "A date on a timeline",
+            "A coin"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W03-Q2",
+          "prompt": "Why are school helpers important?",
+          "choices": [
+            "Different roles help the school meet shared needs",
+            "Only one job matters",
+            "Students never help",
+            "Schools work without people"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W03-Q3",
+          "prompt": "What does cooperate mean?",
+          "choices": [
+            "Work together toward a shared goal",
+            "Work against everyone",
+            "Hide information",
+            "Refuse every responsibility"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W03-Q4",
+          "prompt": "Which is a service in a school?",
+          "choices": [
+            "Keeping shared spaces clean and safe",
+            "Breaking classroom materials",
+            "Hiding library books",
+            "Blocking every doorway"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W03-Q5",
+          "prompt": "How can a student help the school community?",
+          "choices": [
+            "Take care of materials and treat people respectfully",
+            "Make more work for others on purpose",
+            "Ignore safety routines",
+            "Keep shared supplies only for themself"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W03-Q6",
+          "prompt": "Which question helps us learn about a helper's role?",
+          "choices": [
+            "What do you do that helps the school community?",
+            "Why is your job the only important job?",
+            "Can I make up your answer?",
+            "Do facts matter?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W03-X1",
+          "prompt": "Which sentence best matches what we learned in Week 3, \"Our School and the People Who Help It Work\"?",
+          "choices": [
+            "Schools work because people take different roles and cooperate to meet shared needs.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 3,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W03-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people help a school community?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 3,
+          "kind": "inquiry"
         }
       ]
     },
@@ -533,6 +900,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Keep the first idea no matter what"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W04-X1",
+          "prompt": "Which sentence best matches what we learned in Week 4, \"Unit Inquiry · How Communities Work\"?",
+          "choices": [
+            "We can use examples and evidence to explain how people belong to and help communities.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 4,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W04-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can we show what we know about belonging, roles, and responsibility?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 4,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W04-Q1",
+          "prompt": "What is evidence?",
+          "choices": [
+            "A clue or source that helps support an idea",
+            "Any guess at all",
+            "A rule that cannot be discussed",
+            "A kind of map direction"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W04-Q2",
+          "prompt": "A strong explanation should include...",
+          "choices": [
+            "An idea and an example or clue that supports it",
+            "Only the word 'because' with nothing after it",
+            "A random answer",
+            "No connection to the question"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W04-Q3",
+          "prompt": "Which example shows community responsibility?",
+          "choices": [
+            "Returning shared materials after using them",
+            "Damaging shared materials",
+            "Refusing to help with any shared task",
+            "Taking every supply home"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W04-Q4",
+          "prompt": "Why do communities have different roles?",
+          "choices": [
+            "People can contribute in different ways to shared needs",
+            "Everyone must do the exact same job",
+            "Only adults can contribute",
+            "Roles make cooperation impossible"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W04-Q5",
+          "prompt": "Which is the best claim?",
+          "choices": [
+            "Communities work better when people cooperate and care for shared spaces.",
+            "Communities never need cooperation.",
+            "Only one person belongs in a community.",
+            "Evidence is never useful."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W04-Q6",
+          "prompt": "What should we do if new evidence changes our first idea?",
+          "choices": [
+            "Revise the idea to fit the evidence",
+            "Hide the evidence",
+            "Pretend the evidence does not exist",
+            "Keep the first idea no matter what"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W04-X1",
+          "prompt": "Which sentence best matches what we learned in Week 4, \"Unit Inquiry · How Communities Work\"?",
+          "choices": [
+            "We can use examples and evidence to explain how people belong to and help communities.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 4,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W04-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can we show what we know about belonging, roles, and responsibility?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 4,
+          "kind": "inquiry"
         }
       ]
     },
@@ -651,6 +1138,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Safety and fairness never matter."
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W05-X1",
+          "prompt": "Which sentence best matches what we learned in Week 5, \"Why We Have Rules\"?",
+          "choices": [
+            "Rules can protect safety, fairness, learning, and shared spaces when people understand their purpose.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 5,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W05-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do groups make rules?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 5,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W05-Q1",
+          "prompt": "Why do groups make useful rules?",
+          "choices": [
+            "To support safety, fairness, learning, or shared spaces",
+            "To make every choice impossible",
+            "To confuse people on purpose",
+            "Because rules never need reasons"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W05-Q2",
+          "prompt": "A fair rule should...",
+          "choices": [
+            "Apply in a reasonable way and have a clear purpose",
+            "Help only one favorite person",
+            "Be secret from everyone",
+            "Change every minute"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W05-Q3",
+          "prompt": "Which rule best supports safety?",
+          "choices": [
+            "Walk indoors where people may be moving closely together",
+            "Push in crowded spaces",
+            "Throw objects across the room",
+            "Block emergency exits"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W05-Q4",
+          "prompt": "What is a good question about a rule?",
+          "choices": [
+            "What problem is this rule meant to prevent or solve?",
+            "How can I ignore every rule?",
+            "Can rules never be improved?",
+            "Do reasons matter?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W05-Q5",
+          "prompt": "If a rule is confusing, a learner can...",
+          "choices": [
+            "Ask respectfully for the reason or clarification",
+            "Invent a different rule and claim it is official",
+            "Hide the rule",
+            "Break it to test people"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W05-Q6",
+          "prompt": "Which statement is true?",
+          "choices": [
+            "Rules can be discussed by asking about their purpose and fairness.",
+            "Every rule is automatically perfect forever.",
+            "Fairness means one person always wins.",
+            "Safety and fairness never matter."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W05-X1",
+          "prompt": "Which sentence best matches what we learned in Week 5, \"Why We Have Rules\"?",
+          "choices": [
+            "Rules can protect safety, fairness, learning, and shared spaces when people understand their purpose.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 5,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W05-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do groups make rules?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 5,
+          "kind": "inquiry"
         }
       ]
     },
@@ -769,6 +1376,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Explaining a decision"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W06-X1",
+          "prompt": "Which sentence best matches what we learned in Week 6, \"Fairness Is More Than 'Same'\"?",
+          "choices": [
+            "Fairness means treating people with care and justice; fair solutions may consider different needs, not only identical treatment.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 6,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W06-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What does fairness look like?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 6,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W06-Q1",
+          "prompt": "Fairness means...",
+          "choices": [
+            "Trying to treat people justly and consider needs",
+            "One person always getting first choice",
+            "Everyone receiving the exact same thing in every situation",
+            "Ignoring how choices affect others"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W06-Q2",
+          "prompt": "Which is a fair classroom process?",
+          "choices": [
+            "Take turns and use the same clear procedure",
+            "Let only friends participate",
+            "Change the rule depending on who is asking",
+            "Keep the decision secret"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W06-Q3",
+          "prompt": "If two people need different supports to participate, fairness may mean...",
+          "choices": [
+            "Giving each person the support they reasonably need",
+            "Giving no one help",
+            "Pretending needs do not exist",
+            "Choosing a favorite"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W06-Q4",
+          "prompt": "What helps solve a fairness problem?",
+          "choices": [
+            "Listen, explain reasons, and look for a workable solution",
+            "Shout over everyone",
+            "Hide what happened",
+            "Refuse to hear another view"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W06-Q5",
+          "prompt": "Evidence in a fairness scenario can include...",
+          "choices": [
+            "What happened and what each person needs",
+            "Only rumors",
+            "A guess that ignores the event",
+            "An unrelated fact"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W06-Q6",
+          "prompt": "Fair does NOT always mean...",
+          "choices": [
+            "Exactly identical in every situation",
+            "Just and reasonable",
+            "Listening to others",
+            "Explaining a decision"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W06-X1",
+          "prompt": "Which sentence best matches what we learned in Week 6, \"Fairness Is More Than 'Same'\"?",
+          "choices": [
+            "Fairness means treating people with care and justice; fair solutions may consider different needs, not only identical treatment.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 6,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W06-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What does fairness look like?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 6,
+          "kind": "inquiry"
         }
       ]
     },
@@ -887,6 +1614,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "No need to explain anything"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W07-X1",
+          "prompt": "Which sentence best matches what we learned in Week 7, \"Authority, Leadership, and Responsibility\"?",
+          "choices": [
+            "People with authority or leadership roles have responsibilities, and good decisions should consider rules, safety, evidence, and the people affected.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 7,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W07-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What should responsible leaders and authority figures do?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 7,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W07-Q1",
+          "prompt": "What is authority?",
+          "choices": [
+            "The recognized responsibility or power to make or enforce some decisions",
+            "Being the loudest person",
+            "Always getting what you want",
+            "A type of money"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W07-Q2",
+          "prompt": "Responsible leadership includes...",
+          "choices": [
+            "Listening, explaining, and caring about how decisions affect people",
+            "Ignoring everyone else",
+            "Keeping every reason secret",
+            "Breaking rules for favorites"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W07-Q3",
+          "prompt": "Who may have authority in a school?",
+          "choices": [
+            "Teachers or administrators acting within their roles",
+            "Any student who declares themself principal",
+            "A random person online",
+            "No one"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W07-Q4",
+          "prompt": "A leader should use evidence when...",
+          "choices": [
+            "Making a decision about a shared problem",
+            "Choosing a random answer to look important",
+            "Ignoring what happened",
+            "Hiding relevant facts"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W07-Q5",
+          "prompt": "A class meeting is useful for...",
+          "choices": [
+            "Sharing ideas and solving some shared problems respectfully",
+            "Making fun of people",
+            "Keeping only one voice",
+            "Avoiding every decision"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W07-Q6",
+          "prompt": "Having authority also brings...",
+          "choices": [
+            "Responsibilities",
+            "Freedom from every rule",
+            "The right to ignore others",
+            "No need to explain anything"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W07-X1",
+          "prompt": "Which sentence best matches what we learned in Week 7, \"Authority, Leadership, and Responsibility\"?",
+          "choices": [
+            "People with authority or leadership roles have responsibilities, and good decisions should consider rules, safety, evidence, and the people affected.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 7,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W07-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What should responsible leaders and authority figures do?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 7,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1005,6 +1852,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Only if no one asks questions"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W08-X1",
+          "prompt": "Which sentence best matches what we learned in Week 8, \"Making Decisions Together\"?",
+          "choices": [
+            "Groups can use discussion, agreed procedures, and sometimes voting to make decisions while still respecting people who preferred another choice.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 8,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W08-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a group make a fair decision?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 8,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W08-Q1",
+          "prompt": "A vote is...",
+          "choices": [
+            "A way to record choices in some group decisions",
+            "A guarantee that every decision is fair",
+            "A way to silence people",
+            "A kind of map"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W08-Q2",
+          "prompt": "Before a fair class vote, learners should...",
+          "choices": [
+            "Understand the choices and have a chance to hear reasons",
+            "Hide one choice",
+            "Let one person vote many times",
+            "Change votes after seeing who is winning"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W08-Q3",
+          "prompt": "The majority is...",
+          "choices": [
+            "The larger number in a group or vote",
+            "Always the loudest person",
+            "A map symbol",
+            "A rule that never changes"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W08-Q4",
+          "prompt": "If your choice does not win, a respectful response is...",
+          "choices": [
+            "Accept the agreed process and continue participating respectfully",
+            "Insult people who chose differently",
+            "Destroy the tally",
+            "Refuse every future activity"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W08-Q5",
+          "prompt": "Why should a group hear reasons before deciding?",
+          "choices": [
+            "Reasons help people understand choices and consequences",
+            "Reasons make facts unnecessary",
+            "Only the winner needs information",
+            "Discussion is always harmful"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W08-Q6",
+          "prompt": "Does a majority vote make every possible action acceptable?",
+          "choices": [
+            "No; rules, rights, safety, and fairness can still matter",
+            "Yes; a majority can do anything at all",
+            "Only if the vote is close",
+            "Only if no one asks questions"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W08-X1",
+          "prompt": "Which sentence best matches what we learned in Week 8, \"Making Decisions Together\"?",
+          "choices": [
+            "Groups can use discussion, agreed procedures, and sometimes voting to make decisions while still respecting people who preferred another choice.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 8,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W08-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a group make a fair decision?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 8,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1123,6 +2090,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Change directions while someone follows it"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W09-X1",
+          "prompt": "Which sentence best matches what we learned in Week 9, \"Maps Represent Real Places\"?",
+          "choices": [
+            "Maps are models of real places that use symbols, labels, and spatial relationships to show location.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 9,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W09-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a map help us understand a place?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 9,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W09-Q1",
+          "prompt": "A map is...",
+          "choices": [
+            "A model that represents a real or imagined place",
+            "The place itself",
+            "A timeline",
+            "A money chart"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W09-Q2",
+          "prompt": "What is a map symbol?",
+          "choices": [
+            "A mark or picture that stands for something on the map",
+            "A secret answer",
+            "A calendar date",
+            "A job"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W09-Q3",
+          "prompt": "What does a legend or key do?",
+          "choices": [
+            "Explains what map symbols mean",
+            "Shows the weather only",
+            "Counts votes",
+            "Names every person"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W09-Q4",
+          "prompt": "Which helps show location?",
+          "choices": [
+            "Where one place is compared with another",
+            "A random color with no key",
+            "A story with no place information",
+            "A price tag"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W09-Q5",
+          "prompt": "A good classroom map should...",
+          "choices": [
+            "Place important features in reasonable positions",
+            "Put every object in one corner",
+            "Ignore where things are",
+            "Have no symbols or labels"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W09-Q6",
+          "prompt": "How can we test a map?",
+          "choices": [
+            "Use it to locate features and compare it with the real space",
+            "Never look at the real place",
+            "Guess what every symbol means",
+            "Change directions while someone follows it"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W09-X1",
+          "prompt": "Which sentence best matches what we learned in Week 9, \"Maps Represent Real Places\"?",
+          "choices": [
+            "Maps are models of real places that use symbols, labels, and spatial relationships to show location.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 9,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W09-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a map help us understand a place?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 9,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1241,6 +2328,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Based only on guessing"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W10-X1",
+          "prompt": "Which sentence best matches what we learned in Week 10, \"Directions and Position\"?",
+          "choices": [
+            "Direction words and relative-position words help people describe and navigate space consistently.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 10,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W10-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do direction words help us describe where things are?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 10,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W10-Q1",
+          "prompt": "Which are cardinal directions?",
+          "choices": [
+            "North, south, east, and west",
+            "Yesterday, today, tomorrow, later",
+            "Buy, sell, save, trade",
+            "Rule, law, vote, leader"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W10-Q2",
+          "prompt": "Why do shared direction words help?",
+          "choices": [
+            "People can describe location in a consistent way",
+            "Everyone can invent a different meaning each time",
+            "Maps no longer need labels",
+            "Places stop moving"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W10-Q3",
+          "prompt": "A compass rose usually shows...",
+          "choices": [
+            "Directions",
+            "Prices",
+            "Timeline dates",
+            "Job roles"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W10-Q4",
+          "prompt": "If a map says 'move east,' you should...",
+          "choices": [
+            "Use the map's direction key or compass rose to move east",
+            "Choose any direction without checking",
+            "Move to yesterday",
+            "Count money"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W10-Q5",
+          "prompt": "Relative position words include...",
+          "choices": [
+            "Near, far, above, below, left, right",
+            "Buy, sell, trade, save",
+            "Past, present, future, century",
+            "Law, court, mayor, vote"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W10-Q6",
+          "prompt": "Good directions should be...",
+          "choices": [
+            "Clear enough that another person can follow them",
+            "Different every time they are read",
+            "Missing important steps",
+            "Based only on guessing"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W10-X1",
+          "prompt": "Which sentence best matches what we learned in Week 10, \"Directions and Position\"?",
+          "choices": [
+            "Direction words and relative-position words help people describe and navigate space consistently.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 10,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W10-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do direction words help us describe where things are?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 10,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1359,6 +2566,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Only music"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W11-X1",
+          "prompt": "Which sentence best matches what we learned in Week 11, \"Land, Water, and Human Places\"?",
+          "choices": [
+            "Places include natural features and human-made features, and people make choices in response to land and water.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 11,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W11-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do land and water shape where people live and move?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 11,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W11-Q1",
+          "prompt": "Which is a natural feature?",
+          "choices": [
+            "A river",
+            "A school building",
+            "A road sign",
+            "A bridge"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W11-Q2",
+          "prompt": "Which is a human-made feature?",
+          "choices": [
+            "A road",
+            "A mountain",
+            "An ocean",
+            "A valley"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W11-Q3",
+          "prompt": "A body of water can be...",
+          "choices": [
+            "A river, lake, ocean, or pond",
+            "A school",
+            "A street",
+            "A library"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W11-Q4",
+          "prompt": "Why might people build a bridge?",
+          "choices": [
+            "To cross an obstacle such as water",
+            "To make a timeline",
+            "To count votes",
+            "To create a holiday"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W11-Q5",
+          "prompt": "What is a landform?",
+          "choices": [
+            "A natural shape or feature of Earth's surface",
+            "A classroom rule",
+            "A job role",
+            "A type of money"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W11-Q6",
+          "prompt": "Geographers study...",
+          "choices": [
+            "Places, people, environments, and spatial relationships",
+            "Only spelling",
+            "Only numbers",
+            "Only music"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W11-X1",
+          "prompt": "Which sentence best matches what we learned in Week 11, \"Land, Water, and Human Places\"?",
+          "choices": [
+            "Places include natural features and human-made features, and people make choices in response to land and water.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 11,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W11-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do land and water shape where people live and move?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 11,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1477,6 +2804,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Pretend they match"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W12-X1",
+          "prompt": "Which sentence best matches what we learned in Week 12, \"Unit Inquiry · My Place in the World\"?",
+          "choices": [
+            "We can combine maps, observations, and descriptions to explain what a place is like and how people use it.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 12,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W12-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can maps and evidence tell the story of a place?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 12,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W12-Q1",
+          "prompt": "To explain a place well, we can use...",
+          "choices": [
+            "A map plus observations or pictures",
+            "Only a guess",
+            "No location information",
+            "A rule chart"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W12-Q2",
+          "prompt": "A route is...",
+          "choices": [
+            "A path from one place to another",
+            "A family tradition",
+            "A job",
+            "A timeline"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W12-Q3",
+          "prompt": "Which is evidence about how people use a place?",
+          "choices": [
+            "A picture showing people using a park",
+            "A random guess about the park",
+            "A number with no label",
+            "An unrelated story"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W12-Q4",
+          "prompt": "What can a map legend help us identify?",
+          "choices": [
+            "Features shown by symbols",
+            "Who won a vote",
+            "What happened yesterday",
+            "How much something costs"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W12-Q5",
+          "prompt": "A strong place explanation should mention...",
+          "choices": [
+            "Important features and where they are",
+            "Only a favorite color",
+            "No locations",
+            "Only a date"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W12-Q6",
+          "prompt": "If a map and a picture seem to disagree, we should...",
+          "choices": [
+            "Look more carefully and ask why the sources may differ",
+            "Throw both away immediately",
+            "Choose the prettier source",
+            "Pretend they match"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W12-X1",
+          "prompt": "Which sentence best matches what we learned in Week 12, \"Unit Inquiry · My Place in the World\"?",
+          "choices": [
+            "We can combine maps, observations, and descriptions to explain what a place is like and how people use it.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 12,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W12-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can maps and evidence tell the story of a place?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 12,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1595,6 +3042,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "History only needs one date"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W13-X1",
+          "prompt": "Which sentence best matches what we learned in Week 13, \"Past, Present, and Future\"?",
+          "choices": [
+            "People use time words and sequences to organize events and understand change.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 13,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W13-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do we organize events in time?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 13,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W13-Q1",
+          "prompt": "The past is...",
+          "choices": [
+            "Time before now",
+            "Time happening right now",
+            "Time after now",
+            "A map direction"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W13-Q2",
+          "prompt": "The present is...",
+          "choices": [
+            "Time happening now",
+            "Only long ago",
+            "Only tomorrow",
+            "A job"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W13-Q3",
+          "prompt": "The future is...",
+          "choices": [
+            "Time after now",
+            "Time before now",
+            "A photograph",
+            "A rule"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W13-Q4",
+          "prompt": "Sequence means...",
+          "choices": [
+            "The order in which things happen",
+            "A kind of money",
+            "A map symbol",
+            "A vote"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W13-Q5",
+          "prompt": "Which source can show a clue about the past?",
+          "choices": [
+            "An old photograph",
+            "A random guess",
+            "A compass rose",
+            "A price tag"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W13-Q6",
+          "prompt": "Why do historians put events in order?",
+          "choices": [
+            "Order helps explain what happened before and after",
+            "Order makes evidence unnecessary",
+            "Events never have relationships",
+            "History only needs one date"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W13-X1",
+          "prompt": "Which sentence best matches what we learned in Week 13, \"Past, Present, and Future\"?",
+          "choices": [
+            "People use time words and sequences to organize events and understand change.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 13,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W13-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do we organize events in time?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 13,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1713,6 +3280,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Only who is tallest"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W14-X1",
+          "prompt": "Which sentence best matches what we learned in Week 14, \"Timelines Tell Stories\"?",
+          "choices": [
+            "A timeline places events in time order so we can see sequence, duration, and change.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 14,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W14-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a timeline show change over time?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 14,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W14-Q1",
+          "prompt": "A timeline shows...",
+          "choices": [
+            "Events arranged in time order",
+            "Only map locations",
+            "Only prices",
+            "Only rules"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W14-Q2",
+          "prompt": "Chronology means...",
+          "choices": [
+            "Time order",
+            "Map direction",
+            "Fairness",
+            "A job role"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W14-Q3",
+          "prompt": "What should a timeline event include?",
+          "choices": [
+            "A clear event and its place in time",
+            "Only a random picture",
+            "No order",
+            "A map legend only"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W14-Q4",
+          "prompt": "Why use dates or time labels?",
+          "choices": [
+            "They help place events in time",
+            "They show north and south",
+            "They count votes",
+            "They describe needs and wants"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W14-Q5",
+          "prompt": "If Event A happened before Event B, where should A go?",
+          "choices": [
+            "Earlier on the timeline",
+            "After B",
+            "Off the timeline",
+            "In the map legend"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W14-Q6",
+          "prompt": "A timeline can help us notice...",
+          "choices": [
+            "What changed and what stayed the same across time",
+            "Only where north is",
+            "Only how much money we have",
+            "Only who is tallest"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W14-X1",
+          "prompt": "Which sentence best matches what we learned in Week 14, \"Timelines Tell Stories\"?",
+          "choices": [
+            "A timeline places events in time order so we can see sequence, duration, and change.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 14,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W14-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a timeline show change over time?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 14,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1831,6 +3518,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Ignore context"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W15-X1",
+          "prompt": "Which sentence best matches what we learned in Week 15, \"Sources Are Clues About the Past\"?",
+          "choices": [
+            "Historians use many kinds of sources as clues; each source can tell us something, but no single source tells everything.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 15,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W15-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can objects, pictures, and stories help us learn about the past?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 15,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W15-Q1",
+          "prompt": "An artifact is...",
+          "choices": [
+            "An object people made or used that can give clues about the past",
+            "A weather forecast",
+            "A direction word",
+            "A vote"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W15-Q2",
+          "prompt": "An oral history is...",
+          "choices": [
+            "A person's spoken memories or account recorded for others",
+            "A map legend",
+            "A price list",
+            "A random rumor"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W15-Q3",
+          "prompt": "A historian should first ask of a source...",
+          "choices": [
+            "What do I actually notice or know from it?",
+            "What can I invent about it?",
+            "How can I ignore it?",
+            "Which answer do I like best?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W15-Q4",
+          "prompt": "Why use more than one source?",
+          "choices": [
+            "Different sources can add, confirm, or challenge information",
+            "One source always tells everything",
+            "Sources never disagree",
+            "Evidence is not needed"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W15-Q5",
+          "prompt": "A photograph can show...",
+          "choices": [
+            "Visual details from a moment or staged scene",
+            "Every thought a person had",
+            "Everything that happened before and after",
+            "A guaranteed complete truth"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W15-Q6",
+          "prompt": "If we are unsure what a source means, we should...",
+          "choices": [
+            "Ask questions and look for more evidence",
+            "Pretend certainty",
+            "Change the source",
+            "Ignore context"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W15-X1",
+          "prompt": "Which sentence best matches what we learned in Week 15, \"Sources Are Clues About the Past\"?",
+          "choices": [
+            "Historians use many kinds of sources as clues; each source can tell us something, but no single source tells everything.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 15,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W15-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can objects, pictures, and stories help us learn about the past?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 15,
+          "kind": "inquiry"
         }
       ]
     },
@@ -1949,6 +3756,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Rules are important."
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W16-X1",
+          "prompt": "Which sentence best matches what we learned in Week 16, \"Unit Inquiry · Then and Now\"?",
+          "choices": [
+            "We can compare sources from different times to identify change and continuity and explain our ideas with evidence.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 16,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W16-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can we explain something that changed over time?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 16,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W16-Q1",
+          "prompt": "Change means...",
+          "choices": [
+            "Something becomes different over time",
+            "Everything always stays the same",
+            "A map direction",
+            "A kind of job"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W16-Q2",
+          "prompt": "Continuity means...",
+          "choices": [
+            "Something stays similar across time",
+            "A rule was broken",
+            "Money was spent",
+            "A route changed"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W16-Q3",
+          "prompt": "To compare 'then' and 'now,' we should...",
+          "choices": [
+            "Look for both similarities and differences",
+            "Only look for differences",
+            "Only guess",
+            "Ignore the sources"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W16-Q4",
+          "prompt": "A claim about change should be supported by...",
+          "choices": [
+            "Evidence from sources",
+            "A random answer",
+            "A secret preference",
+            "No examples"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W16-Q5",
+          "prompt": "If one thing changed and another stayed similar, we can say...",
+          "choices": [
+            "There was both change and continuity",
+            "Nothing happened",
+            "Only continuity exists",
+            "Only change exists"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W16-Q6",
+          "prompt": "Which is the best evidence statement?",
+          "choices": [
+            "The older photo shows horses on the street, while the newer photo shows cars.",
+            "I just feel that everything changed.",
+            "The map points north.",
+            "Rules are important."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W16-X1",
+          "prompt": "Which sentence best matches what we learned in Week 16, \"Unit Inquiry · Then and Now\"?",
+          "choices": [
+            "We can compare sources from different times to identify change and continuity and explain our ideas with evidence.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 16,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W16-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can we explain something that changed over time?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 16,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2067,6 +3994,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Copying someone without thinking"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W17-X1",
+          "prompt": "Which sentence best matches what we learned in Week 17, \"Needs and Wants\"?",
+          "choices": [
+            "People have needs and wants and make choices about limited time, money, goods, and other resources.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 17,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W17-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people make choices when they cannot have everything at once?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 17,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W17-Q1",
+          "prompt": "A need is...",
+          "choices": [
+            "Something important for health, safety, or basic living",
+            "Anything we happen to like",
+            "A map symbol",
+            "A vote"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W17-Q2",
+          "prompt": "A want is...",
+          "choices": [
+            "Something we would like but do not always need for basic living",
+            "Always the same as a need",
+            "A law",
+            "A direction"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W17-Q3",
+          "prompt": "Why do people make economic choices?",
+          "choices": [
+            "Resources such as time and money are limited",
+            "Everyone can always have everything",
+            "Choices have no consequences",
+            "Needs never matter"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W17-Q4",
+          "prompt": "A resource can be...",
+          "choices": [
+            "Something people use to meet needs or goals",
+            "Only a toy",
+            "Only money",
+            "Only food"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W17-Q5",
+          "prompt": "If you choose one activity during a limited time, you may...",
+          "choices": [
+            "Give up the chance to do another activity at that time",
+            "Create more time automatically",
+            "Make all other choices disappear forever",
+            "Stop having needs"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W17-Q6",
+          "prompt": "Good choices often involve...",
+          "choices": [
+            "Thinking about needs, goals, limits, and consequences",
+            "Always choosing the biggest item",
+            "Ignoring limits",
+            "Copying someone without thinking"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W17-X1",
+          "prompt": "Which sentence best matches what we learned in Week 17, \"Needs and Wants\"?",
+          "choices": [
+            "People have needs and wants and make choices about limited time, money, goods, and other resources.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 17,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W17-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people make choices when they cannot have everything at once?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 17,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2185,6 +4232,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Work has nothing to do with communities"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W18-X1",
+          "prompt": "Which sentence best matches what we learned in Week 18, \"Goods, Services, and Jobs\"?",
+          "choices": [
+            "People work in many jobs to produce goods and provide services that help meet needs and wants.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 18,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W18-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people produce goods and provide services?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 18,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W18-Q1",
+          "prompt": "A good is...",
+          "choices": [
+            "A physical item people make, grow, or use",
+            "A job someone performs for another",
+            "A rule",
+            "A direction"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W18-Q2",
+          "prompt": "A service is...",
+          "choices": [
+            "Work someone does to help or meet a need",
+            "A physical object only",
+            "A timeline date",
+            "A landform"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W18-Q3",
+          "prompt": "A producer is...",
+          "choices": [
+            "A person or group that makes a good or provides a service",
+            "Only someone who buys things",
+            "A map symbol",
+            "A voter"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W18-Q4",
+          "prompt": "Which is a service?",
+          "choices": [
+            "Repairing a bicycle",
+            "A loaf of bread",
+            "A pencil",
+            "A chair"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W18-Q5",
+          "prompt": "Which is a good?",
+          "choices": [
+            "A book",
+            "Teaching a lesson",
+            "Cutting hair",
+            "Delivering mail"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W18-Q6",
+          "prompt": "Why do communities have many kinds of jobs?",
+          "choices": [
+            "Different jobs help produce goods and provide needed services",
+            "Only one job is useful",
+            "Jobs never change",
+            "Work has nothing to do with communities"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W18-X1",
+          "prompt": "Which sentence best matches what we learned in Week 18, \"Goods, Services, and Jobs\"?",
+          "choices": [
+            "People work in many jobs to produce goods and provide services that help meet needs and wants.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 18,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W18-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people produce goods and provide services?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 18,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2303,6 +4470,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Guarantee every want"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W19-X1",
+          "prompt": "Which sentence best matches what we learned in Week 19, \"Money, Saving, and Exchange\"?",
+          "choices": [
+            "Money is one tool people use to exchange for goods and services; people may spend, save, share, or plan based on goals and limits.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 19,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W19-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do people use money and make plans for spending and saving?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 19,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W19-Q1",
+          "prompt": "People often use money to...",
+          "choices": [
+            "Exchange for goods and services",
+            "Show north on a map",
+            "Put events in time order",
+            "Make classroom rules"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W19-Q2",
+          "prompt": "To save means...",
+          "choices": [
+            "Keep money or resources for later use",
+            "Spend everything immediately",
+            "Hide every resource forever",
+            "Erase a price"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W19-Q3",
+          "prompt": "To spend means...",
+          "choices": [
+            "Use money to obtain a good or service",
+            "Move north",
+            "Make a timeline",
+            "Take a vote"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W19-Q4",
+          "prompt": "Barter means...",
+          "choices": [
+            "Trading goods or services directly without using money",
+            "Saving every coin",
+            "Making a law",
+            "Drawing a map"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W19-Q5",
+          "prompt": "Why might someone save?",
+          "choices": [
+            "To prepare for a future need or goal",
+            "Because money must never be used",
+            "To avoid making any choices",
+            "To change the weather"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W19-Q6",
+          "prompt": "A plan can help people...",
+          "choices": [
+            "Think before spending or saving",
+            "Create unlimited money",
+            "Remove every limit",
+            "Guarantee every want"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W19-X1",
+          "prompt": "Which sentence best matches what we learned in Week 19, \"Money, Saving, and Exchange\"?",
+          "choices": [
+            "Money is one tool people use to exchange for goods and services; people may spend, save, share, or plan based on goals and limits.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 19,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W19-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do people use money and make plans for spending and saving?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 19,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2421,6 +4708,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "No future effects"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W20-X1",
+          "prompt": "Which sentence best matches what we learned in Week 20, \"Unit Inquiry · Community Choices\"?",
+          "choices": [
+            "Communities use resources, work, exchange, and choices to meet many needs and wants.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 20,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W20-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do goods, services, jobs, and choices connect in a community?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 20,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W20-Q1",
+          "prompt": "A consumer is...",
+          "choices": [
+            "A person or group that uses or buys goods and services",
+            "Only a person who makes goods",
+            "A mapmaker",
+            "A timeline"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W20-Q2",
+          "prompt": "An economy includes...",
+          "choices": [
+            "How people produce, exchange, and use goods and services",
+            "Only classroom rules",
+            "Only maps",
+            "Only family stories"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W20-Q3",
+          "prompt": "A producer and consumer are connected because...",
+          "choices": [
+            "One provides goods/services and another uses or buys them",
+            "They must be the same person every time",
+            "They have nothing to do with exchange",
+            "Neither makes choices"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W20-Q4",
+          "prompt": "A tradeoff is...",
+          "choices": [
+            "What we give up when choosing one option over another",
+            "A free way to have every option",
+            "A map symbol",
+            "A family tradition"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W20-Q5",
+          "prompt": "Which is an economic question?",
+          "choices": [
+            "How should we use our limited classroom supply budget?",
+            "Which way is north?",
+            "What happened first on the timeline?",
+            "Who is the mayor?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W20-Q6",
+          "prompt": "Good community economic choices consider...",
+          "choices": [
+            "Needs, resources, consequences, and fairness",
+            "Only one person's wants",
+            "No limits",
+            "No future effects"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W20-X1",
+          "prompt": "Which sentence best matches what we learned in Week 20, \"Unit Inquiry · Community Choices\"?",
+          "choices": [
+            "Communities use resources, work, exchange, and choices to meet many needs and wants.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 20,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W20-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do goods, services, jobs, and choices connect in a community?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 20,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2539,6 +4946,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Rank cultures from best to worst"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W21-X1",
+          "prompt": "Which sentence best matches what we learned in Week 21, \"Culture Is Learned and Shared\"?",
+          "choices": [
+            "Culture includes learned and shared ways of living, communicating, creating, remembering, and belonging; people within a culture are not all identical.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 21,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W21-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What is culture, and how can we learn about it respectfully?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 21,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W21-Q1",
+          "prompt": "Culture can include...",
+          "choices": [
+            "Language, arts, customs, food, stories, and ways of life",
+            "Only one food",
+            "Only national flags",
+            "Only clothing"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W21-Q2",
+          "prompt": "A respectful cultural statement sounds like...",
+          "choices": [
+            "Some people in this community may practice this tradition.",
+            "Everyone in this group is exactly the same.",
+            "I know everything about a person from one symbol.",
+            "Differences should be mocked."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W21-Q3",
+          "prompt": "Why should we avoid stereotypes?",
+          "choices": [
+            "People within any group can have different experiences and choices",
+            "Stereotypes are always accurate",
+            "One example proves everyone is the same",
+            "Evidence is not needed"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W21-Q4",
+          "prompt": "A custom is...",
+          "choices": [
+            "A practice people in a group may repeat or value",
+            "A compass direction",
+            "A law of nature",
+            "A price"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W21-Q5",
+          "prompt": "Language is part of culture because...",
+          "choices": [
+            "People use language to communicate meaning and identity",
+            "Only one language exists",
+            "Language never changes",
+            "Language has no connection to people"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W21-Q6",
+          "prompt": "When learning about another culture, we should...",
+          "choices": [
+            "Use trustworthy sources and respectful questions",
+            "Invent details",
+            "Assume one person represents everyone",
+            "Rank cultures from best to worst"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W21-X1",
+          "prompt": "Which sentence best matches what we learned in Week 21, \"Culture Is Learned and Shared\"?",
+          "choices": [
+            "Culture includes learned and shared ways of living, communicating, creating, remembering, and belonging; people within a culture are not all identical.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 21,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W21-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What is culture, and how can we learn about it respectfully?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 21,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2657,6 +5184,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Traditions have no history"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W22-X1",
+          "prompt": "Which sentence best matches what we learned in Week 22, \"Traditions and Celebrations Around the World\"?",
+          "choices": [
+            "Traditions and celebrations can help people remember, express values, strengthen belonging, and pass stories across generations.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 22,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W22-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do people create traditions and celebrations?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 22,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W22-Q1",
+          "prompt": "People may celebrate traditions to...",
+          "choices": [
+            "Remember, express values, and strengthen belonging",
+            "Make every family identical",
+            "Erase history",
+            "Avoid all community connections"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W22-Q2",
+          "prompt": "Heritage refers to...",
+          "choices": [
+            "Things such as stories, traditions, places, and knowledge passed through communities",
+            "Only money",
+            "Only maps",
+            "Only school rules"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W22-Q3",
+          "prompt": "When studying a celebration, a learner may...",
+          "choices": [
+            "Observe and learn without being required to practice it",
+            "Be forced to adopt the belief behind it",
+            "Mock unfamiliar practices",
+            "Invent meanings"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W22-Q4",
+          "prompt": "Two celebrations can be compared by...",
+          "choices": [
+            "Purpose, symbols, stories, foods, arts, and timing",
+            "Saying one is automatically better",
+            "Ignoring sources",
+            "Assuming everyone participates"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W22-Q5",
+          "prompt": "A trustworthy source about a tradition could be...",
+          "choices": [
+            "A museum, community organization, primary account, or well-sourced book",
+            "A random rumor",
+            "A made-up caption",
+            "An unlabeled image with invented meaning"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W22-Q6",
+          "prompt": "What should we remember about traditions?",
+          "choices": [
+            "People within the same community may practice them differently",
+            "Everyone practices every tradition in exactly one way",
+            "Traditions never change",
+            "Traditions have no history"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W22-X1",
+          "prompt": "Which sentence best matches what we learned in Week 22, \"Traditions and Celebrations Around the World\"?",
+          "choices": [
+            "Traditions and celebrations can help people remember, express values, strengthen belonging, and pass stories across generations.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 22,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W22-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do people create traditions and celebrations?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 22,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2775,6 +5422,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "To avoid questions"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W23-X1",
+          "prompt": "Which sentence best matches what we learned in Week 23, \"Stories, Art, and Music as Historical Clues\"?",
+          "choices": [
+            "Stories, art, and music can be valuable sources about ideas and experiences, but we should ask who created them, when, why, and what they can and cannot tell us.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 23,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W23-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can stories and creative works help us learn about people and times?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 23,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W23-Q1",
+          "prompt": "Before using art as historical evidence, we should ask...",
+          "choices": [
+            "Who made it, when, why, and what it shows",
+            "Which color we like best only",
+            "How to invent missing facts",
+            "Whether all art is literal"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W23-Q2",
+          "prompt": "Context means...",
+          "choices": [
+            "The surrounding time, place, conditions, and purpose",
+            "A compass direction",
+            "A price",
+            "A classroom rule"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W23-Q3",
+          "prompt": "A song or artwork can tell us...",
+          "choices": [
+            "Something about ideas, experiences, values, or expression",
+            "Everything that happened in history",
+            "Exactly what every person thought",
+            "No information at all"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W23-Q4",
+          "prompt": "An inference is...",
+          "choices": [
+            "An idea we form from clues and reasoning",
+            "Something directly printed on the source",
+            "A guaranteed fact without evidence",
+            "A map legend"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W23-Q5",
+          "prompt": "A source label should help identify...",
+          "choices": [
+            "Creator, time/place when known, and what the item is",
+            "Only the learner's favorite part",
+            "Nothing about the source",
+            "A random number"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W23-Q6",
+          "prompt": "Why compare creative sources with other evidence?",
+          "choices": [
+            "To build a fuller and more careful understanding",
+            "Because art is never useful",
+            "To prove every source agrees",
+            "To avoid questions"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W23-X1",
+          "prompt": "Which sentence best matches what we learned in Week 23, \"Stories, Art, and Music as Historical Clues\"?",
+          "choices": [
+            "Stories, art, and music can be valuable sources about ideas and experiences, but we should ask who created them, when, why, and what they can and cannot tell us.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 23,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W23-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can stories and creative works help us learn about people and times?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 23,
+          "kind": "inquiry"
         }
       ]
     },
@@ -2893,6 +5660,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Refusing to listen"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W24-X1",
+          "prompt": "Which sentence best matches what we learned in Week 24, \"Unit Inquiry · Many Ways of Living\"?",
+          "choices": [
+            "Good comparison uses evidence, notices both similarities and differences, and leaves room for variation within every community.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 24,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W24-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can we compare cultures without turning people into stereotypes?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 24,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W24-Q1",
+          "prompt": "A good cultural comparison should...",
+          "choices": [
+            "Use evidence and avoid saying everyone in a group is identical",
+            "Rank cultures from best to worst",
+            "Use only stereotypes",
+            "Ignore similarities"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W24-Q2",
+          "prompt": "Perspective means...",
+          "choices": [
+            "A point of view shaped by a person's position or experience",
+            "A map direction",
+            "A price",
+            "A type of vote"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W24-Q3",
+          "prompt": "Which phrase is most careful?",
+          "choices": [
+            "This source shows one family's experience.",
+            "Everyone in that culture does this.",
+            "One picture proves everything.",
+            "Differences do not matter."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W24-Q4",
+          "prompt": "A Venn diagram can help us...",
+          "choices": [
+            "Organize similarities and differences",
+            "Show only chronology",
+            "Count money",
+            "Make laws"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W24-Q5",
+          "prompt": "If two sources show different experiences within one community, we should...",
+          "choices": [
+            "Recognize that communities contain variation",
+            "Choose one and call the other false automatically",
+            "Assume one person represents everyone",
+            "Ignore both"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W24-Q6",
+          "prompt": "Respectful inquiry includes...",
+          "choices": [
+            "Curiosity, accurate sources, careful language, and willingness to revise",
+            "Mocking differences",
+            "Inventing facts",
+            "Refusing to listen"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W24-X1",
+          "prompt": "Which sentence best matches what we learned in Week 24, \"Unit Inquiry · Many Ways of Living\"?",
+          "choices": [
+            "Good comparison uses evidence, notices both similarities and differences, and leaves room for variation within every community.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 24,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W24-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can we compare cultures without turning people into stereotypes?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 24,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3011,6 +5898,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Exclude most learners"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W25-X1",
+          "prompt": "Which sentence best matches what we learned in Week 25, \"Community and National Symbols\"?",
+          "choices": [
+            "Symbols and landmarks can represent shared ideas, histories, institutions, or identities, and their meanings are learned through context.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 25,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W25-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do groups use symbols?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 25,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W25-Q1",
+          "prompt": "A symbol is...",
+          "choices": [
+            "Something used to represent an idea, group, place, or meaning",
+            "Always the thing itself",
+            "Only a letter",
+            "Only a flag"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W25-Q2",
+          "prompt": "A landmark is...",
+          "choices": [
+            "A recognizable place or feature that may have historical or community importance",
+            "A kind of money",
+            "A classroom job",
+            "A vote count"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W25-Q3",
+          "prompt": "To understand a civic symbol, we should...",
+          "choices": [
+            "Learn its history and what it is intended to represent",
+            "Guess based only on color",
+            "Assume everyone interprets it identically",
+            "Ignore context"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W25-Q4",
+          "prompt": "Which is an example of representation?",
+          "choices": [
+            "A school logo stands for the school community",
+            "A river is a price",
+            "A timeline is a vote",
+            "A job is a compass"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W25-Q5",
+          "prompt": "Can a symbol's meaning change or be discussed over time?",
+          "choices": [
+            "Yes, meanings can be interpreted and understood through history and context",
+            "No, symbols never have history",
+            "Only adults can ask about symbols",
+            "Evidence cannot help"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W25-Q6",
+          "prompt": "A class symbol should...",
+          "choices": [
+            "Have an explained connection to ideas the class values",
+            "Be copied without meaning",
+            "Have no explanation",
+            "Exclude most learners"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W25-X1",
+          "prompt": "Which sentence best matches what we learned in Week 25, \"Community and National Symbols\"?",
+          "choices": [
+            "Symbols and landmarks can represent shared ideas, histories, institutions, or identities, and their meanings are learned through context.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 25,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W25-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"Why do groups use symbols?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 25,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3129,6 +6136,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "An unlabeled guess"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W26-X1",
+          "prompt": "Which sentence best matches what we learned in Week 26, \"Local Government and Community Services\"?",
+          "choices": [
+            "Local governments and public institutions organize some shared services, rules, spaces, and decisions for communities.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 26,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W26-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What kinds of problems do local governments and community institutions help address?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 26,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W26-Q1",
+          "prompt": "Local government serves...",
+          "choices": [
+            "A town, city, county, or other local area",
+            "Only another country",
+            "Only one family",
+            "No community"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W26-Q2",
+          "prompt": "Which can be a public service?",
+          "choices": [
+            "Maintaining a public park",
+            "A private toy in one child's room",
+            "A family recipe",
+            "A personal diary"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W26-Q3",
+          "prompt": "A public institution is created to...",
+          "choices": [
+            "Carry out shared purposes or services under established rules",
+            "Serve only one person's private preference",
+            "Ignore laws and procedures",
+            "Hide every decision"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W26-Q4",
+          "prompt": "Who might help with a broken city street?",
+          "choices": [
+            "The appropriate local public works or transportation service",
+            "A random child online",
+            "A museum in another country",
+            "No one can address it"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W26-Q5",
+          "prompt": "Why do communities organize shared services?",
+          "choices": [
+            "Some needs are easier or fairer to address together",
+            "Every person should build their own road",
+            "Libraries cannot be shared",
+            "Public spaces have no users"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W26-Q6",
+          "prompt": "A civic source can be...",
+          "choices": [
+            "An official service map or public notice",
+            "A rumor with no source",
+            "A made-up law",
+            "An unlabeled guess"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W26-X1",
+          "prompt": "Which sentence best matches what we learned in Week 26, \"Local Government and Community Services\"?",
+          "choices": [
+            "Local governments and public institutions organize some shared services, rules, spaces, and decisions for communities.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 26,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W26-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What kinds of problems do local governments and community institutions help address?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 26,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3247,6 +6374,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Evidence does not matter"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W27-X1",
+          "prompt": "Which sentence best matches what we learned in Week 27, \"Leaders, Representatives, and Public Decisions\"?",
+          "choices": [
+            "Public leaders and representatives hold roles defined by rules and responsibilities; responsible decisions should be explainable and open to appropriate review.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 27,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W27-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can public leaders make responsible decisions?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 27,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W27-Q1",
+          "prompt": "A representative is...",
+          "choices": [
+            "A person chosen or authorized to speak or act for others in a defined role",
+            "Anyone who claims unlimited power",
+            "A map symbol",
+            "A price"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W27-Q2",
+          "prompt": "Accountability means...",
+          "choices": [
+            "Being responsible for actions and able to explain them",
+            "Never explaining decisions",
+            "Having no rules",
+            "Always being right"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W27-Q3",
+          "prompt": "Public decisions should consider...",
+          "choices": [
+            "Evidence, rules, needs, consequences, and people affected",
+            "Only one favorite person",
+            "No reasons",
+            "Only who speaks loudest"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W27-Q4",
+          "prompt": "Some public leaders are...",
+          "choices": [
+            "Elected, appointed, or hired depending on the role",
+            "All chosen the same way",
+            "Never guided by rules",
+            "Always permanent"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W27-Q5",
+          "prompt": "A mock council should...",
+          "choices": [
+            "Let participants hear options and explain reasons",
+            "Silence every disagreement",
+            "Hide the decision process",
+            "Ignore the problem"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W27-Q6",
+          "prompt": "Why should leaders explain decisions?",
+          "choices": [
+            "Explanations support understanding and accountability",
+            "Reasons are never useful",
+            "Public decisions are private secrets",
+            "Evidence does not matter"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W27-X1",
+          "prompt": "Which sentence best matches what we learned in Week 27, \"Leaders, Representatives, and Public Decisions\"?",
+          "choices": [
+            "Public leaders and representatives hold roles defined by rules and responsibilities; responsible decisions should be explainable and open to appropriate review.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 27,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W27-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can public leaders make responsible decisions?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 27,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3365,6 +6612,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Pretend every solution works perfectly"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W28-X1",
+          "prompt": "Which sentence best matches what we learned in Week 28, \"Unit Inquiry · A Community Problem-Solving Lab\"?",
+          "choices": [
+            "Civic problem solving involves defining a problem, gathering evidence, considering options and consequences, choosing an action, and reviewing the result.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 28,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W28-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can people use evidence and civic processes to solve a shared problem?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 28,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W28-Q1",
+          "prompt": "The first step in solving a shared problem is often...",
+          "choices": [
+            "Clearly define what the problem is",
+            "Choose a solution before learning anything",
+            "Blame someone immediately",
+            "Ignore the problem"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W28-Q2",
+          "prompt": "An option is...",
+          "choices": [
+            "A possible choice or solution",
+            "A guarantee",
+            "A map direction",
+            "A date"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W28-Q3",
+          "prompt": "A consequence is...",
+          "choices": [
+            "Something that may happen because of a choice or action",
+            "A legend on a map",
+            "A job title",
+            "A family tradition"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W28-Q4",
+          "prompt": "Why gather evidence before choosing?",
+          "choices": [
+            "Evidence helps us understand the problem and compare options",
+            "Evidence makes choices harder on purpose",
+            "Only guesses matter",
+            "The first idea is always best"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W28-Q5",
+          "prompt": "A strong recommendation includes...",
+          "choices": [
+            "A clear choice, evidence, and a reason",
+            "Only 'I like it'",
+            "No connection to the problem",
+            "A random number"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W28-Q6",
+          "prompt": "After acting on a solution, people should...",
+          "choices": [
+            "Check what happened and revise if needed",
+            "Never review the result",
+            "Hide new evidence",
+            "Pretend every solution works perfectly"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W28-X1",
+          "prompt": "Which sentence best matches what we learned in Week 28, \"Unit Inquiry · A Community Problem-Solving Lab\"?",
+          "choices": [
+            "Civic problem solving involves defining a problem, gathering evidence, considering options and consequences, choosing an action, and reviewing the result.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 28,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W28-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can people use evidence and civic processes to solve a shared problem?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 28,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3483,6 +6850,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Stop asking questions forever"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W29-X1",
+          "prompt": "Which sentence best matches what we learned in Week 29, \"Asking Good Social Studies Questions\"?",
+          "choices": [
+            "Good inquiry questions are clear, meaningful, and answerable with appropriate sources and evidence.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 29,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W29-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What makes a question useful for inquiry?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 29,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W29-Q1",
+          "prompt": "Inquiry means...",
+          "choices": [
+            "Investigating a question using sources and evidence",
+            "Guessing and stopping",
+            "Memorizing without understanding",
+            "Avoiding questions"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W29-Q2",
+          "prompt": "A useful inquiry question should be...",
+          "choices": [
+            "Clear enough to investigate with evidence",
+            "Impossible to understand",
+            "Answered only by 'because I said so'",
+            "Unrelated to sources"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W29-Q3",
+          "prompt": "Which question is good for social studies inquiry?",
+          "choices": [
+            "How has our neighborhood park changed over time?",
+            "What number am I thinking of with no clues?",
+            "Can we ignore all evidence?",
+            "Why is my favorite color best?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W29-Q4",
+          "prompt": "After asking a question, researchers should...",
+          "choices": [
+            "Plan what sources or observations could help answer it",
+            "Immediately claim certainty",
+            "Hide the question",
+            "Choose an answer first and ignore contrary evidence"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W29-Q5",
+          "prompt": "A source should be selected because...",
+          "choices": [
+            "It may provide relevant information for the question",
+            "It has the prettiest color",
+            "It is the first thing found",
+            "It agrees with us"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W29-Q6",
+          "prompt": "If a question is too big, we can...",
+          "choices": [
+            "Narrow it into a smaller question",
+            "Pretend we answered it",
+            "Remove all evidence",
+            "Stop asking questions forever"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W29-X1",
+          "prompt": "Which sentence best matches what we learned in Week 29, \"Asking Good Social Studies Questions\"?",
+          "choices": [
+            "Good inquiry questions are clear, meaningful, and answerable with appropriate sources and evidence.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 29,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W29-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What makes a question useful for inquiry?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 29,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3601,6 +7088,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Impossible to complete"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W30-X1",
+          "prompt": "Which sentence best matches what we learned in Week 30, \"People, Places, and Environmental Choices\"?",
+          "choices": [
+            "People depend on environments and resources, change places through their choices, and can practice stewardship by caring for shared spaces.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 30,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W30-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people affect places, and how do places affect people?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 30,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W30-Q1",
+          "prompt": "The environment includes...",
+          "choices": [
+            "The surroundings and natural/human conditions of a place",
+            "Only weather",
+            "Only buildings",
+            "Only animals"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W30-Q2",
+          "prompt": "Stewardship means...",
+          "choices": [
+            "Responsible care for something entrusted or shared",
+            "Using every resource as fast as possible",
+            "Ignoring shared spaces",
+            "Owning everything"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W30-Q3",
+          "prompt": "An impact is...",
+          "choices": [
+            "An effect or result of an action",
+            "A map legend",
+            "A vote",
+            "A timeline"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W30-Q4",
+          "prompt": "People affect places by...",
+          "choices": [
+            "Building, using resources, creating waste, protecting spaces, and making choices",
+            "Never changing anything",
+            "Only drawing maps",
+            "Only telling stories"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W30-Q5",
+          "prompt": "Places affect people by...",
+          "choices": [
+            "Shaping available resources, movement, risks, work, and daily choices",
+            "Having no influence at all",
+            "Changing every rule automatically",
+            "Choosing leaders"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W30-Q6",
+          "prompt": "A good stewardship action should be...",
+          "choices": [
+            "Specific, safe, and connected to a real need",
+            "Only for show",
+            "Harmful to others",
+            "Impossible to complete"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W30-X1",
+          "prompt": "Which sentence best matches what we learned in Week 30, \"People, Places, and Environmental Choices\"?",
+          "choices": [
+            "People depend on environments and resources, change places through their choices, and can practice stewardship by caring for shared spaces.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 30,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W30-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do people affect places, and how do places affect people?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 30,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3719,6 +7326,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Only rules"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W31-X1",
+          "prompt": "Which sentence best matches what we learned in Week 31, \"Helping, Service, and Informed Action\"?",
+          "choices": [
+            "Informed action uses what we learn from evidence to make a safe, respectful contribution and then reflect on what happened.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 31,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W31-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What does it mean to take informed action?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 31,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W31-Q1",
+          "prompt": "Informed action means...",
+          "choices": [
+            "Using what we learned from evidence to decide how to act",
+            "Acting before learning anything",
+            "Doing whatever feels exciting",
+            "Ignoring consequences"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W31-Q2",
+          "prompt": "Service is strongest when it...",
+          "choices": [
+            "Responds to a real need respectfully",
+            "Assumes people need help without asking or learning",
+            "Creates harm",
+            "Is only about praise"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W31-Q3",
+          "prompt": "Before a service action, learners should...",
+          "choices": [
+            "Understand the need and plan safely",
+            "Skip all planning",
+            "Hide the goal",
+            "Choose the most dramatic action"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W31-Q4",
+          "prompt": "After an action, reflection asks...",
+          "choices": [
+            "What happened, what we learned, and what comes next",
+            "How to pretend everything worked",
+            "How to hide mistakes",
+            "Why evidence is unnecessary"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W31-Q5",
+          "prompt": "Which is a safe Kindergarten service example?",
+          "choices": [
+            "Helping care for a shared classroom or school space with adult guidance",
+            "Leaving school alone to solve a city problem",
+            "Handling dangerous materials",
+            "Contacting strangers without an adult"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W31-Q6",
+          "prompt": "Informed action connects...",
+          "choices": [
+            "Learning, evidence, decision, action, and reflection",
+            "Only action with no learning",
+            "Only memorization",
+            "Only rules"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W31-X1",
+          "prompt": "Which sentence best matches what we learned in Week 31, \"Helping, Service, and Informed Action\"?",
+          "choices": [
+            "Informed action uses what we learn from evidence to make a safe, respectful contribution and then reflect on what happened.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 31,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W31-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What does it mean to take informed action?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 31,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3837,6 +7564,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Avoid future questions"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W32-X1",
+          "prompt": "Which sentence best matches what we learned in Week 32, \"Unit Inquiry · Our Evidence-to-Action Project\"?",
+          "choices": [
+            "Even young learners can ask a question, gather safe evidence, communicate a conclusion, and take a small informed action with adult support.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 32,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W32-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a young scholar use social studies to improve a shared space?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 32,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W32-Q1",
+          "prompt": "A claim is...",
+          "choices": [
+            "A statement we can support with evidence",
+            "A random guess presented as fact",
+            "A map symbol",
+            "A job"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W32-Q2",
+          "prompt": "Evidence-to-action means...",
+          "choices": [
+            "Use evidence to choose and explain an action",
+            "Act first and invent reasons later",
+            "Ignore what we observed",
+            "Choose an unrelated action"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W32-Q3",
+          "prompt": "Which evidence could help study use of a shared reading corner?",
+          "choices": [
+            "A simple count of how many learners use it at different times",
+            "A weather map from another state",
+            "A random coin flip",
+            "A story unrelated to the space"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W32-Q4",
+          "prompt": "A project conclusion should...",
+          "choices": [
+            "Explain what the evidence suggests and any limits",
+            "Claim more than the evidence shows",
+            "Hide uncertainty",
+            "Ignore results"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W32-Q5",
+          "prompt": "Young learners should take civic action...",
+          "choices": [
+            "With safe, age-appropriate adult guidance",
+            "Alone in unsafe situations",
+            "By contacting strangers independently",
+            "Without permission in restricted places"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W32-Q6",
+          "prompt": "Reflection helps us...",
+          "choices": [
+            "Learn from the result and decide next steps",
+            "Erase mistakes",
+            "Guarantee success",
+            "Avoid future questions"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W32-X1",
+          "prompt": "Which sentence best matches what we learned in Week 32, \"Unit Inquiry · Our Evidence-to-Action Project\"?",
+          "choices": [
+            "Even young learners can ask a question, gather safe evidence, communicate a conclusion, and take a small informed action with adult support.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 32,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W32-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How can a young scholar use social studies to improve a shared space?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 32,
+          "kind": "inquiry"
         }
       ]
     },
@@ -3955,6 +7802,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "A ruler alone"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W33-X1",
+          "prompt": "Which sentence best matches what we learned in Week 33, \"Review · Community, Civics, Geography, History\"?",
+          "choices": [
+            "Social studies connects people, communities, decisions, places, and change over time.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 33,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W33-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How are community, rules, place, and time connected?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 33,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W33-Q1",
+          "prompt": "Civics helps us study...",
+          "choices": [
+            "Rules, government, participation, rights, responsibilities, and public life",
+            "Only plants",
+            "Only arithmetic",
+            "Only weather"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W33-Q2",
+          "prompt": "Geography helps us study...",
+          "choices": [
+            "Places, environments, maps, and spatial relationships",
+            "Only grammar",
+            "Only money",
+            "Only music"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W33-Q3",
+          "prompt": "History helps us study...",
+          "choices": [
+            "People and events in the past using evidence",
+            "Only future plans",
+            "Only prices",
+            "Only directions"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W33-Q4",
+          "prompt": "Social studies connects...",
+          "choices": [
+            "People, places, time, choices, culture, and civic life",
+            "Only one school subject",
+            "Only maps",
+            "Only holidays"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W33-Q5",
+          "prompt": "Which tool is especially useful for geography?",
+          "choices": [
+            "A map",
+            "A multiplication table",
+            "A thermometer only",
+            "A spelling list"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W33-Q6",
+          "prompt": "Which tool is especially useful for history?",
+          "choices": [
+            "A timeline and historical sources",
+            "A compass alone",
+            "A price tag",
+            "A ruler alone"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W33-X1",
+          "prompt": "Which sentence best matches what we learned in Week 33, \"Review · Community, Civics, Geography, History\"?",
+          "choices": [
+            "Social studies connects people, communities, decisions, places, and change over time.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 33,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W33-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How are community, rules, place, and time connected?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 33,
+          "kind": "inquiry"
         }
       ]
     },
@@ -4073,6 +8040,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Only votes"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W34-X1",
+          "prompt": "Which sentence best matches what we learned in Week 34, \"Review · Economics and Culture\"?",
+          "choices": [
+            "People make choices about resources and participate in cultures and traditions that shape daily life in varied ways.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 34,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W34-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do choices and culture shape daily life?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 34,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W34-Q1",
+          "prompt": "Economics studies...",
+          "choices": [
+            "Choices about resources, goods, services, work, and exchange",
+            "Only maps",
+            "Only timelines",
+            "Only laws"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W34-Q2",
+          "prompt": "Culture includes...",
+          "choices": [
+            "Shared and learned ways of life, expression, language, and tradition",
+            "Only money",
+            "Only weather",
+            "Only rules"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W34-Q3",
+          "prompt": "A need and a want are...",
+          "choices": [
+            "Different ideas that help explain choices",
+            "Always exactly the same",
+            "Map directions",
+            "Government offices"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W34-Q4",
+          "prompt": "When reviewing culture, a strong comparison should...",
+          "choices": [
+            "Use evidence and avoid stereotypes",
+            "Assume everyone is identical",
+            "Rank groups",
+            "Ignore differences"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W34-Q5",
+          "prompt": "Saving is connected to...",
+          "choices": [
+            "Planning for later needs or goals",
+            "Finding north",
+            "Making a timeline",
+            "Choosing a mayor"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W34-Q6",
+          "prompt": "Goods and services are connected to...",
+          "choices": [
+            "Production, work, exchange, and meeting needs/wants",
+            "Only family history",
+            "Only compass directions",
+            "Only votes"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W34-X1",
+          "prompt": "Which sentence best matches what we learned in Week 34, \"Review · Economics and Culture\"?",
+          "choices": [
+            "People make choices about resources and participate in cultures and traditions that shape daily life in varied ways.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 34,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W34-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How do choices and culture shape daily life?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 34,
+          "kind": "inquiry"
         }
       ]
     },
@@ -4191,6 +8278,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "A random activity"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W35-X1",
+          "prompt": "Which sentence best matches what we learned in Week 35, \"Kindergarten Social Studies Capstone\"?",
+          "choices": [
+            "A capstone lets learners combine knowledge and evidence into a product they can explain to another person.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 35,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W35-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What can I teach someone else about how communities work?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 35,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W35-Q1",
+          "prompt": "A capstone is...",
+          "choices": [
+            "A final project that combines important learning and evidence",
+            "Only a spelling test",
+            "A map direction",
+            "A classroom job"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W35-Q2",
+          "prompt": "A strong capstone should include...",
+          "choices": [
+            "Accurate ideas, evidence/examples, and an explanation",
+            "Only decorations",
+            "No connection to learning",
+            "Made-up facts"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W35-Q3",
+          "prompt": "Why practice explaining the project?",
+          "choices": [
+            "Speaking helps show what the learner understands",
+            "Only adults can explain learning",
+            "The product should never be discussed",
+            "Evidence cannot be spoken about"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W35-Q4",
+          "prompt": "A source note tells...",
+          "choices": [
+            "Where an important clue, picture, story, or fact came from",
+            "Only the learner's favorite color",
+            "A random number",
+            "Nothing about evidence"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W35-Q5",
+          "prompt": "If a learner changes an idea after feedback, that shows...",
+          "choices": [
+            "Revision and learning",
+            "Failure",
+            "That evidence is unimportant",
+            "That the first idea must be hidden"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W35-Q6",
+          "prompt": "The capstone should represent...",
+          "choices": [
+            "The learner's own understanding with appropriate support",
+            "An adult doing the entire project",
+            "Copied work with no understanding",
+            "A random activity"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W35-X1",
+          "prompt": "Which sentence best matches what we learned in Week 35, \"Kindergarten Social Studies Capstone\"?",
+          "choices": [
+            "A capstone lets learners combine knowledge and evidence into a product they can explain to another person.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 35,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W35-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"What can I teach someone else about how communities work?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 35,
+          "kind": "inquiry"
         }
       ]
     },
@@ -4309,6 +8516,126 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
             "Require a secret answer"
           ],
           "answer": 0
+        },
+        {
+          "id": "KSS-W36-X1",
+          "prompt": "Which sentence best matches what we learned in Week 36, \"Final Mastery, Celebration, and Grade 1 Bridge\"?",
+          "choices": [
+            "Learners can review evidence of growth, demonstrate core Kindergarten Social Studies understanding, and identify questions they are ready to explore next.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 36,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W36-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How am I ready to keep studying people, places, choices, and the past?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 36,
+          "kind": "inquiry"
+        }
+      ],
+      "currentQuestions": [
+        {
+          "id": "KSS-W36-Q1",
+          "prompt": "Mastery means...",
+          "choices": [
+            "Showing strong understanding through appropriate evidence",
+            "Never making a mistake",
+            "Finishing fastest",
+            "Memorizing one answer forever"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W36-Q2",
+          "prompt": "A portfolio is...",
+          "choices": [
+            "A collection of work showing learning over time",
+            "Only one quiz score",
+            "A map legend",
+            "A job list"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W36-Q3",
+          "prompt": "If a learner scores below 80% on a mastery check, the next step is...",
+          "choices": [
+            "Review, correct misunderstandings, and try a fresh form",
+            "Pretend the score was higher",
+            "Stop learning the subject",
+            "Skip every future topic"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W36-Q4",
+          "prompt": "Which strands belong in Kindergarten Social Studies?",
+          "choices": [
+            "Civics, geography, history, economics, culture, and inquiry",
+            "Only multiplication",
+            "Only chemistry",
+            "Only spelling"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W36-Q5",
+          "prompt": "Growth can be shown by...",
+          "choices": [
+            "Comparing earlier and later work and explaining improvement",
+            "Hiding earlier work",
+            "Only counting pages",
+            "Never revising"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W36-Q6",
+          "prompt": "A Grade 1 bridge question should...",
+          "choices": [
+            "Show curiosity about people, places, choices, communities, or the past",
+            "Have no connection to learning",
+            "Be impossible to understand",
+            "Require a secret answer"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "KSS-W36-X1",
+          "prompt": "Which sentence best matches what we learned in Week 36, \"Final Mastery, Celebration, and Grade 1 Bridge\"?",
+          "choices": [
+            "Learners can review evidence of growth, demonstrate core Kindergarten Social Studies understanding, and identify questions they are ready to explore next.",
+            "Everyone has exactly the same experience.",
+            "We do not need evidence or examples.",
+            "Only memorizing one word matters."
+          ],
+          "answer": 0,
+          "sourceWeek": 36,
+          "kind": "synthesis"
+        },
+        {
+          "id": "KSS-W36-X2",
+          "prompt": "What is a good Social Studies way to explore this question: \"How am I ready to keep studying people, places, choices, and the past?\"",
+          "choices": [
+            "Look carefully, ask questions, use examples or sources, and explain what we notice.",
+            "Guess once and never check.",
+            "Ignore maps, pictures, people, and evidence.",
+            "Choose an answer because it sounds exciting."
+          ],
+          "answer": 0,
+          "sourceWeek": 36,
+          "kind": "inquiry"
         }
       ]
     }

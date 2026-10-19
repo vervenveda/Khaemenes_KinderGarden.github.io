@@ -47,3 +47,10 @@ See `STATE_LOCALIZATION_GUIDE.md`.
 
 ### Localization source of truth
 `STATE_LOCALIZATION_GUIDE.md` is the one canonical Kindergarten state/local overlay guide. The national core and 80% mastery progression remain invariant.
+
+
+## Cumulative mastery hardening
+- Week 19 remains locked until Week 18 is mastered and the **teacher-assisted/read-aloud midyear cumulative check** reaches 80%.
+- The final cumulative check unlocks after Week 36 mastery and also requires 80%.
+- Weekly banks now contain 8 current questions; each attempt draws 5 and prioritizes questions not seen on the immediately prior attempt.
+- Existing local subject records migrate automatically into the Academy learner-scoped key when a registered Kindergarten learner is active.
