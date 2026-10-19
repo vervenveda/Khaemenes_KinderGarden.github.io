@@ -34,7 +34,7 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
       32,
       35
     ],
-    "localizationPolicy": "Keep the national disciplinary core and 80% mastery gates invariant. Localize appropriate examples, maps, source sets, state/local history, government, civic institutions, public figures, Indigenous nations, geography, economy, and community evidence to the learner's state/local context."
+    "localizationPolicy": "Keep the national Kindergarten Social Studies core and 80% mastery progression invariant. Localize age-appropriate community examples, maps, public services, symbols, historical clues, environmental choices, and civic evidence to the learner's state/local context."
   },
   "frameworks": [
     {
