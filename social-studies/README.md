@@ -6,7 +6,7 @@ Canonical route: `social-studies/index.html`
 This is the Kindergarten Social Studies course for Khaemenes Academy Kinder Garden.
 
 ### Course record
-- **state-localizable by design and requirement**; see `LOCALIZATION_GUIDE.md`
+- **state-localizable by design and requirement**; see `STATE_LOCALIZATION_GUIDE.md`
 - local/state examples enrich the course without changing the **80% mastery** progression rule
 - 36 weeks
 - 180 Monday–Friday lesson blocks
@@ -43,3 +43,7 @@ The course is informed by the NCSS C3 Inquiry Arc and recurring Kindergarten str
 Kindergarten follows the Academy-wide **national-core / state-local-overlay** rule. State and local maps, public services, symbols, historical sources, Indigenous histories, environments, and community examples should be integrated where appropriate without removing national competencies or changing the 80% mastery threshold.
 
 See `STATE_LOCALIZATION_GUIDE.md`.
+
+
+### Localization source of truth
+`STATE_LOCALIZATION_GUIDE.md` is the one canonical Kindergarten state/local overlay guide. The national core and 80% mastery progression remain invariant.

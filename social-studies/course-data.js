@@ -14,7 +14,7 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency.",
     "stateLocalizable": true,
     "localizationMode": "national-core-state-local-overlay",
-    "localizationGuide": "LOCALIZATION_GUIDE.md",
+    "localizationGuide": "STATE_LOCALIZATION_GUIDE.md",
     "localizationRequired": true,
     "localizationCheckpoints": [
       3,
