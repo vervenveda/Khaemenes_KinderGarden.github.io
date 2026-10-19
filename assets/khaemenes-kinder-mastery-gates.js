@@ -363,7 +363,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     record.weeks[n]=updateReceipt(record.weeks[n],{
       met,total,source,adultAffirmed,essentialSatisfied
     });
-    saveLearnerRecord(record);
+    if(!saveLearnerRecord(record))throw new Error("mastery-evidence-save-failed");
     syncCompatibility(record);
     const receipt=normalizedReceipt(record.weeks[n]);
     global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
@@ -387,7 +387,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     record[kind]=updateReceipt(record[kind],{
       met,total,source,adultAffirmed,essentialSatisfied
     });
-    saveLearnerRecord(record);
+    if(!saveLearnerRecord(record))throw new Error("mastery-evidence-save-failed");
     syncCompatibility(record);
     const receipt=milestoneMastery(kind);
     global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
@@ -402,7 +402,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     const record=learnerRecord();
     record.portfolio=Boolean(complete);
     record.portfolioUpdatedAt=now();
-    saveLearnerRecord(record);
+    if(!saveLearnerRecord(record))throw new Error("mastery-evidence-save-failed");
     syncCompatibility(record);
     global.dispatchEvent(new CustomEvent("khaemenes-kinder-assessment-sync-request",{
       detail:{kind:"portfolio",complete:record.portfolio,updatedAt:record.portfolioUpdatedAt}
@@ -437,7 +437,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
   }
 
   function certificationReady(){
-    return completedWeeks()===TOTAL_WEEKS&&
+    return formalAccess()&&completedWeeks()===TOTAL_WEEKS&&
       milestoneMastery("midterm").mastered&&
       milestoneMastery("final").mastered&&
       Boolean(learnerRecord().portfolio);
