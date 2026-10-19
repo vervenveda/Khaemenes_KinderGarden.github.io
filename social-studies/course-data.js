@@ -14,7 +14,27 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency.",
     "stateLocalizable": true,
     "localizationMode": "national-core-state-local-overlay",
-    "localizationGuide": "STATE_LOCALIZATION_GUIDE.md"
+    "localizationGuide": "LOCALIZATION_GUIDE.md",
+    "localizationRequired": true,
+    "localizationCheckpoints": [
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      35
+    ],
+    "localizationPolicy": "Keep the national disciplinary core and 80% mastery gates invariant. Localize appropriate examples, maps, source sets, state/local history, government, civic institutions, public figures, Indigenous nations, geography, economy, and community evidence to the learner's state/local context."
   },
   "frameworks": [
     {

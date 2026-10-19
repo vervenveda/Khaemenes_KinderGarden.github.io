@@ -6,6 +6,8 @@ Canonical route: `social-studies/index.html`
 This is the Kindergarten Social Studies course for Khaemenes Academy Kinder Garden.
 
 ### Course record
+- **state-localizable by design and requirement**; see `LOCALIZATION_GUIDE.md`
+- local/state examples enrich the course without changing the **80% mastery** progression rule
 - 36 weeks
 - 180 Monday–Friday lesson blocks
 - 9 four-week units

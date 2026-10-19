@@ -38,3 +38,8 @@ Family and cultural learning never requires a learner to disclose private family
 State localization is required. Kindergarten retains a broad national disciplinary core while adapting developmentally appropriate maps, symbols, public institutions, local history sources, Indigenous histories, environmental examples, and community evidence to the learner's state/locality.
 
 See `STATE_LOCALIZATION_GUIDE.md`.
+
+## State/localization requirement
+Kindergarten requires an age-appropriate state/local overlay. Learners should encounter their state/community through maps, public helpers/services, symbols, local places, simple then-and-now evidence, environmental choices, and a safe community action or capstone example. The national Kindergarten strands remain intact and the 80% progression rule does not change.
+
+See `LOCALIZATION_GUIDE.md`.
