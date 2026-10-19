@@ -1,0 +1,25 @@
+name: Kindergarten regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/khaemenes-kinder-mastery-gates.js'
+      - 'curriculum/printables/**'
+      - 'tests/**'
+      - '.github/workflows/kindergarten-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test isolated learner mastery engine
+        run: node tests/mastery-regression.cjs
+      - name: Check all printable packet structures
+        run: node tests/printables-regression.cjs
