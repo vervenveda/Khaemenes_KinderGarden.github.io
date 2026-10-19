@@ -16,4 +16,8 @@ function render(){
 render();
 window.addEventListener("khaemenes-kindergarten-mastery-changed",render);
 window.addEventListener("khaemenes-kindergarten-assessment-sync",render);
+window.addEventListener("focus",render);
+window.addEventListener("pageshow",render);
+window.addEventListener("storage",render);
+window.addEventListener("khaemenes-family-registry-changed",render);
 })();
