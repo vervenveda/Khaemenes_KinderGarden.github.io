@@ -32,3 +32,9 @@ Kindergarten mastery is demonstrated through a combination of teacher observatio
 
 ## Privacy and inclusion
 Family and cultural learning never requires a learner to disclose private family information, beliefs, immigration status, address, or other sensitive details. Fictional examples may always be used.
+
+## State/local localization
+
+State localization is required. Kindergarten retains a broad national disciplinary core while adapting developmentally appropriate maps, symbols, public institutions, local history sources, Indigenous histories, environmental examples, and community evidence to the learner's state/locality.
+
+See `STATE_LOCALIZATION_GUIDE.md`.

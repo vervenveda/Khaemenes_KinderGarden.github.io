@@ -35,3 +35,9 @@ This code is **not secure authentication**. GitHub Pages is static. Do not store
 
 ### Design basis
 The course is informed by the NCSS C3 Inquiry Arc and recurring Kindergarten strands in current state frameworks, including community, civic life, geography, historical time and sources, economics, culture, and age-appropriate informed action. It is designed for national portability; it does not claim accreditation or automatic legal acceptance in every jurisdiction.
+
+## State/local localization
+
+Kindergarten follows the Academy-wide **national-core / state-local-overlay** rule. State and local maps, public services, symbols, historical sources, Indigenous histories, environments, and community examples should be integrated where appropriate without removing national competencies or changing the 80% mastery threshold.
+
+See `STATE_LOCALIZATION_GUIDE.md`.

@@ -11,7 +11,10 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "version": "1.0.0",
     "updated": "2026-10-19",
     "storageKey": "khaemenes_kindergarten_social_studies_v1",
-    "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency."
+    "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency.",
+    "stateLocalizable": true,
+    "localizationMode": "national-core-state-local-overlay",
+    "localizationGuide": "STATE_LOCALIZATION_GUIDE.md"
   },
   "frameworks": [
     {
@@ -4289,5 +4292,11 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
         }
       ]
     }
-  ]
+  ],
+  "localization": {
+    "required": true,
+    "mode": "national-core-state-local-overlay",
+    "rule": "State/local examples, sources, maps, symbols, public services, biographies, Indigenous histories, environments, and community evidence should be localized where appropriate without removing national competencies or weakening the 80% mastery policy.",
+    "guide": "STATE_LOCALIZATION_GUIDE.md"
+  }
 };
