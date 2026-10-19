@@ -4020,7 +4020,7 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
         },
         {
           "id": "KSS-W34-Q4",
-          "prompt": "A good cultural comparison should...",
+          "prompt": "When reviewing culture, a strong comparison should...",
           "choices": [
             "Use evidence and avoid stereotypes",
             "Assume everyone is identical",
