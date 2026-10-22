@@ -16,7 +16,7 @@ function test(name, fn) {
   checks.push(name);
   console.log("PASS " + name);
 }
-function createHarness({ learnerId = "learner-a", legacy = null, scoped = {} } = {}) {
+function createHarness({ learnerId = "learner-a", legacy = null, scoped = {}, masteryGate = null } = {}) {
   const data = new Map();
   if (legacy !== null) data.set(KEY.legacy, JSON.stringify(legacy));
   data.set(KEY.scoped, JSON.stringify(scoped));
@@ -30,6 +30,7 @@ function createHarness({ learnerId = "learner-a", legacy = null, scoped = {} } =
   const events = [];
   const window = {
     localStorage,
+    KhaemenesKinderMasteryGates: masteryGate,
     KhaemenesFamilyRegistry: {
       getLearner() {
         return {
@@ -119,6 +120,39 @@ test("clearing one learner does not remove another learner's legacy record", () 
   assert.equal(h.api.clearActiveCurriculumRecord(), true);
   assert.deepEqual(h.read(KEY.legacy), legacy);
   assert.equal(h.read(KEY.scoped)["learner-b"], undefined);
+});
+
+test("family progress summary ignores raw compatibility scores when essential mastery failed", () => {
+  const receipt = (bestPercent=0, bestQualifiedPercent=0, mastered=false, attempts=[]) => ({
+    bestPercent, bestQualifiedPercent, mastered, attempts
+  });
+  const legacy = {
+    learnerId: "learner-a", student: "Learner A",
+    weekly: { "1": 99, "2": 100 }, midterm: 100, final: 100, portfolio: true
+  };
+  const masteryGate = {
+    formalAccess: () => true,
+    weekMastery: unit => unit === 1
+      ? receipt(99, 0, false, [{ percent: 99, essentialSatisfied: false }])
+      : unit === 2
+        ? receipt(100, 85, true, [{ percent: 100, essentialSatisfied: true }])
+        : receipt(),
+    milestoneMastery: kind => kind === "midterm"
+      ? receipt(100, 0, false, [{ percent: 100, essentialSatisfied: false }])
+      : receipt(100, 0, false, [{ percent: 100, essentialSatisfied: false }]),
+    learnerRecord: () => ({ portfolio: false }),
+    certificationReady: () => false
+  };
+  const h = createHarness({ learnerId: "learner-a", legacy, masteryGate });
+  const summary = h.api.curriculumSummary(80, 36);
+  assert.equal(summary.state.weekly["1"], 99, "legacy raw scores remain available as history");
+  assert.equal(summary.completedUnits, 1, "only qualified formal receipts count as mastered");
+  assert.equal(summary.weeklyAverage, 43, "average derives from qualified receipt scores, not raw scores");
+  assert.equal(summary.midterm, 0, "unqualified milestone score is not shown as mastery");
+  assert.equal(summary.final, 0, "unqualified final score is not shown as mastery");
+  assert.equal(summary.portfolio, false, "portfolio status comes from the authoritative learner record");
+  assert.equal(summary.certificationReady, false);
+  assert.equal(h.api.nextUnit(), 1, "raw legacy 99% must not advance the next-unit pointer");
 });
 
 console.log("\nContinuity migration regression: " + checks.length + " checks passed.");
