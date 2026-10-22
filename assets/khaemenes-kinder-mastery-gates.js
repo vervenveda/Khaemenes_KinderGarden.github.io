@@ -297,12 +297,12 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     return dayEvidence(n,d);
   }
 
-  function updateReceipt(prior,{met,total,source,adultAffirmed,essentialSatisfied=true}){
+  function updateReceipt(prior,{met,total,source,adultAffirmed,essentialSatisfied}){
     if(adultAffirmed!==true)throw new Error("adult-affirmation-required");
     const t=Math.max(1,Number(total)||1);
     const m=Math.max(0,Math.min(t,Number(met)||0));
     const percent=Math.round((m/t)*100);
-    const essential=essentialSatisfied!==false;
+    const essential=essentialSatisfied===true;
     const old=normalizedReceipt(prior);
     const attempt={
       at:now(),
