@@ -168,20 +168,98 @@
       mentorId:ARCHAEMENES.id,
       linkedAt:state.linkedAt||null,
       updatedAt:state.updatedAt||null,
-      recordVersion:"4.0"
+      recordVersion:"4.0",
+      migration:state.migration&&typeof state.migration==="object"?{...state.migration}:null
     };
   }
 
   function allLearnerRecords(){const value=readJSON(KEYS.kindergartenByLearner,{});return value&&typeof value==="object"?value:{}}
 
+  function legacyOwner(value){
+    const owner=String(value?.learnerId||"").trim();
+    return owner||null;
+  }
+
+  function canWriteLegacyForLearner(id){
+    const raw=readJSON(KEYS.legacyKindergarten,null);
+    // An unowned legacy record is intentionally protected until an adult confirms its owner.
+    return !raw||legacyOwner(raw)===String(id||"");
+  }
+
   function copyLegacyIntoLearner(id,records){
     if(!id||records[id])return records;
     const legacyRaw=readJSON(KEYS.legacyKindergarten,null);
     if(!legacyRaw)return records;
+    // Never infer ownership from the currently selected profile or the display name.
+    if(legacyOwner(legacyRaw)!==String(id))return records;
     const legacy=normalizeState(legacyRaw);
-    records[id]={...legacy,learnerId:id,mentorId:ARCHAEMENES.id,linkedAt:new Date().toISOString(),updatedAt:new Date().toISOString(),migration:{source:KEYS.legacyKindergarten,mode:"non-destructive-copy",migratedAt:new Date().toISOString()}};
-    writeJSON(KEYS.kindergartenByLearner,records);
+    records[id]={
+      ...legacy,
+      learnerId:id,
+      mentorId:ARCHAEMENES.id,
+      linkedAt:legacy.linkedAt||new Date().toISOString(),
+      updatedAt:new Date().toISOString(),
+      migration:{
+        source:KEYS.legacyKindergarten,
+        mode:"identity-matched-copy",
+        migratedAt:new Date().toISOString()
+      }
+    };
     return records;
+  }
+
+  function legacyMigrationStatus(){
+    const p=profile();
+    const raw=readJSON(KEYS.legacyKindergarten,null);
+    if(!raw)return {available:false,status:"none",activeLearnerId:p?.learnerId||null,legacyLearnerId:null,requiresAdultConfirmation:false};
+    const owner=legacyOwner(raw);
+    if(owner&&owner===p?.learnerId){
+      return {available:true,status:"identity-match",activeLearnerId:p.learnerId,legacyLearnerId:owner,requiresAdultConfirmation:false};
+    }
+    if(owner&&owner!==p?.learnerId){
+      return {available:true,status:"different-learner",activeLearnerId:p?.learnerId||null,legacyLearnerId:owner,requiresAdultConfirmation:false};
+    }
+    return {available:true,status:"identity-unverified",activeLearnerId:p?.learnerId||null,legacyLearnerId:null,requiresAdultConfirmation:true};
+  }
+
+  function hasCurriculumProgress(value){
+    const s=normalizeState(value);
+    return Object.keys(s.weekly||{}).length>0||s.midterm>0||s.final>0||s.portfolio===true;
+  }
+
+  function importLegacyCurriculumState({learnerId,adultConfirmed=false}={}){
+    const p=profile();
+    if(!p?.learnerId)return {ok:false,reason:"active-learner-required"};
+    if(String(learnerId||"")!==String(p.learnerId))return {ok:false,reason:"learner-confirmation-mismatch"};
+    if(adultConfirmed!==true)return {ok:false,reason:"adult-confirmation-required"};
+    const legacyRaw=readJSON(KEYS.legacyKindergarten,null);
+    if(!legacyRaw)return {ok:false,reason:"no-legacy-record"};
+    const owner=legacyOwner(legacyRaw);
+    if(owner&&owner!==p.learnerId)return {ok:false,reason:"legacy-record-belongs-to-different-learner"};
+    const records=allLearnerRecords();
+    if(records[p.learnerId]&&hasCurriculumProgress(records[p.learnerId])){
+      return {ok:false,reason:"existing-learner-progress-preserved"};
+    }
+    const state=normalizeState(legacyRaw);
+    state.learnerId=p.learnerId;
+    state.student=p.nickname||state.student;
+    state.mentorId=ARCHAEMENES.id;
+    state.linkedAt=state.linkedAt||new Date().toISOString();
+    state.updatedAt=new Date().toISOString();
+    state.migration={
+      source:KEYS.legacyKindergarten,
+      mode:"adult-confirmed-import",
+      confirmedForLearnerId:p.learnerId,
+      importedAt:new Date().toISOString()
+    };
+    records[p.learnerId]=state;
+    if(!writeJSON(KEYS.kindergartenByLearner,records)){
+      return {ok:false,reason:"scoped-record-write-failed",state:null};
+    }
+    global.dispatchEvent(new CustomEvent("khaemenes-kindergarten-continuity-changed",{
+      detail:{learnerId:p.learnerId,reason:"adult-confirmed-legacy-import"}
+    }));
+    return {ok:true,reason:"imported",state:normalizeState(state)};
   }
 
   function loadCurriculumState(defaultState=null){
@@ -198,7 +276,8 @@
     records[p.learnerId]=state;
     writeJSON(KEYS.kindergartenByLearner,records);
     writeJSON(KEYS.activeKindergartenLearner,{learnerId:p.learnerId,nickname:p.nickname,activatedAt:new Date().toISOString()});
-    writeJSON(KEYS.legacyKindergarten,state);
+    // Do not replace an unowned or differently owned compatibility record with this learner's empty state.
+    if(canWriteLegacyForLearner(p.learnerId))writeJSON(KEYS.legacyKindergarten,state);
     return normalizeState(state);
   }
 
@@ -213,14 +292,21 @@
     const records=allLearnerRecords();
     records[p.learnerId]=state;
     writeJSON(KEYS.kindergartenByLearner,records);
-    writeJSON(KEYS.legacyKindergarten,state);
+    if(canWriteLegacyForLearner(p.learnerId))writeJSON(KEYS.legacyKindergarten,state);
     return normalizeState(state);
   }
 
   function clearActiveCurriculumRecord(){
-    const p=profile();if(!p?.learnerId)return false;
-    const records=allLearnerRecords();delete records[p.learnerId];writeJSON(KEYS.kindergartenByLearner,records);
-    remove(KEYS.legacyKindergarten);remove(KEYS.activeKindergartenLearner);return true;
+    const p=profile();
+    if(!p?.learnerId)return false;
+    const records=allLearnerRecords();
+    delete records[p.learnerId];
+    if(!writeJSON(KEYS.kindergartenByLearner,records))return false;
+    const legacyRaw=readJSON(KEYS.legacyKindergarten,null);
+    if(legacyOwner(legacyRaw)===p.learnerId&&!remove(KEYS.legacyKindergarten))return false;
+    const active=readJSON(KEYS.activeKindergartenLearner,null);
+    if(active?.learnerId===p.learnerId&&!remove(KEYS.activeKindergartenLearner))return false;
+    return true;
   }
 
   function curriculumSummary(passingScore=80,totalUnits=36){
@@ -266,6 +352,8 @@
     guardianAuthorized,
     loadCurriculumState,
     saveCurriculumState,
+    legacyMigrationStatus,
+    importLegacyCurriculumState,
     clearActiveCurriculumRecord,
     curriculumSummary,
     nextUnit,
