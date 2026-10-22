@@ -84,7 +84,9 @@
   function assessImport(value,activeLearnerId,{explicitAdultConfirmation=false}={}){
     const active=cleanId(activeLearnerId);
     const owner=ownerOf(value);
-    if(owner&&active&&owner!==active)return {allowed:false,reason:"different-learner",owner,activeLearnerId:active};
+    // An unlinked workspace may inspect/import a file without attaching its owner to a child.
+    if(!active)return {allowed:true,reason:"unlinked-import",owner,activeLearnerId:null};
+    if(owner&&owner!==active)return {allowed:false,reason:"different-learner",owner,activeLearnerId:active};
     if(active&&!owner&&!explicitAdultConfirmation)return {allowed:false,reason:"adult-confirmation-required",owner:null,activeLearnerId:active};
     return {allowed:true,reason:owner?"identity-match":(active?"adult-confirmed-unverified-owner":"unlinked-import"),owner,activeLearnerId:active};
   }
