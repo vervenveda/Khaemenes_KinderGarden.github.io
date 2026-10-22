@@ -354,7 +354,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     total=10,
     source="adult-observed-performance-rubric",
     adultAffirmed=false,
-    essentialSatisfied=true
+    essentialSatisfied
   }={}){
     const n=Math.max(1,Math.min(TOTAL_WEEKS,Number(unit)||1));
     if(!formalAccess())throw new Error("formal-access-required");
@@ -378,7 +378,7 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     total=40,
     source="adult-observed-performance-demonstration",
     adultAffirmed=false,
-    essentialSatisfied=true
+    essentialSatisfied
   }={}){
     if(!["midterm","final"].includes(kind))throw new Error("invalid-milestone");
     if(!formalAccess())throw new Error("formal-access-required");
