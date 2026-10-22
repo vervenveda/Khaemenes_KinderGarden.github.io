@@ -6,6 +6,7 @@ on:
       - 'assets/khaemenes-kinder-mastery-gates.js'
       - 'assets/khaemenes-kinder-continuity.js'
       - 'assets/khaemenes-portfolio-scope.js'
+      - 'assets/khaemenes-kinder-experience.js'
       - 'portfolio-builder/index.html'
       - 'curriculum/printables/**'
       - 'tests/**'
@@ -28,5 +29,7 @@ jobs:
         run: node tests/continuity-migration-regression.cjs
       - name: Test learner-scoped portfolio and ownership rules
         run: node tests/portfolio-scope-regression.cjs
+      - name: Test family observation storage failure handling
+        run: node tests/experience-storage-regression.cjs
       - name: Check all printable packet structures
         run: node tests/printables-regression.cjs
