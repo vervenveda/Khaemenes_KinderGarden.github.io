@@ -46,6 +46,22 @@
       "kind": "javascript",
       "purpose": "Formal mastery gate runtime",
       "contentMarker": "KhaemenesKinderMasteryGates"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/curriculum/",
+      "kind": "page",
+      "purpose": "Canonical Kindergarten curriculum route"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/curriculum/mastery/",
+      "kind": "page",
+      "purpose": "Formal mastery dashboard route"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/assets/khaemenes-kinder-continuity.js",
+      "kind": "javascript",
+      "purpose": "Learner-scoped continuity bridge",
+      "contentMarker": "KhaemenesKinderContinuity"
     }
   ],
   "optionalExact": [
@@ -106,6 +122,18 @@
     {
       "path": "/stos/vervenveda/",
       "purpose": "Optional parent ecosystem route"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/apps/",
+      "purpose": "Optional age-appropriate activity launchers"
+    },
+    {
+      "path": "/stos/mentors/eiren/",
+      "purpose": "Optional Eiren mentor adapter"
+    },
+    {
+      "path": "/stos/proresources/taskhandler/",
+      "purpose": "Optional PROSE / science-resource task handler"
     }
   ],
   "readinessPolicy": {
