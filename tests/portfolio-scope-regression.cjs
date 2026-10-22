@@ -75,7 +75,7 @@ test("portfolio page uses learner-scoped key and explicit ownership checks", () 
   assert.ok(html.includes("SCOPE.assessImport(obj,ACTIVE_LEARNER_ID)"));
   assert.ok(html.includes("owner!==ACTIVE_LEARNER_ID"));
   assert.ok(html.includes("function importLegacyPortfolio()"));
-  assert.ok(html.includes("mode:"adult-confirmed-import""));
+  assert.ok(html.includes('mode:"adult-confirmed-import"'));
   assert.ok(html.includes("portfolioScopeChanged"));
   assert.ok(html.includes("learnerId:ACTIVE_LEARNER_ID,exportedAt"));
   assert.ok(html.includes("id="legacyPortfolioPanel""));
