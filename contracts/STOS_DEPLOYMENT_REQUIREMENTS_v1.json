@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractId": "khaemenes-kinder-stos-deployment-readiness",
+  "status": "candidate-until-live-probes-pass",
+  "baseUrlEnvironmentVariable": "STOS_DEPLOYMENT_BASE_URL",
+  "required": [
+    {
+      "path": "/stos/khaemenes/",
+      "kind": "page",
+      "purpose": "Canonical Khaemenes STOS entry route"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/",
+      "kind": "page",
+      "purpose": "Kinder Garden STOS route"
+    },
+    {
+      "path": "/stos/khaemenes/family/",
+      "kind": "page",
+      "purpose": "Family portal / active learner management"
+    },
+    {
+      "path": "/stos/khaemenes/student/",
+      "kind": "page",
+      "purpose": "Student profile route"
+    },
+    {
+      "path": "/stos/mentor/",
+      "kind": "page",
+      "purpose": "Academy mentor route"
+    },
+    {
+      "path": "/stos/khaemenes/assets/khaemenes-family-registry.js",
+      "kind": "javascript",
+      "purpose": "Canonical family and learner identity source",
+      "contentMarker": "KhaemenesFamilyRegistry"
+    },
+    {
+      "path": "/stos/khaemenes/assets/khaemenes-student-profile-v2.js",
+      "kind": "javascript",
+      "purpose": "Student profile handoff",
+      "contentMarker": "StudentProfile"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/assets/khaemenes-kinder-mastery-gates.js",
+      "kind": "javascript",
+      "purpose": "Formal mastery gate runtime",
+      "contentMarker": "KhaemenesKinderMasteryGates"
+    }
+  ],
+  "optionalExact": [
+    {
+      "path": "/stos/khaemenes/kindergarten/assets/vnv-beta-link.js",
+      "purpose": "Optional beta reporting link"
+    }
+  ],
+  "optionalPrefixes": [
+    {
+      "path": "/stos/khaemenes/family/enroll/",
+      "purpose": "Enrollment helper route; family portal remains primary"
+    },
+    {
+      "path": "/stos/khaemenes/teacher-admin/",
+      "purpose": "Teacher administration tools"
+    },
+    {
+      "path": "/stos/khaemenes/elementary/",
+      "purpose": "Adjacent campus navigation"
+    },
+    {
+      "path": "/stos/khaemenes/preschool/",
+      "purpose": "Preschool / Crèche services and assets"
+    },
+    {
+      "path": "/stos/khaemenes/kindergarten/assets/",
+      "purpose": "Optional Kinder Garden assets other than the required mastery script"
+    },
+    {
+      "path": "/stos/kindergarten/v1/",
+      "purpose": "Offline-tolerant bootstrap, sync, weather, and astronomy APIs"
+    },
+    {
+      "path": "/stos/mentor/v1/",
+      "purpose": "Offline-queued mentor request API"
+    },
+    {
+      "path": "/stos/beta/",
+      "purpose": "Optional beta portal and reports"
+    },
+    {
+      "path": "/stos/arcade/",
+      "purpose": "Optional game launcher"
+    },
+    {
+      "path": "/stos/aurora/",
+      "purpose": "Optional Aurora enrichment route"
+    },
+    {
+      "path": "/stos/bazaar-art/",
+      "purpose": "Optional creative enrichment route"
+    },
+    {
+      "path": "/stos/refrain/",
+      "purpose": "Optional learning-continuation route"
+    },
+    {
+      "path": "/stos/vervenveda/",
+      "purpose": "Optional parent ecosystem route"
+    }
+  ],
+  "readinessPolicy": {
+    "staticChecks": "Every literal /stos/ reference found in source must match one required or optional contract route. Unknown routes fail the static audit.",
+    "liveChecks": "A release-readiness run requires STOS_DEPLOYMENT_BASE_URL and probes all required page and asset routes. Missing base URL or failed required probe is a failure.",
+    "normalCi": "The regular Formal Gate workflow runs static classification only; this does not certify live STOS availability.",
+    "optionalServices": "Optional service failures are reported as warnings and do not fail core readiness.",
+    "privacy": "The validator sends only GET requests to declared route paths; it never submits learner information or writes data."
+  }
+}
