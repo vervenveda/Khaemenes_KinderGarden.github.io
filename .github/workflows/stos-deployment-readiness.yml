@@ -1,0 +1,21 @@
+name: STOS Deployment Readiness (Manual)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-stos-readiness:
+    runs-on: ubuntu-24.04
+    env:
+      STOS_DEPLOYMENT_BASE_URL: ${{ vars.STOS_DEPLOYMENT_BASE_URL }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '20'
+      - name: Require live STOS base URL and probe required routes
+        run: node scripts/validate-stos-deployment-readiness.mjs --require-live
