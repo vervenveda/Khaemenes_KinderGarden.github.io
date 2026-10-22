@@ -7,8 +7,26 @@
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fffdf8,#f5f1e7);color:var(--ink);font:333 16px/1.62 var(--body)}button,input,select,textarea{font:inherit}button,a.button{min-height:42px;border:1px solid #afbbb4;border-radius:var(--r);padding:9px 13px;background:#fff;color:var(--ink);text-decoration:none;cursor:pointer}.primary{background:var(--forest)!important;color:#fff!important;border-color:var(--forest)!important}.gold{background:#f7e6b9!important}.shell{width:min(1180px,calc(100% - 28px));margin:auto}.top{padding:18px 0;background:#16372e;color:#fff}.top .shell{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.brand strong{display:block;font:400 23px/1.1 var(--display)}.brand small{opacity:.76}.hero{padding:58px 0 40px;text-align:center;background:radial-gradient(circle at 20% 0,#fff4c9,transparent 26rem),radial-gradient(circle at 85% 10%,#dff3f2,transparent 28rem)}.eyebrow{font:400 13px var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--forest)}h1,h2,h3{font-family:var(--display);font-weight:400}h1{font-size:clamp(42px,7vw,68px);margin:8px 0}.lead{max-width:800px;margin:auto;color:var(--soft)}.status{margin:24px auto 0;max-width:900px;padding:14px;border:1px solid var(--line);border-radius:var(--r);background:#fff}.bar{height:10px;border-radius:999px;background:#e5e9e5;overflow:hidden}.bar span{display:block;height:100%;background:var(--forest);width:0}.layout{display:grid;grid-template-columns:280px 1fr;gap:18px;padding:28px 0 60px}.panel,.card{border:1px solid var(--line);border-radius:var(--r);background:rgba(255,255,255,.96);box-shadow:0 10px 28px rgba(32,55,45,.05)}.panel{padding:16px;align-self:start;position:sticky;top:12px}.weeklist{display:grid;gap:6px;max-height:68vh;overflow:auto}.weekbtn{width:100%;text-align:left;background:#fff}.weekbtn.active{border-color:var(--forest);box-shadow:inset 4px 0 0 var(--forest)}.weekbtn.locked{opacity:.55}.content{display:grid;gap:14px}.card{padding:20px}.pills{display:flex;gap:7px;flex-wrap:wrap}.pill{display:inline-flex;padding:5px 8px;border-radius:999px;background:#f1f4ef;font-size:12px}.lesson{padding:15px;border:1px solid var(--line);border-radius:var(--r);margin-top:10px;background:#fffefb}.lesson h3{margin:0 0 6px}.question{padding:13px;border:1px solid var(--line);border-radius:var(--r);margin:10px 0;background:#fff}.choice{display:block;margin:6px 0;padding:8px;border-radius:var(--r);background:#f8f7f2}.notice{padding:12px;border-left:4px solid var(--gold);background:#fff6dc}.good{border-left-color:#4d846c}.bad{border-left-color:#b95f5f}.actions{display:flex;gap:8px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.small{font-size:13px;color:var(--soft)}textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:var(--r);padding:9px}.lockedbox{padding:30px;text-align:center}.footer{padding:28px;text-align:center;color:#6f776f}
 @media(max-width:800px){.layout{grid-template-columns:1fr}.panel{position:relative}.weeklist{max-height:none}.grid{grid-template-columns:1fr}}
 @media print{.top,.panel,.noPrint{display:none!important}.layout{display:block}.card{box-shadow:none;break-inside:avoid}body{background:#fff}}
-</style></head>
+</style><link rel="stylesheet" href="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-global-header.css">
+<link rel="stylesheet" href="https://vervenveda.com/assets/vnv-ecosystem-menu.css">
+</head>
 <body>
+<header data-khae-header class="khae-global-campus-header">
+  <div data-khae-header-inner>
+    <a data-khae-brand href="https://vervenveda.com/Khaemenes_Academy.github.io/" aria-label="Khaemenes Academy home">
+      <span data-khae-brand-mark>K</span>
+      <span><strong data-khae-brand-name>Khaemenes Kinder Garden</strong><small data-khae-brand-sub>Kindergarten · Plant · Learn · Grow · Bloom</small></span>
+    </a>
+    <nav data-khae-nav aria-label="Academy global navigation">
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Academy</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/student/">Student</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/teacher-admin/">Teacher</a>
+    </nav>
+    <div data-khae-actions><a data-khae-secondary href="https://vervenveda.com/Khaemenes_Academy.github.io/student/">Student Profile</a></div>
+    <div data-vnv-ecosystem-slot aria-label="Ecosystem menu"></div>
+  </div>
+</header>
 <header class="top"><div class="shell"><div class="brand"><strong>Khaemenes Academy</strong><small>Kinder Garden · Social Studies</small></div><div class="actions"><a class="button" href="../index.html">Kinder Garden Home</a><a class="button gold" href="../apps/History_curriculum_index.html">History Adventure</a><a class="button" href="teacher.html">Teacher Tools</a></div></div></header>
 <section class="hero"><div class="shell"><div class="eyebrow">My World · My Community</div><h1>Kindergarten Social Studies</h1><p class="lead">A 36-week inquiry course in community, civics, geography, history, economics, culture, evidence, and informed action. Lessons are designed for talk, drawing, movement, maps, objects, stories, and teacher-supported reading.</p><div class="status"><strong id="statusTitle">Create or choose a learner to begin.</strong><div class="bar"><span id="bar"></span></div><p class="small" id="statusText">Week 1 is open. Future weeks unlock after the prior weekly mastery check reaches 80%.</p></div></div></section>
 <main class="shell layout">
@@ -18,4 +36,6 @@
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
 <script src="khaemenes-kindergarten-subject-context.js"></script>
 <script src="course-data.js"></script>
-<script src="app.js"></script></body></html>
+<script src="app.js"></script><script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-global-header.js" defer></script>
+<script src="https://vervenveda.com/assets/vnv-ecosystem-menu.js" defer></script>
+</body></html>
