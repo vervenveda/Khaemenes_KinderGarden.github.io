@@ -16,13 +16,14 @@ function test(name, fn) {
   checks.push(name);
   console.log("PASS " + name);
 }
-function createHarness({ learnerId = "learner-a", legacy = null, scoped = {}, masteryGate = null } = {}) {
+function createHarness({ learnerId = "learner-a", legacy = null, scoped = {}, masteryGate = null, failWrites = false } = {}) {
   const data = new Map();
+  let rejectWrites = failWrites;
   if (legacy !== null) data.set(KEY.legacy, JSON.stringify(legacy));
   data.set(KEY.scoped, JSON.stringify(scoped));
   const localStorage = {
     getItem(key) { return data.has(String(key)) ? data.get(String(key)) : null; },
-    setItem(key, value) { data.set(String(key), String(value)); },
+    setItem(key, value) { if(rejectWrites)throw new Error("storage quota"); data.set(String(key), String(value)); },
     removeItem(key) { data.delete(String(key)); },
     clear() { data.clear(); },
     raw(key) { return data.get(key) ?? null; }
@@ -58,6 +59,7 @@ function createHarness({ learnerId = "learner-a", legacy = null, scoped = {}, ma
     api: window.KhaemenesKinderContinuity,
     localStorage,
     events,
+    setWriteFailure(value) { rejectWrites=Boolean(value); },
     read(key) { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; }
   };
 }
@@ -120,6 +122,23 @@ test("clearing one learner does not remove another learner's legacy record", () 
   assert.equal(h.api.clearActiveCurriculumRecord(), true);
   assert.deepEqual(h.read(KEY.legacy), legacy);
   assert.equal(h.read(KEY.scoped)["learner-b"], undefined);
+});
+
+test("continuity save returns failure when the authoritative scoped write fails", () => {
+  const scoped = { "learner-a": { learnerId: "learner-a", student: "Learner A", weekly: { "1": 81 }, midterm: 0, final: 0, portfolio: false } };
+  const h = createHarness({ learnerId: "learner-a", scoped });
+  h.setWriteFailure(true);
+  const result = h.api.saveCurriculumState({ student: "Learner A", weekly: { "1": 99 }, midterm: 0, final: 0, portfolio: false });
+  assert.equal(result, false, "failed canonical record write must not return a saved-looking state");
+  assert.equal(h.read(KEY.scoped)["learner-a"].weekly["1"], 81, "failed save leaves prior persisted record unchanged");
+});
+
+test("clear continuity record returns failure if its canonical write fails", () => {
+  const scoped = { "learner-a": { learnerId: "learner-a", student: "Learner A", weekly: { "1": 81 }, midterm: 0, final: 0, portfolio: false } };
+  const h = createHarness({ learnerId: "learner-a", scoped });
+  h.setWriteFailure(true);
+  assert.equal(h.api.clearActiveCurriculumRecord(), false);
+  assert.equal(h.read(KEY.scoped)["learner-a"].weekly["1"], 81);
 });
 
 test("family progress summary ignores raw compatibility scores when essential mastery failed", () => {
