@@ -15,6 +15,8 @@ on:
       - 'scripts/inject-kindergarten-formal-gates.mjs'
       - 'scripts/validate-kindergarten-mastery-gates.mjs'
       - 'scripts/validate-kindergarten-links.mjs'
+      - 'contracts/STOS_DEPLOYMENT_REQUIREMENTS_v1.json'
+      - 'scripts/validate-stos-deployment-readiness.mjs'
       - 'scripts/validate-legacy-formal-routes.mjs'
       - '.github/workflows/kindergarten-formal-gate-rollout.yml'
   pull_request:
@@ -59,6 +61,8 @@ jobs:
         run: node scripts/validate-kindergarten-links.mjs
       - name: Validate legacy formal route aliases
         run: node scripts/validate-legacy-formal-routes.mjs
+      - name: Classify STOS deployment dependencies (static only)
+        run: node scripts/validate-stos-deployment-readiness.mjs
       - name: Validate dependency boundary
         run: node scripts/validate-dependency-boundary.mjs
       - name: Validate Academy mastery contract
