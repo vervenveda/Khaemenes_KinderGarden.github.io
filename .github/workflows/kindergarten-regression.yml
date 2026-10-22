@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'assets/khaemenes-kinder-mastery-gates.js'
+      - 'assets/khaemenes-kinder-continuity.js'
       - 'curriculum/printables/**'
       - 'tests/**'
       - '.github/workflows/kindergarten-regression.yml'
@@ -21,5 +22,7 @@ jobs:
           node-version: '22'
       - name: Test isolated learner mastery engine
         run: node tests/mastery-regression.cjs
+      - name: Test learner-safe legacy continuity migration
+        run: node tests/continuity-migration-regression.cjs
       - name: Check all printable packet structures
         run: node tests/printables-regression.cjs
