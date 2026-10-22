@@ -35,8 +35,14 @@ verify(
 
 for (let unit = 1; unit <= 36; unit++) {
   const n = String(unit).padStart(2, "0");
-  verify(exists(`lessons/unit-${n}/index.html`), `legacy lesson alias exists for Unit ${n}`);
+  const legacyLessonPath = `lessons/unit-${n}/index.html`;
+  const legacyLessonContent = exists(legacyLessonPath) ? fs.readFileSync(path.join(ROOT, legacyLessonPath), "utf8") : "";
+  const canonicalLessonTarget = `../../curriculum/lessons/unit-${n}/index.html`;
+  verify(exists(legacyLessonPath), `legacy lesson alias exists for Unit ${n}`);
   verify(exists(`curriculum/lessons/unit-${n}/index.html`), `canonical lesson exists for Unit ${n}`);
+  verify(legacyLessonContent.includes("khaemenes-legacy-route-redirect"), `legacy lesson Unit ${n} has self-contained redirect fallback`);
+  verify(legacyLessonContent.includes(`content="0;url=${canonicalLessonTarget}"`), `legacy lesson Unit ${n} targets its canonical route`);
+  verify(legacyLessonContent.includes("target.search=location.search;target.hash=location.hash;location.replace(target.href)"), `legacy lesson Unit ${n} preserves query and fragment`);
   verify(exists(`assessments/unit-${n}-assessment.html`), `legacy assessment alias exists for Unit ${n}`);
   verify(exists(`curriculum/assessments/unit-${n}-assessment.html`), `canonical assessment exists for Unit ${n}`);
 }
@@ -71,4 +77,4 @@ if (failures.length) {
   failures.forEach(message => console.error(" - " + message));
   process.exit(1);
 }
-console.log(`\\nPASS: legacy formal route coverage complete ( ${36 * 4 + 3 * 2 + 7} checks )`);
+console.log(`\\nPASS: legacy formal route coverage complete ( ${36 * 7 + 3 * 2 + 7} checks )`);
