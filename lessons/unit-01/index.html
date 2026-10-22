@@ -2,22 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#f4fff1">
-<title>Khaemenes Kinder Garden · Formal Lesson Gate</title>
-<style>
-html,body{min-height:100%;margin:0}body{display:grid;place-items:center;padding:24px;box-sizing:border-box;background:#f4fff1;color:#263a31;font:16px/1.6 "Avenir Next","Segoe UI",Arial,sans-serif;text-align:center}.gate-card{width:min(100%,620px);padding:28px;box-sizing:border-box;border:1px solid rgba(45,93,61,.18);border-top:5px solid #3f9d59;border-radius:18px;background:#fff;box-shadow:0 18px 45px rgba(54,95,72,.12)}h1{margin:8px 0;color:#22543a;font:700 32px Georgia,serif}p{color:#66756f}.mark{font-size:42px}
-</style>
-<script src="/stos/khaemenes/kindergarten/assets/khaemenes-kinder-mastery-gates.js" data-khaemenes-kindergarten-formal-gate="1"></script>
+<meta http-equiv="refresh" content="0;url=../../curriculum/lessons/unit-01/index.html">
+<title>Opening current lesson · Unit 01 | Khaemenes Kinder Garden</title>
+<script>
+(()=>{"use strict";const target=new URL("../../curriculum/lessons/unit-01/index.html",location.href);target.search=location.search;target.hash=location.hash;location.replace(target.href);})();
+</script>
 </head>
 <body>
-<main class="gate-card"><div class="mark" aria-hidden="true">🌱</div><h1>Opening your learning garden…</h1><p>Checking the active Kindergarten learner and required prior mastery.</p></main>
-<script>
-(()=>{"use strict";const match=String(location.pathname||"").match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i),unit=match?Number(match[1]):null;let done=false,tries=0;async function hydrate(){if(done||!unit)return;const G=window.KhaemenesKinderMasteryGates;if(!G||document.documentElement.hasAttribute("data-khaemenes-formal-gate-pending")){if(++tries<180)setTimeout(hydrate,50);return}if(!G.formalAccess()||!G.canOpenWeek(unit))return;done=true;try{const r=await fetch("formal-content.html",{cache:"no-store",credentials:"same-origin"});if(!r.ok)throw new Error("lesson-content-unavailable");const html=await r.text();document.open();document.write(html);document.close()}catch{document.body.innerHTML='<main class="gate-card"><div class="mark">🌱</div><h1>Lesson content unavailable</h1><p>The mastery gate opened correctly, but the preserved lesson content could not be loaded. Return to the curriculum and try again.</p><p><a href="../../index.html">Return to Curriculum</a></p></main>'}}window.addEventListener("khaemenes-kindergarten-formal-gate-open",hydrate,{once:true});hydrate()})();
-</script>
-
-<!-- Verve N Veda Beta Program -->
-<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
-<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
+<main>
+<h1>Opening the current gated lesson…</h1>
+<p>This older lesson address is being forwarded to the current learner-scoped mastery gate. Your saved learning record is not changed by this redirect.</p>
+<p><a href="../../curriculum/lessons/unit-01/index.html" data-khaemenes-legacy-route-redirect="1">Continue to Unit 01</a></p>
+</main>
+<!-- khaemenes-legacy-route-redirect -->
+</body>
 </html>
