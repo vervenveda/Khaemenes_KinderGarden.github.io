@@ -37,7 +37,8 @@
 
   function writeJSON(key,value){
     try{
-      global.localStorage?.setItem(key,JSON.stringify(value));
+      if(!global.localStorage||typeof global.localStorage.setItem!=="function")return false;
+      global.localStorage.setItem(key,JSON.stringify(value));
       return true;
     }catch{return false}
   }
@@ -238,7 +239,7 @@
       domain:guide.domain
     });
     records[id]=list.slice(-120);
-    writeJSON(KEYS.observations,records);
+    if(!writeJSON(KEYS.observations,records))return false;
     syncContext();
     renderFamilySnapshot();
     return true;
@@ -479,6 +480,9 @@
         if(saveObservation(button.dataset.kinderObservation)){
           button.textContent="Saved ✓";
           setTimeout(renderFamilySnapshot,500);
+        }else{
+          button.textContent="Not saved — retry";
+          button.setAttribute("aria-label","Observation not saved. Try again.");
         }
       });
     });
