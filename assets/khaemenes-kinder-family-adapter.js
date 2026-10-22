@@ -95,13 +95,14 @@
     const legacy=legacyForLearner(learner);
     const style=styleFor(learner,legacy);
     const mentorIdentity=canonicalMentorIdentity(learner,legacy);
+    const interests=Array.isArray(learner.interests)?learner.interests:(legacy.interests||[]);
     const merged={
       ...legacy,
       learnerId:learner.learnerId,
       nickname:learner.nickname||"Learner",
       pathway:"kindergarten",
       ageBand:learner.ageBand||legacy.ageBand||"5-6",
-      interests:Array.isArray(learner.interests)?learner.interests:(legacy.interests||[]),
+      interests,
       personality:style,
       mentorId:ARCHAEMENES_ID,
       mentorIdentity,
@@ -109,8 +110,11 @@
       familyManaged:true,
       updatedAt:new Date().toISOString()
     };
-    writeJSON("khaemenes_preschool_profile_v1",merged);
-    return true;
+    const ok=writeJSON("khaemenes_preschool_profile_v1",merged);
+    if(ok&&global.KhaemenesStudentProfileV2?.updateLearningMap){
+      global.KhaemenesStudentProfileV2.updateLearningMap({interests},learner.learnerId);
+    }
+    return ok;
   }
 
   function mentorDestination(){
