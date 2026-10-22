@@ -21,7 +21,7 @@
   }
   function normalizeLearner(value){
     if(!value||typeof value!=="object")return null;
-    const learnerId=cleanId(value.learnerId||value.id);
+    const learnerId=cleanId(value.learnerId);
     if(!learnerId)return null;
     if(value.stage&&String(value.stage).toLowerCase()!=="kindergarten")return null;
     return {learnerId,nickname:String(value.nickname||value.name||"").slice(0,80),stage:String(value.stage||"kindergarten").toLowerCase()};
