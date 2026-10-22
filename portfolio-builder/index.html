@@ -96,6 +96,12 @@ h1,h2,h3,h4{font-family:var(--serif)}h1{margin:10px 0 4px;font-size:clamp(2.9rem
 <div class="field"><label>Reviewer</label><input id="reviewerName" placeholder="Parent / teacher / mentor"></div>
 </div>
 <div class="notice"><strong>How app collection works:</strong> this page can directly read saved work only from apps running on the <em>same browser origin</em>. Evidence from another domain/repository can still be imported using that app's JSON export or a manual file upload. This keeps the portfolio sovereign without pretending browsers allow cross-domain localStorage access.</div>
+<div class="notice" id="portfolioScopeNotice" role="status" aria-live="polite"></div>
+<div class="panel" id="legacyPortfolioPanel" style="display:none;margin-top:10px">
+  <h3>Preserved older local portfolio</h3>
+  <p>The previous portfolio is preserved, but it does not prove which Academy learner owns it. An adult must confirm the intended learner before a copy is imported. Importing does not delete the original.</p>
+  <button class="btn gold" id="importLegacyPortfolioBtn" type="button">Review and import older portfolio…</button>
+</div>
 
 <div class="tabs">
 <button class="tab" data-tab="apps">🎨 Learning Adventures</button>
@@ -239,9 +245,17 @@ h1,h2,h3,h4{font-family:var(--serif)}h1{margin:10px 0 4px;font-size:clamp(2.9rem
   </div>
 </div>
 
+<script src="../assets/khaemenes-portfolio-scope.js"></script>
 <script>
 (()=>{"use strict";
-const $=id=>document.getElementById(id),KEY="khaemenes_kindergarten_portfolio_builder_v1";
+const $=id=>document.getElementById(id);
+const SCOPE=window.KhaemenesPortfolioScope;
+if(!SCOPE)throw new Error("Portfolio ownership guard unavailable; stopped safely.");
+const ACTIVE_LEARNER=SCOPE.detectActiveLearner(localStorage);
+const ACTIVE_LEARNER_ID=ACTIVE_LEARNER?.learnerId||null;
+const LEGACY_KEY=SCOPE.legacyKey;
+const KEY=SCOPE.storageKey(ACTIVE_LEARNER_ID);
+let portfolioScopeChanged=false;
 const VAULT_DB="KhaemenesKinderGardenPortfolioVault",VAULT_VER=1,VAULT_META="meta",VAULT_DATA="data";
 let vaultDB=null;
 const SUBJECTS=["Language Arts","Mathematics","Science","Social Studies","Art","Music","Physical Education","Life Skills","Interdisciplinary"];
@@ -286,11 +300,26 @@ const APP_CATALOG=[
 
 const blank={profile:{child:"",grade:"Kindergarten",year:"",reviewer:""},parentProfile:{name:"",notes:""},favorites:[],evidence:[],childReflection:"",review:{breadth:false,reflection:false,mastery:false,authentic:false,note:""},history:[]};
 function clone(o){return JSON.parse(JSON.stringify(o))}
-function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||"null");return Object.assign(clone(blank),x||{},{profile:Object.assign({},blank.profile,(x||{}).profile||{}),review:Object.assign({},blank.review,(x||{}).review||{})})}catch{return clone(blank)}}let s=load();
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||"null");if(x?.learnerId&&x.learnerId!==ACTIVE_LEARNER_ID)return Object.assign(clone(blank),{learnerId:ACTIVE_LEARNER_ID});return Object.assign(clone(blank),x||{},{learnerId:ACTIVE_LEARNER_ID,profile:Object.assign({},blank.profile,(x||{}).profile||{}),review:Object.assign({},blank.review,(x||{}).review||{})})}catch{return Object.assign(clone(blank),{learnerId:ACTIVE_LEARNER_ID})}}let s=load();
 function id(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8)}
 function esc(x){return String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function importLegacyPortfolio(){
+ if(!ACTIVE_LEARNER_ID){alert("Select an active Kindergarten learner in the Academy family profile, then reload this portfolio.");return}
+ if(localStorage.getItem(KEY)){alert("A learner-scoped portfolio already exists. Export and review it first; this import will not overwrite an existing portfolio.");return}
+ let legacy=null;try{legacy=JSON.parse(localStorage.getItem(LEGACY_KEY)||"null")}catch{}
+ if(!legacy||typeof legacy!=="object"){alert("No readable older portfolio was found. The original key has been left untouched.");return}
+ const initial=SCOPE.assessImport(legacy,ACTIVE_LEARNER_ID);
+ if(!initial.allowed&&initial.reason==="different-learner"){alert("This older portfolio identifies a different learner. It was not imported.");return}
+ const oldName=String(legacy.profile?.child||"Child not named");
+ const currentName=String(ACTIVE_LEARNER?.nickname||ACTIVE_LEARNER_ID);
+ if(!confirm("ADULT / GUARDIAN CONFIRMATION\n\nThe older portfolio is labeled “"+oldName+"” and has no verified learner ownership. Confirm that it belongs to the active learner “"+currentName+"” and copy it into that learner's separate portfolio?\n\nThe original legacy record will be preserved and not deleted."))return;
+ const decision=SCOPE.assessImport(legacy,ACTIVE_LEARNER_ID,{explicitAdultConfirmation:true});
+ if(!decision.allowed){alert("Ownership check blocked this import: "+decision.reason);return}
+ const imported=Object.assign(clone(blank),legacy,{learnerId:ACTIVE_LEARNER_ID,migration:{source:LEGACY_KEY,mode:"adult-confirmed-import",confirmedForLearnerId:ACTIVE_LEARNER_ID,importedAt:new Date().toISOString()}});
+ try{localStorage.setItem(KEY,JSON.stringify(imported));location.reload()}catch{alert("The older portfolio could not be copied because browser storage is unavailable or full. The original remains unchanged.")}
+}
 function profileCapture(){s.profile={child:$("childName").value,grade:$("grade").value,year:$("schoolYear").value,reviewer:$("reviewerName").value};s.childReflection=$("childReflection").value;s.review={breadth:$("checkBreadth").checked,reflection:$("checkReflection").checked,mastery:$("checkMastery").checked,authentic:$("checkAuthentic").checked,note:$("reviewerNote").value}}
-function save(msg="Portfolio saved locally"){profileCapture();try{localStorage.setItem(KEY,JSON.stringify(s));$("saveStatus").textContent=msg+" · "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"})}catch{$("saveStatus").textContent="Browser storage is full. Export the portfolio JSON and remove large image evidence if needed."}renderStats();renderKinderGrowth();renderReport()}
+function save(msg="Portfolio saved locally"){profileCapture();const current=SCOPE.detectActiveLearner(localStorage)?.learnerId||null;if(portfolioScopeChanged||current!==ACTIVE_LEARNER_ID){portfolioScopeChanged=true;$("saveStatus").textContent="The active Academy learner changed. Export this open portfolio if needed, then reload before saving.";return false}s.learnerId=ACTIVE_LEARNER_ID;try{localStorage.setItem(KEY,JSON.stringify(s));$("saveStatus").textContent=msg+" · "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});renderStats();renderKinderGrowth();renderReport();return true}catch{$("saveStatus").textContent="Browser storage is unavailable or full. Your changes were not saved. Export the portfolio JSON and retry.";return false}}
 function fingerprint(ev){return [ev.source,ev.externalId||"",ev.title,ev.date||""].join("|")}
 function addEvidence(ev){
  const item=Object.assign({id:id(),source:"Manual",sourceKey:"",externalId:"",subject:"Interdisciplinary",type:"artifact",title:"Untitled Evidence",description:"",reflection:"",date:new Date().toISOString(),status:"pending",mastery:null,preview:"",payload:null,tags:[]},ev||{});
@@ -298,8 +327,16 @@ function addEvidence(ev){
 }
 function safeParse(raw){try{return JSON.parse(raw)}catch{return null}}
 function scanLocalApps(){
- let found=0;KNOWN_SOURCES.forEach(src=>{const raw=localStorage.getItem(src.key);if(!raw)return;const data=safeParse(raw);if(!data)return;const before=s.evidence.length;adaptSource(src,data);found+=s.evidence.length-before});
- s.history.unshift(`${new Date().toLocaleString()} · Local scan added ${found} new evidence item${found===1?"":"s"}.`);s.history=s.history.slice(0,20);renderAll();save(`Local scan complete · ${found} new item${found===1?"":"s"}`)
+ let found=0,skipped=0;
+ KNOWN_SOURCES.forEach(src=>{
+   const raw=localStorage.getItem(src.key);if(!raw)return;
+   const data=safeParse(raw);if(!data)return;
+   const owner=SCOPE.ownerOf(data);
+   if(ACTIVE_LEARNER_ID&&owner!==ACTIVE_LEARNER_ID){skipped++;return}
+   const before=s.evidence.length;adaptSource(src,data);found+=s.evidence.length-before;
+ });
+ s.history.unshift(new Date().toLocaleString()+" · Local scan added "+found+" new evidence items; skipped "+skipped+" source records without matching learner ownership.");
+ s.history=s.history.slice(0,20);renderAll();save("Local scan complete · "+found+" new items; "+skipped+" skipped for ownership");
 }
 function baseEv(src,title,description,date,extra={}){return Object.assign({source:src.name,sourceKey:src.key,subject:src.subject,title,description:description||"",date:date||new Date().toISOString(),tags:[src.adapter]},extra)}
 function adaptSource(src,data){
@@ -339,8 +376,21 @@ function inferSourceFromJson(obj,fileName){
  return {name:app,key:"import",subject:"Interdisciplinary",adapter:"generic"}
 }
 async function importJsonFiles(files){
- let count=0;for(const f of files){try{const txt=await f.text(),obj=JSON.parse(txt),src=inferSourceFromJson(obj,f.name),data=obj.state||obj.settings||obj;const before=s.evidence.length;adaptSource(src,data);count+=s.evidence.length-before}catch{}}
- renderAll();save(`Imported ${count} evidence item${count===1?"":"s"} from JSON`)
+ let count=0,skipped=0;
+ for(const f of files){
+  try{
+   const txt=await f.text(),obj=JSON.parse(txt);
+   let decision=SCOPE.assessImport(obj,ACTIVE_LEARNER_ID);
+   if(!decision.allowed&&decision.reason==="adult-confirmation-required"){
+    const confirmed=confirm("Adult / guardian confirmation required. This JSON does not identify its learner. Confirm it belongs in the currently selected portfolio"+(ACTIVE_LEARNER?.nickname?" for "+ACTIVE_LEARNER.nickname:"")+"? The source file will not be changed.");
+    if(confirmed)decision=SCOPE.assessImport(obj,ACTIVE_LEARNER_ID,{explicitAdultConfirmation:true});
+   }
+   if(!decision.allowed){skipped++;continue}
+   const src=inferSourceFromJson(obj,f.name),data=obj.state||obj.settings||obj,before=s.evidence.length;
+   adaptSource(src,data);count+=s.evidence.length-before;
+  }catch{skipped++}
+ }
+ renderAll();save("Imported "+count+" evidence item"+(count===1?"":"s")+" from JSON; "+skipped+" file"+(skipped===1?"":"s")+" skipped");
 }
 async function importManualFiles(files){
  for(const f of files){if(f.type.startsWith("image/")){const preview=await compressImage(f);addEvidence({source:"File Upload",subject:guessSubject(f.name),title:f.name,type:"image",preview,description:"Image evidence uploaded from this device."})}else addEvidence({source:"File Upload",subject:guessSubject(f.name),title:f.name,type:f.type.includes("pdf")?"pdf":"file",description:`Local file reference · ${Math.round(f.size/1024)} KB`})}
@@ -535,7 +585,7 @@ async function exportVaultManifest(){
  catch{$("vaultStatus").textContent="vault export failed"}
 }
 
-function exportPortfolio(){profileCapture();const blob=new Blob([JSON.stringify({app:"Khaemenes Kinder Garden Portfolio Builder",version:1,exportedAt:new Date().toISOString(),profile:s.profile,evidence:s.evidence,childReflection:s.childReflection,review:s.review},null,2)],{type:"application/json"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="khaemenes-kindergarten-portfolio.json";a.click();setTimeout(()=>URL.revokeObjectURL(u),500)}
+function exportPortfolio(){profileCapture();const blob=new Blob([JSON.stringify({app:"Khaemenes Kinder Garden Portfolio Builder",version:2,learnerId:ACTIVE_LEARNER_ID,exportedAt:new Date().toISOString(),profile:s.profile,evidence:s.evidence,childReflection:s.childReflection,review:s.review},null,2)],{type:"application/json"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="khaemenes-kindergarten-portfolio.json";a.click();setTimeout(()=>URL.revokeObjectURL(u),500)}
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===t));document.querySelectorAll(".workspace").forEach(w=>w.classList.toggle("active",w.dataset.workspace===t.dataset.tab));renderAll()});
 ["childName","schoolYear","reviewerName","childReflection","reviewerNote"].forEach(id=>$(id).oninput=()=>save());$("grade").onchange=()=>save();["checkBreadth","checkReflection","checkMastery","checkAuthentic"].forEach(id=>$(id).onchange=()=>save());
 
@@ -554,6 +604,32 @@ $("saveReviewBtn").onclick=()=>{s.history.unshift(`${new Date().toLocaleString()
 
 $("childName").value=s.profile.child||"";$("grade").value=s.profile.grade||"Kindergarten";$("schoolYear").value=s.profile.year||"";$("reviewerName").value=s.profile.reviewer||"";$("childReflection").value=s.childReflection||"";$("checkBreadth").checked=!!s.review.breadth;$("checkReflection").checked=!!s.review.reflection;$("checkMastery").checked=!!s.review.mastery;$("checkAuthentic").checked=!!s.review.authentic;$("reviewerNote").value=s.review.note||"";
 $("manualSubject").innerHTML=SUBJECTS.map(x=>`<option>${x}</option>`).join("");
+function updatePortfolioScopeNotice(){
+ const notice=$("portfolioScopeNotice");
+ if(ACTIVE_LEARNER_ID)notice.textContent="Portfolio storage is isolated to active Academy learner ID "+ACTIVE_LEARNER_ID+". Same-origin scans auto-import only records with this exact learner ID.";
+ else notice.textContent="No active Kindergarten learner ID was detected. This workspace uses a separate unlinked local store; older portfolio data is not loaded automatically. Activate a learner and reload to open that learner's separate portfolio.";
+ const panel=$("legacyPortfolioPanel");
+ panel.style.display=(ACTIVE_LEARNER_ID&&!!localStorage.getItem(LEGACY_KEY)&&!localStorage.getItem(KEY))?"block":"none";
+ $("importLegacyPortfolioBtn").disabled=!ACTIVE_LEARNER_ID;
+}
+$("importLegacyPortfolioBtn").onclick=importLegacyPortfolio;
+updatePortfolioScopeNotice();
+window.addEventListener("storage",event=>{
+ if(!SCOPE.activeKeys.includes(event.key))return;
+ const current=SCOPE.detectActiveLearner(localStorage)?.learnerId||null;
+ if(current!==ACTIVE_LEARNER_ID){
+  portfolioScopeChanged=true;
+  $("portfolioScopeNotice").textContent="The active Academy learner changed in another tab. This portfolio is locked against further saves. Export if needed, then reload for the active learner.";
+  $("saveStatus").textContent="Active learner changed; saving is paused to prevent cross-learner writes.";
+ }
+});
+window.addEventListener("khaemenes-family-changed",()=>{
+ const current=SCOPE.detectActiveLearner(localStorage)?.learnerId||null;
+ if(current!==ACTIVE_LEARNER_ID){
+  portfolioScopeChanged=true;
+  $("portfolioScopeNotice").textContent="The active Academy learner changed. Reload this page to open the correct isolated portfolio.";
+ }
+});
 renderAll();renderAppFilters();renderApps();naibRenderSuggestions();updateVaultCount();
 })();
 </script>
