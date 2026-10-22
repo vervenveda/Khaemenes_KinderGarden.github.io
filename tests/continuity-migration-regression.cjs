@@ -77,13 +77,13 @@ test("unowned legacy record is preserved and requires explicit adult-confirmed i
   const legacy = { student: "Older Kindergarten Record", weekly: { "2": 88 }, midterm: 0, final: 0, portfolio: false };
   const h = createHarness({ learnerId: "learner-b", legacy });
   h.api.loadCurriculumState();
-  assert.deepEqual(h.api.legacyMigrationStatus(), {
+  assert.equal(JSON.stringify(h.api.legacyMigrationStatus()), JSON.stringify({
     available: true,
     status: "identity-unverified",
     activeLearnerId: "learner-b",
     legacyLearnerId: null,
     requiresAdultConfirmation: true
-  });
+  }));
   assert.equal(h.api.importLegacyCurriculumState({ learnerId: "learner-b" }).reason, "adult-confirmation-required");
   const result = h.api.importLegacyCurriculumState({ learnerId: "learner-b", adultConfirmed: true });
   assert.equal(result.ok, true);
