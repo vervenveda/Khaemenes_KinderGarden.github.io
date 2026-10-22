@@ -311,19 +311,47 @@
 
   function curriculumSummary(passingScore=80,totalUnits=36){
     const state=loadCurriculumState();
-    const values=Object.values(state.weekly||{}).map(Number).filter(v=>Number.isFinite(v)&&v>0);
-    const average=values.length?Math.round(values.reduce((a,b)=>a+b,0)/values.length):0;
-    const completed=Object.values(state.weekly||{}).filter(v=>Number(v)>=passingScore).length;
+    const gate=global.KhaemenesKinderMasteryGates;
+    // Compatibility scores are display/history data only. Formal completion and
+    // averages must come from learner-scoped, qualified mastery receipts.
+    if(!gate?.formalAccess?.()||typeof gate.weekMastery!=="function"||typeof gate.milestoneMastery!=="function"){
+      return {
+        state,completedUnits:0,weeklyAverage:0,midterm:0,final:0,portfolio:false,
+        certificationReady:false,masteryAuthority:"formal-receipts-required"
+      };
+    }
+    const scores=[];
+    let completed=0;
+    for(let n=1;n<=totalUnits;n++){
+      const receipt=gate.weekMastery(n);
+      const qualified=Math.max(0,Math.min(100,Number(receipt?.bestQualifiedPercent)||0));
+      const attempts=Array.isArray(receipt?.attempts)?receipt.attempts:[];
+      if(qualified>0||attempts.length>0)scores.push(qualified);
+      if(receipt?.mastered===true&&qualified>=passingScore)completed++;
+    }
+    const average=scores.length?Math.round(scores.reduce((sum,value)=>sum+value,0)/scores.length):0;
+    const mid=gate.milestoneMastery("midterm");
+    const fin=gate.milestoneMastery("final");
+    const record=gate.learnerRecord?.();
     return {
-      state,completedUnits:Math.min(totalUnits,completed),weeklyAverage:average,
-      midterm:Number(state.midterm||0),final:Number(state.final||0),portfolio:Boolean(state.portfolio),
-      certificationReady:completed>=totalUnits&&Number(state.midterm||0)>=passingScore&&Number(state.final||0)>=passingScore&&Boolean(state.portfolio)
+      state,
+      completedUnits:Math.min(totalUnits,completed),
+      weeklyAverage:average,
+      midterm:Math.max(0,Math.min(100,Number(mid?.bestQualifiedPercent)||0)),
+      final:Math.max(0,Math.min(100,Number(fin?.bestQualifiedPercent)||0)),
+      portfolio:Boolean(record?.portfolio),
+      certificationReady:Boolean(gate.certificationReady?.()),
+      masteryAuthority:"learner-scoped-qualified-receipts"
     };
   }
 
   function nextUnit(totalUnits=36,passingScore=80){
-    const state=loadCurriculumState();
-    for(let n=1;n<=totalUnits;n++)if(Number(state.weekly?.[n]||0)<passingScore)return n;
+    const gate=global.KhaemenesKinderMasteryGates;
+    if(!gate?.formalAccess?.()||typeof gate.weekMastery!=="function")return 1;
+    for(let n=1;n<=totalUnits;n++){
+      const receipt=gate.weekMastery(n);
+      if(receipt?.mastered!==true||Number(receipt?.bestQualifiedPercent||0)<passingScore)return n;
+    }
     return totalUnits;
   }
 
