@@ -445,6 +445,17 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
 
   function currentPathTarget(){
     const p=String(global.location?.pathname||"");
+    // Legacy lesson aliases must redirect before their wrapper attempts hydration.
+    // Preserve a repository-prefix path, query, and fragment on GitHub Pages.
+    const legacyLesson=p.match(/\/lessons\/unit-(\d{2})\/index\.html$/i);
+    if(legacyLesson&&!/\/curriculum\/lessons\/unit-\d{2}\/index\.html$/i.test(p)){
+      const nextPath=p.replace(/\/lessons\/unit-(\d{2})\/index\.html$/i,"/curriculum/lessons/unit-$1/index.html");
+      const nextUrl=new URL(nextPath,global.location.origin);
+      nextUrl.search=global.location.search||"";
+      nextUrl.hash=global.location.hash||"";
+      global.location.replace(nextUrl.href);
+      return null;
+    }
     let match=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/index\.html$/i);
     if(match)return {type:"week",unit:Number(match[1])};
     match=p.match(/\/curriculum\/lessons\/unit-(\d{2})\/formal-content\.html$/i);
@@ -454,6 +465,12 @@ const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
     if(/\/curriculum\/assessments\/midterm\.html$/i.test(p))return {type:"milestone",kind:"midterm"};
     if(/\/curriculum\/assessments\/final-exam\.html$/i.test(p))return {type:"milestone",kind:"final"};
     if(/\/curriculum\/assessments\/weekly-assessments\.html$/i.test(p))return {type:"assessment-index"};
+    // Older root-level aliases feed the same learner-scoped gate; never leave the wrapper waiting.
+    match=p.match(/\/assessments\/unit-(\d{2})-assessment\.html$/i);
+    if(match)return {type:"week-assessment",unit:Number(match[1])};
+    if(/\/assessments\/midterm\.html$/i.test(p))return {type:"milestone",kind:"midterm"};
+    if(/\/assessments\/final-exam\.html$/i.test(p))return {type:"milestone",kind:"final"};
+    if(/\/assessments\/weekly-assessments\.html$/i.test(p))return {type:"assessment-index"};
     return null;
   }
 
