@@ -82,7 +82,7 @@ for(const marker of [
   'const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36])',
   'reviewedUnlocks:false','legacyScoresUnlock:false','directUrlUnlocks:false',
   'bestMasteryPreserved:true','dailyEvidenceIsMastery:false','recordDayEvidence',
-  'canOpenDay','allDaysComplete','essentialSatisfied=true','clearActiveMasteryRecord','adultAffirmed!==true'
+  'canOpenDay','allDaysComplete','const essential=essentialSatisfied===true','clearActiveMasteryRecord','adultAffirmed!==true'
 ])assert.ok(gate.includes(marker),`authority must preserve ${marker}`);
 assert.ok(gate.includes('const best=Math.max(old.bestPercent,percent)')&&gate.includes('const bestQualified=Math.max(old.bestQualifiedPercent,essential?percent:0)'),"best evidence and qualifying mastery must be preserved");
 assert.ok(gate.includes('n>=19&&!milestoneMastery("midterm").mastered'),"Week 19+ must require midyear mastery");
@@ -129,6 +129,10 @@ function makeGateHarness({failWrites=false}={}){
   }
   assert.equal(G.allDaysComplete(26),true,"five saved receipts should complete the daily sequence");
   assert.equal(G.canAssessWeek(26),true,"weekly mastery should become eligible after five saved receipts");
+  const missingEssential=G.recordWeekEvidence({unit:26,met:80,total:100,adultAffirmed:true});
+  assert.equal(missingEssential.bestPercent,80,"raw best score remains recorded");
+  assert.equal(missingEssential.bestQualifiedPercent,0,"omitted essential result must not qualify mastery");
+  assert.equal(missingEssential.mastered,false,"omitted essential result cannot mark the week mastered");
 }
 {
   const h=makeGateHarness({failWrites:true}),G=h.G;
@@ -139,7 +143,9 @@ function makeGateHarness({failWrites=false}={}){
 
 assert.ok(gate.includes('for(let i=1;i<=18;i++)if(!weekMastery(i).mastered)return false'),"midyear must require Weeks 1-18");
 assert.ok(gate.includes('for(let i=1;i<=TOTAL_WEEKS;i++)if(!weekMastery(i).mastered)return false'),"final must require all 36 weeks");
-assert.ok(gate.includes('function recordMilestoneEvidence({')&&gate.includes('source="adult-observed-performance-demonstration",\n    adultAffirmed=false,\n    essentialSatisfied=true')&&gate.includes('met,total,source,adultAffirmed,essentialSatisfied'),"milestone authority must accept and enforce essential core evidence");
+assert.ok(gate.includes('function recordMilestoneEvidence({')&&gate.includes('source="adult-observed-performance-demonstration",\n    adultAffirmed=false,\n    essentialSatisfied')&&gate.includes('met,total,source,adultAffirmed,essentialSatisfied'),"milestone authority must require explicit essential-core evidence");
+assert.ok(!gate.includes("essentialSatisfied=true"),"weekly and milestone APIs must not default omitted essential criteria to true");
+assert.ok(gate.includes("const essential=essentialSatisfied===true"),"only explicit true may qualify mastery");
 for(const marker of ['week-assessment','midterm\\.html','final-exam\\.html','formal-content\\.html','redirectLegacyAssessment'])assert.ok(gate.includes(marker),`formal route contract must preserve ${marker}`);
 
 assert.ok(app.includes('const GATES=window.KhaemenesKinderMasteryGates')&&app.includes('GATES.weekMastery')&&app.includes('GATES?.milestoneMastery'),"dashboard must consume mastery authority");
