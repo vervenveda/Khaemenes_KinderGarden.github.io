@@ -15,6 +15,7 @@ on:
       - 'scripts/inject-kindergarten-formal-gates.mjs'
       - 'scripts/validate-kindergarten-mastery-gates.mjs'
       - 'scripts/validate-kindergarten-links.mjs'
+      - 'scripts/validate-legacy-formal-routes.mjs'
       - '.github/workflows/kindergarten-formal-gate-rollout.yml'
   pull_request:
     branches: [main]
@@ -30,6 +31,7 @@ on:
       - 'scripts/inject-kindergarten-formal-gates.mjs'
       - 'scripts/validate-kindergarten-mastery-gates.mjs'
       - 'scripts/validate-kindergarten-links.mjs'
+      - 'scripts/validate-legacy-formal-routes.mjs'
       - '.github/workflows/kindergarten-formal-gate-rollout.yml'
 
 permissions:
@@ -55,6 +57,8 @@ jobs:
         run: node scripts/inject-kindergarten-formal-gates.mjs --check
       - name: Validate local HTML links and assets
         run: node scripts/validate-kindergarten-links.mjs
+      - name: Validate legacy formal route aliases
+        run: node scripts/validate-legacy-formal-routes.mjs
       - name: Validate dependency boundary
         run: node scripts/validate-dependency-boundary.mjs
       - name: Validate Academy mastery contract
