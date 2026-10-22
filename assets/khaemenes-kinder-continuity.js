@@ -291,7 +291,10 @@
     state.updatedAt=new Date().toISOString();
     const records=allLearnerRecords();
     records[p.learnerId]=state;
-    writeJSON(KEYS.kindergartenByLearner,records);
+    // The learner-scoped record is authoritative: never return a saved-looking
+    // state object when its write failed.
+    if(!writeJSON(KEYS.kindergartenByLearner,records))return false;
+    // The legacy mirror is compatibility-only and must never override canonical progress.
     if(canWriteLegacyForLearner(p.learnerId))writeJSON(KEYS.legacyKindergarten,state);
     return normalizeState(state);
   }
