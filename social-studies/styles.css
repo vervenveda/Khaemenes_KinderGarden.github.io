@@ -1,0 +1,25 @@
+:root{
+  --paper:#fffaf0;--ink:#23312a;--soft:#5d6c65;--forest:#315d4d;--gold:#d5a84c;
+  --line:#d8ddd7;--r:7px;--display:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --body:"Comic Sans MS","Avenir Next","Segoe UI",sans-serif
+}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:333 16px/1.62 var(--body)}
+button,input,select,textarea{font:inherit}
+button,a.button{min-height:42px;border:1px solid #afbbb4;border-radius:var(--r);padding:9px 13px;background:#fff;color:var(--ink);text-decoration:none;cursor:pointer}
+.shell{width:min(900px,calc(100% - 28px));margin:auto}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.card{margin:14px 0;padding:20px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+.eyebrow{font:400 13px var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--forest)}
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--ink)}
+.lesson{padding:15px;border:1px solid var(--line);border-radius:var(--r);margin-top:10px;background:#fffefb}
+.lesson h3{margin:0 0 6px}
+strong{font-weight:500}
+@media(max-width:600px){body{font-size:15px}.shell{width:min(100% - 20px,900px)}.card{padding:16px}}
+@media print{
+  .noPrint{display:none!important}
+  body{background:#fff}
+  .shell{width:100%;max-width:none}
+  .card{box-shadow:none;break-inside:avoid;border-color:#999}
+  a{color:#000;text-decoration:none}
+}
