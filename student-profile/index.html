@@ -64,7 +64,7 @@ footer{padding:24px 0;text-align:center;font-size:13px;color:var(--muted)}
 <div class="grid">
 <section class="card span7" aria-labelledby="nextTitle"><h2 id="nextTitle">Today · Next</h2><div id="nextStep" class="activity-list" aria-live="polite"><a class="activity" href="../#student">Open Kinder Garden’s family-guided activities →</a></div></section>
 <section class="card span5" aria-labelledby="pinsTitle"><h2 id="pinsTitle">📌 My pinned adventures</h2><div id="pinnedActivities" class="activity-list"><p class="muted">Pin your favorite games in the Kinder Garden Adventure Garden.</p></div>
-<div class="actions"><button type="button" class="secondary" id="pinKinderCourse">📌 Pin Kindergarten class</button></div>
+<div class="actions"><button type="button" class="secondary" id="pinKinderCourse">📌 Pin Kindergarten class</button><button type="button" class="secondary" id="unpinKinderCourse">Remove class pin</button></div>
 <label for="appSelect">Choose a favorite learning game</label><select id="appSelect"><option value="">Choose a game</option></select>
 <button type="button" class="secondary" id="pinSelectedApp">📌 Pin game</button><button type="button" class="secondary" id="unpinSelectedApp">Unpin selected game</button><a class="button secondary" href="../#apps">Find more adventures →</a></section>
 <section class="card span6 appearance-controls" aria-labelledby="pictureTitle">
@@ -82,6 +82,14 @@ footer{padding:24px 0;text-align:center;font-size:13px;color:var(--muted)}
 <p id="lookStatus" class="status" aria-live="polite"></p>
 </section>
 </div>
+<section class="card" id="gradeOnePreview" aria-labelledby="milestoneTitle">
+<p class="eyebrow">One grade's growth · a new horizon</p><h2 id="milestoneTitle">🏛️ My Grade 1 discovery preview</h2>
+<p class="muted">See what travels with this learner toward Elementary School. This is a preview, never a graduation approval or enrollment change.</p>
+<div class="actions"><button type="button" id="previewGradeOne" class="secondary" aria-expanded="false" aria-controls="gradeOneDetails">Preview the Grade 1 handoff</button><a class="button secondary" href="../graduation/">✨ The Lantern Bridge Graduation</a></div>
+<div id="gradeOneDetails" hidden><h3 id="gradeOneName">My next learning adventure</h3><p id="gradeOneSummary" class="muted"></p>
+<div class="actions"><a class="button secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">Explore Grade 1</a><a class="button secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family placement controls</a></div>
+<p class="notice">Only a parent or authorized educator can complete formal placement. Kindergarten's 36-week assessment and portfolio requirements remain separate.</p></div>
+</section>
 <section class="card" id="learningStudio">
 <p class="eyebrow">One profile · the full Academy feature spectrum</p>
 <h2>Goals, learning map, evidence, workspace &amp; backups</h2>
@@ -190,6 +198,7 @@ function renderLearnerChoices(){
  area.hidden=candidates.length===0||(candidates.length===1&&Boolean(learner()));
 }
 function refresh(){
+ $("gradeOneDetails").hidden=true;$("previewGradeOne").setAttribute("aria-expanded","false");
  renderLearnerChoices();
  const l=learner();
  const box=$("accountNote");
@@ -245,6 +254,26 @@ $("usePreschoolPhoto").addEventListener("click",()=>{
  if(!saveLook()){look=prior;renderLook()}else announce("Pre-K picture and background copied. The original Pre-K record is unchanged.");
 });
 $("printProfile").addEventListener("click",()=>window.print());
+$("unpinKinderCourse").addEventListener("click",()=>{
+ if(!consent())return;
+ const key="khaemenes_course_pins_v1",record=read(key,null);
+ if(record?.version!==1||!record.learners||typeof record.learners!=="object"||Array.isArray(record.learners)){announce("Class pin record has an unfamiliar format. Nothing changed.",true);return}
+ const prev=record.learners[activeId];
+ if(prev!==undefined&&!Array.isArray(prev)){announce("Existing learner class pins need review. Nothing changed.",true);return}
+ if(!pinnedCourse()){announce("Kindergarten class is not currently pinned.");return}
+ record.learners[activeId]=(prev||[]).filter(x=>x?.id!=="khaemenes-kindergarten"&&x?.courseId!=="khaemenes-kindergarten");
+ record.updatedAt=new Date().toISOString();
+ try{localStorage.setItem(key,JSON.stringify(record));renderLearning();announce("Kindergarten class pin removed. Curriculum progress is unchanged.")}catch{announce("Unable to update class pins.",true)}
+});
+$("previewGradeOne").addEventListener("click",()=>{
+ const child=learner();
+ if(!child){announce("Choose an existing Kindergarten learner first.",true);return}
+ const box=$("gradeOneDetails"),show=box.hidden;box.hidden=!show;$("previewGradeOne").setAttribute("aria-expanded",String(show));
+ if(show){
+  $("gradeOneName").textContent=(child.nickname||"Our learner")+"'s next Academy chapter";
+  $("gradeOneSummary").textContent="Current profile: Kindergarten · "+(pinnedCourse()?"Kindergarten class pinned":"Kindergarten class not pinned")+" · "+pinnedApps().length+" favorite games. The current learner ID, photo, language settings, and Academy Learning Compass can continue into Elementary with family assistance.";
+ }
+});
 $("pinKinderCourse").addEventListener("click",()=>{
  if(!consent())return;
  const key="khaemenes_course_pins_v1",saved=read(key,{version:1,learners:{},updatedAt:null});
