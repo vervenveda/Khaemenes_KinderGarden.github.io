@@ -1,0 +1,70 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import {chromium} from "playwright";
+const root=process.cwd(),academy=path.join(root,"shared-academy");
+const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=utf-8",".css":"text/css; charset=utf-8"};
+const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1024,height:860},acceptDownloads:true,reducedMotion:"reduce"});
+const errors=[],page=await context.newPage();
+page.on("pageerror",e=>errors.push(e.message));
+const base="https://vervenveda.com/Khaemenes_KinderGarden.github.io/graduation/";
+let readinessFixture=false;
+await page.route("https://vervenveda.com/**",async route=>{
+ const url=new URL(route.request().url()),p=url.pathname;
+ let home=root,local=p;
+ if(p.startsWith("/Khaemenes_KinderGarden.github.io/"))local=p.slice("/Khaemenes_KinderGarden.github.io".length);
+ else if(p.startsWith("/Khaemenes_Academy.github.io/")){home=academy;local=p.slice("/Khaemenes_Academy.github.io".length)}
+ else return route.fulfill({status:404,body:"Not available in isolated test"});
+ if(readinessFixture&&p.endsWith("/assets/khaemenes-kinder-mastery-gates.js")){
+   // Isolated UI fixture: not the actual mastery engine and never shipped to students.
+   const stub='window.KhaemenesKinderMasteryGates={formalAccess:()=>true,certificationReady:()=>true,weekMastery:()=>({mastered:true}),milestoneMastery:()=>({mastered:true,bestPercent:95}),learnerRecord:()=>({portfolio:true})};';
+   return route.fulfill({status:200,contentType:"text/javascript",body:stub});
+ }
+ let filename=path.resolve(home,"."+local);
+ if(!filename.startsWith(home+path.sep)&&filename!==home)return route.fulfill({status:403});
+ try{if(fs.statSync(filename).isDirectory())filename=path.join(filename,"index.html");const body=fs.readFileSync(filename);await route.fulfill({status:200,contentType:mime[path.extname(filename)]||"application/octet-stream",body})}
+ catch{await route.fulfill({status:404,body:"Missing"})}
+});
+try{
+ await page.goto(base,{waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#lanterns .lantern").count(),36);
+ assert.equal(await page.locator("#celebrate").isDisabled(),true);
+ assert.equal(await page.locator("#printKeepsake").isDisabled(),true);
+ assert.equal(await page.locator("#certificate").isVisible(),false);
+ console.log("PASS guest cannot receive or print graduation credential");
+ await page.evaluate(()=>{
+   const R=window.KhaemenesFamilyRegistry,fam=R.createFamily({displayName:"Graduation QA",adultName:"QA Parent"});
+   const a=R.registerLearner({familyId:fam.familyId,nickname:"Star Learner",stage:"kindergarten",grade:"k"});
+   const b=R.registerLearner({familyId:fam.familyId,nickname:"Second Learner",stage:"kindergarten",grade:"k"});
+   R.setActive({familyId:fam.familyId,learnerId:a.learnerId});
+ });
+ await page.reload({waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#celebrate").isDisabled(),true);
+ assert.equal(await page.locator("#certificate").isVisible(),false);
+ assert.match(await page.locator("#weekResult").innerText(),/0\/36/);
+ console.log("PASS enrolled learner without mastered weeks remains locked");
+ const initial=await page.evaluate(()=>localStorage.getItem("khaemenes_kindergarten_mastery_receipts_v1"));
+ readinessFixture=true;
+ await page.reload({waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#celebrate").isEnabled(),true);
+ assert.equal(await page.locator("#printKeepsake").isEnabled(),true);
+ await page.locator("#celebrate").click();
+ assert.equal(await page.locator("#certificate").isVisible(),true);
+ assert.equal(await page.locator("#certName").innerText(),"Star Learner");
+ assert.match(await page.locator("#certEvidence").innerText(),/36\/36/);
+ assert.match(await page.locator("#certificate").innerText(),/provisional/i);
+ const after=await page.evaluate(()=>localStorage.getItem("khaemenes_kindergarten_mastery_receipts_v1"));
+ assert.equal(after,initial,"graduation UI must never write formal mastery storage");
+ assert.equal(await page.evaluate(()=>window.KhaemenesFamilyRegistry.getLearner().stage),"kindergarten","ceremony must never promote learner");
+ console.log("PASS full UI ceremony renders only after mocked official completion signal without writing grades or placement");
+ await page.evaluate(()=>window.KhaemenesFamilyRegistry.updateLearnerPlacement(window.KhaemenesFamilyRegistry.getLearner().learnerId,{stage:"elementary",grade:"01"}));
+ await page.reload({waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#celebrate").isDisabled(),true);
+ assert.equal(await page.locator("#certificate").isVisible(),false);
+ console.log("PASS Elementary-placed learner does not receive fresh Kindergarten ceremony");
+ await page.setViewportSize({width:390,height:844});
+ const widths=await page.evaluate(()=>({view:innerWidth,scroll:document.documentElement.scrollWidth}));
+ assert.ok(widths.scroll<=widths.view+5,"graduation portal mobile overflow: "+JSON.stringify(widths));
+ assert.deepEqual(errors,[],"uncaught errors: "+JSON.stringify(errors));
+ console.log("PASS Kindergarten Lantern Bridge browser smoke");
+}finally{await context.close();await browser.close()}
