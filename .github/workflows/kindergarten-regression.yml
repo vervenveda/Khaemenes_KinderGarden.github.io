@@ -35,3 +35,5 @@ jobs:
         run: node tests/printables-regression.cjs
       - name: Check instructional depth for Weeks 31–36
         run: node tests/instructional-depth-week-31-36.cjs
+      - name: Check instructional depth for Weeks 01–04
+        run: node tests/instructional-depth-week-01-04.cjs
