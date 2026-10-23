@@ -1,0 +1,41 @@
+name: Kindergarten Student Profile Browser Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - "student-profile/**"
+      - "index.html"
+      - "family/index.html"
+      - "tests/kindergarten-profile-browser-smoke.mjs"
+      - ".github/workflows/kindergarten-student-profile-browser.yml"
+  pull_request:
+    paths:
+      - "student-profile/**"
+      - "index.html"
+      - "family/index.html"
+      - "tests/kindergarten-profile-browser-smoke.mjs"
+      - ".github/workflows/kindergarten-student-profile-browser.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout canonical Academy student profile
+        uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Academy.github.io
+          ref: main
+          path: shared-academy
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: npm install --no-save --no-package-lock playwright
+      - name: Install Chromium
+        run: npx playwright install chromium
+      - name: Test Kindergarten profile and learner isolation
+        run: node tests/kindergarten-profile-browser-smoke.mjs
