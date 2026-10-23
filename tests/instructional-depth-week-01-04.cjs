@@ -25,8 +25,13 @@ for(let week=1;week<=4;week++){
     }
   });
   test("Week "+id+": scaffold does not replace original activities",()=>{
-    const activityCount=(html.match(/<div class="kg-activity">/g)||[]).length;
-    assert.ok(activityCount>=5,"Week "+id+" original interactive activities should remain");
+    if(week===2){
+      assert.equal((html.match(/<strong>Workshop:<\/strong>/g)||[]).length,5,"Week 02 workshop learning activities should remain");
+      assert.equal((html.match(/<strong>Centers:<\/strong>/g)||[]).length,5,"Week 02 center recommendations should remain");
+    }else{
+      const activityCount=(html.match(/<div class="kg-activity">/g)||[]).length;
+      assert.ok(activityCount>=5,"Week "+id+" original interactive activities should remain");
+    }
     assert.ok(html.includes("80%")||week===1,"Week "+id+" course must retain formal mastery messaging when present");
   });
   const packet=fs.readFileSync(path.resolve(__dirname,"../curriculum/printables/unit-"+id+"-packet.html"),"utf8");
