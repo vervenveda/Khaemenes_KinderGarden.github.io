@@ -49,7 +49,7 @@ function build(){
   }
   const result=addPin(l.learnerId);
   if(!result.ok){$("kpStatus").textContent="We couldn't save the pin in this browser. The class is still available; please try again after opening the correct learner profile.";return}
-  markSeen(l.learnerId);
+  markSeen(l.learnerId);try{g.sessionStorage.removeItem(HANDOFF_KEY)}catch{}
   $("kpTitle").textContent=result.already?"Kinder Garden is already pinned!":"Kinder Garden is pinned!";
   $("kpDescription").textContent=result.already?"This class is already saved in the selected learner's Academy Student Profile.":"Khaemenes Kinder Garden is now saved in this learner's Academy Student Profile.";
   $("kpStatus").textContent=result.already?"No duplicate pin was added.":"Saved for "+l.nickname+".";
@@ -81,7 +81,7 @@ function open(){
  }
  root.hidden=false;$("kpSave").focus();
 }
-function close(reason){const root=$("kinderPinPrompt");if(!root)return;markSeen(learner()&&learner().learnerId||"guest");root.hidden=true}
+function close(reason){const root=$("kinderPinPrompt");if(!root)return;markSeen(learner()&&learner().learnerId||"guest");if(reason==="later"){try{g.sessionStorage.removeItem(HANDOFF_KEY)}catch{}}root.hidden=true}
 function init(){try{open()}catch(e){console.warn("Kindergarten pin prompt could not open safely",e)}}
 if(g.document.readyState==="loading")g.document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 g.KhaemenesKindergartenPinPrompt=Object.freeze({open,close,hasPin,addPin,coursePin:COURSE});
