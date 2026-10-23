@@ -52,6 +52,7 @@ try{
  assert.equal(await page.locator("body").getAttribute("data-prek-background"),"forest");
  assert.equal(await page.locator("#childTitle").innerText(),"QA Sunshine");
  console.log("PASS profile appearance persists on reload");
+ await page.locator("#adultConfirm").check();
  await page.locator("#pinKinderCourse").click();
  assert.match(await page.locator("#pinnedActivities").innerText(),/My Kindergarten Class/);
  await page.locator("#appSelect").selectOption("abc-curriculum");
