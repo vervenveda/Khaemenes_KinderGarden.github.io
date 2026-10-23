@@ -4,6 +4,7 @@ const path=require("node:path");
 const assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"../curriculum/lessons");
 const checks=[];
+// Scope structural checks to the five visible lesson articles, not repeated teacher-facing reference text.
 function test(name,fn){fn();checks.push(name);console.log("PASS "+name);}
 for(let week=31;week<=36;week++){
   const id=String(week).padStart(2,"0");
