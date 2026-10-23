@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://khaemenesacademy.org/social-studies/state-pack.schema.json",
+  "title": "Khaemenes Academy Social Studies State Pack",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "stateCode",
+    "stateName",
+    "grade",
+    "status",
+    "geography",
+    "indigenousNations",
+    "chronology",
+    "government",
+    "civicInstitutions",
+    "contributors",
+    "economy",
+    "archivesMuseums",
+    "sourceSets",
+    "checkpointSubstitutions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "stateCode": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 2
+    },
+    "stateName": {
+      "type": "string"
+    },
+    "grade": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "status": {
+      "enum": [
+        "template",
+        "validation",
+        "complete"
+      ]
+    },
+    "geography": {
+      "type": "array"
+    },
+    "indigenousNations": {
+      "type": "array"
+    },
+    "chronology": {
+      "type": "array"
+    },
+    "government": {
+      "type": "array"
+    },
+    "civicInstitutions": {
+      "type": "array"
+    },
+    "contributors": {
+      "type": "array"
+    },
+    "economy": {
+      "type": "array"
+    },
+    "archivesMuseums": {
+      "type": "array"
+    },
+    "sourceSets": {
+      "type": "array"
+    },
+    "checkpointSubstitutions": {
+      "type": "object"
+    },
+    "privacyAndNonpartisan": {
+      "type": "object"
+    }
+  }
+}

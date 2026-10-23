@@ -7,8 +7,8 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "dailyLessons": 180,
     "masteryThreshold": 80,
     "assessmentDraw": 5,
-    "questionBankPerWeek": 8,
-    "version": "1.2.0",
+    "questionBankPerWeek": 10,
+    "version": "1.4.0",
     "updated": "2026-10-23",
     "storageKey": "khaemenes_kindergarten_social_studies_v1",
     "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency.",
@@ -46,10 +46,26 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "cumulativeBlueprint": "unit-stratified",
     "assessmentModel": "Teacher-assisted randomized forms with answer shuffling, two-form anti-repeat weighting, saved attempt snapshots, and unit-stratified cumulative checks.",
     "statePacks": {
-      "florida": "STATE_PACK_FLORIDA.md"
+      "florida": "STATE_PACK_FLORIDA.md",
+      "california": "STATE_PACK_CALIFORNIA.md",
+      "newYork": "STATE_PACK_NEW_YORK.md",
+      "template": "STATE_PACK_TEMPLATE.md"
     },
     "localizationWorkflow": "Teacher-selected generic or Florida context with simple checkpoint evidence saved in the learner record.",
-    "constructedEvidenceReview": "observed / revise / accepted is recorded separately from the 80% objective mastery gate."
+    "constructedEvidenceReview": "observed / revise / accepted is recorded separately from the 80% objective mastery gate.",
+    "sourceStudios": true,
+    "sourceStudioSourcesPerWeek": 3,
+    "sourceLinkedWeeklyItems": 2,
+    "evidenceLadder": "Kindergarten: point / draw / tell one evidence clue; adult transcription permitted.",
+    "weeklyBankMax": 10,
+    "statePackSchema": "STATE_PACK_SCHEMA.json",
+    "statePackTemplate": "STATE_PACK_TEMPLATE.md",
+    "statePackStatus": {
+      "florida": "complete",
+      "california": "validation",
+      "newYork": "validation",
+      "template": "template"
+    }
   },
   "frameworks": [
     {
@@ -220,6 +236,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 1,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W01-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 1?",
+          "choices": [
+            "A community is a group of people who share places, responsibilities, and ways of helping one another.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 1
+        },
+        {
+          "id": "KSS-W01-ST2",
+          "prompt": "Source B defines \"community\". Which word matches that clue?",
+          "choices": [
+            "community",
+            "scholar",
+            "responsibility",
+            "belonging"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 1
         }
       ],
       "currentQuestions": [
@@ -315,7 +357,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 1,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 1",
+        "inquiry": "What makes a classroom a community?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 1 · I Am Part of a Community",
+            "content": "A community is a group of people who share places, responsibilities, and ways of helping one another.",
+            "accessibleDescription": "A short evidence brief stating the central idea for I Am Part of a Community.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 1 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for I Am Part of a Community",
+            "rows": [
+              [
+                "community",
+                "community"
+              ],
+              [
+                "scholar",
+                "scholar"
+              ],
+              [
+                "responsibility",
+                "responsibility"
+              ],
+              [
+                "belonging",
+                "belonging"
+              ]
+            ],
+            "accessibleDescription": "A text-based evidence brief presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 1 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What makes a classroom a community?",
+            "findings": [
+              {
+                "question": "What is a community?",
+                "finding": "A group of people who share places and responsibilities"
+              },
+              {
+                "question": "Which action helps a classroom community?",
+                "finding": "Putting materials away so others can use them"
+              },
+              {
+                "question": "What does responsibility mean?",
+                "finding": "A job or action we are expected to take care of"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 1 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What makes a classroom a community?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 2,
@@ -458,6 +582,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 2,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W02-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 2?",
+          "choices": [
+            "Families may look, live, and celebrate in different ways while sharing care, connection, and responsibility.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 2
+        },
+        {
+          "id": "KSS-W02-ST2",
+          "prompt": "Source B defines \"family\". Which word matches that clue?",
+          "choices": [
+            "family",
+            "tradition",
+            "care",
+            "compare"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 2
         }
       ],
       "currentQuestions": [
@@ -553,7 +703,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 2,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 2",
+        "inquiry": "How can families be alike and different?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 2 · Families and Many Ways to Belong",
+            "content": "Families may look, live, and celebrate in different ways while sharing care, connection, and responsibility.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Families and Many Ways to Belong.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 2 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "timeline / sequence card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Families and Many Ways to Belong",
+            "rows": [
+              [
+                "family",
+                "family"
+              ],
+              [
+                "tradition",
+                "tradition"
+              ],
+              [
+                "care",
+                "care"
+              ],
+              [
+                "compare",
+                "compare"
+              ]
+            ],
+            "accessibleDescription": "A text-based timeline / sequence card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 2 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can families be alike and different?",
+            "findings": [
+              {
+                "question": "Families can be...",
+                "finding": "Different from one another and still be families"
+              },
+              {
+                "question": "What does compare mean?",
+                "finding": "Notice how things are alike and different"
+              },
+              {
+                "question": "Which is a respectful way to learn about families?",
+                "finding": "Ask kind questions and let people choose what to share"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 2 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can families be alike and different?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 3,
@@ -696,6 +928,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 3,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W03-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 3?",
+          "choices": [
+            "Schools work because people take different roles and cooperate to meet shared needs.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 3
+        },
+        {
+          "id": "KSS-W03-ST2",
+          "prompt": "Source B defines \"role\". Which word matches that clue?",
+          "choices": [
+            "role",
+            "helper",
+            "service",
+            "cooperate"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 3
         }
       ],
       "currentQuestions": [
@@ -791,7 +1049,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 3,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 3",
+        "inquiry": "How do people help a school community?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 3 · Our School and the People Who Help It Work",
+            "content": "Schools work because people take different roles and cooperate to meet shared needs.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Our School and the People Who Help It Work.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 3 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "data / comparison table",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Our School and the People Who Help It Work",
+            "rows": [
+              [
+                "role",
+                "role"
+              ],
+              [
+                "helper",
+                "helper"
+              ],
+              [
+                "service",
+                "service"
+              ],
+              [
+                "cooperate",
+                "cooperate"
+              ]
+            ],
+            "accessibleDescription": "A text-based data / comparison table presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 3 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do people help a school community?",
+            "findings": [
+              {
+                "question": "What is a role?",
+                "finding": "A job or part someone has in a group"
+              },
+              {
+                "question": "Why are school helpers important?",
+                "finding": "Different roles help the school meet shared needs"
+              },
+              {
+                "question": "What does cooperate mean?",
+                "finding": "Work together toward a shared goal"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 3 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do people help a school community?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 4,
@@ -934,6 +1274,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 4,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W04-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 4?",
+          "choices": [
+            "We can use examples and evidence to explain how people belong to and help communities.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 4
+        },
+        {
+          "id": "KSS-W04-ST2",
+          "prompt": "Source B defines \"evidence\". Which word matches that clue?",
+          "choices": [
+            "evidence",
+            "explain",
+            "community",
+            "responsibility"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 4
         }
       ],
       "currentQuestions": [
@@ -1029,7 +1395,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 4,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 4",
+        "inquiry": "How can we show what we know about belonging, roles, and responsibility?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 4 · Unit Inquiry · How Communities Work",
+            "content": "We can use examples and evidence to explain how people belong to and help communities.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · How Communities Work.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 4 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "artifact description card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · How Communities Work",
+            "rows": [
+              [
+                "evidence",
+                "evidence"
+              ],
+              [
+                "explain",
+                "explain"
+              ],
+              [
+                "community",
+                "community"
+              ],
+              [
+                "responsibility",
+                "responsibility"
+              ]
+            ],
+            "accessibleDescription": "A text-based artifact description card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 4 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can we show what we know about belonging, roles, and responsibility?",
+            "findings": [
+              {
+                "question": "What is evidence?",
+                "finding": "A clue or source that helps support an idea"
+              },
+              {
+                "question": "A strong explanation should include...",
+                "finding": "An idea and an example or clue that supports it"
+              },
+              {
+                "question": "Which example shows community responsibility?",
+                "finding": "Returning shared materials after using them"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 4 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can we show what we know about belonging, roles, and responsibility?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 5,
@@ -1172,6 +1620,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 5,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W05-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 5?",
+          "choices": [
+            "Rules can protect safety, fairness, learning, and shared spaces when people understand their purpose.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 5
+        },
+        {
+          "id": "KSS-W05-ST2",
+          "prompt": "Source B defines \"rule\". Which word matches that clue?",
+          "choices": [
+            "rule",
+            "safe",
+            "fair",
+            "reason"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 5
         }
       ],
       "currentQuestions": [
@@ -1267,7 +1741,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 5,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 5",
+        "inquiry": "Why do groups make rules?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 5 · Why We Have Rules",
+            "content": "Rules can protect safety, fairness, learning, and shared spaces when people understand their purpose.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Why We Have Rules.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 5 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "civic / community document card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Why We Have Rules",
+            "rows": [
+              [
+                "rule",
+                "rule"
+              ],
+              [
+                "safe",
+                "safe"
+              ],
+              [
+                "fair",
+                "fair"
+              ],
+              [
+                "reason",
+                "reason"
+              ]
+            ],
+            "accessibleDescription": "A text-based civic / community document card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 5 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to Why do groups make rules?",
+            "findings": [
+              {
+                "question": "Why do groups make useful rules?",
+                "finding": "To support safety, fairness, learning, or shared spaces"
+              },
+              {
+                "question": "A fair rule should...",
+                "finding": "Apply in a reasonable way and have a clear purpose"
+              },
+              {
+                "question": "Which rule best supports safety?",
+                "finding": "Walk indoors where people may be moving closely together"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 5 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"Why do groups make rules?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 6,
@@ -1410,6 +1966,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 6,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W06-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 6?",
+          "choices": [
+            "Fairness means treating people with care and justice; fair solutions may consider different needs, not only identical treatment.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 6
+        },
+        {
+          "id": "KSS-W06-ST2",
+          "prompt": "Source B defines \"fairness\". Which word matches that clue?",
+          "choices": [
+            "fairness",
+            "equal",
+            "need",
+            "solution"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 6
         }
       ],
       "currentQuestions": [
@@ -1505,7 +2087,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 6,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 6",
+        "inquiry": "What does fairness look like?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 6 · Fairness Is More Than 'Same'",
+            "content": "Fairness means treating people with care and justice; fair solutions may consider different needs, not only identical treatment.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Fairness Is More Than 'Same'.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 6 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "oral-history practice excerpt",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Fairness Is More Than 'Same'",
+            "rows": [
+              [
+                "fairness",
+                "fairness"
+              ],
+              [
+                "equal",
+                "equal"
+              ],
+              [
+                "need",
+                "need"
+              ],
+              [
+                "solution",
+                "solution"
+              ]
+            ],
+            "accessibleDescription": "A text-based oral-history practice excerpt presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 6 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What does fairness look like?",
+            "findings": [
+              {
+                "question": "Fairness means...",
+                "finding": "Trying to treat people justly and consider needs"
+              },
+              {
+                "question": "Which is a fair classroom process?",
+                "finding": "Take turns and use the same clear procedure"
+              },
+              {
+                "question": "If two people need different supports to participate, fairness may mean...",
+                "finding": "Giving each person the support they reasonably need"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 6 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What does fairness look like?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 7,
@@ -1648,6 +2312,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 7,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W07-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 7?",
+          "choices": [
+            "People with authority or leadership roles have responsibilities, and good decisions should consider rules, safety, evidence, and the people affected.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 7
+        },
+        {
+          "id": "KSS-W07-ST2",
+          "prompt": "Source B defines \"authority\". Which word matches that clue?",
+          "choices": [
+            "authority",
+            "leader",
+            "decision",
+            "responsibility"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 7
         }
       ],
       "currentQuestions": [
@@ -1743,7 +2433,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 7,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 7",
+        "inquiry": "What should responsible leaders and authority figures do?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 7 · Authority, Leadership, and Responsibility",
+            "content": "People with authority or leadership roles have responsibilities, and good decisions should consider rules, safety, evidence, and the people affected.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Authority, Leadership, and Responsibility.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 7 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Authority, Leadership, and Responsibility",
+            "rows": [
+              [
+                "authority",
+                "authority"
+              ],
+              [
+                "leader",
+                "leader"
+              ],
+              [
+                "decision",
+                "decision"
+              ],
+              [
+                "responsibility",
+                "responsibility"
+              ]
+            ],
+            "accessibleDescription": "A text-based evidence brief presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 7 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What should responsible leaders and authority figures do?",
+            "findings": [
+              {
+                "question": "What is authority?",
+                "finding": "The recognized responsibility or power to make or enforce some decisions"
+              },
+              {
+                "question": "Responsible leadership includes...",
+                "finding": "Listening, explaining, and caring about how decisions affect people"
+              },
+              {
+                "question": "Who may have authority in a school?",
+                "finding": "Teachers or administrators acting within their roles"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 7 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What should responsible leaders and authority figures do?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 8,
@@ -1886,6 +2658,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 8,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W08-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 8?",
+          "choices": [
+            "Groups can use discussion, agreed procedures, and sometimes voting to make decisions while still respecting people who preferred another choice.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 8
+        },
+        {
+          "id": "KSS-W08-ST2",
+          "prompt": "Source B defines \"choice\". Which word matches that clue?",
+          "choices": [
+            "choice",
+            "vote",
+            "voice",
+            "majority"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 8
         }
       ],
       "currentQuestions": [
@@ -1981,7 +2779,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 8,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 8",
+        "inquiry": "How can a group make a fair decision?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 8 · Making Decisions Together",
+            "content": "Groups can use discussion, agreed procedures, and sometimes voting to make decisions while still respecting people who preferred another choice.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Making Decisions Together.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 8 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "timeline / sequence card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Making Decisions Together",
+            "rows": [
+              [
+                "choice",
+                "choice"
+              ],
+              [
+                "vote",
+                "vote"
+              ],
+              [
+                "voice",
+                "voice"
+              ],
+              [
+                "majority",
+                "majority"
+              ]
+            ],
+            "accessibleDescription": "A text-based timeline / sequence card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 8 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can a group make a fair decision?",
+            "findings": [
+              {
+                "question": "A vote is...",
+                "finding": "A way to record choices in some group decisions"
+              },
+              {
+                "question": "Before a fair class vote, learners should...",
+                "finding": "Understand the choices and have a chance to hear reasons"
+              },
+              {
+                "question": "The majority is...",
+                "finding": "The larger number in a group or vote"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 8 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can a group make a fair decision?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 9,
@@ -2124,6 +3004,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 9,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W09-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 9?",
+          "choices": [
+            "Maps are models of real places that use symbols, labels, and spatial relationships to show location.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 9
+        },
+        {
+          "id": "KSS-W09-ST2",
+          "prompt": "Source B defines \"map\". Which word matches that clue?",
+          "choices": [
+            "map",
+            "symbol",
+            "location",
+            "legend"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 9
         }
       ],
       "currentQuestions": [
@@ -2219,7 +3125,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 9,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 9",
+        "inquiry": "How can a map help us understand a place?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 9 · Maps Represent Real Places",
+            "content": "Maps are models of real places that use symbols, labels, and spatial relationships to show location.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Maps Represent Real Places.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 9 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "data / comparison table",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Maps Represent Real Places",
+            "rows": [
+              [
+                "map",
+                "map"
+              ],
+              [
+                "symbol",
+                "symbol"
+              ],
+              [
+                "location",
+                "location"
+              ],
+              [
+                "legend",
+                "legend"
+              ]
+            ],
+            "accessibleDescription": "A text-based data / comparison table presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 9 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can a map help us understand a place?",
+            "findings": [
+              {
+                "question": "A map is...",
+                "finding": "A model that represents a real or imagined place"
+              },
+              {
+                "question": "What is a map symbol?",
+                "finding": "A mark or picture that stands for something on the map"
+              },
+              {
+                "question": "What does a legend or key do?",
+                "finding": "Explains what map symbols mean"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 9 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can a map help us understand a place?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 10,
@@ -2362,6 +3350,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 10,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W10-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 10?",
+          "choices": [
+            "Direction words and relative-position words help people describe and navigate space consistently.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 10
+        },
+        {
+          "id": "KSS-W10-ST2",
+          "prompt": "Source B defines \"north\". Which word matches that clue?",
+          "choices": [
+            "north",
+            "south",
+            "east",
+            "west"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 10
         }
       ],
       "currentQuestions": [
@@ -2457,7 +3471,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 10,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 10",
+        "inquiry": "How do direction words help us describe where things are?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 10 · Directions and Position",
+            "content": "Direction words and relative-position words help people describe and navigate space consistently.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Directions and Position.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 10 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "artifact description card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Directions and Position",
+            "rows": [
+              [
+                "north",
+                "north"
+              ],
+              [
+                "south",
+                "south"
+              ],
+              [
+                "east",
+                "east"
+              ],
+              [
+                "west",
+                "west"
+              ]
+            ],
+            "accessibleDescription": "A text-based artifact description card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 10 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do direction words help us describe where things are?",
+            "findings": [
+              {
+                "question": "Which are cardinal directions?",
+                "finding": "North, south, east, and west"
+              },
+              {
+                "question": "Why do shared direction words help?",
+                "finding": "People can describe location in a consistent way"
+              },
+              {
+                "question": "A compass rose usually shows...",
+                "finding": "Directions"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 10 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do direction words help us describe where things are?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 11,
@@ -2600,6 +3696,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 11,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W11-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 11?",
+          "choices": [
+            "Places include natural features and human-made features, and people make choices in response to land and water.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 11
+        },
+        {
+          "id": "KSS-W11-ST2",
+          "prompt": "Source B defines \"landform\". Which word matches that clue?",
+          "choices": [
+            "landform",
+            "body of water",
+            "human feature",
+            "natural feature"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 11
         }
       ],
       "currentQuestions": [
@@ -2695,7 +3817,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 11,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 11",
+        "inquiry": "How do land and water shape where people live and move?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 11 · Land, Water, and Human Places",
+            "content": "Places include natural features and human-made features, and people make choices in response to land and water.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Land, Water, and Human Places.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 11 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "civic / community document card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Land, Water, and Human Places",
+            "rows": [
+              [
+                "landform",
+                "landform"
+              ],
+              [
+                "body of water",
+                "body of water"
+              ],
+              [
+                "human feature",
+                "human feature"
+              ],
+              [
+                "natural feature",
+                "natural feature"
+              ]
+            ],
+            "accessibleDescription": "A text-based civic / community document card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 11 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do land and water shape where people live and move?",
+            "findings": [
+              {
+                "question": "Which is a natural feature?",
+                "finding": "A river"
+              },
+              {
+                "question": "Which is a human-made feature?",
+                "finding": "A road"
+              },
+              {
+                "question": "A body of water can be...",
+                "finding": "A river, lake, ocean, or pond"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 11 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do land and water shape where people live and move?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 12,
@@ -2838,6 +4042,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 12,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W12-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 12?",
+          "choices": [
+            "We can combine maps, observations, and descriptions to explain what a place is like and how people use it.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 12
+        },
+        {
+          "id": "KSS-W12-ST2",
+          "prompt": "Source B defines \"place\". Which word matches that clue?",
+          "choices": [
+            "place",
+            "route",
+            "feature",
+            "evidence"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 12
         }
       ],
       "currentQuestions": [
@@ -2933,7 +4163,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 12,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 12",
+        "inquiry": "How can maps and evidence tell the story of a place?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 12 · Unit Inquiry · My Place in the World",
+            "content": "We can combine maps, observations, and descriptions to explain what a place is like and how people use it.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · My Place in the World.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 12 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "oral-history practice excerpt",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · My Place in the World",
+            "rows": [
+              [
+                "place",
+                "place"
+              ],
+              [
+                "route",
+                "route"
+              ],
+              [
+                "feature",
+                "feature"
+              ],
+              [
+                "evidence",
+                "evidence"
+              ]
+            ],
+            "accessibleDescription": "A text-based oral-history practice excerpt presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 12 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can maps and evidence tell the story of a place?",
+            "findings": [
+              {
+                "question": "To explain a place well, we can use...",
+                "finding": "A map plus observations or pictures"
+              },
+              {
+                "question": "A route is...",
+                "finding": "A path from one place to another"
+              },
+              {
+                "question": "Which is evidence about how people use a place?",
+                "finding": "A picture showing people using a park"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 12 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can maps and evidence tell the story of a place?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 13,
@@ -3076,6 +4388,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 13,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W13-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 13?",
+          "choices": [
+            "People use time words and sequences to organize events and understand change.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 13
+        },
+        {
+          "id": "KSS-W13-ST2",
+          "prompt": "Source B defines \"past\". Which word matches that clue?",
+          "choices": [
+            "past",
+            "present",
+            "future",
+            "sequence"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 13
         }
       ],
       "currentQuestions": [
@@ -3171,7 +4509,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 13,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 13",
+        "inquiry": "How do we organize events in time?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 13 · Past, Present, and Future",
+            "content": "People use time words and sequences to organize events and understand change.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Past, Present, and Future.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 13 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Past, Present, and Future",
+            "rows": [
+              [
+                "past",
+                "past"
+              ],
+              [
+                "present",
+                "present"
+              ],
+              [
+                "future",
+                "future"
+              ],
+              [
+                "sequence",
+                "sequence"
+              ]
+            ],
+            "accessibleDescription": "A text-based evidence brief presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 13 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do we organize events in time?",
+            "findings": [
+              {
+                "question": "The past is...",
+                "finding": "Time before now"
+              },
+              {
+                "question": "The present is...",
+                "finding": "Time happening now"
+              },
+              {
+                "question": "The future is...",
+                "finding": "Time after now"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 13 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do we organize events in time?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 14,
@@ -3314,6 +4734,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 14,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W14-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 14?",
+          "choices": [
+            "A timeline places events in time order so we can see sequence, duration, and change.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 14
+        },
+        {
+          "id": "KSS-W14-ST2",
+          "prompt": "Source B defines \"timeline\". Which word matches that clue?",
+          "choices": [
+            "timeline",
+            "event",
+            "date",
+            "chronology"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 14
         }
       ],
       "currentQuestions": [
@@ -3409,7 +4855,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 14,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 14",
+        "inquiry": "How can a timeline show change over time?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 14 · Timelines Tell Stories",
+            "content": "A timeline places events in time order so we can see sequence, duration, and change.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Timelines Tell Stories.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 14 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "timeline / sequence card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Timelines Tell Stories",
+            "rows": [
+              [
+                "timeline",
+                "timeline"
+              ],
+              [
+                "event",
+                "event"
+              ],
+              [
+                "date",
+                "date"
+              ],
+              [
+                "chronology",
+                "chronology"
+              ]
+            ],
+            "accessibleDescription": "A text-based timeline / sequence card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 14 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can a timeline show change over time?",
+            "findings": [
+              {
+                "question": "A timeline shows...",
+                "finding": "Events arranged in time order"
+              },
+              {
+                "question": "Chronology means...",
+                "finding": "Time order"
+              },
+              {
+                "question": "What should a timeline event include?",
+                "finding": "A clear event and its place in time"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 14 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can a timeline show change over time?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 15,
@@ -3552,6 +5080,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 15,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W15-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 15?",
+          "choices": [
+            "Historians use many kinds of sources as clues; each source can tell us something, but no single source tells everything.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 15
+        },
+        {
+          "id": "KSS-W15-ST2",
+          "prompt": "Source B defines \"source\". Which word matches that clue?",
+          "choices": [
+            "source",
+            "artifact",
+            "photograph",
+            "oral history"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 15
         }
       ],
       "currentQuestions": [
@@ -3647,7 +5201,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 15,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 15",
+        "inquiry": "How can objects, pictures, and stories help us learn about the past?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 15 · Sources Are Clues About the Past",
+            "content": "Historians use many kinds of sources as clues; each source can tell us something, but no single source tells everything.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Sources Are Clues About the Past.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 15 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "data / comparison table",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Sources Are Clues About the Past",
+            "rows": [
+              [
+                "source",
+                "source"
+              ],
+              [
+                "artifact",
+                "artifact"
+              ],
+              [
+                "photograph",
+                "photograph"
+              ],
+              [
+                "oral history",
+                "oral history"
+              ]
+            ],
+            "accessibleDescription": "A text-based data / comparison table presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 15 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can objects, pictures, and stories help us learn about the past?",
+            "findings": [
+              {
+                "question": "An artifact is...",
+                "finding": "An object people made or used that can give clues about the past"
+              },
+              {
+                "question": "An oral history is...",
+                "finding": "A person's spoken memories or account recorded for others"
+              },
+              {
+                "question": "A historian should first ask of a source...",
+                "finding": "What do I actually notice or know from it?"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 15 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can objects, pictures, and stories help us learn about the past?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 16,
@@ -3790,6 +5426,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 16,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W16-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 16?",
+          "choices": [
+            "We can compare sources from different times to identify change and continuity and explain our ideas with evidence.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 16
+        },
+        {
+          "id": "KSS-W16-ST2",
+          "prompt": "Source B defines \"change\". Which word matches that clue?",
+          "choices": [
+            "change",
+            "continuity",
+            "evidence",
+            "compare"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 16
         }
       ],
       "currentQuestions": [
@@ -3885,7 +5547,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 16,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 16",
+        "inquiry": "How can we explain something that changed over time?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 16 · Unit Inquiry · Then and Now",
+            "content": "We can compare sources from different times to identify change and continuity and explain our ideas with evidence.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · Then and Now.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 16 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "artifact description card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · Then and Now",
+            "rows": [
+              [
+                "change",
+                "change"
+              ],
+              [
+                "continuity",
+                "continuity"
+              ],
+              [
+                "evidence",
+                "evidence"
+              ],
+              [
+                "compare",
+                "compare"
+              ]
+            ],
+            "accessibleDescription": "A text-based artifact description card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 16 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can we explain something that changed over time?",
+            "findings": [
+              {
+                "question": "Change means...",
+                "finding": "Something becomes different over time"
+              },
+              {
+                "question": "Continuity means...",
+                "finding": "Something stays similar across time"
+              },
+              {
+                "question": "To compare 'then' and 'now,' we should...",
+                "finding": "Look for both similarities and differences"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 16 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can we explain something that changed over time?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 17,
@@ -4028,6 +5772,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 17,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W17-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 17?",
+          "choices": [
+            "People have needs and wants and make choices about limited time, money, goods, and other resources.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 17
+        },
+        {
+          "id": "KSS-W17-ST2",
+          "prompt": "Source B defines \"need\". Which word matches that clue?",
+          "choices": [
+            "need",
+            "want",
+            "choice",
+            "resource"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 17
         }
       ],
       "currentQuestions": [
@@ -4123,7 +5893,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 17,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 17",
+        "inquiry": "How do people make choices when they cannot have everything at once?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 17 · Needs and Wants",
+            "content": "People have needs and wants and make choices about limited time, money, goods, and other resources.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Needs and Wants.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 17 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "civic / community document card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Needs and Wants",
+            "rows": [
+              [
+                "need",
+                "need"
+              ],
+              [
+                "want",
+                "want"
+              ],
+              [
+                "choice",
+                "choice"
+              ],
+              [
+                "resource",
+                "resource"
+              ]
+            ],
+            "accessibleDescription": "A text-based civic / community document card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 17 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do people make choices when they cannot have everything at once?",
+            "findings": [
+              {
+                "question": "A need is...",
+                "finding": "Something important for health, safety, or basic living"
+              },
+              {
+                "question": "A want is...",
+                "finding": "Something we would like but do not always need for basic living"
+              },
+              {
+                "question": "Why do people make economic choices?",
+                "finding": "Resources such as time and money are limited"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 17 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do people make choices when they cannot have everything at once?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 18,
@@ -4266,6 +6118,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 18,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W18-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 18?",
+          "choices": [
+            "People work in many jobs to produce goods and provide services that help meet needs and wants.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 18
+        },
+        {
+          "id": "KSS-W18-ST2",
+          "prompt": "Source B defines \"good\". Which word matches that clue?",
+          "choices": [
+            "good",
+            "service",
+            "job",
+            "producer"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 18
         }
       ],
       "currentQuestions": [
@@ -4361,7 +6239,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 18,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 18",
+        "inquiry": "How do people produce goods and provide services?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 18 · Goods, Services, and Jobs",
+            "content": "People work in many jobs to produce goods and provide services that help meet needs and wants.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Goods, Services, and Jobs.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 18 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "oral-history practice excerpt",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Goods, Services, and Jobs",
+            "rows": [
+              [
+                "good",
+                "good"
+              ],
+              [
+                "service",
+                "service"
+              ],
+              [
+                "job",
+                "job"
+              ],
+              [
+                "producer",
+                "producer"
+              ]
+            ],
+            "accessibleDescription": "A text-based oral-history practice excerpt presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 18 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do people produce goods and provide services?",
+            "findings": [
+              {
+                "question": "A good is...",
+                "finding": "A physical item people make, grow, or use"
+              },
+              {
+                "question": "A service is...",
+                "finding": "Work someone does to help or meet a need"
+              },
+              {
+                "question": "A producer is...",
+                "finding": "A person or group that makes a good or provides a service"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 18 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do people produce goods and provide services?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 19,
@@ -4504,6 +6464,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 19,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W19-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 19?",
+          "choices": [
+            "Money is one tool people use to exchange for goods and services; people may spend, save, share, or plan based on goals and limits.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 19
+        },
+        {
+          "id": "KSS-W19-ST2",
+          "prompt": "Source B defines \"money\". Which word matches that clue?",
+          "choices": [
+            "money",
+            "exchange",
+            "spend",
+            "save"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 19
         }
       ],
       "currentQuestions": [
@@ -4599,7 +6585,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 19,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 19",
+        "inquiry": "Why do people use money and make plans for spending and saving?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 19 · Money, Saving, and Exchange",
+            "content": "Money is one tool people use to exchange for goods and services; people may spend, save, share, or plan based on goals and limits.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Money, Saving, and Exchange.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 19 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Money, Saving, and Exchange",
+            "rows": [
+              [
+                "money",
+                "money"
+              ],
+              [
+                "exchange",
+                "exchange"
+              ],
+              [
+                "spend",
+                "spend"
+              ],
+              [
+                "save",
+                "save"
+              ]
+            ],
+            "accessibleDescription": "A text-based evidence brief presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 19 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to Why do people use money and make plans for spending and saving?",
+            "findings": [
+              {
+                "question": "People often use money to...",
+                "finding": "Exchange for goods and services"
+              },
+              {
+                "question": "To save means...",
+                "finding": "Keep money or resources for later use"
+              },
+              {
+                "question": "To spend means...",
+                "finding": "Use money to obtain a good or service"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 19 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"Why do people use money and make plans for spending and saving?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 20,
@@ -4742,6 +6810,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 20,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W20-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 20?",
+          "choices": [
+            "Communities use resources, work, exchange, and choices to meet many needs and wants.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 20
+        },
+        {
+          "id": "KSS-W20-ST2",
+          "prompt": "Source B defines \"economy\". Which word matches that clue?",
+          "choices": [
+            "economy",
+            "choice",
+            "producer",
+            "consumer"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 20
         }
       ],
       "currentQuestions": [
@@ -4837,7 +6931,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 20,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 20",
+        "inquiry": "How do goods, services, jobs, and choices connect in a community?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 20 · Unit Inquiry · Community Choices",
+            "content": "Communities use resources, work, exchange, and choices to meet many needs and wants.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · Community Choices.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 20 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "timeline / sequence card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · Community Choices",
+            "rows": [
+              [
+                "economy",
+                "economy"
+              ],
+              [
+                "choice",
+                "choice"
+              ],
+              [
+                "producer",
+                "producer"
+              ],
+              [
+                "consumer",
+                "consumer"
+              ]
+            ],
+            "accessibleDescription": "A text-based timeline / sequence card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 20 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do goods, services, jobs, and choices connect in a community?",
+            "findings": [
+              {
+                "question": "A consumer is...",
+                "finding": "A person or group that uses or buys goods and services"
+              },
+              {
+                "question": "An economy includes...",
+                "finding": "How people produce, exchange, and use goods and services"
+              },
+              {
+                "question": "A producer and consumer are connected because...",
+                "finding": "One provides goods/services and another uses or buys them"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 20 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do goods, services, jobs, and choices connect in a community?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 21,
@@ -4980,6 +7156,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 21,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W21-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 21?",
+          "choices": [
+            "Culture includes learned and shared ways of living, communicating, creating, remembering, and belonging; people within a culture are not all identical.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 21
+        },
+        {
+          "id": "KSS-W21-ST2",
+          "prompt": "Source B defines \"culture\". Which word matches that clue?",
+          "choices": [
+            "culture",
+            "custom",
+            "language",
+            "respect"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 21
         }
       ],
       "currentQuestions": [
@@ -5075,7 +7277,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 21,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 21",
+        "inquiry": "What is culture, and how can we learn about it respectfully?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 21 · Culture Is Learned and Shared",
+            "content": "Culture includes learned and shared ways of living, communicating, creating, remembering, and belonging; people within a culture are not all identical.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Culture Is Learned and Shared.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 21 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "data / comparison table",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Culture Is Learned and Shared",
+            "rows": [
+              [
+                "culture",
+                "culture"
+              ],
+              [
+                "custom",
+                "custom"
+              ],
+              [
+                "language",
+                "language"
+              ],
+              [
+                "respect",
+                "respect"
+              ]
+            ],
+            "accessibleDescription": "A text-based data / comparison table presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 21 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What is culture, and how can we learn about it respectfully?",
+            "findings": [
+              {
+                "question": "Culture can include...",
+                "finding": "Language, arts, customs, food, stories, and ways of life"
+              },
+              {
+                "question": "A respectful cultural statement sounds like...",
+                "finding": "Some people in this community may practice this tradition."
+              },
+              {
+                "question": "Why should we avoid stereotypes?",
+                "finding": "People within any group can have different experiences and choices"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 21 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What is culture, and how can we learn about it respectfully?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 22,
@@ -5218,6 +7502,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 22,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W22-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 22?",
+          "choices": [
+            "Traditions and celebrations can help people remember, express values, strengthen belonging, and pass stories across generations.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 22
+        },
+        {
+          "id": "KSS-W22-ST2",
+          "prompt": "Source B defines \"celebration\". Which word matches that clue?",
+          "choices": [
+            "celebration",
+            "heritage",
+            "memory",
+            "tradition"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 22
         }
       ],
       "currentQuestions": [
@@ -5313,7 +7623,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 22,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 22",
+        "inquiry": "Why do people create traditions and celebrations?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 22 · Traditions and Celebrations Around the World",
+            "content": "Traditions and celebrations can help people remember, express values, strengthen belonging, and pass stories across generations.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Traditions and Celebrations Around the World.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 22 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "artifact description card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Traditions and Celebrations Around the World",
+            "rows": [
+              [
+                "celebration",
+                "celebration"
+              ],
+              [
+                "heritage",
+                "heritage"
+              ],
+              [
+                "memory",
+                "memory"
+              ],
+              [
+                "tradition",
+                "tradition"
+              ]
+            ],
+            "accessibleDescription": "A text-based artifact description card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 22 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to Why do people create traditions and celebrations?",
+            "findings": [
+              {
+                "question": "People may celebrate traditions to...",
+                "finding": "Remember, express values, and strengthen belonging"
+              },
+              {
+                "question": "Heritage refers to...",
+                "finding": "Things such as stories, traditions, places, and knowledge passed through communities"
+              },
+              {
+                "question": "When studying a celebration, a learner may...",
+                "finding": "Observe and learn without being required to practice it"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 22 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"Why do people create traditions and celebrations?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 23,
@@ -5456,6 +7848,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 23,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W23-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 23?",
+          "choices": [
+            "Stories, art, and music can be valuable sources about ideas and experiences, but we should ask who created them, when, why, and what they can and cannot tell us.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 23
+        },
+        {
+          "id": "KSS-W23-ST2",
+          "prompt": "Source B defines \"story\". Which word matches that clue?",
+          "choices": [
+            "story",
+            "art",
+            "music",
+            "context"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 23
         }
       ],
       "currentQuestions": [
@@ -5551,7 +7969,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 23,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 23",
+        "inquiry": "How can stories and creative works help us learn about people and times?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 23 · Stories, Art, and Music as Historical Clues",
+            "content": "Stories, art, and music can be valuable sources about ideas and experiences, but we should ask who created them, when, why, and what they can and cannot tell us.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Stories, Art, and Music as Historical Clues.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 23 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "civic / community document card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Stories, Art, and Music as Historical Clues",
+            "rows": [
+              [
+                "story",
+                "story"
+              ],
+              [
+                "art",
+                "art"
+              ],
+              [
+                "music",
+                "music"
+              ],
+              [
+                "context",
+                "context"
+              ]
+            ],
+            "accessibleDescription": "A text-based civic / community document card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 23 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can stories and creative works help us learn about people and times?",
+            "findings": [
+              {
+                "question": "Before using art as historical evidence, we should ask...",
+                "finding": "Who made it, when, why, and what it shows"
+              },
+              {
+                "question": "Context means...",
+                "finding": "The surrounding time, place, conditions, and purpose"
+              },
+              {
+                "question": "A song or artwork can tell us...",
+                "finding": "Something about ideas, experiences, values, or expression"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 23 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can stories and creative works help us learn about people and times?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 24,
@@ -5694,6 +8194,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 24,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W24-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 24?",
+          "choices": [
+            "Good comparison uses evidence, notices both similarities and differences, and leaves room for variation within every community.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 24
+        },
+        {
+          "id": "KSS-W24-ST2",
+          "prompt": "Source B defines \"similarity\". Which word matches that clue?",
+          "choices": [
+            "similarity",
+            "difference",
+            "perspective",
+            "respect"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 24
         }
       ],
       "currentQuestions": [
@@ -5789,7 +8315,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 24,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 24",
+        "inquiry": "How can we compare cultures without turning people into stereotypes?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 24 · Unit Inquiry · Many Ways of Living",
+            "content": "Good comparison uses evidence, notices both similarities and differences, and leaves room for variation within every community.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · Many Ways of Living.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 24 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "oral-history practice excerpt",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · Many Ways of Living",
+            "rows": [
+              [
+                "similarity",
+                "similarity"
+              ],
+              [
+                "difference",
+                "difference"
+              ],
+              [
+                "perspective",
+                "perspective"
+              ],
+              [
+                "respect",
+                "respect"
+              ]
+            ],
+            "accessibleDescription": "A text-based oral-history practice excerpt presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 24 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can we compare cultures without turning people into stereotypes?",
+            "findings": [
+              {
+                "question": "A good cultural comparison should...",
+                "finding": "Use evidence and avoid saying everyone in a group is identical"
+              },
+              {
+                "question": "Perspective means...",
+                "finding": "A point of view shaped by a person's position or experience"
+              },
+              {
+                "question": "Which phrase is most careful?",
+                "finding": "This source shows one family's experience."
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 24 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can we compare cultures without turning people into stereotypes?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 25,
@@ -5932,6 +8540,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 25,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W25-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 25?",
+          "choices": [
+            "Symbols and landmarks can represent shared ideas, histories, institutions, or identities, and their meanings are learned through context.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 25
+        },
+        {
+          "id": "KSS-W25-ST2",
+          "prompt": "Source B defines \"symbol\". Which word matches that clue?",
+          "choices": [
+            "symbol",
+            "represent",
+            "landmark",
+            "meaning"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 25
         }
       ],
       "currentQuestions": [
@@ -6027,7 +8661,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 25,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 25",
+        "inquiry": "Why do groups use symbols?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 25 · Community and National Symbols",
+            "content": "Symbols and landmarks can represent shared ideas, histories, institutions, or identities, and their meanings are learned through context.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Community and National Symbols.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 25 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Community and National Symbols",
+            "rows": [
+              [
+                "symbol",
+                "symbol"
+              ],
+              [
+                "represent",
+                "represent"
+              ],
+              [
+                "landmark",
+                "landmark"
+              ],
+              [
+                "meaning",
+                "meaning"
+              ]
+            ],
+            "accessibleDescription": "A text-based evidence brief presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 25 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to Why do groups use symbols?",
+            "findings": [
+              {
+                "question": "A symbol is...",
+                "finding": "Something used to represent an idea, group, place, or meaning"
+              },
+              {
+                "question": "A landmark is...",
+                "finding": "A recognizable place or feature that may have historical or community importance"
+              },
+              {
+                "question": "To understand a civic symbol, we should...",
+                "finding": "Learn its history and what it is intended to represent"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 25 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"Why do groups use symbols?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 26,
@@ -6170,6 +8886,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 26,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W26-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 26?",
+          "choices": [
+            "Local governments and public institutions organize some shared services, rules, spaces, and decisions for communities.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 26
+        },
+        {
+          "id": "KSS-W26-ST2",
+          "prompt": "Source B defines \"government\". Which word matches that clue?",
+          "choices": [
+            "government",
+            "local",
+            "service",
+            "public"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 26
         }
       ],
       "currentQuestions": [
@@ -6265,7 +9007,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 26,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 26",
+        "inquiry": "What kinds of problems do local governments and community institutions help address?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 26 · Local Government and Community Services",
+            "content": "Local governments and public institutions organize some shared services, rules, spaces, and decisions for communities.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Local Government and Community Services.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 26 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "timeline / sequence card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Local Government and Community Services",
+            "rows": [
+              [
+                "government",
+                "government"
+              ],
+              [
+                "local",
+                "local"
+              ],
+              [
+                "service",
+                "service"
+              ],
+              [
+                "public",
+                "public"
+              ]
+            ],
+            "accessibleDescription": "A text-based timeline / sequence card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 26 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What kinds of problems do local governments and community institutions help address?",
+            "findings": [
+              {
+                "question": "Local government serves...",
+                "finding": "A town, city, county, or other local area"
+              },
+              {
+                "question": "Which can be a public service?",
+                "finding": "Maintaining a public park"
+              },
+              {
+                "question": "A public institution is created to...",
+                "finding": "Carry out shared purposes or services under established rules"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 26 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What kinds of problems do local governments and community institutions help address?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 27,
@@ -6408,6 +9232,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 27,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W27-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 27?",
+          "choices": [
+            "Public leaders and representatives hold roles defined by rules and responsibilities; responsible decisions should be explainable and open to appropriate review.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 27
+        },
+        {
+          "id": "KSS-W27-ST2",
+          "prompt": "Source B defines \"representative\". Which word matches that clue?",
+          "choices": [
+            "representative",
+            "public",
+            "decision",
+            "accountability"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 27
         }
       ],
       "currentQuestions": [
@@ -6503,7 +9353,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 27,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 27",
+        "inquiry": "How can public leaders make responsible decisions?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 27 · Leaders, Representatives, and Public Decisions",
+            "content": "Public leaders and representatives hold roles defined by rules and responsibilities; responsible decisions should be explainable and open to appropriate review.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Leaders, Representatives, and Public Decisions.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 27 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "data / comparison table",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Leaders, Representatives, and Public Decisions",
+            "rows": [
+              [
+                "representative",
+                "representative"
+              ],
+              [
+                "public",
+                "public"
+              ],
+              [
+                "decision",
+                "decision"
+              ],
+              [
+                "accountability",
+                "accountability"
+              ]
+            ],
+            "accessibleDescription": "A text-based data / comparison table presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 27 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can public leaders make responsible decisions?",
+            "findings": [
+              {
+                "question": "A representative is...",
+                "finding": "A person chosen or authorized to speak or act for others in a defined role"
+              },
+              {
+                "question": "Accountability means...",
+                "finding": "Being responsible for actions and able to explain them"
+              },
+              {
+                "question": "Public decisions should consider...",
+                "finding": "Evidence, rules, needs, consequences, and people affected"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 27 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can public leaders make responsible decisions?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 28,
@@ -6646,6 +9578,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 28,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W28-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 28?",
+          "choices": [
+            "Civic problem solving involves defining a problem, gathering evidence, considering options and consequences, choosing an action, and reviewing the result.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 28
+        },
+        {
+          "id": "KSS-W28-ST2",
+          "prompt": "Source B defines \"problem\". Which word matches that clue?",
+          "choices": [
+            "problem",
+            "option",
+            "consequence",
+            "action"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 28
         }
       ],
       "currentQuestions": [
@@ -6741,7 +9699,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 28,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 28",
+        "inquiry": "How can people use evidence and civic processes to solve a shared problem?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 28 · Unit Inquiry · A Community Problem-Solving Lab",
+            "content": "Civic problem solving involves defining a problem, gathering evidence, considering options and consequences, choosing an action, and reviewing the result.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · A Community Problem-Solving Lab.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 28 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "artifact description card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · A Community Problem-Solving Lab",
+            "rows": [
+              [
+                "problem",
+                "problem"
+              ],
+              [
+                "option",
+                "option"
+              ],
+              [
+                "consequence",
+                "consequence"
+              ],
+              [
+                "action",
+                "action"
+              ]
+            ],
+            "accessibleDescription": "A text-based artifact description card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 28 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can people use evidence and civic processes to solve a shared problem?",
+            "findings": [
+              {
+                "question": "The first step in solving a shared problem is often...",
+                "finding": "Clearly define what the problem is"
+              },
+              {
+                "question": "An option is...",
+                "finding": "A possible choice or solution"
+              },
+              {
+                "question": "A consequence is...",
+                "finding": "Something that may happen because of a choice or action"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 28 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can people use evidence and civic processes to solve a shared problem?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 29,
@@ -6884,6 +9924,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 29,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W29-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 29?",
+          "choices": [
+            "Good inquiry questions are clear, meaningful, and answerable with appropriate sources and evidence.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 29
+        },
+        {
+          "id": "KSS-W29-ST2",
+          "prompt": "Source B defines \"question\". Which word matches that clue?",
+          "choices": [
+            "question",
+            "inquiry",
+            "source",
+            "investigate"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 29
         }
       ],
       "currentQuestions": [
@@ -6979,7 +10045,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 29,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 29",
+        "inquiry": "What makes a question useful for inquiry?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 29 · Asking Good Social Studies Questions",
+            "content": "Good inquiry questions are clear, meaningful, and answerable with appropriate sources and evidence.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Asking Good Social Studies Questions.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 29 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "civic / community document card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Asking Good Social Studies Questions",
+            "rows": [
+              [
+                "question",
+                "question"
+              ],
+              [
+                "inquiry",
+                "inquiry"
+              ],
+              [
+                "source",
+                "source"
+              ],
+              [
+                "investigate",
+                "investigate"
+              ]
+            ],
+            "accessibleDescription": "A text-based civic / community document card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 29 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What makes a question useful for inquiry?",
+            "findings": [
+              {
+                "question": "Inquiry means...",
+                "finding": "Investigating a question using sources and evidence"
+              },
+              {
+                "question": "A useful inquiry question should be...",
+                "finding": "Clear enough to investigate with evidence"
+              },
+              {
+                "question": "Which question is good for social studies inquiry?",
+                "finding": "How has our neighborhood park changed over time?"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 29 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What makes a question useful for inquiry?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 30,
@@ -7122,6 +10270,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 30,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W30-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 30?",
+          "choices": [
+            "People depend on environments and resources, change places through their choices, and can practice stewardship by caring for shared spaces.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 30
+        },
+        {
+          "id": "KSS-W30-ST2",
+          "prompt": "Source B defines \"environment\". Which word matches that clue?",
+          "choices": [
+            "environment",
+            "stewardship",
+            "resource",
+            "impact"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 30
         }
       ],
       "currentQuestions": [
@@ -7217,7 +10391,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 30,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 30",
+        "inquiry": "How do people affect places, and how do places affect people?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 30 · People, Places, and Environmental Choices",
+            "content": "People depend on environments and resources, change places through their choices, and can practice stewardship by caring for shared spaces.",
+            "accessibleDescription": "A short evidence brief stating the central idea for People, Places, and Environmental Choices.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 30 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "oral-history practice excerpt",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for People, Places, and Environmental Choices",
+            "rows": [
+              [
+                "environment",
+                "environment"
+              ],
+              [
+                "stewardship",
+                "stewardship"
+              ],
+              [
+                "resource",
+                "resource"
+              ],
+              [
+                "impact",
+                "impact"
+              ]
+            ],
+            "accessibleDescription": "A text-based oral-history practice excerpt presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 30 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do people affect places, and how do places affect people?",
+            "findings": [
+              {
+                "question": "The environment includes...",
+                "finding": "The surroundings and natural/human conditions of a place"
+              },
+              {
+                "question": "Stewardship means...",
+                "finding": "Responsible care for something entrusted or shared"
+              },
+              {
+                "question": "An impact is...",
+                "finding": "An effect or result of an action"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 30 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do people affect places, and how do places affect people?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 31,
@@ -7360,6 +10616,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 31,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W31-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 31?",
+          "choices": [
+            "Informed action uses what we learn from evidence to make a safe, respectful contribution and then reflect on what happened.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 31
+        },
+        {
+          "id": "KSS-W31-ST2",
+          "prompt": "Source B defines \"service\". Which word matches that clue?",
+          "choices": [
+            "service",
+            "action",
+            "informed",
+            "reflection"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 31
         }
       ],
       "currentQuestions": [
@@ -7455,7 +10737,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 31,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 31",
+        "inquiry": "What does it mean to take informed action?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 31 · Helping, Service, and Informed Action",
+            "content": "Informed action uses what we learn from evidence to make a safe, respectful contribution and then reflect on what happened.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Helping, Service, and Informed Action.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 31 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Helping, Service, and Informed Action",
+            "rows": [
+              [
+                "service",
+                "service"
+              ],
+              [
+                "action",
+                "action"
+              ],
+              [
+                "informed",
+                "informed"
+              ],
+              [
+                "reflection",
+                "reflection"
+              ]
+            ],
+            "accessibleDescription": "A text-based evidence brief presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 31 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What does it mean to take informed action?",
+            "findings": [
+              {
+                "question": "Informed action means...",
+                "finding": "Using what we learned from evidence to decide how to act"
+              },
+              {
+                "question": "Service is strongest when it...",
+                "finding": "Responds to a real need respectfully"
+              },
+              {
+                "question": "Before a service action, learners should...",
+                "finding": "Understand the need and plan safely"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 31 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What does it mean to take informed action?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 32,
@@ -7598,6 +10962,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 32,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W32-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 32?",
+          "choices": [
+            "Even young learners can ask a question, gather safe evidence, communicate a conclusion, and take a small informed action with adult support.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 32
+        },
+        {
+          "id": "KSS-W32-ST2",
+          "prompt": "Source B defines \"claim\". Which word matches that clue?",
+          "choices": [
+            "claim",
+            "evidence",
+            "action",
+            "reflection"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 32
         }
       ],
       "currentQuestions": [
@@ -7693,7 +11083,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 32,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 32",
+        "inquiry": "How can a young scholar use social studies to improve a shared space?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 32 · Unit Inquiry · Our Evidence-to-Action Project",
+            "content": "Even young learners can ask a question, gather safe evidence, communicate a conclusion, and take a small informed action with adult support.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Unit Inquiry · Our Evidence-to-Action Project.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 32 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "timeline / sequence card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Unit Inquiry · Our Evidence-to-Action Project",
+            "rows": [
+              [
+                "claim",
+                "claim"
+              ],
+              [
+                "evidence",
+                "evidence"
+              ],
+              [
+                "action",
+                "action"
+              ],
+              [
+                "reflection",
+                "reflection"
+              ]
+            ],
+            "accessibleDescription": "A text-based timeline / sequence card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 32 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How can a young scholar use social studies to improve a shared space?",
+            "findings": [
+              {
+                "question": "A claim is...",
+                "finding": "A statement we can support with evidence"
+              },
+              {
+                "question": "Evidence-to-action means...",
+                "finding": "Use evidence to choose and explain an action"
+              },
+              {
+                "question": "Which evidence could help study use of a shared reading corner?",
+                "finding": "A simple count of how many learners use it at different times"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 32 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How can a young scholar use social studies to improve a shared space?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 33,
@@ -7836,6 +11308,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 33,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W33-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 33?",
+          "choices": [
+            "Social studies connects people, communities, decisions, places, and change over time.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 33
+        },
+        {
+          "id": "KSS-W33-ST2",
+          "prompt": "Source B defines \"community\". Which word matches that clue?",
+          "choices": [
+            "community",
+            "civics",
+            "geography",
+            "history"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 33
         }
       ],
       "currentQuestions": [
@@ -7931,7 +11429,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 33,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 33",
+        "inquiry": "How are community, rules, place, and time connected?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 33 · Review · Community, Civics, Geography, History",
+            "content": "Social studies connects people, communities, decisions, places, and change over time.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Review · Community, Civics, Geography, History.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 33 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "data / comparison table",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Review · Community, Civics, Geography, History",
+            "rows": [
+              [
+                "community",
+                "community"
+              ],
+              [
+                "civics",
+                "civics"
+              ],
+              [
+                "geography",
+                "geography"
+              ],
+              [
+                "history",
+                "history"
+              ]
+            ],
+            "accessibleDescription": "A text-based data / comparison table presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 33 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How are community, rules, place, and time connected?",
+            "findings": [
+              {
+                "question": "Civics helps us study...",
+                "finding": "Rules, government, participation, rights, responsibilities, and public life"
+              },
+              {
+                "question": "Geography helps us study...",
+                "finding": "Places, environments, maps, and spatial relationships"
+              },
+              {
+                "question": "History helps us study...",
+                "finding": "People and events in the past using evidence"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 33 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How are community, rules, place, and time connected?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 34,
@@ -8074,6 +11654,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 34,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W34-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 34?",
+          "choices": [
+            "People make choices about resources and participate in cultures and traditions that shape daily life in varied ways.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 34
+        },
+        {
+          "id": "KSS-W34-ST2",
+          "prompt": "Source B defines \"choice\". Which word matches that clue?",
+          "choices": [
+            "choice",
+            "economics",
+            "culture",
+            "tradition"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 34
         }
       ],
       "currentQuestions": [
@@ -8169,7 +11775,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 34,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 34",
+        "inquiry": "How do choices and culture shape daily life?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 34 · Review · Economics and Culture",
+            "content": "People make choices about resources and participate in cultures and traditions that shape daily life in varied ways.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Review · Economics and Culture.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 34 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "artifact description card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Review · Economics and Culture",
+            "rows": [
+              [
+                "choice",
+                "choice"
+              ],
+              [
+                "economics",
+                "economics"
+              ],
+              [
+                "culture",
+                "culture"
+              ],
+              [
+                "tradition",
+                "tradition"
+              ]
+            ],
+            "accessibleDescription": "A text-based artifact description card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 34 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How do choices and culture shape daily life?",
+            "findings": [
+              {
+                "question": "Economics studies...",
+                "finding": "Choices about resources, goods, services, work, and exchange"
+              },
+              {
+                "question": "Culture includes...",
+                "finding": "Shared and learned ways of life, expression, language, and tradition"
+              },
+              {
+                "question": "A need and a want are...",
+                "finding": "Different ideas that help explain choices"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 34 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How do choices and culture shape daily life?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 35,
@@ -8312,6 +12000,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 35,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W35-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 35?",
+          "choices": [
+            "A capstone lets learners combine knowledge and evidence into a product they can explain to another person.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 35
+        },
+        {
+          "id": "KSS-W35-ST2",
+          "prompt": "Source B defines \"capstone\". Which word matches that clue?",
+          "choices": [
+            "capstone",
+            "evidence",
+            "teach",
+            "reflect"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 35
         }
       ],
       "currentQuestions": [
@@ -8407,7 +12121,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 35,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 35",
+        "inquiry": "What can I teach someone else about how communities work?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 35 · Kindergarten Social Studies Capstone",
+            "content": "A capstone lets learners combine knowledge and evidence into a product they can explain to another person.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Kindergarten Social Studies Capstone.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 35 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "civic / community document card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Kindergarten Social Studies Capstone",
+            "rows": [
+              [
+                "capstone",
+                "capstone"
+              ],
+              [
+                "evidence",
+                "evidence"
+              ],
+              [
+                "teach",
+                "teach"
+              ],
+              [
+                "reflect",
+                "reflect"
+              ]
+            ],
+            "accessibleDescription": "A text-based civic / community document card presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 35 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to What can I teach someone else about how communities work?",
+            "findings": [
+              {
+                "question": "A capstone is...",
+                "finding": "A final project that combines important learning and evidence"
+              },
+              {
+                "question": "A strong capstone should include...",
+                "finding": "Accurate ideas, evidence/examples, and an explanation"
+              },
+              {
+                "question": "Why practice explaining the project?",
+                "finding": "Speaking helps show what the learner understands"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 35 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"What can I teach someone else about how communities work?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     },
     {
       "week": 36,
@@ -8550,6 +12346,32 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "answer": 0,
           "sourceWeek": 36,
           "kind": "inquiry"
+        },
+        {
+          "id": "KSS-W36-ST1",
+          "prompt": "Which statement is directly supported by Source A in Week 36?",
+          "choices": [
+            "Learners can review evidence of growth, demonstrate core Kindergarten Social Studies understanding, and identify questions they are ready to explore next.",
+            "Every community and person is exactly the same.",
+            "No evidence is needed to answer the essential question.",
+            "Only memorizing a word can show understanding."
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 36
+        },
+        {
+          "id": "KSS-W36-ST2",
+          "prompt": "Source B defines \"mastery\". Which word matches that clue?",
+          "choices": [
+            "mastery",
+            "portfolio",
+            "growth",
+            "next"
+          ],
+          "answer": 0,
+          "kind": "source-studio",
+          "sourceWeek": 36
         }
       ],
       "currentQuestions": [
@@ -8645,7 +12467,89 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
           "sourceWeek": 36,
           "kind": "inquiry"
         }
-      ]
+      ],
+      "sourceStudio": {
+        "title": "Khaemenes Source Studio · Week 36",
+        "inquiry": "How am I ready to keep studying people, places, choices, and the past?",
+        "accessibility": "All visual information is duplicated in text. Teacher read-aloud, pointing, drawing, and oral response are permitted.",
+        "sources": [
+          {
+            "id": "A",
+            "type": "Khaemenes original evidence brief",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Week 36 · Final Mastery, Celebration, and Grade 1 Bridge",
+            "content": "Learners can review evidence of growth, demonstrate core Kindergarten Social Studies understanding, and identify questions they are ready to explore next.",
+            "accessibleDescription": "A short evidence brief stating the central idea for Final Mastery, Celebration, and Grade 1 Bridge.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 36 Source Studio, Source A."
+          },
+          {
+            "id": "B",
+            "type": "oral-history practice excerpt",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Vocabulary and concept evidence for Final Mastery, Celebration, and Grade 1 Bridge",
+            "rows": [
+              [
+                "mastery",
+                "mastery"
+              ],
+              [
+                "portfolio",
+                "portfolio"
+              ],
+              [
+                "growth",
+                "growth"
+              ],
+              [
+                "next",
+                "next"
+              ]
+            ],
+            "accessibleDescription": "A text-based oral-history practice excerpt presenting key terms and evidence for the week's inquiry.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 36 Source Studio, Source B."
+          },
+          {
+            "id": "C",
+            "type": "evidence findings card",
+            "authenticity": "first-party original instructional source",
+            "creator": "Khaemenes Academy Curriculum Studio",
+            "date": "2026",
+            "context": "Evidence findings connected to How am I ready to keep studying people, places, choices, and the past?",
+            "findings": [
+              {
+                "question": "Mastery means...",
+                "finding": "Showing strong understanding through appropriate evidence"
+              },
+              {
+                "question": "A portfolio is...",
+                "finding": "A collection of work showing learning over time"
+              },
+              {
+                "question": "If a learner scores below 80% on a mastery check, the next step is...",
+                "finding": "Review, correct misunderstandings, and try a fresh form"
+              }
+            ],
+            "accessibleDescription": "A source card pairing evidence questions with findings that can be checked against the lesson.",
+            "citation": "Khaemenes Academy, Kindergarten Social Studies, Week 36 Source Studio, Source C."
+          }
+        ],
+        "prompts": [
+          "What do you notice first?",
+          "Which source gives the strongest clue for the essential question?",
+          "What can one source tell us that another cannot?"
+        ]
+      },
+      "evidenceResponse": {
+        "level": "Kindergarten",
+        "mode": "point-draw-tell",
+        "prompt": "Point to, draw, or tell one clue from the Source Studio that helps answer: \"How am I ready to keep studying people, places, choices, and the past?\"",
+        "requirement": "One observable clue. An adult may transcribe the learner's exact words. Drawing or pointing is valid evidence when noted.",
+        "teacherReview": "observed / revise / meets"
+      }
     }
   ],
   "localization": {
