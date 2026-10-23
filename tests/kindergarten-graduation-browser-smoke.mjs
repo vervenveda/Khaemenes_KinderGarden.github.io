@@ -30,6 +30,7 @@ try{
  assert.equal(await page.locator("#lanterns .lantern").count(),36);
  assert.equal(await page.locator("#celebrate").isDisabled(),true);
  assert.equal(await page.locator("#printKeepsake").isDisabled(),true);
+ assert.equal(await page.locator("#pinGradeOne").isDisabled(),true);
  assert.equal(await page.locator("#certificate").isVisible(),false);
  console.log("PASS guest cannot receive or print graduation credential");
  await page.evaluate(()=>{
@@ -47,6 +48,29 @@ try{
  readinessFixture=true;
  await page.reload({waitUntil:"domcontentloaded"});
  assert.equal(await page.locator("#celebrate").isEnabled(),true);
+ assert.equal(await page.locator("#pinGradeOne").isEnabled(),true);
+ await page.locator("#pinGradeOne").click();
+ assert.match(await page.locator("#pinStatus").innerText(),/authorized adult must confirm/i);
+ const beforePin=await page.evaluate(()=>localStorage.getItem("khaemenes_course_pins_v1"));
+ assert.equal(beforePin,null,"Grade 1 cannot pin without adult confirmation");
+ await page.locator("#adultPinConfirm").check();
+ await page.locator("#pinGradeOne").click();
+ assert.match(await page.locator("#pinStatus").innerText(),/Grade 1 entrance saved/i);
+ const pinned=await page.evaluate(()=>{
+  const R=window.KhaemenesFamilyRegistry,l=R.getLearner(),store=JSON.parse(localStorage.getItem("khaemenes_course_pins_v1")||"{}");
+  return {stage:l.stage,grade:l.grade,items:store.learners?.[l.learnerId]||[]};
+ });
+ assert.equal(pinned.stage,"kindergarten","pinning must not promote student");
+ assert.equal(pinned.grade,"k");
+ assert.equal(pinned.items.filter(p=>p.id==="khaemenes-grade-01").length,1);
+ await page.locator("#pinGradeOne").click();
+ const count=await page.evaluate(()=>{
+  const id=window.KhaemenesFamilyRegistry.getLearner().learnerId;
+  return JSON.parse(localStorage.getItem("khaemenes_course_pins_v1")).learners[id].filter(p=>p.id==="khaemenes-grade-01").length;
+ });
+ assert.equal(count,1,"repeated pin must be idempotent");
+ console.log("PASS guardian-approved Grade 1 shortcut is learner-specific and never changes placement");
+
  assert.equal(await page.locator("#printKeepsake").isEnabled(),true);
  await page.locator("#celebrate").click();
  assert.equal(await page.locator("#certificate").isVisible(),true);
