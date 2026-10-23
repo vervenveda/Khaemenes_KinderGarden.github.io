@@ -1,7 +1,7 @@
 /* Khaemenes Kinder Garden · profile pin prompt. Presentation only; never alters curriculum records. */
 (function(g){
 "use strict";
-const PIN_KEY="khaemenes_course_pins_v1",SEEN_KEY="khaemenes_kindergarten_pin_prompt_seen_v1";
+const PIN_KEY="khaemenes_course_pins_v1",SEEN_KEY="khaemenes_kindergarten_pin_prompt_seen_v1",HANDOFF_KEY="khaemenes_kindergarten_pin_handoff_v1";
 const KINDER_URL="https://vervenveda.com/Khaemenes_KinderGarden.github.io/",FAMILY_URL="https://vervenveda.com/Khaemenes_Academy.github.io/family/",STUDENT_URL="https://vervenveda.com/Khaemenes_Academy.github.io/student/";
 const COURSE={id:"khaemenes-kindergarten",courseId:"khaemenes-kindergarten",title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · 36-week formal curriculum",href:KINDER_URL,source:"khaemenes-kindergarten"};
 const $=id=>g.document.getElementById(id);
@@ -42,7 +42,11 @@ function build(){
  $("kpLater").addEventListener("click",()=>close("later"));
  $("kpSave").addEventListener("click",()=>{
   const l=learner();
-  if(!l||!l.hasProfile||!l.eligible){$("kpStatus").textContent="Please ask a grown-up to select the Kindergarten learner in the Family Profile first. Nothing has been pinned.";return}
+  if(!l||!l.hasProfile||!l.eligible){
+   try{g.sessionStorage.setItem(HANDOFF_KEY,JSON.stringify({destination:KINDER_URL+"?from=preschool-graduation&pinClass=kindergarten",intent:"pin-kindergarten",createdAt:new Date().toISOString()}))}catch{}
+   g.location.href=FAMILY_URL+"?returnTo=kindergarten-pin";
+   return;
+  }
   const result=addPin(l.learnerId);
   if(!result.ok){$("kpStatus").textContent="We couldn't save the pin in this browser. The class is still available; please try again after opening the correct learner profile.";return}
   markSeen(l.learnerId);
@@ -55,11 +59,23 @@ function build(){
 }
 function open(){
  const root=build(),l=learner(),q=new URLSearchParams(g.location.search),forced=q.get("pinClass")==="kindergarten"||q.get("from")==="preschool-graduation",id=l&&l.learnerId||"guest";
- if(!forced){if(l&&l.eligible&&hasPin(id))return;if(seen(id))return;if(!l||!l.eligible)return}
+ if(!forced){
+  if(l&&l.eligible&&hasPin(id))return;
+  if(seen(id))return;
+  // Show the invitation on a direct first visit too. "Not now" is always
+  // available, so the invitation never becomes an access gate.
+ }
  if(l&&l.eligible&&hasPin(id)){
   $("kpTitle").textContent="Kinder Garden is already pinned!";$("kpDescription").textContent="This class is already saved in your selected Academy learner profile.";$("kpStatus").textContent="Your pin is ready to use.";$("kpSave").textContent="Open Student Profile →";$("kpSave").onclick=()=>g.location.href=STUDENT_URL;
  }else if(!l||!l.eligible||!l.hasProfile){
-  $("kpTitle").textContent="Ready to save your new class?";$("kpDescription").textContent="A parent or caregiver can select or create the correct Kindergarten learner profile first. Then return here to pin Kinder Garden to that learner. We will not create a duplicate profile or guess which child is active.";$("kpStatus").textContent="Profile selection is needed before saving.";$("kpSave").textContent="Open Family Profile →";$("kpSave").onclick=()=>g.location.href=FAMILY_URL;
+  $("kpTitle").textContent="Save Kinder Garden to the right learner profile?";
+  $("kpDescription").textContent="Explore the learning garden first, or ask a grown-up to select or create the correct Kindergarten learner. We will never guess which child is active. After selection, return here to pin this class.";
+  $("kpStatus").textContent="No class is pinned until you choose the learner.";
+  $("kpSave").textContent="Choose Learner & Continue →";
+  $("kpSave").onclick=()=>{
+    try{g.sessionStorage.setItem(HANDOFF_KEY,JSON.stringify({destination:KINDER_URL+"?from=preschool-graduation&pinClass=kindergarten",intent:"pin-kindergarten",createdAt:new Date().toISOString()}))}catch{}
+    g.location.href=FAMILY_URL+"?returnTo=kindergarten-pin";
+  };
  }else{
   $("kpTitle").textContent="Save Kinder Garden to your profile?";$("kpDescription").textContent="Would you like a grown-up or learner to pin Khaemenes Kinder Garden to the Academy Student Profile? A pin makes the class easier to find next time. It does not enroll you again or change lessons, grades, or mastery.";$("kpStatus").textContent="";$("kpSave").textContent="📌 Pin to My Profile";$("kpSave").onclick=null;
  }
