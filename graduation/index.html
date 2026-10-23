@@ -43,6 +43,11 @@ button.secondary,a.button.secondary{background:#fff;color:#2a545b}button:disable
 <section class="card"><p class="eyebrow">An exciting next chapter</p><h2>Discover Grade 1</h2><p>Explore reading adventures, number investigations, creative expression, Earth and life science, and the Elementary Evidence Passport.</p>
 <div class="actions"><a class="button secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">Explore Grade 1</a><a class="button secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/student-profile/">Elementary Student Profile</a></div>
 <p class="muted">Exploring is not enrollment. Only the authorized family or school process can update the formal Grade 1 placement. Learner identity and history must remain intact.</p>
+<h3>Save Grade 1 as my next class</h3>
+<p class="muted">After verified Kindergarten completion, an adult can pin the Grade 1 entrance to this learner's Academy profile. This saves a shortcut only; it does not enroll, promote, or unlock lessons.</p>
+<label><input type="checkbox" id="adultPinConfirm"> I am an authorized adult helping this learner prepare for Grade 1.</label>
+<div class="actions"><button class="secondary" type="button" id="pinGradeOne" disabled>📌 Save Grade 1 to learner profile</button></div>
+<p id="pinStatus" role="status" aria-live="polite" class="fine">Grade 1 class pinning is available after verified local Kindergarten completion.</p>
 <h3>A milestone to remember</h3><p>Keep the familiar interests, learning strengths, family connection, and a beautiful provisional graduation keepsake. Photo and workspace preferences may continue with adult assistance.</p></section>
 </div>
 <section id="certificate" hidden aria-labelledby="certTitle"><p class="eyebrow">Khaemenes Academy · Learning Milestone</p><p style="font-size:56px">✦ 🌻 ✦</p>
@@ -77,7 +82,7 @@ function check(){
 function set(id,value){$(id).textContent=String(value)}
 function update(){
  const s=check();ready=s.ready;
- $("celebrate").disabled=!ready;$("printKeepsake").disabled=!ready;
+ $("celebrate").disabled=!ready;$("printKeepsake").disabled=!ready;$("pinGradeOne").disabled=!ready;
  if(!ready)$("certificate").hidden=true;
  Array.from(lanterns.children).forEach((l,i)=>l.classList.toggle("lit",Boolean(s.weekly?.[i])));
  set("lanternCaption",s.valid?String(s.weeks)+" of 36 weekly lanterns illuminated.":"36 lanterns await the learner's mastery record.");
@@ -96,6 +101,25 @@ function confetti(){
  for(let i=0;i<66;i++){const p=document.createElement("i");p.className="confetti";p.style.setProperty("--x",((i*37+13)%98)+"%");p.style.setProperty("--c",colors[i%colors.length]);p.style.setProperty("--time",String(2.5+i%8*.19)+"s");b.append(p)}
  setTimeout(()=>b.replaceChildren(),4500);
 }
+$("pinGradeOne").addEventListener("click",()=>{
+ const s=check(),l=s.learner;
+ if(!s.ready||!l?.learnerId)return set("pinStatus","Finish Kindergarten's formal mastery requirements before saving the Grade 1 class.");
+ if(!$("adultPinConfirm").checked)return set("pinStatus","An authorized adult must confirm before saving this class.");
+ const key="khaemenes_course_pins_v1";
+ let record;try{record=JSON.parse(localStorage.getItem(key)||"null")||{version:1,learners:{},updatedAt:null}}catch{return set("pinStatus","Unable to read existing class pins. Nothing changed.")}
+ if(record?.version!==1||!record.learners||typeof record.learners!=="object"||Array.isArray(record.learners))return set("pinStatus","Existing class pin format is unfamiliar. Nothing changed.");
+ const prior=Array.isArray(record.learners[l.learnerId])?record.learners[l.learnerId]:[];
+ if(!prior.some(p=>p?.id==="khaemenes-grade-01")){
+  record.learners[l.learnerId]=prior.concat([{
+    id:"khaemenes-grade-01",courseId:"khaemenes-grade-01",title:"Khaemenes Academy Grade 1",
+    subtitle:"Elementary · First Grade",href:"https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/",
+    source:"kindergarten-graduation",pinnedAt:new Date().toISOString()
+  }]).slice(-24);
+  record.updatedAt=new Date().toISOString();
+  try{localStorage.setItem(key,JSON.stringify(record))}catch{return set("pinStatus","Could not save. Browser storage may be full.")}
+ }
+ set("pinStatus","Grade 1 entrance saved for this learner. Formal placement stays unchanged.");
+});
 $("celebrate").addEventListener("click",()=>{if(!ready||!check().ready)return;$("certificate").hidden=false;confetti();$("certificate").scrollIntoView({behavior:window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches?"instant":"smooth"})});
 $("printKeepsake").addEventListener("click",()=>{if(!ready||!check().ready)return;$("certificate").hidden=false;window.print()});
 ["khaemenes-kindergarten-mastery-changed","khaemenes-kindergarten-assessment-sync","khaemenes-family-changed","khaemenes-learner-placement-changed","storage","pageshow","focus"].forEach(e=>window.addEventListener(e,update));
