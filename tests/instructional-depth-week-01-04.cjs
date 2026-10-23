@@ -11,7 +11,12 @@ for(let week=1;week<=4;week++){
   const articles=[...html.matchAll(/<article class="(?:kg-lesson|lesson)"[^>]*>[\s\S]*?<\/article>/g)].map(m=>m[0]);
   test("Week "+id+": retains five original interactive daily lessons",()=>{
     assert.equal(articles.length,5,"Week "+id+" must retain five daily lessons");
-    assert.equal((html.match(/data-kg-complete=/g)||[]).length,5,"Week "+id+" must retain the original five day-completion controls");
+    if(week===2){
+      assert.ok(html.includes('data-kg-complete="${idx}"'),"Week 02 must retain its dynamically generated day-completion controls");
+      assert.equal((html.match(/data-kg-day="/g)||[]).length,5,"Week 02 must retain five day tabs");
+    }else{
+      assert.equal((html.match(/data-kg-complete=/g)||[]).length,5,"Week "+id+" must retain the original five day-completion controls");
+    }
   });
   test("Week "+id+": one explicit instructional scaffold per day",()=>{
     for(const article of articles){
