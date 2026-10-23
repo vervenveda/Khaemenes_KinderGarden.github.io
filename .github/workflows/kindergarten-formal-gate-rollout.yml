@@ -53,8 +53,11 @@ jobs:
           node-version: '20'
       - name: Check JavaScript syntax
         run: |
+          node --check assets/app.js
           node --check assets/khaemenes-kinder-mastery-gates.js
           node --check curriculum/assets/app.js
+          node --check assets/khaemenes-kinder-experience.js
+          node --check assets/khaemenes-kinder-continuity.js
       - name: Verify formal route coverage
         run: node scripts/inject-kindergarten-formal-gates.mjs --check
       - name: Validate local HTML links and assets
