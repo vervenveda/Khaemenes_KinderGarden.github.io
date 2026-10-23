@@ -12,13 +12,14 @@
     "geography",
     "indigenousNations",
     "chronology",
-    "government",
+    "governmentConstitution",
     "civicInstitutions",
-    "contributors",
+    "africanAmericanAndLocalContributors",
     "economy",
     "archivesMuseums",
     "sourceSets",
-    "checkpointSubstitutions"
+    "checkpointSubstitutions",
+    "privacyAndNonpartisan"
   ],
   "properties": {
     "schemaVersion": {
@@ -46,31 +47,58 @@
       ]
     },
     "geography": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "indigenousNations": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "chronology": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
-    "government": {
-      "type": "array"
+    "governmentConstitution": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "civicInstitutions": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
-    "contributors": {
-      "type": "array"
+    "africanAmericanAndLocalContributors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "economy": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "archivesMuseums": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "sourceSets": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "checkpointSubstitutions": {
       "type": "object"
@@ -78,5 +106,6 @@
     "privacyAndNonpartisan": {
       "type": "object"
     }
-  }
+  },
+  "additionalProperties": true
 }

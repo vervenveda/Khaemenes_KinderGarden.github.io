@@ -65,7 +65,8 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
       "california": "validation",
       "newYork": "validation",
       "template": "template"
-    }
+    },
+    "statePackTemplateJson": "STATE_PACK_TEMPLATE.json"
   },
   "frameworks": [
     {

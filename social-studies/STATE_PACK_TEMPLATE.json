@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "stateCode": "XX",
+  "stateName": "Replace with state name",
+  "grade": "K",
+  "status": "template",
+  "geography": [],
+  "indigenousNations": [],
+  "chronology": [],
+  "governmentConstitution": [],
+  "civicInstitutions": [],
+  "africanAmericanAndLocalContributors": [],
+  "economy": [],
+  "archivesMuseums": [],
+  "sourceSets": [],
+  "checkpointSubstitutions": {},
+  "privacyAndNonpartisan": {
+    "noSensitiveDisclosure": true,
+    "nonpartisan": true,
+    "indigenousPresentDayContinuity": true,
+    "masteryThresholdInvariant": 80
+  }
+}
