@@ -2,7 +2,7 @@
 body{margin:0;background:#f5f1e7;color:#23352d;font:400 15px/1.6 "Avenir Next","Segoe UI",Arial,sans-serif}.shell{width:min(1240px,calc(100% - 28px));margin:auto;padding:28px 0}.card{background:#fff;border:1px solid #d7dcd7;border-radius:7px;padding:18px;margin:14px 0}.button,button,input,select{min-height:40px;padding:8px 12px;border:1px solid #aeb8b2;border-radius:7px;background:#fff;color:#23352d}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}table{width:100%;border-collapse:collapse}th,td{border:1px solid #d7dcd7;padding:7px;text-align:left;vertical-align:top}h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:400}.small{color:#68736d;font-size:12.5px}.assessmentBanner{padding:12px;border:1px solid #cdd8d1;border-radius:7px;background:#f4f8f4;margin:10px 0}@media(max-width:800px){table{display:block;overflow:auto}}@media print{.noPrint{display:none}}
 </style></head><body><main class="shell"><div class="actions noPrint"><a class="button" href="index.html">← Student Course</a></div><h1>Khaemenes Academy</h1><h2>Kindergarten Social Studies · Teacher Tools</h2><section class="card"><p><strong>Static-site boundary:</strong> this convenience code is not secure authentication. Backups are course-identified and learner-scoped when an Academy learner is active.</p><label>Convenience code <input id="code" type="password"> <button id="open">Open</button></label></section><div id="tools"></div></main>
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
-<script src="../assets/khaemenes-kindergarten-subject-context.js"></script><script src="course-data.js"></script><script>
+<script src="khaemenes-kindergarten-subject-context.js"></script><script src="course-data.js"></script><script>
 (()=>{
  const C=window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES,M=C.metadata,SUB=window[Object.keys(window).find(k=>/^Khaemenes.*SubjectContext$/.test(k))]||null,$=s=>document.querySelector(s);
  function key(){return SUB?.scopedKey?.("social-studies")||M.storageKey}
@@ -25,11 +25,11 @@ body{margin:0;background:#f5f1e7;color:#23352d;font:400 15px/1.6 "Avenir Next","
      const expected=a.learner.learnerId;
      if(p.scope?.academyLearnerId&&p.scope.academyLearnerId!==expected)throw new Error("This backup belongs to a different Academy learner.");
      const matches=incoming.students.filter(s=>s.academyLearnerId===expected||s.id==="academy_"+expected);
-     if(matches.length===1){const s=structuredClone(matches[0]);s.academyLearnerId=expected;s.id="academy_"+expected;s.name=a.learner.nickname;ensure(s);return{students:[s],activeId:s.id}}
+     if(matches.length===1){const s=JSON.parse(JSON.stringify(matches[0]));s.academyLearnerId=expected;s.id="academy_"+expected;s.name=a.learner.nickname;ensure(s);return{students:[s],activeId:s.id}}
      if(matches.length>1)throw new Error("Backup contains duplicate records for the active Academy learner.");
      if(incoming.students.length===1&&!incoming.students[0].academyLearnerId){
        if(!confirm("Legacy backup has no Academy learner identity. Bind its single learner record to the active Academy profile?"))throw new Error("Import cancelled.");
-       const s=structuredClone(incoming.students[0]);s.academyLearnerId=expected;s.id="academy_"+expected;s.name=a.learner.nickname;ensure(s);return{students:[s],activeId:s.id}
+       const s=JSON.parse(JSON.stringify(incoming.students[0]));s.academyLearnerId=expected;s.id="academy_"+expected;s.name=a.learner.nickname;ensure(s);return{students:[s],activeId:s.id}
      }
      throw new Error("Import blocked: no uniquely matching record for the active Academy learner.");
    }
