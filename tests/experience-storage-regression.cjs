@@ -121,7 +121,8 @@ const contextGetterSource=extractBetween("  function getContext(){","\n\n  funct
 const contextSyncSource=extractBetween("  function syncContext(){","\n\n  function currentStations(){");
 test("cached Mentor context is hidden when another learner is active",()=>{
   const stored={learnerId:"child-A",nickname:"Avery"};
-  const getter=new Function("learnerId","readJSON",contextGetterSource+"\nreturn getContext;")(
+  const getter=new Function("KEYS","learnerId","readJSON",contextGetterSource+"\nreturn getContext;")(
+    {context:"khaemenes_kindergarten_mentor_context_v1"},
     ()=>"child-B",(key,fallback)=>key==="khaemenes_kindergarten_mentor_context_v1"?stored:fallback
   );
   assert.equal(getter(),null);
