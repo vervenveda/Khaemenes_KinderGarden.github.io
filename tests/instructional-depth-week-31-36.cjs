@@ -8,15 +8,16 @@ function test(name,fn){fn();checks.push(name);console.log("PASS "+name);}
 for(let week=31;week<=36;week++){
   const id=String(week).padStart(2,"0");
   const html=fs.readFileSync(path.join(root,"unit-"+id,"formal-content.html"),"utf8");
-  const dayBlocks=[...html.matchAll(/<article class="lesson"[^>]*>[\\s\\S]*?<\\/article>/g)].map(match=>match[0]);
-  const daily=dayBlocks.join("\\n");
+  const dayBlocks=[...html.matchAll(/<article class="lesson"[^>]*>[\s\S]*?<\/article>/g)].map(match=>match[0]);
+  const daily=dayBlocks.join("\n");
   test("Week "+id+": five daily targets and recall/vocabulary prompts",()=>{
-    assert.equal((dayBlocks.join("").match(/Daily learning target:/g)||[]).length,5,"Week "+id+" must have five visible daily targets");
+    assert.equal(dayBlocks.length,5,"Week "+id+" should expose five daily lesson articles");
+    assert.equal((daily.match(/Daily learning target:/g)||[]).length,5,"Week "+id+" must have five visible daily targets");
     assert.equal((daily.match(/class="prior-knowledge-retrieval"/g)||[]).length,5,"Week "+id+" must have one recall/vocabulary prompt per day");
   });
   test("Week "+id+": daily modeling, guided examples, and fresh transfer",()=>{
     assert.equal((daily.match(/Adult modeling:/g)||[]).length,5,"Week "+id+" needs five adult modeling examples");
-    assert.equal((html.match(/Guided practice \(three (?:varied|different) examples\)/gi)||[]).length,5,"Week "+id+" needs three guided examples every day");
+    assert.equal((daily.match(/Guided practice \(three (?:varied|different) examples\)/gi)||[]).length,5,"Week "+id+" needs three guided examples every day");
     assert.equal((daily.match(/Fresh independent transfer:/g)||[]).length,5,"Week "+id+" needs a fresh independent transfer task every day");
     assert.equal((daily.match(/Corrective feedback:/g)||[]).length,5,"Week "+id+" needs explicit corrective feedback every day");
   });
