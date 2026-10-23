@@ -335,9 +335,22 @@
     };
   }
 
+  function getContext(){
+    const activeId=learnerId();
+    const record=readJSON(KEYS.context,null);
+    // Context is a derived cache for the active learner, never an identity
+    // source. Do not expose a prior learner's cached context after deselection
+    // or a failed refresh.
+    return activeId&&record?.learnerId===activeId?record:null;
+  }
+
   function syncContext(){
     const record=contextRecord();
-    if(record)writeJSON(KEYS.context,record);
+    if(!record){
+      try{global.localStorage?.removeItem?.(KEYS.context)}catch{}
+      return null;
+    }
+    if(!writeJSON(KEYS.context,record))return null;
     return record;
   }
 
@@ -504,7 +517,7 @@
     version:VERSION,
     keys:KEYS,
     syncContext,
-    getContext:()=>readJSON(KEYS.context,null),
+    getContext,
     observations:()=>observations(),
     saveObservation,
     recentActivity:()=>recentActivity(),
