@@ -8,8 +8,8 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "masteryThreshold": 80,
     "assessmentDraw": 5,
     "questionBankPerWeek": 8,
-    "version": "1.1.0",
-    "updated": "2026-10-19",
+    "version": "1.2.0",
+    "updated": "2026-10-23",
     "storageKey": "khaemenes_kindergarten_social_studies_v1",
     "note": "Teacher-assisted reading is permitted. Formal mastery measures Social Studies understanding, not independent reading fluency.",
     "stateLocalizable": true,
@@ -41,7 +41,15 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "finalDraw": 24,
     "weeklyMode": "open-book with teacher read-aloud support",
     "midtermMode": "closed-resource teacher-assisted/read-aloud",
-    "finalMode": "closed-resource teacher-assisted/read-aloud"
+    "finalMode": "closed-resource teacher-assisted/read-aloud",
+    "antiRepeatDepth": 2,
+    "cumulativeBlueprint": "unit-stratified",
+    "assessmentModel": "Teacher-assisted randomized forms with answer shuffling, two-form anti-repeat weighting, saved attempt snapshots, and unit-stratified cumulative checks.",
+    "statePacks": {
+      "florida": "STATE_PACK_FLORIDA.md"
+    },
+    "localizationWorkflow": "Teacher-selected generic or Florida context with simple checkpoint evidence saved in the learner record.",
+    "constructedEvidenceReview": "observed / revise / accepted is recorded separately from the 80% objective mastery gate."
   },
   "frameworks": [
     {
@@ -8645,5 +8653,71 @@ window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES={
     "mode": "national-core-state-local-overlay",
     "rule": "State/local examples, sources, maps, symbols, public services, biographies, Indigenous histories, environments, and community evidence should be localized where appropriate without removing national competencies or weakening the 80% mastery policy.",
     "guide": "STATE_LOCALIZATION_GUIDE.md"
+  },
+  "localizationTasks": {
+    "3": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 3, \"Our School and the People Who Help It Work\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 3, \"Our School and the People Who Help It Work\". Record what the learner noticed or explained."
+    },
+    "4": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 4, \"Unit Inquiry · How Communities Work\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 4, \"Unit Inquiry · How Communities Work\". Record what the learner noticed or explained."
+    },
+    "9": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 9, \"Maps Represent Real Places\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 9, \"Maps Represent Real Places\". Record what the learner noticed or explained."
+    },
+    "10": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 10, \"Directions and Position\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 10, \"Directions and Position\". Record what the learner noticed or explained."
+    },
+    "11": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 11, \"Land, Water, and Human Places\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 11, \"Land, Water, and Human Places\". Record what the learner noticed or explained."
+    },
+    "12": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 12, \"Unit Inquiry · My Place in the World\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 12, \"Unit Inquiry · My Place in the World\". Record what the learner noticed or explained."
+    },
+    "15": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 15, \"Sources Are Clues About the Past\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 15, \"Sources Are Clues About the Past\". Record what the learner noticed or explained."
+    },
+    "16": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 16, \"Unit Inquiry · Then and Now\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 16, \"Unit Inquiry · Then and Now\". Record what the learner noticed or explained."
+    },
+    "25": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 25, \"Community and National Symbols\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 25, \"Community and National Symbols\". Record what the learner noticed or explained."
+    },
+    "26": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 26, \"Local Government and Community Services\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 26, \"Local Government and Community Services\". Record what the learner noticed or explained."
+    },
+    "27": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 27, \"Leaders, Representatives, and Public Decisions\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 27, \"Leaders, Representatives, and Public Decisions\". Record what the learner noticed or explained."
+    },
+    "28": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 28, \"Unit Inquiry · A Community Problem-Solving Lab\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 28, \"Unit Inquiry · A Community Problem-Solving Lab\". Record what the learner noticed or explained."
+    },
+    "30": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 30, \"People, Places, and Environmental Choices\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 30, \"People, Places, and Environmental Choices\". Record what the learner noticed or explained."
+    },
+    "31": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 31, \"Helping, Service, and Informed Action\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 31, \"Helping, Service, and Informed Action\". Record what the learner noticed or explained."
+    },
+    "32": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 32, \"Unit Inquiry · Our Evidence-to-Action Project\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 32, \"Unit Inquiry · Our Evidence-to-Action Project\". Record what the learner noticed or explained."
+    },
+    "35": {
+      "generic": "Use a picture, map, public place, helper, symbol, simple historical clue, Indigenous community source, or shared-space example from the learner's state/community connected to Week 35, \"Kindergarten Social Studies Capstone\". Record what the learner noticed, drew, pointed to, or explained.",
+      "florida": "Use a Florida picture, map, public place, helper/service, state/local symbol, museum/library image, present-day tribal-community source, landmark, or shared-space example connected to Week 35, \"Kindergarten Social Studies Capstone\". Record what the learner noticed or explained."
+    }
   }
 };
