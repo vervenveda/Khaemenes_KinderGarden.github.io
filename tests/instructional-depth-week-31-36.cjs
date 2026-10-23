@@ -14,7 +14,7 @@ for(let week=31;week<=36;week++){
   });
   test("Week "+id+": daily modeling, guided examples, and fresh transfer",()=>{
     assert.equal((html.match(/Adult modeling:/g)||[]).length,5,"Week "+id+" needs five adult modeling examples");
-    assert.equal((html.match(/Guided practice \\(three (?:varied|different) examples\\)/gi)||[]).length,5,"Week "+id+" needs three guided examples every day");
+    assert.equal((html.match(/Guided practice \(three (?:varied|different) examples\)/gi)||[]).length,5,"Week "+id+" needs three guided examples every day");
     assert.equal((html.match(/Fresh independent transfer:/g)||[]).length,5,"Week "+id+" needs a fresh independent transfer task every day");
     assert.equal((html.match(/Corrective feedback:/g)||[]).length,5,"Week "+id+" needs explicit corrective feedback every day");
   });
