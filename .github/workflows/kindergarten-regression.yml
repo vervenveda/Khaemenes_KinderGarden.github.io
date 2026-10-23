@@ -33,3 +33,5 @@ jobs:
         run: node tests/experience-storage-regression.cjs
       - name: Check all printable packet structures
         run: node tests/printables-regression.cjs
+      - name: Check instructional depth for Weeks 31–36
+        run: node tests/instructional-depth-week-31-36.cjs
