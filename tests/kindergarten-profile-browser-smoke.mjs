@@ -104,6 +104,7 @@ try{
  console.log("PASS guardian-assisted Pre-K visual carryover leaves original record untouched");
  const wrongBackup={schema:"khaemenes.kindergarten-visual.v1",learnerId:first.b,theme:"night",avatar:"🦉",photo:""};
  await page.locator("#importLook").setInputFiles({name:"other-learner.json",mimeType:"application/json",buffer:Buffer.from(JSON.stringify(wrongBackup))});
+ await page.waitForFunction(()=>/belongs to another learner|wrong format/i.test(document.getElementById("lookStatus")?.textContent||""),null,{timeout:3000});
  assert.equal(await page.locator("body").getAttribute("data-prek-background"),"sunset","cross-learner import must not overwrite selected learner");
  assert.match(await page.locator("#lookStatus").innerText(),/belongs to another learner|wrong format/i);
  console.log("PASS wrong-learner visual bundle restore denied");
