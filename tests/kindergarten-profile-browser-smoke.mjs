@@ -88,7 +88,7 @@ try{
  const download=page.waitForEvent("download");
  await page.locator("#exportLook").click();
  const exported=await download;
- assert.match(exported.suggestedFilename(),/^khaemenes-prek-visual-.*\.json$/);
+ assert.match(exported.suggestedFilename(),/^khaemenes-kindergarten-visual-.*\.json$/);
  console.log("PASS visual bundle export");
  assert.deepEqual(errors,[],"uncaught JavaScript errors: "+JSON.stringify(errors));
  console.log("PASS complete Kindergarten profile browser smoke");
