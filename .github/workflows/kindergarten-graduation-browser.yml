@@ -1,0 +1,32 @@
+name: Kindergarten Graduation Browser Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - "graduation/**"
+      - "tests/kindergarten-graduation-browser-smoke.mjs"
+      - ".github/workflows/kindergarten-graduation-browser.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  graduation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Academy.github.io
+          ref: main
+          path: shared-academy
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save --no-package-lock playwright
+      - run: npx playwright install chromium
+      - name: Certify Kindergarten graduation visual and authority boundaries
+        run: node tests/kindergarten-graduation-browser-smoke.mjs
