@@ -2,21 +2,12 @@
 const C=window.KHAEMENES_KINDERGARTEN_SOCIAL_STUDIES,M=C.metadata,$=s=>document.querySelector(s),SUB=window.KhaemenesKindergartenSubjectContext||null,LEGACY=M.storageKey;
 let db=read(),activeWeek=1,view="week",form=null;
 function key(){return SUB?.scopedKey?.()||LEGACY}
-function read(){
- try{
-   const k=key(),existing=localStorage.getItem(k);
-   if(existing)return JSON.parse(existing);
-   if(k!==LEGACY){
-     const old=localStorage.getItem(LEGACY);
-     if(old){localStorage.setItem(k,old);return JSON.parse(old)}
-   }
- }catch{}
- return{students:[],activeId:null}
-}
+function read(){try{return JSON.parse(localStorage.getItem(key()))||{students:[],activeId:null}}catch{return{students:[],activeId:null}}}
 function save(){localStorage.setItem(key(),JSON.stringify(db))}
 function id(){return"kss_"+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
 function student(){return db.students.find(s=>s.id===db.activeId)||null}
 function ensure(s){s.weeks||={};s.exams||={};s.localization||={statePack:"generic",stateLabel:"",updatedAt:null};for(const k of ["midterm","final"]){s.exams[k]||={best:0,attempts:[]};s.exams[k].attempts||=[];s.exams[k].best=s.exams[k].best||0;s.exams[k].reviewStatus??="observed"}for(let w=1;w<=36;w++){s.weeks[w]||={best:0,attempts:[],artifact:"",reflection:"",correction:"",lessonDone:{}};s.weeks[w].attempts||=[];s.weeks[w].lessonDone||={};s.weeks[w].localizationEvidence??="";s.weeks[w].reviewStatus??="observed"}}
+function syncAcademyLearner(){const a=SUB?.status?.("social-studies");if(a?.status!=="ready")return false;const aid=a.learner.learnerId;let x=db.students.find(s=>s.academyLearnerId===aid||s.id==="academy_"+aid),changed=false;if(!x){x={id:"academy_"+aid,name:a.learner.nickname,academyLearnerId:aid,weeks:{},exams:{},localization:{statePack:"generic",stateLabel:"",updatedAt:null}};ensure(x);db.students.push(x);changed=true}else{ensure(x);if(x.academyLearnerId!==aid){x.academyLearnerId=aid;changed=true}if(x.id!=="academy_"+aid){x.id="academy_"+aid;changed=true}}if(x.name!==a.learner.nickname){x.name=a.learner.nickname;changed=true}if(db.activeId!==x.id){db.activeId=x.id;changed=true}if(changed)save();return true}
 function unlocked(s,w){if(w===1)return true;if(!s)return false;ensure(s);if(w===19&&(s.exams.midterm.best||0)<M.masteryThreshold)return false;return(s.weeks[w-1]?.best||0)>=M.masteryThreshold}
 function highestOpen(s){let n=1;for(let w=2;w<=36;w++){if(unlocked(s,w))n=w;else break}return n}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
@@ -35,11 +26,12 @@ function installControls(){
  }
 }
 function render(){
+ syncAcademyLearner();
  installControls();
  const s=student();if(s)ensure(s);
  const a=SUB?.status?.();
  $("#academyContext").textContent=a?.status==="ready"?`Academy learner: ${a.learner.nickname} · learner-scoped Social Studies record active.`:a?.status==="placement-mismatch"?"Active Academy learner is not placed in Kindergarten; preview/local mode only.":"No active Academy Kindergarten learner; local browser subject record.";
- $("#studentSelect").innerHTML=db.students.length?db.students.map(x=>`<option value="${x.id}" ${x.id===db.activeId?"selected":""}>${esc(x.name)}</option>`).join(""):'<option value="">No learner yet</option>';
+ $("#studentSelect").innerHTML=db.students.length?db.students.map(x=>`<option value="${x.id}" ${x.id===db.activeId?"selected":""}>${esc(x.name)}</option>`).join(""):'<option value="">No learner yet</option>';const academyReady=a?.status==="ready";$("#studentSelect").disabled=academyReady;$("#studentName").disabled=academyReady;$("#addStudent").disabled=academyReady;
  renderWeeks(s);renderStatus(s);
  if(view==="week")renderWeek(s);else renderExam(s,view);
 }
