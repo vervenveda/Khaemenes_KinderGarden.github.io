@@ -262,8 +262,10 @@
       at:new Date().toISOString()
     });
     records[id]=list.slice(-200);
-    writeJSON(KEYS.activity,records);
+    // Do not refresh Mentor context unless the activity event was actually saved.
+    if(!writeJSON(KEYS.activity,records))return false;
     syncContext();
+    return true;
   }
 
   function recentActivity(id=learnerId(),days=7){
@@ -426,6 +428,7 @@
     const stations=currentStations();
     section.innerHTML=
       '<div class="kinder-experience-head"><div class="kinder-experience-title"><span class="kinder-experience-owl">🦉</span><div><h3>Today with Archaemenes</h3><p>'+esc(value.nickname||"Learner")+' keeps the formal lesson first. Practice, exploration, and reset choices support the lesson without becoming mastery gates.</p></div></div></div>'+
+      '<p id="kinderActivitySaveStatus" role="status" aria-live="polite" hidden style="margin:.75rem 0;padding:.8rem 1rem;border:1px solid #dfbf77;border-radius:12px;background:#fff8df;color:#674d20;font-size:.9rem"></p>'+
       '<div class="kinder-stations">'+stations.map((item,index)=>
         '<a class="kinder-station" href="'+esc(item.href||"#")+'" data-kinder-experience-kind="'+esc(item.kind)+'" data-kinder-experience-title="'+esc(item.title)+'">'+
           '<span>'+esc(item.label)+'</span><i>'+esc(item.icon)+'</i><b>'+esc(item.title)+'</b><small>'+esc(item.desc||"")+'</small><em>'+(index===0?"Formal step":"Optional support")+' →</em></a>'
@@ -436,7 +439,20 @@
         '<a href="'+AURORA_URL+'" data-kinder-break>I Need a Break</a>'+
       '</div>';
     section.querySelectorAll("[data-kinder-experience-kind]").forEach(link=>{
-      link.addEventListener("click",()=>logActivity(link.dataset.kinderExperienceKind,link.dataset.kinderExperienceTitle,link.getAttribute("href")));
+      link.addEventListener("click",event=>{
+        const href=link.getAttribute("href")||"#";
+        const saved=logActivity(link.dataset.kinderExperienceKind,link.dataset.kinderExperienceTitle,href);
+        if(saved!==false)return;
+        event.preventDefault();
+        const status=section.querySelector("#kinderActivitySaveStatus");
+        if(!status)return;
+        status.replaceChildren(global.document.createTextNode("This activity could not be saved to this device, so the learning log may be incomplete. You can retry later or continue without saving: "));
+        const resume=global.document.createElement("a");
+        resume.href=href;
+        resume.textContent="Continue without saving";
+        status.appendChild(resume);
+        status.hidden=false;
+      });
     });
     section.querySelector("[data-kinder-experience-mentor]")?.addEventListener("click",()=>syncContext());
     syncContext();
