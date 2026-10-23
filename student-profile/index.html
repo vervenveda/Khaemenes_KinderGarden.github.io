@@ -66,7 +66,7 @@ footer{padding:24px 0;text-align:center;font-size:13px;color:var(--muted)}
 <section class="card span5" aria-labelledby="pinsTitle"><h2 id="pinsTitle">📌 My pinned adventures</h2><div id="pinnedActivities" class="activity-list"><p class="muted">Pin your favorite games in the Kinder Garden Adventure Garden.</p></div>
 <div class="actions"><button type="button" class="secondary" id="pinKinderCourse">📌 Pin Kindergarten class</button></div>
 <label for="appSelect">Choose a favorite learning game</label><select id="appSelect"><option value="">Choose a game</option></select>
-<button type="button" class="secondary" id="pinSelectedApp">📌 Pin game</button><a class="button secondary" href="../#apps">Find more adventures →</a></section>
+<button type="button" class="secondary" id="pinSelectedApp">📌 Pin game</button><button type="button" class="secondary" id="unpinSelectedApp">Unpin selected game</button><a class="button secondary" href="../#apps">Find more adventures →</a></section>
 <section class="card span6 appearance-controls" aria-labelledby="pictureTitle">
 <h2 id="pictureTitle">My picture &amp; avatar</h2><p class="muted">A grown-up may choose an avatar or a small photo. Images are resized on this device and are never uploaded by this page.</p>
 <label><input type="checkbox" id="adultConfirm"> I am an adult helping the selected child personalize this profile.</label>
@@ -187,7 +187,7 @@ function renderLearnerChoices(){
  select.replaceChildren();
  for(const child of candidates){const option=document.createElement("option");option.value=child.learnerId;option.textContent=child.nickname||"Kindergarten learner";select.append(option)}
  if(active?.learnerId&&candidates.some(x=>x.learnerId===active.learnerId))select.value=active.learnerId;
- area.hidden=candidates.length<2;
+ area.hidden=candidates.length===0||(candidates.length===1&&Boolean(learner()));
 }
 function refresh(){
  renderLearnerChoices();
@@ -235,6 +235,48 @@ $("childPhoto").addEventListener("change",async event=>{
  finally{URL.revokeObjectURL(url)}
 });
 $("removePhoto").addEventListener("click",()=>{if(!consent())return;look.photo="";saveLook()});
+$("usePreschoolPhoto").addEventListener("click",()=>{
+ if(!consent())return;
+ const original=read("khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),null);
+ if(original?.schema!=="khaemenes.prek-visual.v1"||original?.learnerId!==activeId){
+  announce("No Pre-K photo and colors are stored for this same learner on this browser.",true);return
+ }
+ const prior=look;look=normalize(original);
+ if(!saveLook()){look=prior;renderLook()}else announce("Pre-K picture and background copied. The original Pre-K record is unchanged.");
+});
+$("printProfile").addEventListener("click",()=>window.print());
+$("pinKinderCourse").addEventListener("click",()=>{
+ if(!consent())return;
+ const key="khaemenes_course_pins_v1",saved=read(key,{version:1,learners:{},updatedAt:null});
+ if(saved.version!==1||!saved.learners||typeof saved.learners!=="object"){announce("Existing course pins have an unrecognized format. Nothing was changed.",true);return}
+ const learnerPins=Array.isArray(saved.learners[activeId])?saved.learners[activeId]:[];
+ if(!pinnedCourse()){
+  saved.learners[activeId]=learnerPins.concat([{id:"khaemenes-kindergarten",courseId:"khaemenes-kindergarten",title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · 36-week curriculum",href:BASE,source:"khaemenes-kindergarten-profile",pinnedAt:new Date().toISOString()}]).slice(-24);
+  saved.updatedAt=new Date().toISOString();
+  try{localStorage.setItem(key,JSON.stringify(saved))}catch{announce("Could not save this class pin. Check browser storage.",true);return}
+ }
+ renderLearning();announce("Kindergarten class pinned to the selected learner.");
+});
+$("unpinSelectedApp").addEventListener("click",()=>{
+ if(!consent())return;
+ const id=$("appSelect").value,pins=pinnedApps();
+ if(!id||!pins.includes(id)){announce("Choose a currently pinned game to remove.",true);return}
+ try{localStorage.setItem("khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId),JSON.stringify(pins.filter(x=>x!==id)))}
+ catch{announce("Could not unpin this game.",true);return}
+ renderLearning();announce("Game unpinned for this learner.");
+});
+$("pinSelectedApp").addEventListener("click",()=>{
+ if(!consent())return;
+ const id=$("appSelect").value,app=catalog?.byId?.(id);
+ if(!app?.path?.startsWith("apps/")){announce("Choose a Kindergarten game first.",true);return}
+ const pinned=pinnedApps();
+ if(!pinned.includes(id)){
+  try{localStorage.setItem("khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId),JSON.stringify([...pinned,id].slice(-15)))}
+  catch{announce("Could not save this game pin.",true);return}
+ }
+ renderLearning();announce("Pinned "+app.title+" to this learner.");
+});
+
 $("resetLook").addEventListener("click",()=>{if(!consent())return;look=normalize(null);saveLook()});
 $("exportLook").addEventListener("click",()=>{
  if(!eligible()){announce("Choose a Kindergarten learner first.",true);return}
@@ -257,6 +299,7 @@ $("learnerSelect").addEventListener("change",event=>{
  if(found&&found.familyId===family.familyId)R.setActive?.({familyId:family.familyId,learnerId:id});
 });
 window.addEventListener("khaemenes-family-changed",refresh);
+window.addEventListener("khaemenes-learning-continuation-changed",()=>{if(activeId)renderLearning()});
 window.addEventListener("storage",event=>{if(["khaemenes_active_learner_v1","khaemenes_family_registry_v1"].includes(event.key))refresh()});
 refresh();
 })();
