@@ -90,6 +90,29 @@ try{
  const exported=await download;
  assert.match(exported.suggestedFilename(),/^khaemenes-kindergarten-visual-.*\.json$/);
  console.log("PASS visual bundle export");
+
+ // Explicit Pre-K to Kindergarten visual handoff: same stable learner only.
+ await page.evaluate(id=>{
+   window.localStorage.setItem("khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(id),JSON.stringify({
+     schema:"khaemenes.prek-visual.v1",learnerId:id,theme:"sunset",avatar:"🌈",photo:""
+   }));
+ },first.a);
+ await page.locator("#usePreschoolPhoto").click();
+ assert.equal(await page.locator("body").getAttribute("data-prek-background"),"sunset");
+ const prev=await page.evaluate(id=>JSON.parse(localStorage.getItem("khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(id))),first.a);
+ assert.equal(prev.theme,"sunset","source Pre-K preference must remain unchanged");
+ console.log("PASS guardian-assisted Pre-K visual carryover leaves original record untouched");
+ const wrongBackup={schema:"khaemenes.kindergarten-visual.v1",learnerId:first.b,theme:"night",avatar:"🦉",photo:""};
+ await page.locator("#importLook").setInputFiles({name:"other-learner.json",mimeType:"application/json",buffer:Buffer.from(JSON.stringify(wrongBackup))});
+ assert.equal(await page.locator("body").getAttribute("data-prek-background"),"sunset","cross-learner import must not overwrite selected learner");
+ assert.match(await page.locator("#lookStatus").innerText(),/belongs to another learner|wrong format/i);
+ console.log("PASS wrong-learner visual bundle restore denied");
+ await page.setViewportSize({width:390,height:844});
+ const mobile=await page.evaluate(()=>({viewport:window.innerWidth,html:document.documentElement.scrollWidth,body:document.body.scrollWidth}));
+ assert.ok(mobile.html<=mobile.viewport+5,"Kindergarten mobile profile has horizontal overflow: "+JSON.stringify(mobile));
+ assert.ok(await page.locator("#firstStepLink").isVisible(),"first-step action must be accessible on mobile");
+ console.log("PASS small-screen profile layout");
+
  assert.deepEqual(errors,[],"uncaught JavaScript errors: "+JSON.stringify(errors));
  console.log("PASS complete Kindergarten profile browser smoke");
 }finally{await context.close();await browser.close()}
