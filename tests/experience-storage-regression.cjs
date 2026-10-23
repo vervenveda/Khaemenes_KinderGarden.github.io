@@ -82,4 +82,58 @@ test("family UI visibly distinguishes failed observation save", () => {
   assert.ok(source.includes('if(!writeJSON(KEYS.observations,records))return false;'));
 });
 
+const activitySource = extractBetween("  function logActivity(kind,title,href){", "\n\n  function recentActivity(");
+function makeActivityHarness({ failWrites = false, activeLearner = "child-A", initial = {} } = {}) {
+  const data = new Map(Object.entries(initial).map(([k,v]) => [k, JSON.stringify(v)]));
+  const storage = {
+    getItem(key) { return data.has(String(key)) ? data.get(String(key)) : null; },
+    setItem(key, value) { if(failWrites)throw new Error("storage unavailable"); data.set(String(key), String(value)); },
+    removeItem(key) { data.delete(String(key)); }
+  };
+  const global = { localStorage: storage };
+  const writeJSON = new Function("global", writerSource + "\nreturn writeJSON;")(global);
+  const KEY_A={activity:"khaemenes_kindergarten_learning_log_v1"};
+  const allActivityRecords=()=>{const raw=storage.getItem(KEY_A.activity);return raw?JSON.parse(raw):{}};
+  let contextSyncs=0;
+  const api=new Function("KEYS","learnerId","allActivityRecords","writeJSON","syncContext",activitySource+"\nreturn logActivity;")(
+    KEY_A,()=>activeLearner,allActivityRecords,writeJSON,()=>{contextSyncs++}
+  );
+  return {api,storage,data,key:KEY_A.activity,get contextSyncs(){return contextSyncs}};
+}
+
+test("activity log write failure is returned and never syncs a successful-looking snapshot",()=>{
+  const h=makeActivityHarness({failWrites:true});
+  assert.equal(h.api("practice","Counting Garden","apps/Math_kinder_index.html"),false);
+  assert.equal(h.storage.getItem(h.key),null);
+  assert.equal(h.contextSyncs,0);
+});
+
+test("activity log is persisted before context refresh is requested",()=>{
+  const h=makeActivityHarness();
+  assert.equal(h.api("practice","Counting Garden","apps/Math_kinder_index.html"),true);
+  const saved=JSON.parse(h.storage.getItem(h.key));
+  assert.equal(saved["child-A"].length,1);
+  assert.equal(saved["child-A"][0].title,"Counting Garden");
+  assert.equal(h.contextSyncs,1);
+});
+
+const contextGetterSource=extractBetween("  function getContext(){","\n\n  function syncContext(){");
+const contextSyncSource=extractBetween("  function syncContext(){","\n\n  function currentStations(){");
+test("cached Mentor context is hidden when another learner is active",()=>{
+  const stored={learnerId:"child-A",nickname:"Avery"};
+  const getter=new Function("learnerId","readJSON",contextGetterSource+"\nreturn getContext;")(
+    ()=>"child-B",(key,fallback)=>key==="khaemenes_kindergarten_mentor_context_v1"?stored:fallback
+  );
+  assert.equal(getter(),null);
+});
+
+test("cached Mentor context is cleared when no learner is active",()=>{
+  const removed=[];
+  const result=new Function("contextRecord","KEYS","global",contextSyncSource+"\nreturn syncContext;")(
+    ()=>null,{context:"khaemenes_kindergarten_mentor_context_v1"},{localStorage:{removeItem:key=>removed.push(key)}}
+  );
+  assert.equal(result(),null);
+  assert.deepEqual(removed,["khaemenes_kindergarten_mentor_context_v1"]);
+});
+
 console.log("\nExperience storage regression: " + checks.length + " checks passed.");
