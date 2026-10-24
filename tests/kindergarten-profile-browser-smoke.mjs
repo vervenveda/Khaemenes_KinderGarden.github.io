@@ -71,6 +71,7 @@ try{
  await page.locator("#pv2Goal").fill("Sing the ABC song");
  await page.locator("#pv2SaveCompass").click();
  await page.locator("#learnerSelect").selectOption(first.b);
+ assert.equal(await page.locator("#adultConfirm").isChecked(),false,"guardian confirmation resets for another learner");
  assert.doesNotMatch(await page.locator("#pinnedActivities").innerText(),/ABC Curriculum/);
  assert.doesNotMatch(await page.locator("#pinnedActivities").innerText(),/My Kindergarten Class/);
  assert.equal(await page.locator("#childTitle").innerText(),"QA Moonbeam");
@@ -80,6 +81,7 @@ try{
  await page.locator("#adultConfirm").check();
  await page.locator("#backgroundChoices button[data-theme='ocean']").click();
  await page.locator("#learnerSelect").selectOption(first.a);
+ assert.equal(await page.locator("#adultConfirm").isChecked(),false,"returning to first learner needs fresh confirmation");
  assert.match(await page.locator("#pinnedActivities").innerText(),/ABC Curriculum/);
  assert.equal(await page.locator("body").getAttribute("data-prek-background"),"forest");
  assert.equal(await page.locator("#photoPreview img").count(),1);
