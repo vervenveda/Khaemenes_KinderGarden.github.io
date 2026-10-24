@@ -16,7 +16,7 @@ const host="https://vervenveda.com",purl=host+"/Khaemenes_Preschool.github.io/gr
 enroll=host+"/Khaemenes_Academy.github.io/family/enroll/",
 kurl=host+"/Khaemenes_KinderGarden.github.io/",
 lesson=kurl+"curriculum/lessons/unit-01/index.html",
-kgrad=kurl+"graduation/";
+kgrad=kurl+"graduation/",guardian=kurl+"family/guardian-release/";
 let certifyFixture=false;
 await page.route("https://vervenveda.com/**",async route=>{
  const pathname=new URL(route.request().url()).pathname;
@@ -48,6 +48,8 @@ try{
   const f=R.createFamily({displayName:"One Child Journey QA",adultName:"Guardian QA"});
   const a=R.registerLearner({familyId:f.familyId,nickname:"Lantern Learner",stage:"preschool",grade:"pre-k"});
   const b=R.registerLearner({familyId:f.familyId,nickname:"Sibling QA",stage:"preschool",grade:"pre-k"});
+  R.grantAdultAccess({familyId:f.familyId,adultId:f.adultId,learnerId:a.learnerId,permissionPreset:"co-guardian"});
+  R.grantAdultAccess({familyId:f.familyId,adultId:f.adultId,learnerId:b.learnerId,permissionPreset:"co-guardian"});
   R.setActive({familyId:f.familyId,adultId:f.adultId,learnerId:a.learnerId});
   return {familyId:f.familyId,adultId:f.adultId,learnerId:a.learnerId,siblingId:b.learnerId};
  });
@@ -89,15 +91,37 @@ try{
  await page.waitForTimeout(150);
  assert.equal(await page.locator("[data-kg-complete]").count(),0,"unauthorized learner must not enter the full formal lesson");
  console.log("PASS Kindergarten curriculum and graduation stay gated after placement");
- // Isolated consent fixture, NOT a substitute for real parent authorization UI.
- await page.evaluate(id=>{
-  const R=window.KhaemenesFamilyRegistry,child=R.getLearner(id);
-  R.registerLearner({familyId:child.familyId,nickname:child.nickname,stage:"kindergarten",grade:"k",existingLearnerId:id,
-    guardianRelease:{accepted:true,learnerId:id,version:"automated-consent-fixture",acceptedAt:new Date().toISOString()}});
- },ids.learnerId);
+ // Step 3 continued: use the parent-facing form and actual registry contract.
+ await page.goto(guardian,{waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#authorize").isEnabled(),true);
+ assert.equal(await page.locator("#continueLesson").isVisible(),false);
+ assert.match(await page.locator("#eligibility").innerText(),/Kindergarten release is still required/);
+ const beforeRelease=await page.evaluate(id=>window.KhaemenesFamilyRegistry.getLearner(id).guardianRelease,ids.learnerId);
+ assert.equal(beforeRelease,null,"Pre-K release must not authorize Kindergarten automatically");
+ await page.locator("[data-krel='authority']").check();
+ await page.locator("#authorize").click();
+ assert.match(await page.locator("#result").innerText(),/all seven/i);
+ assert.equal(await page.evaluate(id=>window.KhaemenesFamilyRegistry.getLearner(id).guardianRelease,ids.learnerId),null);
+ // A second family adult with progress-only access may read but cannot activate.
+ await page.evaluate(ids=>{
+  const R=window.KhaemenesFamilyRegistry;
+  const viewer=R.addAdultLocal({familyId:ids.familyId,displayName:"View-only adult",role:"caregiver",permissionPreset:"progress-viewer",learnerIds:[ids.learnerId]});
+  R.setActive({adultId:viewer.adultId});
+ },ids);
+ assert.equal(await page.locator("#authorize").isDisabled(),true,"a viewer must not approve guardian release");
+ assert.match(await page.locator("#eligibility").innerText(),/does not currently have.*permission/);
+ await page.evaluate(ids=>window.KhaemenesFamilyRegistry.setActive({adultId:ids.adultId}),ids);
+ await page.locator("[data-krel]").evaluateAll(boxes=>boxes.forEach(box=>{box.checked=true;box.dispatchEvent(new Event("change",{bubbles:true}))}));
+ await page.locator("#authorize").click();
+ assert.match(await page.locator("#result").innerText(),/Authorization completed/);
+ assert.equal(await page.locator("#continueLesson").isVisible(),true);
  const authorized=await page.evaluate(id=>window.KhaemenesFamilyRegistry.getLearner(id),ids.learnerId);
  assert.equal(authorized.learnerId,ids.learnerId);
  assert.equal(authorized.guardianRelease.accepted,true);
+ assert.equal(authorized.guardianRelease.version,"kindergarten-guardian-release-v1.0");
+ assert.equal(authorized.guardianRelease.adultId,ids.adultId);
+ assert.equal(await page.evaluate(()=>window.KhaemenesFamilyRegistry.getFamily().learners.length),2,"guardian release must not create a child");
+ console.log("PASS real parent-facing guardian review, seven acknowledgments, adult access restrictions and stable learner identity");
 
  // Step 4: Open the REAL gated lesson shell; record one practice day; reload.
  await page.goto(lesson,{waitUntil:"domcontentloaded"});
@@ -116,11 +140,13 @@ try{
  console.log("PASS actual Week 1 lesson saves and reloads learner-scoped practice without awarding mastery");
 
  // Mixed-child regression: same tab must refuse writes after active learner switch.
- await page.evaluate(id=>{
-  const R=window.KhaemenesFamilyRegistry,c=R.getLearner(id);
-  R.registerLearner({familyId:c.familyId,nickname:c.nickname,stage:"kindergarten",grade:"k",existingLearnerId:id,
-    guardianRelease:{accepted:true,learnerId:id,version:"automated-consent-fixture"}});
- },ids.siblingId);
+ await page.evaluate(id=>window.KhaemenesFamilyRegistry.updateLearnerGrade(id,"k"),ids.siblingId);
+ await page.evaluate(id=>window.KhaemenesFamilyRegistry.setActive({learnerId:id}),ids.siblingId);
+ await page.goto(guardian,{waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#continueLesson").isVisible(),false,"sibling must authorize separately");
+ await page.locator("[data-krel]").evaluateAll(boxes=>boxes.forEach(box=>{box.checked=true;box.dispatchEvent(new Event("change",{bubbles:true}))}));
+ await page.locator("#authorize").click();
+ assert.match(await page.locator("#result").innerText(),/Authorization completed/);
  await page.evaluate(id=>window.KhaemenesFamilyRegistry.setActive({learnerId:id}),ids.siblingId);
  assert.equal(await page.locator('[data-kg-complete="1"]').isDisabled(),true,"switch should disable old learner's practice controls");
  await page.goto(lesson,{waitUntil:"domcontentloaded"});
@@ -150,6 +176,18 @@ try{
  assert.equal(afterFormal,beforeFormal);
  assert.equal(await page.evaluate(()=>window.KhaemenesFamilyRegistry.getLearner().stage),"kindergarten");
  console.log("PASS graduation visual with explicit mock authority; no fake mastery or automatic promotion");
+ // Revoke on the real parent-facing form; the existing saved practice must remain intact.
+ certifyFixture=false;
+ await page.goto(guardian,{waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#revoke").isEnabled(),true);
+ page.once("dialog",dialog=>dialog.accept());
+ await page.locator("#revoke").click();
+ assert.match(await page.locator("#result").innerText(),/revoked/);
+ assert.equal(await page.locator("#continueLesson").isVisible(),false);
+ await page.goto(lesson,{waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("[data-kg-complete]").count(),0,"revoking guardian release must re-lock formal lessons");
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,key),[0],"revoking consent must not erase learner work");
+ console.log("PASS guardian release revocation blocks future formal access while preserving saved practice");
  const fatal=errors.filter(e=>!/404|ResourceNotFound/.test(e));
  assert.deepEqual(fatal,[],"uncaught page errors: "+JSON.stringify(fatal));
  console.log("PASS full Preschool → Kindergarten single-child forensic journey");
