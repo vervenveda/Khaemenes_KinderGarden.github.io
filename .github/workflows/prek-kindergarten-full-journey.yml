@@ -1,0 +1,39 @@
+name: Pre-K to Kindergarten Single Learner Journey
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tests/prek-kindergarten-full-journey.mjs"
+      - "curriculum/lessons/unit-01/formal-content.html"
+      - "graduation/**"
+      - ".github/workflows/prek-kindergarten-full-journey.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  learner-journey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Academy.github.io
+          ref: main
+          path: shared-academy
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Preschool.github.io
+          ref: main
+          path: shared-preschool
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save --no-package-lock playwright
+      - run: npx playwright install chromium
+      - name: Follow one learner through Preschool and Kindergarten
+        run: node tests/prek-kindergarten-full-journey.mjs
