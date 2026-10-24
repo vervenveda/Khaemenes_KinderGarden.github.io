@@ -68,7 +68,7 @@ const $=id=>document.getElementById(id),G=window.KhaemenesKinderMasteryGates,R=w
 const lanterns=$("lanterns");
 for(let i=0;i<55;i++){const star=document.createElement("span");star.className="star";star.style.left=((i*73+17)%99)+"%";star.style.top=((i*47+9)%68)+"%";$("sky").append(star)}
 for(let i=0;i<36;i++){const lantern=document.createElement("span");lantern.className="lantern";lantern.setAttribute("aria-label","Week "+(i+1));lanterns.append(lantern)}
-let ready=false;
+let ready=false,displayedLearnerId="";
 function check(){
  const learner=R?.getLearner?.()||null;
  if(!learner?.learnerId||learner.stage!=="kindergarten"||!G?.formalAccess||!G?.certificationReady||!C?.getLearnerSummary)return {learner,valid:false,ready:false};
@@ -81,7 +81,15 @@ function check(){
 }
 function set(id,value){$(id).textContent=String(value)}
 function update(){
- const s=check();ready=s.ready;
+ const s=check(),nextLearnerId=s.learner?.learnerId||"";
+ if(nextLearnerId!==displayedLearnerId){
+  displayedLearnerId=nextLearnerId;
+  $("certificate").hidden=true;
+  $("adultPinConfirm").checked=false;
+  set("pinStatus","Grade 1 class pinning requires learner-specific adult confirmation after verified completion.");
+ }
+ ready=s.ready;
+ if(!ready)$("adultPinConfirm").checked=false;
  $("celebrate").disabled=!ready;$("printKeepsake").disabled=!ready;$("pinGradeOne").disabled=!ready;
  if(!ready)$("certificate").hidden=true;
  Array.from(lanterns.children).forEach((l,i)=>l.classList.toggle("lit",Boolean(s.weekly?.[i])));
@@ -108,7 +116,9 @@ $("pinGradeOne").addEventListener("click",()=>{
  const key="khaemenes_course_pins_v1";
  let record;try{record=JSON.parse(localStorage.getItem(key)||"null")||{version:1,learners:{},updatedAt:null}}catch{return set("pinStatus","Unable to read existing class pins. Nothing changed.")}
  if(record?.version!==1||!record.learners||typeof record.learners!=="object"||Array.isArray(record.learners))return set("pinStatus","Existing class pin format is unfamiliar. Nothing changed.");
- const prior=Array.isArray(record.learners[l.learnerId])?record.learners[l.learnerId]:[];
+ const stored=record.learners[l.learnerId];
+ if(stored!==undefined&&!Array.isArray(stored))return set("pinStatus","Existing learner's class pins need review. Nothing changed.");
+ const prior=stored||[];
  if(!prior.some(p=>p?.id==="khaemenes-grade-01")){
   record.learners[l.learnerId]=prior.concat([{
     id:"khaemenes-grade-01",courseId:"khaemenes-grade-01",title:"Khaemenes Academy Grade 1",
