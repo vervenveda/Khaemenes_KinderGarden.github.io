@@ -33,11 +33,12 @@ try{
  assert.equal(await page.locator("#pinGradeOne").isDisabled(),true);
  assert.equal(await page.locator("#certificate").isVisible(),false);
  console.log("PASS guest cannot receive or print graduation credential");
- await page.evaluate(()=>{
+ const students=await page.evaluate(()=>{
    const R=window.KhaemenesFamilyRegistry,fam=R.createFamily({displayName:"Graduation QA",adultName:"QA Parent"});
    const a=R.registerLearner({familyId:fam.familyId,nickname:"Star Learner",stage:"kindergarten",grade:"k"});
    const b=R.registerLearner({familyId:fam.familyId,nickname:"Second Learner",stage:"kindergarten",grade:"k"});
    R.setActive({familyId:fam.familyId,learnerId:a.learnerId});
+   return {a:a.learnerId,b:b.learnerId};
  });
  await page.reload({waitUntil:"domcontentloaded"});
  assert.equal(await page.locator("#celebrate").isDisabled(),true);
@@ -81,6 +82,34 @@ try{
  assert.equal(after,initial,"graduation UI must never write formal mastery storage");
  assert.equal(await page.evaluate(()=>window.KhaemenesFamilyRegistry.getLearner().stage),"kindergarten","ceremony must never promote learner");
  console.log("PASS full UI ceremony renders only after mocked official completion signal without writing grades or placement");
+ await page.evaluate(id=>{
+   const R=window.KhaemenesFamilyRegistry, familyId=R.getFamily().familyId;
+   R.setActive({familyId,learnerId:id});
+   window.dispatchEvent(new Event("khaemenes-family-changed"));
+ },students.b);
+ assert.equal(await page.locator("#certificate").isVisible(),false,"sibling must not inherit a displayed certificate");
+ assert.equal(await page.locator("#adultPinConfirm").isChecked(),false,"adult consent must reset on sibling switch");
+ assert.equal(await page.locator("#pinGradeOne").isEnabled(),true,"fixture permits eligible second learner");
+ await page.locator("#pinGradeOne").click();
+ assert.match(await page.locator("#pinStatus").innerText(),/authorized adult must confirm/i);
+ await page.evaluate(id=>{
+  const key="khaemenes_course_pins_v1",value=JSON.parse(localStorage.getItem(key));
+  value.learners[id]="unrecognized-legacy-pin-list";
+  localStorage.setItem(key,JSON.stringify(value));
+ },students.b);
+ await page.locator("#adultPinConfirm").check();
+ await page.locator("#pinGradeOne").click();
+ assert.match(await page.locator("#pinStatus").innerText(),/need review/i);
+ assert.equal(await page.evaluate(id=>JSON.parse(localStorage.getItem("khaemenes_course_pins_v1")).learners[id],students.b),"unrecognized-legacy-pin-list","unrecognized sibling pin data cannot be replaced");
+ await page.evaluate(id=>{
+  const R=window.KhaemenesFamilyRegistry, familyId=R.getFamily().familyId;
+  R.setActive({familyId,learnerId:id});
+  window.dispatchEvent(new Event("khaemenes-family-changed"));
+ },students.a);
+ assert.equal(await page.locator("#certificate").isVisible(),false);
+ assert.equal(await page.locator("#adultPinConfirm").isChecked(),false);
+ assert.equal(await page.locator("#certName").innerText(),"Star Learner");
+ console.log("PASS sibling graduation switch resets ceremony and approval, unknown pins preserved");
  await page.evaluate(()=>window.KhaemenesFamilyRegistry.updateLearnerPlacement(window.KhaemenesFamilyRegistry.getLearner().learnerId,{stage:"elementary",grade:"01"}));
  await page.reload({waitUntil:"domcontentloaded"});
  assert.equal(await page.locator("#celebrate").isDisabled(),true);
