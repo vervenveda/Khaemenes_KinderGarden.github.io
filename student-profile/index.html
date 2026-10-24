@@ -202,7 +202,9 @@ function refresh(){
  renderLearnerChoices();
  const l=learner();
  const box=$("accountNote");
+ const priorId=activeId;
  activeId=l?.learnerId||"";
+ if(priorId!==activeId)$("adultConfirm").checked=false;
  if(!l){
   box.hidden=false;
   box.replaceChildren();
