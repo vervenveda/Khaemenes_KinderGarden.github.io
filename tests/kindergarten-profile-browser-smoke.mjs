@@ -85,6 +85,17 @@ try{
  assert.equal(await page.locator("#photoPreview img").count(),1);
  assert.equal(await page.locator("#pv2Goal").inputValue(),"Sing the ABC song");
  console.log("PASS same-family learner switch isolates photos, themes, and Academy goals");
+ await page.locator("#previewGradeOne").click();
+ assert.equal(await page.locator("#gradeOneDetails").isVisible(),true);
+ assert.match(await page.locator("#gradeOneSummary").innerText(),/Kindergarten/);
+ assert.equal(await page.evaluate(()=>window.KhaemenesFamilyRegistry.getLearner().stage),"kindergarten");
+ await page.locator("#adultConfirm").check();
+ await page.locator("#unpinKinderCourse").click();
+ assert.doesNotMatch(await page.locator("#pinnedActivities").innerText(),/My Kindergarten Class/);
+ const old=await page.evaluate(id=>JSON.parse(localStorage.getItem("khaemenes_course_pins_v1")).learners[id],first.a);
+ assert.equal(old.filter(x=>x.id==="khaemenes-kindergarten").length,0);
+ assert.match(await page.locator("#pinnedActivities").innerText(),/ABC Curriculum/);
+ console.log("PASS Kindergarten class unpin preserves games, grade placement, and preview");
  const download=page.waitForEvent("download");
  await page.locator("#exportLook").click();
  const exported=await download;
