@@ -76,6 +76,11 @@ try{
  const prior=await page.evaluate(id=>JSON.parse(localStorage.getItem("creche-preschool-graduation-v1")).records[id].certificateUnlocked,ids.learnerId);
  assert.equal(prior,true,"Pre-K history must survive placement");
  console.log("PASS existing learner upgraded through Enrollment & Placement without new ID");
+ await page.goto(purl,{waitUntil:"domcontentloaded"});
+ assert.equal(await page.locator("#progressCount").innerText(),"3 of 3 stars ⭐","historic Preschool stars must remain visible after Kindergarten placement");
+ assert.equal(await page.locator("#certificateOutput").evaluate(el=>el.classList.contains("show")),true,"historical Pre-K keepsake must stay accessible for the same learner");
+ console.log("PASS Pre-K graduation certificate remains accessible after enrolling the same child in Kindergarten");
+
 
  // Step 3: Kindergarten requires separate adult release; placement alone must not unlock.
  await page.goto(kgrad,{waitUntil:"domcontentloaded"});
