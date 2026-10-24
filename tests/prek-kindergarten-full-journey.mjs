@@ -48,6 +48,7 @@ try{
   const f=R.createFamily({displayName:"One Child Journey QA",adultName:"Guardian QA"});
   const a=R.registerLearner({familyId:f.familyId,nickname:"Lantern Learner",stage:"preschool",grade:"pre-k"});
   const b=R.registerLearner({familyId:f.familyId,nickname:"Sibling QA",stage:"preschool",grade:"pre-k"});
+  R.registerLearner({familyId:f.familyId,nickname:a.nickname,stage:"preschool",grade:"pre-k",existingLearnerId:a.learnerId,guardianRelease:{accepted:true,learnerId:a.learnerId,version:"preschool-mentor-release-v1.0"}});
   R.grantAdultAccess({familyId:f.familyId,adultId:f.adultId,learnerId:a.learnerId,permissionPreset:"co-guardian"});
   R.grantAdultAccess({familyId:f.familyId,adultId:f.adultId,learnerId:b.learnerId,permissionPreset:"co-guardian"});
   R.setActive({familyId:f.familyId,adultId:f.adultId,learnerId:a.learnerId});
@@ -71,9 +72,13 @@ try{
  assert.equal(await page.locator("#existing [data-edit]").count(),2);
  page.once("dialog",d=>d.accept("k"));
  await page.locator('#existing [data-edit="'+ids.learnerId+'"]').click();
+ const releaseDoor=page.locator('#learnerPane a[href*="/family/guardian-release/"]');
+ assert.equal(await releaseDoor.count(),1,"Parent placement flow must expose the real Kindergarten guardian-release entrance");
  const placement=await page.evaluate(id=>({learner:window.KhaemenesFamilyRegistry.getLearner(id),n:window.KhaemenesFamilyRegistry.getFamily().learners.length}),ids.learnerId);
  assert.equal(placement.learner.learnerId,ids.learnerId);
  assert.equal(placement.learner.stage,"kindergarten");assert.equal(placement.learner.grade,"k");
+ assert.equal(placement.learner.guardianRelease,null,"existing Pre-K release must not carry into formal Kindergarten authorization");
+ assert.equal(placement.learner.previousStageGuardianRelease?.version,"preschool-mentor-release-v1.0","prior Pre-K release should remain archived");
  assert.equal(placement.n,2,"placement change must not create a duplicate learner");
  const prior=await page.evaluate(id=>JSON.parse(localStorage.getItem("creche-preschool-graduation-v1")).records[id].certificateUnlocked,ids.learnerId);
  assert.equal(prior,true,"Pre-K history must survive placement");
