@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Parent- and guardian-assisted Kindergarten enrollment authorization for an existing Khaemenes Academy learner.">
+<title>Guardian Release · Khaemenes Academy Kindergarten</title>
+<style>
+:root{color-scheme:light;--ink:#243e3e;--muted:#576e6b;--line:#c1d6ce;--paper:#fffdf6;--green:#315f54;--gold:#d7a95a}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(130deg,#edf5df,#dff1e9 60%,#f8ecda);color:var(--ink);font:400 17px/1.65 "Avenir Next","Segoe UI",Arial,sans-serif}
+a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #bc8944;outline-offset:3px}
+.top{background:#17392f;color:#fff}.head{max-width:980px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px}
+.brand{font:400 21px Cinzel,Georgia,serif;text-decoration:none}.nav{display:flex;flex-wrap:wrap;gap:10px}.nav a{font-size:14px;text-decoration:none;border:1px solid #85a598;border-radius:7px;padding:8px 11px}
+main{max-width:980px;margin:auto;padding:27px 22px 65px}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#66764d}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:400;line-height:1.25}h1{font-size:clamp(30px,5vw,43px);margin:5px 0 14px}h2{font-size:24px;margin:0 0 12px}h3{font-size:19px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:24px;margin:15px 0}.muted{color:var(--muted)}
+p{margin:8px 0 13px}.checks{display:grid;gap:9px;margin:14px 0}.checks label{display:flex;gap:13px;align-items:flex-start;background:#f4f8ef;border:1px solid var(--line);border-radius:7px;padding:13px}
+.checks input{flex:none;width:20px;height:20px;margin-top:3px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}
+button,a.button{font:inherit;font-size:15px;min-height:46px;padding:10px 15px;border-radius:7px;border:1px solid #315f54;background:#315f54;color:#fff;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+button.secondary,a.button.secondary{color:#315f54;background:#fff}button:disabled{cursor:not-allowed;opacity:.65}
+.notice{background:#f9edce;color:#5e4a29;border-left:4px solid var(--gold);padding:13px 15px;border-radius:7px}.ok{background:#e3f3e7;border-color:#497c5a;color:#28513b}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{padding:14px;border:1px solid var(--line);border-radius:7px;background:#fff}.step strong{display:block}
+[hidden]{display:none!important}@media(max-width:680px){.steps{grid-template-columns:1fr}}
+@media print{.top,.actions{display:none!important}body{background:#fff}.card{break-inside:avoid}}
+</style>
+</head><body>
+<header class="top"><div class="head"><a class="brand" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><nav class="nav" aria-label="Kindergarten authorization navigation"><a href="../">Family Curriculum</a><a href="../../student-profile/">Learner Profile</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/enroll/">Enrollment</a><a href="../../curriculum/">Curriculum</a></nav></div></header>
+<main><p class="eyebrow">Family pathway · Pre-K → Kindergarten · 7 acknowledgments</p>
+<h1>Kindergarten Guardian Release</h1>
+<p>A child who already has a Pre-K account must keep the same learner ID when entering Kindergarten. A parent or authorized guardian reviews these conditions separately before formal Kindergarten lessons become available.</p>
+<div class="steps" aria-label="Family transition steps"><div class="step"><strong>1 · Select existing child</strong>Use the Family Portal. Change the child's grade to Kindergarten (k); do not register the child again.</div><div class="step"><strong>2 · Review &amp; authorize</strong>The authorized adult confirms each of the seven Kindergarten acknowledgments below.</div><div class="step"><strong>3 · Enter formal lessons</strong>After successful local authorization, resume the child's first available Kindergarten lesson.</div></div>
+<section class="card" aria-labelledby="selectionTitle"><h2 id="selectionTitle">Which learner and adult?</h2>
+<div id="identity" role="status" aria-live="polite">Checking the selected family and learner…</div>
+<p id="eligibility" class="notice">An authorized family adult and an existing Kindergarten learner are required.</p>
+<div class="actions"><a class="button secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Select learner or adult</a><a class="button secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/enroll/">Review existing learner placement</a></div>
+</section>
+<section class="card" id="authorization" aria-labelledby="releaseHeading">
+<h2 id="releaseHeading">Review parent / guardian acknowledgments</h2>
+<p class="muted">These acknowledgments concern Kindergarten's educational materials, supervised mentor interactions, safety expectations, local data, and voluntary participation. They are a new Kindergarten authorization, not a copy of Preschool's graduation certificate or prior release.</p>
+<form id="releaseForm" novalidate><div class="checks">
+<label><input type="checkbox" data-krel="authority"><span>I am this child's parent, guardian, caregiver, or authorized educator, with permission to make learning decisions for this learner.</span></label>
+<label><input type="checkbox" data-krel="educationalTools"><span>I understand these are educational tools, not accredited-school, medical, childcare, therapeutic, or emergency services.</span></label>
+<label><input type="checkbox" data-krel="supervision"><span>I accept responsibility for the child's supervision, safety, wellbeing, educational decisions, and choosing suitable activities.</span></label>
+<label><input type="checkbox" data-krel="mentorBoundaries"><span>I understand the AI Mentor is bounded educational assistance, not a human guardian, teacher, or substitute for adult judgment.</span></label>
+<label><input type="checkbox" data-krel="respectfulUse"><span>I have reviewed the respectful-use expectations and will not bypass learner or mentor protections.</span></label>
+<label><input type="checkbox" data-krel="voluntaryLimits"><span>I understand participation is voluntary and that no particular developmental or educational outcome is guaranteed.</span></label>
+<label><input type="checkbox" data-krel="localPrivacy"><span>I understand this browser-local record, privacy limitations, backup responsibilities, and controls for reviewing and managing learner data.</span></label>
+</div>
+<div class="actions"><button type="submit" id="authorize" disabled>Authorize this Kindergarten learner</button><button type="button" class="secondary" id="revoke" disabled>Revoke Kindergarten authorization</button></div>
+</form>
+<p id="result" class="notice" role="status" aria-live="polite">The learner's academic records remain unchanged until a permitted guardian action is completed.</p>
+<div class="actions"><a class="button" id="continueLesson" href="../../curriculum/lessons/unit-01/" hidden>🌻 Open first Kindergarten lesson</a><a class="button secondary" href="../">Return to Kindergarten Family Portal</a></div>
+</section>
+<p class="muted">Authorization here is recorded only within the currently selected browser-local Academy Family Registry. It does not authenticate a legal guardian, synchronize across devices, certify grades, award mastery, or change placement. Families should use the Academy's authorized account and access controls for shared records.</p>
+</main>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
+<script src="../../assets/khaemenes-kinder-continuity.js"></script>
+<script src="../../assets/khaemenes-kinder-mastery-gates.js"></script>
+<script>
+(function(){
+"use strict";
+const $=id=>document.getElementById(id);
+const R=window.KhaemenesFamilyRegistry,fields=["authority","educationalTools","supervision","mentorBoundaries","respectfulUse","voluntaryLimits","localPrivacy"];
+let selectedId="",adultId="",allowed=false;
+function selected(){
+ const ids=R?.activeIds?.()||{},child=R?.getLearner?.()||null,adult=R?.getAdult?.()||null;
+ const stageOK=Boolean(child?.learnerId&&child.stage==="kindergarten"&&child.grade==="k");
+ const linked=Boolean(child?.familyId&&ids.familyId===child.familyId&&adult?.adultId&&ids.adultId===adult.adultId&&adult.familyIds?.includes(child.familyId));
+ const permitted=Boolean(linked&&R?.canAdult?.(adult.adultId,child.learnerId,"education.manage")&&["parent","guardian","caregiver","educator"].includes(adult.role));
+ return {child,adult,stageOK,permitted};
+}
+function render(){
+ const s=selected();
+ if(s.child?.learnerId!==selectedId||s.adult?.adultId!==adultId){
+  document.querySelectorAll("[data-krel]").forEach(c=>c.checked=false);
+ }
+ selectedId=s.child?.learnerId||"";adultId=s.adult?.adultId||"";
+ allowed=s.stageOK&&s.permitted&&typeof R?.authorizeKindergartenLearner==="function";
+ const released=Boolean(s.child?.guardianRelease?.accepted&&s.child.guardianRelease.learnerId===selectedId&&s.child.guardianRelease.scope==="kindergarten-formal-learning");
+ $("identity").textContent=s.child?
+   (s.child.nickname||"Learner")+" · "+(s.child.stage==="kindergarten"?"Kindergarten":"Current stage: "+s.child.stage)+" · "+(s.adult?.displayName||"No adult selected")+" · "+(s.adult?.role||"") :
+   "No learner is selected on this browser.";
+ $("eligibility").textContent=!s.child?"Select an existing learner in the Academy Family Portal.":
+  !s.stageOK?"This learner has not been placed in Kindergarten (k). Open Enrollment & Placement and update this same child; do not register another child.":
+  !s.permitted?"This adult does not currently have Kindergarten education-management permission for this learner. Review Adults & Family Access, then select an authorized parent or guardian.":
+  released?"Kindergarten release is active for this learner in local records. The authorization can be reviewed or revoked below.":
+  "Kindergarten release is still required. Review every acknowledgment before starting formal lessons.";
+ $("eligibility").classList.toggle("ok",released);
+ $("authorize").disabled=!allowed||released;
+ $("revoke").disabled=!allowed||!released;
+ $("continueLesson").hidden=!released;
+ if(released&&s.permitted)$("result").textContent="Kindergarten guardian authorization saved for this learner. The academic mastery gates remain fully enforced.";
+ else if(!allowed)$("result").textContent="No changes are permitted from this selected learner/adult context.";
+ else $("result").textContent="All seven acknowledgments must be checked before authorization. Existing grades and learner ID will be preserved.";
+}
+$("releaseForm").addEventListener("submit",event=>{
+ event.preventDefault();
+ const s=selected();if(!allowed||!s.stageOK||!s.permitted||s.child?.learnerId!==selectedId||s.adult?.adultId!==adultId){render();return}
+ const choices=Object.fromEntries(fields.map(field=>[field,Boolean(document.querySelector('[data-krel="'+field+'"]')?.checked)]));
+ if(!fields.every(field=>choices[field]===true)){
+  $("result").textContent="Please review and check all seven acknowledgments. Nothing was saved.";return;
+ }
+ try{
+  R.authorizeKindergartenLearner({learnerId:selectedId,adultId,acknowledgments:choices});
+  render();
+  $("result").textContent="Authorization completed for "+(s.child.nickname||"this learner")+". Open the first lesson when ready.";
+ }catch(error){render();$("result").textContent="Authorization could not be saved: "+String(error?.message||error)}
+});
+$("revoke").addEventListener("click",()=>{
+ const s=selected();if(!allowed||!s.permitted||!s.stageOK||s.child?.learnerId!==selectedId){render();return}
+ if(!window.confirm("Revoke Kindergarten authorization for this learner? Formal Kindergarten lessons will be blocked until a permitted adult reauthorizes."))return;
+ try{R.revokeKindergartenAuthorization({learnerId:selectedId,adultId});render();$("result").textContent="Kindergarten release revoked for the selected learner. Formal lessons remain locked."}
+ catch(error){render();$("result").textContent="Unable to revoke authorization: "+String(error?.message||error)}
+});
+window.addEventListener("khaemenes-family-changed",render);
+window.addEventListener("khaemenes-learner-placement-changed",render);
+window.addEventListener("khaemenes-guardian-release-changed",render);
+window.addEventListener("storage",event=>{if(["khaemenes_family_registry_v1","khaemenes_active_learner_v1","khaemenes_active_adult_v1","khaemenes_active_family_v1"].includes(event.key))render()});
+render();
+})();
+</script>
+</body></html>
