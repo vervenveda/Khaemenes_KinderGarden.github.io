@@ -168,8 +168,16 @@ function pinnedApps(){const v=read("khaemenes_kindergarten_profile_app_pins_v1:"
 function pinnedCourse(){const v=read("khaemenes_course_pins_v1",{});return Array.isArray(v?.learners?.[activeId])&&v.learners[activeId].some(x=>x?.id==="khaemenes-kindergarten"||x?.courseId==="khaemenes-kindergarten")}
 function renderLearning(){
  $("nextStep").replaceChildren();$("pinnedActivities").replaceChildren();
- const rows=window.KhaemenesLearningContinuation?.readLearner?.(activeId)||[];
- const rec=Array.isArray(rows)?rows.find(x=>x?.stage==="kindergarten"&&x.courseId==="khaemenes-kindergarten-formal-path"):null;
+ let rows=[];
+ try{rows=window.KhaemenesLearningContinuation?.readLearner?.(activeId)||[]}catch{rows=[]}
+ const rec=Array.isArray(rows)?rows.find(x=>{
+  if(x?.stage!=="kindergarten"||x.courseId!=="khaemenes-kindergarten-formal-path")return false;
+  try{
+   const u=new URL(x.nextHref,BASE);
+   return u.protocol==="https:"&&u.origin==="https://vervenveda.com"&&
+      u.pathname.startsWith("/Khaemenes_KinderGarden.github.io/");
+  }catch{return false}
+ }):null;
  const child=learner(),guardian=child?.guardianRelease?.accepted===true&&child.guardianRelease?.learnerId===activeId;
  let url=BASE+"#student",title="Find my next Kindergarten step",summary="The Kindergarten homepage selects the next unlocked lesson.";
  if(!guardian){url="https://vervenveda.com/Khaemenes_Academy.github.io/family/";title="Family review before formal learning";summary="A grown-up confirms the Kindergarten learner's guardian release."}
@@ -331,7 +339,12 @@ $("learnerSelect").addEventListener("change",event=>{
 });
 window.addEventListener("khaemenes-family-changed",refresh);
 window.addEventListener("khaemenes-learning-continuation-changed",()=>{if(activeId)renderLearning()});
-window.addEventListener("storage",event=>{if(["khaemenes_active_learner_v1","khaemenes_family_registry_v1"].includes(event.key))refresh()});
+window.addEventListener("storage",event=>{
+ if(["khaemenes_active_learner_v1","khaemenes_family_registry_v1"].includes(event.key)){refresh();return}
+ if(!activeId)return;
+ if(["khaemenes_course_pins_v1","khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId)].includes(event.key))renderLearning();
+ if(event.key===profileKey()){look=normalize(read(profileKey(),{}));renderLook()}
+});
 refresh();
 })();
 </script>
