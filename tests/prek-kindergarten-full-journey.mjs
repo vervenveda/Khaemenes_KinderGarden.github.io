@@ -142,13 +142,12 @@ try{
  // Mixed-child regression: same tab must refuse writes after active learner switch.
  await page.evaluate(id=>window.KhaemenesFamilyRegistry.updateLearnerGrade(id,"k"),ids.siblingId);
  await page.evaluate(id=>window.KhaemenesFamilyRegistry.setActive({learnerId:id}),ids.siblingId);
+ assert.equal(await page.locator('[data-kg-complete="1"]').isDisabled(),true,"same-tab learner switch must disable old learner's practice controls");
  await page.goto(guardian,{waitUntil:"domcontentloaded"});
  assert.equal(await page.locator("#continueLesson").isVisible(),false,"sibling must authorize separately");
  await page.locator("[data-krel]").evaluateAll(boxes=>boxes.forEach(box=>{box.checked=true;box.dispatchEvent(new Event("change",{bubbles:true}))}));
  await page.locator("#authorize").click();
  assert.match(await page.locator("#result").innerText(),/Authorization completed/);
- await page.evaluate(id=>window.KhaemenesFamilyRegistry.setActive({learnerId:id}),ids.siblingId);
- assert.equal(await page.locator('[data-kg-complete="1"]').isDisabled(),true,"switch should disable old learner's practice controls");
  await page.goto(lesson,{waitUntil:"domcontentloaded"});
  await page.locator("#kgProgressLabel").waitFor({state:"visible",timeout:10000});
  assert.match(await page.locator("#kgProgressLabel").innerText(),/0 of 5 days complete/);
