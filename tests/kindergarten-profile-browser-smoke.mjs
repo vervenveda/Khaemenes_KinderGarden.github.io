@@ -52,6 +52,28 @@ try{
  assert.equal(await page.locator("body").getAttribute("data-prek-background"),"forest");
  assert.equal(await page.locator("#childTitle").innerText(),"QA Sunshine");
  console.log("PASS profile appearance persists on reload");
+ await page.evaluate(id=>{
+  window.KhaemenesLearningContinuation.publish({
+   learnerId:id,courseId:"khaemenes-kindergarten-formal-path",stage:"kindergarten",
+   nextTitle:"Incorrect Elementary continuation",nextHref:"https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/"
+  });
+  window.dispatchEvent(new Event("khaemenes-learning-continuation-changed"));
+ },first.a);
+ assert.doesNotMatch(await page.locator("#nextStep").innerText(),/Incorrect Elementary continuation/);
+ assert.match(await page.locator("#firstStepLink").getAttribute("href"),/Khaemenes_Academy\.github\.io\/family\//);
+ await page.evaluate(()=>{
+  window.__savedContinuation=window.KhaemenesLearningContinuation;
+  window.KhaemenesLearningContinuation={readLearner(){throw new Error("simulated malformed learner store")}};
+  window.dispatchEvent(new Event("khaemenes-learning-continuation-changed"));
+ });
+ assert.match(await page.locator("#nextStep").innerText(),/Family review before formal learning/);
+ await page.evaluate(id=>{
+  window.KhaemenesLearningContinuation=window.__savedContinuation;
+  window.__savedContinuation.removeCourse(id,"khaemenes-kindergarten-formal-path");
+  window.dispatchEvent(new Event("khaemenes-learning-continuation-changed"));
+ },first.a);
+ assert.deepEqual(errors,[],"Malformed continuation must not crash the profile");
+ console.log("PASS Kindergarten rejects out-of-stage links and recovers from unreadable continuation");
  await page.locator("#adultConfirm").check();
  await page.locator("#pinKinderCourse").click();
  assert.match(await page.locator("#pinnedActivities").innerText(),/My Kindergarten Class/);
@@ -59,6 +81,29 @@ try{
  await page.locator("#pinSelectedApp").click();
  assert.match(await page.locator("#pinnedActivities").innerText(),/ABC Curriculum/);
  console.log("PASS formal class and learning-game pinning");
+ const appKey="khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(first.a);
+ await page.evaluate(key=>{
+  localStorage.setItem(key,"[]");
+  window.dispatchEvent(new StorageEvent("storage",{key}));
+ },appKey);
+ assert.doesNotMatch(await page.locator("#pinnedActivities").innerText(),/ABC Curriculum/);
+ await page.evaluate(key=>{
+  localStorage.setItem(key,JSON.stringify(["abc-curriculum"]));
+  window.dispatchEvent(new StorageEvent("storage",{key}));
+ },appKey);
+ assert.match(await page.locator("#pinnedActivities").innerText(),/ABC Curriculum/);
+ const visualKey="khaemenes_kindergarten_visual_profile_v1:"+encodeURIComponent(first.a);
+ await page.evaluate(key=>{
+  const v=JSON.parse(localStorage.getItem(key));v.theme="ocean";
+  localStorage.setItem(key,JSON.stringify(v));window.dispatchEvent(new StorageEvent("storage",{key}));
+ },visualKey);
+ assert.equal(await page.locator("body").getAttribute("data-prek-background"),"ocean");
+ await page.evaluate(key=>{
+  const v=JSON.parse(localStorage.getItem(key));v.theme="forest";
+  localStorage.setItem(key,JSON.stringify(v));window.dispatchEvent(new StorageEvent("storage",{key}));
+ },visualKey);
+ assert.equal(await page.locator("body").getAttribute("data-prek-background"),"forest");
+ console.log("PASS Kindergarten tabs synchronize pins and learner appearance");
 
  await page.locator("#adultConfirm").check();
  await page.locator("#avatarChoices button[data-avatar='🦋']").click();
