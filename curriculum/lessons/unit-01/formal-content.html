@@ -846,6 +846,8 @@ window.KINDER_GARDEN_LESSON = {
   ]
 };
 </script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
+<script src="../../../assets/khaemenes-kinder-continuity.js"></script>
 <script src="../../../assets/naib-mentor-adapter.js"></script>
 <script src="../../../assets/lesson.js"></script>
 
@@ -922,7 +924,22 @@ window.KINDER_GARDEN_LESSON = {
 (() => {
   "use strict";
 
-  const STORAGE_KEY = "kg_u01_interactive_v2";
+  const STORAGE_PREFIX = "kg_u01_interactive_v3:";
+  const ACTIVE_ID = activeLearnerId();
+  // Week 1 games are practice notes, not the separate adult-observed formal mastery receipts.
+  function activeLearnerId(){
+    const learner=window.KhaemenesFamilyRegistry?.getLearner?.()||null;
+    return learner?.stage==="kindergarten"&&learner?.learnerId?String(learner.learnerId):"guest";
+  }
+  const STORAGE_KEY=STORAGE_PREFIX+encodeURIComponent(ACTIVE_ID);
+  function scopeChanged(){return activeLearnerId()!==ACTIVE_ID}
+  function guardScope(){
+    if(!scopeChanged())return true;
+    const alertBox=q("#kgProgressBadge");
+    if(alertBox)alertBox.textContent="Another learner was selected. Reload this page before continuing.";
+    qq("[data-kg-complete], [data-kg-mastery], .kg-seed, .kg-choice").forEach(control=>control.disabled=true);
+    return false;
+  }
   const lesson = window.KINDER_GARDEN_LESSON || {};
   const q = (sel, root=document) => root.querySelector(sel);
   const qq = (sel, root=document) => Array.from(root.querySelectorAll(sel));
@@ -937,6 +954,7 @@ window.KINDER_GARDEN_LESSON = {
     progressCard.appendChild(badge);
   }
   const progressBadge = q("#kgProgressBadge");
+  if(progressBadge)progressBadge.setAttribute("aria-live","polite");
   const progressLabel = q("#kgProgressLabel");
   const progressPercent = q("#kgProgressPercent");
   const progressFill = q("#kgProgressFill");
@@ -971,6 +989,7 @@ window.KINDER_GARDEN_LESSON = {
   }
 
   function saveState() {
+    if(!guardScope())return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       seedCount: state.seedCount,
       completedDays: state.completedDays,
@@ -1059,6 +1078,7 @@ window.KINDER_GARDEN_LESSON = {
   }
 
   function completeDay(day) {
+    if(!guardScope())return;
     if (!state.completedDays.includes(day)) {
       state.completedDays.push(day);
       saveState();
@@ -1088,6 +1108,8 @@ window.KINDER_GARDEN_LESSON = {
     });
   });
 
+  window.addEventListener("khaemenes-family-changed",guardScope);
+  window.addEventListener("khaemenes-learner-placement-changed",guardScope);
   // Give each complete button a remembered original label
   qq("[data-kg-complete]").forEach(btn => {
     if (!btn.getAttribute("data-original")) btn.setAttribute("data-original", btn.textContent);
@@ -1276,7 +1298,8 @@ window.KINDER_GARDEN_LESSON = {
   // Print / reset
   q("#kgPrint")?.addEventListener("click", () => window.print());
   q("#kgReset")?.addEventListener("click", () => {
-    if (!confirm("Reset Unit 01 progress for this browser?")) return;
+    if(!guardScope())return;
+    if (!confirm("Reset Unit 01 practice progress for this learner on this browser? Formal mastery receipts are not changed.")) return;
     localStorage.removeItem(STORAGE_KEY);
     location.reload();
   });
