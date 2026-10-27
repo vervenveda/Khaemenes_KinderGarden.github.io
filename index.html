@@ -953,6 +953,31 @@ body button[aria-disabled="true"],body a[aria-disabled="true"]{
 }
 body :is(.naib-close,.setup-close,#cancelKinderSetup){background:#ffb3cf!important;color:#173b50!important;border-radius:7px!important}
 </style>
+
+<style id="kinder-bottom-contrast-palette-fix-20261027">
+/* Direct-child cycling fixes stacked action groups whose earlier selectors restarted at yellow. */
+.family-actions>a:nth-child(7n+1),.hero-actions>a:nth-child(7n+1),.hero-actions>button:nth-child(7n+1),.naib-actions>button:nth-child(7n+1),.setup-actions>button:nth-child(7n+1){background:#ffd12f!important;color:#173b50!important}
+.family-actions>a:nth-child(7n+2),.hero-actions>a:nth-child(7n+2),.hero-actions>button:nth-child(7n+2),.naib-actions>button:nth-child(7n+2),.setup-actions>button:nth-child(7n+2){background:#20cdb4!important;color:#173b50!important}
+.family-actions>a:nth-child(7n+3),.hero-actions>a:nth-child(7n+3),.hero-actions>button:nth-child(7n+3),.naib-actions>button:nth-child(7n+3),.setup-actions>button:nth-child(7n+3){background:#168bd2!important;color:#fff!important}
+.family-actions>a:nth-child(7n+4),.hero-actions>a:nth-child(7n+4),.hero-actions>button:nth-child(7n+4),.naib-actions>button:nth-child(7n+4),.setup-actions>button:nth-child(7n+4){background:#7351c9!important;color:#fff!important}
+.family-actions>a:nth-child(7n+5),.hero-actions>a:nth-child(7n+5),.hero-actions>button:nth-child(7n+5),.naib-actions>button:nth-child(7n+5),.setup-actions>button:nth-child(7n+5){background:#ef4ca6!important;color:#fff!important}
+.family-actions>a:nth-child(7n+6),.hero-actions>a:nth-child(7n+6),.hero-actions>button:nth-child(7n+6),.naib-actions>button:nth-child(7n+6),.setup-actions>button:nth-child(7n+6){background:#ff8b2c!important;color:#173b50!important}
+.family-actions>a:nth-child(7n),.hero-actions>a:nth-child(7n),.hero-actions>button:nth-child(7n),.naib-actions>button:nth-child(7n),.setup-actions>button:nth-child(7n){background:#8ee329!important;color:#173b50!important}
+
+/* Bottom promise: readable on the light PLAY background. */
+main .section.final{background:#dff5ff!important;color:#173b50!important}
+main .section.final .eyebrow{color:#ef4ca6!important}
+main .section.final h2{color:#173b50!important}
+main .section.final p{color:#36586b!important;opacity:1!important}
+main .section.final .hero-actions{justify-content:center!important}
+
+/* Footer: true centered stack, readable at the 14px floor. */
+footer{background:#245b3d!important;color:#fff!important;text-align:center!important;padding:24px 0!important}
+footer .footer-inner{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;gap:10px!important;text-align:center!important}
+footer .footer-inner>span{display:block!important;width:100%!important;color:#fff!important}
+footer .footer-links{display:flex!important;justify-content:center!important;align-items:center!important;gap:10px 14px!important;flex-wrap:wrap!important;width:100%!important}
+footer .footer-links a{color:#fff!important;font-size:14px!important;line-height:1.4!important}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
