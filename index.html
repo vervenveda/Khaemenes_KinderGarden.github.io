@@ -839,6 +839,76 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
   font-size:14px!important;min-height:36px!important;padding:7px 9px!important}
 }
 </style>
+
+<style id="kinder-bright-control-contract-20261027">
+/* PLAY control audit: every actionable control gets a bright, high-contrast treatment. */
+:root{
+ --kg-ink:#173b50;--kg-white:#fff;
+ --kg-yellow:#ffd12f;--kg-aqua:#20cdb4;--kg-blue:#168bd2;--kg-purple:#7351c9;
+ --kg-pink:#ef4ca6;--kg-orange:#ff8b2c;--kg-lime:#8ee329;
+}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,.gate-state,.term-head,[role="button"],
+ #khaeLandingUtilityDock>a,#khaeLandingUtilityDock>button,
+ #khaemenesLearnerUtilityToolbar>a,#khaemenesLearnerUtilityToolbar>button){
+ border:1px solid rgba(23,59,80,.14)!important;
+ border-radius:7px!important;
+ box-shadow:0 3px 0 rgba(23,59,80,.10)!important;
+ text-decoration:none!important;
+ font-weight:400!important;
+}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n+1){background:var(--kg-yellow)!important;color:var(--kg-ink)!important}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n+2){background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n+3){background:var(--kg-blue)!important;color:var(--kg-white)!important}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n+4){background:var(--kg-purple)!important;color:var(--kg-white)!important}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n+5){background:var(--kg-pink)!important;color:var(--kg-white)!important}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n+6){background:var(--kg-orange)!important;color:var(--kg-ink)!important}
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):nth-of-type(7n){background:var(--kg-lime)!important;color:var(--kg-ink)!important}
+
+/* Explicit semantic states beat positional color cycling. */
+body .btn.primary,body .setup-actions .save,body .chip.active,body .gate-state.current{
+ background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
+body .btn.profile,body .interest-btn[aria-pressed="true"],body .avatar-select button[aria-pressed="true"]{
+ background:var(--kg-pink)!important;color:var(--kg-white)!important}
+body .btn.gold{background:var(--kg-yellow)!important;color:var(--kg-ink)!important}
+body .gate-state.mastered{background:var(--kg-lime)!important;color:var(--kg-ink)!important}
+body .gate-state.locked{
+ background:#c8b8ff!important;color:var(--kg-ink)!important;opacity:1!important}
+body :is(button,[role="button"]):disabled,body button[aria-disabled="true"],body a[aria-disabled="true"]{
+ background:#c8b8ff!important;color:#29445a!important;opacity:.78!important;cursor:not-allowed!important}
+
+/* Week cards: keep the card white, make the actual state/action pill bright. */
+.term-week-grid .unit-card .gate-state{background:#c8b8ff!important;color:var(--kg-ink)!important}
+.term-week-grid .unit-card.current .gate-state{background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
+.term-week-grid .unit-card.mastered .gate-state{background:var(--kg-lime)!important;color:var(--kg-ink)!important}
+
+/* Header actions stay playful against the light-yellow masthead. */
+body [data-khae-actions] a:nth-child(3n+1){background:var(--kg-blue)!important;color:#fff!important}
+body [data-khae-actions] a:nth-child(3n+2){background:var(--kg-pink)!important;color:#fff!important}
+body [data-khae-actions] a:nth-child(3n){background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
+
+/* Bottom-right dock: individually colored, still compact and readable. */
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+1){background:var(--kg-yellow)!important;color:var(--kg-ink)!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+2){background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+3){background:var(--kg-blue)!important;color:#fff!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+4){background:var(--kg-purple)!important;color:#fff!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+5){background:var(--kg-pink)!important;color:#fff!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+6){background:var(--kg-orange)!important;color:var(--kg-ink)!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n){background:var(--kg-lime)!important;color:var(--kg-ink)!important}
+
+body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
+ .student-gateway,[role="button"]):not(:disabled):hover{
+ filter:brightness(1.04) saturate(1.05)!important;transform:translateY(-1px)!important}
+body :is(.btn,button,.chip,a,[role="button"]):focus-visible{
+ outline:3px solid #173b50!important;outline-offset:2px!important}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
