@@ -358,6 +358,41 @@ body .feature-card,body .app-card,body .connected-card,body .naib-tray-card{bord
 @media(max-width:900px){body .hero-inner{grid-template-columns:1fr;max-width:760px}body .hero-copy{text-align:center}body .hero-copy .lead,body .hero-copy .tagline,body .student-gateway,body .academic-place-strip{margin-left:auto!important;margin-right:auto!important}body .hero-actions{justify-content:center}body .hero-garden{order:0}}
 @media(max-width:620px){body .hero-inner{width:min(100% - 24px,520px);padding-top:28px}body .hero-copy h1{font-size:clamp(46px,14vw,72px)!important}body .hero-garden{min-height:520px}body .garden-scene{min-height:520px!important;border-radius:28px!important}body .garden-scene::before{width:52%;height:16%;border-width:7px;font-size:42px}body .scene-link{width:92px;min-height:72px;padding:7px 5px;border-radius:17px}body .scene-link small{font-size:10px}body .scene-link.one{left:10px;top:86px}body .scene-link.two{left:10px;top:220px}body .scene-link.three{left:86px;top:22px}body .scene-link.four{right:86px;top:22px}body .scene-link.five{right:10px;top:86px}body .scene-link.six{right:10px;top:220px}body .scene-link.seven{left:50px;bottom:55px}body .scene-link.eight{right:50px;bottom:55px}}
 </style>
+
+<style id="kinder-full-play-background-20261027">
+/* Full-width PLAY field + centered Kindergarten title. Functional controls remain unchanged. */
+.hero{position:relative;isolation:isolate;overflow:hidden;
+ background:
+ radial-gradient(ellipse 26% 54% at -3% 12%,#ff8b25 0 56%,transparent 57%),
+ radial-gradient(ellipse 23% 42% at 12% 29%,#ff4938 0 57%,transparent 58%),
+ radial-gradient(ellipse 25% 58% at 30% -4%,#ffd12f 0 56%,transparent 57%),
+ radial-gradient(ellipse 29% 58% at 49% 20%,#20cdb4 0 56%,transparent 57%),
+ radial-gradient(ellipse 31% 62% at 70% 5%,#168bd2 0 57%,transparent 58%),
+ radial-gradient(ellipse 26% 54% at 101% 22%,#7351c9 0 57%,transparent 58%),
+ radial-gradient(ellipse 29% 50% at 5% 91%,#8ee329 0 57%,transparent 58%),
+ radial-gradient(ellipse 27% 48% at 31% 104%,#ff9c28 0 57%,transparent 58%),
+ radial-gradient(ellipse 30% 54% at 62% 102%,#ef4ca6 0 57%,transparent 58%),
+ linear-gradient(135deg,#20cdb4,#168bd2)!important}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(255,255,255,.10);pointer-events:none}
+.kinder-title-band{position:relative;z-index:3;padding:clamp(42px,5vw,70px) 18px 0;text-align:center}
+.kinder-title-band .eyebrow{margin:0 0 10px!important;color:#24384a!important;font:600 14px/1.35 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;letter-spacing:.16em!important;text-transform:uppercase!important}
+.kinder-title-band h1{margin:0!important;color:#24384a!important;font:800 clamp(58px,8.5vw,126px)/.88 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;letter-spacing:-.055em!important;white-space:nowrap;text-shadow:0 3px 0 rgba(255,255,255,.25)}
+body .hero-inner{padding-top:clamp(32px,4vw,54px)!important}
+body .hero-copy{padding:clamp(24px,3vw,38px)!important;border:2px solid rgba(255,255,255,.76)!important;border-radius:28px!important;background:rgba(255,255,255,.86)!important;box-shadow:0 18px 45px rgba(27,72,94,.14)!important;backdrop-filter:blur(12px)!important}
+body .hero-copy .tagline{margin-top:0!important}
+body .hero-garden{padding:20px;border:2px solid rgba(255,255,255,.58);border-radius:38px;background:rgba(255,255,255,.18);backdrop-filter:blur(7px)}
+body .garden-scene{box-shadow:0 20px 46px rgba(23,65,91,.20)!important}
+@media(max-width:900px){.kinder-title-band{padding-top:34px}.kinder-title-band h1{font-size:clamp(48px,12vw,88px)!important}body .hero-inner{padding-top:28px!important}}
+@media(max-width:620px){.kinder-title-band{padding-inline:10px}.kinder-title-band h1{font-size:clamp(38px,12.5vw,64px)!important;letter-spacing:-.045em!important}.kinder-title-band .eyebrow{font-size:11px!important}.hero{background:
+ radial-gradient(ellipse 42% 30% at 0% 8%,#ff8b25 0 56%,transparent 57%),
+ radial-gradient(ellipse 40% 34% at 20% 22%,#ff4938 0 56%,transparent 57%),
+ radial-gradient(ellipse 44% 35% at 46% 3%,#ffd12f 0 56%,transparent 57%),
+ radial-gradient(ellipse 48% 38% at 73% 20%,#20cdb4 0 56%,transparent 57%),
+ radial-gradient(ellipse 45% 38% at 100% 8%,#168bd2 0 56%,transparent 57%),
+ radial-gradient(ellipse 48% 36% at 0% 72%,#8ee329 0 56%,transparent 57%),
+ radial-gradient(ellipse 48% 38% at 44% 100%,#ef4ca6 0 56%,transparent 57%),
+ linear-gradient(145deg,#20cdb4,#7351c9)!important}body .hero-copy{padding:22px 18px!important}body .hero-garden{padding:10px;border-radius:30px}}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
@@ -400,10 +435,12 @@ body .feature-card,body .app-card,body .connected-card,body .naib-tray-card{bord
 
 <main>
 <section class="hero" id="student">
+  <div class="shell kinder-title-band">
+    <p class="eyebrow">Khaemenes Academy · Kindergarten</p>
+    <h1>KINDERGARTEN</h1>
+  </div>
   <div class="shell hero-inner">
     <article class="hero-copy">
-      <p class="eyebrow">Khaemenes Academy · Kindergarten</p>
-      <h1>KINDERGARTEN</h1>
       <p class="tagline"><strong>A Kinder Place to Learn.</strong> A garden for growing readers, thinkers, makers, helpers, and wonderfully curious humans.</p>
       <p class="lead">A complete 36-week kindergarten pathway with 180 daily lessons, public learning games, week-by-week lesson previews, mastery checks, printables, and a personalized Khaemenes Mentor. Games stay open; formal curriculum progress belongs to the linked Kindergarten learner.</p>
 
