@@ -909,6 +909,50 @@ body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-promp
 body :is(.btn,button,.chip,a,[role="button"]):focus-visible{
  outline:3px solid #173b50!important;outline-offset:2px!important}
 </style>
+
+<style id="kinder-play-button-palette-v2-20261027">
+/* Full-page PLAY palette: color by sibling position so static and generated controls alternate reliably. */
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):not(.skip):not(.naib-close):not(.setup-close){
+ --play-bg:#ffd12f;--play-fg:#173b50;
+ background:var(--play-bg)!important;color:var(--play-fg)!important;
+ border:1px solid rgba(23,59,80,.16)!important;border-radius:7px!important;
+ font-weight:400!important;box-shadow:0 3px 0 rgba(23,59,80,.10)!important;
+}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n+1){--play-bg:#ffd12f;--play-fg:#173b50}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n+2){--play-bg:#20cdb4;--play-fg:#173b50}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n+3){--play-bg:#168bd2;--play-fg:#fff}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n+4){--play-bg:#7351c9;--play-fg:#fff}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n+5){--play-bg:#ef4ca6;--play-fg:#fff}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n+6){--play-bg:#ff8b2c;--play-fg:#173b50}
+:is(main,.hero,.section,.modal,.profile-panel,.family-card,.naib-tray,.connected-grid,.apps-grid,.term-week-grid,.feature-grid,.hero-actions,.setup-actions,.family-actions,.mentor-prompts)
+:is(a,button,[role="button"]):nth-child(7n){--play-bg:#8ee329;--play-fg:#173b50}
+
+/* Repeating cards need their own index so each card's single action does not restart at yellow. */
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n+1) :is(a,button,[role="button"]){background:#ffd12f!important;color:#173b50!important}
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n+2) :is(a,button,[role="button"]){background:#20cdb4!important;color:#173b50!important}
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n+3) :is(a,button,[role="button"]){background:#168bd2!important;color:#fff!important}
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n+4) :is(a,button,[role="button"]){background:#7351c9!important;color:#fff!important}
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n+5) :is(a,button,[role="button"]){background:#ef4ca6!important;color:#fff!important}
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n+6) :is(a,button,[role="button"]){background:#ff8b2c!important;color:#173b50!important}
+:is(.connected-grid,.apps-grid,.feature-grid,.term-week-grid)>*:nth-child(7n) :is(a,button,[role="button"]){background:#8ee329!important;color:#173b50!important}
+
+/* Preserve truthful progression semantics. */
+body .gate-state.current{background:#20cdb4!important;color:#173b50!important}
+body .gate-state.mastered{background:#8ee329!important;color:#173b50!important}
+body .gate-state.locked,
+body :is(button,[role="button"]):disabled,
+body button[aria-disabled="true"],body a[aria-disabled="true"]{
+ background:#c8b8ff!important;color:#29445a!important;opacity:.82!important;
+}
+body :is(.naib-close,.setup-close,#cancelKinderSetup){background:#ffb3cf!important;color:#173b50!important;border-radius:7px!important}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
