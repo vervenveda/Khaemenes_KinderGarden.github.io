@@ -267,6 +267,38 @@ body:has([data-khae-header]) .header .nav .academy-mark,body:has([data-khae-head
 </style>
 <link rel="stylesheet" href="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-landing-standard.css">
 <link rel="stylesheet" href="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-landing-toolbar.css">
+<style id="kinder-frontdesk-hero-and-dock-repair-20261027">
+/* Landing-only layout repair. Retain every existing control ID and learner workflow. */
+body .hero-inner{width:min(1180px,calc(100% - 48px));display:grid;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);gap:clamp(28px,4vw,64px);align-items:center;min-height:0;padding:clamp(40px,5vw,76px) 0 clamp(60px,7vw,100px)}
+body .hero-copy{width:100%;min-width:0;padding:clamp(24px,3vw,42px);text-align:left;border-width:1px;border-radius:21px;box-shadow:0 12px 35px rgba(54,95,72,.09)}
+body .hero-copy h1{font:400 clamp(40px,4.7vw,70px)/1.12 Georgia,serif!important;letter-spacing:.005em!important;margin:.55rem 0 0;color:#2d6948}
+body .hero-copy .eyebrow{font:400 clamp(13px,1.3vw,17px)/1.4 'Avenir Next','Segoe UI',sans-serif!important;letter-spacing:.06em!important;text-transform:none}
+body .hero-copy .tagline{font:400 clamp(18px,1.8vw,24px)/1.45 'Avenir Next','Segoe UI',sans-serif!important;color:#53615a}
+body .hero-copy .tagline strong{font-weight:400}
+body .hero-copy .lead{font:400 clamp(15px,1.2vw,17px)/1.7 'Avenir Next','Segoe UI',sans-serif!important;max-width:54ch;margin:1rem 0 0}
+body .garden-wordplay{display:none}
+body .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+body .hero-actions .btn{width:100%;min-width:0;min-height:48px;padding:10px 12px;border-width:1px;border-radius:9px;box-shadow:none;font:400 14px/1.35 'Avenir Next','Segoe UI',sans-serif!important}
+body .hero-actions #heroProfileButton,body .hero-actions a[href='#curriculum']{grid-column:1/-1}
+body .hero-actions a[href='student-profile/'],body .hero-actions a[href='https://vervenveda.com/Khaemenes_Academy.github.io/student/']{display:none}
+body .student-gateway{margin-top:16px;padding:12px 14px;border-width:1px;background:#f9fbf6}
+body .student-gateway strong{font:400 15px/1.4 'Avenir Next','Segoe UI',sans-serif}
+body .student-gateway span{font:400 13px/1.55 'Avenir Next','Segoe UI',sans-serif}
+body .academic-place-strip{margin-top:12px;padding:12px 14px;border-width:1px;box-shadow:none}
+body .academic-place-strip strong{font:400 15px/1.4 'Avenir Next','Segoe UI',sans-serif}
+body .hero-garden{width:100%;min-width:0;min-height:0;display:grid;place-items:center}
+body .garden-scene{width:min(100%,550px);min-height:550px;aspect-ratio:1/1;overflow:hidden;border-width:2px;border-radius:25px;box-shadow:0 15px 38px rgba(47,113,64,.12)}
+body .garden-caption{font:400 13px/1.4 'Avenir Next','Segoe UI',sans-serif;bottom:10px}
+body .scene-link{font-weight:400}
+body .scene-link small{font-weight:400;line-height:1.25}
+body .stats{margin-top:0;padding-top:24px}
+/* A quiet adult-facing dock; scoped so other Academy pages are unchanged. */
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){right:12px!important;bottom:12px!important;display:flex!important;flex-wrap:wrap!important;gap:4px!important;max-width:min(540px,calc(100vw - 24px))!important;padding:5px!important;border-radius:7px!important;box-shadow:0 4px 15px rgba(17,34,42,.12)!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){min-height:32px!important;height:auto!important;max-height:none!important;padding:6px 8px!important;border-radius:6px!important;font:400 11px/1.25 'Avenir Next','Segoe UI',sans-serif!important;letter-spacing:0!important;text-transform:none!important;white-space:normal!important;overflow-wrap:break-word!important}
+@media(max-width:900px){body .hero-inner{grid-template-columns:1fr;max-width:680px;gap:24px}body .hero-garden{order:0}body .hero-copy{text-align:center}body .hero-copy .lead{margin-inline:auto}body .garden-scene{width:min(100%,550px)}}
+@media(max-width:560px){body .hero-inner{width:min(100% - 24px,440px);padding:24px 0 80px}body .hero-copy{padding:22px 18px}body .hero-actions{grid-template-columns:1fr}body .hero-actions .btn{grid-column:1/-1}body .garden-scene{width:100%;min-height:460px;aspect-ratio:auto}body .garden-caption{font-size:11px}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){max-width:calc(100vw - 16px)!important;right:8px!important;bottom:8px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:10px!important;padding:5px 6px!important}}
+</style>
+
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
