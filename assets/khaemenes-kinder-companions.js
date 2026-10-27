@@ -160,7 +160,7 @@
   }
 
   const encodePath=value=>String(value||"").split("/").map(encodeURIComponent).join("/");
-  const crecheUrl=file=>`/stos/khaemenes/preschool/apps/${encodePath(file)}`;
+  const crecheUrl=file=>`https://vervenveda.com/Khaemenes_Preschool.github.io/apps/${encodePath(file)}`;
 
   function crecheForLesson(unitNumber,lessonNumber=1,catalog=global.KhaemenesPreschoolCatalog,options={}){
     const context=contextForLesson(unitNumber,lessonNumber,options.courseData||courseData());
