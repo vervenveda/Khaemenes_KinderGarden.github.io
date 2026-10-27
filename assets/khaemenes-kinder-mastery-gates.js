@@ -23,7 +23,7 @@
    Evidence policy is intentionally tiered:
    Weeks 1–4 = foundation/orientation evidence captured in the formal lesson page.
    Weeks 5–25 = strict five-day sequence receipts before the weekly mastery rubric.
-   Weeks 26–36 = synthesis/capstone evidence captured by weekly demonstration + portfolio.
+   Weeks 26–36 = five-day sequence plus adult-affirmed capstone evidence, weekly demonstration and portfolio.
    All three tiers still require >=80% formal mastery for advancement.
 */
 const FOUNDATION_UNITS=new Set([1,2,3,4]);
