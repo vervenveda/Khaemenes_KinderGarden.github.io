@@ -393,6 +393,39 @@ body .garden-scene{box-shadow:0 20px 46px rgba(23,65,91,.20)!important}
  radial-gradient(ellipse 48% 38% at 44% 100%,#ef4ca6 0 56%,transparent 57%),
  linear-gradient(145deg,#20cdb4,#7351c9)!important}body .hero-copy{padding:22px 18px!important}body .hero-garden{padding:10px;border-radius:30px}}
 </style>
+
+<style id="kinder-blue-header-buttons-dock-20261027">
+/* Kindergarten-only finishing pass: blue chrome, palette controls, caption below art, quieter utility dock. */
+body [data-khae-header],
+body .header,
+body .kinder-quick-links,
+body .breadcrumbs{background:#168bd2!important;border-color:rgba(255,255,255,.22)!important;color:#fff!important}
+body [data-khae-header] :is(a,button,span,small,strong),
+body .header :is(a,button,span,small,strong),
+body .breadcrumbs :is(a,span){color:#fff!important}
+body .kinder-quick-links a,body .kinder-menu-trigger{background:rgba(255,255,255,.14)!important;border-color:rgba(255,255,255,.32)!important;color:#fff!important;box-shadow:none!important}
+body .kinder-quick-links a:hover,body .kinder-menu-trigger:hover{background:rgba(255,255,255,.24)!important}
+body .hero-garden{display:flex!important;flex-direction:column!important;align-items:center!important;gap:14px!important}
+body .garden-caption{position:static!important;left:auto!important;bottom:auto!important;transform:none!important;width:min(100%,610px)!important;max-width:none!important;margin:0!important;padding:11px 16px!important;border:1px solid rgba(255,255,255,.62)!important;border-radius:14px!important;background:rgba(255,255,255,.88)!important;color:#24384a!important;text-align:center!important;box-shadow:0 7px 18px rgba(30,71,94,.10)!important;backdrop-filter:blur(9px)!important}
+body .scene-link{color:#24384a!important;border-color:rgba(255,255,255,.92)!important;box-shadow:0 8px 18px rgba(31,70,91,.16)!important}
+body .scene-link.one{background:#ffd12f!important}
+body .scene-link.two{background:#20cdb4!important}
+body .scene-link.three{background:#fff1a8!important}
+body .scene-link.four{background:#c8b8ff!important}
+body .scene-link.five{background:#ff9b35!important}
+body .scene-link.six{background:#8ee329!important}
+body .scene-link.seven{background:#ef72b8!important}
+body .scene-link.eight{background:#78c8f2!important}
+body .scene-link:hover{filter:brightness(1.04);transform:translateY(-4px) scale(1.025)!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+ right:10px!important;bottom:10px!important;max-width:min(390px,calc(100vw - 20px))!important;gap:2px!important;padding:3px 4px!important;border:1px solid rgba(36,56,74,.12)!important;border-radius:10px!important;background:rgba(255,255,255,.88)!important;box-shadow:0 4px 14px rgba(17,34,42,.10)!important;backdrop-filter:blur(12px)!important;opacity:.82!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar):hover,
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar):focus-within{opacity:1!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
+ min-height:25px!important;padding:3px 6px!important;border-radius:6px!important;border-width:1px!important;background:transparent!important;color:#40505b!important;font:400 9.5px/1.15 "Avenir Next","Segoe UI",sans-serif!important;white-space:nowrap!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):hover{background:#eef8ff!important}
+@media(max-width:620px){body .garden-caption{width:100%!important;font-size:11px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){max-width:calc(100vw - 12px)!important;right:6px!important;bottom:6px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:9px!important;padding:3px 5px!important}}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
@@ -501,8 +534,8 @@ body .garden-scene{box-shadow:0 20px 46px rgba(23,65,91,.20)!important}
         <a class="scene-link yellow seven" href="#mygarden" aria-label="Open my garden section"><span class="big">🌼</span><small>My Garden</small></a>
         <a class="scene-link blue eight" href="#apps" aria-label="Open learning toolbox"><span class="big">🎨</span><small>Game Box</small></a>
 
+        </div>
         <div class="garden-caption">Tap a garden bubble to jump to games, weekly lessons, Mentor help, or your family tools.</div>
-      </div>
     </div>
   </div>
 </section>
