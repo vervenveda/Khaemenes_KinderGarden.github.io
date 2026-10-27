@@ -299,6 +299,65 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
 @media(max-width:560px){body .hero-inner{width:min(100% - 24px,440px);padding:24px 0 80px}body .hero-copy{padding:22px 18px}body .hero-actions{grid-template-columns:1fr}body .hero-actions .btn{grid-column:1/-1}body .garden-scene{width:100%;min-height:460px;aspect-ratio:auto}body .garden-caption{font-size:11px}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){max-width:calc(100vw - 16px)!important;right:8px!important;bottom:8px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:10px!important;padding:5px 6px!important}}
 </style>
 
+
+<style id="kinder-playful-landing-20261027">
+/* PLAY-inspired Kindergarten landing refresh. Presentation only: preserve all learner, NAIB, curriculum and mastery behavior. */
+:root{--play-red:#ff4b35;--play-orange:#ff8b25;--play-yellow:#ffd12f;--play-lime:#8ee329;--play-teal:#20cdb4;--play-blue:#168bd2;--play-purple:#7351c9;--play-pink:#ef4ca6;--play-ink:#24384a;--play-paper:#fffdf7}
+body{font-family:"Avenir Next","Nunito","Trebuchet MS","Segoe UI",Arial,sans-serif!important;background:linear-gradient(180deg,#fffdf7 0,#f8fff4 45%,#fff9ed 100%)!important;color:var(--play-ink)}
+body :is(h1,h2,h3,h4,.btn,.scene-link,.ticker-track){font-family:"Avenir Next","Nunito","Trebuchet MS","Segoe UI",Arial,sans-serif!important}
+.garden-decor{display:none!important}
+.hero{background:linear-gradient(135deg,#fff6d7 0%,#eafff6 46%,#eaf5ff 100%)!important;border-bottom:0}
+.hero::after{display:none!important}
+body .hero-inner{width:min(1280px,calc(100% - 48px));grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4vw,60px);padding:clamp(38px,5vw,68px) 0 clamp(50px,6vw,80px)}
+body .hero-copy{align-self:center;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;text-align:left}
+body .hero-copy .eyebrow{margin:0 0 10px!important;color:#e94a6f!important;font:500 14px/1.4 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;letter-spacing:.14em!important;text-transform:uppercase!important}
+body .hero-copy h1{margin:0!important;color:var(--play-ink)!important;font:700 clamp(56px,7vw,104px)/.88 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;letter-spacing:-.055em!important}
+body .hero-copy .tagline{max-width:650px;margin:22px 0 0!important;color:#2c6848!important;font:500 clamp(21px,2vw,29px)/1.28 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important}
+body .hero-copy .lead{max-width:650px;margin:18px 0 0!important;color:#52616a!important;font:400 clamp(16px,1.2vw,18px)/1.7 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important}
+body .hero-actions{display:flex!important;flex-wrap:wrap;gap:10px;margin-top:25px}
+body .hero-actions .btn{width:auto!important;min-height:50px!important;padding:11px 16px!important;border:1px solid rgba(36,56,74,.13)!important;border-radius:14px!important;font:500 14px/1.25 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;box-shadow:0 6px 14px rgba(37,67,80,.08)!important}
+body .hero-actions #heroProfileButton{flex-basis:100%;max-width:390px;background:linear-gradient(100deg,var(--play-purple),var(--play-pink),var(--play-red))!important}
+body .hero-actions a[href="#curriculum"]{background:var(--play-teal)!important;color:#123e3a!important;border-color:transparent!important}
+body .student-gateway,body .academic-place-strip{max-width:650px;border-radius:14px!important;background:rgba(255,255,255,.74)!important;border:1px solid rgba(36,56,74,.1)!important}
+
+/* Replace the tree scene with an abstract PLAY-style field while preserving all eight linked destinations. */
+body .hero-garden{min-height:600px}
+body .garden-scene{position:relative;width:min(100%,610px)!important;min-height:600px!important;aspect-ratio:1/1!important;border:0!important;border-radius:42px!important;overflow:hidden!important;
+background:
+ radial-gradient(ellipse at -4% 10%,var(--play-orange) 0 17%,transparent 17.5%),
+ radial-gradient(ellipse at 16% 26%,var(--play-red) 0 18%,transparent 18.5%),
+ radial-gradient(ellipse at 37% 2%,var(--play-yellow) 0 22%,transparent 22.5%),
+ radial-gradient(ellipse at 57% 29%,var(--play-teal) 0 24%,transparent 24.5%),
+ radial-gradient(ellipse at 82% 14%,var(--play-blue) 0 27%,transparent 27.5%),
+ radial-gradient(ellipse at 104% 34%,var(--play-purple) 0 26%,transparent 26.5%),
+ radial-gradient(ellipse at 7% 76%,var(--play-lime) 0 23%,transparent 23.5%),
+ radial-gradient(ellipse at 38% 93%,var(--play-orange) 0 25%,transparent 25.5%),
+ radial-gradient(ellipse at 76% 92%,var(--play-pink) 0 27%,transparent 27.5%),
+ linear-gradient(145deg,#22cbb4,#168bd2)!important;
+box-shadow:0 24px 55px rgba(31,91,112,.18)!important}
+body .garden-scene::before{content:"PLAY";position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:45%;height:18%;border:10px solid var(--play-blue);border-radius:44px;background:var(--play-yellow);color:#f52f6f;font:800 clamp(42px,5vw,70px)/1 "Avenir Next","Nunito","Trebuchet MS",sans-serif;letter-spacing:-.04em;box-shadow:0 10px 0 rgba(23,105,171,.16)}
+body .garden-scene :is(.scene-sun,.scene-cloud,.scene-ground,.scene-path,.scene-tree){display:none!important}
+body .scene-link{z-index:3;width:118px;min-height:86px;padding:10px 8px;border:3px solid rgba(255,255,255,.9);border-radius:22px;background:rgba(255,255,255,.92)!important;color:#263f50;box-shadow:0 8px 20px rgba(29,72,89,.14);font:600 13px/1.15 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important}
+body .scene-link .big{font-size:25px}
+body .scene-link small{font-size:12px;font-weight:600}
+body .scene-link.one{left:25px;top:92px}body .scene-link.two{left:24px;top:250px}body .scene-link.three{left:174px;top:30px}body .scene-link.four{right:174px;top:30px}body .scene-link.five{right:24px;top:92px}body .scene-link.six{right:24px;top:250px}body .scene-link.seven{left:88px;bottom:58px}body .scene-link.eight{right:88px;bottom:58px}
+body .garden-caption{z-index:4;bottom:12px;width:auto;max-width:82%;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.9);color:#29485b;font:500 12px/1.35 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important}
+
+/* Carry the playful palette through the existing page without changing its information architecture. */
+body .stats{gap:12px;padding-top:28px}
+body .stat{border:0;border-radius:18px;box-shadow:0 8px 22px rgba(41,72,82,.08)}
+body .stat:nth-child(1){background:#fff0c4}body .stat:nth-child(2){background:#dffbf4}body .stat:nth-child(3){background:#e6f4ff}body .stat:nth-child(4){background:#f3e9ff}
+body .stat strong{color:#263f50;font-family:inherit!important}
+body .section-heading h2{color:#263f50!important;font:700 clamp(34px,4.5vw,62px)/1 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;letter-spacing:-.035em}
+body .section-heading .eyebrow{color:#ed4f72!important;font:600 14px/1.3 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important;letter-spacing:.14em!important}
+body .unit-grid{gap:12px}
+body .unit-card{min-height:205px;border:0;border-radius:18px;box-shadow:0 8px 20px rgba(37,67,80,.08);border-top:7px solid var(--play-teal)}
+body .unit-card:nth-child(8n+2){border-top-color:var(--play-yellow)}body .unit-card:nth-child(8n+3){border-top-color:var(--play-orange)}body .unit-card:nth-child(8n+4){border-top-color:var(--play-red)}body .unit-card:nth-child(8n+5){border-top-color:var(--play-pink)}body .unit-card:nth-child(8n+6){border-top-color:var(--play-purple)}body .unit-card:nth-child(8n+7){border-top-color:var(--play-blue)}body .unit-card:nth-child(8n){border-top-color:var(--play-lime)}
+body .unit-card h3,body .feature-card h3,body .app-card h3,body .connected-card h3,body .naib-tray-card h3{color:#263f50!important;font-family:inherit!important}
+body .feature-card,body .app-card,body .connected-card,body .naib-tray-card{border:0;border-radius:20px;box-shadow:0 8px 22px rgba(37,67,80,.08)}
+@media(max-width:900px){body .hero-inner{grid-template-columns:1fr;max-width:760px}body .hero-copy{text-align:center}body .hero-copy .lead,body .hero-copy .tagline,body .student-gateway,body .academic-place-strip{margin-left:auto!important;margin-right:auto!important}body .hero-actions{justify-content:center}body .hero-garden{order:0}}
+@media(max-width:620px){body .hero-inner{width:min(100% - 24px,520px);padding-top:28px}body .hero-copy h1{font-size:clamp(46px,14vw,72px)!important}body .hero-garden{min-height:520px}body .garden-scene{min-height:520px!important;border-radius:28px!important}body .garden-scene::before{width:52%;height:16%;border-width:7px;font-size:42px}body .scene-link{width:92px;min-height:72px;padding:7px 5px;border-radius:17px}body .scene-link small{font-size:10px}body .scene-link.one{left:10px;top:86px}body .scene-link.two{left:10px;top:220px}body .scene-link.three{left:86px;top:22px}body .scene-link.four{right:86px;top:22px}body .scene-link.five{right:10px;top:86px}body .scene-link.six{right:10px;top:220px}body .scene-link.seven{left:50px;bottom:55px}body .scene-link.eight{right:50px;bottom:55px}}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
@@ -344,7 +403,7 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
   <div class="shell hero-inner">
     <article class="hero-copy">
       <p class="eyebrow">Khaemenes Academy · Kindergarten</p>
-      <h1>Kinder Garden</h1>
+      <h1>KINDERGARTEN</h1>
       <p class="tagline"><strong>A Kinder Place to Learn.</strong> A garden for growing readers, thinkers, makers, helpers, and wonderfully curious humans.</p>
       <p class="lead">A complete 36-week kindergarten pathway with 180 daily lessons, public learning games, week-by-week lesson previews, mastery checks, printables, and a personalized Khaemenes Mentor. Games stay open; formal curriculum progress belongs to the linked Kindergarten learner.</p>
 
