@@ -476,7 +476,7 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
 @media(max-width:720px){body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){right:10px!important;bottom:10px!important;max-width:calc(100vw - 20px)!important;grid-template-columns:repeat(2,max-content)!important;gap:4px!important;padding:7px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:9px!important;padding:5px 7px!important}}
 </style>
 
-<style id="kinder-toolbar-contrast-20261027">
+<style id="kinder-toolbar-contrast-20261027" media="not all">
 /* High-contrast PLAY palette for the Kindergarten utility dock. */
 body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
  border:1px solid rgba(255,255,255,.72)!important;
@@ -502,6 +502,32 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
 body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):hover,
 body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):focus-visible{
  filter:brightness(1.06)!important;transform:translateY(-1px)!important;box-shadow:0 4px 10px rgba(27,66,86,.16)!important}
+</style>
+
+<style id="kinder-header-contrast-20261027">
+/* Kindergarten header contrast: PLAY palette navigation, scoped to this landing page. */
+body [data-khae-header] :is(a,button),
+body .header :is(a,button),
+body .kinder-quick-links :is(a,button),
+body .kinder-menu-trigger{
+ font-family:var(--kinder-bubble)!important;
+ font-weight:400!important;
+ border:1px solid rgba(255,255,255,.55)!important;
+ border-radius:8px!important;
+ text-shadow:none!important;
+}
+body .kinder-quick-links :is(a,button):nth-child(6n+1){background:#ffd12f!important;color:#493d16!important}
+body .kinder-quick-links :is(a,button):nth-child(6n+2){background:#20cdb4!important;color:#173f43!important}
+body .kinder-quick-links :is(a,button):nth-child(6n+3){background:#7351c9!important;color:#fff!important}
+body .kinder-quick-links :is(a,button):nth-child(6n+4){background:#ef4ca6!important;color:#fff!important}
+body .kinder-quick-links :is(a,button):nth-child(6n+5){background:#ff8b25!important;color:#fff!important}
+body .kinder-quick-links :is(a,button):nth-child(6n){background:#8ee329!important;color:#274318!important}
+body [data-khae-header] :is(a,button):hover,
+body .header :is(a,button):hover,
+body .kinder-quick-links :is(a,button):hover{filter:brightness(1.06)!important;box-shadow:0 3px 8px rgba(18,70,102,.15)!important}
+/* Keep plain header text readable against the design blue. */
+body [data-khae-header] :is(span,small,strong),
+body .header :is(span,small,strong){color:#fff!important}
 </style>
 </head>
 <body id="top">
