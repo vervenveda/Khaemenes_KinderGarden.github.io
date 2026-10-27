@@ -877,11 +877,25 @@ function mentorPrompt(kind){
   };
   $("#kinderMentorDialogue").textContent=responses[kind] || mentor?.intro || "We can learn one small step at a time.";
 }
+function selectArchaemenesVoice(voices){
+  const british=voices.filter(v=>/^en[-_]GB$/i.test(v.lang||""));
+  const male=/(male|daniel|oliver|george|ryan|arthur|alfie|thomas)/i;
+  return british.find(v=>/google uk english male/i.test(v.name||""))
+    ||british.find(v=>male.test(v.name||""))
+    ||british[0]
+    ||voices.find(v=>/^en/i.test(v.lang||""))
+    ||null;
+}
 function speakKinderMentor(){
-  if(!("speechSynthesis" in window))return;
+  if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined")return;
+  const dialogue=$("#kinderMentorDialogue")?.textContent?.trim();
+  if(!dialogue)return;
   speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance($("#kinderMentorDialogue").textContent);
-  u.rate=.9;u.pitch=1.03;speechSynthesis.speak(u);
+  const u=new SpeechSynthesisUtterance(dialogue);
+  u.lang="en-GB";u.rate=.9;u.pitch=.94;u.volume=.9;
+  const voice=selectArchaemenesVoice(speechSynthesis.getVoices?.()||[]);
+  if(voice){u.voice=voice;u.lang=voice.lang||"en-GB";}
+  speechSynthesis.speak(u);
 }
 function renderKinderMentor(){
    refreshHeroProfileButton();
