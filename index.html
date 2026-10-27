@@ -774,6 +774,71 @@ main>.section :is(.naib-tray-card,.connected-card,.app-card,.profile-card,.featu
  #crecheGrid>.app-card,#resources .app-card,#daily .app-card,#family .app-card,#mentor .app-card{flex-basis:100%!important;max-width:100%!important}
 }
 </style>
+
+<style id="kinder-typography-radius-contract-20261027">
+/* Kindergarten landing-page readability contract: 14px floor, rounded body face,
+   Academy display face for headings, 7px framed corners. */
+:root{
+ --kg-body-face:"Nunito","Brandon Grotesque","Avenir Next",Arial,sans-serif;
+ --kg-title-face:"Cinzel","Khaemenes Academy","Times New Roman",serif;
+ --kg-radius:7px;
+}
+body{font-family:var(--kg-body-face)!important;font-size:14px!important;line-height:1.55}
+body :is(p,li,label,small,span,a,button,input,select,textarea,.chip,.eyebrow,.kicker,.overline,.pretitle,
+ .hero-kicker,.garden-caption,.unit-question,.gate-state,.term-copy small,.tray-label,.mentor-badge,
+ .guardian-state,.ticker-track,.breadcrumbs,.scene-link small){
+ font-family:var(--kg-body-face)!important;
+ font-size:max(14px,1em);
+ line-height:1.4;
+}
+body :is(h1,h2,h3,h4,h5,h6,.page-title,.hero-title,.section-heading h2,.unit-card h3,
+ .feature-card h3,.app-card h3,.connected-card h3,.naib-tray-card h3,.kinder-mentor-card h3){
+ font-family:var(--kg-title-face)!important;
+ font-weight:400!important;
+ overflow-wrap:break-word;
+ word-break:normal;
+ hyphens:auto;
+}
+body .kinder-title-band h1{font-family:var(--kg-title-face)!important}
+body main :is(h2,.section-heading h2){font-size:clamp(24px,2.3vw,33px)!important;line-height:1.16!important}
+body main h3{font-size:clamp(18px,1.55vw,24px)!important;line-height:1.22!important}
+body main h4{font-size:clamp(16px,1.3vw,20px)!important;line-height:1.25!important}
+body main .eyebrow{font-size:14px!important;line-height:1.35!important;letter-spacing:.09em!important}
+body :is(.card,.unit-card,.feature-card,.app-card,.connected-card,.naib-tray-card,.profile-card,.pinned-card,
+ .daily-card,.family-card,.kinder-mentor-card,.mentor-principles,.stat,.seed-ribbon,.scene-link,.garden-caption,
+ .term-week-grid .unit-card,.term-head,.btn,button,.chip,input,select,textarea,
+ #khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar,
+ #khaeLandingUtilityDock>a,#khaeLandingUtilityDock>button,
+ #khaemenesLearnerUtilityToolbar>a,#khaemenesLearnerUtilityToolbar>button){
+ border-radius:var(--kg-radius)!important;
+}
+body :is(.card,.unit-card,.feature-card,.app-card,.connected-card,.naib-tray-card,.profile-card,.pinned-card,
+ .daily-card,.family-card,.kinder-mentor-card,.mentor-principles,.term-week-grid .unit-card){
+ min-width:0;
+ overflow-wrap:break-word;
+}
+body :is(.btn,button,.chip,#khaeLandingUtilityDock>a,#khaeLandingUtilityDock>button,
+ #khaemenesLearnerUtilityToolbar>a,#khaemenesLearnerUtilityToolbar>button){
+ min-height:36px!important;
+ height:auto!important;
+ padding:7px 10px!important;
+ white-space:normal!important;
+ overflow:visible!important;
+ text-overflow:clip!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+ gap:5px!important;padding:7px!important;max-width:min(520px,calc(100vw - 28px))!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
+ font:400 14px/1.2 var(--kg-body-face)!important;
+}
+.term-copy small,.term-week-grid .unit-card .unit-question,.term-week-grid .unit-card .gate-state,
+.term-week-grid .unit-card.current .gate-state,.garden-caption,.scene-link small{font-size:14px!important}
+@media(max-width:760px){
+ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
+  font-size:14px!important;min-height:36px!important;padding:7px 9px!important}
+}
+</style>
 </head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
