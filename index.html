@@ -2666,31 +2666,6 @@ $("#year").textContent=new Date().getFullYear();
 <script src="assets/vnv-ecosystem-menu.js" defer></script>
 <script src="assets/khaemenes-kindergarten-pin-prompt.js"></script>
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-landing-toolbar.js" defer></script>
-<script>
-/* Kindergarten-only concise utility labels; actions and destinations remain unchanged. */
-document.addEventListener("DOMContentLoaded",()=>{
- const labels={search:"Search",updates:"Updates",mentor:"Mentor",contribute:"Give",beta:"Beta"};
- const dock=document.querySelector("#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar");
- const apply=()=>{
-  if(!dock)return;
-  dock.querySelectorAll("[data-landing-tool]").forEach(control=>{
-   const kind=control.dataset.landingTool,label=labels[kind];
-   if(!label)return;
-   const spans=control.querySelectorAll("span");
-   const textSpan=[...spans].find(x=>!x.classList.contains("khae-dock-mark"));
-   if(textSpan)textSpan.textContent=label; else control.textContent=label;
-   control.setAttribute("aria-label",label);
-  });
-  const beta=document.getElementById("vnvBetaProgramLink");
-  if(beta&&!beta.matches("[data-landing-tool]")){beta.textContent="Beta";beta.setAttribute("aria-label","Beta")}
-  const profile=[...dock.querySelectorAll("a,button")].find(x=>/student profile|profile/i.test(x.textContent||""));
-  if(profile){profile.textContent="Profile";profile.setAttribute("aria-label","Student Profile")}
- };
- apply();
- /* Shared toolbar is deferred, so run a few bounded passes without observing our own text mutations. */
- [0,120,350,800].forEach(ms=>setTimeout(apply,ms));
-});
-</script>
 <script id="kinder-tool-shed-dialog-20261027">
 document.addEventListener("DOMContentLoaded",()=>{
  const bar=document.getElementById("appFilters"),dialog=document.getElementById("appLibraryDialog"),close=document.getElementById("appLibraryClose"),title=document.getElementById("appLibraryTitle");
