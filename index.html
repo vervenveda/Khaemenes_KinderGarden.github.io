@@ -1741,6 +1741,14 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
   padding:10px!important;
  }
 }
+</style>
+<style id="kinder-toolbar-one-word-20261028">
+/* Kindergarten-only presentation: one-word utility labels, no leading marks. */
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) .khae-dock-mark{display:none!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
+ font-size:8px!important;
+ white-space:nowrap!important;
+}
 </style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
@@ -2658,6 +2666,30 @@ $("#year").textContent=new Date().getFullYear();
 <script src="assets/vnv-ecosystem-menu.js" defer></script>
 <script src="assets/khaemenes-kindergarten-pin-prompt.js"></script>
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-landing-toolbar.js" defer></script>
+<script>
+/* Kindergarten-only concise utility labels; actions and destinations remain unchanged. */
+document.addEventListener("DOMContentLoaded",()=>{
+ const labels={search:"Search",updates:"Updates",mentor:"Mentor",contribute:"Give",beta:"Beta"};
+ const dock=document.querySelector("#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar");
+ const apply=()=>{
+  if(!dock)return;
+  dock.querySelectorAll("[data-landing-tool]").forEach(control=>{
+   const kind=control.dataset.landingTool,label=labels[kind];
+   if(!label)return;
+   const spans=control.querySelectorAll("span");
+   const textSpan=[...spans].find(x=>!x.classList.contains("khae-dock-mark"));
+   if(textSpan)textSpan.textContent=label; else control.textContent=label;
+   control.setAttribute("aria-label",label);
+  });
+  const beta=document.getElementById("vnvBetaProgramLink");
+  if(beta&&!beta.matches("[data-landing-tool]")){beta.textContent="Beta";beta.setAttribute("aria-label","Beta")}
+  const profile=[...dock.querySelectorAll("a,button")].find(x=>/student profile|profile/i.test(x.textContent||""));
+  if(profile){profile.textContent="Profile";profile.setAttribute("aria-label","Student Profile")}
+ };
+ apply();
+ new MutationObserver(apply).observe(dock||document.body,{childList:true,subtree:true});
+});
+</script>
 <script id="kinder-tool-shed-dialog-20261027">
 document.addEventListener("DOMContentLoaded",()=>{
  const bar=document.getElementById("appFilters"),dialog=document.getElementById("appLibraryDialog"),close=document.getElementById("appLibraryClose"),title=document.getElementById("appLibraryTitle");
