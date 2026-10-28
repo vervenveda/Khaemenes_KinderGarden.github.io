@@ -2687,7 +2687,8 @@ document.addEventListener("DOMContentLoaded",()=>{
   if(profile){profile.textContent="Profile";profile.setAttribute("aria-label","Student Profile")}
  };
  apply();
- new MutationObserver(apply).observe(dock||document.body,{childList:true,subtree:true});
+ /* Shared toolbar is deferred, so run a few bounded passes without observing our own text mutations. */
+ [0,120,350,800].forEach(ms=>setTimeout(apply,ms));
 });
 </script>
 <script id="kinder-tool-shed-dialog-20261027">
