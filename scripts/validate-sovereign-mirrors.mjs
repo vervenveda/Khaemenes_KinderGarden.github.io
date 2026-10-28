@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const root=process.cwd();
 const manifestPath=path.join(root,"assets","sovereign-mirror-manifest.json");
@@ -18,6 +19,9 @@ for(const asset of manifest.assets){
  const stat=fs.statSync(full);
  if(!stat.isFile()||stat.size===0) throw new Error(`Invalid sovereign mirror: ${asset.path}`);
  if(!/^[0-9a-f]{40}$/i.test(asset.source_blob_sha)) throw new Error(`Invalid source blob SHA: ${asset.path}`);
+ const sha256=crypto.createHash("sha256").update(fs.readFileSync(full)).digest("hex");
+ if(asset.local_sha256 && asset.local_sha256!==sha256) throw new Error(`Local mirror integrity mismatch: ${asset.path}`);
+ if(!asset.local_sha256) console.log(`INFO ${asset.path} sha256=${sha256}`);
  console.log(`PASS ${asset.path} <- ${asset.source_repository}@${asset.source_blob_sha}`);
 }
 console.log(`SOVEREIGN_MIRROR_MANIFEST_PASS assets=${manifest.assets.length}`);
