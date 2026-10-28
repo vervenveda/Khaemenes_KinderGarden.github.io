@@ -89,6 +89,14 @@
       "source_ref": "main",
       "source_blob_sha": "d1022e8702de441783732ecb7f4356e7d2b8ae12",
       "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/eiren-conversation-v1.js",
+      "source_repository": "artist1970/Eiren.github.io",
+      "source_path": "eiren-conversation-v1.js",
+      "source_ref": "main",
+      "source_blob_sha": "597687ea7c5ed32a8f3299ad0e294bff61d3b441",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     }
   ]
 }
