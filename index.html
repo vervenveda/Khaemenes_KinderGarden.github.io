@@ -1648,6 +1648,58 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
   grid-template-columns:repeat(2,minmax(0,1fr))!important;
  }
 }
+</style><style id="kinder-toolbar-status-leaf-fix-20261027">
+/* Leaf-only toolbar contract: six equal controls, two balanced rows. */
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+ display:grid!important;
+ grid-template-columns:repeat(3,96px)!important;
+ grid-auto-rows:30px!important;
+ gap:5px!important;
+ width:auto!important;
+ max-width:none!important;
+ padding:6px!important;
+ align-items:stretch!important;
+ justify-items:stretch!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
+ display:flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ width:96px!important;
+ min-width:96px!important;
+ max-width:96px!important;
+ height:30px!important;
+ min-height:30px!important;
+ max-height:30px!important;
+ margin:0!important;
+ padding:3px 5px!important;
+ box-sizing:border-box!important;
+ font:400 11px/1.05 var(--kg-body-face)!important;
+ letter-spacing:0!important;
+ text-align:center!important;
+ white-space:nowrap!important;
+ overflow:hidden!important;
+ text-overflow:clip!important;
+}
+
+/* Roadmap status bars: preserve color/state, center the label inside its bar. */
+body .term-week-grid .unit-card .gate-state{
+ display:inline-flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ width:100%!important;
+ min-height:34px!important;
+ box-sizing:border-box!important;
+ padding:5px 8px!important;
+ text-align:center!important;
+ white-space:normal!important;
+ line-height:1.15!important;
+}
+@media(max-width:480px){
+ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+  grid-template-columns:repeat(2,96px)!important;
+ }
+}
 </style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
