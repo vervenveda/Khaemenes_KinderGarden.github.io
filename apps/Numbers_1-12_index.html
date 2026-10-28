@@ -1,86 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Numbers 1–12 Fun!</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Numbers 1–12 · Kindergarten</title>
 <style>
-  body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    text-align: center;
-    background: #FAF3E0;
-    padding: 20px;
-  }
-  #number-display {
-    font-size: 5rem;
-    color: #FF8C00;
-    margin: 20px;
-  }
-  #count-btns button {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    background: #87CEEB;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  #count-btns button:hover {
-    background: #00BFFF;
-  }
-  .dot-container {
-    margin: 10px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
-  .dot {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #FF6F61;
-  }
-</style>
-</head>
-<body>
-
-<h1>Learn Numbers 1–12!</h1>
-<div id="number-display">1</div>
-
-<div id="count-btns">
-  <button onclick="changeNumber(-1)">⬅️ Prev</button>
-  <button onclick="changeNumber(1)">Next ➡️</button>
-</div>
-
-<div id="dots" class="dot-container"></div>
-
+:root{--ink:#173f4a;--font:"Comic Sans MS","Chalkboard SE","Trebuchet MS",sans-serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:var(--font);text-align:center;color:var(--ink);background-color:#5c4db4;background-image:radial-gradient(circle at 14% 20%,#ffcf3d 0 9vw,transparent 9.2vw),radial-gradient(circle at 86% 22%,#ff5e78 0 12vw,transparent 12.2vw),linear-gradient(135deg,transparent 0 50%,#22b8a7 50% 66%,transparent 66%),linear-gradient(45deg,#6551b8 0 24%,#2d8fd0 24% 43%,#ffd43b 43% 58%,#ff7046 58% 72%,#7b4eb3 72%);background-attachment:fixed}.kinder-app-nav{min-height:68px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:7px max(10px,calc((100vw - 940px)/2));background:linear-gradient(90deg,#7255b5 0 25%,#2c8dcf 25% 50%,#10a395 50% 75%,#ff6a47 75%);border-bottom:3px solid #fff}.kinder-app-nav a{width:48px;height:48px;display:grid;place-items:center;border:3px solid #fff;border-radius:7px;text-decoration:none;font-size:1.4rem;box-shadow:0 3px 0 #173f4a55}.back{justify-self:start;background:#ffd43b;color:#173f4a}.mark{grid-column:2;grid-row:1;background:#174f82;color:#fff}.hero{width:min(900px,calc(100% - 24px));margin:18px auto 14px;padding:18px;border:4px solid #fff;border-radius:7px;background:linear-gradient(135deg,#7255b5 0 34%,#2b8fce 34% 58%,#12a393 58% 78%,#f0bd2f 78%);color:#fff;box-shadow:0 14px 32px #173f4a55}.hero h1{margin:.1rem 0;font-size:clamp(2rem,6vw,3.6rem)}.hero p{margin:.35rem 0;font-size:clamp(1rem,3vw,1.25rem)}.number-stage{width:min(720px,calc(100% - 24px));margin:0 auto 40px;padding:24px;border:5px solid #fff;border-radius:20px;background:#fffdf8;box-shadow:0 16px 36px #173f4a55;position:relative;overflow:hidden}.number-stage:before,.number-stage:after{content:"";position:absolute;border-radius:50%;opacity:.22;pointer-events:none}.number-stage:before{width:180px;height:180px;background:#ffd43b;left:-70px;top:-70px}.number-stage:after{width:150px;height:150px;background:#3ba5dd;right:-55px;bottom:-55px}.number-label{position:relative;z-index:1;margin:0;color:#6b5bb5;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.number-display{position:relative;z-index:1;width:190px;height:190px;margin:12px auto;display:grid;place-items:center;border:8px solid #ffd43b;border-radius:50%;background:linear-gradient(145deg,#ff7046,#e85276);color:#fff;font-size:clamp(6rem,18vw,9rem);line-height:1;box-shadow:0 9px 0 #b73e58}.count-btns{position:relative;z-index:1;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.count-btns button{min-width:150px;min-height:64px;padding:12px 22px;border:4px solid #fff;border-radius:14px;color:#fff;font:700 1.25rem/1.1 var(--font);cursor:pointer;box-shadow:0 6px 0 #173f4a44;transition:transform .15s}.count-btns button:first-child{background:#7255b5}.count-btns button:last-child{background:#0c9b8f}.count-btns button:hover,.count-btns button:focus-visible{transform:translateY(-3px);outline:4px solid #ffd43b;outline-offset:2px}.dot-title{position:relative;z-index:1;margin:24px 0 8px;font-size:1.1rem}.dot-container{position:relative;z-index:1;min-height:92px;margin:10px auto;display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:10px;max-width:520px;padding:12px;border:3px dashed #8d73c8;border-radius:14px;background:#f4efff}.dot{width:34px;height:34px;border-radius:50%;border:3px solid #fff;box-shadow:0 3px 0 #173f4a33}.dot:nth-child(4n+1){background:#ff6542}.dot:nth-child(4n+2){background:#ffd43b}.dot:nth-child(4n+3){background:#16a69a}.dot:nth-child(4n+4){background:#398ed0}.number-strip{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:18px}.number-chip{width:38px;height:38px;border:2px solid #fff;border-radius:9px;background:#e9e3ff;color:#51448c;font:700 1rem var(--font);cursor:pointer}.number-chip.active{background:#ffd43b;color:#173f4a;outline:3px solid #7255b5}@media(max-width:520px){.number-stage{padding:18px 10px}.number-display{width:150px;height:150px}.count-btns button{min-width:120px}.dot{width:29px;height:29px}}
+</style></head><body>
+<nav class="kinder-app-nav" aria-label="Kindergarten navigation"><a class="back" href="../reading/" aria-label="Back to Reading Garden">←</a><a class="mark" href="../" aria-label="Kindergarten home">🌈</a></nav>
+<header class="hero"><h1>🔢 Number Adventure</h1><p>Count, look, tap, and explore numbers 1–12!</p></header>
+<main class="number-stage"><p class="number-label">My number is</p><div id="number-display" class="number-display" aria-live="polite">1</div><div id="count-btns" class="count-btns"><button type="button" onclick="changeNumber(-1)">⬅ Prev</button><button type="button" onclick="changeNumber(1)">Next ➡</button></div><p class="dot-title">Count the colorful dots</p><div id="dots" class="dot-container" aria-label="Counting dots"></div><div id="number-strip" class="number-strip" aria-label="Choose a number"></div></main>
 <script>
-  let current = 1;
-  const maxNum = 12;
-  const display = document.getElementById('number-display');
-  const dotsDiv = document.getElementById('dots');
-
-  function updateDisplay() {
-    display.textContent = current;
-    dotsDiv.innerHTML = '';
-
-    for (let i = 0; i < current; i++) {
-      const d = document.createElement('div');
-      d.classList.add('dot');
-      dotsDiv.appendChild(d);
-    }
-  }
-
-  function changeNumber(delta) {
-    current = Math.min(maxNum, Math.max(1, current + delta));
-    updateDisplay();
-  }
-
-  updateDisplay();
+let current=1;const maxNum=12,display=document.getElementById("number-display"),dotsDiv=document.getElementById("dots"),strip=document.getElementById("number-strip");
+function updateDisplay(){display.textContent=current;dotsDiv.innerHTML="";for(let i=0;i<current;i++){const d=document.createElement("div");d.className="dot";dotsDiv.appendChild(d)}[...strip.children].forEach((b,i)=>{b.classList.toggle("active",i+1===current);b.setAttribute("aria-current",i+1===current?"true":"false")})}
+function changeNumber(delta){current=Math.min(maxNum,Math.max(1,current+delta));updateDisplay()}
+for(let n=1;n<=maxNum;n++){const b=document.createElement("button");b.type="button";b.className="number-chip";b.textContent=n;b.setAttribute("aria-label","Show number "+n);b.onclick=()=>{current=n;updateDisplay()};strip.appendChild(b)}updateDisplay();
 </script>
 <script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
-<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
-</html>
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body></html>
