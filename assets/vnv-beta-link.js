@@ -81,7 +81,7 @@
       }
       if(match("khaemenes-kindergarden","/khaemenes_kindergarden.github.io/")){
         return {
-          label:"Student Profile",
+          label:"Profile",
           mark:"K",
           url:ACADEMY_STUDENT_URL,
           aria:"Open the Khaemenes Academy Student Profile",
@@ -144,14 +144,14 @@
       const style=document.createElement("style");
       style.id=EDUCATION_TOOLBAR_STYLE_ID;
       style.textContent=`
-        #${EDUCATION_TOOLBAR_ID}{
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}{
           position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));
           z-index:2147482100;display:flex;align-items:stretch;justify-content:flex-end;gap:6px;
           padding:6px;border:1px solid rgba(180,139,69,.48);border-radius:7px;
           background:rgba(255,253,248,.96);box-shadow:0 10px 30px rgba(15,25,37,.16);
           backdrop-filter:blur(10px)
         }
-        #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>button,body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>a{
           position:static!important;right:auto!important;bottom:auto!important;z-index:auto!important;
           width:126px!important;height:42px!important;min-height:42px!important;max-height:42px!important;
           display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;
@@ -160,29 +160,29 @@
           box-shadow:none!important;font:600 10px/1.15 "Avenir Next","Segoe UI",Arial,sans-serif!important;
           letter-spacing:.035em!important;text-decoration:none!important
         }
-        #${EDUCATION_TOOLBAR_ID}>#learnerRecordNoticeButton{
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>#learnerRecordNoticeButton{
           order:10;color:#493719!important;background:#fff4d8!important;border:1px solid #b48b45!important
         }
-        #${EDUCATION_TOOLBAR_ID}>#${HIGH_PROFILE_ID}{
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>#${HIGH_PROFILE_ID}{
           order:20;color:#17392f!important;background:#fffdf8!important;border:1px solid rgba(180,139,69,.72)!important
         }
-        #${EDUCATION_TOOLBAR_ID}>#${ID}{
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>#${ID}{
           order:30;color:#f7efe0!important;background:#0f1925!important;border:1px solid rgba(183,147,77,.72)!important
         }
-        #${EDUCATION_TOOLBAR_ID}>button:hover,#${EDUCATION_TOOLBAR_ID}>a:hover{transform:translateY(-1px)}
-        #${EDUCATION_TOOLBAR_ID}>button:focus-visible,#${EDUCATION_TOOLBAR_ID}>a:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>button:hover,body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>a:hover{transform:translateY(-1px)}
+        body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>button:focus-visible,body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>a:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
         @media(max-width:520px){
           #${EDUCATION_TOOLBAR_ID}{right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));gap:4px;padding:4px}
-          #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
+          body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>button,body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>a{
             width:96px!important;height:40px!important;min-height:40px!important;max-height:40px!important;
             padding:6px!important;font-size:9px!important;letter-spacing:.01em!important
           }
         }
         @media(max-width:330px){
-          #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{width:90px!important}
+          body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>button,body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>a{width:90px!important}
         }
         @media print{#${EDUCATION_TOOLBAR_ID}{display:none!important}}
-        @media(prefers-reduced-motion:reduce){#${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{transition:none!important;transform:none!important}}
+        @media(prefers-reduced-motion:reduce){body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>button,body:not([data-khae-campus-landing="true"]) #${EDUCATION_TOOLBAR_ID}>a{transition:none!important;transform:none!important}}
       `;
       (document.head||document.documentElement).append(style);
     }
@@ -465,7 +465,7 @@
     mark.setAttribute("aria-hidden","true");
     mark.textContent="β";
     const label=document.createElement("span");
-    label.textContent="Beta Program";
+    label.textContent="Beta";
     button.append(mark,label);
 
     button.addEventListener("click",()=>{
