@@ -94,7 +94,7 @@ h1{margin-top:.72rem;color:var(--leaf2);font-size:clamp(3.8rem,7.2vw,6.8rem);lin
 .scene-link{position:absolute;z-index:3;width:112px;min-height:92px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;padding:.7rem .45rem;border:3px solid rgba(255,255,255,.96);border-radius:24px;background:rgba(255,255,255,.92);color:#325446;box-shadow:0 12px 24px rgba(48,92,68,.12);font-family:var(--bubble);font-weight:800;text-align:center}
 .scene-link .big{font-size:2rem;line-height:1}.scene-link small{display:block;font-size:.76rem;line-height:1.05}
 .scene-link:hover{transform:translateY(-3px) scale(1.02)}
-.scene-link.one{left:28px;top:152px}.scene-link.two{left:16px;top:288px}.scene-link.three{left:126px;top:36px}.scene-link.four{right:122px;top:36px}.scene-link.five{right:18px;top:154px}.scene-link.six{right:12px;top:292px}.scene-link.seven{left:136px;bottom:50px}.scene-link.eight{right:136px;bottom:50px}
+
 .scene-link.pink{background:linear-gradient(180deg,#fff,#ffeaf4)}.scene-link.yellow{background:linear-gradient(180deg,#fff,#fff1c9)}.scene-link.blue{background:linear-gradient(180deg,#fff,#e8f7ff)}.scene-link.green{background:linear-gradient(180deg,#fff,#ebffe6)}.scene-link.lav{background:linear-gradient(180deg,#fff,#f0eaff)}.scene-link.orange{background:linear-gradient(180deg,#fff,#fff0e3)}
 .garden-caption{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);width:calc(100% - 36px);padding:.75rem .9rem;border-radius:16px;background:rgba(255,255,255,.9);color:#315640;font-family:var(--bubble);font-size:.92rem;font-weight:800;backdrop-filter:blur(8px)}
 
@@ -337,7 +337,7 @@ body .garden-scene :is(.scene-sun,.scene-cloud,.scene-ground,.scene-path,.scene-
 body .scene-link{z-index:3;width:118px;min-height:86px;padding:10px 8px;border:3px solid rgba(255,255,255,.9);border-radius:22px;background:rgba(255,255,255,.92)!important;color:#263f50;box-shadow:0 8px 20px rgba(29,72,89,.14);font:600 13px/1.15 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important}
 body .scene-link .big{font-size:25px}
 body .scene-link small{font-size:12px;font-weight:600}
-body .scene-link.one{left:25px;top:92px}body .scene-link.two{left:24px;top:250px}body .scene-link.three{left:174px;top:30px}body .scene-link.four{right:174px;top:30px}body .scene-link.five{right:24px;top:92px}body .scene-link.six{right:24px;top:250px}body .scene-link.seven{left:88px;bottom:58px}body .scene-link.eight{right:88px;bottom:58px}
+
 body .garden-caption{z-index:4;bottom:12px;width:auto;max-width:82%;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.9);color:#29485b;font:500 12px/1.35 "Avenir Next","Nunito","Trebuchet MS",sans-serif!important}
 
 /* Carry the playful palette through the existing page without changing its information architecture. */
@@ -353,7 +353,7 @@ body .unit-card:nth-child(8n+2){border-top-color:var(--play-yellow)}body .unit-c
 body .unit-card h3,body .feature-card h3,body .app-card h3,body .connected-card h3,body .naib-tray-card h3{color:#263f50!important;font-family:inherit!important}
 body .feature-card,body .app-card,body .connected-card,body .naib-tray-card{border:0;border-radius:20px;box-shadow:0 8px 22px rgba(37,67,80,.08)}
 @media(max-width:900px){body .hero-inner{grid-template-columns:1fr;max-width:760px}body .hero-copy{text-align:center}body .hero-copy .lead,body .hero-copy .tagline,body .student-gateway,body .academic-place-strip{margin-left:auto!important;margin-right:auto!important}body .hero-actions{justify-content:center}body .hero-garden{order:0}}
-@media(max-width:620px){body .hero-inner{width:min(100% - 24px,520px);padding-top:28px}body .hero-copy h1{font-size:clamp(46px,14vw,72px)!important}body .hero-garden{min-height:520px}body .garden-scene{min-height:520px!important;border-radius:28px!important}body .garden-scene::before{width:52%;height:16%;border-width:7px;font-size:42px}body .scene-link{width:92px;min-height:72px;padding:7px 5px;border-radius:17px}body .scene-link small{font-size:10px}body .scene-link.one{left:10px;top:86px}body .scene-link.two{left:10px;top:220px}body .scene-link.three{left:86px;top:22px}body .scene-link.four{right:86px;top:22px}body .scene-link.five{right:10px;top:86px}body .scene-link.six{right:10px;top:220px}body .scene-link.seven{left:50px;bottom:55px}body .scene-link.eight{right:50px;bottom:55px}}
+@media(max-width:620px){body .hero-inner{width:min(100% - 24px,520px);padding-top:28px}body .hero-copy h1{font-size:clamp(46px,14vw,72px)!important}body .hero-garden{min-height:520px}body .garden-scene{min-height:520px!important;border-radius:28px!important}body .garden-scene::before{width:52%;height:16%;border-width:7px;font-size:42px}body .scene-link{width:92px;min-height:72px;padding:7px 5px;border-radius:17px}body .scene-link small{font-size:10px}}
 </style>
 
 <style id="kinder-full-play-background-20261027">
@@ -1417,11 +1417,6 @@ body #student .scene-link{
  text-shadow:0 1px 1px rgba(0,0,0,.18)!important;
 }
 </style><style id="kinder-button-alignment-final-20261027">
-/* Keep the two upper PLAY controls visually independent. */
-body #student .scene-link.three{left:82px!important;right:auto!important;top:36px!important}
-body #student .scene-link.four{left:auto!important;right:82px!important;top:36px!important}
-body #student .scene-link.three,
-body #student .scene-link.four{width:104px!important;min-width:104px!important}
 body #student .scene-link small{white-space:normal!important;overflow-wrap:normal!important;text-wrap:balance!important}
 
 /* Student-facing CTA labels: centered, white, and contained. */
@@ -1441,57 +1436,13 @@ body main :is(.btn,.scene-link,.term-filter,.app-category-card,.app-card a,.conn
  box-sizing:border-box!important;
 }
 body main .scene-link{flex-direction:column!important}
-@media(max-width:560px){
- body #student .scene-link.three{left:68px!important}
- body #student .scene-link.four{right:68px!important}
-}
+
 </style><style id="kinder-play-pair-spacing-final-20261027">
-/* Center Mentor + NAIB as a close pair with a clear gutter. */
-body #student .scene-link.three{
- left:104px!important;right:auto!important;top:36px!important;
- width:92px!important;min-width:92px!important;
-}
-body #student .scene-link.four{
- left:204px!important;right:auto!important;top:36px!important;
- width:92px!important;min-width:92px!important;
-}
+/* Preserve the concise top-pair label treatment; geometry is owned by the symmetric ring. */
 body #student .scene-link.three small,
 body #student .scene-link.four small{
  font-size:12px!important;line-height:1.2!important;
  white-space:normal!important;text-align:center!important;
-}
-@media(max-width:560px){
- body #student .scene-link.three{left:92px!important}
- body #student .scene-link.four{left:192px!important;right:auto!important}
-}
-</style><style id="kinder-play-even-ring-20261027">
-/* Eight existing destinations arranged as a balanced ring around PLAY. */
-body #student .scene-link{
- width:88px!important;min-width:88px!important;min-height:72px!important;
- padding:8px 6px!important;border-radius:7px!important;
-}
-body #student .scene-link .big{font-size:18px!important}
-body #student .scene-link small{font-size:11px!important;line-height:1.18!important}
-
-/* top pair */
-body #student .scene-link.three{left:104px!important;right:auto!important;top:30px!important}
-body #student .scene-link.four{left:auto!important;right:104px!important;top:30px!important}
-/* upper side pair */
-body #student .scene-link.one{left:24px!important;right:auto!important;top:122px!important}
-body #student .scene-link.five{left:auto!important;right:24px!important;top:122px!important}
-/* lower side pair */
-body #student .scene-link.two{left:24px!important;right:auto!important;top:246px!important}
-body #student .scene-link.six{left:auto!important;right:24px!important;top:246px!important}
-/* bottom pair */
-body #student .scene-link.seven{left:104px!important;right:auto!important;top:auto!important;bottom:58px!important}
-body #student .scene-link.eight{left:auto!important;right:104px!important;top:auto!important;bottom:58px!important}
-
-@media(max-width:560px){
- body #student .scene-link{width:82px!important;min-width:82px!important}
- body #student .scene-link.three{left:88px!important}
- body #student .scene-link.four{right:88px!important;left:auto!important}
- body #student .scene-link.seven{left:88px!important}
- body #student .scene-link.eight{right:88px!important;left:auto!important}
 }
 </style><style id="kinder-contribution-card-play-20261027">
 /* Contribution module only. The Stripe URL is the hard scoping boundary. */
@@ -1563,7 +1514,10 @@ body .term-week-grid .unit-card .gate-state{
 body #student .garden-scene .scene-link{
  width:88px!important;min-width:88px!important;max-width:88px!important;
  min-height:72px!important;box-sizing:border-box!important;
+ padding:8px 6px!important;border-radius:7px!important;
 }
+body #student .garden-scene .scene-link .big{font-size:18px!important}
+body #student .garden-scene .scene-link small{font-size:11px!important;line-height:1.18!important}
 /* top pair */
 body #student .scene-link.three{left:96px!important;right:auto!important;top:28px!important;bottom:auto!important}
 body #student .scene-link.four{left:auto!important;right:96px!important;top:28px!important;bottom:auto!important}
