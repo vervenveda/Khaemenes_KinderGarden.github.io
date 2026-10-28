@@ -36,6 +36,14 @@ button,.btn,.book-choice,.answer,.quiz-reveal,.reward-choice,.monthly-add-book b
 .archive-bridge p{color:#111!important}
 .archive-bridge a{background:#ffd43b!important;color:#111!important;border:2px solid #111!important;font-weight:700!important}
 .archive-bridge a:hover,.archive-bridge a:focus-visible{background:#ffe36d!important;color:#000!important}
+/* Child navigation must be obvious; parent ecosystem control stays at the page edge. */
+.nav-back,.nav-profile{width:58px!important;height:58px!important;border:3px solid #fff!important;font-size:2.15rem!important;font-weight:900!important;box-shadow:0 5px 0 rgba(18,48,72,.28),0 8px 18px rgba(18,48,72,.22)!important}
+.nav-back{background:#ffcf32!important;color:#173d69!important}
+.nav-profile{background:#ff5d3b!important;color:#fff!important}
+.nav-back:hover,.nav-back:focus-visible{background:#ffe16d!important;transform:translateY(-1px)}
+.nav-profile:hover,.nav-profile:focus-visible{background:#ff7659!important;transform:translateY(-1px)}
+/* Shared parent ecosystem menu: one authority, aligned to the far-right page edge. */
+#khaeLandingEcosystemMenu,#khaeLandingEcosystemButton,[data-khae-ecosystem-menu],[data-khae-ecosystem-trigger],.khae-ecosystem-trigger{position:fixed!important;right:7px!important;left:auto!important;top:7px!important;z-index:9999!important}
 </style></head><body>
 <header><div class="shell"><nav><a class="navbtn nav-back" href="../today/" aria-label="Back to Today">←</a><div class="header-mark" aria-hidden="true">🌈</div><div class="header-actions"><a class="navbtn nav-profile" href="../student-profile/" aria-label="Student profile">☺</a></div></nav></div></header>
 <section class="reading-title"><p class="eyebrow">Khaemenes Academy</p><h1>Khaemenes Kinder Garden</h1><p>📚 Weekly Reading Garden</p></section>
