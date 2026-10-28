@@ -170,12 +170,12 @@
 #garden .tile{width:auto;height:54px;min-width:0;border:3px solid #fff;border-radius:11px;font-size:1.25rem;font-weight:700;box-shadow:0 4px 0 #173f4a55}
 #garden .tile:nth-child(6n+1){background:#ffd43b}#garden .tile:nth-child(6n+2){background:#74d6c8}#garden .tile:nth-child(6n+3){background:#87c9f1}#garden .tile:nth-child(6n+4){background:#ff9a7a}#garden .tile:nth-child(6n+5){background:#c8a8ef}#garden .tile:nth-child(6n){background:#f38db2}
 #garden .tile:hover,#garden .tile:focus-visible{transform:translateY(-3px) scale(1.04);outline:3px solid #ffd43b;outline-offset:2px}
-#traceCanvas{display:block;width:min(560px,calc(100vw - 32px));height:auto;aspect-ratio:1/1;border:6px solid #0e9189;border-radius:20px;background:#fff;box-shadow:0 12px 28px #173f4a44;margin:4px auto 10px}
+#traceCanvas{display:block;width:min(720px,calc(100vw - 32px));height:auto;aspect-ratio:16/13;border:6px solid #0e9189;border-radius:20px;background:#fff;box-shadow:0 12px 28px #173f4a44;margin:4px auto 10px}
 #traceButtons{flex:0 0 auto;display:flex;justify-content:center;gap:12px;margin:8px auto 18px}
 #traceButtons button{min-width:145px;min-height:54px;border:3px solid #fff;border-radius:12px;padding:12px 20px;font-weight:700;box-shadow:0 5px 0 #173f4a44}
 #traceButtons button:first-child{background:#0e9189}#traceButtons button:last-child{background:#e85d3f}
 @media(max-width:900px){#garden{grid-template-columns:repeat(9,minmax(42px,1fr))}}
-@media(max-width:620px){#garden{grid-template-columns:repeat(7,minmax(38px,1fr));gap:6px;padding:10px}#garden .tile{height:48px;font-size:1.05rem}#traceCanvas{width:min(500px,calc(100vw - 24px))}}
+@media(max-width:620px){#garden{grid-template-columns:repeat(7,minmax(38px,1fr));gap:6px;padding:10px}#garden .tile{height:48px;font-size:1.05rem}#traceCanvas{width:min(600px,calc(100vw - 24px))}}
 </style>
 </head>
 <body>
@@ -200,7 +200,7 @@
 <div class="panel" id="tracePanel">
   <div class="tool-head"><span class="tool-mark" aria-hidden="true">✏️</span><h2>ABC’s & 123’s Tracing Garden</h2><button class="closeBtn" onclick="closePanel('tracePanel')" aria-label="Close Tracing Garden">Close</button></div>
   <div id="garden"></div>
-  <canvas id="traceCanvas" width="400" height="400"></canvas>
+  <canvas id="traceCanvas" width="640" height="520" aria-label="Tracing practice canvas"></canvas>
   <div id="traceButtons">
     <button id="nextLetter">Next ➡</button>
     <button onclick="closePanel('tracePanel')">Back</button>
@@ -261,7 +261,7 @@ const garden=document.getElementById("garden");
 const traceCanvas=document.getElementById("traceCanvas");
 const ctxT=traceCanvas.getContext("2d");
 const nextBtn=document.getElementById("nextLetter");
-const letters=[..."ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz","1","2","3","4","5","6","7","8","9","0"];
+const letters=[..."ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz","1","2","3","4","5","6","7","8","9","0","○","□","△"];
 let currentIndex=0,drawing=false;
 letters.forEach(ch=>{
   const div=document.createElement("div");
@@ -269,19 +269,26 @@ letters.forEach(ch=>{
   div.onclick=()=>openTrace(ch);
   garden.appendChild(div);
 });
-function openTrace(ch){drawLetter(ch);speak(ch);}
+const shapeNames={"○":"circle","□":"square","△":"triangle"};
+function openTrace(ch){currentIndex=Math.max(0,letters.indexOf(ch));drawLetter(ch);speak(shapeNames[ch]||ch);}
 function drawLetter(ch){
   ctxT.clearRect(0,0,traceCanvas.width,traceCanvas.height);
-  ctxT.font=(window.innerWidth<500?"160px":"260px")+" Comic Sans MS";
-  ctxT.fillStyle="rgba(180,180,180,0.3)";
-  ctxT.textAlign="center";ctxT.textBaseline="middle";
-  ctxT.fillText(ch,traceCanvas.width/2,traceCanvas.height/2);
+  const cx=traceCanvas.width/2,cy=traceCanvas.height/2;
+  ctxT.strokeStyle="rgba(120,120,120,.28)";ctxT.fillStyle="rgba(180,180,180,.28)";ctxT.lineWidth=34;ctxT.lineJoin="round";ctxT.lineCap="round";
+  if(shapeNames[ch]){
+    const size=Math.min(traceCanvas.width,traceCanvas.height)*.55;ctxT.beginPath();
+    if(ch==="○")ctxT.arc(cx,cy,size/2,0,Math.PI*2);
+    if(ch==="□")ctxT.rect(cx-size/2,cy-size/2,size,size);
+    if(ch==="△"){ctxT.moveTo(cx,cy-size*.58);ctxT.lineTo(cx-size*.58,cy+size*.48);ctxT.lineTo(cx+size*.58,cy+size*.48);ctxT.closePath()}
+    ctxT.stroke();return;
+  }
+  ctxT.font=(window.innerWidth<500?"230px":"360px")+" Comic Sans MS";ctxT.textAlign="center";ctxT.textBaseline="middle";ctxT.fillText(ch,cx,cy);
 }
 function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=0.9;speechSynthesis.speak(u);}catch(e){}}
 traceCanvas.addEventListener("pointerdown",e=>{drawing=true;ctxT.strokeStyle="#6ab04c";ctxT.lineWidth=8;ctxT.lineCap="round";ctxT.beginPath();ctxT.moveTo(e.offsetX,e.offsetY);});
 traceCanvas.addEventListener("pointermove",e=>{if(!drawing)return;ctxT.lineTo(e.offsetX,e.offsetY);ctxT.stroke();});
 ["pointerup","pointerleave"].forEach(ev=>traceCanvas.addEventListener(ev,()=>drawing=false));
-nextBtn.onclick=()=>{currentIndex=(currentIndex+1)%letters.length;drawLetter(letters[currentIndex]);speak(letters[currentIndex]);};
+nextBtn.onclick=()=>{currentIndex=(currentIndex+1)%letters.length;const ch=letters[currentIndex];drawLetter(ch);speak(shapeNames[ch]||ch);};
 
 /* ========== ART LAB ========== */
 const canvas=document.getElementById("canvas");
