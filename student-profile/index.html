@@ -1,356 +1,108 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Khaemenes Academy Kindergarten learner profile: family-assisted identity, first step, pinned adventures, goals, evidence, and comfortable workspace.">
-<title>My Kindergarten Profile | Khaemenes Academy</title>
-<link rel="stylesheet" href="../kinder-garden-ui-theme.css">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="My Kindergarten Garden — a family-assisted Khaemenes Academy learner profile with progress, favorites, stickers, pictures, and learning records.">
+<meta name="theme-color" content="#6fae67"><title>My Kindergarten Garden · Khaemenes Academy</title>
+<link rel="stylesheet" href="../assets/khaemenes-student-profile-v2.css">
 <style>
-:root{--ink:#273847;--muted:#536472;--forest:#315e60;--burgundy:#7563a0;--gold:#bd8a36;--line:#c6d5d4;--panel:#fffdf8;--paper2:#f5f7ef;--shadow:0 8px 25px rgba(34,56,69,.08);--formal:Cinzel,Georgia,serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:400 17px/1.6 "Nunito","Avenir Next","Segoe UI",Arial,sans-serif;color:var(--ink);background:linear-gradient(145deg,#fff2d3,#e2f9fb 55%,#f5e9ff)}
-body[data-prek-background="forest"]{background:linear-gradient(145deg,#e4f7d8,#c8ece4 55%,#f5f7e4)}
-body[data-prek-background="ocean"]{background:linear-gradient(145deg,#d9f5ff,#c5dffa 56%,#ecf7ff)}
-body[data-prek-background="sunset"]{background:linear-gradient(145deg,#ffe7da,#fce7ec 50%,#f8e5fa)}
-body[data-prek-background="night"]{background:linear-gradient(145deg,#1a2c48,#354b65 55%,#283b53);--ink:#f9f6ec;--muted:#e1e8ee;--line:#587184;--panel:#23394c;--paper2:#2d4856;--forest:#d7efd8;--burgundy:#f2d6b2}
-body[data-prek-background="night"] .pill,body[data-prek-background="night"] button.secondary{color:#f9f6ec;background:#344f5d}
-a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #cb8b42;outline-offset:3px}
-.shell{width:min(1150px,calc(100% - 28px));margin:auto}.skip{position:absolute;top:-90px;left:8px;background:#fff;color:#142b36;padding:8px}.skip:focus{top:8px;z-index:20}
-.top{padding:16px 0;background:#173d4d;color:#fff}.top .shell{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
-.brand{font:400 21px/1.3 var(--formal);text-decoration:none}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a{padding:8px 11px;border:1px solid #7899a3;border-radius:7px;text-decoration:none;font-size:14px}
-main{padding:22px 0 64px}.eyebrow{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--burgundy)}
-h1,h2,h3{font-family:var(--formal);font-weight:400;line-height:1.25}h1{font-size:clamp(30px,5vw,42px);margin:5px 0 6px}h2{font-size:24px;margin:0 0 12px}h3{font-size:20px;margin:0 0 6px}
-p{margin:7px 0 13px}.muted{color:var(--muted)}.card{border:1px solid var(--line);border-radius:7px;background:var(--panel);padding:23px;box-shadow:var(--shadow)}.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:15px;margin:15px 0}.span7{grid-column:span 7}.span5{grid-column:span 5}.span6{grid-column:span 6}
-.profile-hero{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:22px;padding:25px;margin:14px 0 18px}
-.photo{width:146px;height:146px;border:5px solid #fff;border-radius:28px;box-shadow:0 6px 20px rgba(0,0,0,.1);background:linear-gradient(135deg,#ffe2b3,#d7edff);display:grid;place-items:center;color:#354765;font-size:72px;overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover}.photo button{border:0;background:transparent;cursor:pointer}
-.hero-actions,.actions,.pills{display:flex;flex-wrap:wrap;gap:9px;margin:11px 0}
-a.button,button{font:inherit;font-size:14px;border:1px solid #376473;border-radius:7px;background:#315e60;color:#fff;padding:10px 14px;min-height:44px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
-a.button.secondary,button.secondary{background:#fff;color:#294a54;border-color:#b4c6c6}
-.pill{background:#f0f7f3;border:1px solid var(--line);padding:5px 10px;border-radius:20px;color:#29505d;font-size:13px}
-label{display:block;font-size:14px;margin-bottom:7px}input[type="file"],select,input[type="text"]{display:block;width:100%;min-height:42px;padding:8px;border:1px solid var(--line);border-radius:7px;background:#fff;color:#20343c}
-fieldset{border:1px solid var(--line);padding:13px;border-radius:7px;margin:10px 0}legend{padding:0 8px}.choice{display:flex;flex-wrap:wrap;gap:8px;margin:9px 0}.choice button[aria-pressed="true"]{outline:3px solid #d69b34;outline-offset:2px}
-.notice{background:#fff2ce;color:#59401d;border:1px solid #d9b465;border-radius:7px;padding:14px;margin:12px 0}.error{color:#a13e3a}.status{min-height:1.4em;font-size:14px}
-.activity-list{display:grid;gap:9px}.activity{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);padding:12px;border-radius:7px;text-decoration:none;background:var(--paper2)}
-#profileStudio{margin-top:28px}.profile-v2-card{--line:var(--line);--panel:var(--panel);--ink:var(--ink);--muted:var(--muted);--paper2:var(--paper2);--forest:var(--forest);--burgundy:var(--burgundy)}
-#profileStudio .profile-v2-card{color:var(--ink)}#profileStudio h2{font-size:24px}
-#profileStudio input,#profileStudio textarea,#profileStudio select{font-size:15px}
-footer{padding:24px 0;text-align:center;font-size:13px;color:var(--muted)}
-@media(max-width:760px){.profile-hero{grid-template-columns:1fr;text-align:center}.photo{margin:auto}.span5,.span6,.span7{grid-column:span 12}.hero-actions{justify-content:center}}
-@media print{.top,.actions,.appearance-controls,.no-print{display:none!important}body{background:white;color:black}.card{box-shadow:none;background:#fff}}
-</style>
-<link rel="stylesheet" href="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-student-profile-v2.css">
-</head>
-<body data-prek-background="sky">
-<a href="#main" class="skip">Skip to Kindergarten profile</a>
-<header class="top"><div class="shell"><a class="brand" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy <small>· Kindergarten</small></a><nav class="nav"><a href="../">🌈 Kinder Garden</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/student/">Student Portal</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family</a><a href="https://vervenveda.com/">Ecosystem</a></nav></div></header>
+:root{--sky:#bfeaff;--sky2:#e9f9ff;--grass:#74cf63;--leaf:#43a85a;--leaf2:#246b39;--sun:#ffd54f;--pink:#ff87b7;--rose:#f2667e;--orange:#ffab4c;--lav:#a98ee9;--violet:#755bc8;--blue:#56aee8;--paper:#fffef9;--ink:#293a36;--muted:#61716b;--line:rgba(48,80,69,.16);--shadow:0 18px 44px rgba(54,95,72,.14);--soft:0 9px 24px rgba(54,95,72,.10);--max:1180px;--bubble:"Comic Sans MS","Chalkboard SE","Marker Felt","Trebuchet MS",cursive;--sans:"Comic Sans MS","Chalkboard SE","Trebuchet MS","Avenir Next","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font:17px/1.58 var(--sans);background:radial-gradient(circle at 8% 3%,rgba(255,214,90,.34),transparent 24rem),radial-gradient(circle at 92% 8%,rgba(111,184,234,.24),transparent 28rem),linear-gradient(180deg,#e7f9ff 0,#fffdf7 35rem,#f5fff1 100%);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}[hidden]{display:none!important}:focus-visible{outline:3px solid var(--lav);outline-offset:3px}.shell{width:min(calc(100% - 2rem),var(--max));margin:auto}.skip{position:fixed;left:12px;top:12px;z-index:9999;transform:translateY(-160%);padding:.7rem 1rem;border-radius:7px;background:#173d28;color:#fff}.skip:focus{transform:none}
+.top{position:sticky;top:0;z-index:100;background:rgba(255,254,249,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(16px);box-shadow:0 7px 22px rgba(61,108,70,.08)}.nav{min-height:76px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;gap:1rem}.mark,.menu{width:48px;height:48px;display:grid;place-items:center;border:3px solid #fff;border-radius:16px;color:#fff;box-shadow:var(--soft)}.mark{background:linear-gradient(145deg,var(--sun),var(--orange));font-weight:700}.menu{border-width:1px;background:linear-gradient(145deg,var(--violet),var(--rose));font-size:1.2rem}.brand{text-align:center}.brand strong{display:block;color:var(--leaf2);font:700 clamp(1.1rem,3vw,1.5rem) var(--bubble)}.brand small{display:block;color:var(--muted);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase}.menu-panel{position:fixed;right:16px;top:78px;z-index:120;width:min(330px,calc(100vw - 32px));display:none;gap:.4rem;padding:.8rem;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 24px 60px rgba(37,65,46,.22)}.menu-panel.open{display:grid}.menu-panel a{padding:.72rem;border-radius:10px;background:#f5fbf2;color:var(--leaf2);text-align:center}
+.hero{position:relative;overflow:hidden;padding:42px 0 76px;background:linear-gradient(180deg,var(--sky),var(--sky2) 65%,#eaffdf)}.hero:after{content:"";position:absolute;left:-4%;right:-4%;bottom:-105px;height:180px;border-radius:50% 50% 0 0;background:linear-gradient(#8ad775,#66ba5c)}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:230px 1fr;gap:2rem;align-items:center}.portrait{width:210px;height:210px;margin:auto;display:grid;place-items:center;overflow:hidden;border:7px solid #fff;border-radius:50%;background:linear-gradient(145deg,#fff0a7,#c7f3bb);box-shadow:0 18px 40px rgba(50,100,67,.18);font-size:5rem}.portrait img{width:100%;height:100%;object-fit:cover}.eyebrow{margin:0;color:var(--rose);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}h1,h2,h3{font-family:var(--bubble);font-weight:700;line-height:1.08}h1{margin:.45rem 0;color:var(--leaf2);font-size:clamp(2.7rem,7vw,5.2rem)}h2{color:var(--leaf2);font-size:clamp(1.7rem,4vw,2.5rem)}h3{color:#40594a}.hero p{max-width:720px;color:var(--muted)}.pills,.actions{display:flex;flex-wrap:wrap;gap:.55rem}.pill{padding:.42rem .72rem;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.85);font-size:.78rem}.btn,button{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1rem;border:1px solid var(--line);border-radius:12px;background:#fff;color:#385346;font-weight:600}.btn.primary{color:#fff;background:linear-gradient(145deg,var(--leaf),var(--leaf2));border-color:transparent}.btn.purple{color:#fff;background:linear-gradient(145deg,var(--violet),var(--rose));border-color:transparent}
+main{padding:26px 0 80px}.notice,.card{border:1px solid var(--line);border-radius:20px;background:rgba(255,254,249,.95);box-shadow:var(--soft)}.notice{padding:13px 16px;margin-bottom:16px;background:#fff5d7}.card{padding:1.35rem}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin:1rem 0}.span4{grid-column:span 4}.span5{grid-column:span 5}.span6{grid-column:span 6}.span7{grid-column:span 7}.span8{grid-column:span 8}.span12{grid-column:1/-1}.card p{color:var(--muted)}.today{background:linear-gradient(145deg,#fff,#f1ffeb)}.activity{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px;margin:.55rem 0;border:1px solid var(--line);border-radius:12px;background:#fff;text-decoration:none}.activity small{display:block;color:var(--muted)}
+.flower-garden{display:grid;grid-template-columns:repeat(12,1fr);gap:.42rem;margin-top:1rem}.flower{aspect-ratio:1;display:grid;place-items:center;border:0;border-radius:50%;background:#edf1eb;color:#7b897f;font-size:1rem;box-shadow:inset 0 -3px rgba(0,0,0,.04)}.flower.done{background:linear-gradient(145deg,#ffe66d,#ff9fbd);color:#31563c}.flower.next{outline:3px solid var(--violet);outline-offset:2px}.progressbar{height:14px;overflow:hidden;border-radius:999px;background:#e7eee7}.progressbar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--leaf),var(--sun),var(--pink));transition:.3s}.milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:.55rem;margin-top:1rem}.milestone{padding:.7rem;border-radius:12px;background:#f6faf5;text-align:center;font-size:.76rem}.milestone strong{display:block;font-size:1.2rem}
+.sticker-meadow{min-height:145px;display:flex;flex-wrap:wrap;align-content:flex-start;gap:.55rem;padding:1rem;border:2px dashed #b8d9af;border-radius:18px;background:linear-gradient(#e7f9ff,#f5ffe9)}.sticker{width:54px;height:54px;display:grid;place-items:center;border:2px solid #fff;border-radius:16px;background:#fff7c9;box-shadow:0 5px 12px rgba(70,100,70,.12);font-size:1.7rem}.sticker.locked{filter:grayscale(1);opacity:.3}.favorites{display:grid;grid-template-columns:repeat(2,1fr);gap:.55rem}.empty{padding:1rem;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+.choice{display:flex;flex-wrap:wrap;gap:.55rem;margin:.7rem 0}.choice button{min-width:48px}.choice button[aria-pressed="true"]{outline:3px solid var(--orange);outline-offset:2px}.photo-input,select,input[type=file]{width:100%;min-height:42px;padding:.5rem;border:1px solid var(--line);border-radius:10px;background:#fff}label{display:block;margin:.65rem 0 .35rem}.adult-door summary{cursor:pointer;list-style:none;padding:1rem 1.2rem;border-radius:18px;background:linear-gradient(145deg,#315e60,#755bc8);color:#fff;font-family:var(--bubble);font-size:1.2rem}.adult-door summary::-webkit-details-marker{display:none}.adult-inside{margin-top:.7rem;padding:1rem;border:1px solid var(--line);border-radius:18px;background:#fff}.profile-v2-card{--line:var(--line);--panel:#fff;--ink:var(--ink);--muted:var(--muted);--paper2:#f7fbf6;--forest:var(--leaf2);--burgundy:#8b4c62}
+footer{padding:2rem;text-align:center;color:#e8f5e8;background:#214f35;font-size:.8rem}
+@media(max-width:780px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero p,.actions,.pills{justify-content:center;margin-inline:auto}.portrait{width:170px;height:170px}.span4,.span5,.span6,.span7,.span8{grid-column:1/-1}.flower-garden{grid-template-columns:repeat(9,1fr)}.milestones{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.shell{width:min(calc(100% - 1rem),var(--max))}.flower-garden{grid-template-columns:repeat(6,1fr)}.favorites{grid-template-columns:1fr}.brand small{display:none}}
+@media print{.top,.actions,.personalize,.adult-door summary,.no-print{display:none!important}body{background:#fff}.card,.notice{box-shadow:none}}
+</style></head><body data-theme="sky">
+<a class="skip" href="#main">Skip to my profile</a>
+<header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
+<nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
+<section class="hero"><div class="shell hero-grid"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><div><p class="eyebrow">My very own learning garden</p><h1 id="childTitle">My Kindergarten Garden</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="actions"><a class="btn primary" id="firstStepLink" href="../#student">🌟 Today’s first step</a><a class="btn purple" href="#garden">🌼 My learning garden</a><a class="btn" href="../graduation/">🏮 Graduation bridge</a></div></div></div></section>
 <main id="main" class="shell">
-<p class="eyebrow">A gentle beginning · family-assisted profile</p>
-<h1>My Kindergarten Learning Profile</h1>
-<p class="muted">Your child’s picture and next adventure come first. Below are the same learning-profile tools available across the Academy, presented in a family-assisted Kindergarten format.</p>
-<div id="accountNote" class="notice" role="status">Looking for an existing Kindergarten learner on this browser…</div>
-<div id="learnerSwitch" class="card" hidden><label for="learnerSelect">Choose an existing Kindergarten learner in this family</label><select id="learnerSelect"></select><p class="muted">Each learner has separate pictures, colors, goals, pinned adventures, and evidence.</p></div>
-<section class="card profile-hero" aria-labelledby="childTitle">
-<div id="photoPreview" class="photo" aria-label="Child avatar">🌈</div>
-<div>
-<p class="eyebrow">My Learning Profile</p>
-<h2 id="childTitle">Our little learner</h2>
-<p id="childMeta" class="muted">Select an existing family learner to view their profile.</p>
-<div class="pills"><span class="pill" id="stagePill">Kindergarten</span><span class="pill" id="favoritePill">Pinned adventures</span><span class="pill" id="progressPill">Family-guided learning</span></div>
-<div class="hero-actions"><a class="button" id="firstStepLink" href="../#student">🌟 Today’s first step →</a><a class="button secondary" href="#learningStudio">My complete profile ↓</a><a class="button secondary" href="../graduation/">🌟 Kindergarten Graduation Bridge</a></div>
-</div>
-</section>
+<div id="accountNote" class="notice" role="status">Looking for a Kindergarten learner on this browser…</div>
+<section id="learnerSwitch" class="card" hidden><label for="learnerSelect"><strong>Who is learning today?</strong></label><select id="learnerSelect"></select><p>Each child keeps their own picture, colors, favorites, progress, and learning record.</p></section>
 <div class="grid">
-<section class="card span7" aria-labelledby="nextTitle"><h2 id="nextTitle">Today · Next</h2><div id="nextStep" class="activity-list" aria-live="polite"><a class="activity" href="../#student">Open Kinder Garden’s family-guided activities →</a></div></section>
-<section class="card span5" aria-labelledby="pinsTitle"><h2 id="pinsTitle">📌 My pinned adventures</h2><div id="pinnedActivities" class="activity-list"><p class="muted">Pin your favorite games in the Kinder Garden Adventure Garden.</p></div>
-<div class="actions"><button type="button" class="secondary" id="pinKinderCourse">📌 Pin Kindergarten class</button><button type="button" class="secondary" id="unpinKinderCourse">Remove class pin</button></div>
-<label for="appSelect">Choose a favorite learning game</label><select id="appSelect"><option value="">Choose a game</option></select>
-<button type="button" class="secondary" id="pinSelectedApp">📌 Pin game</button><button type="button" class="secondary" id="unpinSelectedApp">Unpin selected game</button><a class="button secondary" href="../#apps">Find more adventures →</a></section>
-<section class="card span6 appearance-controls" aria-labelledby="pictureTitle">
-<h2 id="pictureTitle">My picture &amp; avatar</h2><p class="muted">A grown-up may choose an avatar or a small photo. Images are resized on this device and are never uploaded by this page.</p>
-<label><input type="checkbox" id="adultConfirm"> I am an adult helping the selected child personalize this profile.</label>
-<div class="choice" id="avatarChoices" aria-label="Choose an avatar"></div>
-<label for="childPhoto">Choose a photo (optional, maximum 5 MB)</label><input id="childPhoto" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
-<div class="actions"><button type="button" id="removePhoto" class="secondary">Remove photo</button><button type="button" id="usePreschoolPhoto" class="secondary">Bring forward Pre-K picture &amp; colors</button></div>
-</section>
-<section class="card span6 appearance-controls" aria-labelledby="backgroundTitle">
-<h2 id="backgroundTitle">My background &amp; comfort</h2><p class="muted">Pick a happy color world. The selected child’s appearance is saved separately from other learners.</p>
-<div id="backgroundChoices" class="choice" aria-label="Background themes"></div>
-<div class="actions"><button type="button" id="resetLook" class="secondary">Restore original colors</button><button type="button" id="exportLook" class="secondary">Export picture &amp; colors</button><button type="button" id="printProfile" class="secondary">Print profile</button></div>
-<label for="importLook">Restore picture &amp; colors from a local backup</label><input id="importLook" type="file" accept=".json,application/json">
-<p id="lookStatus" class="status" aria-live="polite"></p>
-</section>
+<section class="card today span7"><p class="eyebrow">Today</p><h2>My next little step</h2><div id="nextStep"><a class="activity" href="../#student"><span>Open the Kinder Garden</span><span>→</span></a></div><p id="todayMessage">We will find the next adventure when a Kindergarten learner is selected.</p></section>
+<section class="card span5" id="favorites"><p class="eyebrow">Favorites</p><h2>My little basket</h2><div id="pinnedActivities" class="favorites"></div><div class="actions"><button id="pinKinderCourse">📌 Pin my class</button><button id="unpinKinderCourse">Remove class pin</button></div><label for="appSelect">Choose a favorite game</label><select id="appSelect"><option value="">Choose an adventure</option></select><div class="actions"><button id="pinSelectedApp">⭐ Add favorite</button><button id="unpinSelectedApp">Remove favorite</button></div></section>
+<section class="card span8" id="garden"><p class="eyebrow">36 weeks · 36 flowers</p><h2>My learning garden</h2><p>Every mastered week grows another flower. The outlined flower shows the next week waiting to bloom.</p><div class="progressbar" aria-hidden="true"><span id="progressFill"></span></div><p id="gardenStatus">No formal progress is shown until a learner is selected.</p><div class="flower-garden" id="flowerGarden" aria-label="36-week mastery garden"></div><div class="milestones"><div class="milestone"><strong id="midIcon">🌱</strong>Midyear</div><div class="milestone"><strong id="finalIcon">🌱</strong>Final</div><div class="milestone"><strong id="portfolioIcon">🌱</strong>Portfolio</div><div class="milestone"><strong id="graduateIcon">🌱</strong>Graduation</div></div></section>
+<section class="card span4"><p class="eyebrow">Celebrate growth</p><h2>Sticker meadow</h2><p>Mastered weeks unlock cheerful stickers here. They celebrate effort; they never change grades.</p><div class="sticker-meadow" id="stickerMeadow"></div></section>
+<section class="card span6 personalize"><p class="eyebrow">Make it mine</p><h2>My picture</h2><p>A grown-up may choose an avatar or a small local photo. Nothing is uploaded by this page.</p><label><input type="checkbox" id="adultConfirm"> I am a grown-up helping this learner.</label><div class="choice" id="avatarChoices"></div><label for="childPhoto">Choose a photo</label><input id="childPhoto" class="photo-input" type="file" accept="image/png,image/jpeg,image/webp"><div class="actions"><button id="removePhoto">Remove photo</button><button id="usePreschoolPhoto">Bring my Pre-K look</button></div></section>
+<section class="card span6 personalize"><p class="eyebrow">Color world</p><h2>My garden colors</h2><p>Choose the feeling of your learning garden. Each learner keeps a separate look.</p><div class="choice" id="backgroundChoices"></div><div class="actions"><button id="resetLook">Original colors</button><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
+<section class="card span12"><p class="eyebrow">Next horizon</p><h2>When I am ready for Grade 1</h2><p id="gradeOneSummary">The Lantern Bridge watches real Kindergarten mastery. Exploring Grade 1 never changes placement.</p><div class="actions"><a class="btn" href="../graduation/">🏮 Visit the Lantern Bridge</a><a class="btn" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">🏛️ Peek at Grade 1</a></div></section>
 </div>
-<section class="card" id="gradeOnePreview" aria-labelledby="milestoneTitle">
-<p class="eyebrow">One grade's growth · a new horizon</p><h2 id="milestoneTitle">🏛️ My Grade 1 discovery preview</h2>
-<p class="muted">See what travels with this learner toward Elementary School. This is a preview, never a graduation approval or enrollment change.</p>
-<div class="actions"><button type="button" id="previewGradeOne" class="secondary" aria-expanded="false" aria-controls="gradeOneDetails">Preview the Grade 1 handoff</button><a class="button secondary" href="../graduation/">✨ The Lantern Bridge Graduation</a></div>
-<div id="gradeOneDetails" hidden><h3 id="gradeOneName">My next learning adventure</h3><p id="gradeOneSummary" class="muted"></p>
-<div class="actions"><a class="button secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">Explore Grade 1</a><a class="button secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family placement controls</a></div>
-<p class="notice">Only a parent or authorized educator can complete formal placement. Kindergarten's 36-week assessment and portfolio requirements remain separate.</p></div>
-</section>
-<section class="card" id="learningStudio">
-<p class="eyebrow">One profile · the full Academy feature spectrum</p>
-<h2>Goals, learning map, evidence, workspace &amp; backups</h2>
-<p class="muted">This shared Academy profile studio provides family-assisted goals and reflections, Today / Review / Next, learning strengths and supports, a learning-moment passport, language and accessibility preferences, and protected profile-bundle export and restore. These preferences cannot award grades or bypass assessments.</p>
-<div id="profileStudio" tabindex="-1" aria-label="Kindergarten learning profile studio"></div>
-<p id="studioUnavailable" class="notice" hidden>The Academy profile studio could not load. Existing learner records remain unchanged. Open the <a href="https://vervenveda.com/Khaemenes_Academy.github.io/student/profile.html">Academy Student Profile</a> instead.</p>
-</section>
-<p class="notice">Family privacy: the pictures and colors here are optional, browser-local preferences. They are not an authenticated identity or proof of enrollment. Kinder Garden guest play stays available without signing in. Formal placement, grades, portfolio approval, and promotion remain in their original Academy systems.</p>
-<footer>Khaemenes Academy · Kindergarten · Free access · No external analytics or photo uploads</footer>
-</main>
+<details class="adult-door" id="grownups"><summary>🔐 Grown-Ups · Learning Record & Profile Studio</summary><div class="adult-inside"><p>This area holds family-assisted goals, reflections, Today / Review / Next, strengths and supports, learning-moment evidence, language/accessibility preferences, and protected profile backups. It cannot award grades or bypass mastery.</p><div id="profileStudio"></div><p id="studioUnavailable" class="notice" hidden>The full Academy profile studio is unavailable right now. The child-facing Kindergarten profile remains usable.</p></div></details>
+</main><footer>Khaemenes Academy · Kindergarten · Free learning · Browser-local personalization · No external analytics</footer>
 <script src="../assets/khaemenes-kinder-resources.js"></script>
-<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js"></script>
-<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-learning-continuation.js"></script>
-<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-student-profile-v2.js"></script>
-<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-student-quick-pins-v1.js"></script>
+<script src="../assets/khaemenes-family-registry.js"></script>
+<script src="../assets/khaemenes-learning-continuation.js"></script>
+<script src="../assets/khaemenes-student-profile-v2.js"></script>
+<script src="../assets/khaemenes-student-quick-pins-v1.js"></script>
+<script src="../assets/khaemenes-kinder-mastery-gates.js"></script>
 <script>
 (function(){
 "use strict";
-const BASE="https://vervenveda.com/Khaemenes_KinderGarden.github.io/";
-const KEY="khaemenes_kindergarten_visual_profile_v1:";
-const THEMES=["sky","forest","ocean","sunset","night"];
-const AVATARS=["🌻","🦊","🦋","🦉","🚀","🌈","🐝","🐢"];
-const $=id=>document.getElementById(id);
-const R=window.KhaemenesFamilyRegistry;
-const C=window.KhaemenesLearningContinuation;
-const catalog=window.KhaemenesKinderResources;
+const BASE="https://vervenveda.com/Khaemenes_KinderGarden.github.io/",KEY="khaemenes_kindergarten_visual_profile_v1:",PINKEY="khaemenes_kindergarten_profile_app_pins_v1:";
+const THEMES=["sky","forest","ocean","sunset","night"],AVATARS=["🌻","🦊","🦋","🦉","🚀","🌈","🐝","🐢"],STICKERS=["🌟","🌈","🐝","🦋","🌻","🍎","🚀","🦉","🐢","🎨","🎵","🧩"];
+const $=id=>document.getElementById(id),R=window.KhaemenesFamilyRegistry,C=window.KhaemenesLearningContinuation,G=window.KhaemenesKinderMasteryGates,catalog=window.KhaemenesKinderResources;
 let activeId="",look={theme:"sky",avatar:"🌻",photo:""};
-const read=(key,fallback)=>{try{const val=localStorage.getItem(key);return val?JSON.parse(val):fallback}catch{return fallback}};
-function learner(){
- const value=R?.getLearner?.()||null;
- return value&&String(value.stage).toLowerCase()==="kindergarten"&&value.learnerId?value:null;
-}
-function eligible(){
- if(location.origin!=="https://vervenveda.com")return false;
- return Boolean(learner());
-}
+const read=(k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}},write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
+function learner(){const v=R?.getLearner?.()||null;return v&&String(v.stage).toLowerCase()==="kindergarten"&&v.learnerId?v:null}
 function profileKey(){return KEY+encodeURIComponent(activeId)}
-function normalize(input){
- const v=input&&typeof input==="object"?input:{};
- return {
-  theme:THEMES.includes(v.theme)?v.theme:"sky",
-  avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",
-  photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""
- };
+function normalize(v){v=v&&typeof v==="object"?v:{};return{theme:THEMES.includes(v.theme)?v.theme:"sky",avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""}}
+function consent(){if(!activeId){$("lookStatus").textContent="Choose a Kindergarten learner first.";return false}if(!$("adultConfirm").checked){$("lookStatus").textContent="A grown-up confirms before changing the profile.";return false}return true}
+function saveLook(){if(!consent())return;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook()}
+function renderLook(){document.body.dataset.theme=look.theme;const p=$("photoPreview");p.replaceChildren();if(look.photo){const i=document.createElement("img");i.src=look.photo;i.alt="Learner's locally stored picture";p.append(i)}else p.textContent=look.avatar;document.body.style.background=look.theme==="night"?"linear-gradient(#dce6f5,#f8fbff)":look.theme==="ocean"?"linear-gradient(#dff8ff,#f7fff9)":look.theme==="sunset"?"linear-gradient(#fff0df,#fffaf1)":look.theme==="forest"?"linear-gradient(#e7f5df,#fffdf7)":"";for(const b of $("avatarChoices").children)b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));for(const b of $("backgroundChoices").children)b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme))}
+function appPins(){const v=read(PINKEY+encodeURIComponent(activeId),[]);return Array.isArray(v)?v.filter(x=>typeof x==="string").slice(0,15):[]}
+function coursePins(){const v=read("khaemenes_course_pins_v1",{version:1,learners:{}});return v&&typeof v==="object"?v:{version:1,learners:{}}}
+function coursePinned(){return Array.isArray(coursePins()?.learners?.[activeId])&&coursePins().learners[activeId].some(x=>x?.id==="khaemenes-kindergarten"||x?.courseId==="khaemenes-kindergarten")}
+function activityUrl(item){const p=String(item?.path||"");return p.startsWith("apps/")&&!p.includes("..")?BASE+p:BASE+"#apps"}
+function addActivity(box,title,url,desc){const a=document.createElement("a");a.className="activity";a.href=url;const s=document.createElement("span");s.textContent=title;if(desc){const sm=document.createElement("small");sm.textContent=desc;s.append(sm)}const arrow=document.createElement("span");arrow.textContent="→";a.append(s,arrow);box.append(a)}
+function mastery(){
+ if(!activeId||!G)return{weeks:[],count:0,mid:false,final:false,portfolio:false,ready:false};
+ try{const weeks=Array.from({length:36},(_,i)=>Boolean(G.weekMastery(i+1)?.mastered));return{weeks,count:weeks.filter(Boolean).length,mid:Boolean(G.milestoneMastery("midterm")?.mastered),final:Boolean(G.milestoneMastery("final")?.mastered),portfolio:G.learnerRecord()?.portfolio===true,ready:G.certificationReady?.()===true}}catch{return{weeks:[],count:0,mid:false,final:false,portfolio:false,ready:false}}
 }
-function announce(message,bad=false){$("lookStatus").textContent=message;$("lookStatus").classList.toggle("error",bad)}
-function consent(){if(!eligible()){announce("Select an existing Kindergarten learner on the Academy Family Portal first.",true);return false}if(!$("adultConfirm").checked){announce("An adult must confirm before changing this child's profile.",true);return false}return true}
-function saveLook(){
- if(!consent())return false;
- try{localStorage.setItem(profileKey(),JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look}));renderLook();announce("Saved for this learner on this browser.");return true}
- catch{announce("Could not save. Browser storage may be full; try a smaller photo or export a backup.",true);return false}
+function renderGarden(){
+ const m=mastery(),box=$("flowerGarden");box.replaceChildren();for(let i=0;i<36;i++){const b=document.createElement("span");b.className="flower"+(m.weeks[i]?" done":(!m.weeks[i]&&i===m.count?" next":""));b.textContent=m.weeks[i]?"🌼":String(i+1);b.title="Week "+(i+1)+(m.weeks[i]?" mastered":"");box.append(b)}
+ $("progressFill").style.width=(m.count/36*100)+"%";$("progressPill").textContent="🌼 "+m.count+" / 36 flowers";$("gardenStatus").textContent=activeId?m.count+" of 36 weekly flowers are blooming.":"Preview garden · no learner progress is being claimed.";
+ $("midIcon").textContent=m.mid?"🌟":"🌱";$("finalIcon").textContent=m.final?"🌟":"🌱";$("portfolioIcon").textContent=m.portfolio?"🌟":"🌱";$("graduateIcon").textContent=m.ready?"🏮":"🌱";
+ const meadow=$("stickerMeadow");meadow.replaceChildren();STICKERS.forEach((x,i)=>{const s=document.createElement("span");s.className="sticker"+(m.count>=((i+1)*3)?"":" locked");s.textContent=x;s.title=m.count>=((i+1)*3)?"Unlocked by learning progress":"Unlocks after "+((i+1)*3)+" mastered weeks";meadow.append(s)})
 }
-function renderLook(){
- document.body.dataset.prekBackground=look.theme;
- const box=$("photoPreview");
- box.replaceChildren();
- if(look.photo){const img=document.createElement("img");img.src=look.photo;img.alt="Child's locally stored profile picture";box.append(img)}
- else box.textContent=look.avatar;
- for(const b of $("avatarChoices").querySelectorAll("button"))b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));
- for(const b of $("backgroundChoices").querySelectorAll("button"))b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme));
-}
-function safeActivityUrl(item){
- const file=String(item?.path||"");
- if(!file.startsWith("apps/"))return BASE+"#apps";
- const parts=file.split("/");
- if(parts.some(p=>!p||p==="."||p===".."||p.includes(":")||p.includes("\\")))return BASE+"#apps";
- return BASE+parts.map(encodeURIComponent).join("/");
-}
-function linkItem(container,title,url,desc){
- const a=document.createElement("a");a.className="activity";a.href=url;
- const span=document.createElement("span");const main=document.createElement("span");main.textContent=title;span.append(main);
- if(desc){const small=document.createElement("small");small.className="muted";small.style.display="block";small.textContent=desc;span.append(small)}
- const arrow=document.createElement("span");arrow.textContent="→";a.append(span,arrow);container.append(a);
-}
-function pinnedApps(){const v=read("khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId),[]);return Array.isArray(v)?v.filter(x=>typeof x==="string").slice(0,15):[]}
-function pinnedCourse(){const v=read("khaemenes_course_pins_v1",{});return Array.isArray(v?.learners?.[activeId])&&v.learners[activeId].some(x=>x?.id==="khaemenes-kindergarten"||x?.courseId==="khaemenes-kindergarten")}
 function renderLearning(){
- $("nextStep").replaceChildren();$("pinnedActivities").replaceChildren();
- let rows=[];
- try{rows=window.KhaemenesLearningContinuation?.readLearner?.(activeId)||[]}catch{rows=[]}
- const rec=Array.isArray(rows)?rows.find(x=>{
-  if(x?.stage!=="kindergarten"||x.courseId!=="khaemenes-kindergarten-formal-path")return false;
-  try{
-   const u=new URL(x.nextHref,BASE);
-   return u.protocol==="https:"&&u.origin==="https://vervenveda.com"&&
-      u.pathname.startsWith("/Khaemenes_KinderGarden.github.io/");
-  }catch{return false}
- }):null;
- const child=learner(),guardian=child?.guardianRelease?.accepted===true&&child.guardianRelease?.learnerId===activeId;
- let url=BASE+"#student",title="Find my next Kindergarten step",summary="The Kindergarten homepage selects the next unlocked lesson.";
- if(!guardian){url="https://vervenveda.com/Khaemenes_Academy.github.io/family/";title="Family review before formal learning";summary="A grown-up confirms the Kindergarten learner's guardian release."}
- else if(rec){
-  try{const u=new URL(rec.nextHref,BASE);if(u.protocol==="https:"&&u.origin==="https://vervenveda.com"&&(u.pathname.startsWith("/Khaemenes_KinderGarden.github.io/")||u.pathname.startsWith("/Khaemenes_Academy.github.io/")))url=u.href}catch{}
-  title=rec.nextTitle||"Continue Kindergarten";summary=rec.summary||"Next official learning step";
- }
- linkItem($("nextStep"),title,url,summary);$("firstStepLink").href=url;
- $("progressPill").textContent=rec?.progress?.total===36?String(rec.progress.completed||0)+" / 36 weeks":"36-week mastery";
- if(pinnedCourse())linkItem($("pinnedActivities"),"🌻 My Kindergarten Class",BASE+"#student","36-week formal curriculum");
- const apps=catalog?.all?.()||[],selected=pinnedApps().map(id=>apps.find(x=>x.id===id)).filter(Boolean);
- selected.forEach(item=>linkItem($("pinnedActivities"),(item.icon||"✨")+" "+(item.title||"Activity"),safeActivityUrl(item),"Pinned game"));
- $("favoritePill").textContent=String(selected.length+(pinnedCourse()?1:0))+" pinned";
- if(!selected.length&&!pinnedCourse()){const p=document.createElement("p");p.className="muted";p.textContent="No class or games pinned yet. Choose below."; $("pinnedActivities").append(p)}
- const select=$("appSelect"),prior=select?.value;if(select){select.replaceChildren();const blank=document.createElement("option");blank.value="";blank.textContent="Choose a Kindergarten activity";select.append(blank);apps.filter(x=>x?.path?.startsWith("apps/")).forEach(item=>{const o=document.createElement("option");o.value=item.id;o.textContent=(item.icon||"✨")+" "+item.title;select.append(o)});if(apps.some(x=>x.id===prior))select.value=prior}
+ const next=$("nextStep"),fav=$("pinnedActivities");next.replaceChildren();fav.replaceChildren();let rows=[];try{rows=C?.readLearner?.(activeId)||[]}catch{}
+ const rec=Array.isArray(rows)?rows.find(x=>x?.stage==="kindergarten"&&x.courseId==="khaemenes-kindergarten-formal-path"):null,child=learner(),guardian=child?.guardianRelease?.accepted===true&&child.guardianRelease?.learnerId===activeId;
+ let url=BASE+"#student",title="Explore the Kinder Garden",desc="Find the next open learning adventure.";
+ if(activeId&&!guardian){url="https://vervenveda.com/Khaemenes_Academy.github.io/family/";title="Grown-up family check";desc="Confirm this learner before formal lessons."}
+ else if(rec){try{const u=new URL(rec.nextHref,BASE);if(u.origin==="https://vervenveda.com"&&u.pathname.startsWith("/Khaemenes_KinderGarden.github.io/"))url=u.href}catch{}title=rec.nextTitle||"Continue Kindergarten";desc=rec.summary||"Next official learning step."}
+ addActivity(next,title,url,desc);$("firstStepLink").href=url;$("todayMessage").textContent=activeId?"Your next step follows this learner's saved Kindergarten journey.":"Guest preview mode · choose a learner to show real continuation.";
+ if(coursePinned())addActivity(fav,"🌻 My Kindergarten Class",BASE+"#student","36-week learning path");
+ const apps=catalog?.all?.()||[],pins=appPins().map(id=>apps.find(x=>x.id===id)).filter(Boolean);pins.forEach(x=>addActivity(fav,(x.icon||"✨")+" "+x.title,activityUrl(x),"Favorite adventure"));if(!fav.children.length){const e=document.createElement("div");e.className="empty";e.textContent="Favorites will grow here.";fav.append(e)}
+ $("favoritePill").textContent="⭐ "+(pins.length+(coursePinned()?1:0))+" favorites";const sel=$("appSelect"),prior=sel.value;sel.replaceChildren(new Option("Choose an adventure",""));apps.filter(x=>x?.path?.startsWith("apps/")).forEach(x=>sel.add(new Option((x.icon||"✨")+" "+x.title,x.id)));sel.value=[...sel.options].some(o=>o.value===prior)?prior:"";
 }
-function renderLearnerChoices(){
- const select=$("learnerSelect"),area=$("learnerSwitch");
- const active=R?.getLearner?.()||null;
- const familyId=active?.familyId||R?.activeIds?.().familyId;
- const family=familyId?R?.getFamily?.(familyId):null;
- const candidates=Array.isArray(family?.learners)?family.learners.filter(x=>x?.learnerId&&x.stage==="kindergarten"):[];
- select.replaceChildren();
- for(const child of candidates){const option=document.createElement("option");option.value=child.learnerId;option.textContent=child.nickname||"Kindergarten learner";select.append(option)}
- if(active?.learnerId&&candidates.some(x=>x.learnerId===active.learnerId))select.value=active.learnerId;
- area.hidden=candidates.length===0||(candidates.length===1&&Boolean(learner()));
+function renderLearners(){
+ const active=R?.getLearner?.()||null,fid=active?.familyId||R?.activeIds?.().familyId,family=fid?R?.getFamily?.(fid):null,candidates=Array.isArray(family?.learners)?family.learners.filter(x=>x?.learnerId&&String(x.stage).toLowerCase()==="kindergarten"):[];
+ const sel=$("learnerSelect");sel.replaceChildren();candidates.forEach(c=>sel.add(new Option(c.nickname||"Kindergarten learner",c.learnerId)));$("learnerSwitch").hidden=candidates.length<2;if(activeId)sel.value=activeId;
 }
 function refresh(){
- $("gradeOneDetails").hidden=true;$("previewGradeOne").setAttribute("aria-expanded","false");
- renderLearnerChoices();
- const l=learner();
- const box=$("accountNote");
- const priorId=activeId;
- activeId=l?.learnerId||"";
- if(priorId!==activeId)$("adultConfirm").checked=false;
- if(!l){
-  box.hidden=false;
-  box.replaceChildren();
-  box.append("No active Kindergarten Academy learner is selected on this website address. Existing accounts are never created or changed here. ");
-  const a=document.createElement("a");a.href="https://vervenveda.com/Khaemenes_Academy.github.io/family/";a.textContent="Choose an existing child in the Family Portal →";box.append(a);
-  $("childTitle").textContent="Our little learner";$("childMeta").textContent="Guest play is open. Select the learner to personalize.";
-  $("profileStudio").hidden=true;$("studioUnavailable").hidden=false;
-  look=normalize(null);renderLook();
-  $("pinnedActivities").textContent="Choose an existing Kindergarten learner to see pinned games.";
-  $("nextStep").textContent="Explore Kinder Garden's Today activities.";
-  $("firstStepLink").href=BASE+"#today";announce("");
-  return;
- }
- box.hidden=true;
- $("childTitle").textContent=l.nickname||"Kindergarten learner";
- $("childMeta").textContent="Khaemenes Kinder Garden · "+(l.ageBand?"Ages "+l.ageBand+" · ":"")+"Family-assisted learning";
- $("profileStudio").hidden=false;$("studioUnavailable").hidden=true;
- look=normalize(read(profileKey(),{}));renderLook();renderLearning();announce("");
+ const l=learner();activeId=l?.learnerId||"";look=activeId?normalize(read(profileKey(),{})):{theme:"sky",avatar:"🌻",photo:""};renderLearners();renderLook();renderLearning();renderGarden();
+ $("childTitle").textContent=l?.nickname?l.nickname+"'s Learning Garden":"My Kindergarten Garden";$("childMeta").textContent=l?"Kindergarten · family-linked learner · every flower belongs to this learner only.":"Guest preview · no student record or progress is being created.";$("accountNote").textContent=l?"Welcome back, "+(l.nickname||"Kindergarten learner")+"! This garden is connected to the active family learner.":"No Kindergarten learner is active yet. You can explore this profile safely; a family can create or select a learner when ready.";
 }
-for(const avatar of AVATARS){const b=document.createElement("button");b.type="button";b.className="secondary";b.dataset.avatar=avatar;b.textContent=avatar;b.setAttribute("aria-label","Use "+avatar+" avatar");b.addEventListener("click",()=>{if(!consent())return;look.avatar=avatar;look.photo="";saveLook()});$("avatarChoices").append(b)}
-for(const theme of THEMES){const b=document.createElement("button");b.type="button";b.className="secondary";b.dataset.theme=theme;b.textContent=theme[0].toUpperCase()+theme.slice(1);b.addEventListener("click",()=>{if(!consent())return;look.theme=theme;saveLook()});$("backgroundChoices").append(b)}
-$("childPhoto").addEventListener("change",async event=>{
- const file=event.target.files?.[0];event.target.value="";
- if(!file||!consent())return;
- if(!["image/jpeg","image/png","image/webp","image/gif"].includes(file.type)||file.size>5*1024*1024){announce("Choose a JPG, PNG, WebP, or GIF under 5 MB.",true);return}
- const id=activeId,url=URL.createObjectURL(file);
- try{
-  const img=new Image();img.src=url;await img.decode();
-  if(id!==activeId||!consent())return;
-  const canvas=document.createElement("canvas");canvas.width=256;canvas.height=256;
-  const ctx=canvas.getContext("2d");if(!ctx)throw Error("Canvas unavailable");
-  const size=Math.min(img.naturalWidth,img.naturalHeight);if(!size)throw Error("Invalid image");
-  ctx.fillStyle="#fff";ctx.fillRect(0,0,256,256);
-  ctx.drawImage(img,(img.naturalWidth-size)/2,(img.naturalHeight-size)/2,size,size,0,0,256,256);
-  const data=canvas.toDataURL("image/jpeg",.72);
-  if(data.length>180000)throw Error("Resized photo is still too large");
-  const prior=look.photo;look.photo=data;if(!saveLook()){look.photo=prior;renderLook()}
- }catch{announce("This picture could not be processed. Try a smaller JPG or PNG.",true)}
- finally{URL.revokeObjectURL(url)}
-});
-$("removePhoto").addEventListener("click",()=>{if(!consent())return;look.photo="";saveLook()});
-$("usePreschoolPhoto").addEventListener("click",()=>{
- if(!consent())return;
- const original=read("khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),null);
- if(original?.schema!=="khaemenes.prek-visual.v1"||original?.learnerId!==activeId){
-  announce("No Pre-K photo and colors are stored for this same learner on this browser.",true);return
- }
- const prior=look;look=normalize(original);
- if(!saveLook()){look=prior;renderLook()}else announce("Pre-K picture and background copied. The original Pre-K record is unchanged.");
-});
-$("printProfile").addEventListener("click",()=>window.print());
-$("unpinKinderCourse").addEventListener("click",()=>{
- if(!consent())return;
- const key="khaemenes_course_pins_v1",record=read(key,null);
- if(record?.version!==1||!record.learners||typeof record.learners!=="object"||Array.isArray(record.learners)){announce("Class pin record has an unfamiliar format. Nothing changed.",true);return}
- const prev=record.learners[activeId];
- if(prev!==undefined&&!Array.isArray(prev)){announce("Existing learner class pins need review. Nothing changed.",true);return}
- if(!pinnedCourse()){announce("Kindergarten class is not currently pinned.");return}
- record.learners[activeId]=(prev||[]).filter(x=>x?.id!=="khaemenes-kindergarten"&&x?.courseId!=="khaemenes-kindergarten");
- record.updatedAt=new Date().toISOString();
- try{localStorage.setItem(key,JSON.stringify(record));renderLearning();announce("Kindergarten class pin removed. Curriculum progress is unchanged.")}catch{announce("Unable to update class pins.",true)}
-});
-$("previewGradeOne").addEventListener("click",()=>{
- const child=learner();
- if(!child){announce("Choose an existing Kindergarten learner first.",true);return}
- const box=$("gradeOneDetails"),show=box.hidden;box.hidden=!show;$("previewGradeOne").setAttribute("aria-expanded",String(show));
- if(show){
-  $("gradeOneName").textContent=(child.nickname||"Our learner")+"'s next Academy chapter";
-  $("gradeOneSummary").textContent="Current profile: Kindergarten · "+(pinnedCourse()?"Kindergarten class pinned":"Kindergarten class not pinned")+" · "+pinnedApps().length+" favorite games. The current learner ID, photo, language settings, and Academy Learning Compass can continue into Elementary with family assistance.";
- }
-});
-$("pinKinderCourse").addEventListener("click",()=>{
- if(!consent())return;
- const key="khaemenes_course_pins_v1",saved=read(key,{version:1,learners:{},updatedAt:null});
- if(saved.version!==1||!saved.learners||typeof saved.learners!=="object"){announce("Existing course pins have an unrecognized format. Nothing was changed.",true);return}
- const learnerPins=Array.isArray(saved.learners[activeId])?saved.learners[activeId]:[];
- if(!pinnedCourse()){
-  saved.learners[activeId]=learnerPins.concat([{id:"khaemenes-kindergarten",courseId:"khaemenes-kindergarten",title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · 36-week curriculum",href:BASE,source:"khaemenes-kindergarten-profile",pinnedAt:new Date().toISOString()}]).slice(-24);
-  saved.updatedAt=new Date().toISOString();
-  try{localStorage.setItem(key,JSON.stringify(saved))}catch{announce("Could not save this class pin. Check browser storage.",true);return}
- }
- renderLearning();announce("Kindergarten class pinned to the selected learner.");
-});
-$("unpinSelectedApp").addEventListener("click",()=>{
- if(!consent())return;
- const id=$("appSelect").value,pins=pinnedApps();
- if(!id||!pins.includes(id)){announce("Choose a currently pinned game to remove.",true);return}
- try{localStorage.setItem("khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId),JSON.stringify(pins.filter(x=>x!==id)))}
- catch{announce("Could not unpin this game.",true);return}
- renderLearning();announce("Game unpinned for this learner.");
-});
-$("pinSelectedApp").addEventListener("click",()=>{
- if(!consent())return;
- const id=$("appSelect").value,app=catalog?.byId?.(id);
- if(!app?.path?.startsWith("apps/")){announce("Choose a Kindergarten game first.",true);return}
- const pinned=pinnedApps();
- if(!pinned.includes(id)){
-  try{localStorage.setItem("khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId),JSON.stringify([...pinned,id].slice(-15)))}
-  catch{announce("Could not save this game pin.",true);return}
- }
- renderLearning();announce("Pinned "+app.title+" to this learner.");
-});
-
-$("resetLook").addEventListener("click",()=>{if(!consent())return;look=normalize(null);saveLook()});
-$("exportLook").addEventListener("click",()=>{
- if(!eligible()){announce("Choose a Kindergarten learner first.",true);return}
- const payload=read(profileKey(),null)||{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look};
- const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
- const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="khaemenes-kindergarten-visual-"+new Date().toISOString().slice(0,10)+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
- announce("Picture and colors exported. The separate Academy profile bundle is exported below.");
-});
-$("importLook").addEventListener("change",async event=>{
- const file=event.target.files?.[0];event.target.value="";if(!file||!consent())return;
- if(file.size>400000){announce("Visual backup file is too large.",true);return}
- const id=activeId;
- try{const value=JSON.parse(await file.text());if(id!==activeId||value?.schema!=="khaemenes.kindergarten-visual.v1"||value?.learnerId!==activeId){announce("Backup belongs to another learner or has the wrong format. No changes made.",true);return}
-  const prior=look;look=normalize(value);if(!saveLook()){look=prior;renderLook()}
- }catch{announce("Could not read the visual backup. No changes made.",true)}
-});
-$("learnerSelect").addEventListener("change",event=>{
- const id=event.target.value, family=R?.getFamily?.();
- const found=family?.learners?.find?.(x=>x.learnerId===id&&x.stage==="kindergarten");
- if(found&&found.familyId===family.familyId)R.setActive?.({familyId:family.familyId,learnerId:id});
-});
-window.addEventListener("khaemenes-family-changed",refresh);
-window.addEventListener("khaemenes-learning-continuation-changed",()=>{if(activeId)renderLearning()});
-window.addEventListener("storage",event=>{
- if(["khaemenes_active_learner_v1","khaemenes_family_registry_v1"].includes(event.key)){refresh();return}
- if(!activeId)return;
- if(["khaemenes_course_pins_v1","khaemenes_kindergarten_profile_app_pins_v1:"+encodeURIComponent(activeId)].includes(event.key))renderLearning();
- if(event.key===profileKey()){look=normalize(read(profileKey(),{}));renderLook()}
-});
-refresh();
+AVATARS.forEach(a=>{const b=document.createElement("button");b.type="button";b.textContent=a;b.dataset.avatar=a;b.addEventListener("click",()=>{if(!consent())return;look.avatar=a;look.photo="";saveLook()});$("avatarChoices").append(b)});
+[["sky","☁️ Sky"],["forest","🌿 Forest"],["ocean","🐳 Ocean"],["sunset","🌅 Sunset"],["night","🌙 Night"]].forEach(([v,t])=>{const b=document.createElement("button");b.type="button";b.textContent=t;b.dataset.theme=v;b.addEventListener("click",()=>{if(!consent())return;look.theme=v;saveLook()});$("backgroundChoices").append(b)});
+$("childPhoto").addEventListener("change",e=>{if(!consent())return;const f=e.target.files?.[0];if(!f||f.size>5*1024*1024)return $("lookStatus").textContent="Choose an image smaller than 5 MB.";const img=new Image(),reader=new FileReader();reader.onload=()=>img.src=reader.result;img.onload=()=>{const c=document.createElement("canvas"),max=240,scale=Math.min(1,max/Math.max(img.width,img.height));c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));c.getContext("2d").drawImage(img,0,0,c.width,c.height);look.photo=c.toDataURL("image/jpeg",.72);saveLook()};reader.readAsDataURL(f)});
+$("removePhoto").onclick=()=>{if(consent()){look.photo="";saveLook()}};$("resetLook").onclick=()=>{if(consent()){look={theme:"sky",avatar:"🌻",photo:""};saveLook()}};
+$("pinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();r.learners=r.learners&&typeof r.learners==="object"?r.learners:{};const a=Array.isArray(r.learners[activeId])?r.learners[activeId]:[];if(!a.some(x=>x?.id==="khaemenes-kindergarten"))a.push({id:"khaemenes-kindergarten",courseId:"khaemenes-kindergarten",title:"Khaemenes Kindergarten",href:BASE+"#student",pinnedAt:new Date().toISOString()});r.learners[activeId]=a.slice(-24);r.version=1;r.updatedAt=new Date().toISOString();write("khaemenes_course_pins_v1",r);renderLearning()};
+$("unpinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();if(Array.isArray(r?.learners?.[activeId]))r.learners[activeId]=r.learners[activeId].filter(x=>x?.id!=="khaemenes-kindergarten"&&x?.courseId!=="khaemenes-kindergarten");write("khaemenes_course_pins_v1",r);renderLearning()};
+$("pinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;const a=appPins(),id=$("appSelect").value;if(!a.includes(id))a.push(id);write(PINKEY+encodeURIComponent(activeId),a.slice(-15));renderLearning()};$("unpinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;write(PINKEY+encodeURIComponent(activeId),appPins().filter(x=>x!==$("appSelect").value));renderLearning()};
+$("learnerSelect").onchange=()=>{const id=$("learnerSelect").value,l=R?.getLearner?.(id);if(l?.familyId)R?.setActive?.({familyId:l.familyId,learnerId:id})};
+$("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
+$("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{if(!consent())return;const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);look=normalize(v);saveLook()}catch{$("lookStatus").textContent="That backup could not be read."}};r.readAsText(f)};$("printProfile").onclick=()=>print();
+$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
-<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-student-profile-ui-v2.js"></script>
-<script>
-(function(){if(!window.KhaemenesStudentProfileUIV2&&!document.getElementById("profileStudio").children.length&&document.getElementById("profileStudio").hidden===false)document.getElementById("studioUnavailable").hidden=false})();
-</script>
-<script src="https://vervenveda.com/assets/vnv-beta-link.js" defer></script>
+<script src="../assets/khaemenes-student-profile-ui-v2.js"></script>
+<script>(function(){const box=document.getElementById("profileStudio");if(!window.KhaemenesStudentProfileUIV2&&!box.children.length)document.getElementById("studioUnavailable").hidden=false})();</script>
 </body></html>
