@@ -1700,6 +1700,22 @@ body .term-week-grid .unit-card .gate-state{
   grid-template-columns:repeat(2,96px)!important;
  }
 }
+</style><style id="kinder-toolbar-final-2px-fit-20261027">
+/* Final toolbar micro-adjustment only: +2px button width, -2px label size. */
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+ grid-template-columns:repeat(3,98px)!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
+ width:98px!important;
+ min-width:98px!important;
+ max-width:98px!important;
+ font-size:9px!important;
+}
+@media(max-width:560px){
+ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+  grid-template-columns:repeat(2,98px)!important;
+ }
+}
 </style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
