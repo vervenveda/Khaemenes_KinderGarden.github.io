@@ -39,11 +39,24 @@ main{position:relative}
 .flower-garden .flower{box-shadow:inset 0 -3px rgba(0,0,0,.04),0 5px 12px rgba(39,89,88,.08)}
 footer{position:relative;background:rgba(26,66,82,.9);backdrop-filter:blur(8px)}
 @media(prefers-reduced-motion:reduce){.bubble-ocean,.bubble-ocean:after,.rising-bubble{animation:none!important}.rising-bubble{bottom:auto;opacity:.48}}
+
+/* Profile palette switch + uniform title controls */
+.hero-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.55rem;margin-top:.7rem}
+.hero-btn{min-height:44px;width:100%;display:flex;align-items:center;justify-content:center;padding:.62rem .72rem;border:1px solid rgba(255,255,255,.72);border-radius:12px;color:#fff;font:600 .82rem/1.15 var(--sans);text-align:center;box-shadow:0 7px 16px rgba(39,79,72,.12);transition:transform .18s ease,background .35s ease,color .35s ease}
+.hero-btn:hover{transform:translateY(-1px)}.hero-today{background:#2f9b62}.hero-garden{background:#8b5bc8}.hero-graduate{background:#f28a4b}.hero-theme{background:#248fb3}
+body[data-palette="pastel"] .bubble-ocean{background:linear-gradient(180deg,#ffe0ef 0 20%,#efc9ff 20% 42%,#cceeff 42% 64%,#ccefdc 64% 84%,#ffe6b9 84% 100%)}
+body[data-palette="pastel"] .hero-grid{background:rgba(255,250,253,.55)}
+body[data-palette="pastel"] .portrait{background:linear-gradient(145deg,#ffd8eb,#d9c9ff)}
+body[data-palette="pastel"] .hero-today{background:#e989ad}body[data-palette="pastel"] .hero-garden{background:#a88bd8}body[data-palette="pastel"] .hero-graduate{background:#efa77f}body[data-palette="pastel"] .hero-theme{background:#70bdb7}
+body[data-palette="pastel"] h1,body[data-palette="pastel"] h2{color:#6d4f72}
+body[data-palette="pastel"] .eyebrow{color:#b65f86}
+@media(max-width:900px){.hero-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.hero-controls{grid-template-columns:1fr 1fr}.hero-btn{font-size:.72rem;padding:.55rem .4rem}}
 </style></head><body data-theme="sky">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>\n<a class="skip" href="#main">Skip to my profile</a>
 <header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
 <nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
-<section class="hero"><div class="shell hero-grid"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><div><p class="eyebrow">My very own learning garden</p><h1 id="childTitle">My Kindergarten Garden</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="actions"><a class="btn primary" id="firstStepLink" href="../#student">🌟 Today’s first step</a><a class="btn purple" href="#garden">🌼 My learning garden</a><a class="btn" href="../graduation/">🏮 Graduation bridge</a></div></div></div></section>
+<section class="hero"><div class="shell hero-grid"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><div><p class="eyebrow">My very own learning garden</p><h1 id="childTitle">My Kindergarten Garden</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="hero-controls"><a class="hero-btn hero-today" id="firstStepLink" href="../#student">🌟 Today’s first step</a><a class="hero-btn hero-garden" href="#garden">🌼 My learning garden</a><a class="hero-btn hero-graduate" href="../graduation/">🏮 Graduation bridge</a><button class="hero-btn hero-theme" id="paletteToggle" type="button" aria-pressed="false">🎨 Pastel colors</button></div></div></div></section>
 <main id="main" class="shell">
 <div id="accountNote" class="notice" role="status">Looking for a Kindergarten learner on this browser…</div>
 <section id="learnerSwitch" class="card" hidden><label for="learnerSelect"><strong>Who is learning today?</strong></label><select id="learnerSelect"></select><p>Each child keeps their own picture, colors, favorites, progress, and learning record.</p></section>
@@ -78,13 +91,13 @@ footer{position:relative;background:rgba(26,66,82,.9);backdrop-filter:blur(8px)}
 <script>
 (function(){
 "use strict";
-const BASE="https://vervenveda.com/Khaemenes_KinderGarden.github.io/",KEY="khaemenes_kindergarten_visual_profile_v1:",PINKEY="khaemenes_kindergarten_profile_app_pins_v1:";
+const BASE="https://vervenveda.com/Khaemenes_KinderGarden.github.io/",KEY="khaemenes_kindergarten_visual_profile_v1:",PINKEY="khaemenes_kindergarten_profile_app_pins_v1:",PALETTEKEY="khaemenes_kindergarten_profile_palette_v1:";
 const THEMES=["sky","forest","ocean","sunset","night"],AVATARS=["🌻","🦊","🦋","🦉","🚀","🌈","🐝","🐢"],STICKERS=["🌟","🌈","🐝","🦋","🌻","🍎","🚀","🦉","🐢","🎨","🎵","🧩"];
 const $=id=>document.getElementById(id),R=window.KhaemenesFamilyRegistry,C=window.KhaemenesLearningContinuation,G=window.KhaemenesKinderMasteryGates,catalog=window.KhaemenesKinderResources;
-let activeId="",look={theme:"sky",avatar:"🌻",photo:""};
+let activeId="",look={theme:"sky",avatar:"🌻",photo:""},palette="ocean";
 const read=(k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}},write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
 function learner(){const v=R?.getLearner?.()||null;return v&&String(v.stage).toLowerCase()==="kindergarten"&&v.learnerId?v:null}
-function profileKey(){return KEY+encodeURIComponent(activeId)}
+function profileKey(){return KEY+encodeURIComponent(activeId)}\nfunction paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}\nfunction renderPalette(){document.body.dataset.palette=palette;const b=$("paletteToggle");if(b){const pastel=palette==="pastel";b.setAttribute("aria-pressed",String(pastel));b.textContent=pastel?"🌊 Ocean colors":"🎨 Pastel colors"}const colors=palette==="pastel"?["#ff8fb8","#c99cff","#7ed8ea","#b9e89f","#ffc47a","#f7a5c3","#9fc8ff","#d8a7e8","#91d8c4","#ffd78c","#ee91b0","#b7a0ed","#85cfe4","#c5eaa9","#ffb888","#f2a1cf"]:["#fff20a","#ff9d16","#ff6680","#12c8ee","#d8ffb1","#12c8ee","#ff6680","#fff20a","#cfff72","#ff9d16","#12c8ee","#fff20a","#ff6680","#cfff72","#12c8ee","#ff9d16"];document.querySelectorAll(".rising-bubble").forEach((x,i)=>x.style.setProperty("--bubble-color",colors[i%colors.length]))}
 function normalize(v){v=v&&typeof v==="object"?v:{};return{theme:THEMES.includes(v.theme)?v.theme:"sky",avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""}}
 function consent(){if(!activeId){$("lookStatus").textContent="Choose a Kindergarten learner first.";return false}if(!$("adultConfirm").checked){$("lookStatus").textContent="A grown-up confirms before changing the profile.";return false}return true}
 function saveLook(){if(!consent())return;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook()}
@@ -133,7 +146,7 @@ $("pinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;cons
 $("learnerSelect").onchange=()=>{const id=$("learnerSelect").value,l=R?.getLearner?.(id);if(l?.familyId)R?.setActive?.({familyId:l.familyId,learnerId:id})};
 $("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
 $("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{if(!consent())return;const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);look=normalize(v);saveLook()}catch{$("lookStatus").textContent="That backup could not be read."}};r.readAsText(f)};$("printProfile").onclick=()=>print();
-$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};\n$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
