@@ -2087,7 +2087,7 @@ const BASE="https://vervenveda.com/Khaemenes_Preschool.github.io/apps/";
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 const encodePath=p=>String(p||"").split("/").map(encodeURIComponent).join("/");
-const crecheUrl=file=>BASE+encodePath(file);
+const crecheUrl=file=>String(file||"")==="../index.html"?"https://vervenveda.com/Khaemenes_Preschool.github.io/":BASE+encodePath(file);
 
 
 /* ---------------------------------------------------------
