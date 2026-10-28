@@ -1611,6 +1611,41 @@ body footer{padding-bottom:92px!important}
  }
  body footer{padding-bottom:128px!important}
 }
+</style><style id="kinder-learning-tray-dock-clearance-20261027">
+/* Fit the NAIB tray to its real content rather than leaving a tall empty field. */
+body #learning-tray{min-height:0!important;height:auto!important;padding-block:52px!important}
+body #learning-tray>.shell{min-height:0!important;height:auto!important;padding-bottom:0!important}
+body #learning-tray .section-heading{margin-bottom:26px!important}
+body #learning-tray .naib-tray{min-height:0!important;height:auto!important;margin-bottom:0!important;align-items:stretch!important}
+
+/* The utility dock is an adult utility, not part of a learning card.
+   Park it at the viewport edge and reserve page space so it never covers curriculum cards. */
+body[data-khae-campus-landing='true']{padding-bottom:82px!important}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+ position:fixed!important;
+ right:10px!important;bottom:10px!important;
+ width:auto!important;max-width:330px!important;
+ grid-template-columns:repeat(3,minmax(0,max-content))!important;
+ gap:3px!important;padding:5px!important;
+ z-index:1200!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
+ min-height:24px!important;padding:4px 6px!important;
+ font-size:10px!important;line-height:1.05!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) [data-landing-tool='grownups'],
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) [data-landing-tool='grownup']{
+ position:static!important;inset:auto!important;
+}
+body footer{padding-bottom:84px!important}
+@media(max-width:760px){
+ body[data-khae-campus-landing='true']{padding-bottom:118px!important}
+ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+  right:6px!important;bottom:6px!important;width:min(300px,calc(100vw - 12px))!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ }
+ body footer{padding-bottom:120px!important}
+}
 </style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
