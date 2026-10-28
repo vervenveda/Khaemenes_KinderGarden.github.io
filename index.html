@@ -292,11 +292,8 @@ body .garden-caption{font:400 13px/1.4 'Avenir Next','Segoe UI',sans-serif;botto
 body .scene-link{font-weight:400}
 body .scene-link small{font-weight:400;line-height:1.25}
 body .stats{margin-top:0;padding-top:24px}
-/* A quiet adult-facing dock; scoped so other Academy pages are unchanged. */
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){right:12px!important;bottom:12px!important;display:flex!important;flex-wrap:wrap!important;gap:4px!important;max-width:min(540px,calc(100vw - 24px))!important;padding:5px!important;border-radius:7px!important;box-shadow:0 4px 15px rgba(17,34,42,.12)!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){min-height:32px!important;height:auto!important;max-height:none!important;padding:6px 8px!important;border-radius:6px!important;font:400 11px/1.25 'Avenir Next','Segoe UI',sans-serif!important;letter-spacing:0!important;text-transform:none!important;white-space:normal!important;overflow-wrap:break-word!important}
 @media(max-width:900px){body .hero-inner{grid-template-columns:1fr;max-width:680px;gap:24px}body .hero-garden{order:0}body .hero-copy{text-align:center}body .hero-copy .lead{margin-inline:auto}body .garden-scene{width:min(100%,550px)}}
-@media(max-width:560px){body .hero-inner{width:min(100% - 24px,440px);padding:24px 0 80px}body .hero-copy{padding:22px 18px}body .hero-actions{grid-template-columns:1fr}body .hero-actions .btn{grid-column:1/-1}body .garden-scene{width:100%;min-height:460px;aspect-ratio:auto}body .garden-caption{font-size:11px}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){max-width:calc(100vw - 16px)!important;right:8px!important;bottom:8px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:10px!important;padding:5px 6px!important}}
+@media(max-width:560px){body .hero-inner{width:min(100% - 24px,440px);padding:24px 0 80px}body .hero-copy{padding:22px 18px}body .hero-actions{grid-template-columns:1fr}body .hero-actions .btn{grid-column:1/-1}body .garden-scene{width:100%;min-height:460px;aspect-ratio:auto}body .garden-caption{font-size:11px}
 </style>
 
 
@@ -417,14 +414,7 @@ body .scene-link.six{background:#8ee329!important}
 body .scene-link.seven{background:#ef72b8!important}
 body .scene-link.eight{background:#78c8f2!important}
 body .scene-link:hover{filter:brightness(1.04);transform:translateY(-4px) scale(1.025)!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
- right:10px!important;bottom:10px!important;max-width:min(390px,calc(100vw - 20px))!important;gap:2px!important;padding:3px 4px!important;border:1px solid rgba(36,56,74,.12)!important;border-radius:10px!important;background:rgba(255,255,255,.88)!important;box-shadow:0 4px 14px rgba(17,34,42,.10)!important;backdrop-filter:blur(12px)!important;opacity:.82!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar):hover,
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar):focus-within{opacity:1!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
- min-height:25px!important;padding:3px 6px!important;border-radius:6px!important;border-width:1px!important;background:transparent!important;color:#40505b!important;font:400 9.5px/1.15 "Avenir Next","Segoe UI",sans-serif!important;white-space:nowrap!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):hover{background:#eef8ff!important}
-@media(max-width:620px){body .garden-caption{width:100%!important;font-size:11px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){max-width:calc(100vw - 12px)!important;right:6px!important;bottom:6px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:9px!important;padding:3px 5px!important}}
+@media(max-width:620px){body .garden-caption{width:100%!important;font-size:11px!important}}
 </style>
 
 <style id="kinder-play-continuation-20261027">
@@ -464,16 +454,6 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
 .feature-card:nth-child(4n+3),.app-card:nth-child(4n+3),.connected-card:nth-child(4n+3),.naib-tray-card:nth-child(4n+3){box-shadow:inset 0 7px 0 #168bd2,0 8px 22px rgba(37,67,80,.08)!important}
 .feature-card:nth-child(4n),.app-card:nth-child(4n),.connected-card:nth-child(4n),.naib-tray-card:nth-child(4n){box-shadow:inset 0 7px 0 #ef4ca6,0 8px 22px rgba(37,67,80,.08)!important}
 
-/* Floating utility palette: roomy two-row glass dock instead of a compressed corner strip. */
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
- right:18px!important;bottom:18px!important;width:auto!important;max-width:440px!important;display:grid!important;grid-template-columns:repeat(4,max-content)!important;align-items:center!important;justify-content:end!important;gap:6px!important;padding:9px 10px!important;border:1px solid rgba(255,255,255,.72)!important;border-radius:16px!important;background:rgba(247,252,255,.90)!important;box-shadow:0 10px 30px rgba(21,61,84,.15)!important;backdrop-filter:blur(16px)!important;opacity:.94!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
- min-width:0!important;min-height:30px!important;padding:6px 9px!important;border:1px solid rgba(22,139,210,.15)!important;border-radius:9px!important;background:#fff!important;color:#355064!important;font:400 10px/1.15 var(--kinder-bubble)!important;white-space:nowrap!important;box-shadow:none!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):nth-child(4n+1){border-bottom:3px solid #20cdb4!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):nth-child(4n+2){border-bottom:3px solid #168bd2!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):nth-child(4n+3){border-bottom:3px solid #ef4ca6!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):nth-child(4n){border-bottom:3px solid #ffd12f!important}
-@media(max-width:720px){body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){right:10px!important;bottom:10px!important;max-width:calc(100vw - 20px)!important;grid-template-columns:repeat(2,max-content)!important;gap:4px!important;padding:7px!important}body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){font-size:9px!important;padding:5px 7px!important}}
 </style>
 
 <style id="kinder-toolbar-contrast-20261027" media="not all">
@@ -547,32 +527,7 @@ body [data-khae-actions] a{padding:6px 9px!important;background:rgba(255,255,255
 body .kinder-quick-links{min-height:43px!important}
 body .kinder-quick-links :is(a,button){min-height:29px!important;padding:6px 10px!important;font:400 11px/1 var(--kinder-bubble)!important}
 
-/* One calm floating panel. Let labels stay whole and give the dock air around the viewport edges. */
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
- right:22px!important;bottom:22px!important;
- width:max-content!important;max-width:520px!important;
- display:flex!important;flex-wrap:wrap!important;justify-content:flex-end!important;align-items:center!important;
- gap:6px!important;padding:9px 10px!important;
- border:1px solid rgba(255,255,255,.82)!important;border-radius:14px!important;
- background:rgba(247,252,255,.94)!important;box-shadow:0 10px 28px rgba(20,60,83,.14)!important;
- backdrop-filter:blur(15px)!important;overflow:visible!important;opacity:.96!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
- flex:0 0 auto!important;width:auto!important;max-width:none!important;min-width:max-content!important;
- min-height:28px!important;height:28px!important;padding:5px 8px!important;margin:0!important;
- border:1px solid rgba(22,139,210,.18)!important;border-radius:7px!important;
- background:#fff!important;color:#345269!important;
- font:400 10px/1 var(--kinder-bubble)!important;letter-spacing:0!important;text-transform:none!important;
- white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:normal!important;word-break:normal!important;
- box-shadow:none!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button):hover{
- background:#eaf7ff!important;color:#173f58!important;transform:translateY(-1px)!important}
-@media(max-width:760px){
- body [data-khae-nav]{display:none!important}
- body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
-  right:10px!important;bottom:10px!important;width:auto!important;max-width:calc(100vw - 20px)!important;gap:4px!important;padding:7px!important}
- body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
-  min-width:0!important;height:auto!important;min-height:27px!important;font-size:9px!important;padding:5px 7px!important}
-}
+@media(max-width:760px){body [data-khae-nav]{display:none!important}}
 </style>
 
 <style id="kinder-light-yellow-header-20261027">
@@ -806,10 +761,7 @@ body main h4{font-size:clamp(16px,1.3vw,20px)!important;line-height:1.25!importa
 body main .eyebrow{font-size:14px!important;line-height:1.35!important;letter-spacing:.09em!important}
 body :is(.card,.unit-card,.feature-card,.app-card,.connected-card,.naib-tray-card,.profile-card,.pinned-card,
  .daily-card,.family-card,.kinder-mentor-card,.mentor-principles,.stat,.seed-ribbon,.scene-link,.garden-caption,
- .term-week-grid .unit-card,.term-head,.btn,button,.chip,input,select,textarea,
- #khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar,
- #khaeLandingUtilityDock>a,#khaeLandingUtilityDock>button,
- #khaemenesLearnerUtilityToolbar>a,#khaemenesLearnerUtilityToolbar>button){
+ .term-week-grid .unit-card,.term-head,.btn,button,.chip,input,select,textarea){
  border-radius:var(--kg-radius)!important;
 }
 body :is(.card,.unit-card,.feature-card,.app-card,.connected-card,.naib-tray-card,.profile-card,.pinned-card,
@@ -817,8 +769,7 @@ body :is(.card,.unit-card,.feature-card,.app-card,.connected-card,.naib-tray-car
  min-width:0;
  overflow-wrap:break-word;
 }
-body :is(.btn,button,.chip,#khaeLandingUtilityDock>a,#khaeLandingUtilityDock>button,
- #khaemenesLearnerUtilityToolbar>a,#khaemenesLearnerUtilityToolbar>button){
+body :is(.btn,button,.chip){
  min-height:36px!important;
  height:auto!important;
  padding:7px 10px!important;
@@ -826,17 +777,8 @@ body :is(.btn,button,.chip,#khaeLandingUtilityDock>a,#khaeLandingUtilityDock>but
  overflow:visible!important;
  text-overflow:clip!important;
 }
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
- gap:5px!important;padding:7px!important;max-width:min(520px,calc(100vw - 28px))!important;
-}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
- font:400 14px/1.2 var(--kg-body-face)!important;
-}
 .term-copy small,.term-week-grid .unit-card .unit-question,.term-week-grid .unit-card .gate-state,
 .term-week-grid .unit-card.current .gate-state,.garden-caption,.scene-link small{font-size:14px!important}
-@media(max-width:760px){
- body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
-  font-size:14px!important;min-height:36px!important;padding:7px 9px!important}
 }
 </style>
 
@@ -848,9 +790,7 @@ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLear
  --kg-pink:#ef4ca6;--kg-orange:#ff8b2c;--kg-lime:#8ee329;
 }
 body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
- .student-gateway,.gate-state,.term-head,[role="button"],
- #khaeLandingUtilityDock>a,#khaeLandingUtilityDock>button,
- #khaemenesLearnerUtilityToolbar>a,#khaemenesLearnerUtilityToolbar>button){
+ .student-gateway,.gate-state,.term-head,[role="button"]){
  border:1px solid rgba(23,59,80,.14)!important;
  border-radius:7px!important;
  box-shadow:0 3px 0 rgba(23,59,80,.10)!important;
@@ -893,15 +833,6 @@ body :is(button,[role="button"]):disabled,body button[aria-disabled="true"],body
 body [data-khae-actions] a:nth-child(3n+1){background:var(--kg-blue)!important;color:#fff!important}
 body [data-khae-actions] a:nth-child(3n+2){background:var(--kg-pink)!important;color:#fff!important}
 body [data-khae-actions] a:nth-child(3n){background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
-
-/* Bottom-right dock: individually colored, still compact and readable. */
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+1){background:var(--kg-yellow)!important;color:var(--kg-ink)!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+2){background:var(--kg-aqua)!important;color:var(--kg-ink)!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+3){background:var(--kg-blue)!important;color:#fff!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+4){background:var(--kg-purple)!important;color:#fff!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+5){background:var(--kg-pink)!important;color:#fff!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n+6){background:var(--kg-orange)!important;color:var(--kg-ink)!important}
-body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button):nth-child(7n){background:var(--kg-lime)!important;color:var(--kg-ink)!important}
 
 body :is(.btn,button,.chip,.kinder-quick-links a,.family-actions a,.mentor-prompts a,.interest-btn,
  .student-gateway,[role="button"]):not(:disabled):hover{
