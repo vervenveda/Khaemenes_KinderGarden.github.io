@@ -1700,20 +1700,36 @@ body .term-week-grid .unit-card .gate-state{
   grid-template-columns:repeat(2,96px)!important;
  }
 }
-</style><style id="kinder-toolbar-final-2px-fit-20261027">
-/* Final toolbar micro-adjustment only: +2px button width, -2px label size. */
+</style><style id="kinder-toolbar-final-fit-20261028">
+/* Kindergarten landing toolbar: readable labels with breathing room, without changing toolbar actions. */
 body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
- grid-template-columns:repeat(3,98px)!important;
+ display:grid!important;
+ grid-template-columns:repeat(3,minmax(116px,1fr))!important;
+ width:min(390px,calc(100vw - 24px))!important;
+ max-width:min(390px,calc(100vw - 24px))!important;
+ gap:6px!important;
+ padding:7px!important;
 }
 body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar)>:is(a,button){
- width:98px!important;
- min-width:98px!important;
- max-width:98px!important;
- font-size:9px!important;
+ width:100%!important;
+ min-width:0!important;
+ max-width:none!important;
+ min-height:34px!important;
+ padding:7px 10px!important;
+ box-sizing:border-box!important;
+ font:400 10.5px/1.25 'Avenir Next','Segoe UI',sans-serif!important;
+ letter-spacing:0!important;
+ text-transform:none!important;
+ text-align:center!important;
+ white-space:normal!important;
+ overflow-wrap:normal!important;
+ word-break:normal!important;
 }
 @media(max-width:560px){
  body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
-  grid-template-columns:repeat(2,98px)!important;
+  grid-template-columns:repeat(2,minmax(116px,1fr))!important;
+  width:min(258px,calc(100vw - 24px))!important;
+  max-width:min(258px,calc(100vw - 24px))!important;
  }
 }
 </style></head>
