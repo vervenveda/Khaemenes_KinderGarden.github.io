@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'student-profile/**'
       - '**/*.html'
       - '**/*.js'
       - '**/*.css'
@@ -25,6 +26,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'student-profile/**'
       - '**/*.html'
       - '**/*.js'
       - '**/*.css'
@@ -65,6 +67,11 @@ jobs:
           node --check assets/khaemenes-landing-toolbar.js
           node --check assets/preschool-catalog.js
           node --check assets/khaemenes-profile-bridge.js
+          node --check assets/khaemenes-family-registry.js
+          node --check assets/khaemenes-learning-continuation.js
+          node --check assets/khaemenes-student-profile-v2.js
+          node --check assets/khaemenes-student-quick-pins-v1.js
+          node --check assets/khaemenes-student-profile-ui-v2.js
       - name: Verify formal route coverage
         run: node scripts/inject-kindergarten-formal-gates.mjs --check
       - name: Validate local HTML links and assets
