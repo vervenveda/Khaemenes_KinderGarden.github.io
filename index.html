@@ -1599,6 +1599,19 @@ body a[href^="https://buy.stripe.com/"]:focus-visible{
 @media(prefers-reduced-motion:reduce){
  body a[href^="https://buy.stripe.com/"]:hover{transform:none!important}
 }
+</style><style id="kinder-naib-card-centering-20261027">
+/* NAIB-only alignment: center the cards actually generated for the learner. */
+#learning-tray .naib-tray{
+ grid-template-columns:repeat(auto-fit,minmax(220px,240px))!important;
+ justify-content:center!important;
+ justify-items:stretch!important;
+}
+@media(max-width:560px){
+ #learning-tray .naib-tray{
+  grid-template-columns:minmax(0,1fr)!important;
+  max-width:360px!important;
+ }
+}
 </style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
