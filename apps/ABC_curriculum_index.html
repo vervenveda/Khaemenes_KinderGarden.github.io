@@ -37,21 +37,23 @@
   /* Weekly grid */
   #weeks{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-    gap:12px;
-    width:90%;
-    max-width:900px;
-    margin:0 auto 20px;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:16px;
+    width:92%;
+    max-width:920px;
+    margin:0 auto 24px;
   }
   #weeks button{
     background:#fff59d;
-    border:none;
-    border-radius:16px;
-    padding:12px 8px;
-    font-size:clamp(0.9rem,2.5vw,1.1rem);
+    border:3px solid rgba(255,255,255,.88);
+    border-radius:18px;
+    min-height:108px;
+    padding:18px 14px;
+    font-size:clamp(1rem,2.5vw,1.2rem);
+    line-height:1.25;
     cursor:pointer;
-    box-shadow:0 4px 6px rgba(0,0,0,0.1);
-    transition:transform .15s;
+    box-shadow:0 5px 10px rgba(0,0,0,0.14);
+    transition:transform .15s, box-shadow .15s;
   }
   #weeks button:hover{transform:translateY(-4px);}
   #weeks button:active{transform:scale(.97);}
@@ -214,16 +216,25 @@
 
 <script>
 /* ========== HOME GRID ========== */
-const weekList=[
-"A – Alligator 🐊","B – Bear 🐻","C – Cat 🐱","D – Dog 🐶","E – Elephant 🐘","F – Fox 🦊","G – Giraffe 🦒",
-"H – Hippo 🦛","I – Iguana 🦎","J – Jellyfish 🪼","K – Kangaroo 🦘","L – Lion 🦁","M – Monkey 🐒","N – Narwhal 🐋",
-"O – Owl 🦉","P – Penguin 🐧","Q – Queen 👑","R – Rabbit 🐇","S – Snake 🐍","T – Tiger 🐯","U – Umbrella ☂️",
-"V – Violin 🎻","W – Whale 🐋","X – X-ray 🩻","Y – Yak 🐃","Z – Zebra 🦓"];
+const abcGames=[
+  {title:"🌈 Alphabet Adventure",note:"Explore letters A–Z",path:"ABC_Alphabet_Adventure_index.html"},
+  {title:"🧭 ABC Adventure Hub",note:"Choose an alphabet adventure",path:"ABC_adventure_hub_index.html"},
+  {title:"🌍 Bilingual ABC",note:"Letters across languages",path:"ABC_bilingual_index.html"},
+  {title:"🫧 ABC Bubble Adventure",note:"Pop, play, and practice",path:"ABC_bubble_adventure_index.html"},
+  {title:"🚀 Cosmic Alphabet",note:"A space-themed letter quest",path:"ABC_cosmic_alphabet_index.html"},
+  {title:"🧩 ABC Match",note:"Match letters and clues",path:"ABC_match_index.html"},
+  {title:"⏰ ABC Time",note:"Play with letters and sounds",path:"ABC_time_index.html"},
+  {title:"📚 ABC Story Time",note:"Letters through stories",path:"ABC_Story_Time/index.html"}
+];
 const weeks=document.getElementById("weeks");
-weekList.forEach((t,i)=>{
+const preschoolApps="https://vervenveda.com/Khaemenes_Preschool.github.io/apps/";
+abcGames.forEach((game,i)=>{
   const b=document.createElement("button");
-  b.textContent=`Week ${i+1}: ${t}`;
-  b.onclick=()=>{window.location.href="https://vervenveda.com/Khaemenes_Preschool.github.io/apps/ABC_Story_Time/index.html";};
+  b.type="button";
+  b.setAttribute("aria-label",game.title+" — "+game.note);
+  b.innerHTML=`<span style="display:block;font-size:1.08em;font-weight:700;margin-bottom:6px">${game.title}</span><span style="display:block;font-size:.82em;font-weight:500;opacity:.78">${game.note}</span>`;
+  b.style.background=["#fff59d","#9fe3d7","#a8d8f0","#ffad91"][i%4];
+  b.onclick=()=>{window.location.href=preschoolApps+game.path;};
   weeks.appendChild(b);
 });
 
