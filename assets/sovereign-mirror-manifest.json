@@ -41,6 +41,54 @@
       "source_ref": "main",
       "source_blob_sha": "b1da985a5026bc01408a85d0f87da0fc2284ec57",
       "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/khaemenes-family-registry.js",
+      "source_repository": "vervenveda/Khaemenes_Academy.github.io",
+      "source_path": "assets/khaemenes-family-registry.js",
+      "source_ref": "main",
+      "source_blob_sha": "ec3ee54a12aa815127effb7f6125fd0292dde6ee",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/khaemenes-learning-continuation.js",
+      "source_repository": "vervenveda/Khaemenes_Academy.github.io",
+      "source_path": "assets/khaemenes-learning-continuation.js",
+      "source_ref": "main",
+      "source_blob_sha": "6316e9029278107419a26787d93583014201cc84",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/khaemenes-student-profile-v2.js",
+      "source_repository": "vervenveda/Khaemenes_Academy.github.io",
+      "source_path": "assets/khaemenes-student-profile-v2.js",
+      "source_ref": "main",
+      "source_blob_sha": "eb5a3503ab27ccd1a9221787a0260579e2d4d6aa",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/khaemenes-student-quick-pins-v1.js",
+      "source_repository": "vervenveda/Khaemenes_Academy.github.io",
+      "source_path": "assets/khaemenes-student-quick-pins-v1.js",
+      "source_ref": "main",
+      "source_blob_sha": "418b002cb06edb12c58d2b04f0879a532e26a988",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/khaemenes-student-profile-ui-v2.js",
+      "source_repository": "vervenveda/Khaemenes_Academy.github.io",
+      "source_path": "assets/khaemenes-student-profile-ui-v2.js",
+      "source_ref": "main",
+      "source_blob_sha": "38c9ebeab396190df44ae2501a6b283cc2543bf4",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
+    },
+    {
+      "path": "assets/khaemenes-student-profile-v2.css",
+      "source_repository": "vervenveda/Khaemenes_Academy.github.io",
+      "source_path": "assets/khaemenes-student-profile-v2.css",
+      "source_ref": "main",
+      "source_blob_sha": "d1022e8702de441783732ecb7f4356e7d2b8ae12",
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     }
   ]
 }
