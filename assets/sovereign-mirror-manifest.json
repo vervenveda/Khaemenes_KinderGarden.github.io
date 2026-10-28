@@ -8,7 +8,7 @@
       "source_path": "assets/khaemenes-landing-toolbar.js",
       "source_ref": "main",
       "source_blob_sha": "60a21c4d2113740dde6d5bd2281ebba8a36cd2ed",
-      "local_integrity": "validated_by_scripts/validate-sovereign-mirrors.mjs"
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     },
     {
       "path": "assets/khaemenes-landing-toolbar.css",
@@ -16,7 +16,7 @@
       "source_path": "assets/khaemenes-landing-toolbar.css",
       "source_ref": "main",
       "source_blob_sha": "324e8d3d9e2cae4068f5461388e195e0174977f6",
-      "local_integrity": "validated_by_scripts/validate-sovereign-mirrors.mjs"
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     },
     {
       "path": "assets/khaemenes-landing-standard.css",
@@ -24,7 +24,7 @@
       "source_path": "assets/khaemenes-landing-standard.css",
       "source_ref": "main",
       "source_blob_sha": "c7faf2149dbd5a3e3a54041b4b3652ac2956c929",
-      "local_integrity": "validated_by_scripts/validate-sovereign-mirrors.mjs"
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     },
     {
       "path": "assets/preschool-catalog.js",
@@ -32,7 +32,7 @@
       "source_path": "assets/preschool-catalog.js",
       "source_ref": "main",
       "source_blob_sha": "e4a2d5994e1ea7eaaa1e2565f862b316272d2821",
-      "local_integrity": "validated_by_scripts/validate-sovereign-mirrors.mjs"
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     },
     {
       "path": "assets/khaemenes-profile-bridge.js",
@@ -40,7 +40,7 @@
       "source_path": "assets/khaemenes-profile-bridge.js",
       "source_ref": "main",
       "source_blob_sha": "b1da985a5026bc01408a85d0f87da0fc2284ec57",
-      "local_integrity": "validated_by_scripts/validate-sovereign-mirrors.mjs"
+      "local_integrity": "sha256:checked_by_scripts/validate-sovereign-mirrors.mjs"
     }
   ]
 }
