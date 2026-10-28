@@ -30,11 +30,11 @@ const FOUNDATION_UNITS=new Set([1,2,3,4]);
 const DAILY_SEQUENCE_UNITS=new Set([5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]);
 const CAPSTONE_UNITS=new Set([26,27,28,29,30,31,32,33,34,35,36]);
   const KEY="khaemenes_kindergarten_mastery_receipts_v1";
-  const ACADEMY_REGISTRY="/stos/khaemenes/assets/khaemenes-family-registry.js";
-  const CONTINUITY_SCRIPT="/stos/khaemenes/kindergarten/assets/khaemenes-kinder-continuity.js";
-  const CURRICULUM_HOME="/stos/khaemenes/kindergarten/curriculum/";
-  const MASTERY_HOME="/stos/khaemenes/kindergarten/curriculum/mastery/";
-  const FAMILY_HOME="/stos/khaemenes/family/";
+  const ACADEMY_REGISTRY="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-family-registry.js";
+  const CONTINUITY_SCRIPT="https://vervenveda.com/Khaemenes_KinderGarden.github.io/assets/khaemenes-kinder-continuity.js";
+  const CURRICULUM_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/";
+  const MASTERY_HOME="https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/mastery/";
+  const FAMILY_HOME="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
 
   const now=()=>new Date().toISOString();
   const readJSON=(key,fallback)=>{
