@@ -1612,6 +1612,42 @@ body a[href^="https://buy.stripe.com/"]:focus-visible{
   max-width:360px!important;
  }
 }
+</style><style id="kinder-toolbar-equal-grid-20261027">
+/* Toolbar only: six equal controls in a balanced 3 x 2 grid. */
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+ width:330px!important;
+ max-width:calc(100vw - 24px)!important;
+ display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ grid-auto-rows:32px!important;
+ gap:6px!important;
+ padding:8px!important;
+ align-items:stretch!important;
+ justify-content:stretch!important;
+}
+body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar) > :is(a,button){
+ width:100%!important;
+ min-width:0!important;
+ max-width:none!important;
+ height:32px!important;
+ min-height:32px!important;
+ padding:4px 6px!important;
+ margin:0!important;
+ display:flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ text-align:center!important;
+ font-size:10px!important;
+ line-height:1.1!important;
+ white-space:nowrap!important;
+ box-sizing:border-box!important;
+}
+@media(max-width:420px){
+ body[data-khae-campus-landing='true'] :is(#khaeLandingUtilityDock,#khaemenesLearnerUtilityToolbar){
+  width:calc(100vw - 16px)!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ }
+}
 </style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
