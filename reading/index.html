@@ -143,7 +143,7 @@ $("eirenModal").addEventListener("click",e=>{if(e.target===$("eirenModal"))close
 document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if(!$("storyTv").hidden)closeStoryTv();else if(!$("eirenModal").hidden)closeEiren()});
 $("eirenChatForm").addEventListener("submit",e=>{e.preventDefault();const input=$("eirenChatInput"),msg=input.value.trim();if(!msg)return;addEiren("You",msg);const session=eirenSession();const contextual="We are reading "+book.title+" by "+book.author+". Theme: "+book.theme+". The child says: "+msg;const reply=session?session.respond(contextual):"I can still listen. Tell me one word, picture, feeling, or event you noticed in the story.";eirenLastReply=reply;addEiren("Eiren",reply);input.value=""});
 $("eirenSpeakReply").addEventListener("click",()=>speakEiren(eirenLastReply));
-$("eirenStop").addEventListener("click",()=>window.EirenConversation?.stop());
+$("eirenStop").addEventListener("click",()=>{window.EirenConversation?.stop?.();window.speechSynthesis?.cancel?.()});
 $("eirenClear").addEventListener("click",()=>{eirenSession()?.reset();$("eirenMessages").innerHTML='<p class="eiren-msg"><strong>Eiren</strong><br>We can begin again. What did you notice in the story?</p>';eirenLastReply=""});
 
 $("sourceHelp").addEventListener("click",()=>{const note=$("sourceHelpNote");note.hidden=false;note.textContent="If this story source is unavailable, please choose Book B or explore Great Children’s Classics below. Khaemenes Academy does not substitute unofficial copies."});
