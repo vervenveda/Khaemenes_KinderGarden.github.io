@@ -1,0 +1,63 @@
+{
+  "schema": "khaemenes.kindergarten-reading-rewards.v1",
+  "title": "Family Reading Rewards",
+  "booksPerReward": 8,
+  "note": "Families may add, remove, rename, or reorder rewards. Reward choices do not affect academic mastery.",
+  "rewards": [
+    {
+      "id": "game-night",
+      "label": "Family Game Night",
+      "icon": "🎲",
+      "enabled": true
+    },
+    {
+      "id": "movie-popcorn",
+      "label": "Movie & Popcorn Night",
+      "icon": "🍿",
+      "enabled": true
+    },
+    {
+      "id": "park-day",
+      "label": "Day at the Park",
+      "icon": "🌳",
+      "enabled": true
+    },
+    {
+      "id": "ice-cream-sundae",
+      "label": "Ice-Cream Sundae Night",
+      "icon": "🍨",
+      "enabled": true
+    },
+    {
+      "id": "dollar-tree",
+      "label": "Trip to the Dollar Tree",
+      "icon": "🛍️",
+      "enabled": true
+    },
+    {
+      "id": "five-dollar-reward",
+      "label": "$5.00 Reward",
+      "icon": "💵",
+      "enabled": true
+    },
+    {
+      "id": "pancake-breakfast",
+      "label": "Chocolate-Chip Pancakes with Whipped Cream for Breakfast",
+      "icon": "🥞",
+      "enabled": true
+    },
+    {
+      "id": "day-off-school",
+      "label": "Day Off from School",
+      "icon": "☀️",
+      "enabled": true
+    },
+    {
+      "id": "family-choice",
+      "label": "Our Family's Choice",
+      "icon": "⭐",
+      "enabled": true,
+      "custom": true
+    }
+  ]
+}
