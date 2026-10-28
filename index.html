@@ -1080,7 +1080,41 @@ footer .footer-links a{color:#fff!important;font-size:14px!important;line-height
  box-shadow:0 4px 9px rgba(20,50,68,.12)!important;
 }
 </style>
-</head>
+<style id="kinder-tool-shed-categories-20261027">
+/* Dark-section contrast: supporting copy must remain readable at a glance. */
+#curriculum .section-heading>p:not(.eyebrow){color:#eaf8ff!important;text-shadow:0 1px 1px rgba(0,0,0,.12)!important}
+#curriculum .section-heading h2{color:#fff!important}
+#curriculum .section-heading .eyebrow{color:#ffd12f!important}
+
+/* Tool Shed: categories first, individual resources on demand. */
+#apps{
+ background:
+ radial-gradient(circle at 8% 16%,rgba(255,209,47,.17),transparent 24rem),
+ radial-gradient(circle at 91% 76%,rgba(239,76,166,.15),transparent 26rem),
+ linear-gradient(140deg,#173f58 0%,#205d67 48%,#384a77 100%)!important;
+ color:#fff!important;
+}
+#apps .section-heading :is(h2,p){color:#fff!important}
+#apps .section-heading .eyebrow{color:#ffd12f!important}
+.app-category-grid{width:min(920px,100%);margin:28px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.app-category-card{min-height:150px;padding:18px 15px;border:2px solid rgba(255,255,255,.82);border-radius:7px;box-shadow:0 10px 22px rgba(5,24,35,.16);font:400 14px/1.4 var(--kinder-body,Nunito,"Brandon Grotesque",sans-serif);cursor:pointer;transition:transform .16s ease,box-shadow .16s ease}
+.app-category-card:hover,.app-category-card:focus-visible{transform:translateY(-3px);box-shadow:0 14px 28px rgba(5,24,35,.24)}
+.app-category-card>span{display:block;font-size:30px;margin-bottom:7px}
+.app-category-card strong{display:block;font-family:var(--kinder-title,Cinzel,serif);font-size:18px;font-weight:400;line-height:1.2;color:#173b50}
+.app-category-card small{display:block;margin-top:7px;font-size:14px;color:#29485c}
+.cat-literacy{background:#ffd1e8}.cat-math{background:#fff0a7}.cat-creative{background:#ffd6ad}.cat-science{background:#c9f8ee}.cat-movement{background:#dcf7b9}.cat-wellness{background:#ded3ff}.cat-music{background:#cfeaff}.cat-community{background:#ffc5b8}.cat-all{background:#ffe58a}
+.app-library-dialog{width:min(1000px,calc(100% - 28px));max-height:88vh;padding:0;border:0;border-radius:7px;background:#eefaff;color:#29485c;box-shadow:0 28px 80px rgba(8,28,43,.38)}
+.app-library-dialog::backdrop{background:rgba(12,31,47,.72);backdrop-filter:blur(3px)}
+.app-dialog-shell{padding:20px;overflow:auto;max-height:88vh}
+.app-dialog-head{position:sticky;top:-20px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:20px;margin:-20px -20px 18px;padding:18px 20px;background:#ffe58a;border-bottom:1px solid rgba(23,59,80,.12)}
+.app-dialog-head .eyebrow{margin:0;color:#ef4ca6!important}.app-dialog-head h3{margin:3px 0 0;font-family:var(--kinder-title,Cinzel,serif);font-size:24px;font-weight:400;color:#173b50}
+.app-dialog-close{width:42px;height:42px;border:0;border-radius:7px;background:#ef4ca6;color:#fff;font-size:26px;line-height:1;cursor:pointer}
+#appLibraryDialog .app-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#appLibraryDialog .app-card{min-height:245px;border-radius:7px}
+#appLibraryDialog .app-card .btn{border-radius:7px!important}
+@media(max-width:760px){.app-category-grid,#appLibraryDialog .app-grid{grid-template-columns:1fr 1fr}.app-category-card{min-height:135px}}
+@media(max-width:480px){.app-category-grid,#appLibraryDialog .app-grid{grid-template-columns:1fr}}
+</style></head>
 <body id="top">
 <header data-khae-header class="khae-global-campus-header">
   <div data-khae-header-inner>
@@ -1213,7 +1247,20 @@ footer .footer-links a{color:#fff!important;font-size:14px!important;line-height
 <article class="connected-card"><span class="icon">☼</span><h3>Aurora</h3><p>Optional breathing, grounding, reflection, sound, and creative reset rooms for transitions or frustration.</p><a class="btn secondary" href="/stos/aurora/">Open Aurora</a></article>
 </div></div></section>
 
-<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">The Kinder Garden Tool Shed</p><h2>Local core apps — plus the connected cumulative library.</h2><p>These tools live directly in Kinder Garden. Crechè, Elementary, Bazaar Art, The Refrain, Arcade, and Aurora extend the practice library above without changing the formal mastery record.</p></div><div class="filterbar" id="appFilters"><button class="chip active" data-app="all" type="button">All Apps</button><button class="chip" data-app="literacy" type="button">Letters & Words</button><button class="chip" data-app="math" type="button">Math</button><button class="chip" data-app="science" type="button">Science & Weather</button><button class="chip" data-app="community" type="button">History & Community</button><button class="chip" data-app="movement" type="button">Movement</button><button class="chip" data-app="wellness" type="button">Calm & Wellness</button></div><div class="app-grid" id="appGrid"></div></div></section>
+<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">The Kinder Garden Tool Shed</p><h2>Local core apps — plus the connected cumulative library.</h2><p>These tools live directly in Kinder Garden. Crechè, Elementary, Bazaar Art, The Refrain, Arcade, and Aurora extend the practice library above without changing the formal mastery record.</p></div><div class="app-category-grid" id="appFilters" aria-label="Choose a Kinder Garden tool category">
+<button class="app-category-card cat-literacy" data-app="literacy" type="button"><span>🔤</span><strong>ABC's & Reading</strong><small>Letters · phonics · stories · words</small></button>
+<button class="app-category-card cat-math" data-app="math" type="button"><span>🔢</span><strong>Numbers & Math</strong><small>Counting · number sense · early math</small></button>
+<button class="app-category-card cat-creative" data-app="creative" type="button"><span>🎨</span><strong>Colors & Creativity</strong><small>Color · art · making · imagination</small></button>
+<button class="app-category-card cat-science" data-app="science" type="button"><span>🌦️</span><strong>Science & Discovery</strong><small>Weather · nature · questions · experiments</small></button>
+<button class="app-category-card cat-movement" data-app="movement" type="button"><span>🦘</span><strong>PE & Movement</strong><small>Move · balance · coordination · play</small></button>
+<button class="app-category-card cat-wellness" data-app="wellness" type="button"><span>💛</span><strong>Life Skills & Feelings</strong><small>Calm · routines · kindness · wellbeing</small></button>
+<button class="app-category-card cat-music" data-app="music" type="button"><span>🎵</span><strong>Music & Rhythm</strong><small>Beat · listening · sound · movement</small></button>
+<button class="app-category-card cat-community" data-app="community" type="button"><span>🌎</span><strong>People & Places</strong><small>Community · history · maps · belonging</small></button>
+<button class="app-category-card cat-all" data-app="all" type="button"><span>🎲</span><strong>Games & Practice</strong><small>See the complete Kinder Garden toolbox</small></button>
+</div>
+<dialog class="app-library-dialog" id="appLibraryDialog" aria-labelledby="appLibraryTitle">
+<div class="app-dialog-shell"><div class="app-dialog-head"><div><p class="eyebrow">Kinder Garden Tool Shed</p><h3 id="appLibraryTitle">Learning Tools</h3></div><button class="app-dialog-close" id="appLibraryClose" type="button" aria-label="Close learning tools">×</button></div><div class="app-grid" id="appGrid"></div></div>
+</dialog></div></section>
 
 <section class="section" id="creche"><div class="shell"><div class="section-heading"><p class="eyebrow">Crechè → Kinder Garden Bridge</p><h2>Keep the favorite adventures. Grow into the next garden.</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="/stos/khaemenes/preschool/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="/stos/mentor/" data-khaemenes-mentor="archaemenes">Open Archaemenes · Wise Owl</a></div></div></section>
 
@@ -1538,8 +1585,20 @@ function renderApps(group="all"){
  const source=(window.KhaemenesKinderResources?.all?.()||APPS).map(a=>({
    title:a.title,icon:a.icon||"✨",group:a.group||"general",url:a.path||a.url,desc:a.desc||"Kinder Garden learning tool."
  }));
- const list=source.filter(a=>group==="all"||a.group===group);
- $("#appGrid").innerHTML=list.map(a=>`<article class="app-card"><span class="app-icon">${a.icon}</span><div class="origin">Kinder Garden · ${esc(a.group)}</div><h3>${esc(a.title)}</h3><p>${esc(a.desc)}</p><a class="btn primary" href="${a.url}">Open Activity</a></article>`).join("");
+ const classify=a=>{
+   const hay=(a.title+" "+a.desc+" "+a.group).toLowerCase();
+   if(/music|rhythm|song|piano|sound/.test(hay))return "music";
+   if(/art|color|colour|draw|paint|creative|shape/.test(hay))return "creative";
+   if(/breath|calm|feeling|emotion|wellness|life skill|routine|kindness/.test(hay))return "wellness";
+   if(/movement|\bpe\b|exercise|dance|balance|motor/.test(hay))return "movement";
+   if(/math|number|count|addition|subtract|pattern/.test(hay))return "math";
+   if(/science|weather|nature|plant|animal|space|sink|float|discover|inquiry/.test(hay))return "science";
+   if(/history|social|community|map|place|civic/.test(hay))return "community";
+   if(/letter|word|abc|phonic|spell|read|story|literacy/.test(hay))return "literacy";
+   return a.group;
+ };
+ const list=source.filter(a=>group==="all"||classify(a)===group);
+ $("#appGrid").innerHTML=list.length?list.map((a,i)=>`<article class="app-card"><span class="app-icon">${a.icon}</span><div class="origin">Kinder Garden · ${esc(classify(a))}</div><h3>${esc(a.title)}</h3><p>${esc(a.desc)}</p><a class="btn primary" href="${a.url}">Open Activity</a></article>`).join(""):'<div class="empty">This garden is ready for its next learning tool.</div>';
 }
 function crecheItems(){
  const c=window.KhaemenesPreschoolCatalog;
@@ -1971,4 +2030,18 @@ $("#year").textContent=new Date().getFullYear();
 <script src="assets/vnv-ecosystem-menu.js" defer></script>
 <script src="assets/khaemenes-kindergarten-pin-prompt.js"></script>
 <script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-landing-toolbar.js" defer></script>
-</body></html>
+<script id="kinder-tool-shed-dialog-20261027">
+document.addEventListener("DOMContentLoaded",()=>{
+ const bar=document.getElementById("appFilters"),dialog=document.getElementById("appLibraryDialog"),close=document.getElementById("appLibraryClose"),title=document.getElementById("appLibraryTitle");
+ if(!bar||!dialog)return;
+ const labels={literacy:"ABC's & Reading",math:"Numbers & Math",creative:"Colors & Creativity",science:"Science & Discovery",movement:"PE & Movement",wellness:"Life Skills & Feelings",music:"Music & Rhythm",community:"People & Places",all:"Games & Practice"};
+ bar.addEventListener("click",e=>{
+   const b=e.target.closest("[data-app]");if(!b)return;
+   const group=b.dataset.app||"all"; if(typeof renderApps==="function")renderApps(group);
+   if(title)title.textContent=labels[group]||"Learning Tools";
+   if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","");
+ });
+ close?.addEventListener("click",()=>dialog.close());
+ dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
+});
+</script></body></html>
