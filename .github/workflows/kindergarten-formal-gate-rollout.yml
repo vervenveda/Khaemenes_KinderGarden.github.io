@@ -10,6 +10,8 @@ on:
       - '**/*.css'
       - 'DEPENDENCY_HARDENING.md'
       - 'scripts/validate-dependency-boundary.mjs'
+      - 'scripts/validate-sovereign-mirrors.mjs'
+      - 'assets/sovereign-mirror-manifest.json'
       - 'assets/khaemenes-kinder-mastery-gates.js'
       - 'curriculum/**'
       - 'scripts/inject-kindergarten-formal-gates.mjs'
@@ -28,6 +30,8 @@ on:
       - '**/*.css'
       - 'DEPENDENCY_HARDENING.md'
       - 'scripts/validate-dependency-boundary.mjs'
+      - 'scripts/validate-sovereign-mirrors.mjs'
+      - 'assets/sovereign-mirror-manifest.json'
       - 'assets/khaemenes-kinder-mastery-gates.js'
       - 'curriculum/**'
       - 'scripts/inject-kindergarten-formal-gates.mjs'
@@ -58,6 +62,9 @@ jobs:
           node --check curriculum/assets/app.js
           node --check assets/khaemenes-kinder-experience.js
           node --check assets/khaemenes-kinder-continuity.js
+          node --check assets/khaemenes-landing-toolbar.js
+          node --check assets/preschool-catalog.js
+          node --check assets/khaemenes-profile-bridge.js
       - name: Verify formal route coverage
         run: node scripts/inject-kindergarten-formal-gates.mjs --check
       - name: Validate local HTML links and assets
@@ -68,6 +75,8 @@ jobs:
         run: node scripts/validate-stos-deployment-readiness.mjs
       - name: Validate dependency boundary
         run: node scripts/validate-dependency-boundary.mjs
+      - name: Validate sovereign mirror provenance and integrity
+        run: node scripts/validate-sovereign-mirrors.mjs
       - name: Validate Academy mastery contract
         run: node scripts/validate-kindergarten-mastery-gates.mjs
       - name: Check whitespace integrity
