@@ -2265,7 +2265,7 @@ function kinderFormalAccess(){
   return Boolean(learner?.hasProfile && learner?.stageEligible!==false && learner?.guardianAuthorized);
 }
 function kinderFamilyUrl(){
-  return "/stos/khaemenes/family/";
+  return "https://vervenveda.com/Khaemenes_Academy.github.io/family/";
 }
 function weekLessonPreview(n){
   const unit=window.KHAE_KINDERGARTEN_DATA?.units?.find?.(u=>Number(u.unit||u.week)===Number(n));
@@ -2363,7 +2363,7 @@ function renderProfile(){
  const s=bridge.getSummary(),pinned=bridge.getPinnedActivities();
  if(s?.hasProfile){$("#profileGreeting").textContent=s.nickname?`Welcome to your Kinder Garden, ${s.nickname}.`:"Welcome back to My Garden.";$("#profileMessage").textContent="This page can see the browser-local Crechè continuity record. It does not transmit data or create an account.";$("#profileSummary").innerHTML=`<div class="profile-line"><span>Pathway</span><strong>${esc(s.pathway||"preschool")}</strong></div><div class="profile-line"><span>Pinned adventures</span><strong>${Number(s.pinnedCount||0)}</strong></div><div class="profile-line"><span>Visited adventures</span><strong>${Number(s.visitedCount||0)}</strong></div>`;}
  else{$("#profileMessage").textContent="No Crechè learner profile is stored in this browser yet. Kinder Garden still works normally; a profile is optional.";$("#profileSummary").innerHTML='<div class="empty">Use a Crechè child profile if you want favorites and continuity to follow into Kinder Garden.</div>';}
- if(Array.isArray(pinned)&&pinned.length){const c=window.KhaemenesPreschoolCatalog;$("#pinnedList").innerHTML=pinned.slice(0,12).map(pin=>{const id=pin?.id||pin?.activityId||"",x=c?.byId?.(id)||pin,file=x?.file||pin?.file||"",title=x?.title||pin?.title||id||"Pinned adventure",href=file?crecheUrl(file):"/stos/khaemenes/preschool/";return `<div class="pin"><strong>${esc(title)}</strong><a href="${href}">Open again →</a></div>`;}).join("");}
+ if(Array.isArray(pinned)&&pinned.length){const c=window.KhaemenesPreschoolCatalog;$("#pinnedList").innerHTML=pinned.slice(0,12).map(pin=>{const id=pin?.id||pin?.activityId||"",x=c?.byId?.(id)||pin,file=x?.file||pin?.file||"",title=x?.title||pin?.title||id||"Pinned adventure",href=file?crecheUrl(file):"https://vervenveda.com/Khaemenes_Preschool.github.io/";return `<div class="pin"><strong>${esc(title)}</strong><a href="${href}">Open again →</a></div>`;}).join("");}
 }
 
 function naibMessageFor(pos){
@@ -2407,7 +2407,7 @@ function renderNaibLearningTray(pos){
  kinder.slice(0,2).forEach((t,i)=>cards.push({icon:t.icon||"🌱",label:i===0?"Practice":"Explore",title:t.title,desc:t.desc,url:t.path,button:`Open ${i===0?"Practice":"Explore"} Tool`}));
  if(creche)cards.push({icon:creche.icon||"🌈",label:"Foundation",title:`Crechè · ${creche.title}`,desc:creche.desc||match?.reason||"A gentle foundation activity.",url:creche.url,button:"Open Crechè Adventure"});
  const creativeWeek=[8,14,30,31].includes(unit.n);
- cards.push(creativeWeek?{icon:unit.n===8||unit.n===14?"🎼":"🎨",label:"Create",title:unit.n===8||unit.n===14?"The Refrain":"Bazaar Art",desc:"Optional creative enrichment connected to this week's learning.",url:unit.n===8||unit.n===14?"/stos/refrain/":"/stos/bazaar-art/",button:"Open Creative Path"}:{icon:"☼",label:"Reset",title:"Aurora · Gentle Reset",desc:"Optional breathing or grounding when the learner needs a calm transition before returning to the formal lesson.",url:"/stos/aurora/",button:"Open Aurora"});
+ cards.push(creativeWeek?{icon:unit.n===8||unit.n===14?"🎼":"🎨",label:"Create",title:unit.n===8||unit.n===14?"The Refrain":"Bazaar Art",desc:"Optional creative enrichment connected to this week's learning.",url:unit.n===8||unit.n===14?"https://vervenveda.com/the_refrain.github.io/":"https://vervenveda.com/bazaarart.github.io/",button:"Open Creative Path"}:{icon:"☼",label:"Reset",title:"Aurora · Gentle Reset",desc:"Optional breathing or grounding when the learner needs a calm transition before returning to the formal lesson.",url:"https://vervenveda.com/aurora.github.io/",button:"Open Aurora"});
  target.innerHTML=cards.slice(0,5).map(c=>`<article class="naib-tray-card"><span class="tray-icon">${c.icon}</span><span class="tray-label">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.desc||"")}</p><a class="btn ${c.primary?"primary":"secondary"}" href="${c.url}">${esc(c.button)}</a></article>`).join("");
 }
 function openNaibAcademicReminder(reason="manual"){
