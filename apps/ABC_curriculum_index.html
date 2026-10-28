@@ -101,7 +101,12 @@
   }
 
   /* --- Tracing Garden --- */
-  #tracePanel{background:linear-gradient(180deg,#dff9fb,#f6e58d);}
+  #tracePanel{background:linear-gradient(180deg,#eaf8ff 0%,#fff8dc 52%,#e8f7e7 100%);color:#173f4a;}
+  #tracePanel .tool-head,#artPanel .tool-head{display:grid;grid-template-columns:52px 1fr 52px;align-items:center;gap:10px;width:min(920px,calc(100% - 24px));margin:12px auto 8px;padding:12px 14px;border:3px solid #fff;border-radius:14px;background:linear-gradient(90deg,#174f82,#0e9189);box-shadow:0 7px 18px #173f4a33;color:#fff;}
+  #tracePanel .tool-head h2,#artPanel .tool-head h2{margin:0;text-align:center;color:#fff;font-size:clamp(1.15rem,3vw,1.7rem);font-weight:600;}
+  #tracePanel .tool-head .closeBtn,#artPanel .tool-head .closeBtn{margin:0;justify-self:end;width:44px;height:44px;padding:0;border:2px solid #fff;border-radius:10px;background:#fff;color:#173f4a;font-size:0;cursor:pointer;}
+  #tracePanel .tool-head .closeBtn::after,#artPanel .tool-head .closeBtn::after{content:"✕";font-size:1.05rem;}
+  .tool-mark{width:44px;height:44px;display:grid;place-items:center;border:2px solid #fff;border-radius:10px;background:#ffd84f;color:#173f4a;font-size:1.3rem;}
   #traceCanvas{
     border:3px solid #22a6b3;border-radius:14px;background:#fff;
     touch-action:none;
@@ -126,7 +131,7 @@
   }
 
   /* --- Art Lab --- */
-  #artPanel{background:#CCE3FF;}
+  #artPanel{background:linear-gradient(180deg,#eaf4ff 0%,#f4edff 48%,#fff6df 100%);color:#173f4a;}
   #toolbar{
     display:flex;flex-wrap:wrap;justify-content:center;gap:8px;
     background:#fff;padding:10px;border-bottom:2px solid #ccc;
@@ -177,8 +182,7 @@
 
 <!-- ✏️ Tracing Garden -->
 <div class="panel" id="tracePanel">
-  <button class="closeBtn" onclick="closePanel('tracePanel')">Close ✖</button>
-  <h2>✏️ ABC’s & 123’s Tracing Garden 🌸</h2>
+  <div class="tool-head"><span class="tool-mark" aria-hidden="true">✏️</span><h2>ABC’s & 123’s Tracing Garden</h2><button class="closeBtn" onclick="closePanel('tracePanel')" aria-label="Close Tracing Garden">Close</button></div>
   <div id="garden"></div>
   <canvas id="traceCanvas" width="400" height="400"></canvas>
   <div id="traceButtons">
@@ -189,8 +193,7 @@
 
 <!-- 🎨 Art Lab -->
 <div class="panel" id="artPanel">
-  <button class="closeBtn" onclick="closePanel('artPanel')">Close ✖</button>
-  <h2>🎨 Pel™ — Personal Editing Lab (Kinder Garden)</h2>
+  <div class="tool-head"><span class="tool-mark" aria-hidden="true">🎨</span><h2>Pel™ · Personal Editing Lab</h2><button class="closeBtn" onclick="closePanel('artPanel')" aria-label="Close Personal Editing Lab">Close</button></div>
   <div id="toolbar">
     <button onclick="setTool('brush')">🖌 Brush</button>
     <button onclick="setTool('eraser')">🩹 Eraser</button>
@@ -220,7 +223,7 @@ const weeks=document.getElementById("weeks");
 weekList.forEach((t,i)=>{
   const b=document.createElement("button");
   b.textContent=`Week ${i+1}: ${t}`;
-  b.onclick=()=>alert(`${t} lesson coming soon!`);
+  b.onclick=()=>{window.location.href="https://vervenveda.com/Khaemenes_Preschool.github.io/apps/ABC_Story_Time/index.html";};
   weeks.appendChild(b);
 });
 
