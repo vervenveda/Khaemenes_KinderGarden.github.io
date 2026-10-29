@@ -6,6 +6,8 @@ on:
       - "tests/prek-kindergarten-full-journey.mjs"
       - "curriculum/lessons/unit-01/formal-content.html"
       - "graduation/**"
+      - "family/guardian-release/**"
+      - "assets/khaemenes-family-registry.js"
       - ".github/workflows/prek-kindergarten-full-journey.yml"
   workflow_dispatch:
 permissions:
