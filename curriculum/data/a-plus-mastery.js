@@ -358,7 +358,7 @@
       ["Art observation","Describes a visible, audible, tactile, or structural feature without treating personal preference as fact."],
       ["Creative intent","Creates an original art or music idea with a stated purpose."],
       ["Revision and evidence","Changes one feature after listening, viewing, testing, or receiving feedback.",true],
-      ["Respectful participation","Respects others' sensory boundaries and offers quiet, visual, or nonperformance participation options.",true],
+      ["Sensory access and consent","Respects others' sensory boundaries and recognizes quiet, visual, tactile, AAC, or nonperformance pathways as valid ways to demonstrate the learning target.",true],
       ["Presentation or documentation","Shares, records, or represents an artifact in an accessible form."],
       ["Reflection","Identifies one pattern, choice, or revision used in the finished work."]
     ],
