@@ -62,3 +62,24 @@ Verified for every Week 15-19:
 Special Week 18 boundary verified: daily retrieval/remediation evidence and Week 18 mastery do not themselves award the separate midyear milestone. The lesson and rubric both preserve the independent midyear authority and its own adult-observed evidence requirement.
 
 No source-level curriculum repair was warranted in this band. Keyword hits for participation in Week 16 occur in dignity/access context rather than mastery scoring. Band 15-19 is certified for instructional depth at source level; browser/runtime and the separate midyear demonstration remain distinct release gates.
+
+
+## Band certification - Weeks 20-24
+Status: SOURCE-LEVEL PASS (2026-10-28)
+
+Reviewed all five formal-content weekly arcs against the seven-dimension standard and formal mastery rubric bank.
+
+Verified for every Week 20-24:
+- five explicit misconception/correction cycles, five fresh-transfer checks, five evidence rules, and five daily evidence checkpoints;
+- accessible response pathways that preserve the academic target without making speech, handwriting, mobility, travel, purchases, hazardous handling, or personal disclosure prerequisites;
+- rubric-to-teaching alignment for story/source/cultural reasoning, evidence of living systems, water states/weather evidence, materials/stewardship decisions, and motion/transportation/engineering;
+- no generic participation criterion used to establish formal mastery.
+
+Additional integrity findings:
+- Week 20 protects source uncertainty, translation/retelling legitimacy, identity privacy, and sacred/restricted cultural material.
+- Week 21 requires multi-clue living-systems evidence and humane observation rather than proof-by-harm.
+- Week 22 explicitly distinguishes invisible water vapor from visible mist/cloud droplets and keeps hazardous demonstrations out of mastery requirements.
+- Week 23 requires local-rule reasoning, system/shared responsibility, and hazardous-waste/wildlife boundaries rather than placing environmental burden on children.
+- Week 24 requires repeated fair-test evidence, cautious conclusions, transportation privacy, and accessibility as an engineering design criterion.
+
+No student-facing curriculum repair was warranted. Isolated participation wording in Weeks 20 and 23 occurs in contextual/access language, not mastery scoring. Band 20-24 is certified for instructional depth at source level; browser/runtime certification remains a separate release gate.
