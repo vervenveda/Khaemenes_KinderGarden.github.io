@@ -41,3 +41,16 @@ Bubble 2 may test the home page and may repair nonvisual functional defects only
 The current end-to-end Preschool -> Kindergarten journey test reaches Academy Enrollment & Placement and programmatically accepts the existing grade prompt with "k". That proves stable identity and downstream Kindergarten authorization behavior, but it does not prove the founder-required scored entry assessment or its Kindergarten Preparatory/direct-Kindergarten branch.
 
 Until the original scoring authority is recovered, direct grade selection must remain classified as an unverified placement bypass rather than evidence that the entry assessment passed.
+
+
+## Deferred NAIB integration
+Founder direction recorded 2026-10-28: NAIB is the Academy administrative AI authority/module responsible for the placement decision. Recovery and certification of NAIB's placement-assessment integration is intentionally deferred because it crosses deeper Academy/AI administration architecture.
+
+This deferral does not waive the entry-placement invariant. During Bubble 2:
+- do not invent a cut score;
+- do not duplicate NAIB decision authority inside Kindergarten;
+- do not treat the current direct grade selector as NAIB evidence;
+- do not block independent learner-journey hardening on the deferred integration;
+- preserve the home-page design freeze.
+
+Bubble 2 may close its independent browser, storage, learner-isolation, guardian-authorization, reload, and mastery-protection work with NAIB placement integration explicitly listed as deferred follow-up.
