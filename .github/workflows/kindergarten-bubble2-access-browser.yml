@@ -1,0 +1,34 @@
+name: Kindergarten Bubble 2 Browser Access
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tests/kindergarten-bubble2-access-browser.mjs"
+      - "student-profile/**"
+      - "curriculum/lessons/unit-01/**"
+      - "assets/khaemenes-family-registry.js"
+      - ".github/workflows/kindergarten-bubble2-access-browser.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-access:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Academy.github.io
+          ref: main
+          path: shared-academy
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save --no-package-lock playwright
+      - run: npx playwright install chromium
+      - name: Certify 255px and keyboard learner access
+        run: node tests/kindergarten-bubble2-access-browser.mjs
