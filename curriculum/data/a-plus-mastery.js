@@ -60,7 +60,7 @@
       ["Inquiry","Distinguishes an observation from a guess and uses observation to support a simple prediction.",true],
       ["Maker / arts","Contributes to a nature artifact containing a repeating pattern."],
       ["Social-emotional","Practices patience, wonder, safe observation, and revision."],
-      ["Participation","Participates safely and kindly across the week."]
+      ["Reflection and transfer","Uses a Week 5 observation, beginning-sound idea, or repeating-pattern rule in a fresh example and communicates what changed, repeated, or was noticed."]
     ],
     6:[
       ["Weather communication","Uses accurate weather vocabulary and gives an evidence-based present observation.",true],
