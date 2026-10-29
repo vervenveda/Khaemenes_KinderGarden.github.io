@@ -246,6 +246,12 @@ h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.
   h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.hero h1 + .subtitle,.hero h1 span,.hero-title + .lead-heading{font-size:22px!important}
 }
 /* === End typography standard === */
+
+/* Academy Front Desk parity · lightweight geometry only; campus colors and functions are preserved. */
+:where(.card,.school,.campus-card,.path-card,.course-card,.feature-card){box-sizing:border-box;min-width:0}
+:where(.grid,.cards,.school-grid,.course-grid,.campus-grid){justify-content:center;align-items:stretch}
+:where(.card,.school,.campus-card,.path-card,.course-card,.feature-card) :where(a,button){border-radius:7px}
+:where(.card,.school,.campus-card,.path-card,.course-card,.feature-card) :where(.btn,.button,.card-action){box-sizing:border-box;min-height:42px;text-align:center;overflow-wrap:break-word}
 </style>
 <style id="kinder-landing-streamline-20261027">
 /* One Academy masthead, one quiet learning shortcut row; preserve lesson controls. */
