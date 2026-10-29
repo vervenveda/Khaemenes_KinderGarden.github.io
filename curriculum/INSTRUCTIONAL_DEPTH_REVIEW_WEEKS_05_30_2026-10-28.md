@@ -46,3 +46,19 @@ Verified for every Week 10-14:
 No lesson rewrite was warranted. Apparent label-count gaps were resolved by source inspection: the instructional functions are already present in the lesson text.
 
 Band 10-14 is certified for instructional depth at source level. Browser/runtime certification remains a separate release gate.
+
+
+## Band certification - Weeks 15-19
+Status: SOURCE-LEVEL PASS (2026-10-28)
+
+Reviewed all five formal-content weekly arcs against the seven-dimension standard and the formal mastery rubric bank.
+
+Verified for every Week 15-19:
+- five explicit misconception/correction cycles, five fresh-transfer checks, five evidence rules, and five daily evidence checkpoints;
+- substantial accessible-response pathways rather than handwriting, speech, speed, mobility, possessions, or public performance as hidden prerequisites;
+- rubric-to-teaching alignment for measurement/engineering, economic reasoning/dignity, light/shadows/seasonal sky, midyear retrieval/remediation, and goals/strategy/growth;
+- no generic participation criterion used to establish formal mastery.
+
+Special Week 18 boundary verified: daily retrieval/remediation evidence and Week 18 mastery do not themselves award the separate midyear milestone. The lesson and rubric both preserve the independent midyear authority and its own adult-observed evidence requirement.
+
+No source-level curriculum repair was warranted in this band. Keyword hits for participation in Week 16 occur in dignity/access context rather than mastery scoring. Band 15-19 is certified for instructional depth at source level; browser/runtime and the separate midyear demonstration remain distinct release gates.
