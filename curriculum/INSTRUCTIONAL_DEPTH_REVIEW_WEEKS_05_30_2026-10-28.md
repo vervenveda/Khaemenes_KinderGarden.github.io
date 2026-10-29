@@ -83,3 +83,36 @@ Additional integrity findings:
 - Week 24 requires repeated fair-test evidence, cautious conclusions, transportation privacy, and accessibility as an engineering design criterion.
 
 No student-facing curriculum repair was warranted. Isolated participation wording in Weeks 20 and 23 occurs in contextual/access language, not mastery scoring. Band 20-24 is certified for instructional depth at source level; browser/runtime certification remains a separate release gate.
+
+
+## Band certification - Weeks 25-30
+Status: SOURCE-LEVEL PASS (2026-10-28)
+
+Reviewed all six formal-content weekly arcs against the seven-dimension standard and formal mastery rubric bank.
+
+Verified for every Week 25-30:
+- five explicit misconception/correction cycles, five fresh-transfer checks, and five evidence rules separating guided practice from independent evidence;
+- Week 25 uses five explicit daily evidence checkpoints; Weeks 26-30 use the earlier five-day recording path plus a Practice Reflection Checklist explicitly marked Not Formal Mastery;
+- accessible response and safety/privacy/dignity boundaries are integrated into the teaching;
+- rubric-to-teaching alignment for work/tools/community systems, symbols/civic belonging, number stories, health/food/body context, movement/balance, and art/music/pattern reasoning.
+
+One mastery-language repair was made before certification:
+- Week 30 criterion title Respectful participation was renamed Sensory access and consent. The criterion now explicitly recognizes quiet, visual, tactile, AAC, or nonperformance pathways as valid demonstrations of the learning target. This removes a possible compliance interpretation while preserving sensory-boundary protections.
+
+No other student-facing lesson rewrite was warranted. Participation wording inside Weeks 26-30 lesson text occurs in practice/access context and does not itself award mastery.
+
+Band 25-30 is certified for instructional depth at source level. Browser/runtime certification remains separate.
+
+
+## Bubble 1 closure - 36-week instructional-depth audit
+Status: SOURCE-LEVEL CURRICULUM AUDIT COMPLETE
+
+The previously focused Week 01-04 and Week 31-36 review artifacts, together with the completed Week 05-09, 10-14, 15-19, 20-24, and 25-30 passes, now provide source-level instructional-depth coverage across the full 36-week Kindergarten course.
+
+Repairs made during the middle-band audit were deliberately narrow:
+1. Week 05 generic Participation mastery criterion -> Reflection and transfer.
+2. Week 30 Respectful participation criterion -> Sensory access and consent.
+
+No wholesale lesson replacement, route migration, learner-record change, guardian-authority change, or 80 percent mastery-threshold change was performed.
+
+This closes Forensic Bubble 1 at source level only. Browser journey, canonical-route runtime, child-facing daily-flow, deployment/offline, and recovered entry-placement assessment certification remain separate work.
