@@ -160,6 +160,23 @@ try{
  assert.deepEqual(original,[0]);
  console.log("PASS first lesson sibling separation and same-tab editing guard");
 
+ // Bubble 2 two-child isolation: authorize/practice for the sibling must never alter the first learner's record.
+ const siblingKey="kg_u01_interactive_v3:"+encodeURIComponent(ids.siblingId);
+ await page.locator('[data-kg-complete="0"]').click();
+ assert.match(await page.locator("#kgProgressLabel").innerText(),/1 of 5 days complete/);
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,siblingKey),[0]);
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,key),[0],"sibling practice must not mutate first learner progress");
+ await page.locator('[data-kg-complete="1"]').click();
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,siblingKey),[0,1]);
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,key),[0],"second sibling day must remain isolated");
+ await page.evaluate(id=>window.KhaemenesFamilyRegistry.setActive({learnerId:id}),ids.learnerId);
+ await page.reload({waitUntil:"domcontentloaded"});
+ await page.locator("#kgProgressLabel").waitFor({state:"visible",timeout:10000});
+ assert.match(await page.locator("#kgProgressLabel").innerText(),/1 of 5 days complete/);
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,key),[0]);
+ assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).completedDays,siblingKey),[0,1]);
+ console.log("PASS two authorized siblings retain independent Week 1 practice records after learner switch and reload");
+
  // Step 5: Same learner reselected; incomplete Kindergarten graduation remains locked.
  await page.evaluate(id=>window.KhaemenesFamilyRegistry.setActive({learnerId:id}),ids.learnerId);
  await page.goto(kgrad,{waitUntil:"domcontentloaded"});
