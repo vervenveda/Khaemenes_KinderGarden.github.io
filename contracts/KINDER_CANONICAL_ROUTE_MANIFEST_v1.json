@@ -19,6 +19,15 @@
     "never bulk synchronize divergent pairs",
     "preserve learner scoped mastery authority",
     "preserve entry placement assessment and preparatory pathway",
-    "do not migrate learner records during route cleanup"
-  ]
+    "do not migrate learner records during route cleanup",
+    "convert legacy assessment shells only after caller audit and regression coverage confirms redirect safety"
+  ],
+  "legacyAssessmentPattern": "assessments/unit-NN-assessment.html",
+  "legacyAssessmentRole": "compatibility-gate-shell-pending-redirect-conversion",
+  "auditFindings": {
+    "lessonCompatibility": "Sampled Units 01, 02, 18, 19, 31, and 36 are redirect-only wrappers to canonical curriculum lessons; query/hash preservation is present.",
+    "assessmentCompatibility": "Sampled Units 01, 02, 18, 19, 31, and 36 share the same non-redirect root gate shell blob and do not forward to canonical curriculum assessments.",
+    "dataDivergence": "Root data/course-data.json is the populated curriculum source while curriculum/data/course-data.json is empty; do not synchronize.",
+    "appDivergence": "Root and curriculum assets/app.js target different runtime routing environments; do not synchronize."
+  }
 }
