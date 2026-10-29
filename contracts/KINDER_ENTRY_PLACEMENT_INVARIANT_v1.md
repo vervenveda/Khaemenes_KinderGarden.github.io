@@ -30,3 +30,14 @@ Until the original assessment is recovered, do not create a substitute scored di
 Preschool or unenrolled learner -> entry assessment -> verified result -> exactly one recommended pathway -> stable learner ID -> appropriate family placement -> Kindergarten guardian authorization only when entering formal Kindergarten -> learner-specific records remain isolated.
 
 A second fictional learner on the same device must be able to receive a different pathway without changing the first learner's result or records.
+
+
+## Home-page design freeze for Bubble 2
+Founder direction recorded 2026-10-28: no design changes are authorized on the Kindergarten home page during the learner-journey/browser-certification pass.
+
+Bubble 2 may test the home page and may repair nonvisual functional defects only when necessary, but must not change its visual/layout/content design, typography, palette, header, toolbar, cards, spacing, or decorative treatment.
+
+## Browser-journey finding
+The current end-to-end Preschool -> Kindergarten journey test reaches Academy Enrollment & Placement and programmatically accepts the existing grade prompt with "k". That proves stable identity and downstream Kindergarten authorization behavior, but it does not prove the founder-required scored entry assessment or its Kindergarten Preparatory/direct-Kindergarten branch.
+
+Until the original scoring authority is recovered, direct grade selection must remain classified as an unverified placement bypass rather than evidence that the entry assessment passed.
