@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "audit-protection",
+  "canonicalHome": "index.html",
+  "canonicalToday": "today/index.html",
+  "canonicalProfile": "student-profile/index.html",
+  "canonicalCurriculum": "curriculum/index.html",
+  "canonicalLessonPattern": "curriculum/lessons/unit-NN/index.html",
+  "canonicalAssessmentPattern": "curriculum/assessments/unit-NN-assessment.html",
+  "legacyLessonPattern": "lessons/unit-NN/index.html",
+  "legacyLessonRole": "redirect-only",
+  "protectedDivergence": [
+    "data/course-data.json versus curriculum/data/course-data.json",
+    "assets/app.js versus curriculum/assets/app.js",
+    "root printables versus curriculum printables"
+  ],
+  "rules": [
+    "audit callers before aliasing divergent files",
+    "never bulk synchronize divergent pairs",
+    "preserve learner scoped mastery authority",
+    "preserve entry placement assessment and preparatory pathway",
+    "do not migrate learner records during route cleanup"
+  ]
+}
