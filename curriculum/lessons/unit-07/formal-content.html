@@ -60,6 +60,7 @@ $$(".save-day").forEach(btn=>btn.addEventListener("click",()=>{const day=Number(
 waitForGate(()=>{renderProgress();let first=1;for(let d=1;d<=DAYS;d++){if(G.canOpenDay(UNIT,d)&&!G.dayEvidence(UNIT,d).completed){first=d;break}if(G.dayEvidence(UNIT,d).completed)first=Math.min(DAYS,d+1)}openDay(first)});window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",renderProgress);
 })();
 </script>
-<script src="../../../assets/vnv-beta-link.js" defer></script>
+
+<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body>
 </html>

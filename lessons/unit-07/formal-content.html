@@ -59,6 +59,7 @@ $$(".save-day").forEach(btn=>btn.addEventListener("click",()=>{const day=Number(
 waitForGate(()=>{renderProgress();let first=1;for(let d=1;d<=DAYS;d++){if(G.canOpenDay(UNIT,d)&&!G.dayEvidence(UNIT,d).completed){first=d;break}if(G.dayEvidence(UNIT,d).completed)first=Math.min(DAYS,d+1)}openDay(first)});window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",renderProgress);
 })();
 </script>
-<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
-<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body>
+
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../../assets/khaemenes-kinder-stos-bridge-v1.js"></script><script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+</body>
 </html>

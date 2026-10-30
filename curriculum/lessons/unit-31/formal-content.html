@@ -145,7 +145,7 @@
     <div class="shell">© <span id="year"></span> Jennifer Kay Pearl · Khaemenes Academy · In-house curriculum · No outside dependencies</div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-<script src="../../../assets/vnv-beta-link.js" defer></script>
+
 <script>
 (()=>{"use strict";const UNIT=31,G=window.KhaemenesKinderMasteryGates;
 const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
@@ -167,5 +167,6 @@ lessons.forEach((p,i)=>{p.dataset.panel=String(i+1);const d=i+1,box=document.cre
 qa(".save-day").forEach(b=>b.addEventListener("click",()=>{const day=Number(b.dataset.day),feedback=q('[data-save-feedback="'+day+'"]');const adultCheck=q('[data-adult-confirm="'+UNIT+"-"+day+'"]');if(!adultCheck||!adultCheck.checked){feedback.textContent="Please ask an authorized grown-up to observe the learning and confirm the evidence first.";return;}try{G.recordDayEvidence({unit:UNIT,day,evidenceType:"capstone-daily-learning-evidence",source:"capstone-sequential-learning-path",completed:true,adultAffirmed:adultCheck.checked});feedback.textContent="Day "+day+" evidence saved. It opens the next eligible day; it does not award mastery.";refresh();}catch(e){feedback.textContent="Evidence not saved: "+String(e&&e.message||e);}}));
 window.addEventListener("khaemenes-kindergarten-daily-evidence-changed",refresh);window.addEventListener("khaemenes-kindergarten-mastery-changed",refresh);window.addEventListener("khaemenes-kindergarten-formal-gate-open",refresh);refresh();})();
 </script>
+<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body>
 </html>

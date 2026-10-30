@@ -12,5 +12,6 @@ function updateDisplay(){display.textContent=current;dotsDiv.innerHTML="";for(le
 function changeNumber(delta){current=Math.min(maxNum,Math.max(1,current+delta));updateDisplay()}
 for(let n=1;n<=maxNum;n++){const b=document.createElement("button");b.type="button";b.className="number-chip";b.textContent=n;b.setAttribute("aria-label","Show number "+n);b.onclick=()=>{current=n;updateDisplay()};strip.appendChild(b)}updateDisplay();
 </script>
-<script src="/stos/khaemenes/kindergarten/assets/vnv-beta-link.js" defer></script>
-<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script></body></html>
+
+<!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="../assets/khaemenes-kinder-stos-bridge-v1.js"></script><script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+</body></html>
