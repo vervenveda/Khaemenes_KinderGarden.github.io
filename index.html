@@ -2133,7 +2133,7 @@ function renderApps(group="all"){
 function crecheItems(){
  const c=window.KhaemenesPreschoolCatalog;
  if(!c||typeof c.mentorActivities!=="function")return null;
- return c.mentorActivities().filter(x=>{const ages=x?.mentor?.ages||[];return ages.includes("4-5")||ages.includes("5-6");});
+ return c.mentorActivities().filter(x=>{const ages=Array.isArray(x?.ages)?x.ages:(Array.isArray(x?.mentor?.ages)?x.mentor.ages:[]);return ages.includes("4-5")||ages.includes("5-6");});
 }
 function renderCreche(items,cat="all"){
  const list=items.filter(x=>cat==="all"||x.category===cat);
