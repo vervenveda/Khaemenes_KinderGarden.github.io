@@ -1509,6 +1509,76 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
 
 .kinder-enrolled-tools{margin-top:16px;padding:14px 16px;border:1px solid rgba(54,95,72,.16);border-radius:14px;background:#fffdf1;display:grid;gap:7px}.kinder-enrolled-tools[hidden]{display:none!important}.kinder-enrolled-tools strong{font-size:15px}.kinder-enrolled-tools span,.kinder-enrolled-tools small{font-size:13px;line-height:1.5}.kinder-enrolled-tools>div{display:flex;flex-wrap:wrap;gap:8px}.kinder-enrolled-tools button{min-height:44px;padding:8px 12px;border:1px solid rgba(54,95,72,.2);border-radius:9px;background:#fff;color:#293a36;font:inherit}.kinder-enrolled-tools button:first-child{background:#ffd54f}.kinder-enrolled-tools button:disabled{opacity:.68}
 </style>
+
+<style id="kinder-play-12-contrast-20261031">
+/* PLAY-only: twelve destinations, high contrast, a symmetric accessible ring.
+   Keep existing sitewide navigation, learner gates, ticker and toolbar untouched. */
+body #student .garden-scene{min-height:620px!important}
+body #student .garden-scene .scene-link,
+body #student .garden-scene .scene-link small,
+body #student .garden-scene .scene-link .big{
+  color:#102738!important;
+  text-shadow:none!important;
+}
+body #student .garden-scene .scene-link{
+  z-index:5!important;
+  min-height:72px!important;
+  width:88px!important;
+  min-width:88px!important;
+  max-width:88px!important;
+  box-sizing:border-box!important;
+  border:2px solid #fff!important;
+  border-radius:7px!important;
+  text-align:center!important;
+  padding:7px 4px!important;
+  line-height:1.2!important;
+  text-decoration:none!important;
+  box-shadow:0 5px 12px rgba(16,39,56,.23)!important;
+}
+body #student .garden-scene .scene-link:focus-visible{
+  outline:3px solid #102738!important;
+  outline-offset:3px!important;
+}
+/* Alternating light, saturated backgrounds with deep-ink labels. */
+body #student .garden-scene .scene-link.one{background:#f68bc4!important}
+body #student .garden-scene .scene-link.five{background:#ffae64!important}
+body #student .garden-scene .scene-link.two{background:#8ed9f6!important}
+body #student .garden-scene .scene-link.six{background:#a4e66d!important}
+body #student .garden-scene .scene-link.three{background:#61ddc9!important}
+body #student .garden-scene .scene-link.four{background:#ffd75b!important}
+body #student .garden-scene .scene-link.seven{background:#ffe18b!important}
+body #student .garden-scene .scene-link.eight{background:#b6a2fa!important}
+body #student .garden-scene .scene-link.nine{background:#6be0ce!important}
+body #student .garden-scene .scene-link.ten{background:#ffcb69!important}
+body #student .garden-scene .scene-link.eleven{background:#c3acfb!important}
+body #student .garden-scene .scene-link.twelve{background:#ffb185!important}
+/* Six mirrored pairs; use the side corridors for the central PLAY region. */
+body #student .scene-link.three{left:96px!important;right:auto!important;top:24px!important;bottom:auto!important}
+body #student .scene-link.four{left:auto!important;right:96px!important;top:24px!important;bottom:auto!important}
+body #student .scene-link.one{left:24px!important;right:auto!important;top:126px!important;bottom:auto!important}
+body #student .scene-link.five{left:auto!important;right:24px!important;top:126px!important;bottom:auto!important}
+body #student .scene-link.two{left:24px!important;right:auto!important;top:228px!important;bottom:auto!important}
+body #student .scene-link.six{left:auto!important;right:24px!important;top:228px!important;bottom:auto!important}
+body #student .scene-link.nine{left:24px!important;right:auto!important;top:330px!important;bottom:auto!important}
+body #student .scene-link.ten{left:auto!important;right:24px!important;top:330px!important;bottom:auto!important}
+body #student .scene-link.eleven{left:24px!important;right:auto!important;top:432px!important;bottom:auto!important}
+body #student .scene-link.twelve{left:auto!important;right:24px!important;top:432px!important;bottom:auto!important}
+body #student .scene-link.seven{left:96px!important;right:auto!important;top:auto!important;bottom:26px!important}
+body #student .scene-link.eight{left:auto!important;right:96px!important;top:auto!important;bottom:26px!important}
+@media(max-width:560px){
+  body #student .garden-scene{min-height:630px!important}
+  body #student .garden-scene .scene-link{
+    width:82px!important;min-width:82px!important;max-width:82px!important;
+    padding:5px 3px!important;
+  }
+  body #student .scene-link.three,body #student .scene-link.seven{left:calc(50% - 87px)!important}
+  body #student .scene-link.four,body #student .scene-link.eight{right:calc(50% - 87px)!important}
+  body #student .scene-link.one,body #student .scene-link.two,
+  body #student .scene-link.nine,body #student .scene-link.eleven{left:12px!important}
+  body #student .scene-link.five,body #student .scene-link.six,
+  body #student .scene-link.ten,body #student .scene-link.twelve{right:12px!important}
+}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
@@ -1607,6 +1677,10 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
         <a class="scene-link green six" href="#families" aria-label="Go to family corner"><span class="big">👨‍👩‍👧</span><small>Family Corner</small></a>
         <a class="scene-link yellow seven" href="#mygarden" aria-label="Open my garden section"><span class="big">🌼</span><small>My Garden</small></a>
         <a class="scene-link blue eight" href="#apps" aria-label="Open learning toolbox"><span class="big">🎨</span><small>Game Box</small></a>
+        <a class="scene-link kinder-extra nine" href="apps/ABC_spelling_soup_index.html" aria-label="Play ABC Spelling Soup"><span class="big">🥣</span><small>Spelling Soup</small></a>
+        <a class="scene-link kinder-extra ten" href="apps/math-garden_index.html" aria-label="Play Math Garden"><span class="big">🌼</span><small>Math Garden</small></a>
+        <a class="scene-link kinder-extra eleven" href="apps/sink-or-float_index.html" aria-label="Explore Sink or Float"><span class="big">🛶</span><small>Sink or Float</small></a>
+        <a class="scene-link kinder-extra twelve" href="apps/Weather_wizard_index.html" aria-label="Play Weather Wizard"><span class="big">🪄</span><small>Weather Wizard</small></a>
 
         </div>
         <div class="garden-caption">Tap a garden bubble to jump to games, weekly lessons, Mentor help, or your family tools.</div>
