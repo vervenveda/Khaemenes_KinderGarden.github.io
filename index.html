@@ -252,7 +252,6 @@ h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.
 .hero-copy{min-width:0}
 @media(max-width:560px){.kinder-quick-links{gap:.4rem;padding:.6rem}.kinder-quick-links a,.kinder-menu-trigger{font-size:.78rem;padding:.5rem .55rem;min-height:44px}.hero-inner{padding-top:28px}}
 </style>
-<link rel="stylesheet" href="assets/khaemenes-global-header.css">
 <link rel="stylesheet" href="assets/vnv-ecosystem-menu.css">
 
 <link rel="stylesheet" href="assets/khaemenes-landing-standard.css">
@@ -1512,22 +1511,6 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
 </style>
 </head>
 <body id="top">
-<header data-khae-header class="khae-global-campus-header">
-  <div data-khae-header-inner>
-    <a data-khae-brand href="https://vervenveda.com/Khaemenes_Academy.github.io/" aria-label="Khaemenes Academy home">
-      <span data-khae-brand-mark>K</span>
-      <span><strong data-khae-brand-name>Khaemenes Kinder Garden</strong><small data-khae-brand-sub>Kindergarten · Plant · Learn · Grow · Bloom</small></span>
-    </a>
-    <nav data-khae-nav aria-label="Academy global navigation">
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Academy Home</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/student/">Student</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/teacher-admin/">Teacher</a>
-    </nav>
-    <div data-khae-actions><a data-khae-secondary href="student-profile/">Student Profile</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family</a></div>
-    <div data-vnv-ecosystem-slot aria-label="Ecosystem menu"></div>
-  </div>
-</header>
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
 <div class="garden-decor" aria-hidden="true"><span class="deco-butterfly">🦋</span><span class="deco-ladybug">🐞</span><span class="deco-leaf">🍃</span><span class="deco-flower">🌼</span></div>
 <div class="kinder-quick-links" aria-label="Kindergarten learning shortcuts">
@@ -2439,7 +2422,6 @@ $("#year").textContent=new Date().getFullYear();
 </script>
 <script src="assets/khaemenes-kinder-experience.js"></script>
 <!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="assets/khaemenes-kinder-stos-bridge-v1.js"></script>
-<script src="assets/vnv-ecosystem-menu.js" defer></script>
 <script src="assets/khaemenes-kindergarten-pin-prompt.js"></script>
 <script src="assets/khaemenes-landing-toolbar.js" defer></script>
 <script id="kinder-tool-shed-dialog-20261027">
@@ -2459,5 +2441,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script><script src="https://vervenveda.com/assets/vnv-333-ticker.js"></script>
 <script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
 <script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:10});</script>
+<script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
+<script>VNV_HEADER.mount({"title":"Khaemenes Kinder Garden","subtitle":"Kindergarten · Plant · Learn · Grow · Bloom","icon":"K","home":"https://vervenveda.com/Khaemenes_Academy.github.io/","actions":[{"label":"Academy Home","href":"https://vervenveda.com/Khaemenes_Academy.github.io/"},{"label":"Student Profile","href":"student-profile/"},{"label":"Family","href":"https://vervenveda.com/Khaemenes_Academy.github.io/family/"},{"label":"Teacher","href":"https://vervenveda.com/Khaemenes_Academy.github.io/teacher-admin/"},{"label":"Elementary","href":"https://vervenveda.com/Khaemenes_Elementary.github.io/"}]});</script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body></html>
