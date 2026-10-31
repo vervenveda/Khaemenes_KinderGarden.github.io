@@ -1579,6 +1579,34 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
   body #student .scene-link.ten,body #student .scene-link.twelve{right:12px!important}
 }
 </style>
+<style id="kinder-week-gate-baseline-20261031">
+/* Keep every locked/mastered week action on the same baseline across each grid row.
+   Do not change status, gating, card links, or expanded lesson details. */
+#curriculum .term-week-grid{align-items:stretch!important;}
+#curriculum .term-week-grid > .unit-card:not(.current){
+ display:flex!important;
+ flex-direction:column!important;
+ align-items:stretch!important;
+ box-sizing:border-box!important;
+ height:100%!important;
+ min-height:138px!important;
+}
+#curriculum .term-week-grid > .unit-card:not(.current) > .gate-state{
+ margin-top:auto!important;
+ flex-shrink:0!important;
+ align-self:stretch!important;
+ display:flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ min-height:34px!important;
+ width:100%!important;
+ box-sizing:border-box!important;
+ text-align:center!important;
+}
+#curriculum .term-week-grid > .unit-card:not(.current) > .unit-question{
+ margin-bottom:12px!important;
+}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
