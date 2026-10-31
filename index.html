@@ -1607,6 +1607,35 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
  margin-bottom:12px!important;
 }
 </style>
+<style id="kinder-little-wonder-activity-20261031">
+/* Wonder-stage: accessible guided activities, never formal mastery evidence. */
+#today .daily-card{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important}
+#today .wonder-stage{
+ width:min(100%,420px);margin:18px auto 12px;padding:18px;
+ background:#fff8e8!important;color:#193549!important;
+ border:2px solid #fff!important;border-radius:7px!important;
+ box-shadow:0 7px 22px rgba(20,33,58,.17);box-sizing:border-box;
+}
+#today .wonder-stage *,#today .wonder-stage h4,#today .wonder-stage li{color:#193549!important;text-shadow:none!important}
+#today .wonder-art{
+ display:grid;place-items:center;width:100%;min-height:110px;
+ margin:0 auto 12px;border-radius:7px;font-size:64px;line-height:1;
+}
+#today .wonder-stage h4{font-family:inherit;font-weight:444;font-size:18px;line-height:1.35;margin:0 0 12px}
+#today .wonder-steps{padding-left:1.45em;margin:0 0 16px;text-align:left;line-height:1.6;font-size:15px}
+#today .wonder-steps li+li{margin-top:5px}
+#today .wonder-stage .wonder-done{
+ display:block!important;width:100%;min-height:44px!important;padding:10px 14px!important;
+ margin:0!important;border:2px solid #193549!important;border-radius:7px!important;
+ background:#ffdc61!important;color:#193549!important;font-weight:444!important;
+ cursor:pointer;
+}
+#today .wonder-stage .wonder-done:disabled{
+ background:#d7f5d5!important;color:#193549!important;opacity:1!important;cursor:default;
+}
+#today .wonder-stage .wonder-done:focus-visible{outline:3px solid #193549!important;outline-offset:3px}
+@media(max-width:560px){#today .wonder-stage{padding:13px;margin-top:14px}#today .wonder-art{min-height:84px;font-size:50px}}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
@@ -1813,7 +1842,7 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
 
 <section class="section section-alt" id="mygarden"><div class="shell"><div class="section-heading"><p class="eyebrow">Academy Learner Continuity</p><h2>My Garden follows the child forward.</h2><p>Khaemenes Home carries the learner into Kinder Garden through the protected Academy continuity service. Browser storage may keep a short resilience copy, while the commissioned Khaemenes Account Cloud is the canonical family and learner record.</p></div><div class="profile-wrap"><article class="profile-card"><h3 id="profileGreeting">My Garden</h3><p id="profileMessage">Checking this browser for a Crechè learner profile…</p><div class="profile-summary" id="profileSummary"></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè Profile & Favorites</a><a class="btn secondary" href="student-profile/">My Full Kindergarten Profile →</a><a class="btn secondary" href="graduation/">✨ The Lantern Bridge · Graduation</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Next: Elementary School</a></div></article><article class="pinned-card"><h3>Pinned Crechè Adventures</h3><p>Favorites pinned in Crechè can reappear here when the shared local learner record is available.</p><div class="pinned-list" id="pinnedList"><div class="empty">No pinned activities are visible yet.</div></div></article></div></div></section>
 
-<section class="section" id="today"><div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's little wonder.</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div></section>
+<section class="section" id="today"><div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's little wonder.</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><div class="wonder-stage" id="wonderStage" aria-live="polite" aria-atomic="true"></div><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div></section>
 
 <section class="section final"><div class="shell"><p class="eyebrow" style="color:#fff1c7">A Kinder Garden Promise</p><h2>Kindness is planted. Curiosity is watered. Strong foundations are grown with room to bloom.</h2><p>The formal curriculum gives the year structure. NAIB keeps the learner oriented to one academic step at a time. Crechè continuity preserves familiar play, and the wider learning ecosystem provides practice without replacing mastery. Families and educators remain the people who know the child best.</p><div class="hero-actions" style="justify-content:center"><a class="btn secondary" href="curriculum/index.html">Open the Curriculum</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Continue to Elementary School</a></div></div></section>
 </main>
@@ -2475,7 +2504,37 @@ function maybeShowNaibReminder(){
 function refreshAcademicUI(){renderUnits(document.querySelector("#unitFilters .chip.active")?.dataset.term||"all");renderAcademicPlace();refreshHeroProfileButton();renderKinderMentor();}
 
 const wonders=[["Look closely at one leaf.","Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words."],["Count five things in nature.","Find five leaves, stones, flowers, clouds, or birds. Count slowly and carefully."],["Make a butterfly picture.","Fold a paper shape, add two wings, then decorate both sides with bright colors and patterns."],["Tell a three-sentence story.","Choose an animal, a place, and one kind action. Put them together into a tiny story."],["Listen for three sounds.","Close your eyes with a grown-up nearby. Name three sounds you can hear around you."],["Find a shape outdoors.","Look for a circle, square, triangle, or rectangle in the world around you."],["Practice one kind sentence.","Try saying: May I help you? Thank you. I am sorry. Would you like to play?"],["Move like an animal.","Hop like a rabbit, stretch like a cat, flap like a bird, and walk slowly like a turtle."],["Mix two colors.","Use paint, crayons, or imagination. What new color appears when two colors meet?"],["Ask one big question.","Choose something you wonder about and ask why, how, what, where, or when."]];
-function setWonder(i){const w=wonders[i%wonders.length];$("#dailyTitle").textContent=w[0];$("#dailyText").textContent=w[1];}
+const wonderActivities=[
+ {icon:"🍃",color:"#d7f5d5",question:"What do you notice?",steps:["Find a leaf with a grown-up.","Look at its edges and veins.","Draw the leaf or tell someone about it."]},
+ {icon:"🌼",color:"#fff0b4",question:"Can you count to five?",steps:["Find five safe things in nature.","Point to each one as you count.","Show five fingers when you finish."]},
+ {icon:"🦋",color:"#d8eaff",question:"Make two colorful wings!",steps:["Fold a piece of paper in half.","Draw a wing on each side.","Color matching or different patterns."]},
+ {icon:"📖",color:"#f9d8eb",question:"Tell your own little story.",steps:["Choose a favorite animal.","Imagine somewhere it could visit.","Tell a beginning, middle, and ending."]},
+ {icon:"🎵",color:"#d1f4f1",question:"What can your ears hear?",steps:["Sit comfortably with a grown-up.","Listen to the sounds around you.","Name or imitate three different sounds."]},
+ {icon:"🔺",color:"#ffe0c2",question:"Be a shape detective!",steps:["Choose a circle, square, or triangle.","Look for it in a safe place.","Point it out and describe its shape."]},
+ {icon:"💛",color:"#fff0b4",question:"Kind words make a difference.",steps:["Choose one kind sentence.","Practice saying it out loud.","Try it with a family member or friend."]},
+ {icon:"🐇",color:"#d7f5d5",question:"Let's move like animals!",steps:["Hop gently like a rabbit.","Stretch slowly like a cat.","Flap like a bird and walk like a turtle."]},
+ {icon:"🎨",color:"#f9d8eb",question:"Discover a new color.",steps:["Choose two different colors.","Try overlapping them on paper.","Name the color you see."]},
+ {icon:"❔",color:"#d8eaff",question:"Big questions begin discoveries!",steps:["Choose something that makes you curious.","Ask why, how, or what.","Share an idea with your grown-up."]}
+];
+function setWonder(i){
+ const n=((i%wonders.length)+wonders.length)%wonders.length;
+ const w=wonders[n], activity=wonderActivities[n];
+ $("#dailyTitle").textContent=w[0];
+ $("#dailyText").textContent=w[1];
+ const stage=$("#wonderStage");
+ if(!stage)return;
+ stage.replaceChildren();
+ const art=document.createElement("div");
+ art.className="wonder-art";art.textContent=activity.icon;art.style.backgroundColor=activity.color;
+ art.setAttribute("aria-hidden","true");
+ const prompt=document.createElement("h4");prompt.textContent=activity.question;
+ const steps=document.createElement("ol");steps.className="wonder-steps";
+ activity.steps.forEach(step=>{const li=document.createElement("li");li.textContent=step;steps.appendChild(li)});
+ const done=document.createElement("button");done.type="button";done.className="wonder-done";done.textContent="🌟 I Did It!";
+ done.addEventListener("click",()=>{done.textContent="✓ Wonderful exploring!";done.disabled=true;stage.classList.add("wonder-complete")});
+ stage.classList.remove("wonder-complete");
+ stage.append(art,prompt,steps,done);
+}
 function randomWonder(){setWonder(Math.floor(Math.random()*wonders.length));const t=$("#toast");t.textContent="A new little wonder is ready.";t.classList.add("show");clearTimeout(randomWonder.timer);randomWonder.timer=setTimeout(()=>t.classList.remove("show"),1700);}
 renderUnits();renderApps();setupCreche();renderProfile();renderKinderMentor();refreshHeroProfileButton();renderAcademicPlace();setWonder(Math.floor(Date.now()/86400000));maybeShowNaibReminder();
 $("#unitFilters").addEventListener("click",e=>{const b=e.target.closest("[data-term]");if(!b)return;$$("#unitFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderUnits(b.dataset.term);});
