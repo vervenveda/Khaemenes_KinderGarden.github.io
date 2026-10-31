@@ -32,13 +32,6 @@ a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cur
 .utility{background:linear-gradient(90deg,#244f37,#2f7140,#244f37);color:#eef9f0;border-bottom:1px solid rgba(255,255,255,.12)}
 .utility .shell{min-height:38px;display:flex;align-items:center;justify-content:center;gap:1.2rem;font-size:.78rem;text-align:center}
 .utility-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.9rem}.utility-links a{color:#fff}
-.ticker-bar{position:sticky;top:0;z-index:120;background:linear-gradient(90deg,#ffec86,#ffe0f4,#dff6ff,#e5ffd4,#fff0b7);border-bottom:2px solid rgba(48,80,69,.12);box-shadow:0 8px 20px rgba(77,117,86,.08)}
-.ticker-window{overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-flex;align-items:center;gap:.85rem;min-width:max-content;padding:.58rem 1rem;animation:kidTicker 28s linear infinite;font-family:var(--bubble);font-size:1rem;font-weight:800;color:#365444}
-.ticker-item{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .8rem;border-radius:999px;background:rgba(255,255,255,.74);border:2px solid rgba(255,255,255,.95);box-shadow:0 4px 12px rgba(83,109,88,.08)}
-.ticker-item:hover{transform:translateY(-1px)}
-.ticker-item .ico{font-size:1.15rem}
-@keyframes kidTicker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .header{position:sticky;top:0;z-index:100;background:rgba(255,254,249,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(16px);box-shadow:0 7px 22px rgba(61,108,70,.08)}
 .nav{min-height:82px;display:grid;grid-template-columns:56px minmax(0,1fr) 56px;align-items:center;gap:1rem}
 .academy-mark{width:52px;height:52px;display:grid;place-items:center;border:3px solid #fff;border-radius:18px;color:#fff;background:linear-gradient(145deg,var(--sun),var(--coral));box-shadow:var(--soft);font:900 .9rem var(--serif);letter-spacing:.08em}
@@ -262,9 +255,6 @@ h2.subtitle,h2.descriptor,.descriptor-subtitle,.subtitle-heading,.hero h1 + h2,.
 <link rel="stylesheet" href="assets/khaemenes-global-header.css">
 <link rel="stylesheet" href="assets/vnv-ecosystem-menu.css">
 
-<style id="khae-single-master-header-v1">/* Retain local course navigation, remove duplicate masthead branding only. */
-body:has([data-khae-header]) .header .nav .academy-mark,body:has([data-khae-header]) .header .nav .brand{display:none!important}
-</style>
 <link rel="stylesheet" href="assets/khaemenes-landing-standard.css">
 <link rel="stylesheet" href="assets/khaemenes-landing-toolbar.css">
 <style id="kinder-frontdesk-hero-and-dock-repair-20261027">
@@ -1541,22 +1531,22 @@ body #student .scene-link.eight{left:auto!important;right:96px!important;top:aut
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
 <div class="garden-decor" aria-hidden="true"><span class="deco-butterfly">🦋</span><span class="deco-ladybug">🐞</span><span class="deco-leaf">🍃</span><span class="deco-flower">🌼</span></div>
 <div class="kinder-quick-links" aria-label="Kindergarten learning shortcuts">
-  <a href="#curriculum">📚 Lessons</a>
-  <a href="#apps">🎨 Games</a>
-  <a href="#mentor">🦉 Mentor</a>
-  <a href="inquiry-companion.html">🌻 Discovery</a>
+  <a href="#curriculum" data-ticker data-ticker-label="Lessons">📚 Lessons</a>
+  <a href="#apps" data-ticker data-ticker-label="Games">🎨 Games</a>
+  <a href="#mentor" data-ticker data-ticker-label="Mentor">🦉 Mentor</a>
+  <a href="inquiry-companion.html" data-ticker data-ticker-label="Discovery">🌻 Discovery</a>
   <button class="kinder-menu-trigger" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open more Kindergarten links">More ▾</button>
 </div>
 <nav class="mobile-menu" id="mobileMenu" aria-label="Kinder Garden navigation">
   <a href="#student">🌱 Family Learner & Curriculum</a>
-  <a href="student-profile/">🌻 My Full Kindergarten Profile</a>
+  <a href="student-profile/" data-ticker data-ticker-label="My Profile">🌻 My Full Kindergarten Profile</a>
   <a href="#mentor">✨ My Mentor</a>
   <a href="#curriculum">📚 36-Week Curriculum</a>
   <a href="#apps">🎨 Kinder Apps</a>
   <a href="#creche">🎠 Crèche Bridge</a>
-  <a href="#mygarden">🌼 My Garden</a>
-  <a href="#families">👨‍👩‍👧 Family & Educator Corner</a>
-  <a href="https://vervenveda.com/Khaemenes_Academy.github.io/">🏛 Khaemenes Academy</a>
+  <a href="#mygarden" data-ticker data-ticker-label="My Garden">🌼 My Garden</a>
+  <a href="#families" data-ticker data-ticker-label="Family">👨‍👩‍👧 Family & Educator Corner</a>
+  <a href="https://vervenveda.com/Khaemenes_Academy.github.io/" data-ticker data-ticker-label="Academy">🏛 Khaemenes Academy</a>
 </nav>
 <nav class="breadcrumbs" aria-label="Breadcrumb"><div class="shell"><a href="https://vervenveda.com/">Verve N Veda</a><span>›</span><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a><span>›</span><span aria-current="page">Kinder Garden</span></div></nav>
 
@@ -2467,5 +2457,7 @@ document.addEventListener("DOMContentLoaded",()=>{
  close?.addEventListener("click",()=>dialog.close());
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
 });
-</script><script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+</script><script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
+<script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:10});</script>
+<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body></html>
