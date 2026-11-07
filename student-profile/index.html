@@ -59,7 +59,7 @@ body :is(main, .hero, .ug-hero, .mast) :is(a.btn,a.button,.hero-btn,.ug-priority
 body :is(.hero,.ug-hero,.mast)> :is(h1,p),body :is(.hero,.ug-hero,.mast)>div> :is(h1,p){text-align:center}
 body :is(.hero,.ug-hero,.mast) h1{font-size:clamp(30px,4.4vw,52px)!important;line-height:1.18!important;font-weight:400!important}
 body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font-size:16px!important;letter-spacing:.045em!important;line-height:1.4!important}
-</style></head><body data-theme="sky">
+</style></head><body data-theme="sky" data-profile-stage="kindergarten">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>\n<a class="skip" href="#main">Skip to my profile</a>
 <header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
 <nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
@@ -114,8 +114,18 @@ function profileKey(){return KEY+encodeURIComponent(activeId)}\nfunction palette
 }
 function normalize(v){v=v&&typeof v==="object"?v:{};return{theme:THEMES.includes(v.theme)?v.theme:"sky",avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""}}
 function consent(){if(!activeId){$("lookStatus").textContent="Choose a Kindergarten learner first.";return false}if(!$("adultConfirm").checked){$("lookStatus").textContent="A grown-up confirms before changing the profile.";return false}return true}
-function saveLook(){if(!consent())return;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook()}
-function renderLook(){document.body.dataset.theme=look.theme;const p=$("photoPreview");p.replaceChildren();if(look.photo){const i=document.createElement("img");i.src=look.photo;i.alt="Learner's locally stored picture";p.append(i)}else p.textContent=look.avatar;document.body.style.background=look.theme==="night"?"linear-gradient(#dce6f5,#f8fbff)":look.theme==="ocean"?"linear-gradient(#dff8ff,#f7fff9)":look.theme==="sunset"?"linear-gradient(#fff0df,#fffaf1)":look.theme==="forest"?"linear-gradient(#e7f5df,#fffdf7)":"";for(const b of $("avatarChoices").children)b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));for(const b of $("backgroundChoices").children)b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme))}
+function saveLook(){
+ if(!consent())return false;
+ const previous=read(profileKey(),null);let extras={};
+ if(previous?.learnerId===activeId&&previous?.schema==="khaemenes.kindergarten-visual.v1"&&previous.universalLook&&typeof previous.universalLook==="object"){
+  const rich={...previous.universalLook};if(previous.avatar!==look.avatar)delete rich.badge;
+  extras={universalLook:rich};
+ }
+ const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look,...extras});
+ $("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";
+ renderLook();window.KhaemenesKindergartenUniversalLookEntry?.refresh?.();return ok
+}
+function renderLook(){document.body.dataset.theme=look.theme;const p=$("photoPreview");p.replaceChildren();if(look.photo){const i=document.createElement("img");i.src=look.photo;i.alt="Learner's locally stored picture";p.append(i)}else p.textContent=look.avatar;document.body.style.background=look.theme==="night"?"linear-gradient(#dce6f5,#f8fbff)":look.theme==="ocean"?"linear-gradient(#dff8ff,#f7fff9)":look.theme==="sunset"?"linear-gradient(#fff0df,#fffaf1)":look.theme==="forest"?"linear-gradient(#e7f5df,#fffdf7)":"";for(const b of $("avatarChoices").children)b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));for(const b of $("backgroundChoices").children)b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme));window.KhaemenesKindergartenUniversalLookEntry?.refresh?.()}
 function appPins(){const v=read(PINKEY+encodeURIComponent(activeId),[]);return Array.isArray(v)?v.filter(x=>typeof x==="string").slice(0,15):[]}
 function coursePins(){const v=read("khaemenes_course_pins_v1",{version:1,learners:{}});return v&&typeof v==="object"?v:{version:1,learners:{}}}
 function coursePinned(){return Array.isArray(coursePins()?.learners?.[activeId])&&coursePins().learners[activeId].some(x=>x?.id==="khaemenes-kindergarten"||x?.courseId==="khaemenes-kindergarten")}
@@ -156,7 +166,7 @@ function renderLearners(){
 }
 function refresh(){
  const l=learner();activeId=l?.learnerId||"";look=activeId?normalize(read(profileKey(),{})):{theme:"sky",avatar:"🌻",photo:""};renderLearners();renderLook();renderLearning();renderGarden();
- $("childTitle").textContent=l?.nickname?l.nickname+"'s Learning Garden":"My Kindergarten Garden";$("childMeta").textContent=l?"Kindergarten · family-linked learner · every flower belongs to this learner only.":"Guest preview · no student record or progress is being created.";$("accountNote").textContent=l?"Welcome back, "+(l.nickname||"Kindergarten learner")+"! This garden is connected to the active family learner.":"No Kindergarten learner is active yet. You can explore this profile safely; a family can create or select a learner when ready.";
+ $("childTitle").textContent=l?.nickname?l.nickname+"'s Learning Garden":"My Kindergarten Garden";window.KhaemenesKindergartenUniversalLookEntry?.refresh?.();$("childMeta").textContent=l?"Kindergarten · family-linked learner · every flower belongs to this learner only.":"Guest preview · no student record or progress is being created.";$("accountNote").textContent=l?"Welcome back, "+(l.nickname||"Kindergarten learner")+"! This garden is connected to the active family learner.":"No Kindergarten learner is active yet. You can explore this profile safely; a family can create or select a learner when ready.";
 }
 AVATARS.forEach(a=>{const b=document.createElement("button");b.type="button";b.textContent=a;b.dataset.avatar=a;b.addEventListener("click",()=>{if(!consent())return;look.avatar=a;look.photo="";saveLook()});$("avatarChoices").append(b)});
 [["sky","☁️ Sky"],["forest","🌿 Forest"],["ocean","🐳 Ocean"],["sunset","🌅 Sunset"],["night","🌙 Night"]].forEach(([v,t])=>{const b=document.createElement("button");b.type="button";b.textContent=t;b.dataset.theme=v;b.addEventListener("click",()=>{if(!consent())return;look.theme=v;saveLook()});$("backgroundChoices").append(b)});
@@ -167,7 +177,33 @@ $("unpinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();if(
 $("pinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;const a=appPins(),id=$("appSelect").value;if(!a.includes(id))a.push(id);write(PINKEY+encodeURIComponent(activeId),a.slice(-15));renderLearning()};$("unpinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;write(PINKEY+encodeURIComponent(activeId),appPins().filter(x=>x!==$("appSelect").value));renderLearning()};
 $("learnerSelect").onchange=()=>{const id=$("learnerSelect").value,l=R?.getLearner?.(id);if(l?.familyId)R?.setActive?.({familyId:l.familyId,learnerId:id})};
 $("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
-$("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{if(!consent())return;const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);look=normalize(v);saveLook()}catch{$("lookStatus").textContent="That backup could not be read."}};r.readAsText(f)};$("printProfile").onclick=()=>print();
+$("exportLook").onclick=()=>{
+ if(!activeId)return;
+ const native=read(profileKey(),null),backup={schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look};
+ if(native?.learnerId===activeId&&native.universalLook)backup.universalLook=native.universalLook;
+ const blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"}),a=document.createElement("a");
+ a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)
+};$("importLook").onchange=e=>{
+ if(!consent())return;const file=e.target.files?.[0];if(!file)return;
+ const reader=new FileReader();
+ reader.onload=()=>{
+  try{
+   const v=JSON.parse(reader.result);
+   if(v?.schema!=="khaemenes.kindergarten-visual.v1"||v.learnerId!==activeId)throw Error("Wrong learner");
+   const frames=new Set(["rectangle","square","circle","oval","rhombus","heart","star","octagon","semicircle","kite"]);
+   const badges=new Set(["★","✦","📚","🧭","⚛","🎨","🎵","🌿","🔬","🧪","🧬","🌌","🌙","☀️","🪐","🌎","⚙️","💻","✏️","🎭","📐","🏛️","🦋","🏆"]);
+   const fonts=new Set(["academy","friendly","classic","modern","handwriting"]),rich=v.universalLook;
+   const valid=rich&&frames.has(rich.frame)&&(rich.badge===""||badges.has(rich.badge))&&(!rich.cardColor||/^#[0-9a-f]{6}$/i.test(rich.cardColor));
+   look=normalize(v);if(!saveLook())throw Error("Save failed");
+   const saved=read(profileKey(),null);if(saved?.learnerId!==activeId)throw Error("Learner changed");
+   if(valid)saved.universalLook={frame:rich.frame,badge:rich.badge||"",cardColor:rich.cardColor||"",nameFont:fonts.has(rich.nameFont)?rich.nameFont:"academy"};
+   else delete saved.universalLook;
+   if(!write(profileKey(),saved))throw Error("Restore failed");
+   renderLook();
+  }catch{$("lookStatus").textContent="This backup must belong to the selected Kindergarten learner."}
+ };
+ reader.readAsText(file)
+};$("printProfile").onclick=()=>print();
 $("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};\n$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
@@ -179,4 +215,8 @@ window.addEventListener("khaemenes-family-changed",refresh);window.addEventListe
 <script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
 <script>VNV_TICKER.autoPopulate({label:"Kindergarten Profile Quick Links",max:14});</script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+<!-- Account Cloud universal UI: canonical editor, Kindergarten identity adapter, one entry. -->
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-universal-profile-look-editor.js?v=20261107-universal-v5" defer></script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-kindergarten-look-adapter.js?v=20261107-kindergarten-v1" defer></script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-kindergarten-look-entry.js?v=20261107-kindergarten-v1" defer></script>
 </body></html>
