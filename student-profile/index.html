@@ -104,7 +104,9 @@ const $=id=>document.getElementById(id),R=window.KhaemenesFamilyRegistry,C=windo
 let activeId="",look={theme:"sky",avatar:"🌻",photo:""},palette="ocean";
 const read=(k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}},write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
 function learner(){const v=R?.getLearner?.()||null;return v&&String(v.stage).toLowerCase()==="kindergarten"&&v.learnerId?v:null}
-function profileKey(){return KEY+encodeURIComponent(activeId)}\nfunction paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}\nfunction renderPalette(){
+function profileKey(){return KEY+encodeURIComponent(activeId)}
+function paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}
+function renderPalette(){
  document.body.dataset.palette=palette;
  const pastel=palette==="pastel",b=$("paletteToggle"),ocean=$("bubbleOcean");
  if(b){b.setAttribute("aria-pressed",String(pastel));b.textContent=pastel?"🌊 Ocean colors":"🎨 Pastel colors"}
@@ -204,7 +206,8 @@ $("exportLook").onclick=()=>{
  };
  reader.readAsText(file)
 };$("printProfile").onclick=()=>print();
-$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};\n$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};
+$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
