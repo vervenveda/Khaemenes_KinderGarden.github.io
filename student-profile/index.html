@@ -208,6 +208,11 @@ $("exportLook").onclick=()=>{
 };$("printProfile").onclick=()=>print();
 $("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};
 $("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+window.addEventListener("khaemenes-kindergarten-universal-look-updated",event=>{
+ if(event.detail?.learnerId!==activeId)return;
+ look=normalize(read(profileKey(),{})); // Synchronize the native controls before future garden-theme writes.
+ renderLook();
+});
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
