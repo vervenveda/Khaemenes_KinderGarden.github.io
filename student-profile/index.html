@@ -118,7 +118,7 @@ const BASE="https://vervenveda.com/Khaemenes_KinderGarden.github.io/",KEY="khaem
 const THEMES=["sky","forest","ocean","sunset","night"],AVATARS=["🌻","🦊","🦋","🦉","🚀","🌈","🐝","🐢"],STICKERS=["🌟","🌈","🐝","🦋","🌻","🍎","🚀","🦉","🐢","🎨","🎵","🧩"];
 const $=id=>document.getElementById(id),R=window.KhaemenesFamilyRegistry,C=window.KhaemenesLearningContinuation,G=window.KhaemenesKinderMasteryGates,catalog=window.KhaemenesKinderResources;
 let activeId="",look={theme:"sky",avatar:"🌻",photo:""},palette="ocean";
-const read=(k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}},write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
+const read=(k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}},write=(k,v)=>{try{const raw=JSON.stringify(v);localStorage.setItem(k,raw);return localStorage.getItem(k)===raw}catch{return false}};
 function learner(){
  const ids=R?.activeIds?.()||{},v=R?.getLearner?.(ids.learnerId),family=R?.getFamily?.(ids.familyId);
  return v&&family&&v.learnerId===ids.learnerId&&v.familyId===family.familyId&&
@@ -215,8 +215,28 @@ $("pinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();r.lea
 $("unpinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();if(Array.isArray(r?.learners?.[activeId]))r.learners[activeId]=r.learners[activeId].filter(x=>x?.id!=="khaemenes-kindergarten"&&x?.courseId!=="khaemenes-kindergarten");write("khaemenes_course_pins_v1",r);renderLearning()};
 $("pinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;const a=appPins(),id=$("appSelect").value;if(!a.includes(id))a.push(id);write(PINKEY+encodeURIComponent(activeId),a.slice(-15));renderLearning()};$("unpinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;write(PINKEY+encodeURIComponent(activeId),appPins().filter(x=>x!==$("appSelect").value));renderLearning()};
 $("learnerSelect").onchange=()=>{const id=$("learnerSelect").value,l=R?.getLearner?.(id);if(l?.familyId&&l.familyId===R?.activeIds?.().familyId&&l.stage==="kindergarten"&&l.grade==="k"&&R?.getFamily?.(l.familyId)?.learnerIds?.includes(id))R?.setActive?.({familyId:l.familyId,learnerId:id})};
-$("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
-$("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{if(!consent())return;const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);look=normalize(v);saveLook()}catch{$("lookStatus").textContent="That backup could not be read."}};r.readAsText(f)};$("printProfile").onclick=()=>print();
+$("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v?.learnerId===activeId&&v.schema==="khaemenes.prek-visual.v1"){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
+$("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{
+ if(!consent())return;
+ const f=e.target.files?.[0];if(!f)return;
+ if(f.size>400000){$("lookStatus").textContent="This visual backup is too large.";return}
+ const selectedId=activeId,r=new FileReader();
+ r.onload=()=>{
+  try{
+   if(selectedId!==activeId||learner()?.learnerId!==selectedId||!$("adultConfirm").checked){
+    $("lookStatus").textContent="The learner or adult confirmation changed. No backup was restored.";return
+   }
+   const v=JSON.parse(r.result);
+   if(v?.schema!=="khaemenes.kindergarten-visual.v1"||v.learnerId!==selectedId){
+    $("lookStatus").textContent="This backup belongs to a different learner or uses an unknown format.";return
+   }
+   const previous=look;look=normalize(v);
+   if(!saveLook()){look=previous;renderLook()}
+  }catch{$("lookStatus").textContent="That backup could not be read."}
+ };
+ r.onerror=()=>{$("lookStatus").textContent="The backup file could not be read."};
+ r.readAsText(f)
+};$("printProfile").onclick=()=>print();
 $("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};
 $("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
