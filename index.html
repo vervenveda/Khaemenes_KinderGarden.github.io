@@ -2404,12 +2404,12 @@ function publishKinderContinuation(){
  if(!learner?.learnerId||!learner?.hasProfile)return;
  // Reporting requires the selected Academy family and a learner belonging to it.
  const registry=window.KhaemenesFamilyRegistry,ids=registry?.activeIds?.()||{};
- const family=registry?.getFamily?.(ids.familyId);
+ const linkedFamily=registry?.getFamily?.(ids.familyId);
  const selected=registry?.getLearner?.(ids.learnerId);
- if(!family||!selected||ids.learnerId!==learner.learnerId||
-    selected.learnerId!==learner.learnerId||selected.familyId!==family.familyId||
+ if(!linkedFamily||!selected||ids.learnerId!==learner.learnerId||
+    selected.learnerId!==learner.learnerId||selected.familyId!==linkedFamily.familyId||
     selected.stage!=="kindergarten"||selected.grade!=="k"||
-    !family.learnerIds?.includes(learner.learnerId))return;
+    !linkedFamily.learnerIds?.includes(learner.learnerId))return;
 
  const summary=continuity.curriculumSummary?.(80,36)||{};
  let status="continue",nextLabel="Continue My Learning",family={needsAction:false,label:"",summary:"",href:""};
