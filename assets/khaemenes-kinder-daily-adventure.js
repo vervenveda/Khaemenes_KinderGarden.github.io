@@ -10,6 +10,8 @@
   const l=current(),today=l?plan()?.today?.(l.learnerId):null,grid=$("kinderAdventureActivities");
   grid.replaceChildren();
   if(!today){
+   $("kinderAdventureStars").replaceChildren();
+   const lesson=$("kinderAdventureLesson");lesson.href="https://vervenveda.com/Khaemenes_KinderGarden.github.io/today/";lesson.textContent="Explore Today's First Step";
    progress.textContent="Choose a Kindergarten learner to open today's adventures.";
    status.textContent="Guest preview · no activity check-ins saved.";
    return false;
