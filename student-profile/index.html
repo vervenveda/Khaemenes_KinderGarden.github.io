@@ -72,6 +72,7 @@ body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font
 html body.kinder-ready{background:#f4f0e7;color:#243038;font-family:Nunito,"Trebuchet MS",Arial,sans-serif}
 body.kinder-ready .shell{width:min(94%,1240px);max-width:none}
 body.kinder-ready .bubble-ocean{background:linear-gradient(180deg,#e7e2d4 0%,#e0e8dc 45%,#d3dfd7 100%)!important;animation:none;opacity:.72}
+body.kinder-ready[data-palette="calm"] .bubble-ocean{background:linear-gradient(180deg,#eee8d9,#dfe8e4,#d3dbd0)!important}
 body.kinder-ready .bubble-ocean:after{animation:none;opacity:.12}
 body.kinder-ready .rising-bubble{opacity:.18;animation-duration:34s;filter:saturate(.45)}
 body.kinder-ready .top{background:rgba(244,240,231,.97);border-bottom:2px solid #b48b45}
@@ -113,7 +114,8 @@ body.kinder-ready .menu-panel a{font-size:16px;border-radius:7px;background:#fff
 @media(max-width:560px){body.kinder-ready .shell{width:calc(100% - 20px)}body.kinder-ready .hero-controls{grid-template-columns:repeat(2,minmax(0,1fr))}body.kinder-ready .hero-grid{gap:10px}body.kinder-ready .card{padding:14px}body.kinder-ready .hero-btn{min-height:56px}}
 @media(prefers-reduced-motion:reduce){body.kinder-ready .rising-bubble{animation:none}}
 </style></head><body data-theme="sky" class="kinder-ready">
-<div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>\n<a class="skip" href="#main">Skip to my profile</a>
+<div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to my profile</a>
 <header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
 <nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
 <section class="hero"><div class="shell hero-grid"><div class="kinder-portrait-spot"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><a class="kinder-edit-photo" href="#pictureStudio">Customize My Picture</a></div><div><p class="eyebrow">Khaemenes Academy · Kindergarten Learning</p><h1 id="childTitle">My Kindergarten Profile</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="hero-controls"><a class="hero-btn hero-today" id="firstStepLink" href="../today/">🌟 Today’s first step</a><a class="hero-btn hero-garden" href="#garden">🌼 My learning garden</a><a class="hero-btn hero-graduate" href="../graduation/">🏮 Graduation bridge</a><button class="hero-btn hero-theme" id="paletteToggle" type="button" aria-pressed="false">🎨 Calm Garden Colors</button><a class="hero-btn" href="#pictureStudio">🖼️ My Picture Studio</a><a class="hero-btn" href="#favorites">⭐ My Favorites</a><a class="hero-btn" href="#stickerCard">🏵️ Sticker Meadow</a><a class="hero-btn" href="#grownups">👨‍👩‍👧 Family Tools</a></div></div></div></section>
@@ -142,7 +144,10 @@ body.kinder-ready .menu-panel a{font-size:16px;border-radius:7px;background:#fff
  ];
  specs.forEach((v,i)=>{const b=document.createElement("span");b.className="rising-bubble";b.style.setProperty("--left",v[0]+"%");b.style.setProperty("--size",v[1]+"px");b.style.setProperty("--bubble-color",v[2]);b.style.setProperty("--duration",v[3]+"s");b.style.setProperty("--drift",v[4]+"px");b.style.setProperty("--delay",(-i*1.65)+"s");ocean.append(b)});
 })();
-</script>\n<script src="../assets/khaemenes-kinder-resources.js"></script>\n<script src="../assets/khaemenes-kinder-continuity.js"></script>\n<script src="../assets/naib-mentor-adapter.js"></script>
+</script>
+<script src="../assets/khaemenes-kinder-resources.js"></script>
+<script src="../assets/khaemenes-kinder-continuity.js"></script>
+<script src="../assets/naib-mentor-adapter.js"></script>
 <script src="../assets/khaemenes-family-registry.js"></script>
 <script src="../assets/khaemenes-learning-continuation.js"></script>
 <script src="../assets/khaemenes-student-profile-v2.js"></script>
@@ -288,6 +293,9 @@ $("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.strin
 };$("printProfile").onclick=()=>print();
 $("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};
 $("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+$("menuPanel").addEventListener("keydown",e=>{if(e.key==="Escape"){$("menuPanel").classList.remove("open");$("menuButton").setAttribute("aria-expanded","false");$("menuButton").focus()}});
+document.addEventListener("pointerdown",e=>{if(!e.target.closest("#menuPanel,#menuButton")&&$("menuPanel").classList.contains("open")){$("menuPanel").classList.remove("open");$("menuButton").setAttribute("aria-expanded","false")}});
+
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
