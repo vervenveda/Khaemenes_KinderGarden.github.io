@@ -6,6 +6,7 @@ on:
     paths:
       - index.html
       - student-profile/index.html
+      - reading/index.html
       - assets/khaemenes-kinder-family-overview.js
       - assets/khaemenes-preschool-continuation.js
       - tests/kindergarten-family-report.test.cjs
