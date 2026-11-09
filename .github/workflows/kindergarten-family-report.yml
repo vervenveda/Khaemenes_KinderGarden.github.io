@@ -5,6 +5,8 @@ on:
     branches: [audit/kindergarten-family-report-2026-11-09]
     paths:
       - index.html
+      - student-profile/index.html
+      - assets/khaemenes-kinder-family-overview.js
       - assets/khaemenes-preschool-continuation.js
       - tests/kindergarten-family-report.test.cjs
       - .github/workflows/kindergarten-family-report.yml
