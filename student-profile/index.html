@@ -72,14 +72,14 @@ body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font
 <section class="card span5" id="favorites"><p class="eyebrow">Favorites</p><h2>My little basket</h2><div id="pinnedActivities" class="favorites"></div><div class="actions"><button id="pinKinderCourse">📌 Pin my class</button><button id="unpinKinderCourse">Remove class pin</button></div><label for="appSelect">Choose a favorite game</label><select id="appSelect"><option value="">Choose an adventure</option></select><div class="actions"><button id="pinSelectedApp">⭐ Add favorite</button><button id="unpinSelectedApp">Remove favorite</button></div></section>
 <section class="card span12" id="kinderFamilyLearning" aria-labelledby="kinderFamilyLearningTitle">
 <p class="eyebrow">My learning story · with a grown-up</p>
-<h2 id="kinderFamilyLearningTitle">📖 Family Progress &amp; Reading Garden</h2>
-<p id="kinderFamilyOverviewStatus" role="status" aria-live="polite">Checking published Kindergarten learning progress…</p>
+<h2 id="kinderFamilyLearningTitle">📖 Kinder Garden Family Progress &amp; Reading Garden</h2>
+<p id="kinderFamilyOverviewStatus" role="status" aria-live="polite">Checking published Kinder Garden learning progress…</p>
 <p id="kinderReadingOverviewStatus" role="status" aria-live="polite">Checking this month's available reading activities…</p>
 <div class="actions">
 <a class="hero-btn hero-garden" href="../reading/">📚 Open Reading Garden</a>
 <a class="hero-btn hero-today" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/#family-progress">🏡 Family Learning Center</a>
 </div>
-<p class="muted">Read-only, learner-specific browser reports. Reading activities and rewards are not academic grades or cross-device cloud records.</p>
+<p class="muted">Read-only, learner-specific browser reports from our Kinder Garden. Reading activities and rewards are not academic grades or cross-device cloud records.</p>
 </section>
 <section class="card span8" id="garden"><p class="eyebrow">36 weeks · 36 flowers</p><h2>My learning garden</h2><p>Every mastered week grows another flower. The outlined flower shows the next week waiting to bloom.</p><div class="progressbar" aria-hidden="true"><span id="progressFill"></span></div><p id="gardenStatus">No formal progress is shown until a learner is selected.</p><div class="flower-garden" id="flowerGarden" aria-label="36-week mastery garden"></div><div class="milestones"><div class="milestone"><strong id="midIcon">🌱</strong>Midyear</div><div class="milestone"><strong id="finalIcon">🌱</strong>Final</div><div class="milestone"><strong id="portfolioIcon">🌱</strong>Portfolio</div><div class="milestone"><strong id="graduateIcon">🌱</strong>Graduation</div></div></section>
 <section class="card span4"><p class="eyebrow">Celebrate growth</p><h2>Sticker meadow</h2><p>Mastered weeks unlock cheerful stickers here. They celebrate effort; they never change grades.</p><div class="sticker-meadow" id="stickerMeadow"></div></section>
@@ -131,7 +131,7 @@ function profileKey(){return KEY+encodeURIComponent(activeId)}\nfunction palette
 }
 function normalize(v){v=v&&typeof v==="object"?v:{};return{theme:THEMES.includes(v.theme)?v.theme:"sky",avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""}}
 function consent(){if(!activeId){$("lookStatus").textContent="Choose a Kindergarten learner first.";return false}if(!$("adultConfirm").checked){$("lookStatus").textContent="A grown-up confirms before changing the profile.";return false}return true}
-function saveLook(){if(!consent())return;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook()}
+function saveLook(){if(!consent())return false;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook();return ok}
 function renderLook(){document.body.dataset.theme=look.theme;const p=$("photoPreview");p.replaceChildren();if(look.photo){const i=document.createElement("img");i.src=look.photo;i.alt="Learner's locally stored picture";p.append(i)}else p.textContent=look.avatar;document.body.style.background=look.theme==="night"?"linear-gradient(#dce6f5,#f8fbff)":look.theme==="ocean"?"linear-gradient(#dff8ff,#f7fff9)":look.theme==="sunset"?"linear-gradient(#fff0df,#fffaf1)":look.theme==="forest"?"linear-gradient(#e7f5df,#fffdf7)":"";for(const b of $("avatarChoices").children)b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));for(const b of $("backgroundChoices").children)b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme))}
 function appPins(){const v=read(PINKEY+encodeURIComponent(activeId),[]);return Array.isArray(v)?v.filter(x=>typeof x==="string").slice(0,15):[]}
 function coursePins(){const v=read("khaemenes_course_pins_v1",{version:1,learners:{}});return v&&typeof v==="object"?v:{version:1,learners:{}}}
