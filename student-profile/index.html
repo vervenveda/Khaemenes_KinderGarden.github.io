@@ -60,7 +60,8 @@ body :is(.hero,.ug-hero,.mast)> :is(h1,p),body :is(.hero,.ug-hero,.mast)>div> :i
 body :is(.hero,.ug-hero,.mast) h1{font-size:clamp(30px,4.4vw,52px)!important;line-height:1.18!important;font-weight:400!important}
 body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font-size:16px!important;letter-spacing:.045em!important;line-height:1.4!important}
 </style></head><body data-theme="sky">
-<div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>\n<a class="skip" href="#main">Skip to my profile</a>
+<div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to my profile</a>
 <header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
 <nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
 <section class="hero"><div class="shell hero-grid"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><div><p class="eyebrow">Khaemenes Academy · Kindergarten Learning</p><h1 id="childTitle">My Kindergarten Profile</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="hero-controls"><a class="hero-btn hero-today" id="firstStepLink" href="../today/">🌟 Today’s first step</a><a class="hero-btn hero-garden" href="#garden">🌼 My learning garden</a><a class="hero-btn hero-graduate" href="../graduation/">🏮 Graduation bridge</a><button class="hero-btn hero-theme" id="paletteToggle" type="button" aria-pressed="false">🎨 Pastel colors</button></div></div></div></section>
@@ -100,7 +101,10 @@ body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font
  ];
  specs.forEach((v,i)=>{const b=document.createElement("span");b.className="rising-bubble";b.style.setProperty("--left",v[0]+"%");b.style.setProperty("--size",v[1]+"px");b.style.setProperty("--bubble-color",v[2]);b.style.setProperty("--duration",v[3]+"s");b.style.setProperty("--drift",v[4]+"px");b.style.setProperty("--delay",(-i*1.65)+"s");ocean.append(b)});
 })();
-</script>\n<script src="../assets/khaemenes-kinder-resources.js"></script>\n<script src="../assets/khaemenes-kinder-continuity.js"></script>\n<script src="../assets/naib-mentor-adapter.js"></script>
+</script>
+<script src="../assets/khaemenes-kinder-resources.js"></script>
+<script src="../assets/khaemenes-kinder-continuity.js"></script>
+<script src="../assets/naib-mentor-adapter.js"></script>
 <script src="../assets/khaemenes-family-registry.js"></script>
 <script src="../assets/khaemenes-learning-continuation.js"></script>
 <script src="../assets/khaemenes-kinder-family-overview.js"></script>
@@ -121,7 +125,9 @@ function learner(){
   v.stage==="kindergarten"&&v.grade==="k"&&v.selfDirectedAdult!==true&&
   family.learnerIds?.includes(v.learnerId)?v:null;
 }
-function profileKey(){return KEY+encodeURIComponent(activeId)}\nfunction paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}\nfunction renderPalette(){
+function profileKey(){return KEY+encodeURIComponent(activeId)}
+function paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}
+function renderPalette(){
  document.body.dataset.palette=palette;
  const pastel=palette==="pastel",b=$("paletteToggle"),ocean=$("bubbleOcean");
  if(b){b.setAttribute("aria-pressed",String(pastel));b.textContent=pastel?"🌊 Ocean colors":"🎨 Pastel colors"}
@@ -211,7 +217,8 @@ $("pinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;cons
 $("learnerSelect").onchange=()=>{const id=$("learnerSelect").value,l=R?.getLearner?.(id);if(l?.familyId&&l.familyId===R?.activeIds?.().familyId&&l.stage==="kindergarten"&&l.grade==="k"&&R?.getFamily?.(l.familyId)?.learnerIds?.includes(id))R?.setActive?.({familyId:l.familyId,learnerId:id})};
 $("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
 $("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{if(!consent())return;const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);look=normalize(v);saveLook()}catch{$("lookStatus").textContent="That backup could not be read."}};r.readAsText(f)};$("printProfile").onclick=()=>print();
-$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};\n$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};
+$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
