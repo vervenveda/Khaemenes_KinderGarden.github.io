@@ -6,12 +6,13 @@ const html=fs.readFileSync(path.join(__dirname,"index.html"),"utf8");
 const markup=html.slice(0,html.indexOf("<script>"));
 const after=html.slice(html.indexOf("<script>"));
 const ids=[...markup.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
-const required=["pictureStudio","colorStudio","photoPreview","adultConfirm","childPhoto","kinderYearbookPicture","openYearbookFromProfile","kinderFrameChoices","learnerSelect","todayCard","favorites","garden","stickerCard","grownups","profileStudio","importLook","lookStatus"];
+const required=["kinderLegacyPhotoControls","kinderHeroPictureEditor","kinderToolbarPictureEditor","colorStudio","photoPreview","adultConfirm","childPhoto","kinderYearbookPicture","openYearbookFromProfile","kinderFrameChoices","learnerSelect","todayCard","favorites","garden","stickerCard","grownups","profileStudio","importLook","lookStatus"];
 for(const id of required)assert.equal(ids.filter(x=>x===id).length,1,"unique existing owner: "+id);
-assert.ok(markup.indexOf('id="pictureStudio"')<markup.indexOf('id="todayCard"'),"Picture Studio is above the daily cards");
-assert.ok(markup.indexOf('id="colorStudio"')<markup.indexOf('id="todayCard"'),"Colors appear beside Picture Studio near top");
+assert.ok(!markup.includes('id="pictureStudio"'),"Large photo editor card removed");
+assert.ok(markup.indexOf('id="kinderLegacyPhotoControls"')<markup.indexOf('id="todayCard"'),"Legacy learner photo and backup controls preserved without visible card");
+assert.ok(markup.indexOf('id="colorStudio"')<markup.indexOf('id="todayCard"'),"Garden controls remain near top");
 assert.ok(markup.indexOf('id="stickerCard"')>markup.indexOf('id="garden"'),"Mastery and reward sections retained");
-assert.ok(markup.includes('href="#pictureStudio"'),"Hero photo shortcut");
+assert.ok(markup.includes('id="kinderHeroPictureEditor"')&&markup.includes('id="kinderToolbarPictureEditor"'),"Both hero picture buttons open shared dialog");
 assert.ok(markup.includes('href="#grownups"'),"Family tools shortcut");
 assert.ok(markup.includes('class="kinder-ready"'),"Scoped Academy design system");
 assert.ok(markup.includes("body.kinder-ready .hero-grid"),"Responsive hero design");
@@ -19,6 +20,9 @@ assert.ok(markup.includes("body.kinder-ready .shell{width:min(94%,1240px)"),"Des
 assert.ok(markup.includes("body.kinder-ready[data-palette=\"calm\"] .bubble-ocean"),"Working alternate calm palette");
 assert.ok(markup.includes("font:400 16px/1.4 Nunito"),"Accessible toolbar label sizes");
 assert.ok(html.includes("khaemenes-yearbook-profile-images.js"),"Yearbook bridge still loaded");
+assert.ok(html.includes("khaemenes-universal-profile-look-editor.js"),"Shared photo pop-up loaded");
+assert.ok(html.includes("khaemenes-kindergarten-universal-look-adapter.js"),"Existing Kindergarten record has an adapter");
+assert.ok(html.includes("window.KhaemenesKindergartenLookBridge"),"Canonical learner look bridge retained");
 for(const name of ["kinderDailyAdventure","kinderAdventureStars","kinderAdventureActivities","kinderAdventureProgress","kinderAdventureStatus","kinderAdventureLesson"]){
  assert.equal(ids.filter(x=>x===name).length,1,"daily adventure element: "+name);
 }
@@ -36,4 +40,4 @@ for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)){
  if(!match[1].trim())continue;inline++;new vm.Script(match[1],{filename:"kindergarten-profile-inline-"+inline+".js"});
 }
 assert.ok(inline>=3);
-console.log("PASS Kindergarten Profile readiness: layout/order, 17 preserved profile controls plus daily adventure, accessible routes, yearbook, learner isolation, syntax");
+console.log("PASS Kindergarten modal photo editor: visible card removed, legacy record retained, shared dialog wired, Yearbook and Daily Adventure intact");
