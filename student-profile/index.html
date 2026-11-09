@@ -52,6 +52,14 @@ body[data-palette="pastel"] h1,body[data-palette="pastel"] h2{color:#6d4f72}
 body[data-palette="pastel"] .eyebrow{color:#b65f86}
 @media(max-width:900px){.hero-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.hero-controls{grid-template-columns:1fr 1fr}.hero-btn{font-size:.72rem;padding:.55rem .4rem}}
+</style><style id="kinder-profile-frame-parity-20261109">
+#kinderFrameChoices button{font-size:16px;min-height:44px;border-radius:7px}
+#photoPreview[data-frame="circle"]{border-radius:50%!important;clip-path:none!important}
+#photoPreview[data-frame="square"]{border-radius:7px!important;clip-path:none!important}
+#photoPreview[data-frame="oval"]{border-radius:50%!important;clip-path:ellipse(48% 39% at 50% 50%)!important}
+#photoPreview[data-frame="rhombus"]{border-radius:0!important;clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)!important}
+#photoPreview[data-frame="semicircle"]{border-radius:0!important;clip-path:polygon(0 100%,0 50%,5% 28%,18% 12%,36% 2%,64% 2%,82% 12%,95% 28%,100% 50%,100% 100%)!important}
+#photoPreview[data-frame="kite"]{border-radius:0!important;clip-path:polygon(50% 0%,95% 36%,50% 100%,5% 36%)!important}
 </style><style id="academy-profile-common-readable-hero-20261101">
 /* Grade-level profile visual contract. Shared controls retain their existing owners. */
 body :is(main, .hero, .ug-hero, .mast) :is(p,li,label,summary,small,button,input,select,textarea){font-size:max(16px,1rem)!important;line-height:1.5!important}
@@ -59,21 +67,86 @@ body :is(main, .hero, .ug-hero, .mast) :is(a.btn,a.button,.hero-btn,.ug-priority
 body :is(.hero,.ug-hero,.mast)> :is(h1,p),body :is(.hero,.ug-hero,.mast)>div> :is(h1,p){text-align:center}
 body :is(.hero,.ug-hero,.mast) h1{font-size:clamp(30px,4.4vw,52px)!important;line-height:1.18!important;font-weight:400!important}
 body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font-size:16px!important;letter-spacing:.045em!important;line-height:1.4!important}
-</style></head><body data-theme="sky">
-<div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>\n<a class="skip" href="#main">Skip to my profile</a>
+</style><style id="kindergarten-readiness-blueprint-20261109">
+/* Wide, calm child-first profile without changing any student records or JS IDs. */
+html body.kinder-ready{background:#f4f0e7;color:#243038;font-family:Nunito,"Trebuchet MS",Arial,sans-serif}
+body.kinder-ready .shell{width:min(94%,1240px);max-width:none}
+body.kinder-ready .bubble-ocean{background:linear-gradient(180deg,#e7e2d4 0%,#e0e8dc 45%,#d3dfd7 100%)!important;animation:none;opacity:.72}
+body.kinder-ready[data-palette="calm"] .bubble-ocean{background:linear-gradient(180deg,#eee8d9,#dfe8e4,#d3dbd0)!important}
+body.kinder-ready .bubble-ocean:after{animation:none;opacity:.12}
+body.kinder-ready .rising-bubble{opacity:.18;animation-duration:34s;filter:saturate(.45)}
+body.kinder-ready .top{background:rgba(244,240,231,.97);border-bottom:2px solid #b48b45}
+body.kinder-ready .nav{min-height:68px}
+body.kinder-ready .mark,body.kinder-ready .menu{background:#243038;border:1px solid #b48b45;color:#fff8e9;border-radius:7px;box-shadow:none}
+body.kinder-ready .brand strong{font:400 24px/1.3 Cinzel,Georgia,serif;color:#243038}
+body.kinder-ready .brand small{font-size:16px;letter-spacing:.03em}
+body.kinder-ready .hero{padding:22px 0 12px}
+body.kinder-ready .hero-grid{grid-template-columns:minmax(160px,215px) minmax(0,1fr);gap:26px;max-width:100%;padding:24px 28px;background:#f4f0e7;border:2px solid #b48b45;border-radius:7px;box-shadow:0 10px 24px #24303812}
+body.kinder-ready .portrait{width:174px;height:174px;background:#e2e9dc;border:4px solid #b48b45;box-shadow:none}
+body.kinder-ready .kinder-portrait-spot{display:grid;justify-items:center;gap:11px}
+body.kinder-ready .kinder-edit-photo{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;background:#243038;color:#fff8e9;border-radius:7px;border:1px solid #b48b45;font-size:16px;text-align:center}
+body.kinder-ready h1,body.kinder-ready h2,body.kinder-ready h3{font-family:Cinzel,Georgia,serif;font-weight:400;color:#243038;line-height:1.25}
+body.kinder-ready h1{font-size:clamp(30px,3.6vw,46px)}
+body.kinder-ready h2{font-size:clamp(23px,2.2vw,30px)}
+body.kinder-ready .eyebrow{color:#6b5131;font-size:16px;font-weight:400}
+body.kinder-ready .hero p,body.kinder-ready .card p{color:#34443d}
+body.kinder-ready .pill{border-radius:7px;border-color:#b48b45;background:#fffaf0;font-size:16px}
+body.kinder-ready .hero-controls{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:15px}
+body.kinder-ready .hero-btn{font:400 16px/1.4 Nunito,Arial,sans-serif;min-height:52px;padding:9px 10px;border-radius:7px;border:1px solid #b48b45;background:#243038!important;color:#fff8e9!important;box-shadow:none}
+body.kinder-ready main{padding:14px 0 48px}
+body.kinder-ready main>.grid{gap:17px;align-items:start}
+body.kinder-ready .card,body.kinder-ready .notice,body.kinder-ready .adult-inside{border:1px solid #bba985;background:#fffaf0;box-shadow:none;border-radius:7px}
+body.kinder-ready .card{padding:20px}
+body.kinder-ready .card :is(button,.btn,select,input){font-size:16px;min-height:44px;border-radius:7px}
+body.kinder-ready .card :is(button,.btn){background:#243038;color:#fff8e9;border:1px solid #b48b45;font-weight:400}
+body.kinder-ready .card :is(button,.btn)[aria-pressed="true"]{outline:3px solid #b48b45;outline-offset:2px}
+body.kinder-ready :is(.choice button,.milestone,.sticker,.flower){border-radius:7px}
+body.kinder-ready .adult-door summary{border-radius:7px;background:#243038;color:#fff8e9;font:400 18px/1.5 Cinzel,Georgia,serif}
+body.kinder-ready footer{background:#243038;color:#fff8e9;font-size:16px;text-align:center}
+body.kinder-ready :is(#pictureStudio,#colorStudio,#todayCard,#favorites,#garden,#stickerCard,#grownups){scroll-margin-top:140px}
+body.kinder-ready #pictureStudio .choice button{min-width:48px;min-height:48px}
+body.kinder-ready #pictureStudio .photo-input{background:#fff;color:#243038;border:1px solid #9c8c74}
+body.kinder-ready #pictureStudio label:has(#adultConfirm){padding:10px 12px;background:#eee8db;border-radius:7px}
+body.kinder-ready #colorStudio input[type=file]{background:#fff}
+body.kinder-ready .menu-panel{border-radius:7px;background:#f4f0e7}
+body.kinder-ready .menu-panel a{font-size:16px;border-radius:7px;background:#fffaf0;color:#243038}
+@media(max-width:900px){body.kinder-ready .hero-grid{grid-template-columns:1fr;text-align:center;padding:18px}body.kinder-ready .hero-controls{grid-template-columns:repeat(2,minmax(0,1fr))}body.kinder-ready .pills{justify-content:center}body.kinder-ready :is(#pictureStudio,#colorStudio){grid-column:1/-1}}
+@media(max-width:560px){body.kinder-ready .shell{width:calc(100% - 20px)}body.kinder-ready .hero-controls{grid-template-columns:repeat(2,minmax(0,1fr))}body.kinder-ready .hero-grid{gap:10px}body.kinder-ready .card{padding:14px}body.kinder-ready .hero-btn{min-height:56px}}
+@media(prefers-reduced-motion:reduce){body.kinder-ready .rising-bubble{animation:none}}
+</style><style id="kindergarten-daily-adventure-20261109">
+body.kinder-ready #kinderDailyAdventure{border-top:4px solid #b48b45}
+body.kinder-ready #kinderDailyAdventure .kinder-adventure-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+body.kinder-ready #kinderDailyAdventure .kinder-adventure-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;min-height:145px;padding:12px 9px;background:#243038;color:#fff8e9;border:1px solid #b48b45;border-radius:7px;text-align:center}
+body.kinder-ready #kinderDailyAdventure .kinder-adventure-tile[aria-pressed="true"]{background:#2e634e;color:#fff8e9;outline:3px solid #b48b45;outline-offset:2px}
+body.kinder-ready #kinderDailyAdventure .actions{justify-content:center}
+body.kinder-ready :is(#kinderDailyAdventure,#todayCard){scroll-margin-top:140px}
+@media(max-width:860px){body.kinder-ready #kinderDailyAdventure .kinder-adventure-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:530px){body.kinder-ready #kinderDailyAdventure .kinder-adventure-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style></head><body data-theme="sky" class="kinder-ready">
+<div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to my profile</a>
 <header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
 <nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
-<section class="hero"><div class="shell hero-grid"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><div><p class="eyebrow">Khaemenes Academy · Kindergarten Learning</p><h1 id="childTitle">My Kindergarten Profile</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="hero-controls"><a class="hero-btn hero-today" id="firstStepLink" href="../today/">🌟 Today’s first step</a><a class="hero-btn hero-garden" href="#garden">🌼 My learning garden</a><a class="hero-btn hero-graduate" href="../graduation/">🏮 Graduation bridge</a><button class="hero-btn hero-theme" id="paletteToggle" type="button" aria-pressed="false">🎨 Pastel colors</button></div></div></div></section>
+<section class="hero"><div class="shell hero-grid"><div class="kinder-portrait-spot"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><a class="kinder-edit-photo" href="#pictureStudio">Customize My Picture</a></div><div><p class="eyebrow">Khaemenes Academy · Kindergarten Learning</p><h1 id="childTitle">My Kindergarten Profile</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="hero-controls"><a class="hero-btn hero-today" id="firstStepLink" href="../today/">🌟 Today’s first step</a><a class="hero-btn hero-garden" href="#garden">🌼 My learning garden</a><a class="hero-btn hero-graduate" href="../graduation/">🏮 Graduation bridge</a><button class="hero-btn hero-theme" id="paletteToggle" type="button" aria-pressed="false">🎨 Calm Garden Colors</button><a class="hero-btn" href="#pictureStudio">🖼️ My Picture Studio</a><a class="hero-btn" href="#kinderDailyAdventure">⭐ Daily Adventures</a><a class="hero-btn" href="#stickerCard">🏵️ Sticker Meadow</a><a class="hero-btn" href="#grownups">👨‍👩‍👧 Family Tools</a></div></div></div></section>
 <main id="main" class="shell">
 <div id="accountNote" class="notice" role="status">Looking for a Kindergarten learner on this browser…</div>
 <section id="learnerSwitch" class="card" hidden><label for="learnerSelect"><strong>Who is learning today?</strong></label><select id="learnerSelect"></select><p>Each child keeps their own picture, colors, favorites, progress, and learning record.</p></section>
-<div class="grid">
-<section class="card today span7"><p class="eyebrow">Today</p><h2>My next little step</h2><div id="nextStep"><a class="activity" href="../#student"><span>Open the Kinder Garden</span><span>→</span></a></div><p id="todayMessage">We will find the next adventure when a Kindergarten learner is selected.</p></section>
+<div class="grid" id="kindergartenProfileCards">
+<section class="card span7 personalize" id="pictureStudio" aria-labelledby="pictureStudioTitle"><p class="eyebrow">My creative studio</p><h2 id="pictureStudioTitle">My Picture &amp; Colors</h2><p>Choose a badge, photo, frame, or Yearbook picture with a grown-up. These choices stay on this browser.</p><label><input type="checkbox" id="adultConfirm"> I am a grown-up helping this learner.</label><div class="choice" id="avatarChoices" role="group" aria-label="Choose a picture badge"></div><label for="childPhoto">Choose a photo</label><input id="childPhoto" class="photo-input" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="kinderYearbookPicture" style="font-size:16px;min-height:44px;border-radius:7px;margin-top:8px">Choose from My Yearbook</button><button type="button" id="openYearbookFromProfile" style="font-size:16px;min-height:44px;border-radius:7px;margin-top:8px;background:#243038;color:#fff8e9">Open My Yearbook</button><label>Choose a picture frame</label><div class="choice" id="kinderFrameChoices" role="group" aria-label="Choose a photo frame shape"></div><div class="actions"><button id="removePhoto">Remove photo</button><button id="usePreschoolPhoto">Bring my Pre-K look</button></div></section>
+<section class="card span5 personalize" id="colorStudio" aria-labelledby="colorStudioTitle"><p class="eyebrow">My color studio</p><h2 id="colorStudioTitle">My Garden Colors</h2><p>Choose the feeling of your learning garden. Each learner keeps a separate look.</p><div class="choice" id="backgroundChoices"></div><div class="actions"><button id="resetLook">Original colors</button><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><p style="font-size:16px">A downloaded picture backup contains the child’s photo, if selected, and is not encrypted. Keep it private.</p><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
+<section class="card span12" id="kinderDailyAdventure" aria-labelledby="kinderDailyAdventureTitle">
+<p class="eyebrow">My daily adventures</p><h2 id="kinderDailyAdventureTitle">Today I Explore!</h2>
+<p>My grown-up chooses our playful activities. I can mark what I explored and fill my star garden. Stars celebrate effort, not grades.</p>
+<div id="kinderAdventureStars" aria-hidden="true" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:10px 0"></div>
+<p id="kinderAdventureProgress" role="status">Choose a learner to start today's activities.</p>
+<div id="kinderAdventureActivities" class="kinder-adventure-grid" aria-label="My daily adventure check-ins"></div>
+<p id="kinderAdventureStatus" role="status">Activities are saved on this browser.</p>
+<div class="actions"><a class="btn" id="kinderAdventureLesson" href="../today/">Open Today's First Step</a><a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/#khaeKinderFamilyDailyPanel">Family Activity Planner</a></div>
+</section>
+<section class="card today span7" id="todayCard"><p class="eyebrow">Today</p><h2>My next little step</h2><div id="nextStep"><a class="activity" href="../#student"><span>Open the Kinder Garden</span><span>→</span></a></div><p id="todayMessage">We will find the next adventure when a Kindergarten learner is selected.</p></section>
 <section class="card span5" id="favorites"><p class="eyebrow">Favorites</p><h2>My little basket</h2><div id="pinnedActivities" class="favorites"></div><div class="actions"><button id="pinKinderCourse">📌 Pin my class</button><button id="unpinKinderCourse">Remove class pin</button></div><label for="appSelect">Choose a favorite game</label><select id="appSelect"><option value="">Choose an adventure</option></select><div class="actions"><button id="pinSelectedApp">⭐ Add favorite</button><button id="unpinSelectedApp">Remove favorite</button></div></section>
 <section class="card span8" id="garden"><p class="eyebrow">36 weeks · 36 flowers</p><h2>My learning garden</h2><p>Every mastered week grows another flower. The outlined flower shows the next week waiting to bloom.</p><div class="progressbar" aria-hidden="true"><span id="progressFill"></span></div><p id="gardenStatus">No formal progress is shown until a learner is selected.</p><div class="flower-garden" id="flowerGarden" aria-label="36-week mastery garden"></div><div class="milestones"><div class="milestone"><strong id="midIcon">🌱</strong>Midyear</div><div class="milestone"><strong id="finalIcon">🌱</strong>Final</div><div class="milestone"><strong id="portfolioIcon">🌱</strong>Portfolio</div><div class="milestone"><strong id="graduateIcon">🌱</strong>Graduation</div></div></section>
-<section class="card span4"><p class="eyebrow">Celebrate growth</p><h2>Sticker meadow</h2><p>Mastered weeks unlock cheerful stickers here. They celebrate effort; they never change grades.</p><div class="sticker-meadow" id="stickerMeadow"></div></section>
-<section class="card span6 personalize"><p class="eyebrow">Make it mine</p><h2>My picture</h2><p>A grown-up may choose an avatar or a small local photo. Nothing is uploaded by this page.</p><label><input type="checkbox" id="adultConfirm"> I am a grown-up helping this learner.</label><div class="choice" id="avatarChoices"></div><label for="childPhoto">Choose a photo</label><input id="childPhoto" class="photo-input" type="file" accept="image/png,image/jpeg,image/webp"><div class="actions"><button id="removePhoto">Remove photo</button><button id="usePreschoolPhoto">Bring my Pre-K look</button></div></section>
-<section class="card span6 personalize"><p class="eyebrow">Color world</p><h2>My garden colors</h2><p>Choose the feeling of your learning garden. Each learner keeps a separate look.</p><div class="choice" id="backgroundChoices"></div><div class="actions"><button id="resetLook">Original colors</button><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
+<section class="card span4" id="stickerCard"><p class="eyebrow">Celebrate growth</p><h2>Sticker meadow</h2><p>Mastered weeks unlock cheerful stickers here. They celebrate effort; they never change grades.</p><div class="sticker-meadow" id="stickerMeadow"></div></section>
 <section class="card span12"><p class="eyebrow">Next horizon</p><h2>When I am ready for Grade 1</h2><p id="gradeOneSummary">The Lantern Bridge watches real Kindergarten mastery. Exploring Grade 1 never changes placement.</p><div class="actions"><a class="btn" href="../graduation/">🏮 Visit the Lantern Bridge</a><a class="btn" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">🏛️ Peek at Grade 1</a></div></section>
 </div>
 <details class="adult-door" id="grownups"><summary>🔐 Grown-Ups · Learning Record & Profile Studio</summary><div class="adult-inside"><p>This area holds family-assisted goals, reflections, Today / Review / Next, strengths and supports, learning-moment evidence, language/accessibility preferences, and protected profile backups. It cannot award grades or bypass mastery.</p><div id="profileStudio"></div><p id="studioUnavailable" class="notice" hidden>The full Academy profile studio is unavailable right now. The child-facing Kindergarten profile remains usable.</p></div></details>
@@ -89,7 +162,10 @@ body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font
  ];
  specs.forEach((v,i)=>{const b=document.createElement("span");b.className="rising-bubble";b.style.setProperty("--left",v[0]+"%");b.style.setProperty("--size",v[1]+"px");b.style.setProperty("--bubble-color",v[2]);b.style.setProperty("--duration",v[3]+"s");b.style.setProperty("--drift",v[4]+"px");b.style.setProperty("--delay",(-i*1.65)+"s");ocean.append(b)});
 })();
-</script>\n<script src="../assets/khaemenes-kinder-resources.js"></script>\n<script src="../assets/khaemenes-kinder-continuity.js"></script>\n<script src="../assets/naib-mentor-adapter.js"></script>
+</script>
+<script src="../assets/khaemenes-kinder-resources.js"></script>
+<script src="../assets/khaemenes-kinder-continuity.js"></script>
+<script src="../assets/naib-mentor-adapter.js"></script>
 <script src="../assets/khaemenes-family-registry.js"></script>
 <script src="../assets/khaemenes-learning-continuation.js"></script>
 <script src="../assets/khaemenes-student-profile-v2.js"></script>
@@ -99,23 +175,28 @@ body :is(.hero,.ug-hero,.mast) :is(.eyebrow,.ug-eyebrow),body main>.eyebrow{font
 (function(){
 "use strict";
 const BASE="https://vervenveda.com/Khaemenes_KinderGarden.github.io/",KEY="khaemenes_kindergarten_visual_profile_v1:",PINKEY="khaemenes_kindergarten_profile_app_pins_v1:",PALETTEKEY="khaemenes_kindergarten_profile_palette_v1:";
-const THEMES=["sky","forest","ocean","sunset","night"],AVATARS=["🌻","🦊","🦋","🦉","🚀","🌈","🐝","🐢"],STICKERS=["🌟","🌈","🐝","🦋","🌻","🍎","🚀","🦉","🐢","🎨","🎵","🧩"];
+const THEMES=["sky","forest","ocean","sunset","night"],AVATARS=["🌻","🦊","🦋","🦉","🚀","🌈","🐝","🐢","🎨","🎓","📚","⭐"],FRAMES=["circle","square","oval","rhombus","semicircle","kite"],STICKERS=["🌟","🌈","🐝","🦋","🌻","🍎","🚀","🦉","🐢","🎨","🎵","🧩"];
 const $=id=>document.getElementById(id),R=window.KhaemenesFamilyRegistry,C=window.KhaemenesLearningContinuation,G=window.KhaemenesKinderMasteryGates,catalog=window.KhaemenesKinderResources;
-let activeId="",look={theme:"sky",avatar:"🌻",photo:""},palette="ocean";
+let activeId="",look={theme:"sky",avatar:"🌻",photo:"",frame:"circle"},palette="ocean",pictureRequest=0;
 const read=(k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}},write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
 function learner(){const v=R?.getLearner?.()||null;return v&&String(v.stage).toLowerCase()==="kindergarten"&&v.learnerId?v:null}
-function profileKey(){return KEY+encodeURIComponent(activeId)}\nfunction paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}\nfunction renderPalette(){
- document.body.dataset.palette=palette;
- const pastel=palette==="pastel",b=$("paletteToggle"),ocean=$("bubbleOcean");
- if(b){b.setAttribute("aria-pressed",String(pastel));b.textContent=pastel?"🌊 Ocean colors":"🎨 Pastel colors"}
- if(ocean)ocean.style.background=pastel?"linear-gradient(180deg,#ffe0ef 0 20%,#efc9ff 20% 42%,#cceeff 42% 64%,#ccefdc 64% 84%,#ffe6b9 84% 100%)":"linear-gradient(180deg,#d8ff45 0 20%,#94e374 20% 42%,#4bcab7 42% 64%,#36a4cf 64% 84%,#3565c8 84% 100%)";
- const colors=pastel?["#ff8fb8","#c99cff","#7ed8ea","#b9e89f","#ffc47a","#f7a5c3","#9fc8ff","#d8a7e8","#91d8c4","#ffd78c","#ee91b0","#b7a0ed","#85cfe4","#c5eaa9","#ffb888","#f2a1cf"]:["#fff20a","#ff9d16","#ff6680","#12c8ee","#d8ffb1","#12c8ee","#ff6680","#fff20a","#cfff72","#ff9d16","#12c8ee","#fff20a","#ff6680","#cfff72","#12c8ee","#ff9d16"];
+function profileKey(){return KEY+encodeURIComponent(activeId)}
+function paletteKey(){return PALETTEKEY+encodeURIComponent(activeId||"guest")}
+function renderPalette(){
+ // Two restrained historical/natural palettes; preserve previous saved keys.
+ const calm=palette==="pastel",button=$("paletteToggle");
+ document.body.dataset.palette=calm?"calm":"garden";
+ if(button){button.setAttribute("aria-pressed",String(calm));button.textContent=calm?"🌿 Garden Colors":"🎨 Calm Garden Colors"}
+ const ocean=$("bubbleOcean");if(ocean)ocean.style.background=calm?
+  "linear-gradient(180deg,#eee8d9,#dfe8e4,#d3dbd0)":
+  "linear-gradient(180deg,#e7e2d4,#e0e8dc,#d3dfd7)";
+ const colors=calm?["#b48b45","#5e7f75","#857659","#7b8876"]:["#607c69","#b48b45","#577685","#78835d"];
  document.querySelectorAll(".rising-bubble").forEach((x,i)=>x.style.setProperty("--bubble-color",colors[i%colors.length]));
 }
-function normalize(v){v=v&&typeof v==="object"?v:{};return{theme:THEMES.includes(v.theme)?v.theme:"sky",avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""}}
+function normalize(v){v=v&&typeof v==="object"?v:{};return{theme:THEMES.includes(v.theme)?v.theme:"sky",avatar:AVATARS.includes(v.avatar)?v.avatar:"🌻",frame:FRAMES.includes(v.frame)?v.frame:"circle",photo:typeof v.photo==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(v.photo)&&v.photo.length<180000?v.photo:""}}
 function consent(){if(!activeId){$("lookStatus").textContent="Choose a Kindergarten learner first.";return false}if(!$("adultConfirm").checked){$("lookStatus").textContent="A grown-up confirms before changing the profile.";return false}return true}
-function saveLook(){if(!consent())return;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook()}
-function renderLook(){document.body.dataset.theme=look.theme;const p=$("photoPreview");p.replaceChildren();if(look.photo){const i=document.createElement("img");i.src=look.photo;i.alt="Learner's locally stored picture";p.append(i)}else p.textContent=look.avatar;document.body.style.background=look.theme==="night"?"linear-gradient(#dce6f5,#f8fbff)":look.theme==="ocean"?"linear-gradient(#dff8ff,#f7fff9)":look.theme==="sunset"?"linear-gradient(#fff0df,#fffaf1)":look.theme==="forest"?"linear-gradient(#e7f5df,#fffdf7)":"";for(const b of $("avatarChoices").children)b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));for(const b of $("backgroundChoices").children)b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme))}
+function saveLook(){if(!consent())return;const ok=write(profileKey(),{schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,updatedAt:new Date().toISOString(),...look});$("lookStatus").textContent=ok?"Saved on this browser.":"Could not save. Try a smaller photo.";renderLook();return ok}
+function renderLook(){document.body.dataset.theme=look.theme;const p=$("photoPreview");p.dataset.frame=look.frame;p.setAttribute("aria-label","Learner picture · "+look.frame+" frame");p.replaceChildren();if(look.photo){const i=document.createElement("img");i.src=look.photo;i.alt="Learner's locally stored picture";p.append(i)}else p.textContent=look.avatar;document.body.style.background=look.theme==="night"?"linear-gradient(#dce6f5,#f8fbff)":look.theme==="ocean"?"linear-gradient(#dff8ff,#f7fff9)":look.theme==="sunset"?"linear-gradient(#fff0df,#fffaf1)":look.theme==="forest"?"linear-gradient(#e7f5df,#fffdf7)":"";for(const b of $("avatarChoices").children)b.setAttribute("aria-pressed",String(b.dataset.avatar===look.avatar&&!look.photo));for(const b of $("backgroundChoices").children)b.setAttribute("aria-pressed",String(b.dataset.theme===look.theme));for(const b of $("kinderFrameChoices").children)b.setAttribute("aria-pressed",String(b.dataset.frame===look.frame))}
 function appPins(){const v=read(PINKEY+encodeURIComponent(activeId),[]);return Array.isArray(v)?v.filter(x=>typeof x==="string").slice(0,15):[]}
 function coursePins(){const v=read("khaemenes_course_pins_v1",{version:1,learners:{}});return v&&typeof v==="object"?v:{version:1,learners:{}}}
 function coursePinned(){return Array.isArray(coursePins()?.learners?.[activeId])&&coursePins().learners[activeId].some(x=>x?.id==="khaemenes-kindergarten"||x?.courseId==="khaemenes-kindergarten")}
@@ -155,23 +236,90 @@ function renderLearners(){
  const sel=$("learnerSelect");sel.replaceChildren();candidates.forEach(c=>sel.add(new Option(c.nickname||"Kindergarten learner",c.learnerId)));$("learnerSwitch").hidden=candidates.length<2;if(activeId)sel.value=activeId;
 }
 function refresh(){
- const l=learner();activeId=l?.learnerId||"";look=activeId?normalize(read(profileKey(),{})):{theme:"sky",avatar:"🌻",photo:""};renderLearners();renderLook();renderLearning();renderGarden();
+ pictureRequest++; // Cancel stale image decoding after learner selection.
+ const l=learner();activeId=l?.learnerId||"";look=activeId?normalize(read(profileKey(),{})):{theme:"sky",avatar:"🌻",photo:"",frame:"circle"};renderLearners();renderLook();renderLearning();renderGarden();
  $("childTitle").textContent=l?.nickname?l.nickname+"'s Learning Garden":"My Kindergarten Garden";$("childMeta").textContent=l?"Kindergarten · family-linked learner · every flower belongs to this learner only.":"Guest preview · no student record or progress is being created.";$("accountNote").textContent=l?"Welcome back, "+(l.nickname||"Kindergarten learner")+"! This garden is connected to the active family learner.":"No Kindergarten learner is active yet. You can explore this profile safely; a family can create or select a learner when ready.";
 }
-AVATARS.forEach(a=>{const b=document.createElement("button");b.type="button";b.textContent=a;b.dataset.avatar=a;b.addEventListener("click",()=>{if(!consent())return;look.avatar=a;look.photo="";saveLook()});$("avatarChoices").append(b)});
+AVATARS.forEach(a=>{const b=document.createElement("button");b.type="button";b.textContent=a;b.dataset.avatar=a;b.addEventListener("click",()=>{if(!consent())return;pictureRequest++;look.avatar=a;look.photo="";saveLook()});$("avatarChoices").append(b)});
 [["sky","☁️ Sky"],["forest","🌿 Forest"],["ocean","🐳 Ocean"],["sunset","🌅 Sunset"],["night","🌙 Night"]].forEach(([v,t])=>{const b=document.createElement("button");b.type="button";b.textContent=t;b.dataset.theme=v;b.addEventListener("click",()=>{if(!consent())return;look.theme=v;saveLook()});$("backgroundChoices").append(b)});
-$("childPhoto").addEventListener("change",e=>{if(!consent())return;const f=e.target.files?.[0];if(!f||f.size>5*1024*1024)return $("lookStatus").textContent="Choose an image smaller than 5 MB.";const img=new Image(),reader=new FileReader();reader.onload=()=>img.src=reader.result;img.onload=()=>{const c=document.createElement("canvas"),max=240,scale=Math.min(1,max/Math.max(img.width,img.height));c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));c.getContext("2d").drawImage(img,0,0,c.width,c.height);look.photo=c.toDataURL("image/jpeg",.72);saveLook()};reader.readAsDataURL(f)});
-$("removePhoto").onclick=()=>{if(consent()){look.photo="";saveLook()}};$("resetLook").onclick=()=>{if(consent()){look={theme:"sky",avatar:"🌻",photo:""};saveLook()}};
+$("openYearbookFromProfile").addEventListener("click",()=>{
+ if(!consent())return;
+ if(!window.KhaemenesYearbookProfileImages?.openYearbook?.(activeId)){
+  $("lookStatus").textContent="Yearbook is unavailable for this learner."
+ }
+});
+$("kinderYearbookPicture").addEventListener("click",()=>{
+ if(!consent())return;
+ const id=activeId,bridge=window.KhaemenesYearbookProfileImages;
+ if(!bridge?.choose){$("lookStatus").textContent="Yearbook picker is unavailable on this browser.";return}
+ const request=++pictureRequest;
+ bridge.choose(id,async(data,learnerId)=>{
+  if(learnerId!==id||activeId!==id||request!==pictureRequest||!consent())return false;
+  const previous=look.photo;look.photo=data;
+  if(saveLook()!==true){look.photo=previous;renderLook();return false}
+  return true;
+ });
+});
+FRAMES.forEach(frame=>{const b=document.createElement("button");b.type="button";b.dataset.frame=frame;b.textContent=({circle:"Circle",square:"Square",oval:"Oval",rhombus:"Rhombus",semicircle:"Semicircle",kite:"Kite"})[frame];b.setAttribute("aria-pressed","false");b.addEventListener("click",()=>{if(!consent())return;look.frame=frame;saveLook()});$("kinderFrameChoices").append(b)});
+$("childPhoto").addEventListener("change",e=>{
+ if(!consent())return;
+ const f=e.target.files?.[0];e.target.value="";
+ if(!f||!["image/jpeg","image/png","image/webp"].includes(f.type)||!f.size||f.size>4*1024*1024){$("lookStatus").textContent="Choose a JPG, PNG or WebP under 4 MB.";return}
+ const target=activeId,request=++pictureRequest,img=new Image(),reader=new FileReader();
+ reader.onerror=()=>{$("lookStatus").textContent="Could not read this picture."};
+ reader.onload=()=>{if(target===activeId&&request===pictureRequest)img.src=reader.result};
+ img.onerror=()=>{$("lookStatus").textContent="Could not open this picture."};
+ img.onload=()=>{
+  if(target!==activeId||request!==pictureRequest||!consent())return;
+  try{
+   const c=document.createElement("canvas");c.width=c.height=240;
+   const ctx=c.getContext("2d");if(!ctx)throw Error("canvas-unavailable");
+   const side=Math.min(img.naturalWidth,img.naturalHeight);
+   ctx.drawImage(img,(img.naturalWidth-side)/2,(img.naturalHeight-side)/2,side,side,0,0,240,240);
+   let photo="";
+   for(const q of [.76,.60,.44,.32]){photo=c.toDataURL("image/jpeg",q);if(photo.length<180000)break}
+   if(photo.length>=180000)throw Error("photo-too-large");
+   look.photo=photo;saveLook();
+  }catch{$("lookStatus").textContent="This picture could not be prepared. The previous image was kept."}
+ };
+ reader.readAsDataURL(f);
+});
+$("removePhoto").onclick=()=>{if(consent()){pictureRequest++;look.photo="";saveLook()}};$("resetLook").onclick=()=>{if(consent()){pictureRequest++;look={theme:"sky",avatar:"🌻",photo:"",frame:"circle"};saveLook()}};
 $("pinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();r.learners=r.learners&&typeof r.learners==="object"?r.learners:{};const a=Array.isArray(r.learners[activeId])?r.learners[activeId]:[];if(!a.some(x=>x?.id==="khaemenes-kindergarten"))a.push({id:"khaemenes-kindergarten",courseId:"khaemenes-kindergarten",title:"Khaemenes Kindergarten",href:BASE+"#student",pinnedAt:new Date().toISOString()});r.learners[activeId]=a.slice(-24);r.version=1;r.updatedAt=new Date().toISOString();write("khaemenes_course_pins_v1",r);renderLearning()};
 $("unpinKinderCourse").onclick=()=>{if(!activeId)return;const r=coursePins();if(Array.isArray(r?.learners?.[activeId]))r.learners[activeId]=r.learners[activeId].filter(x=>x?.id!=="khaemenes-kindergarten"&&x?.courseId!=="khaemenes-kindergarten");write("khaemenes_course_pins_v1",r);renderLearning()};
 $("pinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;const a=appPins(),id=$("appSelect").value;if(!a.includes(id))a.push(id);write(PINKEY+encodeURIComponent(activeId),a.slice(-15));renderLearning()};$("unpinSelectedApp").onclick=()=>{if(!activeId||!$("appSelect").value)return;write(PINKEY+encodeURIComponent(activeId),appPins().filter(x=>x!==$("appSelect").value));renderLearning()};
 $("learnerSelect").onchange=()=>{const id=$("learnerSelect").value,l=R?.getLearner?.(id);if(l?.familyId)R?.setActive?.({familyId:l.familyId,learnerId:id})};
-$("usePreschoolPhoto").onclick=()=>{if(!consent())return;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
-$("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{if(!consent())return;const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const v=JSON.parse(r.result);look=normalize(v);saveLook()}catch{$("lookStatus").textContent="That backup could not be read."}};r.readAsText(f)};$("printProfile").onclick=()=>print();
-$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};\n$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+$("usePreschoolPhoto").onclick=()=>{if(!consent())return;pictureRequest++;const candidates=["khaemenes_preschool_visual_profile_v1:"+encodeURIComponent(activeId),"khaemenes_prek_visual_profile_v1:"+encodeURIComponent(activeId)];let found=null;for(const k of candidates){const v=read(k,null);if(v){found=v;break}}if(!found)return $("lookStatus").textContent="No matching Pre-K picture/color backup was found on this browser.";look=normalize(found);saveLook()};
+$("exportLook").onclick=()=>{if(!activeId)return;const blob=new Blob([JSON.stringify({schema:"khaemenes.kindergarten-visual.v1",learnerId:activeId,...look},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="kindergarten-profile-look.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$("importLook").onchange=e=>{
+ if(!consent())return;
+ const f=e.target.files?.[0];e.target.value="";if(!f)return;
+ if(!f.size||f.size>400000){$("lookStatus").textContent="Picture backup is too large.";return}
+ const target=activeId,request=++pictureRequest,r=new FileReader();
+ r.onerror=()=>{$("lookStatus").textContent="That backup could not be read."};
+ r.onload=()=>{
+  if(target!==activeId||request!==pictureRequest)return;
+  try{
+   const v=JSON.parse(r.result);
+   if(v?.schema!=="khaemenes.kindergarten-visual.v1"||v?.learnerId!==target){
+    $("lookStatus").textContent="This backup belongs to another learner or has an unsupported format. No changes were made.";return
+   }
+   const previous=look;look=normalize(v);
+   if(!consent()||!saveLook()){look=previous;renderLook()}
+  }catch{$("lookStatus").textContent="That backup could not be read. No changes were made."}
+ };
+ r.readAsText(f);
+};$("printProfile").onclick=()=>print();
+$("paletteToggle").onclick=()=>{palette=palette==="pastel"?"ocean":"pastel";write(paletteKey(),palette);renderPalette()};
+$("menuButton").onclick=()=>{const open=$("menuPanel").classList.toggle("open");$("menuButton").setAttribute("aria-expanded",String(open))};
+$("menuPanel").addEventListener("keydown",e=>{if(e.key==="Escape"){$("menuPanel").classList.remove("open");$("menuButton").setAttribute("aria-expanded","false");$("menuButton").focus()}});
+document.addEventListener("pointerdown",e=>{if(!e.target.closest("#menuPanel,#menuButton")&&$("menuPanel").classList.contains("open")){$("menuPanel").classList.remove("open");$("menuButton").setAttribute("aria-expanded","false")}});
+
 window.addEventListener("khaemenes-family-changed",refresh);window.addEventListener("khaemenes-learning-continuation-changed",()=>activeId&&renderLearning());window.addEventListener("khaemenes-kindergarten-mastery-changed",()=>activeId&&renderGarden());window.addEventListener("storage",refresh);refresh();
 })();
 </script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-yearbook-profile-images.js?v=20261109-yearbook-popup-v2"></script>
+<script src="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-kindergarten-family-daily-plan.js?v=20261109-six-adventures-v2"></script>
+<script src="../assets/khaemenes-kinder-daily-adventure.js?v=20261109-family-daily-v1"></script>
 <script src="../assets/khaemenes-student-profile-ui-v2.js"></script>
 <script>(function(){const box=document.getElementById("profileStudio");if(!window.KhaemenesStudentProfileUIV2&&!box.children.length)document.getElementById("studioUnavailable").hidden=false})();</script>
 
