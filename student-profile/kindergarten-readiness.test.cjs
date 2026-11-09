@@ -19,6 +19,14 @@ assert.ok(markup.includes("body.kinder-ready .shell{width:min(94%,1240px)"),"Des
 assert.ok(markup.includes("body.kinder-ready[data-palette=\"calm\"] .bubble-ocean"),"Working alternate calm palette");
 assert.ok(markup.includes("font:400 16px/1.4 Nunito"),"Accessible toolbar label sizes");
 assert.ok(html.includes("khaemenes-yearbook-profile-images.js"),"Yearbook bridge still loaded");
+for(const name of ["kinderDailyAdventure","kinderAdventureStars","kinderAdventureActivities","kinderAdventureProgress","kinderAdventureStatus","kinderAdventureLesson"]){
+ assert.equal(ids.filter(x=>x===name).length,1,"daily adventure element: "+name);
+}
+assert.ok(markup.indexOf('id="kinderDailyAdventure"')<markup.indexOf('id="todayCard"'),"Daily adventure is visible before ordinary daily cards");
+assert.ok(markup.includes('href="#kinderDailyAdventure"'),"Daily adventures navigation is available");
+assert.ok(markup.includes('family/#khaeKinderFamilyDailyPanel'),"Parent plan doorway retained");
+assert.ok(html.indexOf('khaemenes-kindergarten-family-daily-plan.js')<html.indexOf('khaemenes-kinder-daily-adventure.js'),"Plan contract loads before student view");
+
 assert.ok(html.includes("khaemenes.kindergarten-visual.v1"),"Original learner appearance schema unchanged");
 assert.ok(html.includes("khaemenes-kindergarten-mastery-changed"),"Mastery update listener retained");
 assert.ok(html.includes("v?.learnerId!==target"),"Backup learner validation retained");
@@ -28,4 +36,4 @@ for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)){
  if(!match[1].trim())continue;inline++;new vm.Script(match[1],{filename:"kindergarten-profile-inline-"+inline+".js"});
 }
 assert.ok(inline>=3);
-console.log("PASS Kindergarten Profile readiness: layout/order, 17 preserved controls, accessible routes, yearbook, learner isolation, syntax");
+console.log("PASS Kindergarten Profile readiness: layout/order, 17 preserved profile controls plus daily adventure, accessible routes, yearbook, learner isolation, syntax");
