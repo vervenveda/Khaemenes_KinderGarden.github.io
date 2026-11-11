@@ -1667,6 +1667,43 @@ body main select,body main .hero-actions a{
 body main a.btn,body main .btn,body main button{
   overflow-wrap:break-word;
 }
+</style>
+
+<style id="kinder-readable-type-18px-20261111">
+/* Kindergarten landing page only: typography accessibility. Preserve existing
+   hero/card title sizes, colors, illustrations, grids and all behavior. */
+body{
+  --kinder-reading-font:Nunito,"Brandon Grotesque","Trebuchet MS","Segoe UI",Arial,sans-serif;
+  --kinder-section-font:"Comic Sans MS","Chalkboard SE","Comic Neue",cursive;
+  font-family:var(--kinder-reading-font)!important;
+  font-size:18px;
+}
+/* Section titles change typeface only, never their approved dimensions. */
+body main .section .section-heading>h2,
+body main .section.final>.shell>h2{
+  font-family:var(--kinder-section-font)!important;
+}
+/* All normal reading text and interactive labels: at least 18px.
+   Exclude heading elements and decorative icon glyphs. */
+body main :is(p,li,small,label,td,th,dt,dd,summary),
+body main :is(.eyebrow,.kicker,.tagline,.gate-state,.roadmap-rule,.guardian-state,.mentor-badge,.origin,.unit-no,.profile-line,.empty,.garden-caption,.section-supporting-line,.scene-link small),
+body main :is(a,button,input,select,textarea,[role="button"]),
+body :is(.breadcrumbs,.mobile-menu,.utility,footer,.naib-overlay,dialog) :is(p,li,small,label,a,button,input,select,textarea,span:not(.icon):not(.big)),
+body > .skip{
+  font-family:var(--kinder-reading-font)!important;
+  font-size:18px!important;
+  line-height:1.45;
+}
+/* Rendered dynamic labels inside the learning cards and profile area. */
+body main :is(.unit-card,.app-card,.feature-card,.profile-card,.pinned-card,.daily-card,.family-card,.kinder-mentor-card,.mentor-principles,.mentor-progress,.stat,.scene-link,.garden-wordplay) span:not(.icon):not(.big):not(.unit-icon):not(.app-icon):not(.scene-sun):not(.wonder-art){
+  font-family:var(--kinder-reading-font)!important;
+  font-size:18px!important;
+}
+body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overlay,dialog) :is(a,button,input,select,textarea){
+  overflow-wrap:break-word;
+}
+/* Keep visual illustration sizes, badges and official injected VNV chrome
+   under their original component ownership. */
 </style></head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
