@@ -1,0 +1,45 @@
+name: Kindergarten Early Learning Standard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/kindergarten-global-standard-v1.js'
+      - 'tools/kindergarten-global-standard-audit.mjs'
+      - 'tools/semantic-hierarchy-audit.mjs'
+      - '.github/workflows/kindergarten-global-standard.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Kindergarten early-learning standard
+        run: node tools/kindergarten-global-standard-audit.mjs --write
+      - name: Verify Kindergarten early-learning standard
+        run: node tools/kindergarten-global-standard-audit.mjs --check
+      - name: Audit semantic title eyebrow hierarchy
+        run: node tools/semantic-hierarchy-audit.mjs
+      - name: Validate patch
+        run: git diff --check
+      - name: Commit normalization
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No Kindergarten pages required early-learning standard repair."
+            exit 0
+          fi
+          git config user.name "Khaemenes Academy Automation"
+          git config user.email "khaemenesacademy@users.noreply.github.com"
+          git add -A -- ':!node_modules' ':!.git'
+          git commit -m "Standardize Kindergarten early learning chrome typography and hierarchy"
+          git push
