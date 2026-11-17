@@ -1,6 +1,6 @@
-/* Khaemenes Kindergarten · early-learning global standard v1.0.0
+/* Khaemenes Kindergarten · early-learning global standard v1.1.0
    Early learning exception: NO 333 ticker.
-   Required: AutoPopulate ticker -> official header/menu -> lower-right 3x2 ecosystem toolbar.
+   Required on child-facing pages: AutoPopulate ticker -> child-safe local header -> local-only 3x2 learning dock. No ecosystem escape controls.
    Typography: 18px readable floor · 33px ordinary titles · one 66px primary title.
    Semantics: eyebrow = category/brand; title = heading; description = paragraph.
    Existing child-focused visual styling is preserved.
@@ -16,6 +16,7 @@ const PRIMARY_ATTR="data-khaemenes-primary-title";
 const SCRIPTS={
   tickerAuto:VNV+"vnv-ticker-autopopulate.js",
   header:VNV+"vnv-header-autopopulate.js",
+  childDock:ROOT+"assets/khaemenes-child-safe-learning-dock.js",
   toolbar:VNV+"vnv-ecosystem-toolbar.js"
 };
 
@@ -154,6 +155,24 @@ function normalizeHierarchy(root=document){
   document.documentElement.dataset.khaemenesHierarchy="title-description-v1";
 }
 
+
+function childFacingSurface(){
+  const p=location.pathname;
+  return !/(?:\/|^)(?:family|teacher-tools?|teacher|teachers|admin)(?:\/|$)/i.test(p);
+}
+function stripEscapeControls(){
+  if(!childFacingSurface())return;
+  document.querySelectorAll('#vnvEcosystemUtilityDock,#vnvEcosystemMenuButton,[data-vnv-ecosystem-slot]').forEach(el=>el.remove());
+  document.querySelectorAll('header a,nav a').forEach(a=>{
+    try{
+      const u=new URL(a.href,location.href);
+      const same=u.pathname.startsWith("/Khaemenes_KinderGarden.github.io/");
+      if(!same&&(u.hostname===location.hostname||/vervenveda\.com$/i.test(u.hostname)||/github\.io$/i.test(u.hostname)))a.remove();
+    }catch{}
+  });
+  document.documentElement.dataset.khaemenesEarlyLearningBoundary="local-only";
+}
+
 function mountAuto(){
   try{if(!document.getElementById("vnvTickerAutoPopulate"))window.VNV_TICKER?.autoPopulate?.({mode:"auto"})}catch{}
   strip333();
@@ -167,22 +186,20 @@ function mountHeader(){
       home:"https://vervenveda.com/KhaemenesAcademy_Home.github.io/",
       actions:[
         {label:"Kindergarten Home",href:ROOT},
-        {label:"Learning Garden",href:ROOT+"#curriculum"},
-        {label:"Student",href:"https://vervenveda.com/Khaemenes_Academy.github.io/student/"},
-        {label:"Ecosystem",href:"https://vervenveda.com/#directory"},
-        {label:"Family",href:"https://vervenveda.com/Khaemenes_Academy.github.io/family/"}
+        {label:"Today",href:ROOT+"today/"},
+        {label:"ABC",href:ROOT+"apps/ABC_curriculum_index.html"},
+        {label:"Math",href:ROOT+"apps/kindergarten_math_cloud_index.html"},
+        {label:"Reading",href:ROOT+"reading/"}
       ]
     });
   }catch{}
 }
 function mountToolbar(){
-  try{window.VNVEcosystemToolbar?.mount?.()}catch{}
-  const dock=document.getElementById("vnvEcosystemUtilityDock");
-  if(dock){
-    dock.style.setProperty("left","auto","important");
-    dock.style.setProperty("right","max(12px, env(safe-area-inset-right))","important");
-    dock.dataset.khaemenesKinderCanonicalToolbar="true";
+  if(childFacingSurface()){
+    stripEscapeControls();
+    return;
   }
+  try{window.VNVEcosystemToolbar?.mount?.()}catch{}
 }
 let pending=false;
 function schedule(){
@@ -190,7 +207,7 @@ function schedule(){
   pending=true;
   requestAnimationFrame(()=>{
     pending=false;
-    strip333();installTypography();normalizeHierarchy(document);mountAuto();mountHeader();mountToolbar();
+    strip333();installTypography();normalizeHierarchy(document);mountAuto();mountHeader();mountToolbar();stripEscapeControls();
   });
 }
 async function start(){
@@ -198,9 +215,16 @@ async function start(){
   strip333();installTypography();normalizeHierarchy(document);
   await load(SCRIPTS.tickerAuto,"khaemenesKinderAutoTicker");mountAuto();
   await load(SCRIPTS.header,"khaemenesKinderHeader");mountHeader();
-  await load(SCRIPTS.toolbar,"khaemenesKinderToolbar");mountToolbar();
+  if(childFacingSurface()){
+    stripEscapeControls();
+    await load(SCRIPTS.childDock,"khaemenesKinderChildDock");
+    stripEscapeControls();
+    document.documentElement.dataset.khaemenesKinderChrome="auto-child-safe-header-local-dock-no-333";
+  }else{
+    await load(SCRIPTS.toolbar,"khaemenesKinderToolbar");mountToolbar();
+    document.documentElement.dataset.khaemenesKinderChrome="adult-surface-auto-header-toolbar-no-333";
+  }
   strip333();
-  document.documentElement.dataset.khaemenesKinderChrome="auto-header-menu-toolbar-no-333";
   if(typeof MutationObserver==="function")new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
   window.addEventListener("resize",schedule,{passive:true});
 }
