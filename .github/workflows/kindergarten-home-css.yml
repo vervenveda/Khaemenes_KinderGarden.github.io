@@ -1,0 +1,27 @@
+name: Kindergarten Home CSS Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'assets/kindergarten-home-fresh-v1.css'
+      - 'tools/validate-kindergarten-home-css.mjs'
+      - '.github/workflows/kindergarten-home-css.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'assets/kindergarten-home-fresh-v1.css'
+      - 'tools/validate-kindergarten-home-css.mjs'
+      - '.github/workflows/kindergarten-home-css.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tools/validate-kindergarten-home-css.mjs
