@@ -7,9 +7,9 @@
 /* --------------------------------------------------------------------------
    TOP SHORTCUTS — four equal controls in a 2×2 grid; More spans the row.
    -------------------------------------------------------------------------- */
-.kinder-quick-links{
+.hero .kinder-quick-links{
   width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
-  margin:8px auto!important;
+  margin:8px auto 12px!important;
   padding:8px!important;
   display:grid!important;
   grid-template-columns:repeat(2,minmax(0,1fr))!important;
@@ -19,7 +19,7 @@
   border-radius:7px!important;
   box-shadow:var(--soft)!important;
 }
-.kinder-quick-links :is(a,.kinder-menu-trigger){
+.hero .kinder-quick-links :is(a,.kinder-menu-trigger){
   width:100%!important;
   min-width:0!important;
   min-height:44px!important;
@@ -36,11 +36,11 @@
   white-space:normal!important;
   box-shadow:none!important;
 }
-.kinder-quick-links>a:nth-child(1){background:var(--sun)!important}
-.kinder-quick-links>a:nth-child(2){background:var(--blue)!important}
-.kinder-quick-links>a:nth-child(3){background:var(--lav)!important}
-.kinder-quick-links>a:nth-child(4){background:var(--grass)!important}
-.kinder-quick-links>.kinder-menu-trigger{
+.hero .kinder-quick-links>a:nth-child(1){background:var(--sun)!important}
+.hero .kinder-quick-links>a:nth-child(2){background:var(--blue)!important}
+.hero .kinder-quick-links>a:nth-child(3){background:var(--lav)!important}
+.hero .kinder-quick-links>a:nth-child(4){background:var(--grass)!important}
+.hero .kinder-quick-links>.kinder-menu-trigger{
   grid-column:1/-1!important;
   background:var(--orange)!important;
 }
@@ -245,5 +245,108 @@ main>#promise.kinder-accordion-section{background:#fff0df!important}
   .kinder-hero-action-shelf .hero-actions{
     grid-template-columns:1fr!important;
   }
-  .kinder-quick-links>.kinder-menu-trigger{grid-column:auto!important}
+  .hero .kinder-quick-links>.kinder-menu-trigger{grid-column:auto!important}
+}
+
+/* 2026-11-19 · Title-first hero ordering and symmetric collapsed shelves */
+.hero .kinder-title-band{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}
+.hero .kinder-title-band + .kinder-quick-links{
+  margin-top:8px!important;
+  margin-bottom:12px!important;
+}
+.hero .kinder-quick-links{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+}
+.hero .kinder-quick-links :is(a,.kinder-menu-trigger){
+  height:44px!important;
+  min-height:44px!important;
+  max-height:44px!important;
+}
+.hero .kinder-quick-links>.kinder-menu-trigger{
+  grid-column:1/-1!important;
+}
+
+/* All collapsed accordion sections occupy the exact same footprint. */
+main>.kinder-accordion-section,
+main>#welcome.kinder-accordion-section,
+main>#learning-tray.kinder-accordion-section,
+main>#kindergarten-life-skills.kinder-accordion-section,
+main>#curriculum.kinder-accordion-section,
+main>#connected-learning.kinder-accordion-section,
+main>#apps.kinder-accordion-section,
+main>#creche.kinder-accordion-section,
+main>#mentor.kinder-accordion-section,
+main>#mygarden.kinder-accordion-section,
+main>#today.kinder-accordion-section,
+main>#promise.kinder-accordion-section{
+  min-height:0!important;
+  height:auto!important;
+  margin:0!important;
+  padding:2px 0!important;
+  background:var(--cream)!important;
+  border:0!important;
+}
+.kinder-accordion{
+  width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
+  min-height:48px!important;
+  margin:0 auto!important;
+}
+.kinder-accordion:not([open]){
+  height:48px!important;
+}
+.kinder-accordion:not([open])>summary{
+  height:48px!important;
+  min-height:48px!important;
+  max-height:48px!important;
+}
+.kinder-accordion>summary{
+  box-sizing:border-box!important;
+  grid-template-columns:32px minmax(0,1fr) 64px!important;
+  padding:7px 12px!important;
+}
+.kinder-accordion>summary strong{
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+}
+.kinder-accordion-state{
+  width:64px!important;
+  min-width:64px!important;
+  max-width:64px!important;
+}
+
+/* Explicit alternating bar sequence: no matching colors touch. */
+.kinder-accordion[data-kinder-feature="welcome"]>summary{background:var(--sun)!important}
+.kinder-accordion[data-kinder-feature="tray"]>summary{background:var(--blue)!important}
+.kinder-accordion[data-kinder-feature="life"]>summary{background:var(--grass)!important}
+.kinder-accordion[data-kinder-feature="curriculum"]>summary{background:var(--lav)!important}
+.kinder-accordion[data-kinder-feature="connected"]>summary{background:var(--orange)!important}
+.kinder-accordion[data-kinder-feature="apps"]>summary{background:var(--pink)!important}
+.kinder-accordion[data-kinder-feature="creche"]>summary{background:var(--sun)!important}
+.kinder-accordion[data-kinder-feature="mentor"]>summary{background:var(--blue)!important}
+.kinder-accordion[data-kinder-feature="garden"]>summary{background:var(--grass)!important}
+.kinder-accordion[data-kinder-feature="today"]>summary{background:var(--lav)!important}
+.kinder-accordion[data-kinder-feature="promise"]>summary{background:var(--orange)!important}
+
+@media(max-width:760px){
+  .hero .kinder-quick-links{width:calc(100% - 24px)!important}
+  .kinder-accordion:not([open]){height:auto!important;min-height:48px!important}
+  .kinder-accordion:not([open])>summary{
+    height:auto!important;
+    min-height:48px!important;
+    max-height:none!important;
+  }
+  .kinder-accordion>summary{
+    grid-template-columns:28px minmax(0,1fr)!important;
+  }
+  .kinder-accordion>summary strong{white-space:normal!important}
+  .kinder-accordion-state{
+    grid-column:2!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+  }
 }
