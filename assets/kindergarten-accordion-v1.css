@@ -1,0 +1,130 @@
+/* Kindergarten accordion-only cleanup.
+   This file intentionally does not redesign the existing Kindergarten theme. */
+:root{--kg-accordion-width:960px}
+
+/* Keep the original hero theme; only re-center it after moving the side card. */
+.hero .hero-inner{
+  grid-template-columns:1fr!important;
+  place-items:center!important;
+}
+.hero .hero-garden{
+  width:min(100%,760px)!important;
+  margin-inline:auto!important;
+}
+.kinder-hero-action-shelf{
+  width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
+  margin:11px auto 24px!important;
+}
+.kinder-hero-action-shelf .hero-actions{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:8px!important;
+  justify-content:center!important;
+}
+.kinder-hero-action-shelf .hero-actions>*{
+  width:100%!important;
+  min-width:0!important;
+}
+
+/* Collapse every major feature into the same-width colorful bar. */
+main>.kinder-accordion-section{
+  padding:11px 0!important;
+  background:var(--cream)!important;
+  border:0!important;
+}
+.kinder-accordion{
+  width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
+  margin:0 auto!important;
+  overflow:hidden!important;
+  background:var(--paper)!important;
+  border:3px solid #fff!important;
+  border-radius:7px!important;
+  box-shadow:var(--soft)!important;
+}
+.kinder-accordion>summary{
+  min-height:64px!important;
+  display:grid!important;
+  grid-template-columns:auto 1fr auto!important;
+  align-items:center!important;
+  gap:12px!important;
+  padding:12px 18px!important;
+  list-style:none!important;
+  color:var(--ink)!important;
+  cursor:pointer!important;
+  font-family:var(--sans)!important;
+  font-size:18px!important;
+  font-weight:700!important;
+}
+.kinder-accordion>summary::-webkit-details-marker{display:none!important}
+.kinder-accordion>summary strong{font-size:18px!important;color:var(--ink)!important}
+.kinder-accordion>summary>span:first-child{font-size:28px!important}
+.kinder-accordion-state{
+  min-width:76px;
+  text-align:right;
+  color:var(--muted)!important;
+  font-size:18px!important;
+  font-weight:700!important;
+}
+.kinder-accordion-state::after{content:"Open +"}
+.kinder-accordion[open] .kinder-accordion-state::after{content:"Close −"}
+.kinder-accordion-panel{
+  padding:18px!important;
+  background:var(--paper)!important;
+  border-top:3px solid #fff!important;
+}
+.kinder-accordion-panel>.shell{
+  width:100%!important;
+  margin:0!important;
+}
+
+/* Use only the existing Kindergarten palette. */
+.kinder-accordion[data-kinder-feature="welcome"]>summary{background:var(--sun)!important}
+.kinder-accordion[data-kinder-feature="tray"]>summary{background:var(--blue)!important}
+.kinder-accordion[data-kinder-feature="life"]>summary{background:var(--grass)!important}
+.kinder-accordion[data-kinder-feature="curriculum"]>summary{background:var(--lav)!important}
+.kinder-accordion[data-kinder-feature="connected"]>summary{background:var(--orange)!important}
+.kinder-accordion[data-kinder-feature="apps"]>summary{background:var(--pink)!important}
+.kinder-accordion[data-kinder-feature="creche"]>summary{background:var(--sun)!important}
+.kinder-accordion[data-kinder-feature="mentor"]>summary{background:var(--blue)!important}
+.kinder-accordion[data-kinder-feature="garden"]>summary{background:var(--grass)!important}
+.kinder-accordion[data-kinder-feature="today"]>summary{background:var(--lav)!important}
+.kinder-accordion[data-kinder-feature="promise"]>summary{background:var(--orange)!important}
+
+/* The old hero information card keeps its original styling inside Welcome. */
+.kinder-accordion-panel>.hero-copy{
+  width:min(760px,100%)!important;
+  margin:0 auto!important;
+}
+.kinder-accordion-panel>.stats,
+.kinder-accordion-panel>.seed-ribbon{
+  width:100%!important;
+  margin:16px 0 0!important;
+}
+
+/* Do not let former full-width section backgrounds show while collapsed. */
+.kinder-accordion-section.section,
+.kinder-accordion-section.section-alt,
+.kinder-accordion-section.section.final{
+  background:var(--cream)!important;
+  color:var(--ink)!important;
+}
+.kinder-accordion-section.section.final :is(h2,p,.eyebrow){color:inherit!important}
+
+/* Existing section content keeps its theme when opened. */
+.kinder-accordion-panel .section-heading{margin-top:0!important}
+.kinder-accordion-panel :is(.feature-card,.unit-card,.connected-card,.app-card,.profile-card,.pinned-card,.daily-card,.family-card){
+  box-shadow:var(--soft)!important;
+}
+
+.kinder-accordion-section{scroll-margin-top:150px!important}
+
+@media(max-width:760px){
+  .kinder-hero-action-shelf .hero-actions{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .kinder-accordion{width:calc(100% - 24px)!important}
+  .kinder-accordion-panel{padding:12px!important}
+  .kinder-accordion>summary{grid-template-columns:auto 1fr!important;padding:11px 14px!important}
+  .kinder-accordion-state{grid-column:2;text-align:left;min-width:0}
+}
+@media(max-width:480px){
+  .kinder-hero-action-shelf .hero-actions{grid-template-columns:1fr!important}
+}
