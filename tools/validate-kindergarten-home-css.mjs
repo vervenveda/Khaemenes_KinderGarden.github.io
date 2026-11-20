@@ -17,5 +17,15 @@ if(!css.includes("KINDERGARTEN HOME · FRESH SINGLE-OWNER AUTHORITY")) problems.
 if(!css.includes("font-size:18px!important")) problems.push("18px readable floor missing");
 if(!css.includes("--kg-shell:1080px")) problems.push("1080px shared width missing");
 if(!css.includes("background:var(--kg-sky)!important")) problems.push("calm sky hero missing");
+const accordions=[...html.matchAll(/<details class="kinder-feature-accordion"[^>]*data-kinder-feature="([^"]+)"[^>]*>/g)];
+if(accordions.length!==11) problems.push("expected 11 Kindergarten accordions; found "+accordions.length);
+if(accordions.some(m=>/\\bopen\\b/.test(m[0]))) problems.push("Kindergarten feature accordions must be collapsed by default");
+for(const feature of ["welcome","tray","life","curriculum","library","apps","creche","mentor","garden","today","promise"]){
+  if(!html.includes('data-kinder-feature="'+feature+'"')) problems.push("missing Kindergarten accordion: "+feature);
+}
+if(!css.includes("--kg-accordion:960px")) problems.push("960px accordion width missing");
+if(!html.includes("openForTarget(target)")) problems.push("accordion-aware hash navigation missing");
+if(!html.includes('<div class="shell hero-logo-stage">')) problems.push("simplified logo hero stage missing");
+if(html.includes('<article class="hero-copy">')) problems.push("old open hero information card returned");
 if(problems.length){console.error(JSON.stringify({status:"FAIL",problems},null,2));process.exit(1)}
 console.log(JSON.stringify({status:"PASS",inlineStyles:0,headerMounts:mounts,cssBytes:css.length,fontFloor:"18px",shell:"1080px"},null,2));
