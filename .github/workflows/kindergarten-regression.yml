@@ -8,6 +8,17 @@ on:
       - 'assets/khaemenes-portfolio-scope.js'
       - 'assets/khaemenes-kinder-experience.js'
       - 'portfolio-builder/index.html'
+      - 'index.html'
+      - 'student-profile/**'
+      - 'today/**'
+      - 'reading/**'
+      - 'graduation/**'
+      - 'apps/**'
+      - 'curriculum/lessons/**'
+      - 'curriculum/assessments/**'
+      - 'assets/kindergarten-contained-shell.css'
+      - 'assets/kindergarten-local-*.js'
+      - 'tools/validate-kindergarten-contained-shell.mjs'
       - 'curriculum/printables/**'
       - 'tests/**'
       - '.github/workflows/kindergarten-regression.yml'
@@ -23,6 +34,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Validate contained Kindergarten child shell
+        run: node tools/validate-kindergarten-contained-shell.mjs
       - name: Test isolated learner mastery engine
         run: node tests/mastery-regression.cjs
       - name: Test learner-safe legacy continuity migration
