@@ -685,3 +685,164 @@ body :is(.naib-actions,.setup-actions) .btn{font-size:18px!important}
 
 /* Final promise actions */
 .final-actions{justify-content:center!important}
+
+/* ==========================================================================
+   KINDERGARTEN ACCORDION ARCHITECTURE · 2026-11-19
+   Hero + learner shelf stay visible; all major content is collapsed by default.
+   ========================================================================== */
+:root{--kg-accordion:960px}
+
+body .hero{
+  padding:42px 0 28px!important;
+  background:var(--kg-sky)!important;
+}
+body .kinder-title-band{padding:24px 0 14px!important}
+body .hero-logo-stage{
+  display:grid!important;
+  place-items:center!important;
+  padding:0!important;
+}
+body .hero-logo-stage .hero-garden{
+  width:min(100%,560px)!important;
+  margin:0 auto!important;
+}
+body .hero-logo-stage .garden-scene{
+  width:min(100%,520px)!important;
+  min-height:430px!important;
+}
+body .hero-logo-stage .garden-caption{
+  max-width:520px!important;
+}
+body .kinder-quick-links{
+  width:min(var(--kg-accordion),calc(100% - 32px))!important;
+  margin:11px auto 0!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+}
+body .kinder-quick-links #heroProfileButton{background:var(--kg-green)!important}
+body .kinder-quick-links #academicPlaceButton{background:var(--kg-sun)!important}
+body .kinder-quick-links>a:nth-of-type(1){background:var(--kg-pink)!important}
+body .kinder-quick-links>a:nth-of-type(2){background:var(--kg-sky)!important}
+body .kinder-quick-links>a:nth-of-type(3){background:var(--kg-lav)!important}
+body .kinder-quick-links>a:nth-of-type(4){background:var(--kg-orange)!important}
+body .kinder-quick-links>a:nth-of-type(5){background:var(--kg-green)!important}
+body .kinder-menu-trigger{background:var(--kg-aqua,#62e4f5)!important}
+
+/* One shared accordion geometry for every major feature. */
+body main>.kinder-feature-section{
+  padding:11px 0!important;
+  background:var(--kg-cream)!important;
+  border:0!important;
+}
+body .kinder-feature-accordion{
+  width:min(var(--kg-accordion),calc(100% - 32px))!important;
+  margin:0 auto!important;
+  overflow:hidden!important;
+  background:var(--kg-paper)!important;
+  border:3px solid #fff!important;
+  border-radius:var(--kg-radius)!important;
+  box-shadow:var(--kg-shadow)!important;
+}
+body .kinder-feature-accordion>summary{
+  min-height:66px!important;
+  display:grid!important;
+  grid-template-columns:auto 1fr auto!important;
+  align-items:center!important;
+  gap:12px!important;
+  padding:13px 18px!important;
+  list-style:none!important;
+  color:var(--kg-ink)!important;
+  cursor:pointer!important;
+  font-size:20px!important;
+  font-weight:444!important;
+}
+body .kinder-feature-accordion>summary::-webkit-details-marker{display:none!important}
+body .kinder-feature-accordion>summary strong{font-size:20px!important}
+body .accordion-icon{font-size:30px!important;line-height:1!important}
+body .accordion-state{min-width:76px;text-align:right;color:var(--kg-muted)!important;font-size:18px!important}
+body .accordion-state::after{content:"Open +"}
+body .kinder-feature-accordion[open] .accordion-state::after{content:"Close −"}
+body .kinder-feature-panel{
+  padding:18px!important;
+  background:var(--kg-paper)!important;
+  border-top:3px solid #fff!important;
+}
+body .kinder-feature-panel>.shell{
+  width:100%!important;
+  margin:0!important;
+}
+
+/* Alternating Kindergarten colors — bright, older than Preschool, still joyful. */
+body .kinder-feature-accordion[data-kinder-feature="welcome"]>summary{background:var(--kg-sun)!important}
+body .kinder-feature-accordion[data-kinder-feature="tray"]>summary{background:var(--kg-sky)!important}
+body .kinder-feature-accordion[data-kinder-feature="life"]>summary{background:var(--kg-green)!important}
+body .kinder-feature-accordion[data-kinder-feature="curriculum"]>summary{background:var(--kg-lav)!important}
+body .kinder-feature-accordion[data-kinder-feature="library"]>summary{background:var(--kg-orange)!important}
+body .kinder-feature-accordion[data-kinder-feature="apps"]>summary{background:var(--kg-pink)!important}
+body .kinder-feature-accordion[data-kinder-feature="creche"]>summary{background:var(--kg-sun)!important}
+body .kinder-feature-accordion[data-kinder-feature="mentor"]>summary{background:var(--kg-sky)!important}
+body .kinder-feature-accordion[data-kinder-feature="garden"]>summary{background:var(--kg-green)!important}
+body .kinder-feature-accordion[data-kinder-feature="today"]>summary{background:var(--kg-lav)!important}
+body .kinder-feature-accordion[data-kinder-feature="promise"]>summary{background:var(--kg-orange)!important}
+
+/* Welcome card replaces the former hero-side information card. */
+body .welcome-copy{
+  width:100%!important;
+  padding:22px!important;
+  background:var(--kg-cream)!important;
+  border:3px solid #fff!important;
+  border-radius:var(--kg-radius)!important;
+  text-align:left!important;
+}
+body .welcome-copy .tagline{
+  margin:0!important;
+  color:var(--kg-ink)!important;
+  font-size:24px!important;
+  line-height:1.35!important;
+}
+body .welcome-copy .lead{margin:12px 0 0!important;color:var(--kg-muted)!important}
+body .welcome-copy .garden-wordplay{margin-top:16px!important}
+body .welcome-copy .student-gateway,
+body .welcome-copy .academic-place-strip,
+body .welcome-copy .kinder-enrolled-tools{margin-top:12px!important}
+
+/* Statistics/ribbon live inside Welcome & Continue now. */
+body .kinder-feature-panel>.stats{
+  width:100%!important;
+  margin:16px 0 0!important;
+}
+body .kinder-feature-panel>.seed-ribbon{
+  width:100%!important;
+  margin:12px 0 0!important;
+}
+
+/* Internal headings are content, not competing outer cards. */
+body .kinder-feature-panel .section-heading{
+  width:100%!important;
+  max-width:900px!important;
+  margin:0 auto 18px!important;
+  box-shadow:none!important;
+}
+body .kinder-feature-panel :is(.feature-card,.unit-card,.connected-card,.app-card,.naib-tray-card,.profile-card,.pinned-card,.daily-card,.family-card,.kinder-mentor-card,.mentor-principles){
+  box-shadow:none!important;
+}
+body main>.section.final{
+  background:var(--kg-cream)!important;
+  color:var(--kg-ink)!important;
+}
+body main>.section.final :is(h2,p,.eyebrow){color:var(--kg-ink)!important}
+body .final-actions{justify-content:center!important}
+
+/* Accordion target navigation has comfortable sticky clearance. */
+body .kinder-feature-section{scroll-margin-top:140px!important}
+
+@media(max-width:700px){
+  body .kinder-quick-links{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body .kinder-feature-accordion{width:calc(100% - 24px)!important}
+  body .kinder-feature-panel{padding:12px!important}
+  body .kinder-feature-accordion>summary{
+    grid-template-columns:auto 1fr!important;
+    padding:12px 14px!important;
+  }
+  body .accordion-state{grid-column:2;text-align:left;min-width:0}
+  body .hero-logo-stage .garden-scene{min-height:400px!important}
+}
