@@ -13,13 +13,7 @@
 <body id="top" data-kindergarten-visual-standard="kindergarten-home-fresh-v1">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
 <div class="garden-decor" aria-hidden="true"><span class="deco-butterfly">🦋</span><span class="deco-ladybug">🐞</span><span class="deco-leaf">🍃</span><span class="deco-flower">🌼</span></div>
-<div class="kinder-quick-links" aria-label="Kindergarten learning shortcuts">
-  <a href="#curriculum" data-ticker data-ticker-label="Lessons">📚 Lessons</a>
-  <a href="#apps" data-ticker data-ticker-label="Games">🎨 Games</a>
-  <a href="#mentor" data-ticker data-ticker-label="Mentor">🦉 Mentor</a>
-  <a href="inquiry-companion.html" data-ticker data-ticker-label="Discovery">🌻 Discovery</a>
-  <button class="kinder-menu-trigger" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open more Kindergarten links">More ▾</button>
-</div>
+
 <nav class="mobile-menu" id="mobileMenu" aria-label="Kinder Garden navigation">
   <a href="#student">🌱 Family Learner & Curriculum</a>
   <a href="student-profile/" data-ticker data-ticker-label="My Profile">🌻 My Full Kindergarten Profile</a>
@@ -39,43 +33,7 @@
     <p class="eyebrow">Khaemenes Academy · Kindergarten</p>
     <h1>KINDERGARTEN</h1>
   </div>
-  <div class="shell hero-inner">
-    <article class="hero-copy">
-      <p class="tagline"><strong>A Kinder Place to Learn.</strong> A garden for growing readers, thinkers, makers, helpers, and wonderfully curious humans.</p>
-      <p class="lead">A complete 36-week kindergarten pathway with 180 daily lessons, public learning games, week-by-week lesson previews, mastery checks, printables, and a personalized Khaemenes Mentor. Games stay open; formal curriculum progress belongs to the linked Kindergarten learner.</p>
-
-      <div class="garden-wordplay" aria-label="Kinder Garden learning promise">
-        <span>🌱 Plant a Question</span>
-        <span>💧 Water a Skill</span>
-        <span>🌼 Bloom Through Practice</span>
-      </div>
-
-      <div class="hero-actions">
-        <button class="btn profile" id="heroProfileButton" type="button">🌼 Continue Learning</button>
-        <a class="btn secondary" href="student-profile/">😊 My Profile</a>
-        <a class="btn secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">🧑‍🧒 Grown-Up / Family</a>
-        <button class="btn gold" id="academicPlaceButton" type="button">🧭 My Academic Place</button>
-        <a class="btn primary" href="#curriculum">📚 View 36-Week Roadmap</a>
-        <a class="btn secondary" href="#apps">🧰 Open Learning Toolbox</a>
-      </div>
-
-      <div class="kinder-enrolled-tools" id="kinderEnrolledTools" hidden>
-        <strong>Keep Kinder Garden easy to return to</strong>
-        <span>For the active Kindergarten learner, pin this pathway to the Academy profile or save this front page to the device.</span>
-        <div><button type="button" id="kinderFrontPin">📌 Pin Kindergarten to My Profile</button><button type="button" id="kinderFrontSave">⬇️ Save Kinder Garden to This Device</button></div>
-        <small id="kinderFrontStatus" role="status" aria-live="polite"></small>
-      </div>
-      <div class="student-gateway">
-        <strong id="heroProfileMessage">Student Profile → Mentor → Curriculum</strong>
-        <span id="heroProfileSubtext">A grown-up can create or resume the local learner profile. Once ready, this button becomes the child's pathway back into the next curriculum week.</span>
-      </div>
-
-      <div class="academic-place-strip" id="academicPlaceStrip" aria-live="polite">
-        <strong>NAIB is checking your academic place…</strong>
-        <span>Your formal lessons unlock one at a time. Practice tools remain open.</span>
-      </div>
-    </article>
-
+  <div class="shell hero-logo-stage">
     <div class="hero-garden" aria-label="Kinder Garden learning tree with linked activity bubbles">
       <div class="garden-scene" role="img" aria-label="A bright layered learning tree with clickable bubbles for games, lessons, mentor, and family tools.">
         <div class="scene-sun" aria-hidden="true"></div>
@@ -116,30 +74,112 @@
         <div class="garden-caption">Tap a garden bubble to jump to games, weekly lessons, Mentor help, or your family tools.</div>
     </div>
   </div>
+  <div class="kinder-quick-links" aria-label="Kindergarten learning shortcuts">
+    <button id="heroProfileButton" type="button">🌼 Continue Learning</button>
+    <a href="student-profile/">😊 My Profile</a>
+    <a href="#curriculum">📚 Curriculum</a>
+    <a href="#apps">🎨 Learning Toolbox</a>
+    <a href="#mentor">🦉 Mentor</a>
+    <a href="#mygarden">🌼 My Garden</a>
+    <button id="academicPlaceButton" type="button">🧭 My Academic Place</button>
+    <button class="kinder-menu-trigger" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open more Kindergarten links">More ▾</button>
+  </div>
+</section>
+<section class="kinder-feature-section" id="welcome" aria-label="Welcome and Continue">
+  <details class="kinder-feature-accordion" data-kinder-feature="welcome">
+    <summary><span class="accordion-icon" aria-hidden="true">🌱</span><strong>Welcome & Continue</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+      <article class="welcome-copy">
+        <p class="tagline"><strong>A Kinder Place to Learn.</strong> A garden for growing readers, thinkers, makers, helpers, and wonderfully curious humans.</p>
+        <p class="lead">A complete 36-week kindergarten pathway with 180 daily lessons, public learning games, week-by-week lesson previews, mastery checks, printables, and a personalized Khaemenes Mentor. Games stay open; formal curriculum progress belongs to the linked Kindergarten learner.</p>
+        <div class="garden-wordplay" aria-label="Kinder Garden learning promise">
+          <span>🌱 Plant a Question</span>
+          <span>💧 Water a Skill</span>
+          <span>🌼 Bloom Through Practice</span>
+        </div>
+        <div class="kinder-enrolled-tools" id="kinderEnrolledTools" hidden>
+          <strong>Keep Kinder Garden easy to return to</strong>
+          <span>For the active Kindergarten learner, pin this pathway to the Academy profile or save this front page to the device.</span>
+          <div><button type="button" id="kinderFrontPin">📌 Pin Kindergarten to My Profile</button><button type="button" id="kinderFrontSave">⬇️ Save Kinder Garden to This Device</button></div>
+          <small id="kinderFrontStatus" role="status" aria-live="polite"></small>
+        </div>
+        <div class="student-gateway">
+          <strong id="heroProfileMessage">Student Profile → Mentor → Curriculum</strong>
+          <span id="heroProfileSubtext">A grown-up can create or resume the local learner profile. Once ready, Continue Learning becomes the child's pathway back into the next curriculum week.</span>
+        </div>
+        <div class="academic-place-strip" id="academicPlaceStrip" aria-live="polite">
+          <strong>NAIB is checking your academic place…</strong>
+          <span>Your formal lessons unlock one at a time. Practice tools remain open.</span>
+        </div>
+      </article>
+      <div class="stats" aria-label="Curriculum at a glance">
+        <div class="stat"><strong>36</strong><span>Weeks / Integrated Units</span></div>
+        <div class="stat"><strong>180</strong><span>Daily Lessons</span></div>
+        <div class="stat"><strong>36</strong><span>Weekly Mastery Checks</span></div>
+        <div class="stat"><strong>80%</strong><span>Mastery Required to Advance</span></div>
+      </div>
+      <div class="seed-ribbon" aria-label="Kinder Garden learning areas">
+        <span>📚 Literacy</span><span>🔢 Mathematics</span><span>🔬 Inquiry</span><span>🎨 Creativity</span><span>💛 Kindness</span><span>🦘 Movement</span><span>🌿 Life Skills</span>
+      </div>
+    </div>
+  </details>
 </section>
 
-<div class="shell stats" aria-label="Curriculum at a glance"><div class="stat"><strong>36</strong><span>Weeks / Integrated Units</span></div><div class="stat"><strong>180</strong><span>Daily Lessons</span></div><div class="stat"><strong>36</strong><span>Weekly Mastery Checks</span></div><div class="stat"><strong>80%</strong><span>Mastery Required to Advance</span></div></div><div class="shell seed-ribbon" aria-label="Kinder Garden learning areas"><span>📚 Literacy</span><span>🔢 Mathematics</span><span>🔬 Inquiry</span><span>🎨 Creativity</span><span>💛 Kindness</span><span>🦘 Movement</span><span>🌿 Life Skills</span></div>
 
-<section class="section section-alt" id="learning-tray"><div class="shell"><div class="section-heading"><p class="eyebrow">Learn · Practice · Explore · Create</p><h2>My Learning Tray</h2><p class="section-supporting-line">A small tray for the learner's actual next step.</p><p>NAIB is the academic guide. The formal lesson stays first; companion tools give the child another way to practice, explore, create, or reset without counting as lesson completion.</p></div><div class="naib-tray" id="naibLearningTray"></div></div></section>
 
-<section class="section" id="kindergarten-life-skills" aria-labelledby="kinder-life-heading"><div class="shell"><div class="section-heading"><p class="eyebrow">Khaemenes Academy · Life Skills</p><h2 id="kinder-life-heading">Life Skills for Kindergarten</h2><p>Explore sixteen Kindergarten-ready skill pathways in caring, food, home routines, money, gardens, community, safety and more. Practice links are clearly marked Preschool review until dedicated Kindergarten lessons and assessments are released.</p><p><a class="btn" class="btn primary" href="https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/" aria-label="Open Kindergarten Life Skills sixteen-subject learning garden">🌿 Open Kindergarten Life Skills →</a></p></div></div></section>
-<section class="section" id="curriculum"><div class="shell"><div class="section-heading"><p class="eyebrow">Thirty-six weeks · One step at a time</p><h2>The Formal Learning Path</h2><p>Each week has five formal daily lessons and one weekly mastery check. The week overview stays visible, but the learner advances only after the current lesson reaches 80% mastery.</p></div>
+
+<section class="section section-alt kinder-feature-section" id="learning-tray">
+  <details class="kinder-feature-accordion" data-kinder-feature="tray">
+    <summary><span class="accordion-icon" aria-hidden="true">🧭</span><strong>My Learning Tray</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Learn · Practice · Explore · Create</p><h2>My Learning Tray</h2><p class="section-supporting-line">A small tray for the learner's actual next step.</p><p>NAIB is the academic guide. The formal lesson stays first; companion tools give the child another way to practice, explore, create, or reset without counting as lesson completion.</p></div><div class="naib-tray" id="naibLearningTray"></div></div>
+    </div>
+  </details>
+</section>
+
+<section class="section kinder-feature-section" id="kindergarten-life-skills" aria-labelledby="kinder-life-heading">
+  <details class="kinder-feature-accordion" data-kinder-feature="life">
+    <summary><span class="accordion-icon" aria-hidden="true">🌿</span><strong>Kindergarten Life Skills</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Khaemenes Academy · Life Skills</p><h2 id="kinder-life-heading">Life Skills for Kindergarten</h2><p>Explore sixteen Kindergarten-ready skill pathways in caring, food, home routines, money, gardens, community, safety and more. Practice links are clearly marked Preschool review until dedicated Kindergarten lessons and assessments are released.</p><p><a class="btn primary" href="https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/" aria-label="Open Kindergarten Life Skills sixteen-subject learning garden">🌿 Open Kindergarten Life Skills →</a></p></div></div>
+    </div>
+  </details>
+</section>
+<section class="section kinder-feature-section" id="curriculum">
+  <details class="kinder-feature-accordion" data-kinder-feature="curriculum">
+    <summary><span class="accordion-icon" aria-hidden="true">📚</span><strong>36-Week Curriculum</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Thirty-six weeks · One step at a time</p><h2>The Formal Learning Path</h2><p>Each week has five formal daily lessons and one weekly mastery check. The week overview stays visible, but the learner advances only after the current lesson reaches 80% mastery.</p></div>
 <div class="roadmap-rule"><strong>Roadmap visible · formal path gated.</strong> Learners may see what is coming, reopen mastered work for review, and use practice tools at any time. Future formal lessons, quizzes, the midterm, final, and certificate are released only when their prerequisites are satisfied.</div>
 <div class="feature-grid"><article class="feature-card"><span class="icon">🧭</span><h3>My Learning Path</h3><p>NAIB returns the learner to the exact unfinished lesson, quiz, midterm, final, or portfolio step.</p><button class="btn primary" type="button" id="continueLearningButton">Continue My Learning</button></article><article class="feature-card"><span class="icon">🧑‍🏫</span><h3>Teacher & Family Tools</h3><p>Adults can use educator tools, portfolio evidence, printables, records, and deliberate overrides without changing the student gate.</p><a class="btn secondary" href="curriculum/teacher-tools/index.html">Open Teacher Tools</a></article><article class="feature-card"><span class="icon">✅</span><h3 id="assessmentGateTitle">Assessment Gate</h3><p id="assessmentGateText">NAIB will open the correct mastery check when its prerequisites are complete.</p><button class="btn gold" id="assessmentGateButton" type="button">Check Assessment Readiness</button></article></div>
-<div class="filterbar" id="unitFilters"><button class="chip active" data-term="all" type="button">All 36 Weeks</button><button class="chip" data-term="1" type="button">Weeks 1–10</button><button class="chip" data-term="2" type="button">Weeks 11–18</button><button class="chip" data-term="3" type="button">Weeks 19–27</button><button class="chip" data-term="4" type="button">Weeks 28–36</button></div><div class="unit-grid" id="unitGrid"></div></div></section>
+<div class="filterbar" id="unitFilters"><button class="chip active" data-term="all" type="button">All 36 Weeks</button><button class="chip" data-term="1" type="button">Weeks 1–10</button><button class="chip" data-term="2" type="button">Weeks 11–18</button><button class="chip" data-term="3" type="button">Weeks 19–27</button><button class="chip" data-term="4" type="button">Weeks 28–36</button></div><div class="unit-grid" id="unitGrid"></div></div>
+    </div>
+  </details>
+</section>
 
 
 
-<section class="section" id="connected-learning"><div class="shell"><div class="section-heading"><p class="eyebrow">More places to discover and grow</p><h2>Cumulative Learning Library</h2><p>Crechè foundations, Elementary practice, Bazaar Art, The Refrain, Arcade, and Aurora remain available as age-appropriate companion spaces. NAIB can recommend them when they fit the current lesson.</p></div><div class="connected-grid">
+<section class="section kinder-feature-section" id="connected-learning">
+  <details class="kinder-feature-accordion" data-kinder-feature="library">
+    <summary><span class="accordion-icon" aria-hidden="true">🌎</span><strong>Cumulative Learning Library</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">More places to discover and grow</p><h2>Cumulative Learning Library</h2><p>Crechè foundations, Elementary practice, Bazaar Art, The Refrain, Arcade, and Aurora remain available as age-appropriate companion spaces. NAIB can recommend them when they fit the current lesson.</p></div><div class="connected-grid">
 <article class="connected-card"><span class="icon">🌈</span><h3>Crechè / Preschool</h3><p>Gentle foundation review, stories, feelings, numbers, movement, music, and familiar early-learning adventures.</p><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Crechè</a></article>
 <article class="connected-card"><span class="icon">🏫</span><h3>Khaemenes Elementary</h3><p>Shared K–5 games and labs can provide extra practice when a Kindergarten concept benefits from another approach.</p><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Open Elementary Tools</a></article>
 <article class="connected-card"><span class="icon">🎨</span><h3>Bazaar Art</h3><p>Visual art, color, design, making, and creative expression connect Kindergarten projects to the wider arts pathway.</p><a class="btn secondary" href="https://vervenveda.com/bazaarart.github.io/">Open Bazaar Art</a></article>
 <article class="connected-card"><span class="icon">🎼</span><h3>The Refrain</h3><p>Music, rhythm, listening, early composition, and the future Khaemenes music-course pathway.</p><a class="btn secondary" href="https://vervenveda.com/the_refrain.github.io/">Open The Refrain</a></article>
 <article class="connected-card"><span class="icon">🕹️</span><h3>Arcade</h3><p>Curated logic, pattern, vocabulary, and strategy play can reinforce learning without becoming a formal requirement.</p><a class="btn secondary" href="https://vervenveda.com/arcade.github.io/">Open Arcade</a></article>
 <article class="connected-card"><span class="icon">☼</span><h3>Aurora</h3><p>Optional breathing, grounding, reflection, sound, and creative reset rooms for transitions or frustration.</p><a class="btn secondary" href="https://vervenveda.com/aurora.github.io/">Open Aurora</a></article>
-</div></div></section>
+</div></div>
+    </div>
+  </details>
+</section>
 
-<section class="section section-alt" id="apps"><div class="shell"><div class="section-heading"><p class="eyebrow">Playful tools for extra practice</p><h2>The Kinder Garden Tool Shed</h2><p class="section-supporting-line">Local core apps plus the connected cumulative library.</p><p>These tools live directly in Kinder Garden. Crechè, Elementary, Bazaar Art, The Refrain, Arcade, and Aurora extend the practice library above without changing the formal mastery record.</p></div><div class="app-category-grid" id="appFilters" aria-label="Choose a Kinder Garden tool category">
+<section class="section section-alt kinder-feature-section" id="apps">
+  <details class="kinder-feature-accordion" data-kinder-feature="apps">
+    <summary><span class="accordion-icon" aria-hidden="true">🎨</span><strong>Kinder Garden Tool Shed</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Playful tools for extra practice</p><h2>The Kinder Garden Tool Shed</h2><p class="section-supporting-line">Local core apps plus the connected cumulative library.</p><p>These tools live directly in Kinder Garden. Crechè, Elementary, Bazaar Art, The Refrain, Arcade, and Aurora extend the practice library above without changing the formal mastery record.</p></div><div class="app-category-grid" id="appFilters" aria-label="Choose a Kinder Garden tool category">
 <button class="app-category-card cat-literacy" data-app="literacy" type="button"><span>🔤</span><strong>ABC's & Reading</strong><small>Letters · phonics · stories · words</small></button>
 <button class="app-category-card cat-math" data-app="math" type="button"><span>🔢</span><strong>Numbers & Math</strong><small>Counting · number sense · early math</small></button>
 <button class="app-category-card cat-creative" data-app="creative" type="button"><span>🎨</span><strong>Colors & Creativity</strong><small>Color · art · making · imagination</small></button>
@@ -152,12 +192,26 @@
 </div>
 <dialog class="app-library-dialog" id="appLibraryDialog" aria-labelledby="appLibraryTitle">
 <div class="app-dialog-shell"><div class="app-dialog-head"><div><p class="eyebrow">Kinder Garden Tool Shed</p><h3 id="appLibraryTitle">Learning Tools</h3></div><button class="app-dialog-close" id="appLibraryClose" type="button" aria-label="Close learning tools">×</button></div><div class="app-grid" id="appGrid"></div></div>
-</dialog></div></section>
+</dialog></div>
+    </div>
+  </details>
+</section>
 
-<section class="section" id="creche"><div class="shell"><div class="section-heading"><p class="eyebrow">Keep favorite adventures · Grow into the next garden</p><h2>Crechè → Kinder Garden Bridge</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/" data-khaemenes-mentor="archaemenes">Open Archaemenes · Wise Owl</a></div></div></section>
+<section class="section kinder-feature-section" id="creche">
+  <details class="kinder-feature-accordion" data-kinder-feature="creche">
+    <summary><span class="accordion-icon" aria-hidden="true">🎠</span><strong>Crechè Bridge</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Keep favorite adventures · Grow into the next garden</p><h2>Crechè → Kinder Garden Bridge</h2><p>Kinder Garden reads the same verified Crechè activity catalog and selects mentor-approved activities that include the 4–5 or 5–6 age bands. Familiar stories, games, art, music, feelings, movement, numbers, shapes, and wonder can continue while more formal kindergarten work begins.</p></div><div class="filterbar" id="crecheFilters"></div><div class="creche-grid" id="crecheGrid"><div class="empty">Loading age-appropriate Crechè adventures…</div></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Open Full Crechè Adventure Garden</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/" data-khaemenes-mentor="archaemenes">Open Archaemenes · Wise Owl</a></div></div>
+    </div>
+  </details>
+</section>
 
 
-<section class="section" id="mentor">
+<section class="section kinder-feature-section" id="mentor">
+  <details class="kinder-feature-accordion" data-kinder-feature="mentor">
+    <summary><span class="accordion-icon" aria-hidden="true">🦉</span><strong>My Mentor</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+
   <div class="shell">
     <div class="section-heading">
       <p class="eyebrow">One Academy Mentor grows with the learner</p>
@@ -210,14 +264,38 @@
       </aside>
     </div>
   </div>
+
+    </div>
+  </details>
 </section>
 
 
-<section class="section section-alt" id="mygarden"><div class="shell"><div class="section-heading"><p class="eyebrow">Growing with every learner</p><h2>My Garden</h2><p class="section-supporting-line">My Garden follows the child forward.</p><p>Khaemenes Home carries the learner into Kinder Garden through the protected Academy continuity service. Browser storage may keep a short resilience copy, while the commissioned Khaemenes Account Cloud is the canonical family and learner record.</p></div><div class="profile-wrap"><article class="profile-card"><h3 id="profileGreeting">My Garden</h3><p id="profileMessage">Checking this browser for a Crechè learner profile…</p><div class="profile-summary" id="profileSummary"></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè Profile & Favorites</a><a class="btn secondary" href="student-profile/">My Full Kindergarten Profile →</a><a class="btn secondary" href="graduation/">✨ The Lantern Bridge · Graduation</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Next: Elementary School</a></div></article><article class="pinned-card"><h3>Pinned Crechè Adventures</h3><p>Favorites pinned in Crechè can reappear here when the shared local learner record is available.</p><div class="pinned-list" id="pinnedList"><div class="empty">No pinned activities are visible yet.</div></div></article></div></div></section>
+<section class="section section-alt kinder-feature-section" id="mygarden">
+  <details class="kinder-feature-accordion" data-kinder-feature="garden">
+    <summary><span class="accordion-icon" aria-hidden="true">🌼</span><strong>My Garden</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Growing with every learner</p><h2>My Garden</h2><p class="section-supporting-line">My Garden follows the child forward.</p><p>Khaemenes Home carries the learner into Kinder Garden through the protected Academy continuity service. Browser storage may keep a short resilience copy, while the commissioned Khaemenes Account Cloud is the canonical family and learner record.</p></div><div class="profile-wrap"><article class="profile-card"><h3 id="profileGreeting">My Garden</h3><p id="profileMessage">Checking this browser for a Crechè learner profile…</p><div class="profile-summary" id="profileSummary"></div><div class="hero-actions"><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Crechè Profile & Favorites</a><a class="btn secondary" href="student-profile/">My Full Kindergarten Profile →</a><a class="btn secondary" href="graduation/">✨ The Lantern Bridge · Graduation</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Next: Elementary School</a></div></article><article class="pinned-card"><h3>Pinned Crechè Adventures</h3><p>Favorites pinned in Crechè can reappear here when the shared local learner record is available.</p><div class="pinned-list" id="pinnedList"><div class="empty">No pinned activities are visible yet.</div></div></article></div></div>
+    </div>
+  </details>
+</section>
 
-<section class="section" id="today"><div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's Little Wonder</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><div class="wonder-stage" id="wonderStage" aria-live="polite" aria-atomic="true"></div><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div></section>
+<section class="section kinder-feature-section" id="today">
+  <details class="kinder-feature-accordion" data-kinder-feature="today">
+    <summary><span class="accordion-icon" aria-hidden="true">⭐</span><strong>Today's Little Wonder & Family</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><div class="section-heading"><p class="eyebrow">A Fresh Invitation Each Day</p><h2>Today's Little Wonder</h2><p>A few minutes of noticing, making, moving, or wondering can become part of the day's learning.</p></div><div class="daily-grid"><article class="daily-card"><p class="eyebrow">Today's Kinder Garden Invitation</p><h3 id="dailyTitle">Look closely at one leaf.</h3><p id="dailyText">Notice its shape, color, edges, and tiny lines. Draw what you see or describe it in your own words.</p><div class="wonder-stage" id="wonderStage" aria-live="polite" aria-atomic="true"></div><button id="newWonder" type="button">Choose Another Wonder</button></article><article class="family-card" id="families"><h3>Family & Educator Corner</h3><p>Kinder Garden combines formal curriculum with developmentally appropriate play. Adults can use assessment evidence, portfolio samples, printables, conversation, observation, and the child's work instead of reducing kindergarten to screen time or test scores alone.</p><div class="family-actions"><a href="curriculum/teacher-tools/index.html">Teacher Tools</a><a href="curriculum/assessments/midterm.html">Midyear Demonstration</a><a href="curriculum/assessments/final-exam.html">Final Readiness Demonstration</a><a href="curriculum/records/certificate.html">Certificate & Completion</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></article></div></div>
+    </div>
+  </details>
+</section>
 
-<section class="section final"><div class="shell"><p class="eyebrow">Kindness · Curiosity · Growing Together</p><h2>A Kinder Garden Promise</h2><p class="section-supporting-line">Kindness is planted. Curiosity is watered. Strong foundations are grown with room to bloom.</p><p>The formal curriculum gives the year structure. NAIB keeps the learner oriented to one academic step at a time. Crechè continuity preserves familiar play, and the wider learning ecosystem provides practice without replacing mastery. Families and educators remain the people who know the child best.</p><div class="hero-actions final-actions"><a class="btn secondary" href="curriculum/index.html">Open the Curriculum</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Continue to Elementary School</a></div></div></section>
+<section class="section final kinder-feature-section" id="promise">
+  <details class="kinder-feature-accordion" data-kinder-feature="promise">
+    <summary><span class="accordion-icon" aria-hidden="true">🌻</span><strong>A Kinder Garden Promise</strong><span class="accordion-state" aria-hidden="true"></span></summary>
+    <div class="kinder-feature-panel">
+<div class="shell"><p class="eyebrow">Kindness · Curiosity · Growing Together</p><h2>A Kinder Garden Promise</h2><p class="section-supporting-line">Kindness is planted. Curiosity is watered. Strong foundations are grown with room to bloom.</p><p>The formal curriculum gives the year structure. NAIB keeps the learner oriented to one academic step at a time. Crechè continuity preserves familiar play, and the wider learning ecosystem provides practice without replacing mastery. Families and educators remain the people who know the child best.</p><div class="hero-actions final-actions"><a class="btn secondary" href="curriculum/index.html">Open the Curriculum</a><a class="btn secondary" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Continue to Elementary School</a></div></div>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer><div class="shell footer-inner"><span><strong>© <span id="year"></span> Khaemenes Kinder Garden · Jennifer Kay Pearl · Verve N Veda</strong></span><nav class="footer-links"><a href="#student">Student Profile</a><a href="#mentor">Mentor</a><a href="#curriculum">Curriculum</a><a href="#creche">Crèche</a><a href="#families">Families</a><a href="#top">Back to Top</a></nav></div></footer>
@@ -982,4 +1060,39 @@ document.addEventListener("DOMContentLoaded",()=>{
 <script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:10});</script>
 
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+
+<script>
+(()=>{
+  "use strict";
+  function openForTarget(target){
+    if(!target)return;
+    const details=target.matches?.("details.kinder-feature-accordion")
+      ? target
+      : target.closest?.("details.kinder-feature-accordion")
+        || target.querySelector?.(":scope > details.kinder-feature-accordion");
+    if(details)details.open=true;
+  }
+  function openHash(){
+    const raw=location.hash;
+    if(!raw||raw==="#")return;
+    let target=null;
+    try{target=document.querySelector(raw)}catch{}
+    if(!target)return;
+    openForTarget(target);
+  }
+  document.addEventListener("click",e=>{
+    const link=e.target.closest?.('a[href^="#"]');
+    if(!link)return;
+    const raw=link.getAttribute("href");
+    if(!raw||raw==="#")return;
+    let target=null;
+    try{target=document.querySelector(raw)}catch{}
+    if(!target)return;
+    openForTarget(target);
+  },true);
+  window.addEventListener("hashchange",openHash);
+  openHash();
+})();
+</script>
+
 </body></html>
