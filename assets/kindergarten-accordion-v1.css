@@ -1,53 +1,138 @@
 /* Kindergarten accordion-only cleanup.
-   This file intentionally does not redesign the existing Kindergarten theme. */
+   The original colorful Kindergarten theme remains authoritative.
+   This file only centers the hero controls, compacts the accordion stack,
+   and replaces bulky dark section fields with brighter backgrounds. */
 :root{--kg-accordion-width:960px}
 
-/* Keep the original hero theme; only re-center it after moving the side card. */
+/* --------------------------------------------------------------------------
+   TOP SHORTCUTS — four equal controls in a 2×2 grid; More spans the row.
+   -------------------------------------------------------------------------- */
+.kinder-quick-links{
+  width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
+  margin:8px auto!important;
+  padding:8px!important;
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:7px!important;
+  background:var(--paper)!important;
+  border:2px solid rgba(255,255,255,.95)!important;
+  border-radius:7px!important;
+  box-shadow:var(--soft)!important;
+}
+.kinder-quick-links :is(a,.kinder-menu-trigger){
+  width:100%!important;
+  min-width:0!important;
+  min-height:44px!important;
+  margin:0!important;
+  padding:7px 10px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border:2px solid #fff!important;
+  border-radius:7px!important;
+  color:var(--ink)!important;
+  font:700 18px/1.25 var(--sans)!important;
+  text-align:center!important;
+  white-space:normal!important;
+  box-shadow:none!important;
+}
+.kinder-quick-links>a:nth-child(1){background:var(--sun)!important}
+.kinder-quick-links>a:nth-child(2){background:var(--blue)!important}
+.kinder-quick-links>a:nth-child(3){background:var(--lav)!important}
+.kinder-quick-links>a:nth-child(4){background:var(--grass)!important}
+.kinder-quick-links>.kinder-menu-trigger{
+  grid-column:1/-1!important;
+  background:var(--orange)!important;
+}
+
+/* --------------------------------------------------------------------------
+   HERO ART + PRIMARY CONTROLS — one centered axis.
+   -------------------------------------------------------------------------- */
 .hero .hero-inner{
   grid-template-columns:1fr!important;
-  place-items:center!important;
+  justify-items:center!important;
+  align-items:center!important;
+  gap:10px!important;
+  min-height:0!important;
+  padding-top:clamp(30px,4vw,52px)!important;
+  padding-bottom:24px!important;
 }
 .hero .hero-garden{
-  width:min(100%,760px)!important;
+  width:min(760px,calc(100% - 24px))!important;
+  min-height:0!important;
+  margin:0 auto!important;
+  display:grid!important;
+  place-items:center!important;
+}
+.hero .garden-scene{
+  margin-inline:auto!important;
+}
+.hero .garden-caption{
   margin-inline:auto!important;
 }
 .kinder-hero-action-shelf{
   width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
-  margin:11px auto 24px!important;
+  margin:8px auto 10px!important;
+  padding:0!important;
 }
 .kinder-hero-action-shelf .hero-actions{
+  width:100%!important;
+  margin:0!important;
   display:grid!important;
-  grid-template-columns:repeat(3,minmax(0,1fr))!important;
-  gap:8px!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:7px!important;
   justify-content:center!important;
 }
 .kinder-hero-action-shelf .hero-actions>*{
   width:100%!important;
   min-width:0!important;
+  min-height:46px!important;
+  margin:0!important;
+  padding:8px 10px!important;
+  border-radius:7px!important;
+  font-size:18px!important;
 }
 
-/* Collapse every major feature into the same-width colorful bar. */
+/* --------------------------------------------------------------------------
+   COMPACT MATCHED ACCORDION STACK
+   -------------------------------------------------------------------------- */
 main>.kinder-accordion-section{
-  padding:11px 0!important;
-  background:var(--cream)!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:4px 0!important;
   border:0!important;
 }
+
+/* Stronger ID ownership prevents the old full-width dark section backgrounds
+   from showing behind compact accordion bars. */
+main>#welcome.kinder-accordion-section{background:#fff7d8!important}
+main>#learning-tray.kinder-accordion-section{background:#e8f7ff!important}
+main>#kindergarten-life-skills.kinder-accordion-section{background:#eaffdf!important}
+main>#curriculum.kinder-accordion-section{background:#f1ebff!important}
+main>#connected-learning.kinder-accordion-section{background:#fff0df!important}
+main>#apps.kinder-accordion-section{background:#ffe8f2!important}
+main>#creche.kinder-accordion-section{background:#fff7d8!important}
+main>#mentor.kinder-accordion-section{background:#e8f7ff!important}
+main>#mygarden.kinder-accordion-section{background:#eaffdf!important}
+main>#today.kinder-accordion-section{background:#f1ebff!important}
+main>#promise.kinder-accordion-section{background:#fff0df!important}
+
 .kinder-accordion{
   width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
   margin:0 auto!important;
   overflow:hidden!important;
   background:var(--paper)!important;
-  border:3px solid #fff!important;
+  border:2px solid #fff!important;
   border-radius:7px!important;
-  box-shadow:var(--soft)!important;
+  box-shadow:0 6px 16px rgba(54,95,72,.09)!important;
 }
 .kinder-accordion>summary{
-  min-height:64px!important;
+  min-height:48px!important;
   display:grid!important;
-  grid-template-columns:auto 1fr auto!important;
+  grid-template-columns:32px 1fr auto!important;
   align-items:center!important;
-  gap:12px!important;
-  padding:12px 18px!important;
+  gap:9px!important;
+  padding:7px 12px!important;
   list-style:none!important;
   color:var(--ink)!important;
   cursor:pointer!important;
@@ -56,28 +141,35 @@ main>.kinder-accordion-section{
   font-weight:700!important;
 }
 .kinder-accordion>summary::-webkit-details-marker{display:none!important}
-.kinder-accordion>summary strong{font-size:18px!important;color:var(--ink)!important}
-.kinder-accordion>summary>span:first-child{font-size:28px!important}
-.kinder-accordion-state{
-  min-width:76px;
-  text-align:right;
-  color:var(--muted)!important;
+.kinder-accordion>summary strong{
+  color:var(--ink)!important;
   font-size:18px!important;
+  line-height:1.2!important;
+}
+.kinder-accordion>summary>span:first-child{
+  font-size:23px!important;
+  line-height:1!important;
+}
+.kinder-accordion-state{
+  min-width:64px!important;
+  text-align:right!important;
+  color:var(--muted)!important;
+  font-size:16px!important;
   font-weight:700!important;
 }
 .kinder-accordion-state::after{content:"Open +"}
 .kinder-accordion[open] .kinder-accordion-state::after{content:"Close −"}
 .kinder-accordion-panel{
-  padding:18px!important;
+  padding:12px!important;
   background:var(--paper)!important;
-  border-top:3px solid #fff!important;
+  border-top:2px solid #fff!important;
 }
 .kinder-accordion-panel>.shell{
   width:100%!important;
   margin:0!important;
 }
 
-/* Use only the existing Kindergarten palette. */
+/* Existing Kindergarten palette — brighter bars, no new theme. */
 .kinder-accordion[data-kinder-feature="welcome"]>summary{background:var(--sun)!important}
 .kinder-accordion[data-kinder-feature="tray"]>summary{background:var(--blue)!important}
 .kinder-accordion[data-kinder-feature="life"]>summary{background:var(--grass)!important}
@@ -90,7 +182,7 @@ main>.kinder-accordion-section{
 .kinder-accordion[data-kinder-feature="today"]>summary{background:var(--lav)!important}
 .kinder-accordion[data-kinder-feature="promise"]>summary{background:var(--orange)!important}
 
-/* The old hero information card keeps its original styling inside Welcome. */
+/* Welcome card stays below the hero, inside the first collapsed shelf. */
 .kinder-accordion-panel>.hero-copy{
   width:min(760px,100%)!important;
   margin:0 auto!important;
@@ -98,33 +190,60 @@ main>.kinder-accordion-section{
 .kinder-accordion-panel>.stats,
 .kinder-accordion-panel>.seed-ribbon{
   width:100%!important;
-  margin:16px 0 0!important;
+  margin:10px 0 0!important;
 }
 
-/* Do not let former full-width section backgrounds show while collapsed. */
+/* Suppress the old section-sized spacing/background ownership once wrapped. */
 .kinder-accordion-section.section,
 .kinder-accordion-section.section-alt,
 .kinder-accordion-section.section.final{
-  background:var(--cream)!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:4px 0!important;
+  border:0!important;
   color:var(--ink)!important;
 }
-.kinder-accordion-section.section.final :is(h2,p,.eyebrow){color:inherit!important}
+.kinder-accordion-section.section.final :is(h2,p,.eyebrow){
+  color:inherit!important;
+}
 
-/* Existing section content keeps its theme when opened. */
-.kinder-accordion-panel .section-heading{margin-top:0!important}
-.kinder-accordion-panel :is(.feature-card,.unit-card,.connected-card,.app-card,.profile-card,.pinned-card,.daily-card,.family-card){
+/* Existing interior cards retain the original Kindergarten theme. */
+.kinder-accordion-panel .section-heading{
+  margin-top:0!important;
+  margin-bottom:14px!important;
+}
+.kinder-accordion-panel :is(
+  .feature-card,.unit-card,.connected-card,.app-card,.profile-card,
+  .pinned-card,.daily-card,.family-card,.kinder-mentor-card,.mentor-principles
+){
   box-shadow:var(--soft)!important;
 }
 
 .kinder-accordion-section{scroll-margin-top:150px!important}
 
 @media(max-width:760px){
+  .kinder-quick-links,
+  .kinder-hero-action-shelf{
+    width:calc(100% - 24px)!important;
+  }
+  .kinder-quick-links{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   .kinder-hero-action-shelf .hero-actions{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   .kinder-accordion{width:calc(100% - 24px)!important}
-  .kinder-accordion-panel{padding:12px!important}
-  .kinder-accordion>summary{grid-template-columns:auto 1fr!important;padding:11px 14px!important}
-  .kinder-accordion-state{grid-column:2;text-align:left;min-width:0}
+  .kinder-accordion-panel{padding:10px!important}
+  .kinder-accordion>summary{
+    grid-template-columns:28px 1fr!important;
+    padding:7px 10px!important;
+  }
+  .kinder-accordion-state{
+    grid-column:2!important;
+    text-align:left!important;
+    min-width:0!important;
+  }
 }
 @media(max-width:480px){
-  .kinder-hero-action-shelf .hero-actions{grid-template-columns:1fr!important}
+  .kinder-quick-links,
+  .kinder-hero-action-shelf .hero-actions{
+    grid-template-columns:1fr!important;
+  }
+  .kinder-quick-links>.kinder-menu-trigger{grid-column:auto!important}
 }
