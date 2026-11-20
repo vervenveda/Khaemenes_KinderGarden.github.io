@@ -134,6 +134,7 @@ body.kinder-ready #photoPreview[data-frame="heart"]{border-radius:0!important;cl
 body.kinder-ready #photoPreview[data-frame="star"]{border-radius:0!important;clip-path:polygon(50% 2%,63% 34%,98% 36%,71% 58%,80% 94%,50% 75%,20% 94%,29% 58%,2% 36%,37% 34%)!important}
 body.kinder-ready #photoPreview[data-frame="octagon"]{border-radius:0!important;clip-path:polygon(30% 0%,70% 0%,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%)!important}
 </style>  <script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-global-standard-v1.js" defer data-kindergarten-global-standard="18-33-66-auto-no333"></script>
+<link rel="stylesheet" href="/Khaemenes_KinderGarden.github.io/assets/kindergarten-contained-shell.css" data-kindergarten-contained-shell>
 </head><body data-theme="sky" class="kinder-ready">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to my profile</a>
@@ -359,8 +360,19 @@ window.addEventListener("khaemenes-family-changed",refresh);window.addEventListe
 <script src="../assets/khaemenes-student-profile-ui-v2.js"></script>
 <script>(function(){const box=document.getElementById("profileStudio");if(!window.KhaemenesStudentProfileUIV2&&!box.children.length)document.getElementById("studioUnavailable").hidden=false})();</script>
 
-<script src="https://vervenveda.com/assets/vnv-333-ticker.js"></script>
+<!-- Kindergarten contained canonical shell -->
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-menu-adapter.js"></script>
 <script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
-<script>VNV_TICKER.autoPopulate({label:"Kindergarten Profile Quick Links",max:14});</script>
-<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+<script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:7,cleanLegacy:true,links:[
+ {label:"Home",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/"},
+ {label:"Today",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/today/"},
+ {label:"36-Week Garden",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/"},
+ {label:"Reading",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/reading/"},
+ {label:"My Profile",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/student-profile/"},
+ {label:"Graduation",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/graduation/"}
+]});</script>
+<script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
+<script>VNV_HEADER.mount({title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · Plant · Learn · Grow",icon:"K",home:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",actions:[]});</script>
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-language-loader.js" defer></script>
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-toolbar.js" defer></script>
 </body></html>
