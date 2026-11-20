@@ -682,3 +682,6 @@ body :is(.naib-actions,.setup-actions) .btn{font-size:18px!important}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
 }
+
+/* Final promise actions */
+.final-actions{justify-content:center!important}
