@@ -418,3 +418,64 @@ main>#welcome.kinder-accordion-section{
     grid-template-columns:1fr!important;
   }
 }
+
+/* 2026-11-19 · Final color rhythm + hero breathing room */
+
+/* Give the artwork room to breathe before the controls begin. */
+.hero .hero-inner{
+  padding-top:14px!important;
+  padding-bottom:24px!important;
+}
+.hero .hero-garden{
+  margin-bottom:0!important;
+}
+.hero .kinder-quick-links{
+  margin:0 auto 8px!important;
+}
+
+/* No touching duplicate colors in the shortcut block. */
+.hero .kinder-quick-links>a:nth-child(1){background:var(--sun)!important}
+.hero .kinder-quick-links>a:nth-child(2){background:var(--blue)!important}
+.hero .kinder-quick-links>a:nth-child(3){background:var(--lav)!important}
+.hero .kinder-quick-links>a:nth-child(4){background:var(--grass)!important}
+.hero .kinder-quick-links>.kinder-menu-trigger{background:var(--orange)!important}
+
+/* Continue the color rhythm through all six full-width learner bars. */
+.kinder-hero-action-shelf .hero-actions>*:nth-child(1){background:var(--lav)!important;color:var(--ink)!important}
+.kinder-hero-action-shelf .hero-actions>*:nth-child(2){background:var(--pink)!important;color:var(--ink)!important}
+.kinder-hero-action-shelf .hero-actions>*:nth-child(3){background:var(--sun)!important;color:var(--ink)!important}
+.kinder-hero-action-shelf .hero-actions>*:nth-child(4){background:var(--blue)!important;color:var(--ink)!important}
+.kinder-hero-action-shelf .hero-actions>*:nth-child(5){background:var(--grass)!important;color:var(--ink)!important}
+.kinder-hero-action-shelf .hero-actions>*:nth-child(6){background:var(--orange)!important;color:var(--ink)!important}
+
+/* Charcoal field behind the accordion stack makes the bright bars pop. */
+main>.kinder-accordion-section,
+main>#welcome.kinder-accordion-section,
+main>#learning-tray.kinder-accordion-section,
+main>#kindergarten-life-skills.kinder-accordion-section,
+main>#curriculum.kinder-accordion-section,
+main>#connected-learning.kinder-accordion-section,
+main>#apps.kinder-accordion-section,
+main>#creche.kinder-accordion-section,
+main>#mentor.kinder-accordion-section,
+main>#mygarden.kinder-accordion-section,
+main>#today.kinder-accordion-section,
+main>#promise.kinder-accordion-section{
+  background:var(--ink)!important;
+}
+
+/* Keep collapsed bars crisp against charcoal. */
+.kinder-accordion{
+  border-color:rgba(255,255,255,.9)!important;
+  box-shadow:none!important;
+}
+.kinder-accordion-panel{
+  background:var(--paper)!important;
+}
+
+@media(max-width:760px){
+  .hero .hero-inner{
+    padding-top:11px!important;
+    padding-bottom:18px!important;
+  }
+}
