@@ -14,3 +14,6 @@ button,.btn,[class*="button"],[class*="-btn"],a[class*="btn"],.card,.panel,artic
 .kg-hero-academy{font-size:33px!important;line-height:1.1!important}.kg-hero-title{font-size:77px!important;line-height:.98!important}.kg-hero-descriptor{font-size:24px!important;line-height:1.35!important}
 html.kg-calm *,html.kg-calm *::before,html.kg-calm *::after{animation:none!important;transition:none!important}
 @media(max-width:760px){.kg-hero-academy{font-size:24px!important}.kg-hero-title{font-size:clamp(48px,14vw,66px)!important}.kg-hero-descriptor{font-size:20px!important}}@media(max-width:560px){.kg-local-menu-list,.kg-tool-panel{grid-template-columns:1fr}}
+
+/* Legacy Kindergarten headers stay in DOM for existing page scripts, but are not visible. */
+header.header,header.top{display:none!important}#mobileMenu,#menuPanel{display:none!important}
