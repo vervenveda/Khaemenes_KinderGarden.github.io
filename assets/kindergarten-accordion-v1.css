@@ -350,3 +350,71 @@ main>#promise.kinder-accordion-section{
     min-width:0!important;
   }
 }
+
+/* 2026-11-19 · Final hero order + full-width learner bars */
+.hero .kinder-title-band{
+  margin-bottom:8px!important;
+}
+.hero .hero-inner{
+  padding-top:8px!important;
+  padding-bottom:10px!important;
+}
+.hero .kinder-quick-links{
+  width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
+  margin:0 auto 6px!important;
+  padding:0!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:5px!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.hero .kinder-quick-links :is(a,.kinder-menu-trigger){
+  height:42px!important;
+  min-height:42px!important;
+  max-height:42px!important;
+  border-radius:7px!important;
+}
+.hero .kinder-quick-links>.kinder-menu-trigger{
+  grid-column:1/-1!important;
+}
+
+/* Every learner control under the artwork is a true full-width bar. */
+.kinder-hero-action-shelf{
+  width:min(var(--kg-accordion-width),calc(100% - 32px))!important;
+  margin:0 auto 6px!important;
+}
+.kinder-hero-action-shelf .hero-actions{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:4px!important;
+  width:100%!important;
+}
+.kinder-hero-action-shelf .hero-actions>*{
+  grid-column:1!important;
+  width:100%!important;
+  min-width:100%!important;
+  max-width:100%!important;
+  min-height:42px!important;
+  height:42px!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+
+/* No extra air between the hero bars and accordion stack. */
+main>#welcome.kinder-accordion-section{
+  padding-top:2px!important;
+}
+
+@media(max-width:760px){
+  .hero .kinder-quick-links,
+  .kinder-hero-action-shelf{
+    width:calc(100% - 24px)!important;
+  }
+  .kinder-hero-action-shelf .hero-actions{
+    grid-template-columns:1fr!important;
+  }
+}
