@@ -87,6 +87,7 @@ header nav{min-height:82px}
 .story-tv[hidden]{display:none}.story-tv{position:fixed;inset:0;z-index:10010;background:rgba(9,34,58,.68);display:grid;place-items:center;padding:16px}.story-tv-set{width:min(900px,96vw);background:#ffd43b;border:11px solid #e03131;border-radius:33px;box-shadow:0 22px 65px rgba(0,0,0,.35);padding:16px;position:relative}.story-tv-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px;color:#173f68}.story-tv-top strong{font-size:clamp(1.1rem,3vw,1.5rem)}.story-tv-close{border:4px solid #fff;border-radius:50%;width:54px;height:54px;background:#e03131;color:#fff;font:900 1.8rem/1 Arial,sans-serif;cursor:pointer;box-shadow:0 3px 0 #9c1c1c}.story-tv-screen{background:#17212b;border:9px solid #1971c2;border-radius:21px;overflow:hidden;aspect-ratio:16/9;position:relative}.story-tv-screen iframe{width:100%;height:100%;border:0;background:#fff}.story-tv-fallback{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:24px;color:#fff;background:#17212b}.story-tv-fallback[hidden]{display:none}.story-tv-fallback p{max-width:520px;margin:0 auto 14px}.story-tv-fallback a{display:inline-block;background:#2f9e44;color:#fff;border:3px solid #fff;border-radius:7px;padding:12px 16px;text-decoration:none;font-weight:800}.story-tv-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 5px 0;color:#173f68}.story-tv-dots{display:flex;gap:8px}.story-tv-dots span{width:18px;height:18px;border-radius:50%;display:block;border:2px solid #173f68}.story-tv-dots span:nth-child(1){background:#e03131}.story-tv-dots span:nth-child(2){background:#1971c2}.story-tv-dots span:nth-child(3){background:#2f9e44}@media(max-width:560px){.story-tv-set{border-width:7px;border-radius:22px;padding:10px}.story-tv-screen{border-width:6px}.story-tv-close{width:46px;height:46px}}
 
 .reward-redeem{margin-left:.65rem;padding:.45rem .65rem;border:2px solid #315f91;border-radius:7px;background:#fff;color:#315f91;font:600 .82rem var(--font);cursor:pointer}.reward-redeem:focus-visible{outline:3px solid #285fbd;outline-offset:2px}@media(max-width:520px){.reward-redeem{display:block;margin:.55rem auto 0}}</style>  <script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-global-standard-v1.js" defer data-kindergarten-global-standard="18-33-66-auto-no333"></script>
+<link rel="stylesheet" href="/Khaemenes_KinderGarden.github.io/assets/kindergarten-contained-shell.css" data-kindergarten-contained-shell>
 </head><body>
 <header><div class="shell"><nav><a class="navbtn nav-back" href="../today/" aria-label="Back to Today">←</a><div class="header-mark" aria-hidden="true">🌈</div><div class="header-actions"><a class="navbtn nav-profile" href="../student-profile/" aria-label="Student profile">☺</a></div></nav></div></header>
 <section class="reading-title" aria-labelledby="readingGardenTitle"><div class="hero-books" aria-hidden="true"><span>📕</span><span>📖</span><span>📘</span></div><div class="hero-copy"><p class="eyebrow">Khaemenes Academy</p><h1 id="readingGardenTitle">Khaemenes Kinder Garden</h1><h2>Weekly Reading Garden</h2><p class="hero-invite">Pick a book. Find a cozy spot. Let’s open a story together.</p><div class="hero-sparks" aria-label="Quick Kindergarten practice"><span aria-hidden="true">★</span><a href="../apps/ABC_curriculum_index.html" aria-label="Open ABC letters and reading practice">ABC</a><span aria-hidden="true">☀</span><a href="../apps/Numbers_1-12_index.html" aria-label="Open numbers 1 through 12 practice">1·2·3</a><span aria-hidden="true">★</span></div></div></section>
@@ -155,5 +156,21 @@ function closeStoryTv(){const tv=$("storyTv"),frame=$("storyTvFrame");tv.hidden=
 $("storyTvClose").addEventListener("click",closeStoryTv);$("storyTv").addEventListener("click",e=>{if(e.target===$("storyTv"))closeStoryTv()});
 
 $("read").addEventListener("click",openStoryTv);$("quizReveal").addEventListener("click",()=>{$("quiz").hidden=false;$("quizReveal").hidden=true;$("stepPlay").classList.add("active");$("quiz").scrollIntoView({behavior:window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches?"auto":"smooth",block:"start"})});select("A");
-})();</script><script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+})();</script>
+
+<!-- Kindergarten contained canonical shell -->
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-menu-adapter.js"></script>
+<script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
+<script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:7,cleanLegacy:true,links:[
+ {label:"Home",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/"},
+ {label:"Today",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/today/"},
+ {label:"36-Week Garden",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/"},
+ {label:"Reading",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/reading/"},
+ {label:"My Profile",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/student-profile/"},
+ {label:"Graduation",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/graduation/"}
+]});</script>
+<script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
+<script>VNV_HEADER.mount({title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · Plant · Learn · Grow",icon:"K",home:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",actions:[]});</script>
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-language-loader.js" defer></script>
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-toolbar.js" defer></script>
 </body></html>
