@@ -1705,6 +1705,7 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
 /* Keep visual illustration sizes, badges and official injected VNV chrome
    under their original component ownership. */
 </style>  <link rel="stylesheet" href="assets/kindergarten-accordion-v1.css" data-kindergarten-accordion="v1">
+<link rel="stylesheet" href="/Khaemenes_KinderGarden.github.io/assets/kindergarten-contained-shell.css" data-kindergarten-contained-shell>
 </head>
 <body id="top">
 <a class="skip" href="#curriculum">Skip to the curriculum</a>
@@ -2738,7 +2739,6 @@ $("#year").textContent=new Date().getFullYear();
 <script src="assets/khaemenes-kinder-experience.js"></script>
 <!-- KHAEMENES_KINDER_STOS_BRIDGE_V1 --><script src="assets/khaemenes-kinder-stos-bridge-v1.js"></script>
 <script src="assets/khaemenes-kindergarten-pin-prompt.js"></script>
-<script src="assets/khaemenes-landing-toolbar.js" defer></script>
 <script id="kinder-tool-shed-dialog-20261027">
 document.addEventListener("DOMContentLoaded",()=>{
  const bar=document.getElementById("appFilters"),dialog=document.getElementById("appLibraryDialog"),close=document.getElementById("appLibraryClose"),title=document.getElementById("appLibraryTitle");
@@ -2753,14 +2753,7 @@ document.addEventListener("DOMContentLoaded",()=>{
  close?.addEventListener("click",()=>dialog.close());
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
 });
-</script><script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
-<script>VNV_HEADER.mount({"title":"Khaemenes Kinder Garden","subtitle":"Kindergarten · Plant · Learn · Grow · Bloom","icon":"K","home":"https://vervenveda.com/Khaemenes_Academy.github.io/","actions":[]});</script>
-
-<script src="https://vervenveda.com/assets/vnv-333-ticker.js"></script>
-<script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
-<script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:10});</script>
-
-<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+</script>
 <script id="kindergarten-accordion-navigation">
 (()=>{
   "use strict";
@@ -2791,4 +2784,20 @@ document.addEventListener("DOMContentLoaded",()=>{
   fromHash();
 })();
 </script>
+
+<!-- Kindergarten contained canonical shell -->
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-menu-adapter.js"></script>
+<script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
+<script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:7,cleanLegacy:true,links:[
+ {label:"Home",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/"},
+ {label:"Today",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/today/"},
+ {label:"36-Week Garden",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/"},
+ {label:"Reading",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/reading/"},
+ {label:"My Profile",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/student-profile/"},
+ {label:"Graduation",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/graduation/"}
+]});</script>
+<script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
+<script>VNV_HEADER.mount({title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · Plant · Learn · Grow",icon:"K",home:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",actions:[]});</script>
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-language-loader.js" defer></script>
+<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-toolbar.js" defer></script>
 </body></html>
