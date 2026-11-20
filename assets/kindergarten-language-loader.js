@@ -1,0 +1,7 @@
+/* Khaemenes Kindergarten · canonical translator loader */
+(()=>{"use strict";if(window.KhaemenesKindergartenLanguageLoader)return;
+const resources=["https://vervenveda.com/assets/khaemenes-campus-phrases.js","https://vervenveda.com/assets/khaemenes-interlingual-core.js","https://vervenveda.com/Khaemenes_Linguistics.github.io/assets/khaemenes-translator-loader.js?v=1.1.1","https://vervenveda.com/assets/vnv-language.js?v=20261108-cream-buttons"];
+function load(src){return new Promise(r=>{if([...document.scripts].some(s=>s.src===new URL(src,location.href).href)){r();return}const s=document.createElement("script");s.src=src;s.defer=true;s.onload=r;s.onerror=r;(document.head||document.documentElement).append(s)})}
+async function start(){let rail=document.getElementById("vnv-language-rail");if(!rail){rail=document.createElement("div");rail.id="vnv-language-rail";rail.setAttribute("role","group");rail.setAttribute("aria-label","Page translation tools");const h=document.getElementById("vnvHeaderAutoPopulate");(h?.parentNode||document.body).insertBefore(rail,h?.nextSibling||document.body.firstChild)}for(const s of resources)await load(s);try{await window.KhaemenesTranslatorLoader?.ensure?.({full:true,upgradeLegacyCore:true});window.VNVLanguage?.refresh?.()}catch{}}
+window.KhaemenesKindergartenLanguageLoader=Object.freeze({start});if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});else start();
+})();
