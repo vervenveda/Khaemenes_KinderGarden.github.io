@@ -1779,7 +1779,6 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
   <a href="#apps" data-ticker data-ticker-label="Games">🎨 Games</a>
   <a href="#mentor" data-ticker data-ticker-label="Mentor">🦉 Mentor</a>
   <a href="inquiry-companion.html" data-ticker data-ticker-label="Discovery">🌻 Discovery</a>
-  <button class="kinder-menu-trigger" id="menuButton" type="button" aria-expanded="false" aria-controls="vnvEnrichedMenuOverlay" aria-label="Open branched ecosystem menu">More ▾</button>
 </div>
   <div class="shell kinder-hero-action-shelf"><div class="hero-actions kinder-hero-actions">
         <button class="btn profile" id="heroProfileButton" type="button">🌼 Continue Learning</button>
@@ -2706,9 +2705,9 @@ $("#naibPractice")?.addEventListener("click",()=>{closeNaibAcademicReminder();do
 $("#naibAcademicOverlay")?.addEventListener("click",e=>{if(e.target===$("#naibAcademicOverlay"))closeNaibAcademicReminder()});
 window.addEventListener("khaemenes-kindergarten-progress-changed",refreshAcademicUI);
 window.addEventListener("storage",e=>{if(e.key===KG_PROGRESS_KEY)refreshAcademicUI()});
-const mb=$("#menuButton"),mm=$("#mobileMenu");mb.addEventListener("click",()=>{window.VNV_ENRICHED_MENU?.open?.();});
-mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}));
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";closeNaibAcademicReminder();}});
+const mb=$("#menuButton"),mm=$("#mobileMenu");
+mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mm.classList.remove("open");mb?.setAttribute("aria-expanded","false");if(mb)mb.textContent="☰";}));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){mm.classList.remove("open");mb?.setAttribute("aria-expanded","false");if(mb)mb.textContent="☰";closeNaibAcademicReminder();}});
 if(window.KhaemenesLearnerProfile?.subscribe)window.KhaemenesLearnerProfile.subscribe(()=>{renderProfile();refreshAcademicUI();});
 
 $("#openKinderSetup").addEventListener("click",openKinderSetup);
