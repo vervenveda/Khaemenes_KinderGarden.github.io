@@ -1776,7 +1776,7 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
   </div>
   <div class="kinder-quick-links" aria-label="Kindergarten learning shortcuts">
   <a href="#curriculum" data-ticker data-ticker-label="Lessons">📚 Lessons</a>
-  <a href="#apps" data-ticker data-ticker-label="Games">🎨 Games</a>
+  <a href="#apps" data-ticker data-ticker-label="Games" aria-label="Open Learning Games">🎨 Games</a>
   <a href="#mentor" data-ticker data-ticker-label="Mentor">🦉 Mentor</a>
   <a href="inquiry-companion.html" data-ticker data-ticker-label="Discovery">🌻 Discovery</a>
 </div>
@@ -1786,7 +1786,7 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
         <a class="btn secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">🧑‍🧒 Grown-Up / Family</a>
         <button class="btn gold" id="academicPlaceButton" type="button">🧭 My Academic Place</button>
         <a class="btn primary" href="#curriculum">📚 View 36-Week Roadmap</a>
-        <a class="btn secondary" href="#apps">🧰 Open Learning Toolbox</a>
+        <a class="btn secondary" href="#apps">🧰 Open Learning Games</a>
       </div></div>
 </section>
 <section class="kinder-accordion-section" id="welcome">
@@ -1878,9 +1878,9 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
 
 <section class="section section-alt kinder-accordion-section" id="apps">
   <details class="kinder-accordion" data-kinder-feature="apps">
-    <summary><span aria-hidden="true">🎨</span><strong>Learning Toolbox</strong><span class="kinder-accordion-state" aria-hidden="true"></span></summary>
+    <summary><span aria-hidden="true">🎨</span><strong>Learning Games</strong><span class="kinder-accordion-state" aria-hidden="true"></span></summary>
     <div class="kinder-accordion-panel">
-<div class="shell"><div class="section-heading"><p class="eyebrow">Playful tools for extra practice</p><h2>The Kinder Garden Tool Shed</h2><p class="section-supporting-line">Local core apps plus the connected cumulative library.</p><p>These tools live directly in Kinder Garden. Crechè, Elementary, Bazaar Art, The Refrain, Arcade, and Aurora extend the practice library above without changing the formal mastery record.</p></div><div class="app-category-grid" id="appFilters" aria-label="Choose a Kinder Garden tool category">
+<div class="shell"><div class="section-heading"><p class="eyebrow">Playful tools for extra practice</p><h2>Learning Games</h2><p class="section-supporting-line">Local core apps plus the connected cumulative library.</p><p>These tools live directly in Kinder Garden. Crechè, Elementary, Bazaar Art, The Refrain, Arcade, and Aurora extend the practice library above without changing the formal mastery record.</p></div><div class="app-category-grid" id="appFilters" aria-label="Choose a Kinder Garden tool category">
 <button class="app-category-card cat-literacy" data-app="literacy" type="button"><span>🔤</span><strong>ABC's & Reading</strong><small>Letters · phonics · stories · words</small></button>
 <button class="app-category-card cat-math" data-app="math" type="button"><span>🔢</span><strong>Numbers & Math</strong><small>Counting · number sense · early math</small></button>
 <button class="app-category-card cat-creative" data-app="creative" type="button"><span>🎨</span><strong>Colors & Creativity</strong><small>Color · art · making · imagination</small></button>
@@ -2779,6 +2779,23 @@ document.addEventListener("DOMContentLoaded",()=>{
     try{target=document.querySelector(hash)}catch{}
     openTarget(target);
   },true);
+  /* Games is a same-page route: opening the accordion precedes scrolling,
+     including repeated clicks when the URL already has #apps. */
+  document.addEventListener("click",e=>{
+    const link=e.target.closest?.('a[data-ticker-label="Games"]');
+    if(!link||link.getAttribute("href")!=="#apps")return;
+    const section=document.getElementById("apps");
+    if(!section)return;
+    e.preventDefault();
+    openTarget(section);
+    if(location.hash!=="#apps")history.pushState(null,"","#apps");
+    requestAnimationFrame(()=>{
+      section.querySelector("details.kinder-accordion > summary")?.scrollIntoView({
+        behavior:window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches?"auto":"smooth",
+        block:"start"
+      });
+    });
+  });
   window.addEventListener("hashchange",fromHash);
   fromHash();
 })();
