@@ -685,3 +685,132 @@ html body main #apps #appFilters>.cat-creative :is(strong,small),
 html body main #apps #appFilters>.cat-movement :is(strong,small){
  color:#243441!important;-webkit-text-fill-color:#243441!important;
 }
+
+
+/* Kindergarten Formal Learning Path — bright palette and readable header · 2026-11-23 */
+/* One canonical hamburger remains in the shared VNV header. Remove the old
+   More slot from layout, while retaining all four genuine quick links. */
+html body #student .kinder-quick-links{
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+}
+/* Keep the purple accordion color; cream labels are easy to read. */
+html body main #curriculum .kinder-accordion[data-kinder-feature="curriculum"]>summary{
+ background:#9577c9!important;
+ color:#fff8e9!important;
+ -webkit-text-fill-color:#fff8e9!important;
+}
+html body main #curriculum .kinder-accordion[data-kinder-feature="curriculum"]>summary :is(strong,span,.kinder-accordion-state){
+ color:#fff8e9!important;
+ -webkit-text-fill-color:#fff8e9!important;
+}
+/* Previously white text was invisible on the white interior. Give the
+   title card its own lively blue surface and preserve cream type. */
+html body main #curriculum .section-heading{
+ box-sizing:border-box!important;
+ width:100%!important;max-width:960px!important;
+ margin:0 auto 22px!important;
+ padding:24px!important;
+ border:3px solid #fff8e9!important;
+ border-radius:7px!important;
+ background:#5a9be0!important;
+ text-align:center!important;
+ box-shadow:0 8px 20px rgba(48,80,105,.14)!important;
+}
+html body main #curriculum .section-heading :is(h2,p,.eyebrow){
+ color:#fff8e9!important;
+ -webkit-text-fill-color:#fff8e9!important;
+ text-shadow:none!important;
+ line-height:1.45!important;
+}
+html body main #curriculum .section-heading h2{
+ font-size:clamp(33px,4vw,55px)!important;
+ line-height:1.14!important;
+}
+html body main #curriculum .section-heading :is(p,.eyebrow){
+ font-size:24px!important;
+}
+/* Three distinct cheerful instructional cards, and working bottom-aligned
+   calls to action. Never change ids, destinations, or mastery logic. */
+html body main #curriculum .feature-grid{
+ display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ gap:14px!important;
+ align-items:stretch!important;
+}
+html body main #curriculum .feature-grid>.feature-card{
+ display:flex!important;flex-direction:column!important;
+ align-items:center!important;justify-content:flex-start!important;
+ gap:12px!important;
+ min-width:0!important;
+ padding:22px 16px!important;
+ min-height:360px!important;
+ border:3px solid #fff8e9!important;
+ border-radius:7px!important;
+ box-shadow:0 8px 19px rgba(48,80,105,.12)!important;
+ text-align:center!important;
+}
+html body main #curriculum .feature-grid>.feature-card:nth-child(1){background:#4daea5!important}
+html body main #curriculum .feature-grid>.feature-card:nth-child(2){background:#d16ba1!important}
+html body main #curriculum .feature-grid>.feature-card:nth-child(3){background:#9577c9!important}
+html body main #curriculum .feature-grid>.feature-card :is(h3,p){
+ font-size:24px!important;
+ line-height:1.4!important;
+ color:#fff8e9!important;
+ -webkit-text-fill-color:#fff8e9!important;
+ text-align:center!important;
+}
+html body main #curriculum .feature-grid>.feature-card>.icon{
+ display:grid!important;place-items:center!important;
+ width:78px!important;height:78px!important;
+ flex:none!important;
+ font-size:66px!important;line-height:1!important;
+ margin:0 auto!important;
+ background:transparent!important;box-shadow:none!important;
+}
+html body main #curriculum .feature-grid>.feature-card :is(a.btn,button.btn){
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ width:100%!important;
+ min-height:66px!important;
+ height:auto!important;
+ margin-top:auto!important;
+ padding:12px!important;
+ border-radius:7px!important;
+ border:2px solid #fff8e9!important;
+ font-size:24px!important;line-height:1.3!important;
+ white-space:normal!important;
+ text-align:center!important;
+}
+html body main #curriculum .feature-grid>.feature-card:nth-child(1) :is(a.btn,button.btn){
+ background:#f1ce62!important;color:#243441!important;
+ -webkit-text-fill-color:#243441!important;
+}
+html body main #curriculum .feature-grid>.feature-card:nth-child(2) :is(a.btn,button.btn){
+ background:#5a9be0!important;color:#fff8e9!important;
+ -webkit-text-fill-color:#fff8e9!important;
+}
+html body main #curriculum .feature-grid>.feature-card:nth-child(3) :is(a.btn,button.btn){
+ background:#ee9c60!important;color:#243441!important;
+ -webkit-text-fill-color:#243441!important;
+}
+html body main #curriculum .roadmap-rule{
+ max-width:960px!important;
+ padding:18px 22px!important;
+ background:#fff2b9!important;
+ color:#243441!important;
+ border:2px solid #f1ce62!important;
+ border-radius:7px!important;
+ font-size:24px!important;
+ line-height:1.4!important;
+}
+html body main #curriculum .roadmap-rule strong{
+ color:#243441!important;
+ -webkit-text-fill-color:#243441!important;
+}
+@media(max-width:760px){
+ html body main #curriculum .feature-grid{
+  grid-template-columns:1fr!important;
+ }
+ html body main #curriculum .feature-grid>.feature-card{
+  min-height:0!important;
+ }
+}
