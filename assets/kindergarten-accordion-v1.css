@@ -830,3 +830,52 @@ html body main #apps #appFilters > .app-category-card.cat-movement :is(strong,sm
   color:#fff!important;
   -webkit-text-fill-color:#fff!important;
 }
+
+
+/* Kindergarten landing: true round garden shapes and lime Discovery — 2026-11-23 */
+/* The old percentage-radius ellipses stretch as the hero changes aspect ratio.
+   True circles use a single length-based radius at every viewport. Keep the
+   existing palette and all hero content, links, and positioning untouched. */
+html body main > section#student.hero{
+  background:
+    radial-gradient(circle clamp(118px,16vw,242px) at -3% 11%,#ff8b25 0 98%,transparent 100%),
+    radial-gradient(circle clamp(142px,17vw,265px) at 12% 28%,#ff4938 0 98%,transparent 100%),
+    radial-gradient(circle clamp(135px,18vw,285px) at 38% -4%,#ffd12f 0 98%,transparent 100%),
+    radial-gradient(circle clamp(156px,20vw,315px) at 59% 19%,#20cdb4 0 98%,transparent 100%),
+    radial-gradient(circle clamp(165px,22vw,335px) at 82% 7%,#168bd2 0 98%,transparent 100%),
+    radial-gradient(circle clamp(145px,18vw,275px) at 105% 28%,#7351c9 0 98%,transparent 100%),
+    radial-gradient(circle clamp(145px,18vw,265px) at 5% 89%,#8ee329 0 98%,transparent 100%),
+    radial-gradient(circle clamp(145px,17vw,270px) at 38% 102%,#ff9c28 0 98%,transparent 100%),
+    radial-gradient(circle clamp(148px,18vw,280px) at 72% 105%,#ef4ca6 0 98%,transparent 100%),
+    linear-gradient(135deg,#20cdb4,#5a9be0)!important;
+  background-repeat:no-repeat!important;
+  background-size:auto!important;
+}
+/* Apply the same geometry safeguard to the square PLAY illustration; no
+   image distortion and no impact on clickable garden bubbles. */
+html body main > section#student.hero .garden-scene{
+  background:
+    radial-gradient(circle 120px at -4% 10%,var(--play-orange) 0 98%,transparent 100%),
+    radial-gradient(circle 125px at 16% 26%,var(--play-red) 0 98%,transparent 100%),
+    radial-gradient(circle 145px at 37% 2%,var(--play-yellow) 0 98%,transparent 100%),
+    radial-gradient(circle 160px at 57% 29%,var(--play-teal) 0 98%,transparent 100%),
+    radial-gradient(circle 170px at 82% 14%,var(--play-blue) 0 98%,transparent 100%),
+    radial-gradient(circle 155px at 104% 34%,var(--play-purple) 0 98%,transparent 100%),
+    radial-gradient(circle 148px at 7% 76%,var(--play-lime) 0 98%,transparent 100%),
+    radial-gradient(circle 155px at 38% 93%,var(--play-orange) 0 98%,transparent 100%),
+    radial-gradient(circle 165px at 76% 92%,var(--play-pink) 0 98%,transparent 100%),
+    linear-gradient(145deg,#22cbb4,#168bd2)!important;
+  background-repeat:no-repeat!important;
+  background-size:auto!important;
+}
+/* Only the fourth hero quick-link, not ticker entries or other controls. */
+html body main > section#student.hero .kinder-quick-links > a[data-ticker-label="Discovery"]{
+  background:#b7df57!important;
+  color:#243441!important;
+  -webkit-text-fill-color:#243441!important;
+  border-color:#fff8e9!important;
+}
+html body main > section#student.hero .kinder-quick-links > a[data-ticker-label="Discovery"] :is(span,small,strong){
+  color:#243441!important;
+  -webkit-text-fill-color:#243441!important;
+}
