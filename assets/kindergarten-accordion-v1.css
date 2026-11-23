@@ -814,3 +814,19 @@ html body main #curriculum .roadmap-rule strong{
   min-height:0!important;
  }
 }
+
+
+/* Kindergarten Learning Games: Games anchor offset and white orange/green card type. */
+/* Sticky VNV ticker + header must not obscure the opened accordion. */
+html body #apps,
+html body #apps > details.kinder-accordion > summary{
+  scroll-margin-top:calc(var(--vnv-autopopulate-ticker-height,33px) + var(--vnv-header-height,66px) + 18px)!important;
+}
+/* Preserve each existing orange/leaf-green fill and all nine button actions. */
+html body main #apps #appFilters > .app-category-card.cat-creative,
+html body main #apps #appFilters > .app-category-card.cat-movement,
+html body main #apps #appFilters > .app-category-card.cat-creative :is(strong,small,span),
+html body main #apps #appFilters > .app-category-card.cat-movement :is(strong,small,span){
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
