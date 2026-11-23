@@ -135,14 +135,89 @@ body.kinder-ready #photoPreview[data-frame="star"]{border-radius:0!important;cli
 body.kinder-ready #photoPreview[data-frame="octagon"]{border-radius:0!important;clip-path:polygon(30% 0%,70% 0%,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%)!important}
 </style>  <script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-global-standard-v1.js" defer data-kindergarten-global-standard="18-33-66-auto-no333"></script>
 <link rel="stylesheet" href="/Khaemenes_KinderGarden.github.io/assets/kindergarten-contained-shell.css" data-kindergarten-contained-shell>
+
+<style id="kinder-profile-top-language-and-welcome">
+/* Only the Kindergarten learner profile. Preserve the canonical translator
+   script, the canonical single-line header and the learner-specific notice. */
+html body > #vnv-language-rail.kinder-profile-language-rail{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:nowrap!important;
+  gap:10px!important;
+  width:100%!important;
+  max-width:none!important;
+  min-height:66px!important;
+  margin:0!important;
+  padding:7px 16px!important;
+  border-radius:0!important;
+  box-sizing:border-box!important;
+}
+html body > #vnv-language-rail #vnv-language-switch{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:nowrap!important;
+  gap:10px!important;
+  width:max-content!important;
+  max-width:100%!important;
+  margin:0 auto!important;
+  padding:4px 10px!important;
+  box-sizing:border-box!important;
+}
+html body > #vnv-language-rail #vnv-language-switch :is(label,select,button,span){
+  font-size:16px!important;
+  line-height:1.25!important;
+}
+html body > .kinder-profile-welcome-row{
+  display:block!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding:9px 16px 12px!important;
+  margin:0!important;
+  background:#fff8e9!important;
+}
+html body > .kinder-profile-welcome-row #accountNote{
+  width:min(100%,1180px)!important;
+  max-width:1180px!important;
+  margin:0 auto!important;
+  padding:12px 20px!important;
+  border:2px solid #f3cf62!important;
+  border-radius:7px!important;
+  box-sizing:border-box!important;
+  color:#243441!important;
+  -webkit-text-fill-color:#243441!important;
+  background:#fff8e9!important;
+  font-size:24px!important;
+  font-weight:444!important;
+  line-height:1.4!important;
+  text-align:center!important;
+}
+@media(max-width:680px){
+  html body > #vnv-language-rail.kinder-profile-language-rail{
+    min-height:0!important;
+    padding:10px 7px!important;
+    flex-wrap:wrap!important;
+  }
+  html body > #vnv-language-rail #vnv-language-switch{
+    width:100%!important;
+    flex-wrap:wrap!important;
+  }
+  html body > .kinder-profile-welcome-row #accountNote{
+    font-size:24px!important;
+  }
+}
+</style>
 </head><body data-theme="sky" class="kinder-ready">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to my profile</a>
 <header class="top"><div class="shell nav"><a class="mark" href="../" aria-label="Kinder Garden home">K</a><a class="brand" href="../"><strong>Khaemenes Kinder Garden</strong><small>My Learning Garden</small></a><button class="menu" id="menuButton" aria-expanded="false" aria-controls="menuPanel">☰</button></div></header>
 <nav class="menu-panel" id="menuPanel"><a href="../">Kinder Garden Home</a><a href="../curriculum/">36-Week Learning Path</a><a href="../graduation/">Graduation Bridge</a><a href="#favorites">My Favorites</a><a href="#grownups">Grown-Ups</a></nav>
+<!-- One canonical translator and the existing live welcome notice below the header. -->
+<div id="vnv-language-rail" class="kinder-profile-language-rail" role="group" aria-label="Page translation tools"></div>
+<div class="kinder-profile-welcome-row"><div id="accountNote" class="notice" role="status">Looking for a Kindergarten learner on this browser…</div></div>
 <section class="hero"><div class="shell hero-grid"><div class="kinder-portrait-spot"><div class="portrait" id="photoPreview" aria-label="Learner picture">🌻</div><button class="kinder-edit-photo" type="button" id="kinderHeroPictureEditor">Customize My Picture</button><label class="kinder-family-consent"><input type="checkbox" id="adultConfirm"> A grown-up is helping me.</label></div><div><p class="eyebrow">Khaemenes Academy · Kindergarten Learning</p><h1 id="childTitle">My Kindergarten Profile</h1><p id="childMeta">A happy place for pictures, favorite adventures, growing skills, and the next little step.</p><div class="pills"><span class="pill" id="stagePill">🌱 Kindergarten</span><span class="pill" id="progressPill">🌼 0 / 36 flowers</span><span class="pill" id="favoritePill">⭐ 0 favorites</span></div><div class="hero-controls"><a class="hero-btn hero-today" id="firstStepLink" href="../today/">🌟 Today’s first step</a><a class="hero-btn hero-garden" href="#garden">🌼 My learning garden</a><a class="hero-btn hero-graduate" href="../graduation/">🏮 Graduation bridge</a><button class="hero-btn hero-theme" id="paletteToggle" type="button" aria-pressed="false">🎨 Calm Garden Colors</button><button class="hero-btn" type="button" id="kinderToolbarPictureEditor">🖼️ My Picture Studio</button><a class="hero-btn" href="#kinderDailyAdventure">⭐ Daily Adventures</a><a class="hero-btn" href="#stickerCard">🏵️ Sticker Meadow</a><a class="hero-btn" href="#grownups">👨‍👩‍👧 Family Tools</a></div></div></div></section>
 <main id="main" class="shell">
-<div id="accountNote" class="notice" role="status">Looking for a Kindergarten learner on this browser…</div>
 <section id="learnerSwitch" class="card" hidden><label for="learnerSelect"><strong>Who is learning today?</strong></label><select id="learnerSelect"></select><p>Each child keeps their own picture, colors, favorites, progress, and learning record.</p></section>
 <div class="grid" id="kindergartenProfileCards">
 <div id="kinderLegacyPhotoControls" hidden aria-hidden="true"><p class="eyebrow">My creative studio</p><h2 id="pictureStudioTitle">My Picture &amp; Colors</h2><p>Choose a badge, photo, frame, or Yearbook picture with a grown-up. These choices stay on this browser.</p><div class="choice" id="avatarChoices" role="group" aria-label="Choose a picture badge"></div><label for="childPhoto">Choose a photo</label><input id="childPhoto" class="photo-input" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="kinderYearbookPicture" style="font-size:16px;min-height:44px;border-radius:7px;margin-top:8px">Choose from My Yearbook</button><button type="button" id="openYearbookFromProfile" style="font-size:16px;min-height:44px;border-radius:7px;margin-top:8px;background:#243038;color:#fff8e9">Open My Yearbook</button><label>Choose a picture frame</label><div class="choice" id="kinderFrameChoices" role="group" aria-label="Choose a photo frame shape"></div><div class="actions"><button id="removePhoto">Remove photo</button><button id="usePreschoolPhoto">Bring my Pre-K look</button></div></div>
