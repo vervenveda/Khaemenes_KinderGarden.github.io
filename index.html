@@ -1779,7 +1779,7 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
   <a href="#apps" data-ticker data-ticker-label="Games">🎨 Games</a>
   <a href="#mentor" data-ticker data-ticker-label="Mentor">🦉 Mentor</a>
   <a href="inquiry-companion.html" data-ticker data-ticker-label="Discovery">🌻 Discovery</a>
-  <button class="kinder-menu-trigger" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open more Kindergarten links">More ▾</button>
+  <button class="kinder-menu-trigger" id="menuButton" type="button" aria-expanded="false" aria-controls="vnvEnrichedMenuOverlay" aria-label="Open branched ecosystem menu">More ▾</button>
 </div>
   <div class="shell kinder-hero-action-shelf"><div class="hero-actions kinder-hero-actions">
         <button class="btn profile" id="heroProfileButton" type="button">🌼 Continue Learning</button>
@@ -2706,7 +2706,7 @@ $("#naibPractice")?.addEventListener("click",()=>{closeNaibAcademicReminder();do
 $("#naibAcademicOverlay")?.addEventListener("click",e=>{if(e.target===$("#naibAcademicOverlay"))closeNaibAcademicReminder()});
 window.addEventListener("khaemenes-kindergarten-progress-changed",refreshAcademicUI);
 window.addEventListener("storage",e=>{if(e.key===KG_PROGRESS_KEY)refreshAcademicUI()});
-const mb=$("#menuButton"),mm=$("#mobileMenu");mb.addEventListener("click",()=>{const open=mm.classList.toggle("open");mb.setAttribute("aria-expanded",String(open));mb.textContent=open?"×":"☰";});
+const mb=$("#menuButton"),mm=$("#mobileMenu");mb.addEventListener("click",()=>{window.VNV_ENRICHED_MENU?.open?.();});
 mm.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";}));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){mm.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.textContent="☰";closeNaibAcademicReminder();}});
 if(window.KhaemenesLearnerProfile?.subscribe)window.KhaemenesLearnerProfile.subscribe(()=>{renderProfile();refreshAcademicUI();});
@@ -2786,9 +2786,9 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script>
 
 <!-- Kindergarten contained canonical shell -->
-<script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-menu-adapter.js"></script>
+<!-- Canonical branched ecosystem menu belongs to vnv-header-autopopulate.js. -->
 <script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
-<script>VNV_TICKER.autoPopulate({label:"Kindergarten Quick Links",max:7,cleanLegacy:true,links:[
+<script>VNV_TICKER.autoPopulate({before:"body > nav.breadcrumbs",label:"Kindergarten Quick Links",max:7,cleanLegacy:true,links:[
  {label:"Home",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/"},
  {label:"Today",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/today/"},
  {label:"36-Week Garden",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/curriculum/"},
@@ -2797,7 +2797,7 @@ document.addEventListener("DOMContentLoaded",()=>{
  {label:"Graduation",href:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/graduation/"}
 ]});</script>
 <script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
-<script>VNV_HEADER.mount({title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · Plant · Learn · Grow",icon:"K",home:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",actions:[]});</script>
+<script>VNV_HEADER.mount({title:"Khaemenes Kinder Garden",subtitle:"Kindergarten · Plant · Learn · Grow",icon:"K",home:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",actions:[],replaceLegacy:true});</script>
 <script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-language-loader.js" defer></script>
 <script src="/Khaemenes_KinderGarden.github.io/assets/kindergarten-local-toolbar.js" defer></script>
 </body></html>
