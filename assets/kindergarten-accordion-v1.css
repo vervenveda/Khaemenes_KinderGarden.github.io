@@ -479,3 +479,58 @@ main>#promise.kinder-accordion-section{
     padding-bottom:18px!important;
   }
 }
+
+
+/* Kindergarten hero buttons: deeper alternating palette, owner-approved 2026-11-23. */
+/* Keep the Kindergarten 2x2 + More and six full-width actions.
+   Every neighboring action contrasts in hue and has readable text. */
+html body #student .kinder-quick-links>:nth-child(1){
+ background:#f3cf62!important;color:#243441!important;
+}
+html body #student .kinder-quick-links>:nth-child(2){
+ background:#315b76!important;color:#fffefa!important;
+}
+html body #student .kinder-quick-links>:nth-child(3){
+ background:#8b78d0!important;color:#fffefa!important;
+}
+html body #student .kinder-quick-links>:nth-child(4){
+ background:#4ca495!important;color:#101f29!important;
+}
+html body #student .kinder-quick-links>.kinder-menu-trigger{
+ background:#d76363!important;color:#fffefa!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(1){
+ background:#315b76!important;color:#fffefa!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(2){
+ background:#ef8bb0!important;color:#243441!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(3){
+ background:#f3cf62!important;color:#243441!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(4){
+ background:#4ca495!important;color:#101f29!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(5){
+ background:#8b78d0!important;color:#fffefa!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(6){
+ background:#f09a5e!important;color:#243441!important;
+}
+/* Children of buttons inherit their owner's contrasting foreground, even
+   where older global Kindergarten contrast rules had forced all text white. */
+html body #student .kinder-quick-links>:nth-child(1) *,
+html body #student .kinder-quick-links>:nth-child(4) *,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(2) *,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(3) *,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(4) *,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(6) *{
+ color:#243441!important;-webkit-text-fill-color:#243441!important;
+}
+html body #student .kinder-quick-links>:nth-child(2) *,
+html body #student .kinder-quick-links>:nth-child(3) *,
+html body #student .kinder-quick-links>.kinder-menu-trigger *,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(1) *,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(5) *{
+ color:#fffefa!important;-webkit-text-fill-color:#fffefa!important;
+}
