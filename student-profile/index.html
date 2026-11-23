@@ -263,6 +263,26 @@ body.kinder-ready .kinder-dashboard-grid>#grownups{
 }
 body.kinder-ready #grownups>summary{font-size:24px!important;line-height:1.4!important;border-radius:7px!important}
 body.kinder-ready #grownups .adult-inside{max-width:100%;overflow-wrap:anywhere}
+
+/* Give the protected family studio a full row only when expanded. */
+body.kinder-ready .kinder-dashboard-grid>#grownups[open]{grid-column:1/-1!important}
+/* Larger, cheerful section icons without altering actual lesson controls. */
+body.kinder-ready #todayCard>h2::before,
+body.kinder-ready #kinderDailyAdventure>h2::before,
+body.kinder-ready #garden>h2::before,
+body.kinder-ready #favorites>h2::before,
+body.kinder-ready #stickerCard>h2::before,
+body.kinder-ready .kinder-graduation-card>h2::before{
+ display:block;font:400 66px/1.15 "Apple Color Emoji","Segoe UI Emoji",sans-serif;
+ margin:0 auto 8px;text-align:center;
+}
+body.kinder-ready #todayCard>h2::before{content:"🌞"}
+body.kinder-ready #kinderDailyAdventure>h2::before{content:"🎨"}
+body.kinder-ready #garden>h2::before{content:"🌻"}
+body.kinder-ready #favorites>h2::before{content:"⭐"}
+body.kinder-ready #stickerCard>h2::before{content:"🏵️"}
+body.kinder-ready .kinder-graduation-card>h2::before{content:"🎓"}
+
 body.kinder-ready .kinder-personalize-door{
  display:block;margin:24px 0 30px;border:2px solid #d9c89e;border-radius:7px;
  background:#fffaf0;overflow:visible;
