@@ -208,6 +208,94 @@ html body > .kinder-profile-welcome-row #accountNote{
   }
 }
 </style>
+
+<style id="kindergarten-profile-dashboard-layout-v1">
+/* Reorder existing learner controls without cloning or changing IDs / logic. */
+body.kinder-ready main#main.shell{width:min(calc(100% - 32px),1280px)!important;max-width:1280px!important;margin:0 auto!important}
+body.kinder-ready #kindergartenProfileCards.grid{
+ display:block!important;width:100%!important;max-width:none!important;margin:0!important;
+}
+body.kinder-ready .kinder-dashboard-band{margin:24px 0 30px;width:100%;min-width:0}
+body.kinder-ready .kinder-dashboard-heading{
+ text-align:center;padding:22px 24px;margin-bottom:16px;
+ border:3px solid #fff8e9;border-radius:7px;
+ background:#5a9be0;color:#fff8e9;
+}
+body.kinder-ready .kinder-dashboard-heading-growth{background:#9577c9}
+body.kinder-ready .kinder-dashboard-heading :is(h2,p,.eyebrow){
+ color:#fff8e9!important;-webkit-text-fill-color:#fff8e9!important;
+ text-align:center!important;
+}
+body.kinder-ready .kinder-dashboard-heading h2{font-size:clamp(33px,3vw,44px)!important;line-height:1.2!important;margin:6px 0 10px}
+body.kinder-ready .kinder-dashboard-heading :is(p,.eyebrow){font-size:24px!important;line-height:1.4!important}
+body.kinder-ready .kinder-dashboard-grid{
+ display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:16px!important;align-items:stretch!important;width:100%!important;min-width:0!important;
+}
+body.kinder-ready .kinder-dashboard-grid>.card,
+body.kinder-ready .kinder-dashboard-grid>#grownups{
+ grid-column:auto!important;grid-row:auto!important;
+ width:100%!important;min-width:0!important;max-width:none!important;
+ margin:0!important;border-radius:7px!important;
+}
+body.kinder-ready .kinder-dashboard-grid>.card{
+ display:flex;flex-direction:column;align-items:stretch;gap:8px;
+ padding:22px!important;border:2px solid #d9c89e!important;
+ background:#fffaf0!important;box-shadow:none!important;
+}
+body.kinder-ready .kinder-dashboard-grid>.card :is(h2,p){
+ overflow-wrap:break-word;
+}
+body.kinder-ready .kinder-dashboard-grid>.card h2{font-size:clamp(24px,2.4vw,33px)!important;line-height:1.3!important}
+body.kinder-ready .kinder-dashboard-grid>.card>p:not(.eyebrow){font-size:24px!important;line-height:1.4!important}
+body.kinder-ready .kinder-dashboard-grid>.card :is(.actions,.milestones){margin-top:auto}
+body.kinder-ready .kinder-dashboard-grid>.card :is(.btn,button){min-height:48px;border-radius:7px}
+body.kinder-ready #todayCard{border-top:6px solid #5a9be0!important}
+body.kinder-ready #kinderDailyAdventure{border-top:6px solid #d16ba1!important}
+body.kinder-ready #garden{border-top:6px solid #4daea5!important}
+body.kinder-ready #favorites{border-top:6px solid #9577c9!important}
+body.kinder-ready #stickerCard{border-top:6px solid #d16ba1!important}
+body.kinder-ready .kinder-graduation-card{border-top:6px solid #ee9c60!important}
+body.kinder-ready .kinder-graduation-card>.btn{display:block;margin-top:auto;background:#5a9be0;color:#fff8e9;text-align:center;padding:12px}
+body.kinder-ready .kinder-dashboard-grid>#grownups{
+ align-self:stretch;border:2px solid #d9c89e!important;
+ background:#fffaf0!important;padding:14px!important;overflow:visible;
+}
+body.kinder-ready #grownups>summary{font-size:24px!important;line-height:1.4!important;border-radius:7px!important}
+body.kinder-ready #grownups .adult-inside{max-width:100%;overflow-wrap:anywhere}
+body.kinder-ready .kinder-personalize-door{
+ display:block;margin:24px 0 30px;border:2px solid #d9c89e;border-radius:7px;
+ background:#fffaf0;overflow:visible;
+}
+body.kinder-ready .kinder-personalize-door>summary{
+ cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;
+ padding:18px 24px;background:#4daea5;color:#fff8e9;border-radius:7px;
+ font-size:24px;line-height:1.35;list-style:none;
+}
+body.kinder-ready .kinder-personalize-door>summary::-webkit-details-marker{display:none}
+body.kinder-ready .kinder-personalize-inside{padding:16px}
+body.kinder-ready .kinder-personalize-door #colorStudio{
+ display:block!important;width:100%!important;max-width:none!important;grid-column:auto!important;
+ margin:0!important;box-sizing:border-box!important;
+}
+body.kinder-ready #kinderDailyAdventure .kinder-adventure-grid{
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+}
+body.kinder-ready .kinder-dashboard-grid>.card .flower-garden{grid-template-columns:repeat(9,minmax(0,1fr))}
+body.kinder-ready :is(#dailyLearningDashboard,#growthDashboard,#personalizeGarden){scroll-margin-top:170px}
+@media(max-width:820px){
+ body.kinder-ready .kinder-dashboard-grid{grid-template-columns:1fr!important}
+ body.kinder-ready main#main.shell{width:calc(100% - 20px)!important}
+ body.kinder-ready .kinder-dashboard-heading{padding:18px 14px}
+ body.kinder-ready .kinder-dashboard-heading :is(p,.eyebrow){font-size:20px!important}
+}
+@media(max-width:490px){
+ body.kinder-ready #kinderDailyAdventure .kinder-adventure-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ body.kinder-ready .kinder-dashboard-grid>.card{padding:16px!important}
+ body.kinder-ready .kinder-dashboard-grid>.card>p:not(.eyebrow){font-size:20px!important}
+ body.kinder-ready .kinder-dashboard-grid>.card .flower-garden{grid-template-columns:repeat(6,minmax(0,1fr))}
+}
+</style>
 </head><body data-theme="sky" class="kinder-ready">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to my profile</a>
@@ -221,8 +309,12 @@ html body > .kinder-profile-welcome-row #accountNote{
 <section id="learnerSwitch" class="card" hidden><label for="learnerSelect"><strong>Who is learning today?</strong></label><select id="learnerSelect"></select><p>Each child keeps their own picture, colors, favorites, progress, and learning record.</p></section>
 <div class="grid" id="kindergartenProfileCards">
 <div id="kinderLegacyPhotoControls" hidden aria-hidden="true"><p class="eyebrow">My creative studio</p><h2 id="pictureStudioTitle">My Picture &amp; Colors</h2><p>Choose a badge, photo, frame, or Yearbook picture with a grown-up. These choices stay on this browser.</p><div class="choice" id="avatarChoices" role="group" aria-label="Choose a picture badge"></div><label for="childPhoto">Choose a photo</label><input id="childPhoto" class="photo-input" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="kinderYearbookPicture" style="font-size:16px;min-height:44px;border-radius:7px;margin-top:8px">Choose from My Yearbook</button><button type="button" id="openYearbookFromProfile" style="font-size:16px;min-height:44px;border-radius:7px;margin-top:8px;background:#243038;color:#fff8e9">Open My Yearbook</button><label>Choose a picture frame</label><div class="choice" id="kinderFrameChoices" role="group" aria-label="Choose a photo frame shape"></div><div class="actions"><button id="removePhoto">Remove photo</button><button id="usePreschoolPhoto">Bring my Pre-K look</button></div></div>
-<section class="card span12 personalize" id="colorStudio" aria-labelledby="colorStudioTitle"><p class="eyebrow">My color studio</p><h2 id="colorStudioTitle">My Garden Colors</h2><p>Choose the feeling of your learning garden. Each learner keeps a separate look.</p><div class="choice" id="backgroundChoices"></div><div class="actions"><button id="resetLook">Original colors</button><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><p style="font-size:16px">A downloaded picture backup contains the child’s photo, if selected, and is not encrypted. Keep it private.</p><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
-<section class="card span12" id="kinderDailyAdventure" aria-labelledby="kinderDailyAdventureTitle">
+
+<section class="kinder-dashboard-band" id="dailyLearningDashboard" aria-labelledby="dailyLearningDashboardTitle">
+  <div class="kinder-dashboard-heading kinder-dashboard-heading-daily"><p class="eyebrow">My everyday learning</p><h2 id="dailyLearningDashboardTitle">🌻 My Daily Learning</h2><p>Find today's lesson, enjoy adventures, and see what is growing.</p></div>
+  <div class="kinder-dashboard-grid">
+    <section class="card today span7" id="todayCard"><p class="eyebrow">Today</p><h2>My next little step</h2><div id="nextStep"><a class="activity" href="../#student"><span>Open the Kinder Garden</span><span>→</span></a></div><p id="todayMessage">We will find the next adventure when a Kindergarten learner is selected.</p></section>
+    <section class="card span12" id="kinderDailyAdventure" aria-labelledby="kinderDailyAdventureTitle">
 <p class="eyebrow">My daily adventures</p><h2 id="kinderDailyAdventureTitle">Today I Explore!</h2>
 <p>My grown-up chooses our playful activities. I can mark what I explored and fill my star garden. Stars celebrate effort, not grades.</p>
 <div id="kinderAdventureStars" aria-hidden="true" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:10px 0"></div>
@@ -231,13 +323,26 @@ html body > .kinder-profile-welcome-row #accountNote{
 <p id="kinderAdventureStatus" role="status">Activities are saved on this browser.</p>
 <div class="actions"><a class="btn" id="kinderAdventureLesson" href="../today/">Open Today's First Step</a><a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/#khaeKinderFamilyDailyPanel">Family Activity Planner</a></div>
 </section>
-<section class="card today span7" id="todayCard"><p class="eyebrow">Today</p><h2>My next little step</h2><div id="nextStep"><a class="activity" href="../#student"><span>Open the Kinder Garden</span><span>→</span></a></div><p id="todayMessage">We will find the next adventure when a Kindergarten learner is selected.</p></section>
-<section class="card span5" id="favorites"><p class="eyebrow">Favorites</p><h2>My little basket</h2><div id="pinnedActivities" class="favorites"></div><div class="actions"><button id="pinKinderCourse">📌 Pin my class</button><button id="unpinKinderCourse">Remove class pin</button></div><label for="appSelect">Choose a favorite game</label><select id="appSelect"><option value="">Choose an adventure</option></select><div class="actions"><button id="pinSelectedApp">⭐ Add favorite</button><button id="unpinSelectedApp">Remove favorite</button></div></section>
-<section class="card span8" id="garden"><p class="eyebrow">36 weeks · 36 flowers</p><h2>My learning garden</h2><p>Every mastered week grows another flower. The outlined flower shows the next week waiting to bloom.</p><div class="progressbar" aria-hidden="true"><span id="progressFill"></span></div><p id="gardenStatus">No formal progress is shown until a learner is selected.</p><div class="flower-garden" id="flowerGarden" aria-label="36-week mastery garden"></div><div class="milestones"><div class="milestone"><strong id="midIcon">🌱</strong>Midyear</div><div class="milestone"><strong id="finalIcon">🌱</strong>Final</div><div class="milestone"><strong id="portfolioIcon">🌱</strong>Portfolio</div><div class="milestone"><strong id="graduateIcon">🌱</strong>Graduation</div></div></section>
-<section class="card span4" id="stickerCard"><p class="eyebrow">Celebrate growth</p><h2>Sticker meadow</h2><p>Mastered weeks unlock cheerful stickers here. They celebrate effort; they never change grades.</p><div class="sticker-meadow" id="stickerMeadow"></div></section>
-<section class="card span12"><p class="eyebrow">Next horizon</p><h2>When I am ready for Grade 1</h2><p id="gradeOneSummary">The Lantern Bridge watches real Kindergarten mastery. Exploring Grade 1 never changes placement.</p><div class="actions"><a class="btn" href="../graduation/">🏮 Visit the Lantern Bridge</a><a class="btn" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">🏛️ Peek at Grade 1</a></div></section>
+    <section class="card span8" id="garden"><p class="eyebrow">36 weeks · 36 flowers</p><h2>My learning garden</h2><p>Every mastered week grows another flower. The outlined flower shows the next week waiting to bloom.</p><div class="progressbar" aria-hidden="true"><span id="progressFill"></span></div><p id="gardenStatus">No formal progress is shown until a learner is selected.</p><div class="flower-garden" id="flowerGarden" aria-label="36-week mastery garden"></div><div class="milestones"><div class="milestone"><strong id="midIcon">🌱</strong>Midyear</div><div class="milestone"><strong id="finalIcon">🌱</strong>Final</div><div class="milestone"><strong id="portfolioIcon">🌱</strong>Portfolio</div><div class="milestone"><strong id="graduateIcon">🌱</strong>Graduation</div></div></section>
+    <section class="card span5" id="favorites"><p class="eyebrow">Favorites</p><h2>My little basket</h2><div id="pinnedActivities" class="favorites"></div><div class="actions"><button id="pinKinderCourse">📌 Pin my class</button><button id="unpinKinderCourse">Remove class pin</button></div><label for="appSelect">Choose a favorite game</label><select id="appSelect"><option value="">Choose an adventure</option></select><div class="actions"><button id="pinSelectedApp">⭐ Add favorite</button><button id="unpinSelectedApp">Remove favorite</button></div></section>
+  </div>
+</section>
+<section class="kinder-dashboard-band" id="growthDashboard" aria-labelledby="growthDashboardTitle">
+  <div class="kinder-dashboard-heading kinder-dashboard-heading-growth"><p class="eyebrow">Celebrate every step</p><h2 id="growthDashboardTitle">⭐ My Growth &amp; Achievements</h2><p>Stickers, graduation readiness, and family support in one place.</p></div>
+  <div class="kinder-dashboard-grid">
+    <section class="card span4" id="stickerCard"><p class="eyebrow">Celebrate growth</p><h2>Sticker meadow</h2><p>Mastered weeks unlock cheerful stickers here. They celebrate effort; they never change grades.</p><div class="sticker-meadow" id="stickerMeadow"></div></section>
+    <section class="card span12"><p class="eyebrow">Next horizon</p><h2>When I am ready for Grade 1</h2><p id="gradeOneSummary">The Lantern Bridge watches real Kindergarten mastery. Exploring Grade 1 never changes placement.</p><div class="actions"><a class="btn" href="../graduation/">🏮 Visit the Lantern Bridge</a><a class="btn" href="https://vervenveda.com/Khaemenes_Elementary.github.io/grades/grade-01/">🏛️ Peek at Grade 1</a></div></section>
+    <section class="card kinder-graduation-card" aria-labelledby="kinderGraduationCardTitle"><p class="eyebrow">My next milestone</p><h2 id="kinderGraduationCardTitle">🎓 Graduation Bridge</h2><p>Celebrate completed Kindergarten learning and visit the graduation garden when ready.</p><a class="btn" href="../graduation/">Visit Graduation Bridge</a></section>
+    <details class="adult-door" id="grownups"><summary>🔐 Grown-Ups · Learning Record & Profile Studio</summary><div class="adult-inside"><p>This area holds family-assisted goals, reflections, Today / Review / Next, strengths and supports, learning-moment evidence, language/accessibility preferences, and protected profile backups. It cannot award grades or bypass mastery.</p><div id="profileStudio"></div><p id="studioUnavailable" class="notice" hidden>The full Academy profile studio is unavailable right now. The child-facing Kindergarten profile remains usable.</p></div></details>
+  </div>
+</section>
+<details class="kinder-personalize-door" id="personalizeGarden">
+  <summary>🎨 Personalize My Garden <span aria-hidden="true">▾</span></summary>
+  <div class="kinder-personalize-inside">
+    <section class="card span12 personalize" id="colorStudio" aria-labelledby="colorStudioTitle"><p class="eyebrow">My color studio</p><h2 id="colorStudioTitle">My Garden Colors</h2><p>Choose the feeling of your learning garden. Each learner keeps a separate look.</p><div class="choice" id="backgroundChoices"></div><div class="actions"><button id="resetLook">Original colors</button><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><p style="font-size:16px">A downloaded picture backup contains the child’s photo, if selected, and is not encrypted. Keep it private.</p><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
+  </div>
+</details>
 </div>
-<details class="adult-door" id="grownups"><summary>🔐 Grown-Ups · Learning Record & Profile Studio</summary><div class="adult-inside"><p>This area holds family-assisted goals, reflections, Today / Review / Next, strengths and supports, learning-moment evidence, language/accessibility preferences, and protected profile backups. It cannot award grades or bypass mastery.</p><div id="profileStudio"></div><p id="studioUnavailable" class="notice" hidden>The full Academy profile studio is unavailable right now. The child-facing Kindergarten profile remains usable.</p></div></details>
 </main><footer>Khaemenes Academy · Kindergarten · Free learning · Browser-local personalization · No external analytics</footer>
 <script>
 (function makeBubbleOcean(){
