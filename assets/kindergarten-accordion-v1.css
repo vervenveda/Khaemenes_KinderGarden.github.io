@@ -879,3 +879,23 @@ html body main > section#student.hero .kinder-quick-links > a[data-ticker-label=
   color:#243441!important;
   -webkit-text-fill-color:#243441!important;
 }
+
+
+/* Kindergarten hero five actions after removing parent-only setup — retain approved colors. */
+/* Preserve the five remaining actions' original color sequence despite
+   removal of the old first-child guardian-setup action. */
+html body #student .kinder-hero-action-shelf .hero-actions > :nth-child(1){
+ background:#ec87b8!important;color:#243441!important;-webkit-text-fill-color:#243441!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions > :nth-child(2){
+ background:#f1ce62!important;color:#243441!important;-webkit-text-fill-color:#243441!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions > :nth-child(3){
+ background:#4db8a9!important;color:#243441!important;-webkit-text-fill-color:#243441!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions > :nth-child(4){
+ background:#9875d8!important;color:#fffefa!important;-webkit-text-fill-color:#fffefa!important;
+}
+html body #student .kinder-hero-action-shelf .hero-actions > :nth-child(5){
+ background:#ee9c60!important;color:#243441!important;-webkit-text-fill-color:#243441!important;
+}
