@@ -1781,7 +1781,6 @@ body main :is(a,button,input,select,textarea),body :is(.mobile-menu,.naib-overla
   <a href="inquiry-companion.html" data-ticker data-ticker-label="Discovery">🌻 Discovery</a>
 </div>
   <div class="shell kinder-hero-action-shelf"><div class="hero-actions kinder-hero-actions">
-        <button class="btn profile" id="heroProfileButton" type="button">🌼 Continue Learning</button>
         <a class="btn secondary" href="student-profile/">😊 My Profile</a>
         <a class="btn secondary" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">🧑‍🧒 Grown-Up / Family</a>
         <button class="btn gold" id="academicPlaceButton" type="button">🧭 My Academic Place</button>
@@ -2692,7 +2691,7 @@ renderUnits();renderApps();setupCreche();renderProfile();renderKinderMentor();re
 $("#unitFilters").addEventListener("click",e=>{const b=e.target.closest("[data-term]");if(!b)return;$$("#unitFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderUnits(b.dataset.term);});
 $("#appFilters").addEventListener("click",e=>{const b=e.target.closest("[data-app]");if(!b)return;$$("#appFilters .chip").forEach(x=>x.classList.toggle("active",x===b));renderApps(b.dataset.app);});
 $("#newWonder").addEventListener("click",randomWonder);
-$("#heroProfileButton").addEventListener("click",enterStudentGarden);
+$("#heroProfileButton")?.addEventListener("click",enterStudentGarden);
 $("#academicPlaceButton")?.addEventListener("click",()=>openNaibAcademicReminder("button"));
 $("#continueLearningButton")?.addEventListener("click",enterStudentGarden);
 $("#assessmentGateButton")?.addEventListener("click",e=>{const b=e.currentTarget;if(b.dataset.ready==="true"&&b.dataset.url){window.location.href=b.dataset.url}else openNaibAcademicReminder("assessment-gate")});
