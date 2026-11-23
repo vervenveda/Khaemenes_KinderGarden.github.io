@@ -485,37 +485,37 @@ main>#promise.kinder-accordion-section{
 /* Keep the Kindergarten 2x2 + More and six full-width actions.
    Every neighboring action contrasts in hue and has readable text. */
 html body #student .kinder-quick-links>:nth-child(1){
- background:#f3cf62!important;color:#243441!important;
+ background:#f1ce62!important;color:#243441!important;
 }
 html body #student .kinder-quick-links>:nth-child(2){
- background:#315b76!important;color:#fffefa!important;
+ background:#4c91cf!important;color:#fffefa!important;
 }
 html body #student .kinder-quick-links>:nth-child(3){
- background:#8b78d0!important;color:#fffefa!important;
+ background:#9875d8!important;color:#fffefa!important;
 }
 html body #student .kinder-quick-links>:nth-child(4){
- background:#4ca495!important;color:#101f29!important;
+ background:#4db8a9!important;color:#101f29!important;
 }
 html body #student .kinder-quick-links>.kinder-menu-trigger{
- background:#d76363!important;color:#fffefa!important;
+ background:#eb7894!important;color:#fffefa!important;
 }
 html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(1){
- background:#315b76!important;color:#fffefa!important;
+ background:#4c91cf!important;color:#fffefa!important;
 }
 html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(2){
- background:#ef8bb0!important;color:#243441!important;
+ background:#ec87b8!important;color:#243441!important;
 }
 html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(3){
- background:#f3cf62!important;color:#243441!important;
+ background:#f1ce62!important;color:#243441!important;
 }
 html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(4){
- background:#4ca495!important;color:#101f29!important;
+ background:#4db8a9!important;color:#101f29!important;
 }
 html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(5){
- background:#8b78d0!important;color:#fffefa!important;
+ background:#9875d8!important;color:#fffefa!important;
 }
 html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(6){
- background:#f09a5e!important;color:#243441!important;
+ background:#ee9c60!important;color:#243441!important;
 }
 /* Children of buttons inherit their owner's contrasting foreground, even
    where older global Kindergarten contrast rules had forced all text white. */
@@ -561,7 +561,7 @@ html body main #apps .section-heading{
  max-width:960px!important;
  padding:24px!important;
  margin:0 auto 24px!important;
- background:#315b76!important;
+ background:#5a9be0!important;
  border:3px solid #fffefa!important;
  border-radius:7px!important;
  box-shadow:0 9px 23px rgba(20,37,52,.18)!important;
@@ -634,16 +634,54 @@ html body main #apps #appFilters>.app-category-card>span{
  color:#fffefa!important;
  -webkit-text-fill-color:initial!important;
 }
-html body main #apps #appFilters>.cat-literacy{background:#854367!important}
-html body main #apps #appFilters>.cat-math{background:#315b76!important}
-html body main #apps #appFilters>.cat-creative{background:#a34e2a!important}
-html body main #apps #appFilters>.cat-science{background:#246f68!important}
-html body main #apps #appFilters>.cat-movement{background:#55732b!important}
-html body main #apps #appFilters>.cat-wellness{background:#67449d!important}
-html body main #apps #appFilters>.cat-music{background:#285b9c!important}
-html body main #apps #appFilters>.cat-community{background:#a43f50!important}
-html body main #apps #appFilters>.cat-all{background:#6a467b!important}
+html body main #apps #appFilters>.cat-literacy{background:#d16ba1!important}
+html body main #apps #appFilters>.cat-math{background:#5a9be0!important}
+html body main #apps #appFilters>.cat-creative{background:#d98242!important}
+html body main #apps #appFilters>.cat-science{background:#4daea5!important}
+html body main #apps #appFilters>.cat-movement{background:#88b85b!important}
+html body main #apps #appFilters>.cat-wellness{background:#9577c9!important}
+html body main #apps #appFilters>.cat-music{background:#5a9be0!important}
+html body main #apps #appFilters>.cat-community{background:#e37788!important}
+html body main #apps #appFilters>.cat-all{background:#b27bc5!important}
 @media(max-width:560px){
  html body main #apps #appFilters{grid-template-columns:1fr!important}
  html body main #apps #appFilters>.app-category-card{min-height:260px!important}
+}
+
+
+/* Kindergarten lighter page surroundings and cheerful palette contrast guard. */
+html body main>.kinder-accordion-section,
+html body main>#welcome.kinder-accordion-section,
+html body main>#learning-tray.kinder-accordion-section,
+html body main>#kindergarten-life-skills.kinder-accordion-section,
+html body main>#curriculum.kinder-accordion-section,
+html body main>#connected-learning.kinder-accordion-section,
+html body main>#apps.kinder-accordion-section,
+html body main>#creche.kinder-accordion-section,
+html body main>#mentor.kinder-accordion-section,
+html body main>#mygarden.kinder-accordion-section,
+html body main>#today.kinder-accordion-section,
+html body main>#promise.kinder-accordion-section{
+ background:#fff9ea!important;
+}
+html body main #apps .section-heading{
+ background:#5a9be0!important;
+}
+html body #student .kinder-quick-links>:nth-child(1),
+html body #student .kinder-quick-links>:nth-child(4),
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(3),
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(4),
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(6){
+ color:#243441!important;-webkit-text-fill-color:#243441!important;
+}
+html body #student .kinder-quick-links>:nth-child(2),
+html body #student .kinder-quick-links>:nth-child(3),
+html body #student .kinder-quick-links>.kinder-menu-trigger,
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(1),
+html body #student .kinder-hero-action-shelf .hero-actions>:nth-child(5){
+ color:#fff!important;-webkit-text-fill-color:#fff!important;
+}
+html body main #apps #appFilters>.cat-creative :is(strong,small),
+html body main #apps #appFilters>.cat-movement :is(strong,small){
+ color:#243441!important;-webkit-text-fill-color:#243441!important;
 }
