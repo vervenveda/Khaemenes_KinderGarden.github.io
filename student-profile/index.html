@@ -390,9 +390,8 @@ body.kinder-ready #kindergartenProfileCards #personalizeGarden > summary{
 /* Set each animated decorative bubble to the explicitly requested diameter,
    retaining its individual position, color, drift and duration. */
 body.kinder-ready .bubble-ocean .rising-bubble{
- width:88px!important;
- height:88px!important;
- --size:88px!important;
+ width:var(--size,88px)!important;
+ height:var(--size,88px)!important;
  border-radius:50%!important;
 }
 @media(max-width:560px){
@@ -477,6 +476,46 @@ html body > #vnv-language-rail #vnv-language-switch :is(select,button){
  }
 }
 </style>
+
+<style id="kindergarten-profile-records-centered-mixed-bubbles-v1">
+/* Records is the existing profile backup area, not a theme picker. */
+body.kinder-ready #personalizeGarden,
+body.kinder-ready #personalizeGarden .kinder-personalize-inside,
+body.kinder-ready #personalizeGarden #colorStudio{
+ width:100%!important;max-width:none!important;box-sizing:border-box!important;
+}
+body.kinder-ready #personalizeGarden #colorStudio{
+ text-align:center!important;
+ margin-inline:auto!important;
+ padding:24px!important;
+}
+body.kinder-ready #personalizeGarden #colorStudio :is(h2,p,.eyebrow,label){
+ text-align:center!important;
+}
+body.kinder-ready #personalizeGarden #colorStudio h2{font-size:33px!important}
+body.kinder-ready #personalizeGarden #colorStudio .actions{
+ display:flex!important;flex-direction:row!important;justify-content:center!important;
+ align-items:center!important;flex-wrap:wrap!important;gap:12px!important;
+ width:100%!important;margin:18px auto!important;
+}
+body.kinder-ready #personalizeGarden #colorStudio #importLook{
+ display:block!important;width:min(100%,720px)!important;
+ margin:10px auto!important;box-sizing:border-box!important;
+}
+body.kinder-ready #personalizeGarden #colorStudio #lookStatus{
+ min-height:24px!important;
+}
+body.kinder-ready #personalizeGarden #backgroundChoices,
+body.kinder-ready #personalizeGarden #resetLook{
+ display:none!important;
+}
+body.kinder-ready .bubble-ocean .rising-bubble{
+ width:var(--size,88px)!important;
+ height:var(--size,88px)!important;
+ min-width:0!important;min-height:0!important;
+ border-radius:50%!important;
+}
+</style>
 </head><body data-theme="sky" class="kinder-ready">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to my profile</a>
@@ -518,9 +557,9 @@ html body > #vnv-language-rail #vnv-language-switch :is(select,button){
   </div>
 </section>
 <details class="kinder-personalize-door" id="personalizeGarden">
-  <summary>🎨 Personalize My Garden <span aria-hidden="true">▾</span></summary>
+  <summary>📁 Records <span aria-hidden="true">▾</span></summary>
   <div class="kinder-personalize-inside">
-    <section class="card span12 personalize" id="colorStudio" aria-labelledby="colorStudioTitle"><p class="eyebrow">My color studio</p><h2 id="colorStudioTitle">My Garden Colors</h2><p>Choose the feeling of your learning garden. Each learner keeps a separate look.</p><div class="choice" id="backgroundChoices"></div><div class="actions"><button id="resetLook">Original colors</button><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><p style="font-size:16px">A downloaded picture backup contains the child’s photo, if selected, and is not encrypted. Keep it private.</p><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
+    <section class="card span12 personalize" id="colorStudio" aria-labelledby="colorStudioTitle"><p class="eyebrow">My learning records</p><h2 id="colorStudioTitle">Records</h2><p>Save, print, or restore a private copy of this learner’s Kindergarten profile.</p><div class="choice" id="backgroundChoices" hidden aria-hidden="true"></div><button id="resetLook" type="button" hidden aria-hidden="true" tabindex="-1">Original colors</button><div class="actions"><button id="exportLook">Save a backup</button><button id="printProfile">Print my garden</button></div><p style="font-size:16px">A downloaded picture backup contains the child’s photo, if selected, and is not encrypted. Keep it private.</p><label for="importLook">Restore a local picture/color backup</label><input id="importLook" type="file" accept=".json,application/json"><p id="lookStatus" aria-live="polite"></p></section>
   </div>
 </details>
 </div>
@@ -534,7 +573,7 @@ html body > #vnv-language-rail #vnv-language-switch :is(select,button){
   [13,20,"#cfff72",26,16],[24,52,"#ff9d16",19,-22],[35,22,"#12c8ee",23,18],[47,36,"#fff20a",20,-16],
   [58,24,"#ff6680",27,24],[69,18,"#cfff72",22,-18],[80,38,"#12c8ee",24,20],[92,22,"#ff9d16",18,-16]
  ];
- specs.forEach((v,i)=>{const b=document.createElement("span");b.className="rising-bubble";b.style.setProperty("--left",v[0]+"%");b.style.setProperty("--size","88px");b.style.setProperty("--bubble-color",v[2]);b.style.setProperty("--duration",v[3]+"s");b.style.setProperty("--drift",v[4]+"px");b.style.setProperty("--delay",(-i*1.65)+"s");ocean.append(b)});
+ specs.forEach((v,i)=>{const b=document.createElement("span");b.className="rising-bubble";b.style.setProperty("--left",v[0]+"%");b.style.setProperty("--size",(i%3===0?125:88)+"px");b.style.setProperty("--bubble-color",v[2]);b.style.setProperty("--duration",v[3]+"s");b.style.setProperty("--drift",v[4]+"px");b.style.setProperty("--delay",(-i*1.65)+"s");ocean.append(b)});
 })();
 </script>
 <script src="../assets/khaemenes-kinder-resources.js"></script>
