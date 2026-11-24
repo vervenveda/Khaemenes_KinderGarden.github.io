@@ -403,6 +403,80 @@ body.kinder-ready .bubble-ocean .rising-bubble{
  body.kinder-ready #kindergartenProfileCards .kinder-dashboard-grid > details.kinder-card-fold > summary.kinder-fold-summary h2{font-size:24px!important}
 }
 </style>
+
+<style id="kinder-profile-translator-inline-rail-v1">
+/* Kindergarten Student Profile: canonical translator inside the charcoal rail — 2026-11-23 */
+/* The existing dark bar owns the single translator; do not create a clone. */
+html body > #vnv-language-rail.kinder-profile-language-rail{
+ display:flex!important;
+ flex-direction:row!important;
+ justify-content:center!important;
+ align-items:center!important;
+ flex-wrap:nowrap!important;
+ gap:0!important;
+ width:100%!important;
+ max-width:none!important;
+ min-height:55px!important;
+ padding:6px 14px!important;
+ background:#243038!important;
+ border-bottom:1px solid #b48b45!important;
+ border-radius:0!important;
+ box-sizing:border-box!important;
+ overflow-x:auto!important;
+ overflow-y:hidden!important;
+ text-align:center!important;
+}
+html body > #vnv-language-rail.kinder-profile-language-rail > #vnv-language-switch{
+ display:flex!important;
+ flex-direction:row!important;
+ align-items:center!important;
+ justify-content:center!important;
+ flex-wrap:nowrap!important;
+ gap:8px!important;
+ width:max-content!important;
+ max-width:none!important;
+ min-width:max-content!important;
+ min-height:40px!important;
+ padding:0!important;
+ margin:0 auto!important;
+ border:0!important;
+ background:transparent!important;
+ box-shadow:none!important;
+ color:#fff8e9!important;
+}
+html body > #vnv-language-rail #vnv-language-switch > *{
+ flex-shrink:0!important;
+ white-space:nowrap!important;
+}
+html body > #vnv-language-rail #vnv-language-switch :is(label,[data-vnv-coverage]){
+ color:#fff8e9!important;
+ -webkit-text-fill-color:#fff8e9!important;
+}
+html body > #vnv-language-rail #vnv-language-switch :is(select,button){
+ min-height:36px!important;
+ height:auto!important;
+ padding:6px 10px!important;
+ border:1px solid #b48b45!important;
+ border-radius:7px!important;
+ background:#fff8e9!important;
+ color:#243038!important;
+ -webkit-text-fill-color:#243038!important;
+ font-size:16px!important;
+ line-height:1.25!important;
+}
+@media(max-width:680px){
+ html body > #vnv-language-rail.kinder-profile-language-rail{
+  flex-wrap:nowrap!important;
+  justify-content:flex-start!important;
+  padding:7px 10px!important;
+ }
+ html body > #vnv-language-rail #vnv-language-switch{
+  flex-wrap:nowrap!important;
+  width:max-content!important;
+  min-width:max-content!important;
+ }
+}
+</style>
 </head><body data-theme="sky" class="kinder-ready">
 <div class="bubble-ocean" id="bubbleOcean" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to my profile</a>
@@ -667,6 +741,26 @@ window.addEventListener("khaemenes-family-changed",refresh);window.addEventListe
 document.addEventListener("click",event=>{const link=event.target.closest?.('a[href^="#"]');if(link&&link.getAttribute("href").length>1)show(link.getAttribute("href"),true)});
 window.addEventListener("hashchange",()=>show(location.hash,true));
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>show(location.hash,true),{once:true});else show(location.hash,true);
+})();
+</script>
+<script id="kinder-profile-translator-rail-mount-v1">
+/* The official language script may append its controls beside <main>.
+   Move that same live element into the one full-width header rail. */
+(function(){"use strict";
+ const rail=document.getElementById("vnv-language-rail");
+ if(!rail)return;
+ function place(){
+  const control=document.getElementById("vnv-language-switch");
+  if(!control)return false;
+  if(control.parentElement!==rail)rail.appendChild(control);
+  return true;
+ }
+ if(place())return;
+ const observer=new MutationObserver(()=>{
+  if(place())observer.disconnect();
+ });
+ observer.observe(document.body,{childList:true,subtree:true});
+ window.addEventListener("pagehide",()=>observer.disconnect(),{once:true});
 })();
 </script>
 </body></html>
